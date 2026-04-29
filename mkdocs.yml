@@ -2,37 +2,3 @@ site_name: ScanReady Documentation
 
 theme:
   name: material
-  features:
-    - navigation.sections
-    - navigation.expand
-    - toc.integrate
-
-nav:
-  - Home: index.md
-  - Getting Started:
-      - Quick Start: quick-start.md
-      - Installation: installation.md
-  - Workflow:
-      - One Click Bake: one-click.md
-      - Step 1 - Reduce: step1.md
-      - Step 2 - UV: step2.md
-      - Step 3 - Bake: step3.md
-  - Advanced:
-      - Settings: advanced.md
-theme:
-  name: material
-  palette:
-    scheme: slate
-    primary: blue
-    accent: cyan
-    
-    markdown_extensions:
-  - admonition
-
-  !!! tip
-    Do not extract the zip file.
-  - toc:
-      permalink: true
-
-      markdown_extensions:
-  - admonition
