@@ -30,3 +30,6 @@ theme:
   - admonition
   - toc:
       permalink: true
+
+      markdown_extensions:
+  - admonition
