@@ -1,8 +1,6 @@
 # ScanReady
 
-<p class="scanready-subtitle">
 Convert high-poly scans into optimized, game-ready assets in one click.
-</p>
 
 <p align="center">
   <img src="img/hero.png" width="720">
