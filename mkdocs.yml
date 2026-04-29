@@ -19,3 +19,9 @@ nav:
       - Step 3 - Bake: step3.md
   - Advanced:
       - Settings: advanced.md
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: blue
+    accent: cyan
