@@ -1,0 +1,12 @@
+site_name: ScanReady Documentation
+site_url: https://marioschiano.github.io/scanready-docs/
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+
+nav:
+  - Home: index.md
