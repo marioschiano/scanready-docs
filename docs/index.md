@@ -7,7 +7,7 @@
 <p align="center">
 <b>From scan to game-ready assets in one click.</b>
 </p>
-Convert high-poly scans into game-ready assets in one click.
+
 
 ---
 
