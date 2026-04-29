@@ -1,16 +1,4 @@
-# ScanReady
 
-Convert high-poly scans into optimized, game-ready assets in one click.
-
-<p align="center">
-  <img src="img/hero.png" width="720">
-</p>
-
-<p align="center">
-  <b>Clean Scan → Optimize Mesh → Smart UVs → Bake Textures</b>
-</p>
-
----
 
 ## 🚀 What is ScanReady?
 
