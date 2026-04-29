@@ -25,3 +25,8 @@ theme:
     scheme: slate
     primary: blue
     accent: cyan
+    
+    markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
