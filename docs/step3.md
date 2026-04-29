@@ -5,22 +5,25 @@ This step bakes textures and creates the final asset.
 ## Settings
 
 ### Texture Preset
-Resolution (2K, 4K, etc.)
+Resolution of the output textures.
 
 ### Bake Materials
 Number of texture sets.
 
 ### Bake Base Color
-Exports color texture.
+Exports the color texture.
 
 ### Save Images
-Automatically saves textures.
+Automatically saves the baked textures.
 
 ### Image Format
-JPG / PNG
+Available formats:
 
-## Output
+- JPG
+- PNG
+- TIFF
 
+### Output Folder
 Defines where textures are saved.
 
 ## Action
