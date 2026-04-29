@@ -1,5 +1,4 @@
 site_name: ScanReady Documentation
-site_url: https://marioschiano.github.io/scanready-docs/
 
 theme:
   name: material
@@ -10,3 +9,13 @@ theme:
 
 nav:
   - Home: index.md
+  - Getting Started:
+      - Quick Start: quick-start.md
+      - Installation: installation.md
+  - Workflow:
+      - One Click Bake: one-click.md
+      - Step 1 - Reduce: step1.md
+      - Step 2 - UV: step2.md
+      - Step 3 - Bake: step3.md
+  - Advanced:
+      - Settings: advanced.md
