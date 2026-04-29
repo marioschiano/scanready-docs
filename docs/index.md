@@ -10,7 +10,6 @@
 
 
 ---
----
 
 ## 🚀 What is ScanReady?
 
