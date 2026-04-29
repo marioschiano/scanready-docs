@@ -10,56 +10,19 @@
 
 
 ---
+---
 
 ## 🚀 What is ScanReady?
 
-ScanReady is a Blender addon designed to simplify the process of converting high-poly scans into optimized, game-ready assets.
-
-It automates the entire pipeline:
-- Mesh optimization
-- UV generation
-- Cage creation
-- Texture baking
-
-All with a single click.
+ScanReady is a Blender addon that transforms high-poly scans into optimized, game-ready assets through a fully automated workflow.
 
 ---
 
-## ⚡ Quick Start
+## ⚡ Core Workflow
 
-1. Select your high-poly scan
-2. Open the ScanReady panel
-3. Click **ONE CLICK BAKE**
-4. Wait for the optimized result
+1. Clean and prepare scan  
+2. Optimize mesh  
+3. Generate smart UVs  
+4. Bake textures  
 
----
-
-## 🔥 Main Features
-
-- One-click workflow
-- Smart UV generation
-- Automatic cage creation
-- Multi-material baking support
-- Memory-safe baking
-- High detail preservation
-
----
-
-## 🧠 Workflow Overview
-
-ScanReady is structured in 3 main steps:
-
-### Step 1 — Preview / Reduce
-Optimize mesh and create lowpoly preview
-
-### Step 2 — UV / Cage
-Generate UVs and prepare baking cage
-
-### Step 3 — Bake / Output
-Bake textures and export final assets
-
----
-
-## 📸 Example
-
-![ScanReady Interface](img/interface.png)
+All in **one click**.
