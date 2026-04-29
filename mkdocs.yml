@@ -2,3 +2,21 @@ site_name: ScanReady Documentation
 
 theme:
   name: material
+  palette:
+    scheme: slate
+
+nav:
+  - Home: index.md
+
+  - Getting Started:
+      - Quick Start: quick-start.md
+      - Installation: installation.md
+      - One Click Bake: one-click.md
+
+  - Workflow:
+      - Step 1 - Preview / Reduce: step1.md
+      - Step 2 - UV / Cage: step2.md
+      - Step 3 - Bake / Output: step3.md
+
+  - Advanced:
+      - Advanced Settings: advanced.md
