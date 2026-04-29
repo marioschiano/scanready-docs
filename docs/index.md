@@ -1,80 +1,58 @@
 # ScanReady
 
-**Convert high-poly scans into game-ready assets in one click.**
+Convert high-poly scans into game-ready assets in one click.
 
 ---
 
 ## 🚀 What is ScanReady?
 
-ScanReady is a Blender addon designed to transform complex 3D scans into optimized, game-ready assets quickly and efficiently.
+ScanReady is a Blender addon designed to simplify the process of converting high-poly scans into optimized, game-ready assets.
 
 It automates the entire pipeline:
+- Mesh optimization
+- UV generation
+- Cage creation
+- Texture baking
 
-- Mesh reduction  
-- Smart UV generation  
-- Auto cage creation  
-- Texture baking  
-- Final asset creation  
-
----
-
-## ⚡ One Click Workflow
-
-Get a complete result with a single button.
-
-1. Select your high-poly scan  
-2. Click **ONE CLICK BAKE**  
-3. Wait for the final asset  
-
-No manual setup required.
+All with a single click.
 
 ---
 
-## 🎯 Key Features
+## ⚡ Quick Start
 
-- **One Click Pipeline** – Full automation from scan to final asset  
-- **Smart UV Only** – Clean UVs optimized for scans  
-- **Auto Cage System** – No manual cage setup  
-- **Multi-Material Bake** – Supports complex assets  
-- **Memory Safe Baking** – Prevent crashes on heavy meshes  
-- **Preserve Sharp Details** – Maintains important surface information  
+1. Select your high-poly scan
+2. Open the ScanReady panel
+3. Click **ONE CLICK BAKE**
+4. Wait for the optimized result
 
 ---
 
-## 🧩 Workflow Overview
+## 🔥 Main Features
 
-ScanReady uses a simple 3-step workflow:
-
-### Step 1 – Reduce
-Optimize the mesh and generate a lowpoly version.
-
-### Step 2 – UV / Cage
-Automatically create UVs and prepare the cage.
-
-### Step 3 – Bake
-Generate textures and create the final asset.
+- One-click workflow
+- Smart UV generation
+- Automatic cage creation
+- Multi-material baking support
+- Memory-safe baking
+- High detail preservation
 
 ---
 
-## 📦 Use Cases
+## 🧠 Workflow Overview
 
-ScanReady is perfect for:
+ScanReady is structured in 3 main steps:
 
-- Photogrammetry scans  
-- Cultural heritage assets  
-- Game environments  
-- Props and objects  
-- Real-world captures  
+### Step 1 — Preview / Reduce
+Optimize mesh and create lowpoly preview
 
----
+### Step 2 — UV / Cage
+Generate UVs and prepare baking cage
 
-## 🔗 Get Started
-
-👉 Go to **Getting Started → Quick Start** to begin.
+### Step 3 — Bake / Output
+Bake textures and export final assets
 
 ---
 
-## 💡 Tip
+## 📸 Example
 
-Start with **One Click Bake**.  
-Only use advanced settings if you need more control.
+![ScanReady Interface](img/interface.png)
