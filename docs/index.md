@@ -1,6 +1,12 @@
 # ScanReady
 
-![ScanReady](img/hero.png)
+<p align="center">
+  <img src="img/hero.png" width="800">
+</p>
+
+<p align="center">
+<b>From scan to game-ready assets in one click.</b>
+</p>
 Convert high-poly scans into game-ready assets in one click.
 
 ---
