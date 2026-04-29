@@ -1,11 +1,15 @@
 # ScanReady
 
+<p class="scanready-subtitle">
+Convert high-poly scans into optimized, game-ready assets in one click.
+</p>
+
 <p align="center">
   <img src="img/hero.png" width="720">
 </p>
 
 <p align="center">
-  <b>From high-poly scan to game-ready asset in one click.</b>
+  <b>Clean Scan → Optimize Mesh → Smart UVs → Bake Textures</b>
 </p>
 
 ---
