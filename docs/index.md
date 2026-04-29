@@ -1,10 +1,20 @@
 
 
-## 🚀 What is ScanReady?
+# ScanReady
 
-**ScanReady** is a Blender addon designed to convert heavy high-poly scans into optimized, game-ready assets through a guided and automated workflow.
+Convert high-poly scans into optimized, game-ready assets in one click.
 
-It is built for artists, game developers, photogrammetry users and cultural heritage workflows who need to clean, optimize, unwrap and bake scanned assets faster.
+<br>
+
+<p align="center">
+  <img src="img/hero.png" width="700">
+</p>
+
+<br>
+
+<p align="center">
+  <b>Clean Scan → Optimize Mesh → Smart UVs → Bake Textures</b>
+</p>
 
 ---
 
