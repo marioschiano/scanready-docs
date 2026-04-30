@@ -13,10 +13,11 @@
   </div>
 
   <div style="flex:0 0 240px; text-align:center;">
-    <img src="../img/quick-start-one-click.png" style="width:240px; max-width:100%;">
+    <img src="../img/one-click-bake-panel.png" style="width:240px; max-width:100%;">
   </div>
 
 </div>
+
 
 
 Instead of manually reducing the mesh, generating UVs, preparing a cage, and configuring baking, ScanReady runs the main process automatically.
