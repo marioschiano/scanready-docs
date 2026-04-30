@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="../img/quick-start-one-click.png" width="320">
-</p>
+
 
 
 
@@ -8,9 +6,22 @@
 
 # Quick Start
 
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start;">
+
+<div style="flex:1 1 420px; min-width:280px;">
+
 Use this page when you want the fastest path from a heavy high-poly scan to an optimized baked asset.
 
 ScanReady is designed to simplify dense 3D scans and make them easier to use in **VR, AR, videogames, realtime viewers, and interactive Blender scenes**.
+
+</div>
+
+<div style="flex:0 1 320px; text-align:center;">
+  <img src="../img/quick-start-one-click.png" style="width:320px; max-width:100%;">
+</div>
+
+</div>
+
 
 ---
 
