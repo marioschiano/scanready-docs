@@ -19,6 +19,10 @@ Do not extract the zip file before installing it in Blender.
 5. Select the ScanReady `.zip` file.
 6. Click **Install Add-on**.
 
+<p align="center">
+  <img src="../img/blender-preferences-addons.png" alt="Blender Preferences Add-ons tab with ScanReady enabled" style="max-width:820px;width:100%;">
+</p>
+
 ## Enable the Addon
 
 1. Search for **ScanReady** in the Add-ons list.
