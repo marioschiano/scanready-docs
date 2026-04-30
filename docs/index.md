@@ -7,7 +7,7 @@ High-poly scans from photogrammetry or 3D capture can be too dense for realtime 
 <br>
 
 <p align="center">
-  <img src="img/hero.png" width="700">
+  <img src="img/hero.png" style="max-width:620px;width:100%;">
 </p>
 
 <br>
