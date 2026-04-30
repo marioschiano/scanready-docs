@@ -18,8 +18,10 @@ nav:
       - Step 2 - UV / Cage: step2.md
       - Step 3 - Bake / Output: step3.md
 
-    - Production:
+      - Production:
       - Use Cases: use-cases.md
+      - Export Tips: export-tips.md
+
 
   - Help:
       - Troubleshooting: troubleshooting.md
