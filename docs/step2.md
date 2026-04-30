@@ -53,23 +53,6 @@ Uses Blender Smart UV Project.
 
 This is a good general-purpose option for many standard scans.
 
-### Organic Low Islands
-
-Creates broader UV islands for organic objects.
-
-This can help reduce excessive fragmentation on natural forms.
-
-### Scan AutoMap
-
-Uses scan-oriented angle and edge filtering controls.
-
-This is useful for noisy scan data where small surface artifacts should not create too many unwanted cuts.
-
-### Angle Based
-
-Uses sharper edges to decide where seams should be placed.
-
-This can be useful for hard-surface or object-like scans with clearer edge structure.
 
 ---
 
