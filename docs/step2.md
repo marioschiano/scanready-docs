@@ -38,9 +38,14 @@ ScanReady includes cage tools to make this process faster and easier.
 
 ---
 
-## UV Methods
+## UV Method
 
-ScanReady includes several UV approaches designed for scanned meshes.
+ScanReady uses **Smart UV Project** to generate UVs for the optimized mesh.
+
+Smart UV Project is Blender's automatic UV unwrap method. It is useful for scanned objects because it can quickly create UV islands without requiring manual seam placement.
+
+ScanReady exposes Smart UV controls so you can adjust how the unwrap behaves before baking.
+
 
 ### Smart UV Project
 
