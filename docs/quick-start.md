@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="img/quick-start-one-click.png" width="700">
+</p>
+
+
 # Quick Start
 
 Use this page when you want the fastest path from a heavy high-poly scan to an optimized baked asset.
