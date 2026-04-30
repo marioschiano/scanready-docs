@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="../img/quick-start-one-click.png" style="max-width:360px;">
+  <img src="../img/quick-start-one-click.png" width="320">
 </p>
+
 
 
 
