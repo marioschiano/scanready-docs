@@ -13,7 +13,7 @@
   </div>
 
   <div style="flex:0 0 240px; text-align:center;">
-    <img src="../img/one-click-bake-panel.png" style="width:240px; max-width:100%;">
+    <img src="../img/quick-start-one-click.png" style="width:240px; max-width:100%;">
   </div>
 
 </div>
