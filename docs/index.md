@@ -1,8 +1,8 @@
-
-
 # ScanReady
 
-Convert high-poly scans into optimized, game-ready assets in one click.
+ScanReady is a Blender addon designed to turn heavy 3D scans into optimized, game-ready assets.
+
+High-poly scans from photogrammetry or 3D capture can be too dense for realtime use. ScanReady helps simplify those models, generate UVs, prepare baking, and create lighter assets that are easier to use in **VR, AR, videogames, realtime visualization, and interactive environments**.
 
 <br>
 
@@ -13,89 +13,127 @@ Convert high-poly scans into optimized, game-ready assets in one click.
 <br>
 
 <p align="center">
-  <b>Clean Scan → Optimize Mesh → Smart UVs → Bake Textures</b>
+  <b>High-Poly Scan > Optimized Mesh > UVs > Bake > Realtime Asset</b>
 </p>
 
 ---
 
-## ⚡ One Click Bake
+## Why ScanReady?
+
+3D scans are often beautiful but difficult to use in production.
+
+They can contain:
+
+- Millions of polygons.
+- Heavy geometry that slows Blender.
+- Dense meshes that are not suitable for VR.
+- No clean UV layout.
+- Materials or textures that need to be transferred to a lighter object.
+- Bake settings that are time-consuming to prepare manually.
+
+ScanReady simplifies this process inside Blender.
+
+It helps you convert a heavy scan into a lighter, cleaner, baked asset that can be used more easily in realtime workflows.
+
+---
+
+## One Click Bake
 
 The fastest way to use ScanReady is the **ONE CLICK BAKE** workflow.
 
-ScanReady automatically performs:
+ScanReady can automatically perform:
 
-- Mesh optimization
-- Smart UV generation
-- Auto cage setup
-- Texture baking
-- Final asset creation
+- Mesh optimization.
+- Lowpoly preview creation.
+- UV generation.
+- Automatic cage setup.
+- Texture baking.
+- Final asset and material setup.
+- Texture saving when output saving is enabled.
 
-> Start with One Click Bake for most scans. Use manual steps only when you need more control.
+Start with One Click Bake for most scans. Use the manual steps when you need more control.
 
 ---
 
-## 🔥 Key Features
+## Key Features
 
 | Feature | Description |
 |---|---|
-| **One Click Workflow** | Runs the full scan-to-game-ready pipeline automatically. |
-| **Smart UV** | Generates UVs using a scan-friendly Smart UV workflow. |
-| **Auto Cage** | Creates a baking cage without manual setup. |
-| **Multi-material Bake** | Supports multiple texture sets for complex scans. |
-| **Memory Safety** | Helps reduce crashes during heavy bake operations. |
-| **Preserve Sharp Details** | Keeps important surface definition during optimization. |
+| **One Click Workflow** | Runs the main scan-to-asset pipeline automatically. |
+| **Scan Simplification** | Reduces heavy scan geometry into a lighter optimized mesh. |
+| **VR and Realtime Ready** | Helps make captured models easier to handle in VR, AR, videogames, and realtime viewers. |
+| **Preview / Reduce** | Lets you preview the optimized mesh before UVs and baking. |
+| **Scan-Friendly UVs** | Generates UVs with controls designed for scanned objects. |
+| **Auto Cage** | Estimates cage extrusion for high-to-low baking. |
+| **Texture Baking** | Transfers visual detail from the original scan to the optimized mesh. |
+| **Base Color, Normal, and AO Maps** | Supports common texture maps used in game and realtime pipelines. |
+| **Memory Safety** | Includes safer bake options for heavy scenes and large scans. |
+| **Reusable Presets** | Saves workflow settings for repeated scan processing. |
 
 ---
 
-## 🧩 Workflow Overview
+## Workflow Overview
 
-ScanReady follows a simple 3-step workflow:
+ScanReady follows a simple 3-step workflow.
 
 ### 1. Preview / Reduce
 
 Create an optimized lowpoly preview from your high-poly scan.
 
+This step helps reduce the model so it becomes lighter and easier to use in realtime applications.
+
 ### 2. UV / Cage
 
-Generate Smart UVs and prepare the baking cage.
+Generate UVs and prepare the baking cage.
+
+This step prepares the optimized mesh to receive texture detail from the original scan.
 
 ### 3. Bake / Output
 
-Bake textures and create the final game-ready asset.
+Bake texture information from the original high-poly object to the optimized mesh.
+
+The result is a lighter asset that keeps much of the visual detail of the scan while being easier to use in VR, games, and realtime scenes.
 
 ---
 
-## 🎯 Recommended Use Cases
+## Recommended Use Cases
 
 ScanReady is ideal for:
 
-- Photogrammetry scans
-- Cultural heritage assets
-- Game props
-- Environment objects
-- Real-world captured models
-- VR / AR optimized assets
+- Photogrammetry scans.
+- Cultural heritage objects.
+- Museum and archive assets.
+- Game props.
+- Environment objects.
+- Real-world captured models.
+- VR and AR experiences.
+- Realtime visualization.
+- Interactive installations.
+- Educational and historical reconstructions.
 
 ---
 
-## 📦 What ScanReady Creates
+## What ScanReady Creates
 
 After the workflow, ScanReady can generate:
 
-- Optimized lowpoly mesh
-- UV-ready object
-- Baking cage
-- Final baked mesh
-- Texture files saved to output folder
+- Optimized lowpoly mesh.
+- UV-ready object.
+- Baking cage.
+- Final baked mesh.
+- Final material setup.
+- Texture files saved to the selected output folder.
+
+The goal is to preserve the visual identity of the original scan while making it lighter and more practical for production.
 
 ---
 
-## 🚀 Get Started
+## Get Started
 
 New users should begin here:
 
 [Quick Start](quick-start.md)
 
-For the full workflow, continue with:
+For the full automatic workflow, continue with:
 
 [One Click Bake](one-click.md)
