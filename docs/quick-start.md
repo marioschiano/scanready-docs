@@ -16,13 +16,15 @@ ScanReady is designed to simplify dense 3D scans and make them easier to use in 
 
 <div style="flex:1 1 320px; min-width:260px;">
 
-1. Open Blender and enable ScanReady.
-2. Select your high-poly scan in the 3D Viewport.
-3. Open the Sidebar with **N**.
-4. Select the **Scan Ready** tab.
-5. Click **ONE CLICK BAKE**.
-6. Wait for the workflow to complete.
-7. Inspect the final mesh, material, and saved texture files.
+<ol>
+  <li>Open Blender and enable ScanReady.</li>
+  <li>Select your high-poly scan in the 3D Viewport.</li>
+  <li>Open the Sidebar with <strong>N</strong>.</li>
+  <li>Select the <strong>Scan Ready</strong> tab.</li>
+  <li>Click <strong>ONE CLICK BAKE</strong>.</li>
+  <li>Wait for the workflow to complete.</li>
+  <li>Inspect the final mesh, material, and saved texture files.</li>
+</ol>
 
 </div>
 
