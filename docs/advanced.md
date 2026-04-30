@@ -7,7 +7,7 @@ You do not need to change every setting to use ScanReady.
 For most scans, start with the default values. Adjust advanced settings when you need more control over performance, quality, or bake accuracy.
 
 <p align="center">
-  <img src="img/quick-start-one-click.png" alt="ScanReady panel with workflow sections and progress controls" style="width:280px; max-width:100%;">
+  <img src="../img/quick-start-one-click.png" alt="ScanReady panel with workflow sections and progress controls" style="width:280px; max-width:100%;">
 </p>
 
 ---
