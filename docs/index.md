@@ -63,7 +63,7 @@ Start with One Click Bake for most scans. Use the manual steps when you need mor
 | **Scan Simplification** | Reduces heavy scan geometry into a lighter optimized mesh. |
 | **VR and Realtime Ready** | Helps make captured models easier to handle in VR, AR, videogames, and realtime viewers. |
 | **Preview / Reduce** | Lets you preview the optimized mesh before UVs and baking. |
-| **Scan-Friendly UVs** | Generates UVs with controls designed for scanned objects. |
+| **Smart UV Project** | Uses Blender Smart UV Project to generate UVs for the optimized mesh. |
 | **Auto Cage** | Estimates cage extrusion for high-to-low baking. |
 | **Texture Baking** | Transfers visual detail from the original scan to the optimized mesh. |
 | **Base Color, Normal, and AO Maps** | Supports common texture maps used in game and realtime pipelines. |
