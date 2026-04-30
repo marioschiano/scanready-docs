@@ -1,6 +1,7 @@
 # Quick Start
 
 
+<p>
       Use this page when you want the fastest path from a heavy high-poly scan to an optimized baked asset.
     </p>
     <p>
