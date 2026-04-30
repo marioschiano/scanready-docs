@@ -1,21 +1,8 @@
 # Quick Start
 
+Use this page when you want the fastest path from a heavy high-poly scan to an optimized baked asset.
 
-<p>
-      Use this page when you want the fastest path from a heavy high-poly scan to an optimized baked asset.
-    </p>
-    <p>
-      ScanReady is designed to simplify dense 3D scans and make them easier to use in
-      <strong>VR, AR, videogames, realtime viewers, and interactive Blender scenes</strong>.
-    </p>
-  </div>
-
-
-
-
-</div>
-
-
+ScanReady is designed to simplify dense 3D scans and make them easier to use in **VR, AR, videogames, realtime viewers, and interactive Blender scenes**.
 
 ---
 
@@ -28,6 +15,7 @@
 5. Click **ONE CLICK BAKE**.
 6. Wait for the workflow to complete.
 7. Inspect the final mesh, material, and saved texture files.
+
 
 ---
 
