@@ -56,17 +56,19 @@ This is a good general-purpose option for many standard scans.
 
 ---
 
-## UV Controls
+## UV Settings
+
+These settings control how Smart UV Project unwraps the optimized mesh.
 
 ### Smart UV Preset
 
 Applies a recommended Smart UV angle.
 
-Use this when you want a quick starting point instead of manually tuning the angle.
+Use it as a fast starting point for common scan types.
 
 ### Smart UV Angle
 
-Controls how aggressively Smart UV Project splits surfaces into islands.
+Controls how aggressively Smart UV Project splits the mesh into islands.
 
 Lower values create more cuts and more UV islands.
 
@@ -74,7 +76,7 @@ Higher values create larger islands.
 
 ### UV Padding
 
-Adds spacing between UV islands.
+Sets spacing between UV islands.
 
 Increase padding to reduce texture bleeding, especially at lower texture resolutions.
 
