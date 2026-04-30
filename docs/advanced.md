@@ -50,7 +50,7 @@ Higher values keep more geometry.
 
 ## UV Settings
 
-These settings control how the optimized mesh is unwrapped.
+These settings control how Smart UV Project unwraps the optimized mesh.
 
 ### Smart UV Preset
 
@@ -66,29 +66,18 @@ Lower values create more cuts and more UV islands.
 
 Higher values create larger islands.
 
-### Organic Low Islands Angle
+### UV Padding
 
-Controls island splitting for organic low-island mode.
+Sets spacing between UV islands.
 
-This can be useful for natural shapes where too many small islands are not ideal.
+Increase padding to reduce texture bleeding, especially at lower texture resolutions.
 
-### Scan AutoMap Angle
+### Auto Pack UV
 
-Controls feature detection in Scan AutoMap mode.
+Automatically packs UV islands after unwrap.
 
-Use it to guide how ScanReady identifies important surface changes on scanned objects.
+Leave this enabled unless you want to arrange UV islands manually.
 
-### Minimum Length Factor
-
-Ignores very small noisy edges below a factor of the median edge length.
-
-This helps reduce unwanted UV cuts caused by scan noise.
-
-### Protect Shallow Angle
-
-Protects soft transitions from being cut into seams.
-
-This helps keep broader smooth regions intact.
 
 ### Sharp Angle
 
