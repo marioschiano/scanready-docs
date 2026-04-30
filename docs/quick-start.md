@@ -1,9 +1,6 @@
 # Quick Start
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-bottom:32px;">
 
-  <div style="flex:1 1 300px; min-width:260px;">
-    <p>
       Use this page when you want the fastest path from a heavy high-poly scan to an optimized baked asset.
     </p>
     <p>
@@ -12,9 +9,7 @@
     </p>
   </div>
 
-  <div style="flex:0 0 200px; text-align:center;">
-  <img src="../img/quick-start-one-click.png" style="width:200px; max-width:100%;">
-</div>
+
 
 
 </div>
