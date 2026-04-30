@@ -85,6 +85,7 @@ Edges sharper than this value are marked for seams in Angle Based mode.
 
 This is useful for scans with clearer hard edges.
 
+
 ### UV Padding
 
 Sets spacing between UV islands.
