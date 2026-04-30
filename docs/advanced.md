@@ -79,25 +79,6 @@ Automatically packs UV islands after unwrap.
 Leave this enabled unless you want to arrange UV islands manually.
 
 
-### Sharp Angle
-
-Edges sharper than this value are marked for seams in Angle Based mode.
-
-This is useful for scans with clearer hard edges.
-
-
-### UV Padding
-
-Sets spacing between UV islands.
-
-Increase padding to reduce texture bleeding, especially at lower texture resolutions.
-
-### Auto Pack UV
-
-Automatically packs UV islands after unwrap.
-
-Leave this enabled unless you want to arrange UV islands manually.
-
 ---
 
 ## Cage Settings
