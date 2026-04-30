@@ -4,6 +4,10 @@ Use this page when you want the fastest path from a heavy high-poly scan to an o
 
 ScanReady is designed to simplify dense 3D scans and make them easier to use in **VR, AR, videogames, realtime viewers, and interactive Blender scenes**.
 
+<p align="center">
+  <img src="img/quick-start-one-click.png" alt="ScanReady One Click Bake panel in Blender" style="width:280px; max-width:100%;">
+</p>
+
 ---
 
 ## Basic Workflow
@@ -15,7 +19,6 @@ ScanReady is designed to simplify dense 3D scans and make them easier to use in 
 5. Click **ONE CLICK BAKE**.
 6. Wait for the workflow to complete.
 7. Inspect the final mesh, material, and saved texture files.
-
 
 ---
 
@@ -59,6 +62,10 @@ After the One Click workflow, you should have:
 - Saved image files if output saving is enabled.
 
 This gives you a lighter asset that is easier to move, preview, export, and use in VR or game engines.
+
+<p align="center">
+  <img src="img/high-to-low-workflow.png" alt="High-poly scan converted into a lighter game-ready asset" style="max-width:760px;width:100%;">
+</p>
 
 ---
 

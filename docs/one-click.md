@@ -13,7 +13,7 @@
   </div>
 
   <div style="flex:0 0 240px; text-align:center;">
-    <img src="../img/quick-start-one-click.png" style="width:240px; max-width:100%;">
+    <img src="img/quick-start-one-click.png" alt="ScanReady One Click Bake button in Blender" style="width:240px; max-width:100%;">
   </div>
 
 </div>
@@ -37,6 +37,10 @@ When you click **ONE CLICK BAKE**, ScanReady runs the complete scan-to-asset wor
 7. Saves baked textures if **Save Images** is enabled.
 
 The goal is to preserve the visual identity of the original scan while making the model easier to use in realtime projects.
+
+<p align="center">
+  <img src="img/high-to-low-workflow.png" alt="Before and after workflow from high-poly scan to game-ready asset" style="max-width:760px;width:100%;">
+</p>
 
 ---
 

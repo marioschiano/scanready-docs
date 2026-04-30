@@ -6,6 +6,10 @@ This is the final step that turns the simplified object into a more usable asset
 
 The goal is to keep much of the visual detail of the original scan while using a lighter mesh that is easier to render and manage.
 
+<p align="center">
+  <img src="img/high-to-low-workflow.png" alt="Baked scan result with reduced polygon count and preserved visual detail" style="max-width:760px;width:100%;">
+</p>
+
 ---
 
 ## Why Baking Matters

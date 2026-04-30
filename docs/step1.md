@@ -6,6 +6,10 @@ This is the first important step when preparing a scanned object for **VR, AR, v
 
 ScanReady helps reduce the model while keeping the overall shape and visual identity of the original scan.
 
+<p align="center">
+  <img src="img/high-to-low-workflow.png" alt="Dense scan reduced into a lighter optimized mesh" style="max-width:760px;width:100%;">
+</p>
+
 ---
 
 ## Why This Step Matters
