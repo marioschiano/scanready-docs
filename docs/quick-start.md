@@ -12,13 +12,9 @@
     </p>
   </div>
 
-  <div style="flex:0 0 320px; text-align:center;">
-    <img src="../img/quick-start-one-click.png" style="width:320px; max-width:100%;">
-  </div>
-
+  <div style="flex:0 0 280px; text-align:center;">
+  <img src="../img/quick-start-one-click.png" style="width:280px; max-width:100%;">
 </div>
-
-
 
 ---
 
