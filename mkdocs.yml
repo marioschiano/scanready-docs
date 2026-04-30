@@ -18,8 +18,12 @@ nav:
       - Step 2 - UV / Cage: step2.md
       - Step 3 - Bake / Output: step3.md
 
-  - Advanced:
-      - Advanced Settings: advanced.md
+    - Production:
+      - Use Cases: use-cases.md
 
   - Help:
       - Troubleshooting: troubleshooting.md
+
+  - Advanced:
+      - Advanced Settings: advanced.md
+
