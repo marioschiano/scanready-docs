@@ -68,7 +68,7 @@ Use this when you want a quick starting point instead of manually tuning the ang
 
 Controls how aggressively Smart UV Project splits surfaces into islands.
 
-Lower values create more cuts and more islands.
+Lower values create more cuts and more UV islands.
 
 Higher values create larger islands.
 
@@ -83,6 +83,7 @@ Increase padding to reduce texture bleeding, especially at lower texture resolut
 Automatically packs UV islands after unwrap.
 
 Leave this enabled unless you want to arrange UV islands manually.
+
 
 ---
 
