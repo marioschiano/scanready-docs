@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="img/quick-start-one-click.png" width="700">
+  <img src="../img/quick-start-one-click.png" style="max-width:420px;width:100%;">
 </p>
+
 
 
 # Quick Start
