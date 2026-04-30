@@ -34,16 +34,12 @@ Use it as a quick reference when tuning scans for VR, videogames, realtime visua
 
 | Setting | Description | When to Adjust |
 |---|---|---|
+| **UV Method** | ScanReady uses Smart UV Project for UV generation. | This is the UV method used by the addon workflow. |
 | **Smart UV Preset** | Applies a recommended Smart UV angle. | Use it as a quick starting point for common scan types. |
-| **UV Method** | Chooses the UV generation method. | Change it when Smart UV does not produce the right result. |
 | **Smart UV Angle** | Controls how aggressively Smart UV Project splits islands. | Lower values create more cuts. Higher values create larger islands. |
-| **Organic Low Islands Angle** | Controls island splitting for organic low-island mode. | Use it for natural or organic scan shapes. |
-| **Scan AutoMap Angle** | Controls feature detection in Scan AutoMap mode. | Use it for scanned objects with noisy or complex surfaces. |
-| **Minimum Length Factor** | Ignores very small noisy edges. | Increase it to reduce unwanted cuts caused by scan noise. |
-| **Protect Shallow Angle** | Protects soft transitions from seam cuts. | Use it to keep broader smooth regions intact. |
-| **Sharp Angle** | Marks edges sharper than this value as seams. | Use it for hard-surface scans or objects with clear edges. |
 | **Auto Pack UV** | Packs UV islands automatically after unwrap. | Leave enabled unless you want to arrange UV islands manually. |
 | **UV Padding** | Adds spacing between UV islands. | Increase it to reduce texture bleeding and visible seams. |
+
 
 ---
 
