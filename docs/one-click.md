@@ -1,24 +1,12 @@
 # One Click Bake
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-bottom:32px;">
+**ONE CLICK BAKE** is the fastest ScanReady workflow.
 
-  <div style="flex:1 1 300px; min-width:260px;">
-    <p>
-      <strong>ONE CLICK BAKE</strong> is the fastest ScanReady workflow.
-    </p>
-    <p>
-      It is designed to convert a heavy high-poly scan into a lighter baked asset with minimal setup.
-      This is useful when preparing scanned models for <strong>VR, AR, videogames, realtime visualization, or interactive scenes</strong>.
-    </p>
-  </div>
+It is designed to convert a heavy high-poly scan into a lighter baked asset with minimal setup. This is useful when preparing scanned models for **VR, AR, videogames, realtime visualization, or interactive scenes**.
 
-  <div style="flex:0 0 240px; text-align:center;">
-    <img src="../img/quick-start-one-click.png" alt="ScanReady One Click Bake button in Blender" style="width:240px; max-width:100%;">
-  </div>
-
-</div>
-
-
+<p align="center">
+  <img src="../img/one_click_09.jpg" alt="High-poly scan and optimized lowpoly result after One Click Bake" style="max-width:820px;width:100%;">
+</p>
 
 Instead of manually reducing the mesh, generating UVs, preparing a cage, and configuring baking, ScanReady runs the main process automatically.
 
