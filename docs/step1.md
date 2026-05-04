@@ -1,16 +1,32 @@
 # Step 1 - Preview / Reduce
 
+<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
+
+<div style="flex:1 1 360px; min-width:260px;">
+
+<p>
 Step 1 creates an optimized lowpoly preview from the selected high-poly scan.
-
-This is the first important step when preparing a scanned object for **VR, AR, videogames, realtime visualization, or interactive scenes**. A raw scan can contain a very high number of polygons, making it difficult to move, preview, export, or use in realtime.
-
-ScanReady first cleans common scan debris, then reduces the model while keeping the overall shape and visual identity of the original scan.
-
-This cleanup can remove loose polygons, floating fragments, isolated vertices, and small unwanted mesh artifacts before the lowpoly preview is generated.
-
-<p align="center">
-  <img src="../img/high-to-low-workflow.png" alt="Dense scan reduced into a lighter optimized mesh" style="max-width:760px;width:100%;">
 </p>
+
+<p>
+This is the first important step when preparing a scanned object for <strong>VR, AR, videogames, realtime visualization, or interactive scenes</strong>. A raw scan can contain a very high number of polygons, making it difficult to move, preview, export, or use in realtime.
+</p>
+
+<p>
+ScanReady first cleans common scan debris, then reduces the model while keeping the overall shape and visual identity of the original scan.
+</p>
+
+<p>
+This cleanup can remove loose polygons, floating fragments, isolated vertices, and small unwanted mesh artifacts before the lowpoly preview is generated.
+</p>
+
+</div>
+
+<div style="flex:0 0 320px; text-align:center;">
+  <img src="../img/step1-preview-reduce.png" alt="ScanReady Step 1 Preview Reduce panel with Create Lowpoly Preview button" style="width:320px; max-width:100%;">
+</div>
+
+</div>
 
 ---
 
