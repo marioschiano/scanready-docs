@@ -115,6 +115,10 @@ This is useful when inspecting baked or previewed texture results.
 
 Controls how strongly the checker overlay appears.
 
+<div style="width:100%; text-align:left;">
+  <img src="../img/step1-checker-mix.gif" alt="ScanReady Checker Mix control adjusting checker overlay strength" style="max-width:820px;width:100%;">
+</div>
+
 <h3>Checker Scale</h3>
 
 Changes the size of the checker squares.
