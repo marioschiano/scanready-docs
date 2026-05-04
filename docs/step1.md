@@ -73,33 +73,45 @@ Shows the current reduction percentage based on the selected optimization settin
 
 ## View Options
 
-### Show Wireframe
+<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
+
+<div style="flex:1 1 360px; min-width:260px;">
+
+<h3>Show Wireframe</h3>
 
 Displays the topology of the preview object.
 
 Use it to check whether the mesh is still too dense or has been reduced too much.
 
-### Show Checker
+<h3>Show Checker</h3>
 
 Displays a checker texture.
 
 This helps inspect UV density and distortion during later checks.
 
-### Use Texture View
+<h3>Use Texture View</h3>
 
 Shows the model in a flat texture-oriented view without scene lighting.
 
 This is useful when inspecting baked or previewed texture results.
 
-### Checker Mix
+<h3>Checker Mix</h3>
 
 Controls how strongly the checker overlay appears.
 
-### Checker Scale
+<h3>Checker Scale</h3>
 
 Changes the size of the checker squares.
 
 Smaller squares make distortion easier to see.
+
+</div>
+
+<div style="flex:0 0 420px; text-align:center;">
+  <img src="../img/step1-wireframe.gif" alt="ScanReady Show Wireframe preview on an optimized scan" style="width:420px; max-width:100%;">
+</div>
+
+</div>
 
 ---
 
