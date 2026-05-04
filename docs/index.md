@@ -1,14 +1,14 @@
 # ScanReady
 
-ScanReady is a Blender addon designed to turn heavy 3D scans into optimized, game-ready assets.
-
-High-poly scans from photogrammetry or 3D capture can be too dense for realtime use. ScanReady helps simplify those models, generate UVs, prepare baking, and create lighter assets that are easier to use in **VR, AR, videogames, realtime visualization, and interactive environments**.
-
-<br>
-
 <p align="center">
   <img src="img/hero.png" style="max-width:620px;width:100%;">
 </p>
+
+<br>
+
+ScanReady is a Blender addon designed to turn heavy 3D scans into optimized, game-ready assets.
+
+High-poly scans from photogrammetry or 3D capture can be too dense for realtime use. ScanReady helps simplify those models, generate UVs, prepare baking, and create lighter assets that are easier to use in **VR, AR, videogames, realtime visualization, and interactive environments**.
 
 <br>
 
