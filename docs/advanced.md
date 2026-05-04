@@ -157,6 +157,14 @@ Enables normal map baking.
 
 Normal maps help preserve surface detail without keeping all the original geometry.
 
+### Bake Roughness
+
+Enables roughness map baking.
+
+Use this when the high-poly material has a roughness texture or a bakeable roughness input that should be transferred to the low-poly final material.
+
+The roughness map is saved as a technical texture and linked to the **Roughness** input of the final material.
+
 ### Bake Occlusion
 
 Enables Ambient Occlusion baking.
