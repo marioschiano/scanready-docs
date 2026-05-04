@@ -85,8 +85,8 @@ Use it to check whether the mesh is still too dense or has been reduced too much
 
 </div>
 
-<div style="flex:0 0 420px; text-align:center;">
-  <img src="../img/step1-wireframe.gif" alt="ScanReady Show Wireframe preview on an optimized scan" style="width:420px; max-width:100%;">
+<div style="width:100%; text-align:left;">
+  <img src="../img/step1-wireframe.gif" alt="ScanReady Show Wireframe preview on an optimized scan" style="width:760px; max-width:100%;">
 </div>
 
 </div>
