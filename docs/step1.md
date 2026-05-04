@@ -125,6 +125,10 @@ Changes the size of the checker squares.
 
 Smaller squares make distortion easier to see.
 
+<div style="width:100%; text-align:left;">
+  <img src="../img/step1-checker-scale.gif" alt="ScanReady Checker Scale control changing checker square size" style="max-width:820px;width:100%;">
+</div>
+
 ---
 
 ## Action
