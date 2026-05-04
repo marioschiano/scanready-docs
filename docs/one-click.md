@@ -1,18 +1,28 @@
 # One Click Bake
 
-**ONE CLICK BAKE** is the fastest ScanReady workflow.
+<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-bottom:32px;">
 
-It is designed to convert a heavy high-poly scan into a lighter baked asset with minimal setup. This is useful when preparing scanned models for **VR, AR, videogames, realtime visualization, or interactive scenes**.
+  <div style="flex:1 1 300px; min-width:260px;">
+    <p>
+      <strong>ONE CLICK BAKE</strong> is the fastest ScanReady workflow.
+    </p>
+    <p>
+      It is designed to convert a heavy high-poly scan into a lighter baked asset with minimal setup.
+      This is useful when preparing scanned models for <strong>VR, AR, videogames, realtime visualization, or interactive scenes</strong>.
+    </p>
+  </div>
 
-<p align="center">
-  <img src="../img/one_click_09.jpg" alt="High-poly scan and optimized lowpoly result after One Click Bake" style="max-width:820px;width:100%;">
-</p>
+  <div style="flex:0 0 240px; text-align:center;">
+    <img src="../img/quick-start-one-click.png" alt="ScanReady One Click Bake button in Blender" style="width:240px; max-width:100%;">
+  </div>
 
-Instead of manually reducing the mesh, generating UVs, preparing a cage, and configuring baking, ScanReady runs the main process automatically.
+</div>
 
 <p align="center">
   <img src="../img/one-click-bake.gif" alt="Animated One Click Bake workflow in Blender" style="max-width:820px;width:100%;">
 </p>
+
+Instead of manually reducing the mesh, generating UVs, preparing a cage, and configuring baking, ScanReady runs the main process automatically.
 
 ---
 
@@ -32,7 +42,7 @@ When you click **ONE CLICK BAKE**, ScanReady runs the complete scan-to-asset wor
 The goal is to preserve the visual identity of the original scan while making the model easier to use in realtime projects.
 
 <p align="center">
-  <img src="../img/high-to-low-workflow.png" alt="Before and after workflow from high-poly scan to game-ready asset" style="max-width:760px;width:100%;">
+  <img src="../img/one_click_before_after.jpg" alt="Before and after comparison of a high-poly scan optimized by One Click Bake" style="max-width:820px;width:100%;">
 </p>
 
 ---
