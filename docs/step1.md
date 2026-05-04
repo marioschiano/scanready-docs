@@ -107,6 +107,10 @@ Shows the model in a flat texture-oriented view without scene lighting.
 
 This is useful when inspecting baked or previewed texture results.
 
+<div style="width:100%; text-align:left;">
+  <img src="../img/step1-use-texture-view.gif" alt="ScanReady Use Texture View preview on an optimized scan" style="max-width:820px;width:100%;">
+</div>
+
 <h3>Checker Mix</h3>
 
 Controls how strongly the checker overlay appears.
