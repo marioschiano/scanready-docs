@@ -22,6 +22,10 @@
 
 Instead of manually reducing the mesh, generating UVs, preparing a cage, and configuring baking, ScanReady runs the main process automatically.
 
+<p align="center">
+  <img src="../img/one-click-bake.gif" alt="Animated One Click Bake workflow in Blender" style="max-width:820px;width:100%;">
+</p>
+
 ---
 
 ## What One Click Bake Does
