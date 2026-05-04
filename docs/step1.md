@@ -4,7 +4,9 @@ Step 1 creates an optimized lowpoly preview from the selected high-poly scan.
 
 This is the first important step when preparing a scanned object for **VR, AR, videogames, realtime visualization, or interactive scenes**. A raw scan can contain a very high number of polygons, making it difficult to move, preview, export, or use in realtime.
 
-ScanReady helps reduce the model while keeping the overall shape and visual identity of the original scan.
+ScanReady first cleans common scan debris, then reduces the model while keeping the overall shape and visual identity of the original scan.
+
+This cleanup can remove loose polygons, floating fragments, isolated vertices, and small unwanted mesh artifacts before the lowpoly preview is generated.
 
 <p align="center">
   <img src="../img/high-to-low-workflow.png" alt="Dense scan reduced into a lighter optimized mesh" style="max-width:760px;width:100%;">
@@ -27,6 +29,8 @@ They may cause:
 
 The Preview / Reduce step gives you a lighter version of the scan before continuing with UVs and baking.
 
+It also helps remove small pieces of mesh dirt that can come from photogrammetry or 3D capture, such as loose polygons, isolated vertices, and floating fragments.
+
 ---
 
 ## Main Settings
@@ -47,7 +51,7 @@ Lower values create a stronger reduction and a lighter object. Higher values pre
 
 Merges vertices that are very close together.
 
-This is useful for cleaning small scan artifacts before reduction.
+This is useful for cleaning small scan artifacts before reduction, especially tiny gaps, overlapping points, or noisy captured geometry.
 
 ### Auto Fix Normals
 
@@ -93,7 +97,7 @@ Smaller squares make distortion easier to see.
 
 Click **Create Lowpoly Preview**.
 
-ScanReady duplicates the selected high-poly scan and creates an optimized preview object.
+ScanReady cleans the selected high-poly scan, removes common mesh noise such as loose polygons or isolated vertices, then creates an optimized preview object.
 
 When the preview looks correct, continue to:
 

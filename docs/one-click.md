@@ -32,13 +32,14 @@ Instead of manually reducing the mesh, generating UVs, preparing a cage, and con
 
 When you click **ONE CLICK BAKE**, ScanReady runs the complete scan-to-asset workflow:
 
-1. Creates a lowpoly preview from the selected high-poly scan.
-2. Reduces the geometry to make the model lighter.
-3. Generates UVs for the optimized object.
-4. Creates or estimates the baking cage.
-5. Bakes texture detail from the original scan.
-6. Builds the final material setup.
-7. Saves baked textures if **Save Images** is enabled.
+1. Cleans the selected scan by removing common mesh noise such as loose polygons, floating fragments, and isolated vertices.
+2. Creates a lowpoly preview from the cleaned high-poly scan.
+3. Reduces the geometry to make the model lighter.
+4. Generates UVs for the optimized object.
+5. Creates or estimates the baking cage.
+6. Bakes texture detail from the original scan.
+7. Builds the final material setup.
+8. Saves baked textures if **Save Images** is enabled.
 
 The goal is to preserve the visual identity of the original scan while making the model easier to use in realtime projects.
 
@@ -71,9 +72,13 @@ It gives you a faster way to turn captured geometry into a cleaner, lighter, bak
 
 During the operation, ScanReady moves through the same main phases used by the manual workflow.
 
+### Cleanup
+
+Removes common scan debris before reduction, including loose polygons, floating geometry fragments, and isolated vertices.
+
 ### Preview
 
-Creates the optimized lowpoly preview.
+Cleans the selected scan and creates the optimized lowpoly preview.
 
 ### UV Mapping
 
