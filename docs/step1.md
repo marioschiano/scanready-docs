@@ -97,6 +97,10 @@ Displays a checker texture.
 
 This helps inspect UV density and distortion during later checks.
 
+<div style="width:100%; text-align:left;">
+  <img src="../img/step1-checker.gif" alt="ScanReady Show Checker preview on an optimized scan" style="max-width:820px;width:100%;">
+</div>
+
 <h3>Use Texture View</h3>
 
 Shows the model in a flat texture-oriented view without scene lighting.
