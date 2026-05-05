@@ -136,6 +136,9 @@ Smaller squares make distortion easier to see.
 Click **Create Lowpoly Preview**.
 
 ScanReady cleans the selected high-poly scan, removes common mesh noise such as loose polygons or isolated vertices, then creates an optimized preview object.
+<div style="width:100%; text-align:left;">
+  <img src="../img/step1-cleaner.gif" alt="ScanReady Checker Scale control changing checker square size" style="max-width:820px;width:100%;">
+</div>
 
 When the preview looks correct, continue to:
 
