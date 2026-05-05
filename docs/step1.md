@@ -69,6 +69,10 @@ Shows the current reduction percentage based on the selected optimization settin
 
 </div>
 
+<div style="width:100%; text-align:left;">
+  <img src="../img/step1-reduce.gif" alt="ScanReady 1.0 Optimize Reduce control updating the lowpoly preview density" style="max-width:820px;width:100%;">
+</div>
+
 ---
 
 ## View Options
