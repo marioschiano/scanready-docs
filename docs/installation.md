@@ -1,6 +1,6 @@
 # Installation
 
-ScanReady v1.0 is a Blender addon by Mario Schiano.
+ScanReady 1.0 is a Blender addon by Mario Schiano.
 
 The addon metadata declares compatibility from **Blender 3.6.0** and later. Install it like a standard Blender addon.
 
@@ -16,16 +16,16 @@ Do not extract the zip file before installing it in Blender.
 2. Go to **Edit > Preferences**.
 3. Open the **Add-ons** tab.
 4. Click **Install**.
-5. Select the ScanReady `.zip` file.
+5. Select the ScanReady 1.0 `.zip` file.
 6. Click **Install Add-on**.
 
 <p align="center">
-  <img src="../img/installation.gif" alt="Installing and enabling ScanReady from Blender Preferences" style="max-width:820px;width:100%;">
+  <img src="../img/installation.gif" alt="Installing and enabling ScanReady 1.0 from Blender Preferences" style="max-width:820px;width:100%;">
 </p>
 
 ## Enable the Addon
 
-1. Search for **ScanReady** in the Add-ons list.
+1. Search for **ScanReady 1.0** in the Add-ons list.
 2. Enable the checkbox next to the addon.
 3. Click **Save Preferences** if you want Blender to keep it enabled.
 
@@ -42,4 +42,4 @@ The panel title is shown as **Scan Ready v1.0.0**.
 - Make sure the addon is enabled in Preferences.
 - Check that the active editor is the 3D Viewport.
 - Restart Blender after enabling the addon.
-- Confirm that you installed the ScanReady `.zip`, not an extracted folder by mistake.
+- Confirm that you installed the ScanReady 1.0 `.zip`, not an extracted folder by mistake.

@@ -2,10 +2,10 @@
 
 Use this page when you want the fastest path from a heavy high-poly scan to an optimized baked asset.
 
-ScanReady is designed to simplify dense 3D scans and make them easier to use in **VR, AR, videogames, realtime viewers, and interactive Blender scenes**.
+ScanReady 1.0 is designed to simplify dense 3D scans and make them easier to use in **VR, AR, videogames, realtime viewers, and interactive Blender scenes**.
 
 <p align="center">
-  <img src="../img/hero.png" alt="ScanReady scan-to-game-ready workflow overview" style="max-width:760px;width:100%;">
+  <img src="../img/hero.png" alt="ScanReady 1.0 scan-to-game-ready workflow overview" style="max-width:760px;width:100%;">
 </p>
 
 ---
@@ -17,7 +17,7 @@ ScanReady is designed to simplify dense 3D scans and make them easier to use in 
 <div style="flex:1 1 320px; min-width:260px;">
 
 <ol>
-  <li>Open Blender and enable ScanReady.</li>
+  <li>Open Blender and enable ScanReady 1.0.</li>
   <li>Select your high-poly scan in the 3D Viewport.</li>
   <li>Open the Sidebar with <strong>N</strong>.</li>
   <li>Select the <strong>Scan Ready</strong> tab.</li>
@@ -29,7 +29,7 @@ ScanReady is designed to simplify dense 3D scans and make them easier to use in 
 </div>
 
 <div style="flex:0 0 280px; text-align:center;">
-  <img src="../img/quick-start-one-click.png" alt="ScanReady One Click Bake panel in Blender" style="width:280px; max-width:100%;">
+  <img src="../img/quick-start-one-click.png" alt="ScanReady 1.0 One Click Bake panel in Blender" style="width:280px; max-width:100%;">
 </div>
 
 </div>
@@ -42,7 +42,7 @@ ScanReady is designed to simplify dense 3D scans and make them easier to use in 
   <img src="../img/high-to-low-workflow.png" alt="High-poly scan converted into a lighter game-ready asset" style="max-width:820px;width:100%;">
 </p>
 
-ScanReady performs the main production steps for you:
+ScanReady 1.0 performs the main production steps for you:
 
 - Creates a lighter lowpoly version of the selected scan.
 - Reduces geometry to make the asset easier to manage.

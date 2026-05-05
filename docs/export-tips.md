@@ -1,6 +1,6 @@
 # Export Tips
 
-After using ScanReady, you can export the optimized baked asset for VR, AR, videogames, realtime viewers, or other 3D production workflows.
+After using ScanReady 1.0, you can export the optimized baked asset for VR, AR, videogames, realtime viewers, or other 3D production workflows.
 
 The goal is to keep the model light enough for realtime use while preserving the visual detail of the original scan through baked textures.
 
@@ -67,7 +67,7 @@ OBJ is simple, but it is less complete than glTF or FBX for modern material work
 
 ## Texture Maps
 
-Depending on your settings, ScanReady can create:
+Depending on your settings, ScanReady 1.0 can create:
 
 - Base Color texture.
 - Normal map.
@@ -213,7 +213,7 @@ Keep it as the source asset for:
 - Different texture resolutions.
 - Different optimization targets.
 
-ScanReady creates a practical production version, while the original scan remains your high-detail source.
+ScanReady 1.0 creates a practical production version, while the original scan remains your high-detail source.
 
 ---
 

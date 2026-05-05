@@ -1,12 +1,12 @@
 # Troubleshooting
 
-This page helps solve common issues when using ScanReady.
+This page helps solve common issues when using ScanReady 1.0.
 
 Scan processing can be demanding because high-poly scans, texture baking, UV generation, and memory usage all depend on the source model and system hardware.
 
 ---
 
-## The ScanReady Panel Does Not Appear
+## The ScanReady 1.0 Panel Does Not Appear
 
 Check the following:
 

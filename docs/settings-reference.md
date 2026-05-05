@@ -1,6 +1,6 @@
 # Settings Reference
 
-This page summarizes the main ScanReady settings and what they do.
+This page summarizes the main ScanReady 1.0 settings and what they do.
 
 Use it as a quick reference when tuning scans for VR, videogames, realtime visualization, or general Blender optimization.
 
@@ -34,7 +34,7 @@ Use it as a quick reference when tuning scans for VR, videogames, realtime visua
 
 | Setting | Description | When to Adjust |
 |---|---|---|
-| **UV Method** | ScanReady uses Smart UV Project for UV generation. | This is the UV method used by the addon workflow. |
+| **UV Method** | ScanReady 1.0 uses Smart UV Project for UV generation. | This is the UV method used by the addon workflow. |
 | **Smart UV Preset** | Applies a recommended Smart UV angle. | Use it as a quick starting point for common scan types. |
 | **Smart UV Angle** | Controls how aggressively Smart UV Project splits islands. | Lower values create more cuts. Higher values create larger islands. |
 | **Auto Pack UV** | Packs UV islands automatically after unwrap. | Leave enabled unless you want to arrange UV islands manually. |

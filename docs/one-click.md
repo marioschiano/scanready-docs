@@ -4,7 +4,7 @@
 
   <div style="flex:1 1 300px; min-width:260px;">
     <p>
-      <strong>ONE CLICK BAKE</strong> is the fastest ScanReady workflow.
+      <strong>ONE CLICK BAKE</strong> is the fastest ScanReady 1.0 workflow.
     </p>
     <p>
       It is designed to convert a heavy high-poly scan into a lighter baked asset with minimal setup.
@@ -13,7 +13,7 @@
   </div>
 
   <div style="flex:0 0 240px; text-align:center;">
-    <img src="../img/quick-start-one-click.png" alt="ScanReady One Click Bake button in Blender" style="width:240px; max-width:100%;">
+    <img src="../img/quick-start-one-click.png" alt="ScanReady 1.0 One Click Bake button in Blender" style="width:240px; max-width:100%;">
   </div>
 
 </div>
@@ -22,13 +22,13 @@
   <img src="../img/one-click-bake.gif" alt="Animated One Click Bake workflow in Blender" style="max-width:820px;width:100%;">
 </p>
 
-Instead of manually reducing the mesh, generating UVs, preparing a cage, and configuring baking, ScanReady runs the main process automatically.
+Instead of manually reducing the mesh, generating UVs, preparing a cage, and configuring baking, ScanReady 1.0 runs the main process automatically.
 
 ---
 
 ## What One Click Bake Does
 
-When you click **ONE CLICK BAKE**, ScanReady runs the complete scan-to-asset workflow:
+When you click **ONE CLICK BAKE**, ScanReady 1.0 runs the complete scan-to-asset workflow:
 
 1. Cleans the selected scan by removing common mesh noise such as loose polygons, floating fragments, and isolated vertices.
 2. Creates a lowpoly preview from the cleaned high-poly scan.
@@ -68,7 +68,7 @@ It gives you a faster way to turn captured geometry into a cleaner, lighter, bak
 
 ## Workflow Phases
 
-During the operation, ScanReady moves through the same main phases used by the manual workflow.
+During the operation, ScanReady 1.0 moves through the same main phases used by the manual workflow.
 
 ### Cleanup
 

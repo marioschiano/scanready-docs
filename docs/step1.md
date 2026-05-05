@@ -4,7 +4,7 @@ Step 1 creates an optimized lowpoly preview from the selected high-poly scan.
 
 This is the first important step when preparing a scanned object for **VR, AR, videogames, realtime visualization, or interactive scenes**. A raw scan can contain a very high number of polygons, making it difficult to move, preview, export, or use in realtime.
 
-ScanReady first cleans common scan debris, then reduces the model while keeping the overall shape and visual identity of the original scan.
+ScanReady 1.0 first cleans common scan debris, then reduces the model while keeping the overall shape and visual identity of the original scan.
 
 This cleanup can remove loose polygons, floating fragments, isolated vertices, and small unwanted mesh artifacts before the lowpoly preview is generated.
 
@@ -64,7 +64,7 @@ Shows the current reduction percentage based on the selected optimization settin
 </div>
 
 <div style="flex:0 0 320px; text-align:center;">
-  <img src="../img/step1-preview-reduce.png" alt="ScanReady Step 1 Preview Reduce panel with Create Lowpoly Preview button" style="width:320px; max-width:100%;">
+  <img src="../img/step1-preview-reduce.png" alt="ScanReady 1.0 Step 1 Preview Reduce panel with Create Lowpoly Preview button" style="width:320px; max-width:100%;">
 </div>
 
 </div>
@@ -86,7 +86,7 @@ Use it to check whether the mesh is still too dense or has been reduced too much
 </div>
 
 <div style="width:100%; text-align:left;">
-  <img src="../img/step1-wireframe.gif" alt="ScanReady Show Wireframe preview on an optimized scan" style="max-width:820px;width:100%;">
+  <img src="../img/step1-wireframe.gif" alt="ScanReady 1.0 Show Wireframe preview on an optimized scan" style="max-width:820px;width:100%;">
 </div>
 
 </div>
@@ -98,7 +98,7 @@ Displays a checker texture.
 This helps inspect UV density and distortion during later checks.
 
 <div style="width:100%; text-align:left;">
-  <img src="../img/step1-checker.gif" alt="ScanReady Show Checker preview on an optimized scan" style="max-width:820px;width:100%;">
+  <img src="../img/step1-checker.gif" alt="ScanReady 1.0 Show Checker preview on an optimized scan" style="max-width:820px;width:100%;">
 </div>
 
 <h3>Use Texture View</h3>
@@ -108,7 +108,7 @@ Shows the model in a flat texture-oriented view without scene lighting.
 This is useful when inspecting baked or previewed texture results.
 
 <div style="width:100%; text-align:left;">
-  <img src="../img/step1-use-texture-view.gif" alt="ScanReady Use Texture View preview on an optimized scan" style="max-width:820px;width:100%;">
+  <img src="../img/step1-use-texture-view.gif" alt="ScanReady 1.0 Use Texture View preview on an optimized scan" style="max-width:820px;width:100%;">
 </div>
 
 <h3>Checker Mix / Checker Scale</h3>
@@ -132,11 +132,11 @@ Smaller squares make UV stretching and distortion easier to notice. Larger squar
 </div>
 
 <div style="flex:0 0 320px; text-align:center;">
-  <img src="../img/step1-checker-mix-scale.png" alt="ScanReady Checker Mix and Checker Scale controls" style="width:320px; max-width:100%;">
+  <img src="../img/step1-checker-mix-scale.png" alt="ScanReady 1.0 Checker Mix and Checker Scale controls" style="width:320px; max-width:100%;">
 </div>
 
 <div style="width:100%; text-align:left; margin-bottom:20px;">
-  <img src="../img/step1-checker-mix.gif" alt="ScanReady Checker Mix control adjusting checker overlay strength" style="max-width:820px;width:100%;">
+  <img src="../img/step1-checker-mix.gif" alt="ScanReady 1.0 Checker Mix control adjusting checker overlay strength" style="max-width:820px;width:100%;">
   <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
     Checker Mix adjusts how visible the checker overlay is on top of the model surface.
   </p>
@@ -145,21 +145,24 @@ Smaller squares make UV stretching and distortion easier to notice. Larger squar
 
 
 <div style="width:100%; text-align:left; margin-bottom:20px;">
-  <img src="../img/step1-checker-scale.gif" alt="ScanReady Checker Scale control changing checker square size" style="max-width:820px;width:100%;">
+  <img src="../img/step1-checker-scale.gif" alt="ScanReady 1.0 Checker Scale control changing checker square size" style="max-width:820px;width:100%;">
   <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
     Checker Scale changes the size of the checker pattern to make UV stretching easier to inspect.
   </p>
 </div>
+
 </div>
+
 ---
 
 ## Action
 
 Click **Create Lowpoly Preview**.
 
-ScanReady cleans the selected high-poly scan, removes common mesh noise such as loose polygons or isolated vertices, then creates an optimized preview object.
+ScanReady 1.0 cleans the selected high-poly scan, removes common mesh noise such as loose polygons or isolated vertices, then creates an optimized preview object.
+
 <div style="width:100%; text-align:left;">
-  <img src="../img/step1-cleaner.gif" alt="ScanReady Checker Scale control changing checker square size" style="max-width:820px;width:100%;">
+  <img src="../img/step1-cleaner.gif" alt="ScanReady 1.0 mesh cleanup before lowpoly preview" style="max-width:820px;width:100%;">
 </div>
 
 When the preview looks correct, continue to:

@@ -14,7 +14,7 @@ A simplified mesh is lighter and easier to manage, but it still needs texture co
 
 UVs define how the surface of the 3D model is unwrapped into 2D space.
 
-Without UVs, ScanReady cannot properly bake texture information from the original scan onto the optimized mesh.
+Without UVs, ScanReady 1.0 cannot properly bake texture information from the original scan onto the optimized mesh.
 
 Good UVs help produce:
 
@@ -34,20 +34,20 @@ If the cage is too small, some details may be missed.
 
 If the cage is too large, the bake may capture details from the wrong areas.
 
-ScanReady includes cage tools to make this process faster and easier.
+ScanReady 1.0 includes cage tools to make this process faster and easier.
 
 ---
 
 ## UV Method
 
-ScanReady uses **Smart UV Project** to generate UVs for the optimized mesh.
+ScanReady 1.0 uses **Smart UV Project** to generate UVs for the optimized mesh.
 
 Smart UV Project is Blender's automatic UV unwrap method. It is useful for scanned objects because it can quickly create UV islands without requiring manual seam placement.
 
-ScanReady exposes Smart UV controls so you can adjust how the unwrap behaves before baking.
+ScanReady 1.0 exposes Smart UV controls so you can adjust how the unwrap behaves before baking.
 
 <p align="center">
-  <img src="../img/hero.png" alt="ScanReady workflow showing clean scan, optimized mesh, smart UVs, and texture baking" style="max-width:680px;width:100%;">
+  <img src="../img/hero.png" alt="ScanReady 1.0 workflow showing clean scan, optimized mesh, smart UVs, and texture baking" style="max-width:680px;width:100%;">
 </p>
 
 ### Smart UV Project

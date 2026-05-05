@@ -1,4 +1,4 @@
-# ScanReady
+# ScanReady 1.0
 
 <p align="center">
   <img src="img/hero.png" style="max-width:620px;width:100%;">
@@ -6,9 +6,9 @@
 
 <br>
 
-ScanReady is a Blender addon designed to turn heavy 3D scans into optimized, game-ready assets.
+ScanReady 1.0 is a Blender addon designed to turn heavy 3D scans into optimized, game-ready assets.
 
-High-poly scans from photogrammetry or 3D capture can be too dense for realtime use. ScanReady helps simplify those models, generate UVs, prepare baking, and create lighter assets that are easier to use in **VR, AR, videogames, realtime visualization, and interactive environments**.
+High-poly scans from photogrammetry or 3D capture can be too dense for realtime use. ScanReady 1.0 helps simplify those models, generate UVs, prepare baking, and create lighter assets that are easier to use in **VR, AR, videogames, realtime visualization, and interactive environments**.
 
 <br>
 
@@ -18,7 +18,7 @@ High-poly scans from photogrammetry or 3D capture can be too dense for realtime 
 
 ---
 
-## Why ScanReady?
+## Why ScanReady 1.0?
 
 3D scans are often beautiful but difficult to use in production.
 
@@ -31,7 +31,7 @@ They can contain:
 - Materials or textures that need to be transferred to a lighter object.
 - Bake settings that are time-consuming to prepare manually.
 
-ScanReady simplifies this process inside Blender.
+ScanReady 1.0 simplifies this process inside Blender.
 
 It helps you convert a heavy scan into a lighter, cleaner, baked asset that can be used more easily in realtime workflows.
 
@@ -39,9 +39,9 @@ It helps you convert a heavy scan into a lighter, cleaner, baked asset that can 
 
 ## One Click Bake
 
-The fastest way to use ScanReady is the **ONE CLICK BAKE** workflow.
+The fastest way to use ScanReady 1.0 is the **ONE CLICK BAKE** workflow.
 
-ScanReady can automatically perform:
+ScanReady 1.0 can automatically perform:
 
 - Mesh optimization.
 - Lowpoly preview creation.
@@ -78,7 +78,7 @@ Start with One Click Bake for most scans. Use the manual steps when you need mor
 
 ## Workflow Overview
 
-ScanReady follows a simple 3-step workflow.
+ScanReady 1.0 follows a simple 3-step workflow.
 
 ### 1. Preview / Reduce
 
@@ -102,7 +102,7 @@ The result is a lighter asset that keeps much of the visual detail of the scan w
 
 ## Recommended Use Cases
 
-ScanReady is ideal for:
+ScanReady 1.0 is ideal for:
 
 - Photogrammetry scans.
 - Cultural heritage objects.
@@ -117,9 +117,9 @@ ScanReady is ideal for:
 
 ---
 
-## What ScanReady Creates
+## What ScanReady 1.0 Creates
 
-After the workflow, ScanReady can generate:
+After the workflow, ScanReady 1.0 can generate:
 
 - Optimized lowpoly mesh.
 - UV-ready object.

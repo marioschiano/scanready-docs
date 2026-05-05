@@ -2,12 +2,12 @@
 
 Advanced settings give you fine control over mesh cleanup, UV generation, cage projection, baking quality, image output, presets, and memory safety.
 
-You do not need to change every setting to use ScanReady.
+You do not need to change every setting to use ScanReady 1.0.
 
 For most scans, start with the default values. Adjust advanced settings when you need more control over performance, quality, or bake accuracy.
 
 <p align="center">
-  <img src="../img/quick-start-one-click.png" alt="ScanReady panel with workflow sections and progress controls" style="width:280px; max-width:100%;">
+  <img src="../img/quick-start-one-click.png" alt="ScanReady 1.0 panel with workflow sections and progress controls" style="width:280px; max-width:100%;">
 </p>
 
 ---
@@ -239,7 +239,7 @@ Relative paths such as `//bake/` are saved next to the current Blender file.
 
 ## Presets
 
-ScanReady can save, load, and delete named presets.
+ScanReady 1.0 can save, load, and delete named presets.
 
 Presets store the current workflow settings so you can reuse them later.
 
@@ -259,7 +259,7 @@ Presets help keep results consistent across multiple assets.
 
 The panel includes workflow status and global progress.
 
-During One Click Bake, ScanReady reports the active phase:
+During One Click Bake, ScanReady 1.0 reports the active phase:
 
 - Preview.
 - UV Mapping.
