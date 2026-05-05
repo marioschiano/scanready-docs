@@ -135,15 +135,20 @@ Smaller squares make UV stretching and distortion easier to notice. Larger squar
   <img src="../img/step1-checker-mix-scale.png" alt="ScanReady Checker Mix and Checker Scale controls" style="width:320px; max-width:100%;">
 </div>
 
-</div>
-<div style="width:100%; text-align:left;">
+<div style="width:100%; text-align:left; margin-bottom:20px;">
   <img src="../img/step1-checker-mix.gif" alt="ScanReady Checker Mix control adjusting checker overlay strength" style="max-width:820px;width:100%;">
+  <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
+    Checker Mix adjusts how visible the checker overlay is on top of the model surface.
+  </p>
 </div>
 
 
 
-<div style="width:100%; text-align:left;">
+<div style="width:100%; text-align:left; margin-bottom:20px;">
   <img src="../img/step1-checker-scale.gif" alt="ScanReady Checker Scale control changing checker square size" style="max-width:820px;width:100%;">
+  <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
+    Checker Scale changes the size of the checker pattern to make UV stretching easier to inspect.
+  </p>
 </div>
 
 ---
