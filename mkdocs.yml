@@ -6,7 +6,7 @@ theme:
     scheme: slate
 
 nav:
-  - Home: index.md
+  - ScanReady 1.0: index.md
 
   - Getting Started:
       - Quick Start: quick-start.md
