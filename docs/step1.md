@@ -111,23 +111,32 @@ This is useful when inspecting baked or previewed texture results.
   <img src="../img/step1-use-texture-view.gif" alt="ScanReady Use Texture View preview on an optimized scan" style="max-width:820px;width:100%;">
 </div>
 
-<h3>Checker Mix</h3>
+<h3>Checker Mix / Checker Scale</h3>
 
-Controls how strongly the checker overlay appears.
+<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin-bottom:24px;">
 
-<div style="width:100%; text-align:left;">
-  <img src="../img/step1-checker-mix.gif" alt="ScanReady Checker Mix control adjusting checker overlay strength" style="max-width:820px;width:100%;">
+<div style="flex:1 1 360px; min-width:260px;">
+
+<p>
+<strong>Checker Mix</strong> controls how strongly the checker overlay appears on the model.
+</p>
+
+<p>
+<strong>Checker Scale</strong> changes the size of the checker squares.
+</p>
+
+<p>
+Smaller squares make UV stretching and distortion easier to notice. Larger squares are useful for a quick general check.
+</p>
+
 </div>
+
 <div style="flex:0 0 320px; text-align:center;">
-  <img src="../img/step1-checker mixer-scale.png" alt="ScanReady Step 1 Preview Reduce panel with Create Lowpoly Preview button" style="width:320px; max-width:100%;">
+  <img src="../img/step1-checker-mix-scale.png" alt="ScanReady Checker Mix and Checker Scale controls" style="width:320px; max-width:100%;">
 </div>
 
+</div>
 
-<h3>Checker Scale</h3>
-
-Changes the size of the checker squares.
-
-Smaller squares make distortion easier to see.
 
 <div style="width:100%; text-align:left;">
   <img src="../img/step1-checker-scale.gif" alt="ScanReady Checker Scale control changing checker square size" style="max-width:820px;width:100%;">
