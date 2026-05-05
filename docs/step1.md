@@ -150,7 +150,7 @@ Smaller squares make UV stretching and distortion easier to notice. Larger squar
     Checker Scale changes the size of the checker pattern to make UV stretching easier to inspect.
   </p>
 </div>
-
+</div>
 ---
 
 ## Action
