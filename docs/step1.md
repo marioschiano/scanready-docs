@@ -136,6 +136,10 @@ Smaller squares make UV stretching and distortion easier to notice. Larger squar
 </div>
 
 </div>
+<div style="width:100%; text-align:left;">
+  <img src="../img/step1-checker-mix.gif" alt="ScanReady Checker Mix control adjusting checker overlay strength" style="max-width:820px;width:100%;">
+</div>
+
 
 
 <div style="width:100%; text-align:left;">
