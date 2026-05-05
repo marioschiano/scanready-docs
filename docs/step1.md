@@ -118,6 +118,10 @@ Controls how strongly the checker overlay appears.
 <div style="width:100%; text-align:left;">
   <img src="../img/step1-checker-mix.gif" alt="ScanReady Checker Mix control adjusting checker overlay strength" style="max-width:820px;width:100%;">
 </div>
+<div style="flex:0 0 320px; text-align:center;">
+  <img src="../img/step1-checker mixer-scale.png" alt="ScanReady Step 1 Preview Reduce panel with Create Lowpoly Preview button" style="width:320px; max-width:100%;">
+</div>
+
 
 <h3>Checker Scale</h3>
 
