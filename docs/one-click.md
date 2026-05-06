@@ -27,6 +27,15 @@ By default, ScanReady starts from an **Optimize / Reduce** value of **0.10**. Th
 
 This default works well for many VR, game, and realtime assets. If the result needs more or less detail, adjust the value manually in **Step 1 - Preview / Reduce** after creating the lowpoly preview.
 
+One Click Bake is automatic, but the result can still be refined afterward.
+
+If the final model looks too heavy, or if it has been optimized too much and loses important shape detail, go back to **Step 1 - Preview / Reduce**. Adjust **Optimize / Reduce** or **Final Faces**, then click **Create Lowpoly Preview** again.
+
+ScanReady will rebuild the optimized preview with the new settings, so you can test a lighter or more detailed version before continuing with UVs and baking again.
+
+
+This default works well for many VR, game, and realtime assets. If the result needs more or less detail, adjust the value manually in **Step 1 - Preview / Reduce** after creating the lowpoly preview.
+
 
 ---
 
