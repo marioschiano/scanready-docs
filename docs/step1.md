@@ -69,6 +69,12 @@ After clicking <strong>Create Lowpoly Preview</strong>, you can still adjust thi
 <p>
 Use lower values for lightweight VR or game assets. Use higher values when the object needs to preserve more silhouette or shape detail.
 </p>
+<div style="width:100%; text-align:left; margin-bottom:20px;">
+  <img src="../img/step1-slider_reduce.gif" alt="ScanReady 1.0 Optimize Reduce slider updating the lowpoly preview" style="max-width:820px;width:100%;">
+  <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
+    After the lowpoly preview is created, changing Optimize / Reduce updates the preview mesh so you can quickly test lighter or more detailed versions.
+  </p>
+</div>
 
 
 <h3>Reduction</h3>
@@ -172,6 +178,7 @@ Smaller squares make UV stretching and distortion easier to notice. Larger squar
 ## Action
 
 Click **Create Lowpoly Preview**.
+
 If the preview is too heavy or too simplified, adjust **Optimize / Reduce** or **Final Faces** and create the lowpoly preview again.
 
 
