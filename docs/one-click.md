@@ -34,9 +34,6 @@ If the final model looks too heavy, or if it has been optimized too much and los
 ScanReady will rebuild the optimized preview with the new settings, so you can test a lighter or more detailed version before continuing with UVs and baking again.
 
 
-This default works well for many VR, game, and realtime assets. If the result needs more or less detail, adjust the value manually in **Step 1 - Preview / Reduce** after creating the lowpoly preview.
-
-
 ---
 
 ## What One Click Bake Does
