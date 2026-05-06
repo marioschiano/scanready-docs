@@ -52,12 +52,21 @@ Use a lower value for lightweight VR or game assets. Use a higher value when the
 <h3>Optimize / Reduce</h3>
 
 <p>
-Controls the reduction strength.
+Controls how strongly ScanReady reduces the selected high-poly scan.
 </p>
 
 <p>
-Lower values create a stronger reduction and a lighter object. Higher values preserve more geometry.
+The default value is <strong>0.10</strong>. This keeps roughly <strong>10% of the original polygons</strong>, creating an optimized preview with about <strong>90% fewer polygons</strong>.
 </p>
+
+<p>
+After clicking <strong>Create Lowpoly Preview</strong>, you can still adjust this value. When you change it, ScanReady updates the lowpoly preview mesh so you can quickly test a lighter or more detailed result.
+</p>
+
+<p>
+Use lower values for lightweight VR or game assets. Use higher values when the object needs to preserve more silhouette or shape detail.
+</p>
+
 
 <h3>Reduction</h3>
 
