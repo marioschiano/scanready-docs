@@ -39,7 +39,7 @@ ScanReady 1.0 is designed to simplify dense 3D scans and make them easier to use
 ## What Happens Automatically
 
 <p align="center">
-  <img src="../img/high-to-low-workflow.png" alt="High-poly scan converted into a lighter game-ready asset" style="max-width:820px;width:100%;">
+  <img src="../img/one-click-bake.gif" alt="ScanReady 1.0 automatically optimizes the Arch of Trajan scan into a lighter baked asset" style="max-width:820px;width:100%;">
 </p>
 
 ScanReady 1.0 performs the main production steps for you:
