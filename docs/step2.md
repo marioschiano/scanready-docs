@@ -24,6 +24,10 @@ Without a fresh UV layout, ScanReady 1.0 cannot properly bake texture informatio
 
 Creating new UVs on the lowpoly mesh is a necessary step. Clean and coherent UVs are what allow ScanReady 1.0 to transfer textures and details from the high-poly version to the optimized asset, producing a clean, readable, and accurate bake.
 
+New UVs also help use texture space more efficiently. Scanned models often come with several materials and UV layouts that do not fill the full 0-1 UV space well, which wastes texture resolution.
+
+After optimization, ScanReady 1.0 can prepare the lowpoly asset with a cleaner UV layout that uses the available 0-1 space better. In many cases, a scan that originally used multiple poorly packed materials can be baked into a simpler material setup with a better packed texture.
+
 Good UVs help produce:
 
 - Cleaner baked textures.
