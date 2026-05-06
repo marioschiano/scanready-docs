@@ -23,6 +23,7 @@
 </p>
 
 Instead of manually reducing the mesh, generating UVs, preparing a cage, and configuring baking, ScanReady 1.0 runs the main process automatically.
+
 By default, ScanReady starts from an **Optimize / Reduce** value of **0.10**. This means the lowpoly preview keeps roughly **10% of the original polygons**, producing about **90% fewer polygons**.
 
 This default works well for many VR, game, and realtime assets. If the result needs more or less detail, adjust the value manually in **Step 1 - Preview / Reduce** after creating the lowpoly preview.
