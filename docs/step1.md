@@ -11,6 +11,9 @@ This cleanup can remove loose polygons, floating fragments, isolated vertices, a
 <div style="width:100%; text-align:left;">
   <img src="../img/step1-reduce.gif" alt="ScanReady 1.0 Optimize Reduce control updating the lowpoly preview density" style="max-width:820px;width:100%;">
 </div>
+<p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
+  Optimize / Reduce controls how much geometry is kept in the lowpoly preview. The default value of 0.10 creates a preview with about 90% fewer polygons.
+</p>
 
 ---
 
@@ -169,6 +172,8 @@ Smaller squares make UV stretching and distortion easier to notice. Larger squar
 ## Action
 
 Click **Create Lowpoly Preview**.
+If the preview is too heavy or too simplified, adjust **Optimize / Reduce** or **Final Faces** and create the lowpoly preview again.
+
 
 ScanReady 1.0 cleans the selected high-poly scan, removes common mesh noise such as loose polygons or isolated vertices, then creates an optimized preview object.
 
