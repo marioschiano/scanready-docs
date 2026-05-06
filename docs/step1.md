@@ -14,6 +14,29 @@ This cleanup can remove loose polygons, floating fragments, isolated vertices, a
 <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
   Optimize / Reduce controls how much geometry is kept in the lowpoly preview. The default value of 0.10 creates a preview with about 90% fewer polygons.
 </p>
+<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin-top:24px; margin-bottom:28px;">
+
+<div style="flex:1 1 320px; min-width:260px;">
+
+<p>
+<strong>Optimize / Reduce</strong> starts at <strong>0.10</strong> by default.
+</p>
+
+<p>
+This keeps about <strong>10% of the original polygons</strong> and removes roughly <strong>90% of the geometry</strong>, creating a lighter lowpoly preview.
+</p>
+
+<p>
+After clicking <strong>Create Lowpoly Preview</strong>, you can change this value. ScanReady updates the preview mesh so you can compare a lighter or more detailed result.
+</p>
+
+</div>
+
+<div style="flex:0 0 360px; text-align:center;">
+  <img src="../img/step1-slider_reduce.gif" alt="ScanReady 1.0 Optimize Reduce slider updating the lowpoly preview value" style="width:360px; max-width:100%;">
+</div>
+
+</div>
 
 ---
 
