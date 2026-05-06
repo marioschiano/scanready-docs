@@ -64,6 +64,7 @@ For a first test, keep most defaults and only check:
 - **Texture Size** for the desired output resolution.
 - **Bake Base Color** if you need the original color texture.
 - **Bake Normal** if you want to preserve surface detail.
+- **Bake Roughness** if the original high-poly material has a roughness texture that should be transferred.
 - **Bake Occlusion** if you want an ambient occlusion map.
 - **Output Folder** if you want textures saved to a specific location.
 
@@ -91,7 +92,7 @@ Use the manual workflow if:
 - The preview mesh is too reduced and loses important shape.
 - UVs show stretching or too many islands.
 - The cage misses details or covers the scan incorrectly.
-- You need Normal or AO maps with specific settings.
+- You need Normal, Roughness, or AO maps with specific settings.
 - You are processing a large scan that needs safer memory settings.
 
 Manual steps give you more control over the same process used by One Click Bake.

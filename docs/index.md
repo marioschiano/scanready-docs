@@ -70,7 +70,7 @@ Start with One Click Bake for most scans. Use the manual steps when you need mor
 | **Smart UV Project** | Uses Blender Smart UV Project to generate UVs for the optimized mesh. |
 | **Auto Cage** | Estimates cage extrusion for high-to-low baking. |
 | **Texture Baking** | Transfers visual detail from the original scan to the optimized mesh. |
-| **Base Color, Normal, and AO Maps** | Supports common texture maps used in game and realtime pipelines. |
+| **Base Color, Normal, Roughness, and AO Maps** | Supports common texture maps used in game and realtime pipelines. |
 | **Memory Safety** | Includes safer bake options for heavy scenes and large scans. |
 | **Reusable Presets** | Saves workflow settings for repeated scan processing. |
 

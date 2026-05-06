@@ -124,7 +124,7 @@ For best results:
 - Select one high-poly scan object in the 3D Viewport.
 - Set **Final Faces** if you know the target mesh density.
 - Choose **Texture Size** based on the level of detail you need.
-- Enable **Bake Base Color**, **Bake Normal**, or **Bake Occlusion** depending on the maps you want.
+- Enable **Bake Base Color**, **Bake Normal**, **Bake Roughness**, or **Bake Occlusion** depending on the maps you want.
 - Set the **Output Folder** if you want texture files saved to disk.
 
 ---
@@ -137,7 +137,7 @@ After the workflow completes, inspect:
 - The object silhouette.
 - The baked material.
 - The saved texture files.
-- The Normal and AO maps if enabled.
+- The Normal, Roughness, and AO maps if enabled.
 - Any missing details caused by cage distance or bake settings.
 
 If the result needs adjustment, use the manual workflow:

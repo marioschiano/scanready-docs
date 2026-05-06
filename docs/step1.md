@@ -113,6 +113,8 @@ Shows the current reduction percentage based on the selected optimization settin
 
 </div>
 
+---
+
 ## View Options
 
 <div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
