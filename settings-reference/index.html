@@ -1,0 +1,1713 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../advanced/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Settings Reference - ScanReady 1.0 Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#settings-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ScanReady 1.0 Documentation" class="md-header__button md-logo" aria-label="ScanReady 1.0 Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ScanReady 1.0 Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Settings Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ScanReady 1.0 Documentation" class="md-nav__button md-logo" aria-label="ScanReady 1.0 Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ScanReady 1.0 Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ScanReady 1.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../one-click/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    One Click Bake
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workflow
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 1 - Preview / Reduce
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 2 - UV / Cage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 3 - Bake / Output
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Production
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Production
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Use Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../export-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Export Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Help
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Help
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings Reference
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mesh-and-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mesh and Reduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-and-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        View and Preview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uv-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cage-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texture-and-bake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Texture and Bake
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ambient-occlusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ambient Occlusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memory Safety
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-starting-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Starting Points
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recommended Starting Points">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lightweight-vr-asset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lightweight VR Asset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#game-prop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Game Prop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close-up-presentation-asset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Close-Up Presentation Asset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Rule
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mesh-and-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mesh and Reduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-and-preview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        View and Preview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uv-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cage-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texture-and-bake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Texture and Bake
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ambient-occlusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ambient Occlusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memory Safety
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-starting-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Starting Points
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recommended Starting Points">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lightweight-vr-asset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lightweight VR Asset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#game-prop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Game Prop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close-up-presentation-asset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Close-Up Presentation Asset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Rule
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="settings-reference">Settings Reference</h1>
+<p>This page summarizes the main ScanReady 1.0 settings and what they do.</p>
+<p>Use it as a quick reference when tuning scans for VR, videogames, realtime visualization, or general Blender optimization.</p>
+<hr />
+<h2 id="mesh-and-reduction">Mesh and Reduction</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>When to Adjust</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Final Faces</strong></td>
+<td>Target face count for the optimized lowpoly mesh.</td>
+<td>Lower it for lighter VR/game assets. Raise it to preserve silhouette detail.</td>
+</tr>
+<tr>
+<td><strong>Optimize / Reduce</strong></td>
+<td>Controls how strongly the mesh is reduced.</td>
+<td>Lower values create stronger reduction. Higher values keep more geometry.</td>
+</tr>
+<tr>
+<td><strong>Weld Distance</strong></td>
+<td>Merges vertices that are very close together.</td>
+<td>Use it to clean small scan artifacts, tiny gaps, or overlapping points.</td>
+</tr>
+<tr>
+<td><strong>Auto Fix Normals</strong></td>
+<td>Recalculates high mesh normals before preview creation.</td>
+<td>Enable it when the scan has inverted normals or shading artifacts.</td>
+</tr>
+<tr>
+<td><strong>Recalculate Outside Normals</strong></td>
+<td>Manually recalculates normals outside.</td>
+<td>Use it when the mesh appears inside-out or has broken shading.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="view-and-preview">View and Preview</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>When to Adjust</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Show Wireframe</strong></td>
+<td>Displays the wireframe overlay on the preview object.</td>
+<td>Use it to inspect topology density and reduction quality.</td>
+</tr>
+<tr>
+<td><strong>Show Checker</strong></td>
+<td>Displays a checker texture for inspection.</td>
+<td>Use it to check UV distortion and stretching.</td>
+</tr>
+<tr>
+<td><strong>Use Texture View</strong></td>
+<td>Shows the model in a flat texture-oriented view.</td>
+<td>Use it to inspect baked or previewed texture results without scene lighting.</td>
+</tr>
+<tr>
+<td><strong>Checker Mix</strong></td>
+<td>Controls checker overlay strength.</td>
+<td>Lower it when you want to see more of the original texture.</td>
+</tr>
+<tr>
+<td><strong>Checker Scale</strong></td>
+<td>Changes checker square size.</td>
+<td>Use smaller squares to reveal distortion more clearly.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="uv-settings">UV Settings</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>When to Adjust</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>UV Method</strong></td>
+<td>ScanReady 1.0 uses Smart UV Project for UV generation.</td>
+<td>This is the UV method used by the addon workflow.</td>
+</tr>
+<tr>
+<td><strong>Smart UV Preset</strong></td>
+<td>Applies a recommended Smart UV angle.</td>
+<td>Use it as a quick starting point for common scan types.</td>
+</tr>
+<tr>
+<td><strong>Smart UV Angle</strong></td>
+<td>Controls how aggressively Smart UV Project splits islands.</td>
+<td>Lower values create more cuts. Higher values create larger islands.</td>
+</tr>
+<tr>
+<td><strong>Auto Pack UV</strong></td>
+<td>Packs UV islands automatically after unwrap.</td>
+<td>Leave enabled unless you want to arrange UV islands manually.</td>
+</tr>
+<tr>
+<td><strong>UV Padding</strong></td>
+<td>Adds spacing between UV islands.</td>
+<td>Increase it to reduce texture bleeding and visible seams.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="cage-settings">Cage Settings</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>When to Adjust</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Show Cage</strong></td>
+<td>Displays the cage preview.</td>
+<td>Use it before baking to inspect projection coverage.</td>
+</tr>
+<tr>
+<td><strong>Auto Cage Extrusion</strong></td>
+<td>Automatically estimates cage extrusion.</td>
+<td>Use it when you want a fast cage setup.</td>
+</tr>
+<tr>
+<td><strong>Cage Extrusion</strong></td>
+<td>Manual cage distance.</td>
+<td>Increase it if details are missing. Decrease it if wrong areas are captured.</td>
+</tr>
+<tr>
+<td><strong>Cage Alpha</strong></td>
+<td>Controls cage preview opacity.</td>
+<td>Adjust it only for viewport visibility. It does not affect the bake.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="texture-and-bake">Texture and Bake</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>When to Adjust</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Texture Size</strong></td>
+<td>Sets baked texture resolution.</td>
+<td>Raise it for close-up assets. Lower it for lightweight VR/game assets.</td>
+</tr>
+<tr>
+<td><strong>Bake Materials</strong></td>
+<td>Splits the bake into multiple material groups.</td>
+<td>Increase for large scans that need more texture detail.</td>
+</tr>
+<tr>
+<td><strong>Bake Samples</strong></td>
+<td>Sets Cycles bake sample count.</td>
+<td>Raise it for cleaner bakes, especially AO. Lower it for faster tests.</td>
+</tr>
+<tr>
+<td><strong>Bake Margin</strong></td>
+<td>Adds padding around baked UV islands.</td>
+<td>Increase it to reduce seams and texture bleeding.</td>
+</tr>
+<tr>
+<td><strong>Bake Base Color</strong></td>
+<td>Bakes the main color texture.</td>
+<td>Keep enabled when preserving original scan color.</td>
+</tr>
+<tr>
+<td><strong>Bake Normal</strong></td>
+<td>Bakes a normal map.</td>
+<td>Enable it to preserve surface detail without heavy geometry.</td>
+</tr>
+<tr>
+<td><strong>Bake Occlusion</strong></td>
+<td>Bakes an Ambient Occlusion map.</td>
+<td>Enable it to add depth and contact shadow detail.</td>
+</tr>
+<tr>
+<td><strong>Normal Strength</strong></td>
+<td>Controls the Normal Map node strength.</td>
+<td>Adjust it if the normal detail looks too weak or too strong.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="ambient-occlusion">Ambient Occlusion</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>When to Adjust</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AO Source</strong></td>
+<td>Chooses how AO is baked.</td>
+<td>Use high-to-low for scan detail transfer, or low-only for simpler AO.</td>
+</tr>
+<tr>
+<td><strong>AO Auto Distance</strong></td>
+<td>Automatically calculates AO distance from model size.</td>
+<td>Leave enabled for most assets.</td>
+</tr>
+<tr>
+<td><strong>AO Distance</strong></td>
+<td>Manual AO ray distance.</td>
+<td>Adjust when automatic distance gives AO that is too strong or too weak.</td>
+</tr>
+<tr>
+<td><strong>AO Samples</strong></td>
+<td>Controls AO bake sample count.</td>
+<td>Raise it for cleaner AO. Lower it for faster baking.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="output-settings">Output Settings</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>When to Adjust</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Save Images</strong></td>
+<td>Saves baked textures to disk.</td>
+<td>Enable it when exporting to game engines, archives, or external tools.</td>
+</tr>
+<tr>
+<td><strong>Image Format</strong></td>
+<td>Chooses JPG, PNG, or TIFF.</td>
+<td>Use JPG for compact color maps, PNG for lossless output, TIFF for high precision.</td>
+</tr>
+<tr>
+<td><strong>JPG Quality</strong></td>
+<td>Controls JPG compression quality.</td>
+<td>Raise it for better image quality. Lower it for smaller files.</td>
+</tr>
+<tr>
+<td><strong>TIFF 16-bit</strong></td>
+<td>Saves TIFF textures with higher precision.</td>
+<td>Use it for close-up assets, archival workflows, or detailed maps.</td>
+</tr>
+<tr>
+<td><strong>Output Folder</strong></td>
+<td>Folder where baked textures are saved.</td>
+<td>Set it before baking if you need files in a specific project folder.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="memory-safety">Memory Safety</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>When to Adjust</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Safe Memory Bake</strong></td>
+<td>Uses a safer bake workflow for heavy scenes.</td>
+<td>Keep enabled for large scans or high texture resolutions.</td>
+</tr>
+<tr>
+<td><strong>Force CPU Baking</strong></td>
+<td>Forces baking on CPU instead of GPU.</td>
+<td>Enable it when GPU memory is limited or baking crashes.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="presets">Presets</h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Description</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Preset Name</strong></td>
+<td>Name used when saving current settings.</td>
+<td>Use a clear name for a workflow or asset type.</td>
+</tr>
+<tr>
+<td><strong>Save Preset</strong></td>
+<td>Saves the current settings.</td>
+<td>Use it before processing similar scans.</td>
+</tr>
+<tr>
+<td><strong>Load Preset</strong></td>
+<td>Loads the selected preset.</td>
+<td>Use it to repeat a known setup.</td>
+</tr>
+<tr>
+<td><strong>Delete Preset</strong></td>
+<td>Deletes the selected preset.</td>
+<td>Use it to remove old or unused setups.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="recommended-starting-points">Recommended Starting Points</h2>
+<h3 id="lightweight-vr-asset">Lightweight VR Asset</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Suggested Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Final Faces</strong></td>
+<td>Lower</td>
+</tr>
+<tr>
+<td><strong>Texture Size</strong></td>
+<td>1024 or 2048</td>
+</tr>
+<tr>
+<td><strong>Bake Normal</strong></td>
+<td>Enabled if surface detail matters</td>
+</tr>
+<tr>
+<td><strong>Bake Occlusion</strong></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Safe Memory Bake</strong></td>
+<td>Enabled</td>
+</tr>
+<tr>
+<td><strong>Material Count</strong></td>
+<td>Keep low</td>
+</tr>
+</tbody>
+</table>
+<h3 id="game-prop">Game Prop</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Suggested Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Final Faces</strong></td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><strong>Texture Size</strong></td>
+<td>2048</td>
+</tr>
+<tr>
+<td><strong>Bake Base Color</strong></td>
+<td>Enabled</td>
+</tr>
+<tr>
+<td><strong>Bake Normal</strong></td>
+<td>Enabled</td>
+</tr>
+<tr>
+<td><strong>Bake Occlusion</strong></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><strong>Image Format</strong></td>
+<td>PNG or JPG depending on pipeline</td>
+</tr>
+</tbody>
+</table>
+<h3 id="close-up-presentation-asset">Close-Up Presentation Asset</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Suggested Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Final Faces</strong></td>
+<td>Higher</td>
+</tr>
+<tr>
+<td><strong>Texture Size</strong></td>
+<td>4096 or higher</td>
+</tr>
+<tr>
+<td><strong>Bake Normal</strong></td>
+<td>Enabled</td>
+</tr>
+<tr>
+<td><strong>Bake Occlusion</strong></td>
+<td>Enabled</td>
+</tr>
+<tr>
+<td><strong>Bake Samples</strong></td>
+<td>Higher</td>
+</tr>
+<tr>
+<td><strong>Image Format</strong></td>
+<td>PNG or TIFF</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="general-rule">General Rule</h2>
+<p>For realtime work, do not keep detail only as geometry.</p>
+<p>Use geometry for the main shape, and use baked textures for visual detail.</p>
+<p>That balance is what makes scanned assets easier to use in VR, videogames, realtime viewers, and interactive scenes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

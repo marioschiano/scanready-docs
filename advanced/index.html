@@ -1,0 +1,2120 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../troubleshooting/">
+      
+      
+        <link rel="next" href="../settings-reference/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Advanced Settings - ScanReady 1.0 Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#advanced-settings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ScanReady 1.0 Documentation" class="md-header__button md-logo" aria-label="ScanReady 1.0 Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ScanReady 1.0 Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Advanced Settings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ScanReady 1.0 Documentation" class="md-nav__button md-logo" aria-label="ScanReady 1.0 Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ScanReady 1.0 Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ScanReady 1.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../one-click/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    One Click Bake
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workflow
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 1 - Preview / Reduce
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 2 - UV / Cage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 3 - Bake / Output
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Production
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Production
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Use Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../export-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Export Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Help
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Help
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Settings
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mesh-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mesh Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mesh Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weld-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weld Distance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-fix-normals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Fix Normals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recalculate-outside-normals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recalculate Outside Normals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-faces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final Faces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimize-reduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimize / Reduce
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uv-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UV Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#smart-uv-preset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smart UV Preset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smart-uv-angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smart UV Angle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uv-padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Padding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-pack-uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Pack UV
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cage-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cage Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#show-cage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Show Cage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-cage-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Cage Extrusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cage-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Extrusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cage-alpha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Alpha
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bake-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bake Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#texture-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Texture Size
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Materials
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Samples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-margin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Margin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-base-color" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Base Color
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-normal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Normal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-roughness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Roughness
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-occlusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Occlusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AO Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-auto-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AO Auto Distance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AO Distance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AO Samples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-strength" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normal Strength
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Output Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#save-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Save Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jpg-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JPG Quality
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tiff-16-bit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TIFF 16-bit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output Folder
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#progress-and-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Progress and Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memory Safety
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Memory Safety">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#safe-memory-bake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safe Memory Bake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#force-cpu-baking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Force CPU Baking
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-advice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical Advice
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mesh-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mesh Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mesh Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weld-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weld Distance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-fix-normals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Fix Normals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recalculate-outside-normals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recalculate Outside Normals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-faces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final Faces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimize-reduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimize / Reduce
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uv-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UV Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#smart-uv-preset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smart UV Preset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smart-uv-angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smart UV Angle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uv-padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Padding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-pack-uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Pack UV
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cage-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cage Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#show-cage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Show Cage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-cage-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Cage Extrusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cage-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Extrusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cage-alpha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Alpha
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bake-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bake Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#texture-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Texture Size
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Materials
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Samples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-margin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Margin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-base-color" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Base Color
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-normal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Normal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-roughness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Roughness
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bake-occlusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bake Occlusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AO Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-auto-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AO Auto Distance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AO Distance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AO Samples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-strength" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normal Strength
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Output Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#save-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Save Images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jpg-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JPG Quality
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tiff-16-bit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TIFF 16-bit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output Folder
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#progress-and-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Progress and Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memory Safety
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Memory Safety">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#safe-memory-bake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safe Memory Bake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#force-cpu-baking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Force CPU Baking
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-advice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical Advice
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="advanced-settings">Advanced Settings</h1>
+<p>Advanced settings give you fine control over mesh cleanup, UV generation, cage projection, baking quality, image output, presets, and memory safety.</p>
+<p>You do not need to change every setting to use ScanReady 1.0.</p>
+<p>For most scans, start with the default values. Adjust advanced settings when you need more control over performance, quality, or bake accuracy.</p>
+<p align="center">
+  <img src="../img/quick-start-one-click.png" alt="ScanReady 1.0 panel with workflow sections and progress controls" style="width:280px; max-width:100%;">
+</p>
+
+<hr />
+<h2 id="mesh-settings">Mesh Settings</h2>
+<p>These settings control how the high-poly scan is cleaned and reduced.</p>
+<h3 id="weld-distance">Weld Distance</h3>
+<p>Merges vertices that are very close together.</p>
+<p>This can help clean small scan artifacts, tiny gaps, or overlapping points before reduction.</p>
+<h3 id="auto-fix-normals">Auto Fix Normals</h3>
+<p>Recalculates the high mesh normals before creating the lowpoly preview.</p>
+<p>Enable this when the scan has inverted normals, broken shading, or bake artifacts caused by normal direction.</p>
+<h3 id="recalculate-outside-normals">Recalculate Outside Normals</h3>
+<p>Runs normal recalculation manually on the selected high mesh.</p>
+<p>Use this when the scan appears inside-out or has inconsistent shading.</p>
+<h3 id="final-faces">Final Faces</h3>
+<p>Sets the target face count for the optimized lowpoly mesh.</p>
+<p>Lower values create lighter assets.</p>
+<p>Higher values preserve more shape detail.</p>
+<h3 id="optimize-reduce">Optimize / Reduce</h3>
+<p>Controls the decimation ratio.</p>
+<p>Lower values create stronger reduction.</p>
+<p>Higher values keep more geometry.</p>
+<hr />
+<h2 id="uv-settings">UV Settings</h2>
+<p>These settings control how Smart UV Project unwraps the optimized mesh.</p>
+<h3 id="smart-uv-preset">Smart UV Preset</h3>
+<p>Applies a recommended Smart UV angle.</p>
+<p>Use it as a fast starting point for common scan types.</p>
+<h3 id="smart-uv-angle">Smart UV Angle</h3>
+<p>Controls how aggressively Smart UV Project splits the mesh into islands.</p>
+<p>Lower values create more cuts and more UV islands.</p>
+<p>Higher values create larger islands.</p>
+<h3 id="uv-padding">UV Padding</h3>
+<p>Sets spacing between UV islands.</p>
+<p>Increase padding to reduce texture bleeding, especially at lower texture resolutions.</p>
+<h3 id="auto-pack-uv">Auto Pack UV</h3>
+<p>Automatically packs UV islands after unwrap.</p>
+<p>Leave this enabled unless you want to arrange UV islands manually.</p>
+<hr />
+<h2 id="cage-settings">Cage Settings</h2>
+<p>The cage controls how details are projected from the high-poly scan to the optimized mesh during baking.</p>
+<h3 id="show-cage">Show Cage</h3>
+<p>Displays the cage preview.</p>
+<p>Use it to visually check whether the cage covers the optimized mesh correctly.</p>
+<h3 id="auto-cage-extrusion">Auto Cage Extrusion</h3>
+<p>Automatically estimates cage extrusion by sampling the distance from the optimized mesh to the original high-poly scan.</p>
+<p>This is useful when you want a fast cage setup without manually guessing a value.</p>
+<h3 id="cage-extrusion">Cage Extrusion</h3>
+<p>Manual cage distance.</p>
+<p>Increase it if the bake misses details or creates gaps.</p>
+<p>Use the smallest value that captures the surface cleanly.</p>
+<h3 id="cage-alpha">Cage Alpha</h3>
+<p>Controls cage preview opacity.</p>
+<p>This only affects viewport display. It does not change the bake.</p>
+<hr />
+<h2 id="bake-settings">Bake Settings</h2>
+<p>These settings control texture baking quality and output.</p>
+<h3 id="texture-size">Texture Size</h3>
+<p>Sets the baked texture resolution.</p>
+<p>Higher values preserve more detail but increase bake time, memory usage, and file size.</p>
+<h3 id="bake-materials">Bake Materials</h3>
+<p>Splits the bake into multiple material groups.</p>
+<p>This can help large scans keep more texture detail, but it increases bake time and output complexity.</p>
+<h3 id="bake-samples">Bake Samples</h3>
+<p>Sets the number of Cycles samples used for baking.</p>
+<p>Higher values can reduce noise but make baking slower.</p>
+<h3 id="bake-margin">Bake Margin</h3>
+<p>Adds pixel padding around baked UV islands.</p>
+<p>This helps reduce visible seams and texture bleeding.</p>
+<h3 id="bake-base-color">Bake Base Color</h3>
+<p>Enables base color baking.</p>
+<p>This transfers the main color appearance of the original scan.</p>
+<h3 id="bake-normal">Bake Normal</h3>
+<p>Enables normal map baking.</p>
+<p>Normal maps help preserve surface detail without keeping all the original geometry.</p>
+<h3 id="bake-roughness">Bake Roughness</h3>
+<p>Enables roughness map baking.</p>
+<p>Use this when the high-poly material has a roughness texture or a bakeable roughness input that should be transferred to the low-poly final material.</p>
+<p>The roughness map is saved as a technical texture and linked to the <strong>Roughness</strong> input of the final material.</p>
+<h3 id="bake-occlusion">Bake Occlusion</h3>
+<p>Enables Ambient Occlusion baking.</p>
+<p>AO can add depth and contact shadow information to the final material.</p>
+<h3 id="ao-source">AO Source</h3>
+<p>Controls whether AO is baked from the high-poly source to the lowpoly target, or calculated from the lowpoly mesh only.</p>
+<h3 id="ao-auto-distance">AO Auto Distance</h3>
+<p>Automatically calculates AO distance from model size.</p>
+<h3 id="ao-distance">AO Distance</h3>
+<p>Manual AO ray distance when automatic distance is disabled.</p>
+<h3 id="ao-samples">AO Samples</h3>
+<p>Controls Ambient Occlusion bake quality.</p>
+<p>Higher values are cleaner but slower.</p>
+<h3 id="normal-strength">Normal Strength</h3>
+<p>Controls the strength of the Normal Map node on the final material.</p>
+<p>This changes how strongly the normal map appears in Blender.</p>
+<hr />
+<h2 id="output-settings">Output Settings</h2>
+<p>These settings control how baked images are saved.</p>
+<h3 id="save-images">Save Images</h3>
+<p>Saves baked textures to disk.</p>
+<p>Enable this when you need texture files for export, delivery, game engines, or archives.</p>
+<h3 id="image-format">Image Format</h3>
+<p>Chooses the output image format.</p>
+<p>Available formats:</p>
+<ul>
+<li><strong>JPG</strong> for compact color textures.</li>
+<li><strong>PNG</strong> for lossless output.</li>
+<li><strong>TIFF</strong> for high precision workflows.</li>
+</ul>
+<h3 id="jpg-quality">JPG Quality</h3>
+<p>Controls JPG compression quality.</p>
+<p>Higher values preserve more image detail but create larger files.</p>
+<h3 id="tiff-16-bit">TIFF 16-bit</h3>
+<p>Saves TIFF textures with higher precision.</p>
+<p>This can be useful for close-up assets, detailed normal maps, or archival workflows.</p>
+<h3 id="output-folder">Output Folder</h3>
+<p>Sets the folder where baked images are saved.</p>
+<p>Relative paths such as <code>//bake/</code> are saved next to the current Blender file.</p>
+<hr />
+<h2 id="presets">Presets</h2>
+<p>ScanReady 1.0 can save, load, and delete named presets.</p>
+<p>Presets store the current workflow settings so you can reuse them later.</p>
+<p>Use presets when processing multiple scans with similar requirements, such as:</p>
+<ul>
+<li>A batch of VR assets.</li>
+<li>A set of game props.</li>
+<li>Museum objects with similar resolution targets.</li>
+<li>Repeated bake settings.</li>
+<li>A standard studio workflow.</li>
+</ul>
+<p>Presets help keep results consistent across multiple assets.</p>
+<hr />
+<h2 id="progress-and-status">Progress and Status</h2>
+<p>The panel includes workflow status and global progress.</p>
+<p>During One Click Bake, ScanReady 1.0 reports the active phase:</p>
+<ul>
+<li>Preview.</li>
+<li>UV Mapping.</li>
+<li>Cage.</li>
+<li>Bake.</li>
+</ul>
+<p>This helps you understand what the addon is doing during long operations.</p>
+<hr />
+<h2 id="memory-safety">Memory Safety</h2>
+<p>Large scans can be demanding during baking.</p>
+<p>These options help reduce the chance of memory-related failures.</p>
+<h3 id="safe-memory-bake">Safe Memory Bake</h3>
+<p>Uses a safer bake workflow designed to reduce memory pressure on heavy scenes and large scans.</p>
+<p>Leave this enabled when working with dense scans or high texture resolutions.</p>
+<h3 id="force-cpu-baking">Force CPU Baking</h3>
+<p>Forces baking on CPU to avoid GPU memory issues.</p>
+<p>This is usually slower, but it can be safer on systems with low VRAM.</p>
+<hr />
+<h2 id="practical-advice">Practical Advice</h2>
+<p>For VR, videogames, and realtime assets, always balance quality and performance.</p>
+<p>Use advanced settings to find the right compromise between:</p>
+<ul>
+<li>Mesh density.</li>
+<li>Texture resolution.</li>
+<li>Bake quality.</li>
+<li>File size.</li>
+<li>Viewport performance.</li>
+<li>Realtime performance.</li>
+</ul>
+<p>The goal is not to keep every polygon from the original scan.</p>
+<p>The goal is to preserve the visual identity of the scan in a lighter asset that is easier to use.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

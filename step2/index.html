@@ -1,0 +1,1463 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../step1/">
+      
+      
+        <link rel="next" href="../step3/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Step 2 - UV / Cage - ScanReady 1.0 Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#step-2-uv-cage" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ScanReady 1.0 Documentation" class="md-header__button md-logo" aria-label="ScanReady 1.0 Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ScanReady 1.0 Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Step 2 - UV / Cage
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ScanReady 1.0 Documentation" class="md-nav__button md-logo" aria-label="ScanReady 1.0 Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ScanReady 1.0 Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ScanReady 1.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../one-click/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    One Click Bake
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workflow
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 1 - Preview / Reduce
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 2 - UV / Cage
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 2 - UV / Cage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-uvs-are-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why UVs Are Needed
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-the-cage-is-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why the Cage Is Needed
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uv-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Method
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UV Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#smart-uv-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smart UV Project
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uv-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UV Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#smart-uv-preset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smart UV Preset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smart-uv-angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smart UV Angle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uv-padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Padding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-pack-uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Pack UV
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cage-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Controls
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cage Controls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#show-cage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Show Cage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-cage-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Cage Extrusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cage-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Extrusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cage-alpha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Alpha
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Action
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What to Check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-advice-for-vr-and-games" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical Advice for VR and Games
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 3 - Bake / Output
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Production
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Production
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Use Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../export-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Export Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Help
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Help
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-uvs-are-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why UVs Are Needed
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-the-cage-is-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why the Cage Is Needed
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uv-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Method
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UV Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#smart-uv-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smart UV Project
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uv-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UV Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#smart-uv-preset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smart UV Preset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smart-uv-angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Smart UV Angle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uv-padding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UV Padding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-pack-uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Pack UV
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cage-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Controls
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cage Controls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#show-cage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Show Cage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-cage-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Cage Extrusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cage-extrusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Extrusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cage-alpha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cage Alpha
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Action
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What to Check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-advice-for-vr-and-games" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical Advice for VR and Games
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="step-2-uv-cage">Step 2 - UV / Cage</h1>
+<p>Step 2 generates a new UV layout and prepares the baking cage.</p>
+<p>After the scan has been simplified in Step 1, the optimized mesh needs a new UV layout so textures can be baked onto it correctly.</p>
+<p>During optimization, vertices and polygons are merged, removed, and rebuilt. This means any original UV layout can lose coherence with the new lowpoly surface.</p>
+<p>Generating new UVs ensures that the optimized mesh has clean texture coordinates before baking. The cage then helps transfer details from the original high-poly scan to the lighter object.</p>
+<p>This step is essential when preparing assets for <strong>VR, videogames, AR, realtime visualization, and interactive environments</strong>, because it allows the optimized mesh to keep much of the visual richness of the original scan.</p>
+<hr />
+<h2 id="why-uvs-are-needed">Why UVs Are Needed</h2>
+<p>A simplified mesh is lighter and easier to manage, but it still needs coherent texture coordinates.</p>
+<p>UVs define how the surface of the 3D model is unwrapped into 2D space.</p>
+<p>After reduction, the original scan UVs should not be trusted on the optimized mesh. Because geometry has been merged and simplified, old UVs can become stretched, dirty, overlapping, distorted, or mismatched with the new surface.</p>
+<p>Without a fresh UV layout, ScanReady 1.0 cannot properly bake texture information from the original scan onto the optimized mesh.</p>
+<p>Creating new UVs on the lowpoly mesh is a necessary step. Clean and coherent UVs are what allow ScanReady 1.0 to transfer textures and details from the high-poly version to the optimized asset, producing a clean, readable, and accurate bake.</p>
+<p>New UVs also help use texture space more efficiently. Scanned models often come with several materials and UV layouts that do not fill the full 0-1 UV space well, which wastes texture resolution.</p>
+<p>After optimization, ScanReady 1.0 can prepare the lowpoly asset with a cleaner UV layout that uses the available 0-1 space better. In many cases, a scan that originally used multiple poorly packed materials can be baked into a simpler material setup with a better packed texture.</p>
+<p>The result is a model that is optimized not only in polygon count, but also in texture usage, material count, and overall material efficiency.</p>
+<p>Good UVs help produce:</p>
+<ul>
+<li>Cleaner baked textures.</li>
+<li>Fewer visible seams.</li>
+<li>Better texture resolution.</li>
+<li>More predictable results in game engines.</li>
+<li>More usable assets for realtime workflows.</li>
+</ul>
+<hr />
+<h2 id="why-the-cage-is-needed">Why the Cage Is Needed</h2>
+<p>The cage controls how Blender projects details from the high-poly scan onto the optimized mesh during baking.</p>
+<p>If the cage is too small, some details may be missed.</p>
+<p>If the cage is too large, the bake may capture details from the wrong areas.</p>
+<p>ScanReady 1.0 includes cage tools to make this process faster and easier.</p>
+<hr />
+<h2 id="uv-method">UV Method</h2>
+<p>ScanReady 1.0 uses <strong>Smart UV Project</strong> to generate UVs for the optimized mesh.</p>
+<p>Smart UV Project is Blender's automatic UV unwrap method. It is useful for scanned objects because it can quickly create UV islands without requiring manual seam placement.</p>
+<p>ScanReady 1.0 exposes Smart UV controls so you can adjust how the unwrap behaves before baking.</p>
+<p align="center">
+  <img src="../img/hero.png" alt="ScanReady 1.0 workflow showing clean scan, optimized mesh, smart UVs, and texture baking" style="max-width:680px;width:100%;">
+</p>
+
+<h3 id="smart-uv-project">Smart UV Project</h3>
+<p>Uses Blender Smart UV Project.</p>
+<p>This is a good general-purpose option for many standard scans.</p>
+<hr />
+<h2 id="uv-settings">UV Settings</h2>
+<p>These settings control how Smart UV Project unwraps the optimized mesh.</p>
+<h3 id="smart-uv-preset">Smart UV Preset</h3>
+<p>Applies a recommended Smart UV angle.</p>
+<p>Use it as a fast starting point for common scan types.</p>
+<h3 id="smart-uv-angle">Smart UV Angle</h3>
+<p>Controls how aggressively Smart UV Project splits the mesh into islands.</p>
+<p>Lower values create more cuts and more UV islands.</p>
+<p>Higher values create larger islands.</p>
+<h3 id="uv-padding">UV Padding</h3>
+<p>Sets spacing between UV islands.</p>
+<p>Increase padding to reduce texture bleeding, especially at lower texture resolutions.</p>
+<h3 id="auto-pack-uv">Auto Pack UV</h3>
+<p>Automatically packs UV islands after unwrap.</p>
+<p>Leave this enabled unless you want to arrange UV islands manually.</p>
+<hr />
+<h2 id="cage-controls">Cage Controls</h2>
+<h3 id="show-cage">Show Cage</h3>
+<p>Displays the cage preview.</p>
+<p>Use it before baking to check that the cage covers the optimized mesh correctly.</p>
+<h3 id="auto-cage-extrusion">Auto Cage Extrusion</h3>
+<p>Automatically estimates cage extrusion by sampling the distance between the optimized mesh and the original high-poly scan.</p>
+<p>This is useful when you want a fast cage setup without manually guessing the distance.</p>
+<h3 id="cage-extrusion">Cage Extrusion</h3>
+<p>Controls the cage distance manually.</p>
+<p>Increase it if the bake misses scan details or creates gaps.</p>
+<p>Use the smallest value that captures the details cleanly.</p>
+<h3 id="cage-alpha">Cage Alpha</h3>
+<p>Controls the cage preview opacity.</p>
+<p>This only affects viewport display. It does not change the baked result.</p>
+<hr />
+<h2 id="action">Action</h2>
+<p>Click <strong>Generate UVs</strong> after creating the lowpoly preview.</p>
+<p>Then inspect the UV result and cage before moving to:</p>
+<p><a href="../step3/">Step 3 - Bake / Output</a></p>
+<hr />
+<h2 id="what-to-check">What to Check</h2>
+<p>Before baking, check:</p>
+<ul>
+<li>UVs are generated on the optimized object.</li>
+<li>The checker pattern does not show extreme stretching.</li>
+<li>UV islands have enough padding.</li>
+<li>The cage covers the areas that need to receive baked detail.</li>
+<li>The cage is not so large that it captures unwanted nearby surfaces.</li>
+</ul>
+<hr />
+<h2 id="practical-advice-for-vr-and-games">Practical Advice for VR and Games</h2>
+<p>For VR and videogame assets, UVs and baking are what allow a lighter model to still look detailed.</p>
+<p>The optimized mesh should carry the important visual information through textures, not through millions of polygons.</p>
+<p>Good UVs and a correct cage help you keep the asset:</p>
+<ul>
+<li>Lighter.</li>
+<li>Easier to render.</li>
+<li>Easier to export.</li>
+<li>More reliable in realtime engines.</li>
+<li>Visually closer to the original scan.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
