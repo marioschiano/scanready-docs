@@ -28,7 +28,7 @@ New UVs also help use texture space more efficiently. Scanned models often come 
 
 After optimization, ScanReady 1.0 can prepare the lowpoly asset with a cleaner UV layout that uses the available 0-1 space better. In many cases, a scan that originally used multiple poorly packed materials can be baked into a simpler material setup with a better packed texture.
 
-The result is a model that is optimized not only in polygon count, but also in texture usage and material efficiency.
+The result is a model that is optimized not only in polygon count, but also in texture usage, material count, and overall material efficiency.
 
 Good UVs help produce:
 
