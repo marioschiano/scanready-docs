@@ -1,8 +1,12 @@
 # Step 2 - UV / Cage
 
-Step 2 generates UVs and prepares the baking cage.
+Step 2 generates a new UV layout and prepares the baking cage.
 
-After the scan has been simplified in Step 1, the optimized mesh needs a UV layout so textures can be baked onto it. The cage helps transfer details from the original high-poly scan to the lighter object.
+After the scan has been simplified in Step 1, the optimized mesh needs a new UV layout so textures can be baked onto it correctly.
+
+During optimization, vertices and polygons are merged, removed, and rebuilt. This means any original UV layout can lose coherence with the new lowpoly surface.
+
+Generating new UVs ensures that the optimized mesh has clean texture coordinates before baking. The cage then helps transfer details from the original high-poly scan to the lighter object.
 
 This step is essential when preparing assets for **VR, videogames, AR, realtime visualization, and interactive environments**, because it allows the optimized mesh to keep much of the visual richness of the original scan.
 
@@ -10,11 +14,15 @@ This step is essential when preparing assets for **VR, videogames, AR, realtime 
 
 ## Why UVs Are Needed
 
-A simplified mesh is lighter and easier to manage, but it still needs texture coordinates.
+A simplified mesh is lighter and easier to manage, but it still needs coherent texture coordinates.
 
 UVs define how the surface of the 3D model is unwrapped into 2D space.
 
-Without UVs, ScanReady 1.0 cannot properly bake texture information from the original scan onto the optimized mesh.
+After reduction, the original scan UVs should not be trusted on the optimized mesh. Because geometry has been merged and simplified, old UVs can become stretched, broken, overlapping, or mismatched.
+
+Without a fresh UV layout, ScanReady 1.0 cannot properly bake texture information from the original scan onto the optimized mesh.
+
+Creating new UVs is what makes it possible to get a clean final result on the lowpoly asset.
 
 Good UVs help produce:
 
