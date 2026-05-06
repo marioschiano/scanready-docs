@@ -18,11 +18,11 @@ A simplified mesh is lighter and easier to manage, but it still needs coherent t
 
 UVs define how the surface of the 3D model is unwrapped into 2D space.
 
-After reduction, the original scan UVs should not be trusted on the optimized mesh. Because geometry has been merged and simplified, old UVs can become stretched, broken, overlapping, or mismatched.
+After reduction, the original scan UVs should not be trusted on the optimized mesh. Because geometry has been merged and simplified, old UVs can become stretched, dirty, overlapping, distorted, or mismatched with the new surface.
 
 Without a fresh UV layout, ScanReady 1.0 cannot properly bake texture information from the original scan onto the optimized mesh.
 
-Creating new UVs is what makes it possible to get a clean final result on the lowpoly asset.
+Creating new UVs on the lowpoly mesh is a necessary step. Clean and coherent UVs are what allow ScanReady 1.0 to transfer textures and details from the high-poly version to the optimized asset, producing a clean, readable, and accurate bake.
 
 Good UVs help produce:
 
