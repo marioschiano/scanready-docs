@@ -34,6 +34,12 @@ Runs normal recalculation manually on the selected high mesh.
 
 Use this when the scan appears inside-out or has inconsistent shading.
 
+### Use Texture View
+
+Shows the model in a flat texture-oriented view without scene lighting.
+
+This is useful for inspecting baked or previewed texture results, but it is now kept in **Advanced** because most users do not need to change it often.
+
 ### Final Faces
 
 Sets the target face count for the optimized lowpoly mesh.
@@ -133,6 +139,18 @@ Splits the bake into multiple material groups.
 
 This can help large scans keep more texture detail, but it increases bake time and output complexity.
 
+When this value is greater than `1`, ScanReady 1.0 automatically enables **Force CPU Baking** as a safer default.
+
+This helps reduce GPU memory problems during multi-material bakes. You can still disable **Force CPU Baking** manually if you prefer to use the GPU.
+
+### UV Texture Efficiency
+
+Analyzes the high-poly source and the optimized UV mesh to estimate texture/detail match before baking.
+
+Use **Analyze UV Usage** when deciding whether the current **Texture Size** and **Bake Materials** settings are enough for the asset.
+
+The analysis can recommend more or fewer bake materials and warns when UV usage is inefficient, overlapping, or likely to produce softer texture detail.
+
 ### Bake Samples
 
 Sets the number of Cycles samples used for baking.
@@ -157,6 +175,10 @@ Enables normal map baking.
 
 Normal maps help preserve surface detail without keeping all the original geometry.
 
+If the high-poly material already has a linked normal texture, ScanReady transfers that texture to the new low-poly UV layout.
+
+If no linked normal texture is found, ScanReady falls back to a geometric high-to-low normal bake.
+
 ### Bake Roughness
 
 Enables roughness map baking.
@@ -164,6 +186,8 @@ Enables roughness map baking.
 Use this when the high-poly material has a roughness texture or a bakeable roughness input that should be transferred to the low-poly final material.
 
 The roughness map is saved as a technical texture and linked to the **Roughness** input of the final material.
+
+Linked roughness textures are transferred to the new UV layout when available.
 
 ### Bake Occlusion
 
@@ -287,6 +311,10 @@ Leave this enabled when working with dense scans or high texture resolutions.
 Forces baking on CPU to avoid GPU memory issues.
 
 This is usually slower, but it can be safer on systems with low VRAM.
+
+ScanReady 1.0 keeps this disabled by default for a single material bake.
+
+When **Bake Materials** is set to `2` or more, it is enabled automatically. This is a conservative safety choice for heavier multi-material bakes.
 
 ---
 

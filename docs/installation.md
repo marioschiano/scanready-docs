@@ -37,6 +37,16 @@ Do not extract the zip file before installing it in Blender.
 
 The panel title is shown as **Scan Ready v1.0.0**.
 
+## Updates
+
+ScanReady 1.0 can check for newer versions from the addon preferences when an update manifest is configured.
+
+If a newer version is available, ScanReady shows an update notice in the panel and in **Edit > Preferences > Add-ons > ScanReady**.
+
+The **Update ScanReady** button downloads the newer `.zip` package to your computer. Install the downloaded zip manually from Blender to complete the update.
+
+This keeps the update process safe: ScanReady does not automatically replace addon files while Blender is running.
+
 ## If the Panel Does Not Appear
 
 - Make sure the addon is enabled in Preferences.

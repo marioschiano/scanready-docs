@@ -71,6 +71,7 @@ Depending on your settings, ScanReady 1.0 can create:
 
 - Base Color texture.
 - Normal map.
+- Roughness map.
 - Ambient Occlusion map.
 
 When exporting to another application, make sure the external software is using the correct texture files.
@@ -84,6 +85,12 @@ Connect this to the main color or albedo input.
 Connect this to the normal input.
 
 In some software, you may need to set the image type as **Non-Color** or **Normal Map**.
+
+### Roughness Map
+
+Connect this to the roughness input when your target material supports it.
+
+Roughness maps should be treated as **Non-Color** data.
 
 ### Ambient Occlusion
 
@@ -163,6 +170,7 @@ When importing into Unity:
 - Assign Base Color to Albedo/Base Map.
 - Assign Normal map to Normal Map.
 - Mark the Normal map texture as a normal map if Unity asks.
+- Assign Roughness/Smoothness according to the shader you are using.
 - Connect AO if your shader supports it.
 - Check texture compression settings.
 
@@ -178,6 +186,7 @@ When importing into Unreal Engine:
 - Check material slots.
 - Connect Base Color to Base Color.
 - Connect Normal map to Normal.
+- Connect Roughness to Roughness.
 - Connect AO to Ambient Occlusion if used.
 - Review texture compression settings.
 - Test the asset under realtime lighting.
@@ -225,6 +234,7 @@ Before delivery or export, check:
 - UVs are present.
 - Base Color bake looks correct.
 - Normal map looks correct if used.
+- Roughness map looks correct if used.
 - AO map looks correct if used.
 - Texture files are saved.
 - File size is acceptable.

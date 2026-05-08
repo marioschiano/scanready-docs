@@ -145,6 +145,10 @@ Try:
 
 Force CPU Baking is usually slower, but it can be safer on low VRAM systems.
 
+ScanReady 1.0 automatically enables **Force CPU Baking** when **Bake Materials** is set to `2` or more.
+
+For a single-material bake, it stays off by default so common Base Color bakes can still use the GPU when available.
+
 ---
 
 ## Normal Map Looks Too Strong or Too Weak
@@ -152,6 +156,18 @@ Force CPU Baking is usually slower, but it can be safer on low VRAM systems.
 Adjust **Normal Strength**.
 
 This changes the strength of the Normal Map node in the final material. It affects the material appearance, not the baked normal image itself.
+
+If the original high-poly material has a linked normal texture, ScanReady transfers that normal map to the new UV layout.
+
+If no normal texture is linked, ScanReady creates the normal map from the high-poly geometry.
+
+---
+
+## Roughness Map Is Missing
+
+**Bake Roughness** only creates a roughness transfer when the high-poly material has a roughness texture or bakeable roughness input connected.
+
+Check the high-poly material node tree and make sure the roughness texture is connected to the material before baking.
 
 ---
 
@@ -176,7 +192,7 @@ If the result is not good, use this order:
 2. Check UVs with the checker view.
 3. Check the cage preview.
 4. Bake only Base Color first.
-5. Add Normal and AO after the Base Color works.
+5. Add Normal, Roughness, and AO after the Base Color works.
 6. Increase texture resolution only when the workflow is correct.
 
 This makes problems easier to isolate.

@@ -50,6 +50,31 @@ Splits the bake into multiple material groups.
 
 Higher values can improve texture detail on large scans, but they also increase bake time and create more output materials.
 
+When **Bake Materials** is set to more than `1`, ScanReady 1.0 automatically enables **Force CPU Baking** as a safer default for multi-material bakes.
+
+You can still disable **Force CPU Baking** manually if you want to use the GPU and your system can handle the bake.
+
+---
+
+## UV Texture Efficiency
+
+The **UV Texture Efficiency** box helps estimate whether the current bake settings are likely to preserve enough texture detail.
+
+Click **Analyze UV Usage** after creating the UV mesh.
+
+ScanReady 1.0 searches for the matching high-poly source and optimized UV mesh, then compares the original texture usage with the current bake setup.
+
+It reports a compact **Detail match** estimate and recommends whether the current texture size and material count are balanced.
+
+This is useful when deciding whether to:
+
+- Keep one baked material.
+- Increase **Bake Materials**.
+- Raise or lower **Texture Size**.
+- Improve UV packing before baking.
+
+If ScanReady cannot find a high-to-UV pair automatically, it falls back to analyzing the active mesh.
+
 ### Bake Samples
 
 Controls Cycles bake samples.
@@ -79,6 +104,20 @@ Bakes a normal map.
 Normal maps help preserve the impression of surface detail without keeping all the original geometry.
 
 This is especially useful for VR and videogame assets, where geometry must stay lighter.
+
+If the original high-poly material already has a normal map connected, ScanReady 1.0 transfers that normal texture onto the new low-poly UV layout.
+
+If no linked normal map is found, ScanReady performs a geometric high-to-low normal bake.
+
+Normal textures are treated as **Non-Color** technical data during the transfer.
+
+### Bake Roughness
+
+Bakes or transfers roughness information from the high-poly material.
+
+Use this when the high-poly material has a roughness texture connected and you want the final low-poly material to preserve that surface response.
+
+Roughness textures are also handled as **Non-Color** technical data.
 
 ### Bake Occlusion
 
@@ -161,6 +200,12 @@ Uses a safer bake workflow designed to reduce memory pressure on large scans and
 Forces baking on CPU to avoid GPU memory limits.
 
 This is usually slower, but it can be safer on systems with low VRAM.
+
+By default, **Force CPU Baking** is off for a single bake material.
+
+When **Bake Materials** is set to `2` or more, ScanReady enables it automatically because multi-material bakes use more memory and more bake passes.
+
+The user can still turn it off manually.
 
 ---
 

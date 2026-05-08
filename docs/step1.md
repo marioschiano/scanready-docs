@@ -117,6 +117,10 @@ Shows the current reduction percentage based on the selected optimization settin
 
 ## View Options
 
+In the current ScanReady 1.0 panel, **Show Wireframe** and **Show Checker** are placed before **STEP 1**.
+
+They are preview tools: you can enable them before or after creating the lowpoly preview to inspect topology and texture/UV readability without changing the final bake settings.
+
 <div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
 
 <div style="flex:1 1 360px; min-width:260px;">
@@ -143,16 +147,6 @@ This helps inspect UV density and distortion during later checks.
 
 <div style="width:100%; text-align:left;">
   <img src="../img/step1-checker.gif" alt="ScanReady 1.0 Show Checker preview on an optimized scan" style="max-width:820px;width:100%;">
-</div>
-
-<h3>Use Texture View</h3>
-
-Shows the model in a flat texture-oriented view without scene lighting.
-
-This is useful when inspecting baked or previewed texture results.
-
-<div style="width:100%; text-align:left;">
-  <img src="../img/step1-use-texture-view.gif" alt="ScanReady 1.0 Use Texture View preview on an optimized scan" style="max-width:820px;width:100%;">
 </div>
 
 <h3>Checker Mix / Checker Scale</h3>

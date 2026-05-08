@@ -44,6 +44,7 @@ ScanReady 1.0 is designed to simplify dense 3D scans and make them easier to use
 
 ScanReady 1.0 performs the main production steps for you:
 
+- Cleans common scan noise such as loose fragments and isolated vertices.
 - Creates a lighter lowpoly version of the selected scan.
 - Reduces geometry to make the asset easier to manage.
 - Generates UVs for the optimized mesh.
@@ -67,6 +68,8 @@ For a first test, keep most defaults and only check:
 - **Bake Roughness** if the original high-poly material has a roughness texture that should be transferred.
 - **Bake Occlusion** if you want an ambient occlusion map.
 - **Output Folder** if you want textures saved to a specific location.
+
+If you increase **Bake Materials** above `1`, ScanReady automatically enables **Force CPU Baking** as a safer default for heavier multi-material bakes.
 
 ---
 
