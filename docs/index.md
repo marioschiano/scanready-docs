@@ -39,9 +39,7 @@ It helps you convert a heavy scan into a lighter, cleaner, baked asset that can 
 
 # 🔥 Before / After
 
-<p align="center">
-  <img src="img/one_click_before_after.jpg" width="900">
-</p>
+![Before After](img/one_click_before_after.jpg)
 
 <p align="center">
 <b>From heavy photogrammetry scans to optimized game-ready assets.</b>
