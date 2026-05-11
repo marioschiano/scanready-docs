@@ -40,7 +40,7 @@ It helps you convert a heavy scan into a lighter, cleaner, baked asset that can 
 # 🔥 Before / After
 
 <p align="center">
-  <img src="img/before-after.jpg" width="900">
+  <img src="img/one_click_before_after.jpg" width="900">
 </p>
 
 <p align="center">
