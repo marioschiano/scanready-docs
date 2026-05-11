@@ -7,7 +7,7 @@ theme:
 
 nav:
   - ScanReady 1.0: index.md
-
+- Why ScanReady: why-scanready.md
   - Getting Started:
       - Quick Start: quick-start.md
       - Installation: installation.md
@@ -29,4 +29,3 @@ nav:
       - Advanced Settings: advanced.md
       - Settings Reference: settings-reference.md
       
-- Why ScanReady: why-scanready.md
