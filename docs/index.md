@@ -53,9 +53,7 @@ It helps you convert a heavy scan into a lighter, cleaner, baked asset that can 
 <p align="center">
 <b>1M polygons → 20K optimized game-ready mesh</b>
 </p>
-<p align="center">
-40M+ polygons → optimized lowpoly workflow
-</p>
+
 
 ---
 
