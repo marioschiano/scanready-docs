@@ -52,7 +52,6 @@ It helps you convert a heavy scan into a lighter, cleaner, baked asset that can 
 <b>1M polygons → 20K optimized game-ready mesh</b>
 </p>
 
-
 ---
 
 ## One Click Bake
@@ -72,7 +71,6 @@ ScanReady 1.0 can automatically perform:
 Start with One Click Bake for most scans.
 
 Use the manual steps when you need more control.
-
 
 ---
 
