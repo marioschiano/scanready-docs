@@ -73,10 +73,6 @@ Start with One Click Bake for most scans.
 
 Use the manual steps when you need more control.
 
-<p align="center">
-  <img src="img/high-to-low-workflow 02.png" style="max-width:620px;width:100%;">
-
-</p>
 
 ---
 
