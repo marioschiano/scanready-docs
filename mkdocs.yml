@@ -1,31 +1,23 @@
-site_name: ScanReady 1.0 Documentation
+site_name: ScanReady Documentation
+site_url: https://marioschiano.github.io/scanready-docs/
 
 theme:
   name: material
   palette:
     scheme: slate
+    primary: green
+    accent: lime
 
 nav:
-  - ScanReady 1.0: index.md
-- Why ScanReady: why-scanready.md
+  - Home: index.md
+  - Why ScanReady: why-scanready.md
   - Getting Started:
-      - Quick Start: quick-start.md
       - Installation: installation.md
+      - Quick Start: quick-start.md
       - One Click Bake: one-click.md
-
   - Workflow:
       - Step 1 - Preview / Reduce: step1.md
       - Step 2 - UV / Cage: step2.md
       - Step 3 - Bake / Output: step3.md
-
-  - Production:
-      - Use Cases: use-cases.md
-      - Export Tips: export-tips.md
-
-  - Help:
-      - Troubleshooting: troubleshooting.md
-
   - Advanced:
       - Advanced Settings: advanced.md
-      - Settings Reference: settings-reference.md
-      
