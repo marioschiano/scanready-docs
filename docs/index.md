@@ -162,4 +162,4 @@ For the full automatic workflow, continue with:
 
 Follow the ScanReady development and workflow videos on YouTube:
 
-👉 [YouTube Channel](https://www.youtube.com/@marioschiano3d)
+👉 [Watch ScanReady Videos](https://www.youtube.com/@marioschiano3d)
