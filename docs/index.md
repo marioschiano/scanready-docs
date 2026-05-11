@@ -47,7 +47,7 @@ It helps you convert a heavy scan into a lighter, cleaner, baked asset that can 
 <b>From heavy photogrammetry scans to optimized game-ready assets.</b>
 </p>
 <p align="center">
-  <img src="img/one-click-bake.gif" width="850">
+  <img src="img/one-click-bake.gif" width="700">
 </p>
 
 <p align="center">
