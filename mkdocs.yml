@@ -28,3 +28,5 @@ nav:
   - Advanced:
       - Advanced Settings: advanced.md
       - Settings Reference: settings-reference.md
+      
+- Why ScanReady: why-scanready.md
