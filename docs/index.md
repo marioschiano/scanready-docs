@@ -161,3 +161,9 @@ New users should begin here:
 For the full automatic workflow, continue with:
 
 [One Click Bake](one-click.md)
+
+## 🎬 Videos & Tutorials
+
+Follow the ScanReady development and workflow videos on YouTube:
+
+👉 https://www.youtube.com/@marioschiano3d
