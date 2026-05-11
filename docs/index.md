@@ -61,15 +61,18 @@ The fastest way to use ScanReady 1.0 is the **ONE CLICK BAKE** workflow.
 
 ScanReady 1.0 can automatically perform:
 
-- Mesh optimization.
-- Lowpoly preview creation.
-- UV generation.
-- Automatic cage setup.
-- Texture baking.
-- Final asset and material setup.
-- Texture saving when output saving is enabled.
+- Mesh optimization
+- Lowpoly preview creation
+- UV generation
+- Automatic cage setup
+- Texture baking
+- Final asset and material setup
+- Texture saving when output saving is enabled
 
-Start with One Click Bake for most scans. Use the manual steps when you need more control.
+Start with One Click Bake for most scans.
+
+Use the manual steps when you need more control.
+
 <p align="center">
   <img src="img/high-to-low-workflow 02.png" style="max-width:620px;width:100%;">
 
