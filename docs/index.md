@@ -37,6 +37,22 @@ It helps you convert a heavy scan into a lighter, cleaner, baked asset that can 
 
 ---
 
+# 🔥 Before / After
+
+<p align="center">
+  <img src="img/before-after.png" width="900">
+</p>
+
+<p align="center">
+<b>From heavy photogrammetry scans to optimized game-ready assets.</b>
+</p>
+
+<p align="center">
+40M+ polygons → optimized lowpoly workflow
+</p>
+
+---
+
 ## One Click Bake
 
 The fastest way to use ScanReady 1.0 is the **ONE CLICK BAKE** workflow.
