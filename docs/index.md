@@ -4,16 +4,14 @@
   <img src="img/hero.png" style="max-width:620px;width:100%;">
 </p>
 
-<br>
-
 ScanReady 1.0 is a Blender addon designed to turn heavy 3D scans into optimized, game-ready assets.
 
 High-poly scans from photogrammetry or 3D capture can be too dense for realtime use. ScanReady 1.0 helps simplify those models, generate UVs, prepare baking, and create lighter assets that are easier to use in **VR, AR, videogames, realtime visualization, and interactive environments**.
 
-<br>
+Designed for Blender artists, photogrammetry workflows, VR applications, and realtime environments.
 
 <p align="center">
-  <b>High-Poly Scan > Optimized Mesh > UVs > Bake > Realtime Asset</b>
+  <b>High-Poly Scan → Optimized Mesh → UVs → Bake → Realtime Asset</b>
 </p>
 
 ---
@@ -24,25 +22,26 @@ High-poly scans from photogrammetry or 3D capture can be too dense for realtime 
 
 They can contain:
 
-- Millions of polygons.
-- Heavy geometry that slows Blender.
-- Dense meshes that are not suitable for VR.
-- No clean UV layout.
-- Materials or textures that need to be transferred to a lighter object.
-- Bake settings that are time-consuming to prepare manually.
+- Millions of polygons
+- Heavy geometry that slows Blender
+- Dense meshes that are not suitable for VR
+- No clean UV layout
+- Materials or textures that need to be transferred to a lighter object
+- Bake settings that are time-consuming to prepare manually
 
-ScanReady 1.0 simplifies this process inside Blender.
+ScanReady 1.0 simplifies this process directly inside Blender.
 
-It helps you convert a heavy scan into a lighter, cleaner, baked asset that can be used more easily in realtime workflows.
+It helps convert a heavy scan into a lighter, cleaner, baked asset that can be used more efficiently in realtime workflows.
 
 ---
 
-# 🔥 Before / After
+## 🔥 Before / After
 
 ![Before After](img/one_click_before_after.jpg)
 
 <p align="center">
 <b>From heavy photogrammetry scans to optimized game-ready assets.</b>
+</p>
 
 <p align="center">
   <img src="img/one-click-bake.gif" width="700">
@@ -78,16 +77,16 @@ Use the manual steps when you need more control.
 
 | Feature | Description |
 |---|---|
-| **One Click Workflow** | Runs the main scan-to-asset pipeline automatically. |
-| **Scan Simplification** | Reduces heavy scan geometry into a lighter optimized mesh. |
-| **VR and Realtime Ready** | Helps make captured models easier to handle in VR, AR, videogames, and realtime viewers. |
-| **Preview / Reduce** | Lets you preview the optimized mesh before UVs and baking. |
-| **Smart UV Project** | Uses Blender Smart UV Project to generate UVs for the optimized mesh. |
-| **Auto Cage** | Estimates cage extrusion for high-to-low baking. |
-| **Texture Baking** | Transfers visual detail from the original scan to the optimized mesh. |
-| **Base Color, Normal, Roughness, and AO Maps** | Supports common texture maps used in game and realtime pipelines. |
-| **Memory Safety** | Includes safer bake options for heavy scenes and large scans. |
-| **Reusable Presets** | Saves workflow settings for repeated scan processing. |
+| **One Click Workflow** | Runs the main scan-to-asset pipeline automatically |
+| **Scan Simplification** | Reduces heavy scan geometry into a lighter optimized mesh |
+| **VR and Realtime Ready** | Makes captured models easier to handle in VR, AR, videogames, and realtime viewers |
+| **Preview / Reduce** | Lets you preview the optimized mesh before UVs and baking |
+| **Smart UV Project** | Uses Blender Smart UV Project to generate UVs for the optimized mesh |
+| **Auto Cage** | Estimates cage extrusion for high-to-low baking |
+| **Texture Baking** | Transfers visual detail from the original scan to the optimized mesh |
+| **Base Color, Normal, Roughness, and AO Maps** | Supports common texture maps used in game and realtime pipelines |
+| **Memory Safety** | Includes safer bake options for heavy scenes and large scans |
+| **Reusable Presets** | Saves workflow settings for repeated scan processing |
 
 ---
 
@@ -99,7 +98,7 @@ ScanReady 1.0 follows a simple 3-step workflow.
 
 Create an optimized lowpoly preview from your high-poly scan.
 
-This step helps reduce the model so it becomes lighter and easier to use in realtime applications.
+This step reduces the model so it becomes lighter and easier to use in realtime applications.
 
 ### 2. UV / Cage
 
@@ -111,7 +110,7 @@ This step prepares the optimized mesh to receive texture detail from the origina
 
 Bake texture information from the original high-poly object to the optimized mesh.
 
-The result is a lighter asset that keeps much of the visual detail of the scan while being easier to use in VR, games, and realtime scenes.
+The result is a lighter asset that preserves much of the visual detail of the original scan while being easier to use in VR, games, and realtime scenes.
 
 ---
 
@@ -119,16 +118,16 @@ The result is a lighter asset that keeps much of the visual detail of the scan w
 
 ScanReady 1.0 is ideal for:
 
-- Photogrammetry scans.
-- Cultural heritage objects.
-- Museum and archive assets.
-- Game props.
-- Environment objects.
-- Real-world captured models.
-- VR and AR experiences.
-- Realtime visualization.
-- Interactive installations.
-- Educational and historical reconstructions.
+- Photogrammetry scans
+- Cultural heritage objects
+- Museum and archive assets
+- Game props
+- Environment objects
+- Real-world captured models
+- VR and AR experiences
+- Realtime visualization
+- Interactive installations
+- Educational and historical reconstructions
 
 ---
 
@@ -136,12 +135,12 @@ ScanReady 1.0 is ideal for:
 
 After the workflow, ScanReady 1.0 can generate:
 
-- Optimized lowpoly mesh.
-- UV-ready object.
-- Baking cage.
-- Final baked mesh.
-- Final material setup.
-- Texture files saved to the selected output folder.
+- Optimized lowpoly mesh
+- UV-ready object
+- Baking cage
+- Final baked mesh
+- Final material setup
+- Texture files saved to the selected output folder
 
 The goal is to preserve the visual identity of the original scan while making it lighter and more practical for production.
 
@@ -156,6 +155,8 @@ New users should begin here:
 For the full automatic workflow, continue with:
 
 [One Click Bake](one-click.md)
+
+---
 
 ## 🎬 Videos & Tutorials
 
