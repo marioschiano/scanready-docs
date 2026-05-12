@@ -1,5 +1,7 @@
 # Step 1 - Preview / Reduce
 
+Create a lightweight optimized preview from your high-poly scan before UVs and baking.
+
 Step 1 creates an optimized lowpoly preview from the selected high-poly scan.
 
 This is the first important step when preparing a scanned object for **VR, AR, videogames, realtime visualization, or interactive scenes**. A raw scan can contain a very high number of polygons, making it difficult to move, preview, export, or use in realtime.
