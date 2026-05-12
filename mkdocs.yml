@@ -21,3 +21,5 @@ nav:
       - Step 3 - Bake / Output: step3.md
   - Advanced:
       - Advanced Settings: advanced.md
+- Support:
+    - FAQ / Troubleshooting: troubleshooting.md
