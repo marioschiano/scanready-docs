@@ -16,7 +16,7 @@ Optimize / Reduce controls how much geometry is kept in the lowpoly preview. The
 
 Heavy scans can quickly become difficult to manage inside Blender.
 
-### Example
+## Example
 
 - Original Scan → 1M+ polygons
 - Optimized Preview → 20K polygons
@@ -64,7 +64,7 @@ ScanReady 1.0 first cleans common scan debris, then reduces the model while pres
 
 <div style="flex:1 1 320px; min-width:260px;">
 
-### Optimize / Reduce
+## Optimize / Reduce
 
 The default value is **0.10**.
 
@@ -92,7 +92,7 @@ Realtime updates depend on scan complexity and Blender performance.
 
 <div style="flex:1 1 360px; min-width:260px;">
 
-### Final Faces
+## Final Faces
 
 Sets the target face count for the optimized lowpoly mesh.
 
@@ -100,7 +100,7 @@ Use lower values for lightweight VR or game assets.
 
 Use higher values when the object needs to preserve more silhouette detail.
 
-### Optimize / Reduce
+## Optimize / Reduce
 
 Controls how strongly ScanReady reduces the selected high-poly scan.
 
@@ -110,7 +110,7 @@ Lower values generate lighter assets.
 
 Higher values preserve more shape detail.
 
-### Reduction
+## Reduction
 
 Displays the current reduction percentage based on the selected optimization settings.
 
@@ -162,11 +162,11 @@ This helps inspect UV density and texture distortion.
 
 <div style="flex:1 1 360px; min-width:260px;">
 
-### Checker Mix
+## Checker Mix
 
 Controls how strongly the checker overlay appears on the model surface.
 
-### Checker Scale
+## Checker Scale
 
 Changes the size of the checker squares.
 
