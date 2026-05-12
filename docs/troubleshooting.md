@@ -86,21 +86,7 @@ Use the smallest cage value that captures the details cleanly.
 
 ---
 
-## The Bake Captures Wrong Areas
-
-If the bake includes details from the wrong part of the model:
-
-- Reduce **Cage Extrusion**
-- Inspect the cage preview
-- Make sure objects are not overlapping
-- Hide or move unrelated objects if needed
-- Bake again
-
-A cage that is too large can project unwanted nearby surfaces.
-
----
-
-## The Bake Looks Blurry or Low Quality
+## Why Does the Baked Texture Look Low Quality?
 
 Bake quality depends on several factors:
 
@@ -161,6 +147,20 @@ This is especially useful for:
 
 ---
 
+## The Bake Captures Wrong Areas
+
+If the bake includes details from the wrong part of the model:
+
+- Reduce **Cage Extrusion**
+- Inspect the cage preview
+- Make sure objects are not overlapping
+- Hide or move unrelated objects if needed
+- Bake again
+
+A cage that is too large can project unwanted nearby surfaces.
+
+---
+
 ## Textures Are Not Saved
 
 Check:
@@ -175,7 +175,7 @@ Relative paths are saved next to the current `.blend` file.
 
 ---
 
-## The Bake Is Very Slow
+## Why Is the Bake Very Slow?
 
 Baking can be slow with large scans or high resolution textures.
 
