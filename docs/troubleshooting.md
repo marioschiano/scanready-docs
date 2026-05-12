@@ -14,7 +14,7 @@ Check the following:
 - Make sure you are in the **3D Viewport**
 - Press **N** to open the Sidebar
 - Look for the **Scan Ready** tab
-- Restart Blender after enabling the addon
+- In some cases, restarting Blender may be required after enabling the addon
 
 ---
 
