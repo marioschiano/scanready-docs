@@ -264,7 +264,9 @@ The cage should fully surround the high-poly surface.
 
 In ScanReady 1.0, the cage preview turns green when the cage is large enough to properly cover the scan surface.
 
-If some areas are still missing, increase the extrusion value slightly and bake again.
+If some areas are still missing, increase the extrusion value slightly and check the cage again.
+
+Once the cage looks correct, run the bake again to verify whether the missing or black areas have been fixed.
 
 Use the smallest value that completely covers the scan without capturing unwanted nearby surfaces.
 
