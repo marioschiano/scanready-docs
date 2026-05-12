@@ -8,6 +8,12 @@ Create a lightweight optimized preview from your high-poly scan in seconds.
   Optimize / Reduce controls how much geometry is kept in the lowpoly preview. The default value of 0.10 creates a preview with about 90% fewer polygons.
 </p>
 
+## Non-Destructive Workflow
+
+ScanReady never modifies the original high-poly scan.
+
+A duplicated optimized mesh is generated automatically for the workflow.
+
 Step 1 creates an optimized lowpoly preview from the selected high-poly scan.
 
 This is the first important step when preparing a scanned object for **VR, AR, videogames, realtime visualization, or interactive scenes**. A raw scan can contain a very high number of polygons, making it difficult to move, preview, export, or use in realtime.
