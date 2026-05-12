@@ -2,7 +2,7 @@
 
 ScanReady 1.0 is a Blender addon by Mario Schiano.
 
-The addon metadata declares compatibility from **Blender 3.6.0** and later. Install it like a standard Blender addon.
+The addon metadata declares compatibility from **Blender 4.0** and later. Install it like a standard Blender addon.
 
 ## Download
 
