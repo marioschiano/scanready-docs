@@ -64,17 +64,27 @@ ScanReady 1.0 first cleans common scan debris, then reduces the model while pres
 
 <div style="flex:1 1 320px; min-width:260px;">
 
-### Optimize / Reduce
+<h3>Optimize / Reduce</h3>
 
-The default value is **0.10**.
+<p>
+The default value is <strong>0.10</strong>.
+</p>
 
-This keeps roughly **10% of the original polygons**, creating a lighter lowpoly preview with approximately **90% fewer polygons**.
+<p>
+This keeps roughly <strong>10% of the original polygons</strong>, creating a lighter lowpoly preview with approximately <strong>90% fewer polygons</strong>.
+</p>
 
-After clicking **Create Lowpoly Preview**, you can still adjust this value to test lighter or more detailed results.
+<p>
+After clicking <strong>Create Lowpoly Preview</strong>, you can still adjust this value to test lighter or more detailed results.
+</p>
 
+<p>
 Very dense scans with millions of polygons may still require some processing time.
+</p>
 
+<p>
 Realtime updates depend on scan complexity and Blender performance.
+</p>
 
 </div>
 
@@ -92,27 +102,43 @@ Realtime updates depend on scan complexity and Blender performance.
 
 <div style="flex:1 1 360px; min-width:260px;">
 
-### Final Faces
+<h3>Final Faces</h3>
 
+<p>
 Sets the target face count for the optimized lowpoly mesh.
+</p>
 
+<p>
 Use lower values for lightweight VR or game assets.
+</p>
 
+<p>
 Use higher values when the object needs to preserve more silhouette detail.
+</p>
 
-### Optimize / Reduce
+<h3>Optimize / Reduce</h3>
 
+<p>
 Controls how strongly ScanReady reduces the selected high-poly scan.
+</p>
 
-The default value is **0.10**, keeping roughly **10% of the original polygons**.
+<p>
+The default value is <strong>0.10</strong>, keeping roughly <strong>10% of the original polygons</strong>.
+</p>
 
+<p>
 Lower values generate lighter assets.
+</p>
 
+<p>
 Higher values preserve more shape detail.
+</p>
 
-### Reduction
+<h3>Reduction</h3>
 
+<p>
 Displays the current reduction percentage based on the selected optimization settings.
+</p>
 
 </div>
 
@@ -162,17 +188,25 @@ This helps inspect UV density and texture distortion.
 
 <div style="flex:1 1 360px; min-width:260px;">
 
-### Checker Mix
+<h3>Checker Mix</h3>
 
+<p>
 Controls how strongly the checker overlay appears on the model surface.
+</p>
 
-### Checker Scale
+<h3>Checker Scale</h3>
 
+<p>
 Changes the size of the checker squares.
+</p>
 
+<p>
 Smaller squares make UV stretching and distortion easier to inspect.
+</p>
 
+<p>
 Larger squares are useful for quick general checks.
+</p>
 
 </div>
 
