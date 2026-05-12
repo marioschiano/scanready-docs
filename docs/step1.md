@@ -253,3 +253,14 @@ A good preview should:
 - Be easier to orbit and inspect in Blender.
 - Be suitable for UV generation.
 - Be ready for texture baking in the next steps.
+
+  ## Why Reduction Matters
+
+Heavy scans can become difficult to:
+- navigate in Blender
+- unwrap
+- bake
+- export
+- use in VR and realtime applications
+
+Preview / Reduce helps simplify the mesh before the baking workflow.
