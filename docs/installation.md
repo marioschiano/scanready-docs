@@ -53,3 +53,7 @@ This keeps the update process safe: ScanReady does not automatically replace add
 - Check that the active editor is the 3D Viewport.
 - Restart Blender after enabling the addon.
 - Confirm that you installed the ScanReady 1.0 `.zip`, not an extracted folder by mistake.
+
+If the installation problem continues, contact ScanReady support:
+
+**support.marioschiano3d@gmail.com**

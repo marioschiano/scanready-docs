@@ -4,6 +4,10 @@ This page covers common ScanReady 1.0 workflow issues and provides solutions for
 
 Scan processing can be demanding because high-poly scans, texture baking, UV generation, and memory usage all depend on the source model and system hardware.
 
+For support, bug reports, or workflow questions, contact:
+
+**support.marioschiano3d@gmail.com**
+
 ---
 
 ## The ScanReady 1.0 Panel Does Not Appear
