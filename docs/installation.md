@@ -56,4 +56,4 @@ This keeps the update process safe: ScanReady does not automatically replace add
 
 If the installation problem continues, contact ScanReady support:
 
-**support.marioschiano3d@gmail.com**
+**[support.marioschiano3d@gmail.com](mailto:support.marioschiano3d@gmail.com)**
