@@ -66,6 +66,7 @@ ScanReady 1.0 first cleans common scan debris, then reduces the model while pres
 
 ## Optimize / Reduce
 
+
 The default value is **0.10**.
 
 This keeps roughly **10% of the original polygons**, creating a lighter lowpoly preview with approximately **90% fewer polygons**.
@@ -87,6 +88,7 @@ Realtime updates depend on scan complexity and Blender performance.
 ---
 
 ## Main Settings
+
 
 <div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
 
