@@ -1,6 +1,6 @@
-# Step 1 - Preview / Reduce
+# Step 1 — Preview / Reduce
 
-Create a lightweight optimized preview from your high-poly scan before UVs and baking.
+Create a lightweight optimized preview from your high-poly scan in seconds.
 <div style="width:100%; text-align:left;">
   <img src="../img/step1-reduce.gif" alt="ScanReady 1.0 Optimize Reduce control updating the lowpoly preview density" style="max-width:820px;width:100%;">
 </div>
