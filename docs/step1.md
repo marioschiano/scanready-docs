@@ -16,12 +16,7 @@ ScanReady 1.0 first cleans common scan debris, then reduces the model while keep
 
 This cleanup can remove loose polygons, floating fragments, isolated vertices, and small unwanted mesh artifacts before the lowpoly preview is generated.
 
-<div style="width:100%; text-align:left;">
-  <img src="../img/step1-reduce.gif" alt="ScanReady 1.0 Optimize Reduce control updating the lowpoly preview density" style="max-width:820px;width:100%;">
-</div>
-<p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
-  Optimize / Reduce controls how much geometry is kept in the lowpoly preview. The default value of 0.10 creates a preview with about 90% fewer polygons.
-</p>
+
 
 <div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin-top:24px; margin-bottom:28px;">
 
