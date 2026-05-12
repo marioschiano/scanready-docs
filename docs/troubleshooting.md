@@ -248,6 +248,28 @@ Try:
 AO should add depth, not hide scan details.
 
 ---
+## Why Does the Bake Contain Black Areas or Projection Errors?
+
+If the baked texture contains black areas, missing details, or incorrect surface projections, the cage extrusion may be too small.
+
+The cage must fully cover the surface details of the original high-poly scan.
+
+If the cage does not reach some areas correctly, Blender may fail to project the texture information during baking.
+
+To fix this:
+
+- Increase **Cage Extrusion**
+- Enable **Show Cage**
+- Inspect the cage around the model before baking
+- Make sure the cage fully covers the high-poly surface
+
+In ScanReady 1.0, the cage preview turns green when the cage is large enough to properly cover the scan surface.
+
+If parts of the cage are not green or do not fully surround the high-poly mesh, increase the extrusion value slightly and check again.
+
+Use the smallest value that completely covers the scan without projecting onto unwanted nearby surfaces.
+
+---
 
 ## Best First Fix
 
