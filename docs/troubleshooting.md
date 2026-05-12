@@ -137,6 +137,20 @@ If increasing texture resolution is still not enough, the asset may require mult
 
 Each material receives its own texture space, allowing much higher detail preservation across the model.
 
+Increasing polygon density alone is not always the best solution.
+
+Very dense meshes can become heavier to process, slower to bake, and more difficult to use in realtime applications.
+
+For this reason, ScanReady can recommend an appropriate number of bake materials depending on the complexity and size of the scan.
+
+Example:
+
+- 1 material → lower texture detail
+- 2 materials → improved texture quality
+- 4 materials → significantly higher texture detail
+
+Using multiple materials is often a better solution than simply increasing polygon density.
+
 This is especially useful for:
 
 - Large scans
