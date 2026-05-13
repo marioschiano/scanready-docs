@@ -4,5 +4,5 @@
 
 For support, bug reports, or workflow questions, contact:
 
-**[support.marioschiano3d@gmail.com](mailto:support.marioschiano3d@gmail.com)**
+<a href="mailto:support.marioschiano3d@gmail.com"><strong>support.marioschiano3d@gmail.com</strong></a>
 

@@ -116,7 +116,7 @@ It is useful for scanned objects because it can quickly generate UV islands with
 ScanReady 1.0 exposes Smart UV controls so you can adjust how the unwrap behaves before baking.
 
 <p align="center">
-  <img src="../img/step2-uv-layout.png" alt="ScanReady 1.0 UV layout generated from the optimized mesh" style="max-width:760px;width:100%;">
+  <img src="../img/step2-uv-01.jpg" alt="ScanReady 1.0 UV layout generated from the optimized mesh" style="max-width:760px;width:100%;">
 </p>
 
 ---
