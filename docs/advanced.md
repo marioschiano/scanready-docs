@@ -1,44 +1,62 @@
 # Advanced Settings
 
-Advanced settings give you fine control over mesh cleanup, UV generation, cage projection, baking quality, image output, presets, and memory safety.
-
-You do not need to change every setting to use ScanReady 1.0.
-
-For most scans, start with the default values. Adjust advanced settings when you need more control over performance, quality, or bake accuracy.
+<p align="center">
+  <img src="../img/quick-start-one-click.png" alt="ScanReady 1.0 panel with workflow sections and progress controls" style="width:320px; max-width:100%;">
+</p>
 
 <p align="center">
-  <img src="../img/quick-start-one-click.png" alt="ScanReady 1.0 panel with workflow sections and progress controls" style="width:280px; max-width:100%;">
+<b>Advanced controls for optimization, UVs, baking, output, and memory safety.</b>
 </p>
 
 ---
 
-## Mesh Settings
+Advanced settings give you fine control over mesh cleanup, UV generation, cage projection, baking quality, image output, presets, and memory safety.
+
+You do not need to change every setting to use ScanReady 1.0.
+
+For most scans, start with the default values. Adjust advanced settings only when you need more control over performance, quality, or bake accuracy.
+
+---
+
+# Mesh Settings
 
 These settings control how the high-poly scan is cleaned and reduced.
+
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
 
 ### Weld Distance
 
 Merges vertices that are very close together.
 
-This can help clean small scan artifacts, tiny gaps, or overlapping points before reduction.
+This helps clean small scan artifacts, tiny gaps, or overlapping geometry before reduction.
+
+---
 
 ### Auto Fix Normals
 
-Recalculates the high mesh normals before creating the lowpoly preview.
+Recalculates high mesh normals automatically before creating the lowpoly preview.
 
-Enable this when the scan has inverted normals, broken shading, or bake artifacts caused by normal direction.
+Useful for scans with broken shading or inverted normals.
+
+---
 
 ### Recalculate Outside Normals
 
-Runs normal recalculation manually on the selected high mesh.
+Runs Blender normal recalculation manually on the selected high mesh.
 
-Use this when the scan appears inside-out or has inconsistent shading.
+Use this when the scan appears inside-out or displays inconsistent shading.
+
+---
 
 ### Use Texture View
 
-Shows the model in a flat texture-oriented view without scene lighting.
+Displays the model in a flat texture-oriented view without scene lighting.
 
-This is useful for inspecting baked or previewed texture results, but it is now kept in **Advanced** because most users do not need to change it often.
+Useful for inspecting texture results more clearly.
+
+---
 
 ### Final Faces
 
@@ -48,6 +66,8 @@ Lower values create lighter assets.
 
 Higher values preserve more shape detail.
 
+---
+
 ### Optimize / Reduce
 
 Controls the decimation ratio.
@@ -56,106 +76,157 @@ Lower values create stronger reduction.
 
 Higher values keep more geometry.
 
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-mesh-settings.png" alt="ScanReady mesh settings interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
 ---
 
-## UV Settings
+# UV Settings
 
 These settings control how Smart UV Project unwraps the optimized mesh.
+
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
 
 ### Smart UV Preset
 
 Applies a recommended Smart UV angle.
 
-Use it as a fast starting point for common scan types.
+Useful as a fast starting point for common scan types.
+
+---
 
 ### Smart UV Angle
 
 Controls how aggressively Smart UV Project splits the mesh into islands.
 
-Lower values create more cuts and more UV islands.
+Lower values create more cuts and more islands.
 
-Higher values create larger islands.
+Higher values create larger UV islands.
+
+---
 
 ### UV Padding
 
 Sets spacing between UV islands.
 
-Increase padding to reduce texture bleeding, especially at lower texture resolutions.
+Increase padding to reduce texture bleeding.
+
+---
 
 ### Auto Pack UV
 
 Automatically packs UV islands after unwrap.
 
-Leave this enabled unless you want to arrange UV islands manually.
+Leave enabled unless you want to arrange UVs manually.
 
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-uv-settings.png" alt="ScanReady UV settings interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
 
 ---
 
-## Cage Settings
+# Cage Settings
 
-The cage controls how details are projected from the high-poly scan to the optimized mesh during baking.
+The cage controls how details are projected from the high-poly scan onto the optimized mesh during baking.
+
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
 
 ### Show Cage
 
 Displays the cage preview.
 
-Use it to visually check whether the cage covers the optimized mesh correctly.
+Use it to verify that the cage fully covers the optimized mesh.
+
+---
 
 ### Auto Cage Extrusion
 
-Automatically estimates cage extrusion by sampling the distance from the optimized mesh to the original high-poly scan.
+Automatically estimates cage distance based on the scan surface.
 
-This is useful when you want a fast cage setup without manually guessing a value.
+Useful when you want a fast automatic setup.
+
+---
 
 ### Cage Extrusion
 
-Manual cage distance.
+Controls cage distance manually.
 
-Increase it if the bake misses details or creates gaps.
+Increase it if details are missing or black artifacts appear during baking.
 
-Use the smallest value that captures the surface cleanly.
+Use the smallest value that fully covers the surface cleanly.
+
+---
 
 ### Cage Alpha
 
 Controls cage preview opacity.
 
-This only affects viewport display. It does not change the bake.
+This only affects viewport visualization.
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-cage-settings.png" alt="ScanReady cage settings interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
 
 ---
 
-## Bake Settings
+# Bake Settings
 
 These settings control texture baking quality and output.
 
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
+
 ### Texture Size
 
-Sets the baked texture resolution.
+Sets baked texture resolution.
 
-Higher values preserve more detail but increase bake time, memory usage, and file size.
+Higher values preserve more detail but increase bake time and memory usage.
+
+---
 
 ### Bake Materials
 
 Splits the bake into multiple material groups.
 
-This can help large scans keep more texture detail, but it increases bake time and output complexity.
+This can improve texture detail on large scans.
 
-When this value is greater than `1`, ScanReady 1.0 automatically enables **Force CPU Baking** as a safer default.
+When this value is greater than `1`, ScanReady automatically enables **Force CPU Baking** as a safer default.
 
-This helps reduce GPU memory problems during multi-material bakes. You can still disable **Force CPU Baking** manually if you prefer to use the GPU.
+---
 
 ### UV Texture Efficiency
 
-Analyzes the high-poly source and the optimized UV mesh to estimate texture/detail match before baking.
+Analyzes UV usage and texture/detail balance before baking.
 
-Use **Analyze UV Usage** when deciding whether the current **Texture Size** and **Bake Materials** settings are enough for the asset.
+Use **Analyze UV Usage** to estimate whether the current setup preserves enough texture detail.
 
-The analysis can recommend more or fewer bake materials and warns when UV usage is inefficient, overlapping, or likely to produce softer texture detail.
+---
 
 ### Bake Samples
 
-Sets the number of Cycles samples used for baking.
+Controls Cycles bake samples.
 
-Higher values can reduce noise but make baking slower.
+Higher values reduce noise but increase bake time.
+
+---
 
 ### Bake Margin
 
@@ -163,105 +234,135 @@ Adds pixel padding around baked UV islands.
 
 This helps reduce visible seams and texture bleeding.
 
+---
+
 ### Bake Base Color
 
-Enables base color baking.
-
-This transfers the main color appearance of the original scan.
-
-### Bake Normal
-
-Enables normal map baking.
-
-Normal maps help preserve surface detail without keeping all the original geometry.
-
-If the high-poly material already has a linked normal texture, ScanReady transfers that texture to the new low-poly UV layout.
-
-If no linked normal texture is found, ScanReady falls back to a geometric high-to-low normal bake.
-
-### Bake Roughness
-
-Enables roughness map baking.
-
-Use this when the high-poly material has a roughness texture or a bakeable roughness input that should be transferred to the low-poly final material.
-
-The roughness map is saved as a technical texture and linked to the **Roughness** input of the final material.
-
-Linked roughness textures are transferred to the new UV layout when available.
-
-### Bake Occlusion
-
-Enables Ambient Occlusion baking.
-
-AO can add depth and contact shadow information to the final material.
-
-### AO Source
-
-Controls whether AO is baked from the high-poly source to the lowpoly target, or calculated from the lowpoly mesh only.
-
-### AO Auto Distance
-
-Automatically calculates AO distance from model size.
-
-### AO Distance
-
-Manual AO ray distance when automatic distance is disabled.
-
-### AO Samples
-
-Controls Ambient Occlusion bake quality.
-
-Higher values are cleaner but slower.
-
-### Normal Strength
-
-Controls the strength of the Normal Map node on the final material.
-
-This changes how strongly the normal map appears in Blender.
+Transfers the main surface color from the original scan.
 
 ---
 
-## Output Settings
+### Bake Normal
 
-These settings control how baked images are saved.
+Generates or transfers normal maps.
+
+If a linked normal texture exists, ScanReady transfers it automatically.
+
+Otherwise, a geometric high-to-low bake is performed.
+
+---
+
+### Bake Roughness
+
+Transfers or bakes roughness information from the original material.
+
+---
+
+### Bake Occlusion
+
+Generates Ambient Occlusion maps for additional surface depth.
+
+---
+
+### AO Source
+
+Controls whether AO is baked from the high-poly source or generated from the lowpoly mesh.
+
+---
+
+### AO Auto Distance
+
+Automatically estimates AO ray distance from model size.
+
+---
+
+### AO Distance
+
+Manual AO ray distance when automatic mode is disabled.
+
+---
+
+### AO Samples
+
+Controls Ambient Occlusion quality.
+
+Higher values are cleaner but slower.
+
+---
+
+### Normal Strength
+
+Controls how strongly the normal map appears in the final material.
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-bake-settings.png" alt="ScanReady bake settings interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+---
+
+# Output Settings
+
+These settings control how baked textures are saved.
+
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
 
 ### Save Images
 
 Saves baked textures to disk.
 
-Enable this when you need texture files for export, delivery, game engines, or archives.
+Useful for export, delivery, archives, and game engines.
+
+---
 
 ### Image Format
 
-Chooses the output image format.
-
 Available formats:
 
-- **JPG** for compact color textures.
-- **PNG** for lossless output.
-- **TIFF** for high precision workflows.
+- **JPG** → compact color textures
+- **PNG** → lossless texture output
+- **TIFF** → high precision workflows
+
+---
 
 ### JPG Quality
 
 Controls JPG compression quality.
 
-Higher values preserve more image detail but create larger files.
-
-### TIFF 16-bit
-
-Saves TIFF textures with higher precision.
-
-This can be useful for close-up assets, detailed normal maps, or archival workflows.
-
-### Output Folder
-
-Sets the folder where baked images are saved.
-
-Relative paths such as `//bake/` are saved next to the current Blender file.
+Higher values preserve more detail but create larger files.
 
 ---
 
-## Presets
+### TIFF 16-bit
+
+Enables higher precision TIFF output.
+
+Useful for detailed assets and archival workflows.
+
+---
+
+### Output Folder
+
+Defines where baked textures are saved.
+
+Relative paths such as `//bake/` are saved next to the current Blender file.
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-output-settings.png" alt="ScanReady output settings interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+---
+
+# Presets
 
 ScanReady 1.0 can save, load, and delete named presets.
 
@@ -269,68 +370,106 @@ Presets store the current workflow settings so you can reuse them later.
 
 Use presets when processing multiple scans with similar requirements, such as:
 
-- A batch of VR assets.
-- A set of game props.
-- Museum objects with similar resolution targets.
-- Repeated bake settings.
-- A standard studio workflow.
+- VR assets
+- Game props
+- Museum objects
+- Repeated bake workflows
+- Standardized studio pipelines
 
-Presets help keep results consistent across multiple assets.
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
----
+<div style="flex:1 1 500px; min-width:320px;">
 
-## Progress and Status
+Presets help maintain consistent results across multiple assets.
 
-The panel includes workflow status and global progress.
+</div>
 
-During One Click Bake, ScanReady 1.0 reports the active phase:
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-presets.png" alt="ScanReady presets interface" style="width:340px; max-width:100%;">
+</div>
 
-- Preview.
-- UV Mapping.
-- Cage.
-- Bake.
-
-This helps you understand what the addon is doing during long operations.
+</div>
 
 ---
 
-## Memory Safety
+# Progress and Status
 
-Large scans can be demanding during baking.
+The panel includes workflow status and global progress indicators.
+
+During One Click Bake, ScanReady reports the active stage:
+
+- Preview
+- UV Mapping
+- Cage
+- Bake
+
+This helps track long operations and understand what the addon is currently processing.
+
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
+
+Large scans may require several minutes depending on texture size and bake settings.
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-progress-status.png" alt="ScanReady progress and status interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+---
+
+# Memory Safety
+
+Large scans can become demanding during baking.
 
 These options help reduce the chance of memory-related failures.
+
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
 
 ### Safe Memory Bake
 
 Uses a safer bake workflow designed to reduce memory pressure on heavy scenes and large scans.
 
-Leave this enabled when working with dense scans or high texture resolutions.
-
-### Force CPU Baking
-
-Forces baking on CPU to avoid GPU memory issues.
-
-This is usually slower, but it can be safer on systems with low VRAM.
-
-ScanReady 1.0 keeps this disabled by default for a single material bake.
-
-When **Bake Materials** is set to `2` or more, it is enabled automatically. This is a conservative safety choice for heavier multi-material bakes.
+Recommended for dense photogrammetry assets and high texture resolutions.
 
 ---
 
-## Practical Advice
+### Force CPU Baking
 
-For VR, videogames, and realtime assets, always balance quality and performance.
+Forces baking on the CPU to avoid GPU VRAM limitations.
+
+This is slower, but safer on systems with limited GPU memory.
+
+When **Bake Materials** is set to `2` or more, ScanReady enables this automatically as a conservative safety measure.
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-memory-safety.png" alt="ScanReady memory safety interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+---
+
+# Practical Advice
+
+For VR, videogames, and realtime workflows, always balance quality and performance.
 
 Use advanced settings to find the right compromise between:
 
-- Mesh density.
-- Texture resolution.
-- Bake quality.
-- File size.
-- Viewport performance.
-- Realtime performance.
+- Mesh density
+- Texture resolution
+- Bake quality
+- File size
+- Viewport performance
+- Realtime performance
 
-The goal is not to keep every polygon from the original scan.
+The goal is not to preserve every polygon from the original scan.
 
-The goal is to preserve the visual identity of the scan in a lighter asset that is easier to use.
+The goal is to preserve the visual identity of the scan in a lighter and more usable realtime asset.
