@@ -38,6 +38,14 @@ Without fresh UVs, ScanReady 1.0 cannot properly transfer texture information fr
 
 Creating new UVs ensures cleaner baking and more reliable texture projection.
 
+<p align="center">
+  <img src="../img/step2-uv-02.png" alt="Checker texture comparison showing stretched UVs versus clean UVs" style="max-width:1000px;width:100%;">
+</p>
+
+<p align="center">
+<b>The checker preview helps reveal stretching, uneven texel density, and UV distortion before baking.</b>
+</p>
+
 ---
 
 ## Better UV Space Usage
@@ -96,11 +104,19 @@ If the cage is too large:
 ScanReady 1.0 includes cage tools to make this process faster and easier.
 
 <p align="center">
-  <img src="../img/step2-cage-preview.png" alt="Cage preview size comparison" style="max-width:1100px;width:100%;">
+  <img src="../img/step2-uv-03.png" alt="Cage preview size comparison showing too small, correct, and too large cages" style="max-width:1100px;width:100%;">
 </p>
 
 <p align="center">
 <b>Too small cages miss details. Too large cages may capture unwanted nearby surfaces.</b>
+</p>
+
+<p align="center">
+  <img src="../img/step2-uv-04.png" alt="Cage preview comparison showing how cage size affects the baked normal map result" style="max-width:1100px;width:100%;">
+</p>
+
+<p align="center">
+<b>Cage size directly affects the bake result: a correct cage captures details cleanly without projecting unwanted geometry.</b>
 </p>
 
 ---
