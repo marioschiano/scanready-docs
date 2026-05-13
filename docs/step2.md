@@ -1,7 +1,7 @@
 # Step 2 - UV / Cage
 
 <p align="center">
-  <img src="../img/step2_UV_01" alt="ScanReady UV before and after comparison" style="max-width:1000px;width:100%;">
+  <img src="../img/step2_UV_01" alt="ScanReady UV before and after comparison" style="max-width:800px;width:100%;">
 </p>
 
 <p align="center">
