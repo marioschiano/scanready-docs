@@ -1,10 +1,16 @@
 # Step 3 - Bake / Output
 
-Step 3 bakes texture information from the original high-poly scan onto the optimized mesh.
+Step 3 transfers texture detail from the original high-poly scan onto the optimized mesh.
 
-This is the final step that turns the simplified object into a more usable asset for **VR, videogames, AR, realtime visualization, and interactive environments**.
+This is the final stage of the ScanReady workflow, transforming the lowpoly object into a lighter realtime-ready asset for:
 
-The goal is to keep much of the visual detail of the original scan while using a lighter mesh that is easier to render and manage.
+- VR
+- Videogames
+- AR
+- Realtime visualization
+- Interactive environments
+
+The goal is to preserve much of the original scan appearance while dramatically reducing polygon density.
 
 <p align="center">
   <img src="../img/high-to-low-workflow.png" alt="Baked scan result with reduced polygon count and preserved visual detail" style="max-width:760px;width:100%;">
@@ -14,19 +20,23 @@ The goal is to keep much of the visual detail of the original scan while using a
 
 ## Why Baking Matters
 
-A raw scan often carries detail through heavy geometry.
+A raw scan often stores detail through extremely heavy geometry.
 
-That can be beautiful, but it is not always practical for realtime use.
+While visually impressive, this is not always practical for realtime use.
 
-Baking transfers visual information from the high-poly scan to texture maps on the optimized mesh.
+Baking transfers visual information from the high-poly scan into texture maps on the optimized mesh.
 
-This makes it possible to use:
+This allows the final asset to use:
 
-- A lighter model.
-- Fewer polygons.
-- Texture-based detail.
-- More manageable assets.
-- Better performance in realtime workflows.
+- Fewer polygons
+- Lighter geometry
+- Texture-based detail
+- More manageable assets
+- Better realtime performance
+
+Instead of rendering millions of polygons in realtime, ScanReady transfers surface detail into textures.
+
+This allows the optimized mesh to remain lightweight while still preserving much of the original scan appearance.
 
 ---
 
@@ -34,52 +44,73 @@ This makes it possible to use:
 
 ### Texture Size
 
-Sets the output resolution for baked maps.
+Sets the output resolution for baked textures.
 
 Higher values preserve more detail but increase bake time, memory usage, and file size.
 
 Common choices:
 
-- `1024` for lightweight assets.
-- `2048` for general-purpose assets.
-- `4096` or higher for close-up assets.
+- `1024` → lightweight assets
+- `2048` → general-purpose assets
+- `4096` → close-up or high-detail assets
+- `8192` → very large or archival-quality assets
+
+Higher resolutions increase memory usage significantly.
+
+---
 
 ### Bake Materials
 
 Splits the bake into multiple material groups.
 
-Higher values can improve texture detail on large scans, but they also increase bake time and create more output materials.
+Using more materials increases available texture space and can preserve more detail on large scans.
 
-When **Bake Materials** is set to more than `1`, ScanReady 1.0 automatically enables **Force CPU Baking** as a safer default for multi-material bakes.
+| Materials | Typical Use |
+|---|---|
+| 1 Material | Lightweight assets |
+| 2 Materials | Medium detail preservation |
+| 4 Materials | Large scans and high-detail assets |
 
-You can still disable **Force CPU Baking** manually if you want to use the GPU and your system can handle the bake.
+Increasing polygon density alone is not always the best solution.
+
+In many cases, increasing the number of bake materials produces cleaner and sharper textures while keeping the mesh lightweight.
+
+When **Bake Materials** is set to more than `1`, ScanReady 1.0 automatically enables **Force CPU Baking** as a safer default for multi-material workflows.
+
+You can still disable it manually if your GPU can handle the bake safely.
 
 ---
 
 ## UV Texture Efficiency
 
-The **UV Texture Efficiency** box helps estimate whether the current bake settings are likely to preserve enough texture detail.
+The **UV Texture Efficiency** box helps estimate whether the current bake setup is likely to preserve enough texture detail.
 
-Click **Analyze UV Usage** after creating the UV mesh.
+Click **Analyze UV Usage** after generating UVs.
 
-ScanReady 1.0 searches for the matching high-poly source and optimized UV mesh, then compares the original texture usage with the current bake setup.
+ScanReady searches for the matching high-poly source and optimized UV mesh, then compares the original texture usage with the current bake setup.
 
-It reports a compact **Detail match** estimate and recommends whether the current texture size and material count are balanced.
+It reports a compact **Detail Match** estimate and recommends whether the current texture size and material count are balanced.
 
 This is useful when deciding whether to:
 
-- Keep one baked material.
-- Increase **Bake Materials**.
-- Raise or lower **Texture Size**.
-- Improve UV packing before baking.
+- Keep one baked material
+- Increase **Bake Materials**
+- Raise or lower **Texture Size**
+- Improve UV packing before baking
 
-If ScanReady cannot find a high-to-UV pair automatically, it falls back to analyzing the active mesh.
+If ScanReady cannot find a matching high-to-UV pair automatically, it falls back to analyzing the active mesh.
+
+ScanReady helps estimate whether the current bake setup can preserve enough texture detail before starting the bake.
+
+---
 
 ### Bake Samples
 
 Controls Cycles bake samples.
 
-Higher values can reduce noise, especially for Ambient Occlusion, but they also make baking slower.
+Higher values can reduce noise, especially for Ambient Occlusion, but they also increase bake time.
+
+---
 
 ### Bake Margin
 
@@ -95,61 +126,77 @@ This helps reduce visible seams and texture bleeding.
 
 Bakes the diffuse or color information from the original scan.
 
-This is usually the most important map when preserving the visual appearance of a captured object.
+This is usually the most important texture for preserving the appearance of the captured object.
+
+---
 
 ### Bake Normal
 
 Bakes a normal map.
 
-Normal maps help preserve the impression of surface detail without keeping all the original geometry.
+Normal maps preserve the appearance of surface detail without keeping the original high-poly geometry.
 
-This is especially useful for VR and videogame assets, where geometry must stay lighter.
+This is especially useful for VR and videogame assets where geometry must remain lightweight.
 
-If the original high-poly material already has a normal map connected, ScanReady 1.0 transfers that normal texture onto the new low-poly UV layout.
+If the original high-poly material already contains a linked normal map, ScanReady transfers that normal texture onto the new UV layout.
 
 If no linked normal map is found, ScanReady performs a geometric high-to-low normal bake.
 
-Normal textures are treated as **Non-Color** technical data during the transfer.
+Normal textures are treated as **Non-Color** technical data.
+
+---
 
 ### Bake Roughness
 
 Bakes or transfers roughness information from the high-poly material.
 
-Use this when the high-poly material has a roughness texture connected and you want the final low-poly material to preserve that surface response.
+Use this when the original material already contains roughness information that should be preserved on the final lowpoly asset.
 
 Roughness textures are also handled as **Non-Color** technical data.
+
+---
 
 ### Bake Occlusion
 
 Bakes an Ambient Occlusion map.
 
-AO can help add contact shadows and depth to the final material.
+AO can help add contact shadows and surface depth to the final material.
+
+---
 
 ### AO Source
 
-Controls how Ambient Occlusion is baked.
+Controls how Ambient Occlusion is generated.
 
-You can bake AO from the high-poly source to the lowpoly target, or calculate it from the lowpoly mesh only.
+You can bake AO from the high-poly source or calculate it directly from the lowpoly mesh.
+
+---
 
 ### AO Auto Distance
 
-Automatically calculates the AO distance from the size of the model.
+Automatically estimates the AO distance from the overall model size.
+
+---
 
 ### AO Distance
 
-Manual AO ray distance when automatic distance is disabled.
+Controls AO ray distance manually when automatic distance is disabled.
+
+---
 
 ### AO Samples
 
-Controls the quality of the AO bake.
+Controls Ambient Occlusion bake quality.
 
-Higher values are cleaner but slower.
+Higher values produce cleaner AO but increase bake time.
+
+---
 
 ### Normal Strength
 
-Controls the strength of the Normal Map node on the final material.
+Controls the strength of the Normal Map node in the final material.
 
-This affects how strongly the normal map appears in the material.
+This affects the material appearance, not the baked normal texture itself.
 
 ---
 
@@ -159,27 +206,37 @@ This affects how strongly the normal map appears in the material.
 
 Saves baked textures to disk.
 
-Enable this when you need image files for external workflows, game engines, archives, or delivery.
+Enable this when exporting assets for game engines, archives, external workflows, or delivery.
+
+---
 
 ### Image Format
 
 Available output formats:
 
-- **JPG** for compact base color textures.
-- **PNG** for lossless image output.
-- **TIFF** for higher precision workflows.
+- **JPG** → compact Base Color textures
+- **PNG** → lossless texture output
+- **TIFF** → higher precision workflows
+
+PNG is generally recommended for most realtime workflows.
+
+---
 
 ### JPG Quality
 
 Controls JPG compression quality.
 
-Higher values preserve more image detail but create larger files.
+Higher values preserve more image detail but generate larger files.
+
+---
 
 ### TIFF 16-bit
 
 Saves TIFF textures with higher precision.
 
-This can be useful for detailed normal maps, close-up assets, or archival workflows.
+Useful for high-detail assets, archival workflows, or detailed normal maps.
+
+---
 
 ### Output Folder
 
@@ -191,21 +248,29 @@ Relative paths such as `//bake/` are saved next to the current Blender file.
 
 ## Memory Safety
 
+Large photogrammetry scans can easily exceed GPU memory limits during baking.
+
+ScanReady includes safer bake workflows designed for heavy production scenes.
+
+---
+
 ### Safe Memory Bake
 
-Uses a safer bake workflow designed to reduce memory pressure on large scans and heavy Blender scenes.
+Uses a safer baking workflow designed to reduce memory pressure on heavy scenes and large scans.
+
+---
 
 ### Force CPU Baking
 
-Forces baking on CPU to avoid GPU memory limits.
+Forces baking on the CPU to avoid GPU memory limitations.
 
-This is usually slower, but it can be safer on systems with low VRAM.
+This is usually slower, but it can be safer on systems with limited VRAM.
 
-By default, **Force CPU Baking** is off for a single bake material.
+By default, **Force CPU Baking** remains disabled for single-material bakes.
 
-When **Bake Materials** is set to `2` or more, ScanReady enables it automatically because multi-material bakes use more memory and more bake passes.
+When **Bake Materials** is set to `2` or more, ScanReady automatically enables it because multi-material workflows require more memory and additional bake passes.
 
-The user can still turn it off manually.
+The user can still disable it manually.
 
 ---
 
@@ -213,7 +278,14 @@ The user can still turn it off manually.
 
 Click **Bake Textures** to start the bake.
 
-When the bake is complete, check the final material and the saved texture files in the output folder.
+Large scans may require several minutes depending on:
+
+- Texture resolution
+- Material count
+- Bake settings
+- Hardware performance
+
+When the bake is complete, inspect the final material and the saved textures inside the output folder.
 
 ---
 
@@ -221,30 +293,31 @@ When the bake is complete, check the final material and the saved texture files 
 
 After baking, inspect:
 
-- The baked Base Color texture.
-- The Normal map if enabled.
-- The Ambient Occlusion map if enabled.
-- Texture seams.
-- Missing details.
-- Incorrect projections.
-- Final material appearance.
-- Saved files in the output folder.
+- Base Color texture
+- Normal Map
+- Ambient Occlusion map
+- Texture sharpness
+- Texture seams
+- Missing details
+- Incorrect projections
+- Final material appearance
+- Saved output files
 
-If details are missing, adjust the cage extrusion or texture resolution and bake again.
+If details are missing, adjust the cage extrusion or increase texture resolution before baking again.
 
 ---
 
-## Practical Advice for VR and Games
+## Realtime Optimization
 
-For realtime assets, the final result should balance quality and performance.
+For realtime workflows, the final result should balance visual quality and performance.
 
 A good baked asset should:
 
-- Use a lighter mesh.
-- Preserve the recognizable appearance of the original scan.
-- Use textures to carry visual detail.
-- Be easier to export.
-- Be easier to render in VR or game engines.
-- Avoid unnecessary geometry density.
+- Use a lightweight mesh
+- Preserve the recognizable appearance of the original scan
+- Use textures to carry surface detail
+- Be easier to export
+- Be easier to render in VR and game engines
+- Avoid unnecessary geometry density
 
-The bake is what allows the optimized model to look detailed without keeping the full high-poly scan.
+The bake is what allows a lightweight optimized mesh to preserve much of the visual richness of the original high-poly scan.
