@@ -102,6 +102,20 @@ Lower values create more cuts and more UV islands.
 Higher values create larger islands.
 </p>
 
+<p>
+You can manually adjust this value for finer control, but ScanReady also includes simplified UV presets inside Step 2:
+</p>
+
+<ul>
+<li><strong>Balanced</strong> → general-purpose unwrap for most scans</li>
+<li><strong>Detailed</strong> → creates more UV islands to preserve texture detail</li>
+<li><strong>Large Islands</strong> → creates larger UV islands with fewer cuts</li>
+</ul>
+
+<p>
+These presets automatically adjust the Smart UV Angle for common workflows.
+</p>
+
 <hr>
 
 <h3>UV Padding</h3>
