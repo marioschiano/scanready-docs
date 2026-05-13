@@ -2,57 +2,51 @@
 
 Step 2 generates a new UV layout and prepares the baking cage.
 
-After the scan has been simplified in Step 1, the optimized mesh needs a new UV layout so textures can be baked onto it correctly.
+After the scan has been simplified in Step 1, the optimized mesh needs clean UVs so texture information can be baked correctly onto the new lowpoly surface.
 
-Generating new UVs ensures that the optimized mesh has clean texture coordinates before baking. The cage then helps transfer details from the original high-poly scan to the lighter object.
-
-This step is essential when preparing assets for **VR, videogames, AR, realtime visualization, and interactive environments**, because it allows the optimized mesh to preserve much of the visual richness of the original scan.
+This step prepares the asset for texture transfer, allowing the optimized mesh to preserve much of the visual richness of the original high-poly scan while remaining lightweight enough for **VR, videogames, AR, realtime visualization, and interactive environments**.
 
 ---
 
 ## Why UVs Are Needed
 
-A simplified mesh is lighter and easier to manage, but it still needs coherent texture coordinates.
+A simplified mesh is lighter and easier to manage, but it still requires coherent texture coordinates.
 
-UVs define how the surface of the 3D model is unwrapped into 2D space.
+UVs define how the surface of the 3D model is unwrapped into 2D texture space.
 
-After reduction, the original scan UVs should not be trusted on the optimized mesh.
+After reduction, the original scan UVs should no longer be trusted on the optimized mesh.
 
-Because geometry has been merged and simplified, old UVs can become:
+Because geometry has been merged and simplified, the original UV layout can become:
 
 - Stretched
-- Dirty
-- Overlapping
 - Distorted
-- Mismatched with the new surface
+- Overlapping
+- Dirty
+- Mismatched with the new lowpoly surface
 
-Without a fresh UV layout, ScanReady 1.0 cannot properly bake texture information from the original scan onto the optimized mesh.
+Without fresh UVs, ScanReady 1.0 cannot properly transfer texture information from the original scan onto the optimized mesh.
 
-Creating new UVs on the lowpoly mesh is a necessary step.
-
-Clean and coherent UVs are what allow ScanReady 1.0 to transfer textures and details from the high-poly version to the optimized asset, producing a clean, readable, and accurate bake.
+Creating new UVs ensures cleaner baking and more reliable texture projection.
 
 ---
 
 ## Better UV Space Usage
 
-New UVs also help use texture space more efficiently.
+New UVs also improve texture space efficiency.
 
-Scanned models often come with several materials and UV layouts that do not fill the full 0-1 UV space efficiently, which wastes texture resolution.
+Many photogrammetry scans contain UV layouts that waste large portions of the available 0-1 texture space.
 
-After optimization, ScanReady 1.0 can prepare the lowpoly asset with a cleaner UV layout that uses the available 0-1 space more effectively.
+After optimization, ScanReady 1.0 can generate a cleaner UV layout with better UV packing and more efficient texture usage.
 
-In many cases, a scan that originally used multiple poorly packed materials can be baked into a simpler material setup with a better packed texture.
-
-The result is a model optimized not only in polygon count, but also in texture usage, material count, and overall material efficiency.
+This allows the optimized asset to preserve more detail while using fewer materials and lower texture memory.
 
 Good UVs help produce:
 
 - Cleaner baked textures
+- Better texture sharpness
 - Fewer visible seams
-- Better texture resolution
-- More predictable results in game engines
-- More usable assets for realtime workflows
+- Better realtime performance
+- More reliable results in game engines
 
 ---
 
@@ -60,7 +54,7 @@ Good UVs help produce:
 
 The goal of baking is to preserve the visual richness of the original scan while reducing polygon density.
 
-Instead of keeping millions of polygons, ScanReady transfers surface information into textures.
+Instead of keeping millions of polygons, ScanReady transfers visual surface information into textures.
 
 This allows the optimized mesh to remain lightweight while still preserving much of the original appearance.
 
@@ -70,9 +64,16 @@ This allows the optimized mesh to remain lightweight while still preserving much
 
 The cage controls how Blender projects details from the high-poly scan onto the optimized mesh during baking.
 
-If the cage is too small, some details may be missed.
+If the cage is too small:
 
-If the cage is too large, the bake may capture details from the wrong areas.
+- Some details may be missed
+- Black areas may appear
+- Surface projection errors can occur
+
+If the cage is too large:
+
+- The bake may capture nearby unwanted surfaces
+- Projection artifacts may appear
 
 ScanReady 1.0 includes cage tools to make this process faster and easier.
 
@@ -84,7 +85,7 @@ ScanReady 1.0 uses **Smart UV Project** to generate UVs for the optimized mesh.
 
 Smart UV Project is Blender's automatic UV unwrap method.
 
-It is useful for scanned objects because it can quickly create UV islands without requiring manual seam placement.
+It is useful for scanned objects because it can quickly generate UV islands without requiring manual seam placement.
 
 ScanReady 1.0 exposes Smart UV controls so you can adjust how the unwrap behaves before baking.
 
@@ -92,47 +93,71 @@ ScanReady 1.0 exposes Smart UV controls so you can adjust how the unwrap behaves
   <img src="../img/step2-uv-layout.png" alt="ScanReady 1.0 UV layout generated from the optimized mesh" style="max-width:760px;width:100%;">
 </p>
 
-### Smart UV Project
-
-Uses Blender Smart UV Project.
-
-This is a good general-purpose option for many standard scans.
-
 ---
 
 ## UV Settings
 
 These settings control how Smart UV Project unwraps the optimized mesh.
 
-### Smart UV Preset
+<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
 
+<div style="flex:1 1 360px; min-width:260px;">
+
+<h3>Smart UV Preset</h3>
+
+<p>
 Applies a recommended Smart UV angle.
+</p>
 
+<p>
 Use it as a fast starting point for common scan types.
+</p>
 
-### Smart UV Angle
+<h3>Smart UV Angle</h3>
 
+<p>
 Controls how aggressively Smart UV Project splits the mesh into islands.
+</p>
 
+<p>
 Lower values create more cuts and more UV islands.
+</p>
 
-Higher values create larger islands.
+<p>
+Higher values create larger UV islands.
+</p>
 
-### UV Padding
+<h3>UV Padding</h3>
 
+<p>
 Sets spacing between UV islands.
+</p>
 
+<p>
 Increase padding to reduce texture bleeding, especially at lower texture resolutions.
+</p>
 
-### Auto Pack UV
+<h3>Auto Pack UV</h3>
 
+<p>
 Automatically packs UV islands after unwrap.
+</p>
 
+<p>
 Leave this enabled unless you want to arrange UV islands manually.
+</p>
 
-Better UV packing helps maximize texture resolution.
+<p>
+Better UV packing helps maximize texture resolution and preserve more texture detail.
+</p>
 
-Well-packed UV islands allow the bake to preserve more detail across the optimized mesh.
+</div>
+
+<div style="flex:0 0 320px; text-align:center;">
+  <img src="../img/step2-uv-settings.png" alt="ScanReady 1.0 UV settings panel" style="width:320px; max-width:100%;">
+</div>
+
+</div>
 
 ---
 
@@ -153,33 +178,61 @@ A clean checker pattern usually indicates a healthier UV layout for baking.
 
 ## Cage Controls
 
-### Show Cage
+<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
 
+<div style="flex:1 1 360px; min-width:260px;">
+
+<h3>Show Cage</h3>
+
+<p>
 Displays the cage preview.
+</p>
 
-Use it before baking to check that the cage covers the optimized mesh correctly.
+<p>
+Use it before baking to check that the cage fully surrounds the optimized mesh.
+</p>
 
-### Auto Cage Extrusion
+<h3>Auto Cage Extrusion</h3>
 
+<p>
 Automatically estimates cage extrusion by sampling the distance between the optimized mesh and the original high-poly scan.
+</p>
 
-This is useful when you want a fast cage setup without manually guessing the distance.
+<p>
+This is useful for generating a fast starting point without manually guessing the cage distance.
+</p>
 
-### Cage Extrusion
+<h3>Cage Extrusion</h3>
 
+<p>
 Controls the cage distance manually.
+</p>
 
-Increase it if the bake misses scan details or creates gaps.
+<p>
+Increase it if the bake misses details, creates black areas, or produces projection errors.
+</p>
 
-Use the smallest value that captures the details cleanly.
+<p>
+Use the smallest value that fully covers the scan surface cleanly.
+</p>
 
-### Cage Alpha
+<h3>Cage Alpha</h3>
 
+<p>
 Controls the cage preview opacity.
+</p>
 
-This only affects viewport display.
+<p>
+This only affects viewport display and does not change the baked result.
+</p>
 
-It does not change the baked result.
+</div>
+
+<div style="flex:0 0 320px; text-align:center;">
+  <img src="../img/step2-cage-settings.png" alt="ScanReady 1.0 cage settings panel" style="width:320px; max-width:100%;">
+</div>
+
+</div>
 
 ---
 
@@ -187,7 +240,13 @@ It does not change the baked result.
 
 Click **Generate UVs** after creating the lowpoly preview.
 
-Then inspect the UV result and cage before moving to:
+Then inspect:
+
+- UV layout
+- Checker preview
+- Cage coverage
+
+before continuing to:
 
 [Step 3 - Bake / Output](step3.md)
 
@@ -195,23 +254,24 @@ Then inspect the UV result and cage before moving to:
 
 ## What to Check
 
-Before baking, check:
+Before baking, verify that:
 
-- UVs are generated on the optimized object
+- UVs are generated on the optimized mesh
+- UV islands are packed correctly
 - The checker pattern does not show extreme stretching
 - UV islands have enough padding
-- The cage covers the areas that need to receive baked detail
-- The cage is not so large that it captures unwanted nearby surfaces
+- The cage fully covers the areas that need baked detail
+- The cage is not large enough to capture unwanted nearby surfaces
 
 ---
 
 ## Realtime Optimization
 
-For VR and videogame assets, UVs and baking are what allow a lighter model to still look detailed.
+For VR and videogame workflows, UVs and baking allow a lightweight model to still appear highly detailed.
 
-The optimized mesh should carry the important visual information through textures, not through millions of polygons.
+The optimized mesh should preserve important visual information through textures rather than through millions of polygons.
 
-Good UVs and a correct cage help keep the asset:
+Good UVs and a properly configured cage help keep the asset:
 
 - Lighter
 - Easier to render
