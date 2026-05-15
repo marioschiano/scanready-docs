@@ -276,6 +276,18 @@ Use the smallest value that completely covers the scan without capturing unwante
 
 ---
 
+## Why does my bake look fragmented or noisy?
+
+If the baked result looks fragmented, noisy, or inconsistent, the UV layout may be too fragmented for that specific scan.
+
+ScanReady uses Smart UV Project to generate the UV layout automatically. In most cases, the **Balanced** preset works well, but some scans may need a different UV preset.
+
+Try changing the **UV Method Preset** from **Balanced** to another option, then generate the UVs again and repeat the bake.
+
+A less fragmented UV layout can often improve texture continuity and reduce visible seams or broken-looking bake areas.
+
+---
+
 ## Best First Fix
 
 If the result is not good, use this order:
