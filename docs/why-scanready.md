@@ -1,5 +1,15 @@
 # Why ScanReady?
 
+## Smart Adaptive Optimization
+
+Traditional mesh reduction often applies the same optimization uniformly across the entire model.
+
+This can unnecessarily preserve dense geometry in flat areas while damaging important surface details in complex regions.
+
+ScanReady 1.0 uses adaptive optimization to analyze the surface and preserve visually important details while simplifying flatter or less detailed areas more aggressively.
+
+The result is a cleaner and more efficient lowpoly asset that keeps much more of the original scan quality where it matters most.
+
 ## Built for Photogrammetry and Game-Ready Assets
 
 ScanReady is designed to convert dense high-poly scans into optimized, game-ready assets directly inside Blender.
