@@ -1,0 +1,1254 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://marioschiano.github.io/scanready-docs/advanced/">
+      
+      
+        <link rel="prev" href="../step3/">
+      
+      
+        <link rel="next" href="../troubleshooting/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Advanced Settings - ScanReady Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#advanced-settings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ScanReady Documentation" class="md-header__button md-logo" aria-label="ScanReady Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ScanReady Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Advanced Settings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ScanReady Documentation" class="md-nav__button md-logo" aria-label="ScanReady Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ScanReady Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../why-scanready/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why ScanReady
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../one-click/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    One Click Bake
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workflow
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 1 - Preview / Reduce
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 2 - UV / Cage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step 3 - Bake / Output
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="advanced-settings">Advanced Settings</h1>
+<p>Advanced settings give you fine control over mesh cleanup, UV generation, baking quality, image output, presets, utilities, and memory safety.</p>
+<p>You do not need to change every setting to use ScanReady 1.0.</p>
+<p>For most scans, start with the default values. Adjust advanced settings only when you need more control over performance, quality, or bake accuracy.</p>
+<p align="center">
+  <img src="../img/advanced-overview.png" alt="ScanReady Advanced settings overview" style="width:340px; max-width:100%;">
+</p>
+
+<p align="center">
+<b>Advanced controls for cleanup, UVs, baking, presets, utilities, and updates.</b>
+</p>
+
+<hr />
+<h1 id="mesh-settings">Mesh Settings</h1>
+<p>These settings control scan cleanup and mesh preparation before generating the lowpoly preview.</p>
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
+
+<h3>Weld Distance</h3>
+
+<p>
+Merges vertices that are very close together.
+</p>
+
+<p>
+This can help clean small scan artifacts, tiny gaps, or overlapping points before reduction.
+</p>
+
+<hr>
+
+<h3>Auto Fix Normals</h3>
+
+<p>
+Automatically recalculates high-poly mesh normals before creating the lowpoly preview.
+</p>
+
+<p>
+Enable this when the scan has inverted normals, broken shading, or bake artifacts caused by incorrect normal direction.
+</p>
+
+<hr>
+
+<h3>Use Texture View</h3>
+
+<p>
+Displays the model in a flat texture-oriented view without scene lighting.
+</p>
+
+<p>
+This is useful for inspecting baked or previewed texture results more clearly.
+</p>
+
+<hr>
+
+<h3>Recalculate Outside Normals</h3>
+
+<p>
+Runs normal recalculation manually on the selected high-poly mesh.
+</p>
+
+<p>
+Use this when the scan appears inside-out or has inconsistent shading.
+</p>
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-mesh-settings.png" alt="ScanReady Mesh Settings interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+<hr />
+<h1 id="uv-settings">UV Settings</h1>
+<p>These settings control how Smart UV Project unwraps the optimized mesh.</p>
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
+
+<h3>Smart UV Angle</h3>
+
+<p>
+Controls how aggressively Smart UV Project splits the mesh into UV islands.
+</p>
+
+<p>
+Lower values create more cuts and more UV islands.
+</p>
+
+<p>
+Higher values create larger islands.
+</p>
+
+<p>
+You can manually adjust this value for finer control, but ScanReady also includes simplified UV presets inside Step 2:
+</p>
+
+<ul>
+<li><strong>Balanced</strong> → general-purpose unwrap for most scans</li>
+<li><strong>Detailed</strong> → creates more UV islands to preserve texture detail</li>
+<li><strong>Large Islands</strong> → creates larger UV islands with fewer cuts</li>
+</ul>
+
+<p>
+These presets automatically adjust the Smart UV Angle for common workflows.
+</p>
+
+<hr>
+
+<h3>UV Padding</h3>
+
+<p>
+Sets spacing between UV islands.
+</p>
+
+<p>
+Increase padding to reduce texture bleeding, especially at lower texture resolutions.
+</p>
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-uv-settings.png" alt="ScanReady UV Settings interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+<hr />
+<h1 id="bake-settings">Bake Settings</h1>
+<p>These settings control baking quality, texture padding, image format quality, occlusion options, and memory safety.</p>
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
+
+<h3>Bake Samples</h3>
+
+<p>
+Sets the number of Cycles samples used for baking.
+</p>
+
+<p>
+Higher values can reduce noise, especially for Ambient Occlusion, but they also increase bake time.
+</p>
+
+<hr>
+
+<h3>Bake Margin</h3>
+
+<p>
+Adds pixel padding around baked UV islands.
+</p>
+
+<p>
+This helps reduce visible seams and texture bleeding.
+</p>
+
+<hr>
+
+<h3>JPG Quality</h3>
+
+<p>
+Controls JPG compression quality when the selected image format is JPG.
+</p>
+
+<p>
+Higher values preserve more image detail but create larger files.
+</p>
+
+<hr>
+
+<h3>TIFF 16-bit</h3>
+
+<p>
+Enables higher precision TIFF output when the selected image format is TIFF.
+</p>
+
+<p>
+This can be useful for detailed assets, archival workflows, or technical texture output.
+</p>
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-bake-settings.png" alt="ScanReady Bake Settings interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+<hr />
+<h1 id="occlusion-settings">Occlusion Settings</h1>
+<p>These options appear when <strong>Bake Occlusion</strong> is enabled.</p>
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
+
+<h3>AO Source</h3>
+
+<p>
+Controls whether Ambient Occlusion is baked from the high-poly source to the lowpoly target, or calculated from the lowpoly mesh only.
+</p>
+
+<hr>
+
+<h3>AO Auto Distance</h3>
+
+<p>
+Automatically calculates AO distance based on the model size.
+</p>
+
+<hr>
+
+<h3>AO Distance</h3>
+
+<p>
+Manual AO ray distance when automatic distance is disabled.
+</p>
+
+<hr>
+
+<h3>AO Samples</h3>
+
+<p>
+Controls Ambient Occlusion bake quality.
+</p>
+
+<p>
+Higher values produce cleaner AO but increase bake time.
+</p>
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-occlusion-settings.png" alt="ScanReady Occlusion Settings interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+<hr />
+<h1 id="memory-safety">Memory Safety</h1>
+<p>These options help reduce memory-related problems during heavy baking operations.</p>
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
+
+<h3>Safe Memory Bake</h3>
+
+<p>
+Uses a safer bake workflow designed to reduce memory pressure on large scans and heavy Blender scenes.
+</p>
+
+<p>
+Leave this enabled when working with dense photogrammetry assets or high texture resolutions.
+</p>
+
+<hr>
+
+<h3>Force CPU Baking</h3>
+
+<p>
+Forces baking on the CPU to avoid GPU memory limits.
+</p>
+
+<p>
+This is usually slower, but it can be safer on systems with low VRAM.
+</p>
+
+<p>
+ScanReady 1.0 can enable this automatically when multi-material baking is used.
+</p>
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-memory-safety.png" alt="ScanReady Memory Safety interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+<hr />
+<h1 id="presets">Presets</h1>
+<p>ScanReady 1.0 can save, reload, and delete named presets.</p>
+<p>Presets store the current workflow settings so you can reuse them later.</p>
+<p>Use presets when processing multiple scans with similar requirements, such as:</p>
+<ul>
+<li>VR assets</li>
+<li>Game props</li>
+<li>Museum objects</li>
+<li>Repeated bake settings</li>
+<li>Standard studio workflows</li>
+</ul>
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
+
+<h3>Preset Name</h3>
+
+<p>
+Defines the name of the preset to save.
+</p>
+
+<hr>
+
+<h3>Save Preset</h3>
+
+<p>
+Saves the current ScanReady settings as a reusable preset.
+</p>
+
+<hr>
+
+<h3>Preset Selector</h3>
+
+<p>
+Lets you choose an existing preset.
+</p>
+
+<hr>
+
+<h3>Reload Preset</h3>
+
+<p>
+Loads the selected preset.
+</p>
+
+<hr>
+
+<h3>Delete Preset</h3>
+
+<p>
+Deletes the selected preset.
+</p>
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-presets.png" alt="ScanReady Presets interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+<hr />
+<h1 id="utilities">Utilities</h1>
+<p>Utility tools help reset or restore the addon configuration.</p>
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
+
+<h3>Reset Defaults</h3>
+
+<p>
+Restores ScanReady settings to their default values.
+</p>
+
+<p>
+Use this if the current settings are producing unexpected results or if you want to return to a clean starting configuration.
+</p>
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-utilities.png" alt="ScanReady Utilities interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+<hr />
+<h1 id="addon-preferences-updates">Addon Preferences / Updates</h1>
+<p>ScanReady includes update preferences in the Blender Add-on Preferences panel.</p>
+<p>These options help check for new versions, open release notes, and configure publishing links.</p>
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
+
+<h3>Check for Updates</h3>
+
+<p>
+Checks whether a newer version of ScanReady is available.
+</p>
+
+<hr>
+
+<h3>Release Notes</h3>
+
+<p>
+Opens the ScanReady documentation or release notes page.
+</p>
+
+<hr>
+
+<h3>Update</h3>
+
+<p>
+Opens or downloads the configured update package for manual installation.
+</p>
+
+<hr>
+
+<h3>Publishing Links</h3>
+
+<p>
+These links are used to configure update manifest, download URL, and release notes URL after publishing.
+</p>
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <img src="../img/advanced-addon-preferences.png" alt="ScanReady Addon Preferences and Updates interface" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+<hr />
+<h1 id="practical-advice">Practical Advice</h1>
+<p>For VR, videogames, and realtime workflows, always balance quality and performance.</p>
+<p>Use advanced settings to find the right compromise between:</p>
+<ul>
+<li>Mesh cleanup</li>
+<li>UV quality</li>
+<li>Bake quality</li>
+<li>Texture resolution</li>
+<li>File size</li>
+<li>Memory usage</li>
+<li>Realtime performance</li>
+</ul>
+<p>The goal is not to preserve every polygon from the original scan.</p>
+<p>The goal is to preserve the visual identity of the scan in a lighter asset that is easier to use.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
