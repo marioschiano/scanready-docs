@@ -2,21 +2,29 @@
 
 Why is ScanReady different?
 
+<p align="center">
+  <img src="../img/why-scanready-hero.jpg" alt="ScanReady workflow from heavy photogrammetry scan to optimized realtime asset" style="max-width:900px;width:100%;">
+</p>
+
+---
+
 ## Smart Adaptive Optimization
 
 Traditional mesh reduction often applies the same optimization uniformly across the entire model.
 
-This can unnecessarily preserve dense geometry in flat areas while damaging important surface details in complex regions.
+This can unnecessarily preserve dense geometry in flat areas while damaging important surface details in more complex regions.
 
 ScanReady 1.0 uses adaptive optimization to analyze the surface and preserve visually important details while simplifying flatter or less detailed areas more aggressively.
 
 The result is a cleaner and more efficient lowpoly asset that keeps much more of the original scan quality where it matters most.
 
+---
+
 ## Built for Photogrammetry and Game-Ready Assets
 
 ScanReady is designed to convert dense high-poly scans into optimized, game-ready assets directly inside Blender.
 
-Instead of spending hours manually cleaning meshes, generating UVs, creating cages and baking textures, ScanReady automates the entire workflow into a fast and efficient pipeline.
+Instead of spending hours manually cleaning meshes, generating UVs, creating cages, and baking textures, ScanReady automates the workflow into a faster and more efficient pipeline.
 
 ---
 
@@ -27,6 +35,8 @@ ScanReady 1.0 does not only optimize polygon density.
 The addon also helps improve UV space efficiency and bake preparation for cleaner and more detailed realtime textures.
 
 Optimized UV packing helps preserve texture detail while reducing unnecessary texture waste.
+
+---
 
 ## The Problem with Traditional Workflows
 
@@ -80,12 +90,12 @@ Perfect for:
 - Environment artists
 - Game developers
 - Asset creators
-- 3D scanning workflows
+- VR and AR workflows
 - Real-time applications
 
 ---
 
-## From Millions of Polygons to Real-Time Assets
+## From Millions of Polygons to Realtime Assets
 
 ScanReady helps transform heavy scans into optimized assets suitable for:
 
@@ -95,6 +105,8 @@ ScanReady helps transform heavy scans into optimized assets suitable for:
 - VR applications
 - AR experiences
 - Game production
+
+while preserving important visual surface details through textures and adaptive optimization.
 
 ---
 
@@ -109,17 +121,27 @@ Manual workflows often require:
 - Material cleanup
 - Repeated testing
 
-ScanReady automates these repetitive technical tasks so artists can focus on creativity instead of cleanup.
+ScanReady automates these repetitive technical tasks so artists can spend more time focusing on visual quality and creative work.
 
 ---
 
 ## Built for Speed
 
-The goal of ScanReady is simple:
+ScanReady is designed to reduce the technical complexity of scan optimization workflows.
 
-> Reduce technical friction and accelerate scan optimization workflows.
+Tasks that normally require multiple manual steps — mesh cleanup, optimization, UV generation, cage setup, and baking — can be prepared significantly faster inside a single integrated workflow.
 
-From scan to final asset in significantly less time.
+The goal is simple:
+
+> Reduce technical friction and accelerate scan-to-realtime asset creation.
+
+---
+
+## Automated Workflow
+
+ScanReady combines optimization, UV generation, cage preparation, and baking into a more automated workflow designed specifically for scanned assets.
+
+Instead of manually configuring multiple technical steps, artists can focus on preparing cleaner realtime assets more efficiently.
 
 ---
 
@@ -136,7 +158,9 @@ From scan to final asset in significantly less time.
 ## ScanReady Philosophy
 
 Fast.
+
 Clean.
+
 Game-ready.
 
 Built for artists who want efficient scan optimization directly inside Blender.
