@@ -20,6 +20,14 @@ Instead of spending hours manually cleaning meshes, generating UVs, creating cag
 
 ---
 
+## Better Texture Space Usage
+
+ScanReady 1.0 does not only optimize polygon density.
+
+The addon also helps improve UV space efficiency and bake preparation for cleaner and more detailed realtime textures.
+
+Optimized UV packing helps preserve texture detail while reducing unnecessary texture waste.
+
 ## The Problem with Traditional Workflows
 
 Photogrammetry scans are often:
