@@ -12,6 +12,16 @@ Optimize / Reduce controls how much geometry is kept in the lowpoly preview. The
 
 ---
 
+## Adaptive Optimization
+
+Optimization is not applied uniformly across the entire model.
+
+ScanReady preserves important surface detail while simplifying flatter or less detailed regions more aggressively.
+
+This helps create cleaner and more efficient lowpoly assets for realtime workflows.
+
+---
+
 ## Performance Improvement
 
 Heavy scans can quickly become difficult to manage inside Blender.
