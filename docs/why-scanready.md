@@ -2,9 +2,7 @@
 
 Why is ScanReady different?
 
-<p align="center">
-  <img src="../img/why-scanready-hero.jpg" alt="ScanReady workflow from heavy photogrammetry scan to optimized realtime asset" style="max-width:900px;width:100%;">
-</p>
+<img src="img/why-scanready-hero.jpg" alt="ScanReady workflow" style="max-width:900px;width:100%;">
 
 ---
 
