@@ -1,5 +1,7 @@
 # Why ScanReady?
 
+Why is ScanReady different?
+
 ## Smart Adaptive Optimization
 
 Traditional mesh reduction often applies the same optimization uniformly across the entire model.
