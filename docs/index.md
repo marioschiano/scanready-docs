@@ -51,6 +51,8 @@ It helps convert a heavy scan into a lighter, cleaner, baked asset that can be u
 
 # 🔥 Before / After
 
+Optimized for realtime workflows without unnecessarily wasting polygons.
+
 ![Before After](img/one_click_before_after.jpg)
 
 <p align="center">
