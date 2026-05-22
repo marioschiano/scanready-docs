@@ -34,6 +34,17 @@ ScanReady 1.0 simplifies this process directly inside Blender.
 It helps convert a heavy scan into a lighter, cleaner, baked asset that can be used more efficiently in realtime workflows.
 
 ---
+## Smart Adaptive Optimization
+
+ScanReady 1.0 goes beyond standard mesh reduction.
+
+Instead of reducing geometry uniformly, ScanReady adapts the optimization process depending on the surface complexity of the scan.
+
+Flat or less detailed areas can be simplified more aggressively, while important shapes and surface details are preserved automatically.
+
+This helps create more efficient realtime assets without unnecessarily wasting polygons.
+
+---
 
 ## 🔥 Before / After
 
