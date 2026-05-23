@@ -7,25 +7,24 @@ theme:
     scheme: slate
     primary: green
     accent: lime
-
+    
 nav:
   - Home: index.md
   - Why ScanReady: why-scanready.md
+
   - Getting Started:
       - Installation: installation.md
       - Quick Start: quick-start.md
       - One Click Bake: one-click.md
+
   - Workflow:
       - Step 1 - Preview / Reduce: step1.md
       - Step 2 - UV / Cage: step2.md
       - Step 3 - Bake / Output: step3.md
-  - Advanced:
-    - Advanced Settings: advanced.md
-      
-  - Support:
-    - FAQ / Troubleshooting: troubleshooting.md
-      
 
-      - Support:
-    - FAQ / Troubleshooting: troubleshooting.md
-    - Support: support.md
+  - Advanced:
+      - Advanced Settings: advanced.md
+
+  - Support:
+      - FAQ / Troubleshooting: troubleshooting.md
+      - Support: support.md
