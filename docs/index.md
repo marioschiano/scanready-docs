@@ -190,11 +190,7 @@ The goal is to preserve the visual identity of the original scan while making it
 
 ScanReady 1.0 is designed for Blender 4.0 and newer.
 
-Tested on:
-
-- Blender 4.0
-- Blender 4.1
-- Blender 4.2
+The addon has been tested across multiple Blender versions, including Blender 4.x and Blender 5.1.
 
 ---
 
