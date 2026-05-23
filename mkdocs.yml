@@ -20,11 +20,11 @@ nav:
       - Step 2 - UV / Cage: step2.md
       - Step 3 - Bake / Output: step3.md
   - Advanced:
-      - Advanced Settings: advanced.md
+    - Advanced Settings: advanced.md
       
   - Support:
-      - Troubleshooting: troubleshooting.md
-      - FAQ: faq.md
+    - FAQ / Troubleshooting: troubleshooting.md
+      
 
       - Support:
     - FAQ / Troubleshooting: troubleshooting.md
