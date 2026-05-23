@@ -1,5 +1,7 @@
 # ScanReady 1.0
 
+Adaptive Scan Optimization and Baking Workflow for Blender
+
 <p align="center">
   <img src="img/hero.png" style="max-width:620px;width:100%;">
 </p>
