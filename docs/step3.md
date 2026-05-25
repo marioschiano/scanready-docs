@@ -103,18 +103,18 @@ You can still disable it manually if your GPU can handle the bake safely.
 
 ---
 
-## UV Texture Efficiency
+## Texture Detail
 
-The **UV Texture Efficiency** box helps estimate whether the current bake setup is likely to preserve enough texture detail.
+The **Texture Detail** box helps estimate whether the current bake setup is likely to preserve enough texture detail.
 
-Click **Analyze UV Usage** after generating UVs.
+Click **Analyze Texture Detail** after generating UVs.
 
 ScanReady searches for the matching high-poly source and optimized UV mesh, then compares the original texture usage with the current bake setup.
 
 It reports a compact **Detail Match** estimate and recommends whether the current texture size and material count are balanced.
 
 <p align="center">
-  <img src="../img/step3-uv-efficiency.png" alt="UV texture efficiency analysis" style="max-width:1000px;width:100%;">
+  <img src="../img/step3-uv-efficiency.png" alt="Texture Detail analysis" style="max-width:1000px;width:100%;">
 </p>
 
 <p align="center">
@@ -129,6 +129,22 @@ This is useful when deciding whether to:
 - Improve UV packing before baking
 
 If ScanReady cannot find a matching high-to-UV pair automatically, it falls back to analyzing the active mesh.
+
+---
+
+## Fit Low to High Before Bake
+
+Some scans contain surfaces where the optimized lowpoly mesh does not sit close enough to the original high-poly scan.
+
+When this happens, the bake rays may miss the high-poly surface and produce black areas, empty details, or incorrect projections.
+
+Enable **Fit Low to High Before Bake** in **Advanced > Bake Settings** when the bake has missing areas caused by height mismatch between the low and high meshes.
+
+ScanReady projects the UV lowpoly mesh toward the high-poly source before baking, then bakes using the fitted lowpoly shape.
+
+Use **Fit Offset** if the fitted mesh sinks too far into the high-poly surface.
+
+This option is disabled by default because very thin, overlapping, or complex scans may still require cage adjustment.
 
 ---
 

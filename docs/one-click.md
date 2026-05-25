@@ -43,12 +43,13 @@ When you click **ONE CLICK BAKE**, ScanReady 1.0 runs the complete scan-to-asset
 
 1. Cleans the selected scan by removing common mesh noise such as loose polygons, floating fragments, and isolated vertices.
 2. Creates a lowpoly preview from the cleaned high-poly scan.
-3. Reduces the geometry to make the model lighter.
-4. Generates UVs for the optimized object.
-5. Creates or estimates the baking cage.
-6. Bakes texture detail from the original scan.
-7. Builds the final material setup.
-8. Saves baked textures if **Save Images** is enabled.
+3. Runs pre-decimate merge cleanup on the duplicated preview mesh when needed.
+4. Reduces the geometry to make the model lighter.
+5. Generates UVs for the optimized object.
+6. Creates or estimates the baking cage.
+7. Bakes texture detail from the original scan.
+8. Builds the final material setup.
+9. Saves baked textures if **Save Images** is enabled.
 
 The goal is to preserve the visual identity of the original scan while making the model easier to use in realtime projects.
 
@@ -126,6 +127,8 @@ For best results:
 - Choose **Texture Size** based on the level of detail you need.
 - Enable **Bake Base Color**, **Bake Normal**, **Bake Roughness**, or **Bake Occlusion** depending on the maps you want.
 - Set the **Output Folder** if you want texture files saved to disk.
+
+For scans with broad continuous surfaces, the **Continuous** Smart UV preset can be useful when the default Balanced preset creates too many small UV islands.
 
 ---
 

@@ -34,6 +34,23 @@ Merges vertices that are very close together.
 This can help clean small scan artifacts, tiny gaps, or overlapping points before reduction.
 </p>
 
+<p>
+When <strong>Auto Weld Distance</strong> is enabled, ScanReady estimates this value from the selected object size.
+Disable Auto Weld Distance if you want to type a manual weld value.
+</p>
+
+<hr>
+
+<h3>Pre-Decimate Merge</h3>
+
+<p>
+Runs a Merge by Distance cleanup on the duplicated preview mesh before the Decimate modifier is added.
+</p>
+
+<p>
+This can help reduce overlapping scan polygons before optimization. If thin details are affected, lower the value and create the lowpoly preview again.
+</p>
+
 <hr>
 
 <h3>Auto Fix Normals</h3>
@@ -107,9 +124,10 @@ You can manually adjust this value for finer control, but ScanReady also include
 </p>
 
 <ul>
-<li><strong>Balanced</strong> → general-purpose unwrap for most scans</li>
-<li><strong>Detailed</strong> → creates more UV islands to preserve texture detail</li>
-<li><strong>Large Islands</strong> → creates larger UV islands with fewer cuts</li>
+<li><strong>Balanced</strong> -> general-purpose unwrap for most scans</li>
+<li><strong>Detailed</strong> -> creates more UV islands to preserve texture detail</li>
+<li><strong>Large Islands</strong> -> creates larger UV islands with fewer cuts</li>
+<li><strong>Continuous</strong> - keeps more connected surfaces together, useful for cars, panels, and broad continuous scan surfaces</li>
 </ul>
 
 <p>
@@ -166,6 +184,31 @@ Adds pixel padding around baked UV islands.
 
 <p>
 This helps reduce visible seams and texture bleeding.
+</p>
+
+<hr>
+
+<h3>Fit Low to High Before Bake</h3>
+
+<p>
+Projects the UV lowpoly mesh onto the original high-poly source before baking.
+</p>
+
+<p>
+Use this when the lowpoly surface sits too far in front of or behind the high-poly surface and the bake produces black gaps or missing details.
+It is disabled by default because some thin or overlapping scans can need manual cage tuning instead.
+</p>
+
+<hr>
+
+<h3>Fit Offset</h3>
+
+<p>
+Adds a small offset after fitting the low mesh to the high mesh.
+</p>
+
+<p>
+Use a small positive value if the fitted lowpoly mesh sinks into the high-poly surface.
 </p>
 
 <hr>

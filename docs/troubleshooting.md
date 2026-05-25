@@ -83,6 +83,7 @@ If parts of the scan detail are missing in the baked texture:
 - Increase **Cage Extrusion** slightly
 - Use **Auto Cage Extrusion**
 - Enable **Show Cage** and inspect the cage
+- Enable **Fit Low to High Before Bake** if the lowpoly surface is too far from the high-poly source
 - Increase **Texture Size** if the bake is too low resolution
 - Make sure the original high-poly object is still available
 
@@ -258,11 +259,15 @@ If the baked texture contains black areas, missing details, or incorrect project
 
 In this case, some parts of the high-poly scan are not being reached correctly during baking.
 
+Black areas can also happen when parts of the optimized lowpoly mesh sit in front of or behind the high-poly source, so the bake rays do not hit the expected surface.
+
 To fix this:
 
 - Enable **Show Cage**
 - Increase the **Cage Extrusion** value
 - Inspect the cage around the model before baking
+- Try **Fit Low to High Before Bake** in **Advanced > Bake Settings**
+- Use **Fit Offset** only if the fitted lowpoly mesh sinks into the high-poly surface
 
 The cage should fully surround the high-poly surface.
 

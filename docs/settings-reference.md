@@ -12,7 +12,9 @@ Use it as a quick reference when tuning scans for VR, videogames, realtime visua
 |---|---|---|
 | **Final Faces** | Target face count for the optimized lowpoly mesh. | Lower it for lighter VR/game assets. Raise it to preserve silhouette detail. |
 | **Optimize / Reduce** | Controls how strongly the mesh is reduced. | Lower values create stronger reduction. Higher values keep more geometry. |
+| **Auto Weld Distance** | Automatically estimates Weld Distance from the selected object size. | Leave enabled for most scans. Disable it when you need a fixed manual weld value. |
 | **Weld Distance** | Merges vertices that are very close together. | Use it to clean small scan artifacts, tiny gaps, or overlapping points. |
+| **Pre-Decimate Merge** | Runs Merge by Distance on the duplicated preview mesh before Decimate. | Increase it to reduce overlapping scan polygons before optimization. Lower it if thin details are affected. |
 | **Auto Fix Normals** | Recalculates high mesh normals before preview creation. | Enable it when the scan has inverted normals or shading artifacts. |
 | **Recalculate Outside Normals** | Manually recalculates normals outside. | Use it when the mesh appears inside-out or has broken shading. |
 
@@ -41,6 +43,8 @@ Use it as a quick reference when tuning scans for VR, videogames, realtime visua
 | **Auto Pack UV** | Packs UV islands automatically after unwrap. | Leave enabled unless you want to arrange UV islands manually. |
 | **UV Padding** | Adds spacing between UV islands. | Increase it to reduce texture bleeding and visible seams. |
 
+Smart UV presets include **Balanced**, **Detailed**, **Large Islands**, and **Continuous**.
+Balanced is the default. Continuous is useful when connected surfaces, such as car body panels or broad scan surfaces, should stay together with fewer UV cuts.
 
 ---
 
@@ -61,9 +65,11 @@ Use it as a quick reference when tuning scans for VR, videogames, realtime visua
 |---|---|---|
 | **Texture Size** | Sets baked texture resolution. | Raise it for close-up assets. Lower it for lightweight VR/game assets. |
 | **Bake Materials** | Splits the bake into multiple material groups. | Increase for large scans that need more texture detail. Values above `1` automatically enable Force CPU Baking. |
-| **UV Texture Efficiency** | Analyzes high-to-UV texture/detail match. | Use it before baking to decide whether texture size and material count are balanced. |
+| **Texture Detail** | Analyzes high-to-UV texture/detail match. | Use it before baking to decide whether texture size and material count are balanced. |
 | **Bake Samples** | Sets Cycles bake sample count. | Raise it for cleaner bakes, especially AO. Lower it for faster tests. |
 | **Bake Margin** | Adds padding around baked UV islands. | Increase it to reduce seams and texture bleeding. |
+| **Fit Low to High Before Bake** | Projects the UV lowpoly mesh onto the high source before baking. | Enable it when black or missing bake areas are caused by height mismatch between low and high meshes. |
+| **Fit Offset** | Adds a small offset after fitting the low mesh to the high mesh. | Use a small positive value if the fitted low mesh sinks into the high surface. |
 | **Bake Base Color** | Bakes the main color texture. | Keep enabled when preserving original scan color. |
 | **Bake Normal** | Bakes or transfers a normal map. | If the high material has a linked normal texture, ScanReady transfers it. Otherwise it performs a geometric high-to-low normal bake. |
 | **Bake Roughness** | Transfers roughness from the high material when a roughness texture is linked. | Enable it when the final asset needs roughness variation from the original material. |

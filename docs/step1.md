@@ -252,6 +252,12 @@ If the preview is too heavy or too simplified, adjust **Optimize / Reduce** or *
 
 ScanReady 1.0 cleans the selected high-poly scan, removes common mesh noise such as loose polygons or isolated vertices, then creates an optimized preview object.
 
+Before the Decimate modifier is added, ScanReady can also run a **Pre-Decimate Merge** cleanup on the duplicated preview mesh.
+This helps reduce overlapping scan polygons before optimization.
+
+In **Advanced > Mesh Settings**, **Auto Weld Distance** estimates the weld distance from the selected object size.
+Disable it only when you need to type a fixed manual weld value.
+
 <div style="width:100%; text-align:left;">
   <img src="../img/step1-cleaner.gif" alt="ScanReady 1.0 mesh cleanup before lowpoly preview" style="max-width:820px;width:100%;">
 </div>

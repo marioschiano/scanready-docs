@@ -163,6 +163,13 @@ Applies a recommended Smart UV angle.
 Use it as a fast starting point for common scan types.
 </p>
 
+<ul>
+<li><strong>Balanced</strong> is the default preset for most scans.</li>
+<li><strong>Detailed</strong> creates more cuts when you need tighter UV control.</li>
+<li><strong>Large Islands</strong> creates fewer cuts and larger islands.</li>
+<li><strong>Continuous</strong> keeps more connected surfaces together and can work well for cars, panels, and broad continuous surfaces.</li>
+</ul>
+
 <h3>Smart UV Angle</h3>
 
 <p>
