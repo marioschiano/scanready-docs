@@ -16,7 +16,7 @@ Full documentation and workflow guides:
 
 Workflow videos, updates, and tutorials:
 
-[Open Mario Schiano 3D on YouTube](https://www.youtube.com/@marioschiano3d)
+[ScanReady Tutorials on YouTube](https://www.youtube.com/@marioschiano3d)
 
 ---
 

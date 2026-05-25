@@ -212,7 +212,7 @@ For the full automatic workflow, continue with:
 
 Follow ScanReady development and workflow videos on YouTube:
 
-[Open Mario Schiano 3D on YouTube](https://www.youtube.com/@marioschiano3d)
+[ScanReady Tutorials on YouTube](https://www.youtube.com/@marioschiano3d)
 
 ---
 
