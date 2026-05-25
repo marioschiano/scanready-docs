@@ -2,7 +2,9 @@
 
 Why is ScanReady different?
 
-<img src="../img/scanready-workflow.gif" alt="ScanReady workflow" style="max-width:820px;width:100%;">
+<p align="center">
+  <img src="img/hero.png" style="max-width:620px;width:100%;">
+</p>
 
 ---
 
