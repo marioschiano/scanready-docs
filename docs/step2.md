@@ -56,14 +56,6 @@ Many photogrammetry scans contain UV layouts that waste large portions of the av
 
 After optimization, ScanReady 1.0 can generate a cleaner UV layout with better UV packing and more efficient texture usage.
 
-<p align="center">
-  <img src="../img/step2-uv-packing.png" alt="UV packing efficiency comparison" style="max-width:1000px;width:100%;">
-</p>
-
-<p align="center">
-<b>Better UV packing improves texture usage and baking efficiency.</b>
-</p>
-
 This allows the optimized asset to preserve more detail while using fewer materials and lower texture memory.
 
 Good UVs help produce:
@@ -141,14 +133,6 @@ ScanReady 1.0 exposes Smart UV controls so you can adjust how the unwrap behaves
 
 These settings control how Smart UV Project unwraps the optimized mesh.
 
-<p align="center">
-  <img src="../img/step2-ui-panel.png" alt="ScanReady UV and Cage settings interface" style="max-width:1000px;width:100%;">
-</p>
-
-<p align="center">
-<b>ScanReady 1.0 UV and Cage controls.</b>
-</p>
-
 <div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
 
 <div style="flex:1 1 360px; min-width:260px;">
@@ -210,10 +194,6 @@ Better UV packing helps maximize texture resolution and preserve more texture de
 
 </div>
 
-<div style="flex:0 0 320px; text-align:center;">
-  <img src="../img/step2-uv-settings.png" alt="ScanReady 1.0 UV settings panel" style="width:320px; max-width:100%;">
-</div>
-
 </div>
 
 ---
@@ -230,14 +210,6 @@ The checker texture helps reveal:
 - Problematic UV islands
 
 A clean checker pattern usually indicates a healthier UV layout for baking.
-
-<p align="center">
-  <img src="../img/step2-checker-preview.png" alt="Checker preview showing UV stretching" style="max-width:1000px;width:100%;">
-</p>
-
-<p align="center">
-<b>Checker preview helps detect UV stretching and texel density issues.</b>
-</p>
 
 ---
 
@@ -281,14 +253,6 @@ Increase it if the bake misses details, creates black areas, or produces project
 Use the smallest value that fully covers the scan surface cleanly.
 </p>
 
-<p align="center">
-  <img src="../img/step2-cage-extrusion.png" alt="Cage extrusion adjustment examples" style="max-width:1100px;width:100%;">
-</p>
-
-<p align="center">
-<b>Correct cage extrusion helps avoid missing details and baking projection errors.</b>
-</p>
-
 <h3>Cage Alpha</h3>
 
 <p>
@@ -299,10 +263,6 @@ Controls the cage preview opacity.
 This only affects viewport display and does not change the baked result.
 </p>
 
-</div>
-
-<div style="flex:0 0 320px; text-align:center;">
-  <img src="../img/step2-cage-settings.png" alt="ScanReady 1.0 cage settings panel" style="width:320px; max-width:100%;">
 </div>
 
 </div>

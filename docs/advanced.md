@@ -6,16 +6,6 @@ You do not need to change every setting to use ScanReady 1.0.
 
 For most scans, start with the default values. Adjust advanced settings only when you need more control over performance, quality, or bake accuracy.
 
-<p align="center">
-  <img src="../img/advanced-overview.png" alt="ScanReady Advanced settings overview" style="width:340px; max-width:100%;">
-</p>
-
-<p align="center">
-<b>Advanced controls for cleanup, UVs, baking, presets, utilities, and updates.</b>
-</p>
-
----
-
 # Mesh Settings
 
 These settings control scan cleanup and mesh preparation before generating the lowpoly preview.
@@ -89,10 +79,6 @@ Use this when the scan appears inside-out or has inconsistent shading.
 
 </div>
 
-<div style="flex:0 0 340px; text-align:center;">
-  <img src="../img/advanced-mesh-settings.png" alt="ScanReady Mesh Settings interface" style="width:340px; max-width:100%;">
-</div>
-
 </div>
 
 ---
@@ -146,10 +132,6 @@ Sets spacing between UV islands.
 Increase padding to reduce texture bleeding, especially at lower texture resolutions.
 </p>
 
-</div>
-
-<div style="flex:0 0 340px; text-align:center;">
-  <img src="../img/advanced-uv-settings.png" alt="ScanReady UV Settings interface" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -237,10 +219,6 @@ This can be useful for detailed assets, archival workflows, or technical texture
 
 </div>
 
-<div style="flex:0 0 340px; text-align:center;">
-  <img src="../img/advanced-bake-settings.png" alt="ScanReady Bake Settings interface" style="width:340px; max-width:100%;">
-</div>
-
 </div>
 
 ---
@@ -289,10 +267,6 @@ Higher values produce cleaner AO but increase bake time.
 
 </div>
 
-<div style="flex:0 0 340px; text-align:center;">
-  <img src="../img/advanced-occlusion-settings.png" alt="ScanReady Occlusion Settings interface" style="width:340px; max-width:100%;">
-</div>
-
 </div>
 
 ---
@@ -331,10 +305,6 @@ This is usually slower, but it can be safer on systems with low VRAM.
 ScanReady 1.0 can enable this automatically when multi-material baking is used.
 </p>
 
-</div>
-
-<div style="flex:0 0 340px; text-align:center;">
-  <img src="../img/advanced-memory-safety.png" alt="ScanReady Memory Safety interface" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -399,10 +369,6 @@ Deletes the selected preset.
 
 </div>
 
-<div style="flex:0 0 340px; text-align:center;">
-  <img src="../img/advanced-presets.png" alt="ScanReady Presets interface" style="width:340px; max-width:100%;">
-</div>
-
 </div>
 
 ---
@@ -425,10 +391,6 @@ Restores ScanReady settings to their default values.
 Use this if the current settings are producing unexpected results or if you want to return to a clean starting configuration.
 </p>
 
-</div>
-
-<div style="flex:0 0 340px; text-align:center;">
-  <img src="../img/advanced-utilities.png" alt="ScanReady Utilities interface" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -475,10 +437,6 @@ Opens or downloads the configured update package for manual installation.
 These links are used to configure update manifest, download URL, and release notes URL after publishing.
 </p>
 
-</div>
-
-<div style="flex:0 0 340px; text-align:center;">
-  <img src="../img/advanced-addon-preferences.png" alt="ScanReady Addon Preferences and Updates interface" style="width:340px; max-width:100%;">
 </div>
 
 </div>

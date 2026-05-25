@@ -3,7 +3,7 @@
 Why is ScanReady different?
 
 <p align="center">
-  <img src="img/hero.png" style="max-width:620px;width:100%;">
+  <img src="../img/hero.png" style="max-width:620px;width:100%;">
 </p>
 
 ---
