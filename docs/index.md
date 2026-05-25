@@ -15,7 +15,7 @@ High-poly scans from photogrammetry or 3D capture can be too dense for realtime 
 <br>
 
 <p align="center">
-  <b>High-Poly Scan → Optimized Mesh → UVs → Bake → Realtime Asset</b>
+  <b>High-Poly Scan -> Optimized Mesh -> UVs -> Bake -> Realtime Asset</b>
 </p>
 
 ---
@@ -51,7 +51,7 @@ It helps convert a heavy scan into a lighter, cleaner, baked asset that can be u
 
 ---
 
-# 🔥 Before / After
+# Before / After
 
 Optimized for realtime workflows without unnecessarily wasting polygons.
 
@@ -66,7 +66,7 @@ Optimized for realtime workflows without unnecessarily wasting polygons.
 </p>
 
 <p align="center">
-<b>1M polygons → 20K optimized game-ready mesh</b>
+<b>1M polygons -> 20K optimized game-ready mesh</b>
 </p>
 
 ---
@@ -208,11 +208,11 @@ For the full automatic workflow, continue with:
 
 ---
 
-## 🎬 Videos & Tutorials
+## Videos & Tutorials
 
 Follow ScanReady development and workflow videos on YouTube:
 
-👉 <https://www.youtube.com/@marioschiano3d>
+[Open Mario Schiano 3D on YouTube](https://www.youtube.com/@marioschiano3d)
 
 ---
 
@@ -220,4 +220,4 @@ Follow ScanReady development and workflow videos on YouTube:
 
 If you experience issues or need help with ScanReady 1.0:
 
-📧 support.marioschiano3d@gmail.com
+<a href="mailto:support.marioschiano3d@gmail.com"><strong>support.marioschiano3d@gmail.com</strong></a>

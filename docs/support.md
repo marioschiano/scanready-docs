@@ -8,7 +8,7 @@ Need help with ScanReady 1.0?
 
 Full documentation and workflow guides:
 
-👉 https://marioschiano.github.io/scanready-docs/
+[Open ScanReady Documentation](https://marioschiano.github.io/scanready-docs/)
 
 ---
 
@@ -16,7 +16,7 @@ Full documentation and workflow guides:
 
 Workflow videos, updates, and tutorials:
 
-👉 https://www.youtube.com/@marioschiano3d
+[Open Mario Schiano 3D on YouTube](https://www.youtube.com/@marioschiano3d)
 
 ---
 
@@ -24,10 +24,10 @@ Workflow videos, updates, and tutorials:
 
 Before contacting support, check:
 
-- FAQ / Troubleshooting
-- Step 1 - Preview / Reduce
-- Step 2 - UV / Cage
-- Step 3 - Bake / Output
+- [FAQ / Troubleshooting](troubleshooting.md)
+- [Step 1 - Preview / Reduce](step1.md)
+- [Step 2 - UV / Cage](step2.md)
+- [Step 3 - Bake / Output](step3.md)
 
 Many common baking and UV issues are already covered in the documentation.
 
@@ -37,7 +37,7 @@ Many common baking and UV issues are already covered in the documentation.
 
 For bug reports, workflow issues, or technical questions:
 
-📧 support.marioschiano3d@gmail.com
+<a href="mailto:support.marioschiano3d@gmail.com"><strong>support.marioschiano3d@gmail.com</strong></a>
 
 ---
 
