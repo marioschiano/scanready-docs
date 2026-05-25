@@ -56,6 +56,11 @@ Many photogrammetry scans contain UV layouts that waste large portions of the av
 
 After optimization, ScanReady 1.0 can generate a cleaner UV layout with better UV packing and more efficient texture usage.
 
+<!-- Replace placeholder with ../img/step2-uv-packing.png -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="UV packing efficiency screenshot placeholder" style="max-width:1000px;width:100%;">
+</p>
+
 This allows the optimized asset to preserve more detail while using fewer materials and lower texture memory.
 
 Good UVs help produce:
@@ -133,6 +138,11 @@ ScanReady 1.0 exposes Smart UV controls so you can adjust how the unwrap behaves
 
 These settings control how Smart UV Project unwraps the optimized mesh.
 
+<!-- Replace placeholder with ../img/step2-ui-panel.png -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="ScanReady UV and Cage settings screenshot placeholder" style="max-width:1000px;width:100%;">
+</p>
+
 <div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
 
 <div style="flex:1 1 360px; min-width:260px;">
@@ -194,6 +204,11 @@ Better UV packing helps maximize texture resolution and preserve more texture de
 
 </div>
 
+<div style="flex:0 0 320px; text-align:center;">
+  <!-- Replace placeholder with ../img/step2-uv-settings.png -->
+  <img src="../img/placeholder-image.svg" alt="ScanReady UV settings panel placeholder" style="width:320px; max-width:100%;">
+</div>
+
 </div>
 
 ---
@@ -210,6 +225,11 @@ The checker texture helps reveal:
 - Problematic UV islands
 
 A clean checker pattern usually indicates a healthier UV layout for baking.
+
+<!-- Replace placeholder with ../img/step2-checker-preview.png -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="Checker preview screenshot placeholder" style="max-width:1000px;width:100%;">
+</p>
 
 ---
 
@@ -253,6 +273,11 @@ Increase it if the bake misses details, creates black areas, or produces project
 Use the smallest value that fully covers the scan surface cleanly.
 </p>
 
+<!-- Replace placeholder with ../img/step2-cage-extrusion.png -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="Cage extrusion examples placeholder" style="max-width:1100px;width:100%;">
+</p>
+
 <h3>Cage Alpha</h3>
 
 <p>
@@ -263,6 +288,11 @@ Controls the cage preview opacity.
 This only affects viewport display and does not change the baked result.
 </p>
 
+</div>
+
+<div style="flex:0 0 320px; text-align:center;">
+  <!-- Replace placeholder with ../img/step2-cage-settings.png -->
+  <img src="../img/placeholder-image.svg" alt="ScanReady cage settings panel placeholder" style="width:320px; max-width:100%;">
 </div>
 
 </div>

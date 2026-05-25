@@ -6,6 +6,11 @@ You do not need to change every setting to use ScanReady 1.0.
 
 For most scans, start with the default values. Adjust advanced settings only when you need more control over performance, quality, or bake accuracy.
 
+<!-- Replace placeholder with ../img/advanced-overview.png -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="ScanReady Advanced settings overview placeholder" style="max-width:820px;width:100%;">
+</p>
+
 # Mesh Settings
 
 These settings control scan cleanup and mesh preparation before generating the lowpoly preview.
@@ -79,6 +84,11 @@ Use this when the scan appears inside-out or has inconsistent shading.
 
 </div>
 
+<div style="flex:0 0 340px; text-align:center;">
+  <!-- Replace placeholder with ../img/advanced-mesh-settings.png -->
+  <img src="../img/placeholder-image.svg" alt="ScanReady Mesh Settings screenshot placeholder" style="width:340px; max-width:100%;">
+</div>
+
 </div>
 
 ---
@@ -132,6 +142,11 @@ Sets spacing between UV islands.
 Increase padding to reduce texture bleeding, especially at lower texture resolutions.
 </p>
 
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <!-- Replace placeholder with ../img/advanced-uv-settings.png -->
+  <img src="../img/placeholder-image.svg" alt="ScanReady UV Settings screenshot placeholder" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -219,6 +234,11 @@ This can be useful for detailed assets, archival workflows, or technical texture
 
 </div>
 
+<div style="flex:0 0 340px; text-align:center;">
+  <!-- Replace placeholder with ../img/advanced-bake-settings.png -->
+  <img src="../img/placeholder-image.svg" alt="ScanReady Bake Settings screenshot placeholder" style="width:340px; max-width:100%;">
+</div>
+
 </div>
 
 ---
@@ -267,6 +287,11 @@ Higher values produce cleaner AO but increase bake time.
 
 </div>
 
+<div style="flex:0 0 340px; text-align:center;">
+  <!-- Replace placeholder with ../img/advanced-occlusion-settings.png -->
+  <img src="../img/placeholder-image.svg" alt="ScanReady Occlusion Settings screenshot placeholder" style="width:340px; max-width:100%;">
+</div>
+
 </div>
 
 ---
@@ -305,6 +330,11 @@ This is usually slower, but it can be safer on systems with low VRAM.
 ScanReady 1.0 can enable this automatically when multi-material baking is used.
 </p>
 
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <!-- Replace placeholder with ../img/advanced-memory-safety.png -->
+  <img src="../img/placeholder-image.svg" alt="ScanReady Memory Safety screenshot placeholder" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -369,6 +399,11 @@ Deletes the selected preset.
 
 </div>
 
+<div style="flex:0 0 340px; text-align:center;">
+  <!-- Replace placeholder with ../img/advanced-presets.png -->
+  <img src="../img/placeholder-image.svg" alt="ScanReady Presets screenshot placeholder" style="width:340px; max-width:100%;">
+</div>
+
 </div>
 
 ---
@@ -391,6 +426,11 @@ Restores ScanReady settings to their default values.
 Use this if the current settings are producing unexpected results or if you want to return to a clean starting configuration.
 </p>
 
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <!-- Replace placeholder with ../img/advanced-utilities.png -->
+  <img src="../img/placeholder-image.svg" alt="ScanReady Utilities screenshot placeholder" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -437,6 +477,11 @@ Opens or downloads the configured update package for manual installation.
 These links are used to configure update manifest, download URL, and release notes URL after publishing.
 </p>
 
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <!-- Replace placeholder with ../img/advanced-addon-preferences.png -->
+  <img src="../img/placeholder-image.svg" alt="ScanReady Addon Preferences screenshot placeholder" style="width:340px; max-width:100%;">
 </div>
 
 </div>

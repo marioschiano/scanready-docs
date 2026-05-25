@@ -63,6 +63,11 @@ Common choices:
 
 Higher resolutions increase memory usage significantly.
 
+<!-- Replace placeholder with ../img/step3-texture-size-comparison.png -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="Texture resolution comparison placeholder" style="max-width:1100px;width:100%;">
+</p>
+
 ---
 
 ### Bake Materials
@@ -70,6 +75,11 @@ Higher resolutions increase memory usage significantly.
 Splits the bake into multiple material groups.
 
 Using more materials increases available texture space and can preserve more detail on large scans.
+
+<!-- Replace placeholder with ../img/step3-material-count.png -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="Bake material count comparison placeholder" style="max-width:1100px;width:100%;">
+</p>
 
 | Materials | Typical Use |
 |---|---|
@@ -96,6 +106,11 @@ Click **Analyze Texture Detail** after generating UVs.
 ScanReady searches for the matching high-poly source and optimized UV mesh, then compares the original texture usage with the current bake setup.
 
 It reports a compact **Detail Match** estimate and recommends whether the current texture size and material count are balanced.
+
+<!-- Replace placeholder with ../img/step3-texture-detail.png -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="Texture Detail analysis placeholder" style="max-width:1000px;width:100%;">
+</p>
 
 This is useful when deciding whether to:
 
@@ -183,6 +198,11 @@ Bakes an Ambient Occlusion map.
 AO can help add contact shadows and surface depth to the final material.
 
 ---
+
+<!-- Replace placeholder with ../img/step3-bake-maps.png -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="Bake maps screenshot placeholder" style="max-width:1100px;width:100%;">
+</p>
 
 ---
 
@@ -274,6 +294,11 @@ Large photogrammetry scans can easily exceed GPU memory limits during baking.
 
 ScanReady includes safer bake workflows designed for heavy production scenes.
 
+<!-- Replace placeholder with ../img/step3-memory-safety.png -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="Safe memory bake settings placeholder" style="max-width:1000px;width:100%;">
+</p>
+
 ---
 
 ### Safe Memory Bake
@@ -330,6 +355,11 @@ If details are missing, adjust the cage extrusion or increase texture resolution
 ---
 
 ## Realtime Optimization
+
+<!-- Replace placeholder with ../img/step3-final-result.png -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="Final baked realtime-ready asset placeholder" style="max-width:1100px;width:100%;">
+</p>
 
 For realtime workflows, the final result should balance visual quality and performance.
 
