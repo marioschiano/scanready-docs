@@ -101,6 +101,14 @@ If the cage is too large:
 ScanReady 1.0 includes cage tools to make this process faster and easier.
 
 <p align="center">
+  <img src="../img/cage_01_red.png" alt="Red cage warning showing an invalid cage setup for baking" style="max-width:1000px;width:100%;">
+</p>
+
+<p align="center">
+<b>If the cage appears red, the bake will not project correctly. Adjust cage extrusion before continuing.</b>
+</p>
+
+<p align="center">
   <img src="../img/step2-uv-03.png" alt="Cage preview size comparison showing too small, correct, and too large cages" style="max-width:1100px;width:100%;">
 </p>
 
