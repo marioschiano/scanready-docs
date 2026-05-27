@@ -1,0 +1,27 @@
+schema_version = "1.0.0"
+id = "scanready"
+version = "1.0.0"
+name = "ScanReady"
+tagline = "Turn heavy scans into game ready baked assets"
+maintainer = "Mario Schiano"
+type = "add-on"
+website = "https://marioschiano.github.io/scanready-docs/"
+tags = ["3D View", "Mesh", "Import-Export"]
+blender_version_min = "4.0.0"
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+copyright = [
+  "2026 Mario Schiano",
+]
+
+[permissions]
+files = "Save baked textures and presets to disk"
+network = "Check updates and open online documentation"
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  ".*",
+  "*.zip",
+]
