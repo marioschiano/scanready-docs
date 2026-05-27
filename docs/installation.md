@@ -2,7 +2,7 @@
 
 ScanReady 1.0 is a Blender addon by Mario Schiano.
 
-The addon metadata declares compatibility from **Blender 4.0** and later. Install it like a standard Blender addon.
+The addon metadata declares compatibility from **Blender 4.2** and later. Install it like a standard Blender Extension package.
 
 ## Download
 
@@ -41,9 +41,11 @@ The panel title is shown as **Scan Ready v1.0.0**.
 
 ScanReady 1.0 can check for newer versions from the addon preferences when an update manifest is configured.
 
+Press **Check for Updates** in **Edit > Preferences > Add-ons > ScanReady** to compare the installed version with the published update manifest.
+
 If a newer version is available, ScanReady shows an update notice in the panel and in **Edit > Preferences > Add-ons > ScanReady**.
 
-The **Update ScanReady** button downloads the newer `.zip` package to your computer. Install the downloaded zip manually from Blender to complete the update.
+Use the release notes link to review what changed, then update from Blender Extensions or the marketplace where you downloaded ScanReady.
 
 This keeps the update process safe: ScanReady does not automatically replace addon files while Blender is running.
 

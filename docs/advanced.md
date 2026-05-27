@@ -93,6 +93,55 @@ Use this when the scan appears inside-out or has inconsistent shading.
 
 ---
 
+# Adaptive Reduce
+
+Adaptive Reduce controls how ScanReady distributes reduction across the selected scan.
+
+It is enabled by default and is designed to protect visually important detail while allowing flatter surfaces to be simplified more strongly.
+
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
+
+<h3>Adaptive Reduce Preset</h3>
+
+<p>
+Choose the preset that best matches the scan and the target asset.
+</p>
+
+<ul>
+<li><strong>Balanced</strong> is the default preset for most scans.</li>
+<li><strong>Preserve Details</strong> protects complex or important surface regions more strongly.</li>
+<li><strong>Flat Surfaces</strong> reduces broad, simple areas more aggressively.</li>
+</ul>
+
+<hr>
+
+<h3>Show Adaptive Weights</h3>
+
+<p>
+Shows a color preview of how ScanReady will distribute reduction across the scan.
+</p>
+
+<p>
+Red areas represent flatter surfaces that can be reduced more. Blue and green areas represent detail-protected regions.
+</p>
+
+<p>
+Use this preview when a scan has mixed surface types, such as flat architectural panels combined with sculptural or damaged detail.
+</p>
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <!-- Replace placeholder with ../img/advanced-adaptive-reduce.png -->
+  <img src="../img/placeholder-image.svg" alt="ScanReady Adaptive Reduce advanced settings" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+---
+
 # UV Settings
 
 These settings control how Smart UV Project unwraps the optimized mesh.
@@ -116,18 +165,11 @@ Higher values create larger islands.
 </p>
 
 <p>
-You can manually adjust this value for finer control, but ScanReady also includes simplified UV presets inside Step 2:
+You can manually adjust this value for finer control. Adaptive Reduce presets are separate from UV generation; Adaptive Reduce controls mesh simplification, while Smart UV Project controls the unwrap used for baking.
 </p>
 
-<ul>
-<li><strong>Balanced</strong> -> general-purpose unwrap for most scans</li>
-<li><strong>Detailed</strong> -> creates more UV islands to preserve texture detail</li>
-<li><strong>Large Islands</strong> -> creates larger UV islands with fewer cuts</li>
-<li><strong>Continuous</strong> - keeps more connected surfaces together, useful for cars, panels, and broad continuous scan surfaces</li>
-</ul>
-
 <p>
-These presets automatically adjust the Smart UV Angle for common workflows.
+ScanReady 1.0 uses Smart UV Project as the UV method for the current workflow.
 </p>
 
 <hr>
@@ -181,31 +223,6 @@ Adds pixel padding around baked UV islands.
 
 <p>
 This helps reduce visible seams and texture bleeding.
-</p>
-
-<hr>
-
-<h3>Fit Low to High Before Bake</h3>
-
-<p>
-Projects the UV lowpoly mesh onto the original high-poly source before baking.
-</p>
-
-<p>
-Use this when the lowpoly surface sits too far in front of or behind the high-poly surface and the bake produces black gaps or missing details.
-It is disabled by default because some thin or overlapping scans can need manual cage tuning instead.
-</p>
-
-<hr>
-
-<h3>Fit Offset</h3>
-
-<p>
-Adds a small offset after fitting the low mesh to the high mesh.
-</p>
-
-<p>
-Use a small positive value if the fitted lowpoly mesh sinks into the high-poly surface.
 </p>
 
 <hr>
@@ -450,7 +467,7 @@ These options help check for new versions, open release notes, and configure pub
 <h3>Check for Updates</h3>
 
 <p>
-Checks whether a newer version of ScanReady is available.
+Checks whether a newer version of ScanReady is available by reading the configured update manifest.
 </p>
 
 <hr>
@@ -458,15 +475,15 @@ Checks whether a newer version of ScanReady is available.
 <h3>Release Notes</h3>
 
 <p>
-Opens the ScanReady documentation or release notes page.
+Opens the ScanReady changelog and release notes page.
 </p>
 
 <hr>
 
-<h3>Update</h3>
+<h3>Update Source</h3>
 
 <p>
-Opens or downloads the configured update package for manual installation.
+Stores the update manifest URL used by the update checker.
 </p>
 
 <hr>
@@ -474,7 +491,7 @@ Opens or downloads the configured update package for manual installation.
 <h3>Publishing Links</h3>
 
 <p>
-These links are used to configure update manifest, download URL, and release notes URL after publishing.
+These links are used to configure the update manifest and release notes URL after publishing.
 </p>
 
 </div>

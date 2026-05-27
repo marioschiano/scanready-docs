@@ -20,6 +20,39 @@ ScanReady preserves important surface detail while simplifying flatter or less d
 
 This helps create cleaner and more efficient lowpoly assets for realtime workflows.
 
+### Adaptive Reduce
+
+Adaptive Reduce is enabled by default and helps ScanReady distribute polygon reduction more intelligently across the scan.
+
+Instead of treating every surface the same way, it gives flatter areas more reduction and protects regions where surface detail is more important.
+
+Use the Adaptive Reduce preset as a quick starting point:
+
+- **Balanced** for most scans and general realtime assets.
+- **Preserve Details** when the scan has important folds, sculptural forms, engravings, or close-up details.
+- **Flat Surfaces** when the object contains broad simple areas that can be simplified more aggressively.
+
+<!-- Replace placeholder with ../img/step1-adaptive-reduce.gif -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="ScanReady Adaptive Reduce preset comparison" style="max-width:820px;width:100%;">
+</p>
+
+### Show Adaptive Weights
+
+Show Adaptive Weights displays the reduction weighting directly on the model.
+
+Use it before creating the final preview when you want to understand how ScanReady is reading the scan:
+
+- **Red** areas are flatter regions that can be reduced more.
+- **Blue / green** areas are detail-protected regions.
+
+The visualization is only a preview aid. It helps you choose a preset and understand the reduction behavior; it is not a texture that will be exported or baked.
+
+<!-- Replace placeholder with ../img/step1-adaptive-weights.gif -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="ScanReady Show Adaptive Weights visualization" style="max-width:820px;width:100%;">
+</p>
+
 ---
 
 ## Performance Improvement

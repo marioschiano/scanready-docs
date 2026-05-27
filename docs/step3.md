@@ -123,19 +123,15 @@ If ScanReady cannot find a matching high-to-UV pair automatically, it falls back
 
 ---
 
-## Fit Low to High Before Bake
+## Cage Check Before Bake
 
-Some scans contain surfaces where the optimized lowpoly mesh does not sit close enough to the original high-poly scan.
+Before baking, check that the cage fully covers the high-poly scan surface.
 
-When this happens, the bake rays may miss the high-poly surface and produce black areas, empty details, or incorrect projections.
+If the cage is too small, bake rays may miss details and produce black areas, empty details, or incorrect projections.
 
-Enable **Fit Low to High Before Bake** in **Advanced > Bake Settings** when the bake has missing areas caused by height mismatch between the low and high meshes.
+Use **Auto Cage Extrusion** for a quick starting point, then adjust **Cage Extrusion** manually if some areas still need coverage.
 
-ScanReady projects the UV lowpoly mesh toward the high-poly source before baking, then bakes using the fitted lowpoly shape.
-
-Use **Fit Offset** if the fitted mesh sinks too far into the high-poly surface.
-
-This option is disabled by default because very thin, overlapping, or complex scans may still require cage adjustment.
+Use the smallest cage value that captures the scan details without projecting onto unwanted nearby surfaces.
 
 ---
 

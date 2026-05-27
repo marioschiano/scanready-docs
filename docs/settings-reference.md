@@ -15,6 +15,9 @@ Use it as a quick reference when tuning scans for VR, videogames, realtime visua
 | **Auto Weld Distance** | Automatically estimates Weld Distance from the selected object size. | Leave enabled for most scans. Disable it when you need a fixed manual weld value. |
 | **Weld Distance** | Merges vertices that are very close together. | Use it to clean small scan artifacts, tiny gaps, or overlapping points. |
 | **Pre-Decimate Merge** | Runs Merge by Distance on the duplicated preview mesh before Decimate. | Increase it to reduce overlapping scan polygons before optimization. Lower it if thin details are affected. |
+| **Adaptive Reduce** | Uses scan-aware weighting to reduce flatter surfaces more while protecting important details. | Keep enabled for most scans. Disable only if you need a simpler uniform reduction result. |
+| **Adaptive Reduce Preset** | Chooses the adaptive reduction behavior. | Use Balanced for most scans, Preserve Details for complex surfaces, or Flat Surfaces for broad simple surfaces. |
+| **Show Adaptive Weights** | Displays the adaptive reduction weights as colors on the model. | Use it to preview which areas will be reduced more before creating the final lowpoly preview. |
 | **Auto Fix Normals** | Recalculates high mesh normals before preview creation. | Enable it when the scan has inverted normals or shading artifacts. |
 | **Recalculate Outside Normals** | Manually recalculates normals outside. | Use it when the mesh appears inside-out or has broken shading. |
 
@@ -43,8 +46,7 @@ Use it as a quick reference when tuning scans for VR, videogames, realtime visua
 | **Auto Pack UV** | Packs UV islands automatically after unwrap. | Leave enabled unless you want to arrange UV islands manually. |
 | **UV Padding** | Adds spacing between UV islands. | Increase it to reduce texture bleeding and visible seams. |
 
-Smart UV presets include **Balanced**, **Detailed**, **Large Islands**, and **Continuous**.
-Balanced is the default. Continuous is useful when connected surfaces, such as car body panels or broad scan surfaces, should stay together with fewer UV cuts.
+ScanReady 1.0 uses **Smart UV Project** for UV generation. Adaptive Reduce presets are separate from UV settings and control mesh simplification before UVs and baking.
 
 ---
 
@@ -68,8 +70,6 @@ Balanced is the default. Continuous is useful when connected surfaces, such as c
 | **Texture Detail** | Analyzes high-to-UV texture/detail match. | Use it before baking to decide whether texture size and material count are balanced. |
 | **Bake Samples** | Sets Cycles bake sample count. | Raise it for cleaner bakes, especially AO. Lower it for faster tests. |
 | **Bake Margin** | Adds padding around baked UV islands. | Increase it to reduce seams and texture bleeding. |
-| **Fit Low to High Before Bake** | Projects the UV lowpoly mesh onto the high source before baking. | Enable it when black or missing bake areas are caused by height mismatch between low and high meshes. |
-| **Fit Offset** | Adds a small offset after fitting the low mesh to the high mesh. | Use a small positive value if the fitted low mesh sinks into the high surface. |
 | **Bake Base Color** | Bakes the main color texture. | Keep enabled when preserving original scan color. |
 | **Bake Normal** | Bakes or transfers a normal map. | If the high material has a linked normal texture, ScanReady transfers it. Otherwise it performs a geometric high-to-low normal bake. |
 | **Bake Roughness** | Transfers roughness from the high material when a roughness texture is linked. | Enable it when the final asset needs roughness variation from the original material. |
@@ -126,8 +126,8 @@ Balanced is the default. Continuous is useful when connected surfaces, such as c
 | Control | Description | When to Use |
 |---|---|---|
 | **Check for Updates** | Reads the configured update manifest and checks whether a newer ScanReady version is available. | Use it from Blender Preferences when you want to verify the installed version. |
-| **Update ScanReady** | Downloads the newer zip package when an update is available. | Install the downloaded zip manually from Blender to complete the update. |
-| **Release Notes** | Opens the ScanReady documentation or release notes page. | Use it to review what changed before updating. |
+| **Release Notes** | Opens the ScanReady changelog and release notes page. | Use it to review what changed before updating. |
+| **Update Manifest URL** | Stores the JSON URL used for update checks. | Configure it after publishing if the update source changes. |
 
 ---
 

@@ -158,19 +158,12 @@ These settings control how Smart UV Project unwraps the optimized mesh.
 <h3>Smart UV Preset</h3>
 
 <p>
-Applies a recommended Smart UV angle.
+ScanReady 1.0 uses Blender Smart UV Project for automatic UV generation.
 </p>
 
 <p>
-Use it as a fast starting point for common scan types.
+The UV controls affect how the optimized mesh is unwrapped before baking. They are separate from Adaptive Reduce, which controls how the mesh is simplified in Step 1.
 </p>
-
-<ul>
-<li><strong>Balanced</strong> is the default preset for most scans.</li>
-<li><strong>Detailed</strong> creates more cuts when you need tighter UV control.</li>
-<li><strong>Large Islands</strong> creates fewer cuts and larger islands.</li>
-<li><strong>Continuous</strong> keeps more connected surfaces together and can work well for cars, panels, and broad continuous surfaces.</li>
-</ul>
 
 <h3>Smart UV Angle</h3>
 

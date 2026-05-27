@@ -83,7 +83,7 @@ If parts of the scan detail are missing in the baked texture:
 - Increase **Cage Extrusion** slightly
 - Use **Auto Cage Extrusion**
 - Enable **Show Cage** and inspect the cage
-- Enable **Fit Low to High Before Bake** if the lowpoly surface is too far from the high-poly source
+- Check the cage preview and increase **Cage Extrusion** if the cage does not fully cover the high-poly source
 - Increase **Texture Size** if the bake is too low resolution
 - Make sure the original high-poly object is still available
 
@@ -266,8 +266,8 @@ To fix this:
 - Enable **Show Cage**
 - Increase the **Cage Extrusion** value
 - Inspect the cage around the model before baking
-- Try **Fit Low to High Before Bake** in **Advanced > Bake Settings**
-- Use **Fit Offset** only if the fitted lowpoly mesh sinks into the high-poly surface
+- Check the cage preview before baking
+- Increase **Cage Extrusion** slightly if the cage does not fully cover the high-poly source
 
 The cage should fully surround the high-poly surface.
 
@@ -281,19 +281,19 @@ Use the smallest value that completely covers the scan without capturing unwante
 
 ---
 
-## Which UV Method Preset should I use?
+## Which Adaptive Reduce Preset should I use?
 
-ScanReady uses **Smart UV Project** to create UVs automatically. The **UV Method Preset** changes how the UV islands are generated.
+Adaptive Reduce changes how ScanReady distributes mesh reduction across the scan before UVs and baking.
 
 | Preset | Best For | Result |
 |---|---|---|
-| **Balanced** | Most scans | Good general-purpose UV layout. Use this first. |
-| **Large Island** | Scans where the bake looks fragmented, broken, or has too many visible UV seams | Creates larger UV islands and can improve texture continuity. |
-| **Detailed** | Complex scans with many folds, holes, small details, or difficult shapes | Creates more UV islands to reduce stretching, but the bake may look more fragmented. |
+| **Balanced** | Most scans | Good general-purpose reduction behavior. Use this first. |
+| **Preserve Details** | Complex scans with sculptural forms, folds, engravings, damage, or small details | Protects important detail areas more strongly. |
+| **Flat Surfaces** | Objects with broad simple surfaces, panels, walls, floors, or flatter architectural areas | Reduces simple areas more aggressively to save polygons. |
 
-If the baked texture looks fragmented or broken, try **Large Island**, generate the UVs again, and repeat the bake.
+If the optimized preview loses important detail, try **Preserve Details** and create the preview again.
 
-If the texture looks stretched or distorted, try **Detailed**.
+If the preview keeps too much geometry on simple areas, try **Flat Surfaces** and create the preview again.
 
 
 ---

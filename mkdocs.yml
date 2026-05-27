@@ -24,9 +24,14 @@ nav:
 
   - Advanced:
       - Advanced Settings: advanced.md
+      - Settings Reference: settings-reference.md
+      - Export Tips: export-tips.md
+      - Use Cases: use-cases.md
 
   - Support:
-      - FAQ / Troubleshooting: troubleshooting.md
+      - Changelog: changelog.md
+      - FAQ: faq.md
+      - Troubleshooting: troubleshooting.md
       - Support: support.md
       - Changelog: changelog.md
 

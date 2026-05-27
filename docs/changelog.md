@@ -2,7 +2,7 @@
 
 All notable changes to ScanReady will be documented in this file.
 
-Use this file as the source for Superhive product version notes.
+Use this page as the public release notes source for Superhive, Blender Extensions, and addon update links.
 
 ## 1.0.0 - Initial Release
 
@@ -17,14 +17,14 @@ Use this file as the source for Superhive product version notes.
 - Automatic weld distance based on object size, with manual override.
 - Auto combine mesh parts for imported scans with hierarchy.
 - Auto clean scan debris option.
-- Smart UV Project workflow with presets.
+- Smart UV Project workflow.
 - UV / Cage workflow.
 - Base Color, Normal, Roughness, and Ambient Occlusion baking.
 - Texture Detail analysis for estimating texture/material needs.
 - Final mesh setup with Edge Split and Weighted Normal modifiers.
 - Safe Memory Bake and Force CPU Baking options.
 - Documentation and release notes links inside addon preferences.
-- Marketplace/Blender Extensions update notification message.
+- Marketplace and Blender Extensions update notification message.
 
 ### Changed
 
