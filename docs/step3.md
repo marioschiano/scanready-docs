@@ -175,6 +175,8 @@ If no linked normal map is found, ScanReady performs a geometric high-to-low nor
 
 Normal textures are treated as **Non-Color** technical data.
 
+The **Normal Strength** material control is available in **Advanced > Bake Settings** when **Bake Normal** is enabled.
+
 ---
 
 ### Bake Roughness
@@ -192,6 +194,8 @@ Roughness textures are also handled as **Non-Color** technical data.
 Bakes an Ambient Occlusion map.
 
 AO can help add contact shadows and surface depth to the final material.
+
+The **AO Mix** material control is available in **Advanced > Occlusion Settings** when **Bake Occlusion** is enabled. Its default value is `1.0`, which applies the full baked AO texture to the final material.
 
 ---
 
@@ -230,11 +234,11 @@ Higher values produce cleaner AO but increase bake time.
 
 ---
 
-### Normal Strength
+### AO Mix
 
-Controls the strength of the Normal Map node in the final material.
+Controls how strongly the baked Ambient Occlusion texture is mixed into the final Base Color material.
 
-This affects the material appearance, not the baked normal texture itself.
+This affects the material appearance, not the baked AO texture itself.
 
 ---
 

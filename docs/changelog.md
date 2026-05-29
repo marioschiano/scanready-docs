@@ -20,6 +20,7 @@ Use this page as the public release notes source for Superhive, Blender Extensio
 - Smart UV Project workflow.
 - UV / Cage workflow.
 - Base Color, Normal, Roughness, and Ambient Occlusion baking.
+- AO Mix control in Advanced > Occlusion Settings for adjusting how strongly baked Ambient Occlusion affects the final material.
 - Texture Detail analysis for estimating texture/material needs.
 - Final mesh setup with Edge Split and Weighted Normal modifiers.
 - Safe Memory Bake and Force CPU Baking options.
@@ -35,6 +36,7 @@ Use this page as the public release notes source for Superhive, Blender Extensio
 - Default Detail Preserve value changed to better protect detailed scan areas.
 - Removed Auto Weld Distance and Weld Distance; Pre-Decimate Merge is now the single explicit weld control.
 - Removed the live Weld modifier from the preview stack; vertex welding is now handled by the applied Pre-Decimate Merge before Decimate.
+- Moved Normal Strength to Advanced > Bake Settings.
 - Extension manifest cleaned up for Blender Extension validation.
 
 ### Fixed

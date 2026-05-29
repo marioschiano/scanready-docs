@@ -76,7 +76,7 @@ Smart UV settings are applied when UVs are generated. If you change **Smart UV P
 | **Bake Normal** | Bakes or transfers a normal map. | If the high material has a linked normal texture, ScanReady transfers it. Otherwise it performs a geometric high-to-low normal bake. |
 | **Bake Roughness** | Transfers roughness from the high material when a roughness texture is linked. | Enable it when the final asset needs roughness variation from the original material. |
 | **Bake Occlusion** | Bakes an Ambient Occlusion map. | Enable it to add depth and contact shadow detail. |
-| **Normal Strength** | Controls the Normal Map node strength. | Adjust it if the normal detail looks too weak or too strong. |
+| **Normal Strength** | Advanced control for the Normal Map node strength. | Adjust it in Advanced > Bake Settings if the normal detail looks too weak or too strong. |
 
 ---
 
@@ -88,6 +88,7 @@ Smart UV settings are applied when UVs are generated. If you change **Smart UV P
 | **AO Auto Distance** | Automatically calculates AO distance from model size. | Leave enabled for most assets. |
 | **AO Distance** | Manual AO ray distance. | Adjust when automatic distance gives AO that is too strong or too weak. |
 | **AO Samples** | Controls AO bake sample count. | Raise it for cleaner AO. Lower it for faster baking. |
+| **AO Mix** | Controls how strongly baked AO darkens the final Base Color material. | Default is `1.0`. Lower it if the final material looks too dark or contrasty. |
 
 ---
 

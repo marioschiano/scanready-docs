@@ -215,6 +215,18 @@ This helps reduce visible seams and texture bleeding.
 
 <hr>
 
+<h3>Normal Strength</h3>
+
+<p>
+Appears when <strong>Bake Normal</strong> is enabled.
+</p>
+
+<p>
+Controls the strength of the Normal Map node in the final material. This changes material appearance only; it does not change the baked normal texture itself.
+</p>
+
+<hr>
+
 <h3>JPG Quality</h3>
 
 <p>
@@ -288,6 +300,18 @@ Controls Ambient Occlusion bake quality.
 
 <p>
 Higher values produce cleaner AO but increase bake time.
+</p>
+
+<hr>
+
+<h3>AO Mix</h3>
+
+<p>
+Controls how strongly the baked Ambient Occlusion texture darkens the final Base Color material.
+</p>
+
+<p>
+The default value is <strong>1.0</strong>, which uses the full baked AO texture in the final material. Lower values make the AO effect more subtle.
 </p>
 
 </div>
