@@ -31,6 +31,7 @@ Use the Adaptive Reduce preset as a quick starting point:
 - **Balanced** for most scans and general realtime assets.
 - **Preserve Details** when the scan has important folds, sculptural forms, engravings, or close-up details.
 - **Flat Surfaces** when the object contains broad simple areas that can be simplified more aggressively.
+- **Hard Surface** for vehicles and hard-surface scans where a faster approximate pass should protect only stronger normal breaks.
 
 <!-- Replace placeholder with ../img/step1-adaptive-reduce.gif -->
 <p align="center">
@@ -288,8 +289,7 @@ ScanReady 1.0 cleans the selected high-poly scan, removes common mesh noise such
 Before the Decimate modifier is added, ScanReady can also run a **Pre-Decimate Merge** cleanup on the duplicated preview mesh.
 This helps reduce overlapping scan polygons before optimization.
 
-In **Advanced > Mesh Settings**, **Auto Weld Distance** estimates the weld distance from the selected object size.
-Disable it only when you need to type a fixed manual weld value.
+In **Advanced > Mesh Settings**, **Pre-Decimate Merge** is the single explicit weld control. Lower it if thin details are affected.
 
 <div style="width:100%; text-align:left;">
   <img src="../img/step1-cleaner.gif" alt="ScanReady 1.0 mesh cleanup before lowpoly preview" style="max-width:820px;width:100%;">

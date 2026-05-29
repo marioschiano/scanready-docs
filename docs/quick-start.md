@@ -63,7 +63,7 @@ For a first test, keep most defaults and only check:
 
 - **Final Faces** for the desired mesh density.
 - **Adaptive Reduce Preset** set to **Balanced** for most first tests.
-- **Auto Weld Distance** enabled for automatic scan cleanup scaling.
+- **Pre-Decimate Merge** only if you need stronger cleanup for overlapping scan vertices before reduction.
 - **Texture Size** for the desired output resolution.
 - **Bake Base Color** if you need the original color texture.
 - **Bake Normal** if you want to preserve surface detail.
@@ -73,7 +73,7 @@ For a first test, keep most defaults and only check:
 
 If you increase **Bake Materials** above `1`, ScanReady automatically enables **Force CPU Baking** as a safer default for heavier multi-material bakes.
 
-If the preview loses too much surface character, try **Preserve Details**. If broad flat areas still keep too many polygons, try **Flat Surfaces**.
+If the preview loses too much surface character, try **Preserve Details**. If broad flat areas still keep too many polygons, try **Flat Surfaces**. For vehicles or hard-surface scans, try **Hard Surface**.
 
 If the bake produces black or missing areas, check the cage preview and adjust **Cage Extrusion** before baking again.
 

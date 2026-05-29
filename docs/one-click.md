@@ -128,7 +128,7 @@ For best results:
 - Enable **Bake Base Color**, **Bake Normal**, **Bake Roughness**, or **Bake Occlusion** depending on the maps you want.
 - Set the **Output Folder** if you want texture files saved to disk.
 
-For scans with broad continuous surfaces, the **Flat Surfaces** Adaptive Reduce preset can be useful before baking because it allows simple areas to be simplified more aggressively.
+For scans with broad continuous surfaces, the **Flat Surfaces** Adaptive Reduce preset can be useful before baking because it allows simple areas to be simplified more aggressively. For vehicles and hard-surface scans, **Hard Surface** gives a faster approximate pass that protects only stronger normal breaks.
 
 ---
 

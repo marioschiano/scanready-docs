@@ -12,11 +12,9 @@ Use it as a quick reference when tuning scans for VR, videogames, realtime visua
 |---|---|---|
 | **Final Faces** | Target face count for the optimized lowpoly mesh. | Lower it for lighter VR/game assets. Raise it to preserve silhouette detail. |
 | **Optimize / Reduce** | Controls how strongly the mesh is reduced. | Lower values create stronger reduction. Higher values keep more geometry. |
-| **Auto Weld Distance** | Automatically estimates Weld Distance from the selected object size. | Leave enabled for most scans. Disable it when you need a fixed manual weld value. |
-| **Weld Distance** | Merges vertices that are very close together. | Use it to clean small scan artifacts, tiny gaps, or overlapping points. |
-| **Pre-Decimate Merge** | Runs Merge by Distance on the duplicated preview mesh before Decimate. | Increase it to reduce overlapping scan polygons before optimization. Lower it if thin details are affected. |
+| **Pre-Decimate Merge** | Runs Merge by Distance on the duplicated preview mesh before Decimate. This is the single explicit weld control in ScanReady 1.0. | Increase it to reduce overlapping scan polygons before optimization. Lower it if thin details are affected. |
 | **Adaptive Reduce** | Uses scan-aware weighting to reduce flatter surfaces more while protecting important details. | Keep enabled for most scans. Disable only if you need a simpler uniform reduction result. |
-| **Adaptive Reduce Preset** | Chooses the adaptive reduction behavior. | Use Balanced for most scans, Preserve Details for complex surfaces, or Flat Surfaces for broad simple surfaces. |
+| **Adaptive Reduce Preset** | Chooses the adaptive reduction behavior. | Use Balanced for most scans, Preserve Details for complex surfaces, Flat Surfaces for broad simple surfaces, or Hard Surface for vehicles and hard-surface scans. |
 | **Show Adaptive Weights** | Displays the adaptive reduction weights as colors on the model. | Use it to preview which areas will be reduced more before creating the final lowpoly preview. |
 | **Auto Fix Normals** | Recalculates high mesh normals before preview creation. | Enable it when the scan has inverted normals or shading artifacts. |
 | **Recalculate Outside Normals** | Manually recalculates normals outside. | Use it when the mesh appears inside-out or has broken shading. |

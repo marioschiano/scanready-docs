@@ -290,10 +290,13 @@ Adaptive Reduce changes how ScanReady distributes mesh reduction across the scan
 | **Balanced** | Most scans | Good general-purpose reduction behavior. Use this first. |
 | **Preserve Details** | Complex scans with sculptural forms, folds, engravings, damage, or small details | Protects important detail areas more strongly. |
 | **Flat Surfaces** | Objects with broad simple surfaces, panels, walls, floors, or flatter architectural areas | Reduces simple areas more aggressively to save polygons. |
+| **Hard Surface** | Vehicles, props, machinery, and hard-surface scans | Uses a faster approximate pass and protects only stronger normal breaks. |
 
 If the optimized preview loses important detail, try **Preserve Details** and create the preview again.
 
 If the preview keeps too much geometry on simple areas, try **Flat Surfaces** and create the preview again.
+
+For vehicles or hard-surface scans, try **Hard Surface** and check the silhouette and main panel breaks.
 
 
 ---

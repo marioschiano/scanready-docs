@@ -19,23 +19,6 @@ These settings control scan cleanup and mesh preparation before generating the l
 
 <div style="flex:1 1 500px; min-width:320px;">
 
-<h3>Weld Distance</h3>
-
-<p>
-Merges vertices that are very close together.
-</p>
-
-<p>
-This can help clean small scan artifacts, tiny gaps, or overlapping points before reduction.
-</p>
-
-<p>
-When <strong>Auto Weld Distance</strong> is enabled, ScanReady estimates this value from the selected object size.
-Disable Auto Weld Distance if you want to type a manual weld value.
-</p>
-
-<hr>
-
 <h3>Pre-Decimate Merge</h3>
 
 <p>
@@ -43,7 +26,7 @@ Runs a Merge by Distance cleanup on the duplicated preview mesh before the Decim
 </p>
 
 <p>
-This can help reduce overlapping scan polygons before optimization. If thin details are affected, lower the value and create the lowpoly preview again.
+This is the single explicit weld control in ScanReady 1.0. It can help reduce overlapping scan polygons before optimization. If thin details are affected, lower the value and create the lowpoly preview again.
 </p>
 
 <hr>
@@ -113,6 +96,7 @@ Choose the preset that best matches the scan and the target asset.
 <li><strong>Balanced</strong> is the default preset for most scans.</li>
 <li><strong>Preserve Details</strong> protects complex or important surface regions more strongly.</li>
 <li><strong>Flat Surfaces</strong> reduces broad, simple areas more aggressively.</li>
+<li><strong>Hard Surface</strong> is a faster approximate preset for vehicles and hard-surface scans; it protects only stronger normal breaks.</li>
 </ul>
 
 <hr>

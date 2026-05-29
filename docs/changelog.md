@@ -12,9 +12,9 @@ Use this page as the public release notes source for Superhive, Blender Extensio
 - One Click Bake workflow for scan-to-game-ready asset creation.
 - Step 1 Preview / Reduce workflow.
 - Adaptive Reduce for scan-aware mesh optimization.
-- Adaptive Reduce presets: Balanced, Preserve Details, and Flat Surfaces.
+- Adaptive Reduce presets: Balanced, Preserve Details, Flat Surfaces, and Hard Surface.
+- Hard Surface Adaptive Reduce preset for vehicles and hard-surface scans, tuned as a faster approximate pass that protects only stronger normal breaks.
 - Show Adaptive Weights visualization.
-- Automatic weld distance based on object size, with manual override.
 - Auto combine mesh parts for imported scans with hierarchy.
 - Auto clean scan debris option.
 - Smart UV Project workflow.
@@ -33,6 +33,8 @@ Use this page as the public release notes source for Superhive, Blender Extensio
 - Show Adaptive Reduce was renamed to Show Adaptive Weights.
 - Default Adaptive Reduce behavior now uses the Balanced preset.
 - Default Detail Preserve value changed to better protect detailed scan areas.
+- Removed Auto Weld Distance and Weld Distance; Pre-Decimate Merge is now the single explicit weld control.
+- Removed the live Weld modifier from the preview stack; vertex welding is now handled by the applied Pre-Decimate Merge before Decimate.
 - Extension manifest cleaned up for Blender Extension validation.
 
 ### Fixed
