@@ -162,7 +162,15 @@ ScanReady 1.0 uses Blender Smart UV Project for automatic UV generation.
 </p>
 
 <p>
+Available Smart UV presets include <strong>Detailed</strong>, <strong>Balanced</strong>, <strong>Large Islands</strong>, and <strong>Continuous</strong>.
+</p>
+
+<p>
 The UV controls affect how the optimized mesh is unwrapped before baking. They are separate from Adaptive Reduce, which controls how the mesh is simplified in Step 1.
+</p>
+
+<p>
+Changing the Smart UV preset, Smart UV Angle, UV Padding, or Auto Pack UV does not rebuild the current UV layout immediately. The new UV settings are used the next time you click <strong>Generate UVs</strong>, or when <strong>One Click Bake</strong> runs its UV generation step. <strong>Bake Textures</strong> uses the UV layout that already exists.
 </p>
 
 <h3>Smart UV Angle</h3>
@@ -303,6 +311,8 @@ This only affects viewport display and does not change the baked result.
 ## Action
 
 Click **Generate UVs** after creating the lowpoly preview.
+
+If you change **Smart UV Preset**, **Smart UV Angle**, **UV Padding**, or **Auto Pack UV** after UVs have already been generated, click **Generate UVs** again to apply the new UV settings. **Bake Textures** uses the UV layout that exists at bake time.
 
 Then inspect:
 

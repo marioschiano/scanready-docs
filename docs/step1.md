@@ -49,6 +49,8 @@ Use it before creating the final preview when you want to understand how ScanRea
 
 The visualization is only a preview aid. It helps you choose a preset and understand the reduction behavior; it is not a texture that will be exported or baked.
 
+Adaptive Reduce weights are calculated when you click **Create Lowpoly Preview**. After the preview exists, changing **Optimize / Reduce** or **Final Faces** updates the Decimate amount using the existing weights. If you change the Adaptive Reduce preset or detailed Adaptive Reduce values, click **Create Lowpoly Preview** again to rebuild the weights with the new settings.
+
 <!-- Replace placeholder with ../img/step1-adaptive-weights.gif -->
 <p align="center">
   <img src="../img/placeholder-image.svg" alt="ScanReady Show Adaptive Weights visualization" style="max-width:820px;width:100%;">

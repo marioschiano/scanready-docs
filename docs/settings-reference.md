@@ -19,6 +19,8 @@ Use it as a quick reference when tuning scans for VR, videogames, realtime visua
 | **Auto Fix Normals** | Recalculates high mesh normals before preview creation. | Enable it when the scan has inverted normals or shading artifacts. |
 | **Recalculate Outside Normals** | Manually recalculates normals outside. | Use it when the mesh appears inside-out or has broken shading. |
 
+Adaptive Reduce weights are calculated when **Create Lowpoly Preview** is pressed. Changing **Optimize / Reduce** or **Final Faces** after that updates the reduction amount, but changing Adaptive Reduce preset/detail settings requires creating the lowpoly preview again to rebuild the weights.
+
 ---
 
 ## View and Preview
@@ -39,12 +41,14 @@ Use it as a quick reference when tuning scans for VR, videogames, realtime visua
 | Setting | Description | When to Adjust |
 |---|---|---|
 | **UV Method** | ScanReady 1.0 uses Smart UV Project for UV generation. | This is the UV method used by the addon workflow. |
-| **Smart UV Preset** | Applies a recommended Smart UV angle. | Use it as a quick starting point for common scan types. |
+| **Smart UV Preset** | Applies a recommended Smart UV angle. Presets include Detailed, Balanced, Large Islands, and Continuous. | Use it as a quick starting point for common scan types. |
 | **Smart UV Angle** | Controls how aggressively Smart UV Project splits islands. | Lower values create more cuts. Higher values create larger islands. |
 | **Auto Pack UV** | Packs UV islands automatically after unwrap. | Leave enabled unless you want to arrange UV islands manually. |
 | **UV Padding** | Adds spacing between UV islands. | Increase it to reduce texture bleeding and visible seams. |
 
 ScanReady 1.0 uses **Smart UV Project** for UV generation. Adaptive Reduce presets are separate from UV settings and control mesh simplification before UVs and baking.
+
+Smart UV settings are applied when UVs are generated. If you change **Smart UV Preset**, **Smart UV Angle**, **UV Padding**, or **Auto Pack UV** after UVs already exist, click **Generate UVs** again so the optimized mesh uses the new UV layout before baking.
 
 ---
 

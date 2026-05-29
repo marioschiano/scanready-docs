@@ -82,6 +82,8 @@ Adaptive Reduce controls how ScanReady distributes reduction across the selected
 
 It is enabled by default and is designed to protect visually important detail while allowing flatter surfaces to be simplified more strongly.
 
+Adaptive Reduce weights are calculated when you click **Create Lowpoly Preview**. Changing **Optimize / Reduce** or **Final Faces** after that updates the reduction amount, but it does not recalculate the adaptive weights. To apply a different Adaptive Reduce preset or detailed adaptive values, create the lowpoly preview again.
+
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
 <div style="flex:1 1 500px; min-width:320px;">
@@ -129,6 +131,8 @@ Use this preview when a scan has mixed surface types, such as flat architectural
 # UV Settings
 
 These settings control how Smart UV Project unwraps the optimized mesh.
+
+Smart UV settings are applied when ScanReady generates UVs. If you change the Smart UV preset, Smart UV Angle, UV Padding, or Auto Pack UV after UVs already exist, click **Generate UVs** again, or run **One Click Bake** from the beginning so its UV generation step uses the new settings. **Bake Textures** uses the UV layout that already exists.
 
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
