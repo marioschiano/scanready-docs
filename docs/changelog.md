@@ -12,6 +12,7 @@ Use this page as the public release notes source for Superhive, Blender Extensio
 - One Click Bake workflow for scan-to-game-ready asset creation.
 - Step 1 Preview / Reduce workflow.
 - Adaptive Reduce for scan-aware mesh optimization.
+- Home and Step 1 documentation sections explaining why ScanReady Adaptive Reduce differs from standard Blender Decimate, with placeholders for comparison images.
 - Adaptive Reduce presets: Balanced, Preserve Details, Flat Surfaces, and Hard Surface.
 - Hard Surface Adaptive Reduce preset for vehicles and hard-surface scans, tuned as a faster approximate pass that protects only stronger normal breaks.
 - Show Adaptive Weights visualization.

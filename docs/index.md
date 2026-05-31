@@ -20,15 +20,29 @@ High-poly scans from photogrammetry or 3D capture can be too dense for realtime 
 
 ---
 
-## Smart Adaptive Optimization
+## Why ScanReady Is Different
 
-Traditional mesh reduction often applies the same optimization uniformly across the entire model.
+Traditional mesh reduction often applies optimization too uniformly across the entire model.
 
-This can unnecessarily preserve dense geometry in flat areas while damaging important surface details in more complex regions.
+That can waste polygons on flat or noisy areas while damaging the silhouette, edges, and details that make a scan recognizable.
 
-ScanReady 1.0 uses adaptive optimization to analyze the surface and preserve visually important details while simplifying flatter or less detailed areas more aggressively.
+ScanReady 1.0 uses **Adaptive Reduce** to analyze the surface before reduction.
 
-The result is a cleaner and more efficient lowpoly asset that keeps much more of the original scan quality where it matters most.
+It gives broader flat areas more reduction while protecting strong normal changes, feature edges, silhouettes, and visually important regions.
+
+The result is a cleaner lowpoly asset that keeps more geometry where it matters and spends fewer polygons where the scan can be simplified safely.
+
+<!-- Replace placeholder with img/home-blender-decimate-vs-scanready.jpg -->
+<p align="center">
+  <img src="img/placeholder-image.svg" alt="Comparison between Blender Decimate and ScanReady Adaptive Reduce on the same scan" style="max-width:1000px;width:100%;">
+</p>
+
+<p align="center">
+  <b>Blender Decimate vs ScanReady Adaptive Reduce</b><br>
+  <span style="font-size:0.9em; opacity:0.75;">Same scan, similar target density. ScanReady is designed to reduce broad noisy surfaces while preserving stronger edges and silhouette detail.</span>
+</p>
+
+Use this comparison image to show why ScanReady is more than a one-click Decimate preset: it is a scan-aware workflow for creating lighter realtime assets while keeping the visual identity of the original capture.
 
 ---
 

@@ -26,6 +26,8 @@ Adaptive Reduce is enabled by default and helps ScanReady distribute polygon red
 
 Instead of treating every surface the same way, it gives flatter areas more reduction and protects regions where surface detail is more important.
 
+This is the main difference between a simple Blender Decimate pass and the ScanReady workflow. A standard decimation pass can reduce useful edges and noisy flat regions with the same priority. ScanReady first creates adaptive weights, then uses those weights to reduce broad surfaces more aggressively while keeping stronger normal breaks, silhouettes, borders, and important shape transitions more protected.
+
 Use the Adaptive Reduce preset as a quick starting point:
 
 - **Balanced** for most scans and general realtime assets.
@@ -36,6 +38,16 @@ Use the Adaptive Reduce preset as a quick starting point:
 <!-- Replace placeholder with ../img/step1-adaptive-reduce.gif -->
 <p align="center">
   <img src="../img/placeholder-image.svg" alt="ScanReady Adaptive Reduce preset comparison" style="max-width:820px;width:100%;">
+</p>
+
+<!-- Replace placeholder with ../img/step1-blender-decimate-vs-scanready.jpg -->
+<p align="center">
+  <img src="../img/placeholder-image.svg" alt="Blender Decimate compared with ScanReady Adaptive Reduce" style="max-width:1000px;width:100%;">
+</p>
+
+<p align="center">
+  <b>Blender Decimate vs ScanReady Adaptive Reduce</b><br>
+  <span style="font-size:0.9em; opacity:0.75;">Use a real Blender comparison render here: same scan, similar final density, standard Decimate on one side and ScanReady Adaptive Reduce on the other.</span>
 </p>
 
 ### Show Adaptive Weights
