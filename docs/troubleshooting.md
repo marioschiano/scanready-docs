@@ -178,6 +178,8 @@ Check:
 
 Relative paths are saved next to the current `.blend` file.
 
+After a successful bake, use **Bake Folder** in Step 3 to open the latest texture folder. If the button is not visible yet, run a bake with **Save Images** enabled first.
+
 ---
 
 ## Why Is the Bake Very Slow?

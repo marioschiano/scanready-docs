@@ -288,6 +288,16 @@ Relative paths such as `//bake/` are saved next to the current Blender file.
 
 ---
 
+### Bake Folder
+
+After a bake finishes, Step 3 shows the **Bake Folder** box.
+
+This displays the folder used by the latest bake and includes a folder button that opens it directly in the operating system file browser.
+
+Use **Output Folder** to choose where ScanReady should save textures. Use **Bake Folder** after baking to quickly open the folder that was actually used.
+
+---
+
 ## Memory Safety
 
 Large photogrammetry scans can easily exceed GPU memory limits during baking.
@@ -332,7 +342,7 @@ Large scans may require several minutes depending on:
 - Bake settings
 - Hardware performance
 
-When the bake is complete, inspect the final material and the saved textures inside the output folder.
+When the bake is complete, inspect the final material and use **Bake Folder** to open the saved textures.
 
 ---
 
@@ -349,6 +359,7 @@ After baking, inspect:
 - Incorrect projections
 - Final material appearance
 - Saved output files
+- Bake Folder opens the latest saved texture folder
 
 If details are missing, adjust the cage extrusion or increase texture resolution before baking again.
 

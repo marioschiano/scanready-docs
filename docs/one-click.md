@@ -140,6 +140,7 @@ After the workflow completes, inspect:
 - The object silhouette.
 - The baked material.
 - The saved texture files.
+- The **Bake Folder** shortcut in Step 3, which opens the latest texture output folder.
 - The Normal, Roughness, and AO maps if enabled.
 - Any missing details caused by cage distance or bake settings.
 

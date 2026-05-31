@@ -183,6 +183,7 @@ After the workflow, ScanReady 1.0 can generate:
 - Final baked mesh
 - Final material setup
 - Texture files saved to the selected output folder
+- Bake Folder shortcut for opening the latest saved texture folder
 
 The goal is to preserve the visual identity of the original scan while making it lighter and more practical for production.
 

@@ -101,6 +101,7 @@ Smart UV settings are applied when UVs are generated. If you change **Smart UV P
 | **JPG Quality** | Controls JPG compression quality. | Raise it for better image quality. Lower it for smaller files. |
 | **TIFF 16-bit** | Saves TIFF textures with higher precision. | Use it for close-up assets, archival workflows, or detailed maps. |
 | **Output Folder** | Folder where baked textures are saved. | Set it before baking if you need files in a specific project folder. |
+| **Bake Folder** | Shows the folder used by the latest bake and provides a folder button to open it. | Use it after baking to quickly inspect or copy the saved texture files. |
 
 ---
 

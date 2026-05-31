@@ -71,6 +71,8 @@ For a first test, keep most defaults and only check:
 - **Bake Occlusion** if you want an ambient occlusion map.
 - **Output Folder** if you want textures saved to a specific location.
 
+After baking, use **Bake Folder** in Step 3 to open the folder where the latest textures were saved.
+
 If you increase **Bake Materials** above `1`, ScanReady automatically enables **Force CPU Baking** as a safer default for heavier multi-material bakes.
 
 If the preview loses too much surface character, try **Preserve Details**. If broad flat areas still keep too many polygons, try **Flat Surfaces**. For vehicles or hard-surface scans, try **Hard Surface**.

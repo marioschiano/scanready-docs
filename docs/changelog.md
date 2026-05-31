@@ -24,6 +24,7 @@ Use this page as the public release notes source for Superhive, Blender Extensio
 - Texture Detail analysis for estimating texture/material needs.
 - Final mesh setup with Edge Split and Weighted Normal modifiers.
 - Safe Memory Bake and Force CPU Baking options.
+- Bake Folder shortcut in Step 3 for opening the latest saved texture folder.
 - Documentation and release notes links inside addon preferences.
 - Marketplace and Blender Extensions update notification message.
 

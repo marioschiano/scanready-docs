@@ -237,5 +237,6 @@ Before delivery or export, check:
 - Roughness map looks correct if used.
 - AO map looks correct if used.
 - Texture files are saved.
+- The Step 3 **Bake Folder** button opens the latest saved texture folder.
 - File size is acceptable.
 - Asset performs well in the target environment.
