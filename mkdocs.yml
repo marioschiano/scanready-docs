@@ -4,6 +4,8 @@ site_url: https://marioschiano.github.io/scanready-docs/
 theme:
   name: material
   language: en
+  icon:
+    alternate: material/translate
   palette:
     scheme: slate
     primary: green
