@@ -1,10 +1,21 @@
-# Why ScanReady?
+## Why ScanReady?
 
-Why is ScanReady different?
+Photogrammetry scans are detailed, but often too heavy for VR, games, realtime viewers, and interactive projects.
 
-<p align="center">
-  <img src="../img/hero.png" style="max-width:620px;width:100%;">
-</p>
+ScanReady helps you turn those scans into optimized baked assets directly inside Blender.
+
+![Raw scan to optimized asset](img/gif/why-scanready-overview.gif)
+
+### What ScanReady Solves
+
+- Heavy polygon counts.
+- Unoptimized scan topology.
+- Missing UV-ready lowpoly.
+- Manual cage setup.
+- Repetitive bake preparation.
+- Slow scan-to-realtime workflow.
+
+![Adaptive reduce comparison](img/gif/adaptive-reduce-comparison.gif)
 
 ---
 
