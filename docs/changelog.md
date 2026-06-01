@@ -28,6 +28,7 @@ Use this page as the public release notes source for Superhive, Blender Extensio
 - Bake Folder shortcut in Step 3 for opening the latest saved texture folder.
 - Documentation and release notes links inside addon preferences.
 - Marketplace and Blender Extensions update notification message.
+- FAQ guidance for refining a One Click Bake result when the final model is still too heavy.
 
 ### Changed
 

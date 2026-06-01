@@ -62,6 +62,23 @@ If the optimized mesh loses too much shape detail:
 
 Some scans require more geometry to preserve important silhouettes correctly.
 
+## I used One Click Bake, but the final model is still too heavy. What should I do?
+
+One Click Bake uses the current Step 1 optimization settings. If the final model is not optimized enough, you can refine it manually without starting from scratch.
+
+Try this workflow:
+
+- Go back to **Step 1 - Preview / Reduce**
+- Lower **Final Faces**, or lower **Optimize / Reduce**
+- Click **Create Lowpoly Preview** again
+- Inspect the preview with **Show Wireframe** or **Show Adaptive Weights**
+- Go to **Step 2 - UV / Cage** and click **Generate UVs** again
+- Go to **Step 3 - Bake / Output** and run **Bake Textures** again
+
+If the object is a vehicle, mechanical asset, architectural scan, or another hard-surface object, try the **Hard Surface** Adaptive Reduce preset. For faster tests on very dense scans, enable **Fast Adaptive Reduce** in Advanced before creating the preview again.
+
+Lower values create lighter assets, but very aggressive reduction can damage silhouettes or important details. Use the preview step to find the best balance before baking again.
+
 ## Why are visible seams appearing in the baked texture?
 
 Visible seams can appear when UV islands have insufficient padding or when texture resolution is too low.
