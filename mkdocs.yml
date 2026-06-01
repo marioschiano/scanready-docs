@@ -3,11 +3,21 @@ site_url: https://marioschiano.github.io/scanready-docs/
 
 theme:
   name: material
+  language: en
   palette:
     scheme: slate
     primary: green
     accent: lime
-    
+
+extra:
+  alternate:
+    - name: English
+      link: /scanready-docs/
+      lang: en
+    - name: Italiano
+      link: /scanready-docs/it/
+      lang: it
+
 nav:
   - Home: index.md
   - Why ScanReady: why-scanready.md
@@ -33,7 +43,3 @@ nav:
       - FAQ: faq.md
       - Troubleshooting: troubleshooting.md
       - Support: support.md
-      - Changelog: changelog.md
-
-  
-      
