@@ -5,7 +5,7 @@ theme:
   name: material
   language: en
   icon:
-  alternate: material/earth
+    alternate: material/earth
   palette:
     scheme: slate
     primary: green
