@@ -314,6 +314,8 @@ Click **Generate UVs** after creating the lowpoly preview.
 
 If you change **Smart UV Preset**, **Smart UV Angle**, **UV Padding**, or **Auto Pack UV** after UVs have already been generated, click **Generate UVs** again to apply the new UV settings. **Bake Textures** uses the UV layout that exists at bake time.
 
+If you are in Step 2 and decide the optimized mesh is still too heavy, go back to **Step 1 - Preview / Reduce**. Lower **Final Faces** or **Optimize / Reduce**, click **Create Lowpoly Preview** again, then return to Step 2 and click **Generate UVs** again so the UV mesh matches the new optimization.
+
 Then inspect:
 
 - UV layout

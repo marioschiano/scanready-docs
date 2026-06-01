@@ -34,6 +34,8 @@ If the final model looks too heavy, or if it has been optimized too much and los
 
 ScanReady will rebuild the optimized preview with the new settings, so you can test a lighter or more detailed version before continuing with UVs and baking again.
 
+The workflow is flexible: even if you are already at **Step 2 - UV / Cage** or **Step 3 - Bake / Output**, you can return to Step 1, adjust the reduction, click **Create Lowpoly Preview**, then continue forward again.
+
 
 ---
 

@@ -298,6 +298,8 @@ Click **Create Lowpoly Preview**.
 
 If the preview is too heavy or too simplified, adjust **Optimize / Reduce** or **Final Faces** and create the preview again.
 
+You can return to Step 1 at any time. If you are already in Step 2 or Step 3 and decide that the model should be lighter or more detailed, change the reduction settings here, click **Create Lowpoly Preview** again, then continue forward by generating UVs and baking again.
+
 ScanReady 1.0 cleans the selected high-poly scan, removes common mesh noise such as loose polygons or isolated vertices, then creates an optimized preview object.
 
 Before the Decimate modifier is added, ScanReady can also run a **Pre-Decimate Merge** cleanup on the duplicated preview mesh.

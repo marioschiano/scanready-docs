@@ -66,6 +66,8 @@ Some scans require more geometry to preserve important silhouettes correctly.
 
 One Click Bake uses the current Step 1 optimization settings. If the final model is not optimized enough, you can refine it manually without starting from scratch.
 
+This also applies if you are already working in Step 2 or Step 3. You can always go back to Step 1, change the reduction, and continue forward again.
+
 Try this workflow:
 
 - Go back to **Step 1 - Preview / Reduce**

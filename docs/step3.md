@@ -363,6 +363,8 @@ After baking, inspect:
 
 If details are missing, adjust the cage extrusion or increase texture resolution before baking again.
 
+If the final mesh is still too heavy, you can return to **Step 1 - Preview / Reduce** even after reaching Step 3. Lower **Final Faces** or **Optimize / Reduce**, click **Create Lowpoly Preview** again, then run **Generate UVs** and **Bake Textures** again. The bake should always use the latest optimized UV mesh.
+
 ---
 
 ## Realtime Optimization
