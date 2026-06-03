@@ -34,7 +34,7 @@ The result is a cleaner lowpoly asset that keeps more geometry where it matters 
 
 <!-- Replace placeholder with img/home-blender-decimate-vs-scanready.jpg -->
 <p align="center">
-  <img src="img/placeholder-image.svg" alt="Comparison between Blender Decimate and ScanReady Adaptive Reduce on the same scan" style="max-width:1000px;width:100%;">
+  <img src="img/why-scanready-adaptive-optimization.png" alt="Comparison between Blender Decimate and ScanReady Adaptive Reduce on the same scan" style="max-width:1000px;width:100%;">
 </p>
 
 <p align="center">
