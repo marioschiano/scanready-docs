@@ -185,7 +185,7 @@ Increase padding to reduce texture bleeding, especially at lower texture resolut
 
 # Bake Settings
 
-These settings control baking quality, texture padding, image format quality, occlusion options, and memory safety.
+These settings control baking quality, texture padding, image format quality, texture detail analysis, occlusion options, and memory safety.
 
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
@@ -211,6 +211,18 @@ Adds pixel padding around baked UV islands.
 
 <p>
 This helps reduce visible seams and texture bleeding.
+</p>
+
+<hr>
+
+<h3>Texture Detail</h3>
+
+<p>
+Analyzes the high-poly source and optimized UV mesh to estimate whether the current texture size and bake material count can preserve enough scan detail.
+</p>
+
+<p>
+Use <strong>Analyze Texture Detail</strong> after generating UVs, before baking, when you want help deciding whether to raise texture resolution, increase bake materials, or improve UV packing.
 </p>
 
 <hr>

@@ -71,7 +71,7 @@ Smart UV settings are applied when UVs are generated. If you change **Smart UV P
 |---|---|---|
 | **Texture Size** | Sets baked texture resolution. | Raise it for close-up assets. Lower it for lightweight VR/game assets. |
 | **Bake Materials** | Splits the bake into multiple material groups. | Increase for large scans that need more texture detail. Values above `1` automatically enable Force CPU Baking. |
-| **Texture Detail** | Analyzes high-to-UV texture/detail match. | Use it before baking to decide whether texture size and material count are balanced. |
+| **Texture Detail / Analyze Texture Detail** | Advanced analysis for high-to-UV texture/detail match. | Use it in Advanced before baking to decide whether texture size and material count are balanced. |
 | **Bake Samples** | Sets Cycles bake sample count. | Raise it for cleaner bakes, especially AO. Lower it for faster tests. |
 | **Bake Margin** | Adds padding around baked UV islands. | Increase it to reduce seams and texture bleeding. |
 | **Bake Base Color** | Bakes the main color texture. | Keep enabled when preserving original scan color. |

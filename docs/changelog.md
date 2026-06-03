@@ -41,6 +41,7 @@ Use this page as the public release notes source for Superhive, Blender Extensio
 - Removed Auto Weld Distance and Weld Distance; Pre-Decimate Merge is now the single explicit weld control.
 - Removed the live Weld modifier from the preview stack; vertex welding is now handled by the applied Pre-Decimate Merge before Decimate.
 - Moved Normal Strength to Advanced > Bake Settings.
+- Moved Texture Detail / Analyze Texture Detail to Advanced.
 - Extension manifest cleaned up for Blender Extension validation.
 
 ### Fixed

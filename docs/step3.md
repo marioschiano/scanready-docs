@@ -97,11 +97,11 @@ You can still disable it manually if your GPU can handle the bake safely.
 
 ---
 
-## Texture Detail
+## Texture Detail Analysis
 
-The **Texture Detail** box helps estimate whether the current bake setup is likely to preserve enough texture detail.
+The **Texture Detail** analysis is now available in **Advanced**.
 
-Click **Analyze Texture Detail** after generating UVs.
+Use **Analyze Texture Detail** after generating UVs when you want to estimate whether the current bake setup is likely to preserve enough texture detail.
 
 ScanReady searches for the matching high-poly source and optimized UV mesh, then compares the original texture usage with the current bake setup.
 
