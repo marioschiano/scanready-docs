@@ -24,8 +24,8 @@ Questa e la versione italiana della documentazione. La useremo come base di lavo
 
 ## Pagine principali
 
-- [Installazione](installazione.md)
-- [Guida rapida](guida-rapida.md)
+- [Installazione](installation.md)
+- [Guida rapida](quick-start.md)
 - [One Click Bake](one-click.md)
 - [Step 1 - Preview / Reduce](step1.md)
 - [Step 2 - UV / Cage](step2.md)

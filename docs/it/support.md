@@ -14,7 +14,7 @@ Se qualcosa non funziona, raccogli queste informazioni prima di chiedere support
 
 - Documentazione: [ScanReady Docs](https://marioschiano.github.io/scanready-docs/)
 - Changelog italiano: [Changelog](changelog.md)
-- Risoluzione problemi: [Troubleshooting](troubleshooting.md)
+- Risoluzione problemi: [Risoluzione problemi](troubleshooting.md)
 
 ## Immagini da aggiungere
 

@@ -11,6 +11,39 @@ theme:
     primary: green
     accent: lime
 
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: it
+          name: Italiano
+          build: true
+          nav_translations:
+            Home: Home
+            Why ScanReady: Perche ScanReady
+            Getting Started: Per iniziare
+            Installation: Installazione
+            Quick Start: Guida rapida
+            One Click Bake: One Click Bake
+            Workflow: Workflow
+            Step 1 - Preview / Reduce: Step 1 - Preview / Reduce
+            Step 2 - UV / Cage: Step 2 - UV / Cage
+            Step 3 - Bake / Output: Step 3 - Bake / Output
+            Advanced: Avanzate
+            Advanced Settings: Impostazioni avanzate
+            Settings Reference: Riferimento impostazioni
+            Export Tips: Consigli export
+            Use Cases: Casi d'uso
+            Support: Supporto
+            Changelog: Changelog
+            FAQ: FAQ
+            Troubleshooting: Risoluzione problemi
+
 extra:
   alternate:
     - name: English
@@ -45,24 +78,3 @@ nav:
       - FAQ: faq.md
       - Troubleshooting: troubleshooting.md
       - Support: support.md
-
-  - Italiano:
-      - Home: it/index.md
-      - Perche ScanReady: it/perche-scanready.md
-      - Installazione: it/installazione.md
-      - Guida rapida: it/guida-rapida.md
-      - One Click Bake: it/one-click.md
-      - Workflow:
-          - Step 1 - Preview / Reduce: it/step1.md
-          - Step 2 - UV / Cage: it/step2.md
-          - Step 3 - Bake / Output: it/step3.md
-      - Avanzate:
-          - Impostazioni avanzate: it/advanced.md
-          - Riferimento impostazioni: it/riferimento-impostazioni.md
-          - Consigli export: it/export-tips.md
-          - Casi d'uso: it/casi-uso.md
-      - Supporto:
-          - Changelog: it/changelog.md
-          - FAQ: it/faq.md
-          - Risoluzione problemi: it/troubleshooting.md
-          - Supporto: it/supporto.md
