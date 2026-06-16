@@ -2,7 +2,9 @@
 
 Questa pagina raccoglie problemi comuni e controlli rapidi.
 
-![Placeholder troubleshooting](../img/placeholder-image.svg)
+<p align="center">
+  <img src="../img/cage_01_red.png" alt="Esempio di cage rosso che puo causare problemi di bake" style="max-width:1000px;width:100%;">
+</p>
 
 ## Il bake ha zone nere
 

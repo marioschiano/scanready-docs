@@ -2,7 +2,13 @@
 
 **One Click Bake** esegue automaticamente il flusso completo: preview lowpoly, UV, cage e bake.
 
-![Placeholder One Click Bake](../img/placeholder-image.svg)
+<p align="center">
+  <img src="../img/quick-start-one-click.png" alt="Pulsante One Click Bake in Blender" style="width:240px; max-width:100%;">
+</p>
+
+<p align="center">
+  <img src="../img/one-click-bake.gif" alt="Workflow animato One Click Bake in Blender" style="max-width:820px;width:100%;">
+</p>
 
 ## Quando usarlo
 
@@ -33,6 +39,10 @@ Se cambi solo la risoluzione texture, rifara il bake.
 Se cambi un parametro di Step 1, rifara la preview e poi gli step necessari.
 
 Se cambi un parametro UV quando la mesh UV esiste gia, il bake rigenera le UV automaticamente prima di cuocere.
+
+<p align="center">
+  <img src="../img/one_click_before_after.jpg" alt="Confronto prima e dopo One Click Bake" style="max-width:820px;width:100%;">
+</p>
 
 ## Immagini da aggiungere
 

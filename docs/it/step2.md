@@ -2,7 +2,9 @@
 
 Step 2 genera le UV e prepara il cage per il bake.
 
-![Placeholder Step 2](../img/placeholder-image.svg)
+<p align="center">
+  <img src="../img/step2-uv-01.jpg" alt="Layout UV generato dalla mesh ottimizzata" style="max-width:760px;width:100%;">
+</p>
 
 ## Obiettivo
 
@@ -22,9 +24,17 @@ Se invece la mesh UV esiste gia, il Workflow Status puo consigliarti:
 
 Questo succede perche il bake puo rigenerare automaticamente le UV quando serve.
 
+<p align="center">
+  <img src="../img/step2-uv-02.png" alt="Confronto checker texture con UV stirate e UV pulite" style="max-width:1000px;width:100%;">
+</p>
+
 ## Cage
 
 Il cage serve a catturare i dettagli della mesh high poly durante il bake.
+
+<p align="center">
+  <img src="../img/cage_01_red.png" alt="Avviso cage rosso con setup non valido per il bake" style="max-width:1000px;width:100%;">
+</p>
 
 ### Cage Extrusion
 
@@ -45,6 +55,14 @@ Mostra o nasconde il cage in viewport.
 Il cage deve diventare verde.
 
 Se il cage e rosso o non copre bene la high poly, usa **Cage Extrusion** o **Auto Cage Extrusion**.
+
+<p align="center">
+  <img src="../img/step2-uv-03.png" alt="Confronto dimensione cage troppo piccolo, corretto e troppo grande" style="max-width:1100px;width:100%;">
+</p>
+
+<p align="center">
+  <img src="../img/step2-uv-04.png" alt="Confronto effetto del cage sulla normal map baked" style="max-width:1100px;width:100%;">
+</p>
 
 ## Immagini/GIF da aggiungere
 

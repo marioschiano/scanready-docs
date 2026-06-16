@@ -21,5 +21,5 @@ Prima release pubblica di ScanReady come Blender Extension.
 
 - Versione inglese gia presente.
 - Versione italiana in lavorazione.
-- Placeholder immagini e GIF da sostituire progressivamente.
+- Immagini e GIF italiane allineate agli asset gia presenti nella documentazione inglese.
 

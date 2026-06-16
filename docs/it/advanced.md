@@ -2,7 +2,9 @@
 
 La sezione **Advanced** contiene controlli per casi piu complessi.
 
-![Placeholder Advanced](../img/placeholder-image.svg)
+<p align="center">
+  <img src="../img/why-scanready-adaptive-optimization.png" alt="Confronto ottimizzazione adattiva usata nelle impostazioni avanzate" style="max-width:1000px;width:100%;">
+</p>
 
 ## Mesh Settings
 

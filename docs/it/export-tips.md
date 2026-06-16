@@ -2,7 +2,9 @@
 
 Dopo il bake, controlla sempre mesh finale, materiali e texture prima di esportare.
 
-![Placeholder export](../img/placeholder-image.svg)
+<p align="center">
+  <img src="../img/high-to-low-workflow.png" alt="Asset baked e ottimizzato pronto per export realtime" style="max-width:900px;width:100%;">
+</p>
 
 ## Prima di esportare
 

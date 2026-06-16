@@ -2,7 +2,9 @@
 
 Questa pagina mostra il flusso piu semplice per usare ScanReady.
 
-![Placeholder guida rapida](../img/placeholder-image.svg)
+<p align="center">
+  <img src="../img/hero.png" alt="Panoramica del workflow ScanReady" style="max-width:760px;width:100%;">
+</p>
 
 ## Flusso veloce
 
@@ -11,6 +13,14 @@ Questa pagina mostra il flusso piu semplice per usare ScanReady.
 3. Premi **One Click Bake**.
 4. Aspetta la fine del processo.
 5. Controlla la mesh finale e le texture generate.
+
+<p align="center">
+  <img src="../img/quick-start-one-click.png" alt="Pannello One Click Bake in Blender" style="width:280px; max-width:100%;">
+</p>
+
+<p align="center">
+  <img src="../img/one-click-bake.gif" alt="ScanReady ottimizza automaticamente la scansione in un asset baked piu leggero" style="max-width:820px;width:100%;">
+</p>
 
 ## Flusso manuale
 

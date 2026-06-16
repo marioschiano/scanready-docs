@@ -2,7 +2,9 @@
 
 ScanReady e distribuito come Blender Extension.
 
-![Placeholder installazione](../img/placeholder-image.svg)
+<p align="center">
+  <img src="../img/installation.gif" alt="Installazione e attivazione di ScanReady da Blender Preferences" style="max-width:820px;width:100%;">
+</p>
 
 ## Requisiti
 
@@ -32,7 +34,7 @@ Nel pannello laterale vedrai:
 - **Step 3 Bake / Output**
 - **Advanced**
 
-## Placeholder immagini
+## Immagini da completare
 
 - GIF installazione extension.
 - Screenshot pannello ScanReady aperto.

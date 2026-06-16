@@ -4,7 +4,9 @@ ScanReady e un addon per Blender pensato per trasformare scansioni 3D pesanti in
 
 Questa e la versione italiana della documentazione. La useremo come base di lavoro: prima completiamo testi, immagini e GIF in italiano, poi aggiorneremo la versione inglese.
 
-![Placeholder hero ScanReady](../img/placeholder-image.svg)
+<p align="center">
+  <img src="../img/hero.png" alt="ScanReady workflow overview" style="max-width:620px;width:100%;">
+</p>
 
 ## Cosa fa ScanReady
 
@@ -15,12 +17,22 @@ Questa e la versione italiana della documentazione. La useremo come base di lavo
 - cuoce Base Color, Normal, Roughness e Occlusion;
 - salva un asset finale piu adatto a motori realtime.
 
+<p align="center">
+  <img src="../img/why-scanready-adaptive-optimization.png" alt="Confronto tra Blender Decimate e ScanReady Adaptive Reduce" style="max-width:1000px;width:100%;">
+</p>
+
 ## Percorso consigliato
 
 1. Installa l'addon.
 2. Seleziona la mesh high poly o il parent della scansione.
 3. Usa **One Click Bake** per un flusso automatico.
 4. Oppure lavora a step: Preview / Reduce, UV / Cage, Bake / Output.
+
+![Before After](../img/one_click_before_after.jpg)
+
+<p align="center">
+  <img src="../img/one-click-bake.gif" alt="ScanReady One Click Bake workflow" width="700">
+</p>
 
 ## Pagine principali
 

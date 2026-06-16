@@ -4,7 +4,9 @@ Le scansioni 3D sono spesso troppo pesanti per VR, videogame e applicazioni real
 
 ScanReady nasce per rendere questo passaggio piu diretto dentro Blender.
 
-![Placeholder confronto high low](../img/placeholder-image.svg)
+<p align="center">
+  <img src="../img/why-scanready-adaptive-optimization.png" alt="Confronto tra Blender Decimate e ScanReady Adaptive Reduce sulla stessa scansione" style="max-width:1000px;width:100%;">
+</p>
 
 ## Problema tipico
 

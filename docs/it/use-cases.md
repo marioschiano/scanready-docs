@@ -2,7 +2,9 @@
 
 ScanReady puo essere usato in diversi contesti.
 
-![Placeholder casi uso](../img/placeholder-image.svg)
+<p align="center">
+  <img src="../img/one_click_before_after.jpg" alt="Confronto prima e dopo ottimizzazione ScanReady" style="max-width:820px;width:100%;">
+</p>
 
 ## VR
 

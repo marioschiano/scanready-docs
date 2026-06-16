@@ -2,7 +2,9 @@
 
 Step 3 cuoce le texture dalla mesh high poly alla mesh finale.
 
-![Placeholder Step 3](../img/placeholder-image.svg)
+<p align="center">
+  <img src="../img/high-to-low-workflow.png" alt="Risultato baked con poligoni ridotti e dettaglio visivo preservato" style="max-width:900px;width:100%;">
+</p>
 
 ## Mappe supportate
 
