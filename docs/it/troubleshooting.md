@@ -40,12 +40,14 @@ Se serve, salva il file, riavvia Blender e riprova.
 
 Se la preview ottimizzata e ancora troppo densa:
 
-- abbassa **Final Faces**;
 - abbassa **Optimize / Reduce**;
+- abbassa **Final Faces**;
 - aumenta la pulizia solo con cautela;
 - crea di nuovo la preview lowpoly.
 
-Per asset VR e videogame, la mesh deve restare abbastanza leggera da essere orbitata, ispezionata ed esportata comodamente.
+**Optimize / Reduce** e **Final Faces** sono collegati: entrambi controllano quanto sara leggera la preview lowpoly.
+
+Per asset VR e videogame, la mesh deve restare abbastanza leggera da essere gestita bene nel viewport, esportata senza problemi e usata in realtime.
 
 ---
 
@@ -53,18 +55,20 @@ Per asset VR e videogame, la mesh deve restare abbastanza leggera da essere orbi
 
 Se la preview ottimizzata sembra troppo semplificata:
 
-- aumenta **Final Faces**;
 - aumenta **Optimize / Reduce**;
+- aumenta **Final Faces**;
 - evita riduzioni troppo aggressive su oggetti molto sottili o delicati;
 - crea di nuovo la preview.
+
+**Optimize / Reduce** e **Final Faces** sono collegati: entrambi controllano quanto dettaglio geometrico viene mantenuto nella preview lowpoly.
 
 Per silhouette importanti, mantieni abbastanza geometria per preservare la forma.
 
 ---
 
-## Le UV sembrano stirate
+## Le UV sembrano allungate
 
-Se il pattern checker mostra stretching forte:
+Se il pattern checker mostra aree molto allungate:
 
 - prova un metodo UV diverso;
 - abbassa o alza **Smart UV Angle**;
@@ -80,10 +84,9 @@ UV pulite sono importanti per texture bake buone.
 
 Se parti del dettaglio della scansione mancano nella texture bake:
 
-- aumenta leggermente **Cage Extrusion**;
-- usa **Auto Cage Extrusion**;
 - abilita **Show Cage** e controlla il cage;
-- aumenta **Cage Extrusion** se il cage non copre completamente la sorgente high-poly;
+- aumenta leggermente **Cage Extrusion** oppure usa **Auto Cage Extrusion**;
+- verifica che il cage copra completamente la sorgente high-poly;
 - aumenta **Texture Size** se il bake ha risoluzione troppo bassa;
 - assicurati che l'oggetto high-poly originale sia ancora disponibile.
 
@@ -229,7 +232,7 @@ Influenza l'aspetto del materiale, non l'immagine normal bake.
 
 Se il materiale high-poly originale ha una normal texture collegata, ScanReady trasferisce quella normal map sul nuovo layout UV.
 
-Se non e collegata nessuna normal texture, ScanReady genera le informazioni normal dalla geometria high-poly.
+Se non e collegata nessuna normal texture, ScanReady genera una normal map nuova proiettando il dettaglio della geometria high-poly sulla mesh lowpoly.
 
 ---
 
@@ -267,10 +270,9 @@ Aree nere possono comparire anche quando parti della mesh lowpoly ottimizzata si
 Per correggere:
 
 - abilita **Show Cage**;
-- aumenta **Cage Extrusion**;
+- aumenta leggermente **Cage Extrusion** oppure usa **Auto Cage Extrusion**;
 - controlla il cage attorno al modello prima del bake;
-- controlla la preview cage prima del bake;
-- aumenta leggermente **Cage Extrusion** se il cage non copre completamente la sorgente high-poly.
+- verifica che il cage copra completamente la sorgente high-poly.
 
 Il cage deve circondare completamente la superficie high-poly.
 

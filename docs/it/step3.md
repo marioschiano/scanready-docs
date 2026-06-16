@@ -129,7 +129,7 @@ Prima del bake, controlla che il cage copra completamente la superficie della sc
 
 Se il cage e troppo piccolo, i raggi di bake possono perdere dettagli e produrre aree nere, dettagli mancanti o proiezioni errate.
 
-Usa **Auto Cage Extrusion** come punto di partenza rapido, poi regola **Cage Extrusion** manualmente se alcune aree hanno ancora bisogno di copertura.
+Abilita **Show Cage** e controlla la preview del cage. Poi aumenta leggermente **Cage Extrusion** oppure usa **Auto Cage Extrusion**.
 
 Usa il valore di cage piu piccolo che cattura i dettagli della scansione senza proiettare superfici vicine indesiderate.
 
@@ -361,7 +361,7 @@ Dopo il bake, controlla:
 - file output salvati;
 - Bake Folder apre l'ultima cartella texture salvata.
 
-Se mancano dettagli, regola la cage extrusion o aumenta la risoluzione texture prima di rifare il bake.
+Se mancano dettagli, abilita **Show Cage** e aumenta leggermente **Cage Extrusion** oppure usa **Auto Cage Extrusion**. Se il bake e troppo morbido o povero di dettaglio, aumenta la risoluzione texture prima di rifare il bake.
 
 Se la mesh finale e ancora troppo pesante, puoi tornare a **Step 1 - Preview / Reduce** anche dopo essere arrivato allo Step 3. Abbassa **Final Faces** o **Optimize / Reduce**, clicca di nuovo **Create Lowpoly Preview**, poi esegui di nuovo **Generate UVs** e **Bake Textures**. Il bake dovrebbe sempre usare la mesh UV ottimizzata piu recente.
 

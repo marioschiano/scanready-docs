@@ -105,7 +105,7 @@ ScanReady 1.0 include strumenti per rendere questo processo piu veloce e piu sem
 </p>
 
 <p align="center">
-<b>Se il cage appare rosso, il bake non proiettera correttamente. Regola Cage Extrusion prima di continuare.</b>
+<b>Se il cage appare rosso, il bake non proiettera correttamente. Abilita Show Cage, poi aumenta leggermente Cage Extrusion oppure usa Auto Cage Extrusion prima di continuare.</b>
 </p>
 
 <p align="center">

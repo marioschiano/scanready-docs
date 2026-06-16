@@ -28,8 +28,8 @@ Prova:
 - aumentare **Texture Size**;
 - aumentare **Bake Samples**;
 - aumentare leggermente la densita lowpoly;
-- regolare **Cage Extrusion**;
-- controllare la preview cage prima del bake.
+- abilitare **Show Cage** e controllare la preview cage prima del bake;
+- aumentare leggermente **Cage Extrusion** oppure usare **Auto Cage Extrusion**.
 
 Scansioni molto dense possono richiedere anche piu materiali bake per una qualita texture piu pulita.
 
