@@ -5,7 +5,7 @@ Le scansioni fotogrammetriche sono dettagliate, ma spesso troppo pesanti per VR,
 ScanReady ti aiuta a trasformare quelle scansioni in asset ottimizzati e baked direttamente dentro Blender.
 
 <p align="center">
-  <img src="../../img/gif/why-scanready-overview.gif" alt="Da scansione grezza ad asset ottimizzato" style="max-width:820px;width:100%;">
+  <img src="../../img/hero.png" alt="Da scansione grezza ad asset ottimizzato" style="max-width:820px;width:100%;">
 </p>
 
 ### Cosa risolve ScanReady
@@ -18,7 +18,7 @@ ScanReady ti aiuta a trasformare quelle scansioni in asset ottimizzati e baked d
 - Workflow lento da scansione ad asset realtime.
 
 <p align="center">
-  <img src="../../img/gif/adaptive-reduce-comparison.gif" alt="Confronto Adaptive Reduce" style="max-width:820px;width:100%;">
+  <img src="../../img/why-scanready-adaptive-optimization.png" alt="Confronto Adaptive Reduce" style="max-width:1000px;width:100%;">
 </p>
 
 ---

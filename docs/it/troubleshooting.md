@@ -305,6 +305,26 @@ Per veicoli o scansioni hard-surface, prova **Hard Surface** e controlla silhoue
 
 ---
 
+## Ho cambiato troppi valori e non so come tornare indietro
+
+Se hai modificato molte impostazioni e il risultato e diventato difficile da controllare, usa **Reset Defaults**.
+
+Questo e utile quando hai cambiato diversi valori in Advanced, come impostazioni di Occlusion, Bake, UV, Adaptive Reduce o memoria, e non sai piu quale parametro sta causando il problema.
+
+**Reset Defaults** riporta ScanReady a una base pulita.
+
+Dopo il reset:
+
+1. Riparti da **Balanced** come preset Adaptive Reduce.
+2. Crea di nuovo la preview lowpoly.
+3. Genera di nuovo le UV.
+4. Controlla il cage.
+5. Esegui prima un bake semplice, ad esempio solo Base Color.
+
+Quando il workflow base funziona, riattiva gli altri controlli uno alla volta.
+
+---
+
 ## Primo intervento consigliato
 
 Se il risultato non e buono, usa questo ordine:

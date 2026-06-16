@@ -3,7 +3,7 @@
 Workflow di ottimizzazione adattiva e bake per scansioni in Blender
 
 <p align="center">
-  <img src="../../img/hero.png" alt="Panoramica del workflow ScanReady" style="max-width:620px;width:100%;">
+  <img src="../img/hero.png" alt="Panoramica del workflow ScanReady" style="max-width:620px;width:100%;">
 </p>
 
 <br>
@@ -32,7 +32,7 @@ ScanReady 1.0 invece usa **Adaptive Reduce** per distribuire la riduzione in mod
 - Le superfici rumorose della scansione possono essere semplificate senza perdere subito l'identita dell'oggetto.
 
 <p align="center">
-  <img src="../../img/why-scanready-adaptive-optimization.png" alt="Confronto tra Blender Decimate e ScanReady Adaptive Reduce" style="max-width:1000px;width:100%;">
+  <img src="../img/why-scanready-adaptive-optimization.png" alt="Confronto tra Blender Decimate e ScanReady Adaptive Reduce" style="max-width:1000px;width:100%;">
 </p>
 
 <p align="center">
@@ -62,7 +62,7 @@ ScanReady aiuta a passare da una scansione pesante a un asset piu leggero, con U
 Ottimizzato per workflow realtime senza sprecare poligoni inutilmente.
 
 <p align="center">
-  <img src="../../img/one_click_before_after.jpg" alt="Confronto prima e dopo di una scansione ottimizzata con ScanReady" style="max-width:820px;width:100%;">
+  <img src="../img/one_click_before_after.jpg" alt="Confronto prima e dopo di una scansione ottimizzata con ScanReady" style="max-width:820px;width:100%;">
 </p>
 
 <p align="center">
@@ -70,7 +70,7 @@ Ottimizzato per workflow realtime senza sprecare poligoni inutilmente.
 </p>
 
 <p align="center">
-  <img src="../../img/one-click-bake.gif" alt="Workflow One Click Bake di ScanReady" width="700">
+  <img src="../img/one-click-bake.gif" alt="Workflow One Click Bake di ScanReady" width="700">
 </p>
 
 <p align="center">
