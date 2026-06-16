@@ -45,3 +45,24 @@ nav:
       - FAQ: faq.md
       - Troubleshooting: troubleshooting.md
       - Support: support.md
+
+  - Italiano:
+      - Home: it/index.md
+      - Perche ScanReady: it/perche-scanready.md
+      - Installazione: it/installazione.md
+      - Guida rapida: it/guida-rapida.md
+      - One Click Bake: it/one-click.md
+      - Workflow:
+          - Step 1 - Preview / Reduce: it/step1.md
+          - Step 2 - UV / Cage: it/step2.md
+          - Step 3 - Bake / Output: it/step3.md
+      - Avanzate:
+          - Impostazioni avanzate: it/advanced.md
+          - Riferimento impostazioni: it/riferimento-impostazioni.md
+          - Consigli export: it/export-tips.md
+          - Casi d'uso: it/casi-uso.md
+      - Supporto:
+          - Changelog: it/changelog.md
+          - FAQ: it/faq.md
+          - Risoluzione problemi: it/troubleshooting.md
+          - Supporto: it/supporto.md
