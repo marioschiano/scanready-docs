@@ -1,42 +1,77 @@
 # Installazione
 
-ScanReady e distribuito come Blender Extension.
+Questa pagina spiega come installare ScanReady 1.0 in Blender.
 
-<p align="center">
-  <img src="../img/installation.gif" alt="Installazione e attivazione di ScanReady da Blender Preferences" style="max-width:820px;width:100%;">
-</p>
+---
 
-## Requisiti
+## Scarica l'addon
 
-- Blender 4.2 o superiore.
-- File extension `.zip` di ScanReady.
-- Una scena con una mesh 3D da ottimizzare.
+Scarica il file dell'estensione:
 
-## Installare l'addon
+`scanready_v1_0_0.zip`
+
+Non estrarre lo ZIP.
+
+Blender installa le estensioni direttamente dal file `.zip`.
+
+---
+
+## Installa l'addon
 
 1. Apri Blender.
-2. Vai in **Edit > Preferences**.
+2. Vai su **Edit > Preferences**.
 3. Apri la sezione **Get Extensions** o **Add-ons**, in base alla versione di Blender.
-4. Installa lo zip di ScanReady.
-5. Attiva l'estensione.
-6. Apri la sidebar della viewport con `N`.
-7. Vai nel tab **Scan Ready**.
+4. Clicca **Install from Disk**.
+5. Seleziona `scanready_v1_0_0.zip`.
+6. Abilita **ScanReady**.
 
-## Dopo l'installazione
+<p align="center">
+  <img src="../../img/installation.gif" alt="Installazione dell'estensione ScanReady in Blender" style="max-width:820px;width:100%;">
+</p>
 
-Nel pannello laterale vedrai:
+---
 
-- **Mesh Stats**
-- **One Click Bake**
-- **View Options**
-- **Step 1 Preview / Reduce**
-- **Step 2 UV / Cage**
-- **Step 3 Bake / Output**
-- **Advanced**
+## Abilita l'addon
 
-## Immagini da completare
+Dopo l'installazione, assicurati che ScanReady sia attivo.
 
-- GIF installazione extension.
-- Screenshot pannello ScanReady aperto.
-- Screenshot Preferences con pulsanti Documentation, Release Notes e Check for Updates.
+Nelle preferenze di Blender dovresti vedere:
 
+- **Name:** ScanReady
+- **Type:** Extension
+- **Version:** 1.0.0
+- **Maintainer:** Mario Schiano
+
+---
+
+## Apri il pannello ScanReady
+
+Nel 3D Viewport:
+
+1. Premi `N` per aprire la sidebar.
+2. Apri la scheda **Scan Ready**.
+3. Seleziona una mesh high-poly.
+4. Usa **ONE CLICK BAKE** oppure il workflow manuale.
+
+---
+
+## Aggiornamenti
+
+Il pannello delle preferenze include link rapidi alla documentazione e alle release notes.
+
+Il pulsante **Check for Updates** apre la pagina della documentazione di ScanReady, dove puoi controllare nuove versioni o note di rilascio.
+
+---
+
+## Se il pannello non appare
+
+Controlla che:
+
+- l'addon sia abilitato nelle preferenze;
+- il file installato sia lo ZIP dell'estensione;
+- Blender sia stato riavviato dopo l'installazione;
+- stai guardando la sidebar del 3D Viewport, non un altro editor.
+
+Per problemi di installazione:
+
+**Email:** <softandsoft2025@gmail.com>

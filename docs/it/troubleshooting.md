@@ -1,56 +1,317 @@
 # Risoluzione problemi
 
-Questa pagina raccoglie problemi comuni e controlli rapidi.
+Questa pagina copre problemi comuni del workflow ScanReady 1.0 e offre soluzioni per bake, UV, ottimizzazione, uso memoria e preparazione realtime.
 
-<p align="center">
-  <img src="../img/cage_01_red.png" alt="Esempio di cage rosso che puo causare problemi di bake" style="max-width:1000px;width:100%;">
-</p>
+L'elaborazione delle scansioni puo essere impegnativa perche scansioni high-poly, texture baking, generazione UV e memoria dipendono dal modello sorgente e dall'hardware.
 
-## Il bake ha zone nere
+Per supporto, bug report o domande sul workflow, contatta:
 
-Possibili cause:
+<a href="mailto:support.marioschiano3d@gmail.com"><strong>support.marioschiano3d@gmail.com</strong></a>
 
-- cage troppo basso;
-- high poly non coperta correttamente;
-- materiali sorgente complessi;
-- normali invertite;
-- UV o margine insufficienti.
+---
+
+## Il pannello ScanReady 1.0 non appare
+
+Controlla:
+
+- l'addon e abilitato in **Edit > Preferences > Add-ons**;
+- sei nel **3D Viewport**;
+- hai premuto **N** per aprire la Sidebar;
+- esiste la scheda **Scan Ready**;
+- in alcuni casi serve riavviare Blender dopo aver abilitato l'addon.
+
+---
+
+## One Click Bake non parte
+
+Assicurati che:
+
+- sia selezionato un oggetto mesh;
+- l'oggetto selezionato sia la scansione high-poly da processare;
+- Blender sia in Object Mode;
+- l'oggetto sia visibile e non nascosto;
+- la scena non stia gia eseguendo un'altra operazione modal.
+
+Se serve, salva il file, riavvia Blender e riprova.
+
+---
+
+## La preview mesh e troppo pesante
+
+Se la preview ottimizzata e ancora troppo densa:
+
+- abbassa **Final Faces**;
+- abbassa **Optimize / Reduce**;
+- aumenta la pulizia solo con cautela;
+- crea di nuovo la preview lowpoly.
+
+Per asset VR e videogame, la mesh deve restare abbastanza leggera da essere orbitata, ispezionata ed esportata comodamente.
+
+---
+
+## La preview mesh ha perso troppo dettaglio
+
+Se la preview ottimizzata sembra troppo semplificata:
+
+- aumenta **Final Faces**;
+- aumenta **Optimize / Reduce**;
+- evita riduzioni troppo aggressive su oggetti molto sottili o delicati;
+- crea di nuovo la preview.
+
+Per silhouette importanti, mantieni abbastanza geometria per preservare la forma.
+
+---
+
+## Le UV sembrano stirate
+
+Se il pattern checker mostra stretching forte:
+
+- prova un metodo UV diverso;
+- abbassa o alza **Smart UV Angle**;
+- aumenta la separazione tra isole con **UV Padding**;
+- usa un preset UV piu dettagliato;
+- genera di nuovo le UV.
+
+UV pulite sono importanti per texture bake buone.
+
+---
+
+## Il bake perde dettagli
+
+Se parti del dettaglio della scansione mancano nella texture bake:
+
+- aumenta leggermente **Cage Extrusion**;
+- usa **Auto Cage Extrusion**;
+- abilita **Show Cage** e controlla il cage;
+- aumenta **Cage Extrusion** se il cage non copre completamente la sorgente high-poly;
+- aumenta **Texture Size** se il bake ha risoluzione troppo bassa;
+- assicurati che l'oggetto high-poly originale sia ancora disponibile.
+
+Usa il valore di cage piu piccolo che cattura i dettagli in modo pulito.
+
+---
+
+## Perche la texture bake sembra di bassa qualita?
+
+La qualita bake dipende da:
+
+- risoluzione texture;
+- densita poligoni;
+- uso dello spazio UV;
+- numero di materiali.
+
+### Aumenta la risoluzione texture
+
+Prova prima ad aumentare la risoluzione texture.
+
+Esempio:
+
+- 1024 -> dettaglio basso
+- 2048 -> qualita standard
+- 4096 -> alta qualita
+- 8192 -> dettaglio molto alto
+
+Risoluzioni piu alte aumentano l'uso memoria.
+
+### Aumenta la densita dei poligoni
+
+Se la mesh ottimizzata e troppo aggressiva, dettagli importanti possono essere persi prima del bake.
 
 Prova:
 
-1. usa **Auto Cage Extrusion**;
-2. aumenta leggermente **Cage Extrusion**;
-3. controlla che il cage diventi verde;
-4. prova **Auto Fix Normals** in Advanced.
+- aumentare **Final Faces**;
+- usare un valore **Optimize / Reduce** meno aggressivo.
 
-## Il cage non copre bene la mesh
+### Usa piu materiali
 
-Usa **Cage Extrusion** o **Auto Cage Extrusion**.
+Se aumentare la risoluzione texture non basta, l'asset puo richiedere piu materiali.
 
-Se la scansione e molto sottile o sovrapposta, potrebbe servire una regolazione manuale.
+Ogni materiale riceve il proprio spazio texture, permettendo una conservazione del dettaglio molto piu alta sul modello.
 
-## La mesh finale non si aggiorna
+Aumentare solo la densita dei poligoni non e sempre la soluzione migliore.
 
-Controlla il **Workflow Status**.
+Mesh molto dense possono diventare piu pesanti da elaborare, piu lente da cuocere e piu difficili da usare in applicazioni realtime.
 
-Se dice:
+Per questo ScanReady puo consigliare un numero appropriato di materiali bake in base a complessita e dimensione della scansione.
 
-- `Press Create Lowpoly Preview`, rifai Step 1;
-- `Press Generate UVs`, rifai Step 2;
-- `Press Bake Textures`, rifai il bake.
+Esempio:
 
-## Il bake sembra rifare troppo lavoro
+- 1 materiale -> dettaglio texture piu basso
+- 2 materiali -> qualita texture migliorata
+- 4 materiali -> dettaglio texture molto piu alto
 
-ScanReady usa una cache per evitare passaggi inutili. Se hai cambiato risoluzione, mappe, UV, materiali o parametri cage, il bake deve aggiornarsi.
+Usare piu materiali e spesso una soluzione migliore rispetto ad aumentare semplicemente la densita dei poligoni.
 
-## Blender chiede di salvare texture originali
+Questo e particolarmente utile per:
 
-Non dovrebbe succedere. Le texture originali devono rimanere protette e non essere usate come target del bake.
+- scansioni grandi;
+- asset ambiente;
+- oggetti museali;
+- asset fotogrammetrici complessi;
+- dettagli fini della superficie.
 
-## Immagini da aggiungere
+---
 
-- screenshot bake con zone nere;
-- screenshot cage rosso/verde;
-- screenshot Workflow Status con messaggio corretto;
-- screenshot texture output corrette.
+## Il bake cattura aree sbagliate
 
+Se il bake include dettagli dalla parte sbagliata del modello:
+
+- riduci **Cage Extrusion**;
+- controlla la preview cage;
+- assicurati che gli oggetti non si sovrappongano;
+- nascondi o sposta oggetti non correlati se serve;
+- esegui di nuovo il bake.
+
+Un cage troppo grande puo proiettare superfici vicine indesiderate.
+
+---
+
+## Le texture non vengono salvate
+
+Controlla:
+
+- **Save Images** e attivo;
+- **Output Folder** e valida;
+- il file Blender e stato salvato se usi un percorso relativo come `//bake/`;
+- hai permessi di scrittura nella cartella selezionata;
+- il bake e stato completato con successo.
+
+I percorsi relativi vengono salvati accanto al file `.blend` corrente.
+
+Dopo un bake riuscito, usa **Bake Folder** nello Step 3 per aprire l'ultima cartella texture. Se il pulsante non e ancora visibile, esegui prima un bake con **Save Images** attivo.
+
+---
+
+## Perche il bake e molto lento?
+
+Il bake puo essere lento con scansioni grandi o texture ad alta risoluzione.
+
+Per velocizzarlo:
+
+- abbassa **Texture Size**;
+- abbassa **Bake Samples**;
+- riduci il numero di materiali bake se possibile;
+- disattiva le mappe che non ti servono;
+- usa una mesh finale piu piccola quando appropriato.
+
+Normal map e AO ad alta risoluzione possono aumentare il tempo di bake.
+
+---
+
+## Blender finisce la memoria
+
+Le scansioni grandi possono usare molta memoria durante il bake.
+
+Prova:
+
+- abilita **Safe Memory Bake**;
+- abilita **Force CPU Baking** se la memoria GPU e limitata;
+- abbassa **Texture Size**;
+- abbassa il numero di materiali bake;
+- chiudi altre applicazioni pesanti;
+- salva e riavvia Blender prima del bake.
+
+Force CPU Baking di solito e piu lento, ma puo essere piu sicuro su sistemi con poca VRAM.
+
+ScanReady 1.0 abilita automaticamente **Force CPU Baking** quando il numero di materiali bake e impostato a `2` o piu.
+
+Per bake a singolo materiale, il bake GPU puo comunque essere usato quando disponibile.
+
+---
+
+## La Normal Map sembra troppo forte o troppo debole
+
+Regola **Normal Strength**.
+
+Cambia la forza del nodo Normal Map nel materiale finale.
+
+Influenza l'aspetto del materiale, non l'immagine normal bake.
+
+Se il materiale high-poly originale ha una normal texture collegata, ScanReady trasferisce quella normal map sul nuovo layout UV.
+
+Se non e collegata nessuna normal texture, ScanReady genera le informazioni normal dalla geometria high-poly.
+
+---
+
+## Mancano le informazioni Roughness
+
+ScanReady puo trasferire roughness solo quando il materiale high-poly originale contiene gia una roughness texture o un input roughness utilizzabile.
+
+Se nel materiale originale non esistono informazioni roughness, non puo essere generato automaticamente un trasferimento roughness.
+
+Controlla il node tree del materiale originale e verifica che le informazioni roughness siano disponibili prima del bake.
+
+---
+
+## Ambient Occlusion e troppo scura
+
+Prova:
+
+- abbassare la forza AO nel materiale finale;
+- ridurre **AO Distance** se la distanza automatica e disattivata;
+- usare impostazioni AO piu controllate;
+- verificare se la sorgente AO e adatta all'asset.
+
+AO deve aggiungere profondita, non nascondere i dettagli della scansione.
+
+---
+
+## Perche il bake contiene aree nere o mancanti?
+
+Se la texture bake contiene aree nere, dettagli mancanti o proiezioni errate, di solito la cage extrusion e troppo piccola.
+
+In questo caso alcune parti della scansione high-poly non vengono raggiunte correttamente durante il bake.
+
+Aree nere possono comparire anche quando parti della mesh lowpoly ottimizzata si trovano davanti o dietro la sorgente high-poly, quindi i raggi di bake non colpiscono la superficie prevista.
+
+Per correggere:
+
+- abilita **Show Cage**;
+- aumenta **Cage Extrusion**;
+- controlla il cage attorno al modello prima del bake;
+- controlla la preview cage prima del bake;
+- aumenta leggermente **Cage Extrusion** se il cage non copre completamente la sorgente high-poly.
+
+Il cage deve circondare completamente la superficie high-poly.
+
+In ScanReady 1.0, la preview del cage diventa verde quando il cage e abbastanza grande da coprire correttamente la superficie della scansione.
+
+Se alcune aree mancano ancora, aumenta leggermente l'extrusion e controlla di nuovo il cage.
+
+Quando il cage sembra corretto, esegui di nuovo il bake per verificare se le aree mancanti o nere sono state corrette.
+
+Usa il valore piu piccolo che copre completamente la scansione senza catturare superfici vicine indesiderate.
+
+---
+
+## Quale preset Adaptive Reduce devo usare?
+
+Adaptive Reduce cambia come ScanReady distribuisce la riduzione mesh sulla scansione prima di UV e bake.
+
+| Preset | Ideale per | Risultato |
+|---|---|---|
+| **Balanced** | La maggior parte delle scansioni | Buon comportamento generale. Usalo per primo. |
+| **Preserve Details** | Scansioni complesse con forme scultoree, pieghe, incisioni, danni o piccoli dettagli | Protegge piu fortemente le aree di dettaglio importanti. |
+| **Flat Surfaces** | Oggetti con ampie superfici semplici, pannelli, muri, pavimenti o aree architettoniche piatte | Riduce in modo piu aggressivo le aree semplici per risparmiare poligoni. |
+| **Hard Surface** | Veicoli, props, macchinari e scansioni hard-surface | Usa un passaggio approssimato piu veloce e protegge solo rotture di normale piu forti. |
+
+Se la preview ottimizzata perde dettagli importanti, prova **Preserve Details** e crea di nuovo la preview.
+
+Se la preview mantiene troppa geometria su aree semplici, prova **Flat Surfaces** e crea di nuovo la preview.
+
+Per veicoli o scansioni hard-surface, prova **Hard Surface** e controlla silhouette e principali interruzioni dei pannelli.
+
+---
+
+## Primo intervento consigliato
+
+Se il risultato non e buono, usa questo ordine:
+
+1. Controlla la preview lowpoly
+2. Controlla le UV con la vista checker
+3. Controlla la preview cage
+4. Cuoci prima solo Base Color
+5. Aggiungi Normal, Roughness e AO dopo che Base Color funziona
+6. Aumenta la risoluzione texture solo quando il workflow e corretto
+
+Questo rende piu facile isolare i problemi.

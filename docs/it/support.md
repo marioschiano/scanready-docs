@@ -1,24 +1,66 @@
 # Supporto
 
-Se qualcosa non funziona, raccogli queste informazioni prima di chiedere supporto:
+Hai bisogno di aiuto con ScanReady 1.0?
 
-- versione di Blender;
-- versione di ScanReady;
-- sistema operativo;
-- tipo di scansione;
-- screenshot del pannello ScanReady;
-- messaggio nel Workflow Status;
-- eventuale errore nella console di Blender.
+---
 
-## Link utili
+## Documentazione
 
-- Documentazione: [ScanReady Docs](https://marioschiano.github.io/scanready-docs/)
-- Changelog italiano: [Changelog](changelog.md)
-- Risoluzione problemi: [Risoluzione problemi](troubleshooting.md)
+Documentazione completa e guide workflow:
 
-## Immagini da aggiungere
+[Apri la documentazione ScanReady](https://marioschiano.github.io/scanready-docs/)
 
-- screenshot Preferences con versione addon;
-- screenshot console errore;
-- screenshot Workflow Status.
+---
 
+## YouTube
+
+Video workflow, aggiornamenti e tutorial:
+
+[Tutorial ScanReady su YouTube](https://www.youtube.com/@marioschiano3d)
+
+---
+
+## Problemi comuni
+
+Prima di contattare il supporto, controlla:
+
+- [FAQ / Risoluzione problemi](troubleshooting.md)
+- [Step 1 - Preview / Reduce](step1.md)
+- [Step 2 - UV / Cage](step2.md)
+- [Step 3 - Bake / Output](step3.md)
+
+Molti problemi comuni di bake e UV sono gia coperti nella documentazione.
+
+---
+
+## Supporto email
+
+Per bug report, problemi di workflow o domande tecniche:
+
+<a href="mailto:support.marioschiano3d@gmail.com"><strong>support.marioschiano3d@gmail.com</strong></a>
+
+---
+
+## Quando contatti il supporto
+
+Includi:
+
+- versione Blender;
+- versione ScanReady;
+- screenshot del problema;
+- breve descrizione del problema;
+- informazioni GPU / CPU se il problema e legato alle performance.
+
+Questo aiuta a individuare i problemi piu rapidamente.
+
+---
+
+## Filosofia ScanReady
+
+Veloce.
+
+Pulito.
+
+Game-ready.
+
+Pensato per semplificare i workflow di ottimizzazione fotogrammetria direttamente dentro Blender.

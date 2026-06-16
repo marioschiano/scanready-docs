@@ -1,44 +1,242 @@
 # Consigli export
 
-Dopo il bake, controlla sempre mesh finale, materiali e texture prima di esportare.
+Dopo aver usato ScanReady 1.0, puoi esportare l'asset ottimizzato e baked per VR, AR, videogame, viewer realtime o altri workflow di produzione 3D.
 
-<p align="center">
-  <img src="../img/high-to-low-workflow.png" alt="Asset baked e ottimizzato pronto per export realtime" style="max-width:900px;width:100%;">
-</p>
+L'obiettivo e mantenere il modello abbastanza leggero per l'uso realtime, preservando il dettaglio visivo della scansione originale tramite texture bake.
+
+---
 
 ## Prima di esportare
 
-- seleziona la mesh final;
-- controlla Base Color e Normal;
-- verifica che le texture siano salvate nella cartella output;
-- controlla che non siano rimasti cage o preview visibili se non servono.
+Prima dell'export, controlla:
 
-## Formati consigliati
+- la mesh finale e selezionata;
+- la mesh ottimizzata ha UV;
+- il materiale bake e assegnato;
+- i file texture sono stati salvati se ti servono immagini esterne;
+- la scala dell'oggetto e corretta;
+- l'origine dell'oggetto e posizionata dove serve;
+- la densita della mesh e adatta alla piattaforma target.
 
-### GLB / glTF
+Per VR e videogame, le performance contano quanto la qualita visiva.
 
-Buono per realtime, web e motori moderni.
+---
+
+## Formati export consigliati
+
+### glTF / GLB
+
+Usa **glTF** o **GLB** per workflow realtime moderni.
+
+Adatto per:
+
+- viewer web;
+- preview realtime;
+- molti game engine;
+- pipeline AR/VR;
+- consegna asset leggeri.
+
+`GLB` salva modello e texture in un unico file, utile per condivisione e preview.
 
 ### FBX
 
-Utile per pipeline generiche, Unity o Unreal.
+Usa **FBX** quando la pipeline target lo richiede.
+
+Adatto per:
+
+- workflow Unity;
+- workflow Unreal Engine;
+- trasferimento da DCC a engine;
+- team che usano gia FBX come standard.
+
+FBX puo funzionare bene, ma i collegamenti texture possono richiedere controllo dopo l'import.
 
 ### OBJ
 
-Semplice, ma meno completo per materiali moderni.
+Usa **OBJ** per scambio semplice di mesh statiche.
 
-## Texture
+Adatto per:
 
-Per asset realtime:
+- trasferimento geometria base;
+- workflow archivio semplici;
+- compatibilita con molti tool.
 
-- Base Color in JPG o PNG;
-- Normal in PNG o TIFF;
-- AO in PNG;
-- Roughness in PNG o JPG in base al progetto.
+OBJ e semplice, ma e meno completo di glTF o FBX per workflow materiali moderni.
 
-## Immagini da aggiungere
+---
 
-- screenshot export glTF;
-- screenshot cartella texture;
-- screenshot asset importato in un motore realtime.
+## Texture map
 
+In base alle impostazioni, ScanReady 1.0 puo creare:
+
+- texture Base Color;
+- Normal map;
+- Roughness map;
+- Ambient Occlusion map.
+
+Quando esporti verso un'altra applicazione, assicurati che il software esterno usi i file texture corretti.
+
+### Base Color
+
+Collega questa texture all'input colore principale o albedo.
+
+### Normal Map
+
+Collega questa texture all'input normal.
+
+In alcuni software, potresti dover impostare il tipo immagine come **Non-Color** o **Normal Map**.
+
+### Roughness Map
+
+Collega questa texture all'input roughness quando il materiale target lo supporta.
+
+Le roughness map devono essere trattate come dati **Non-Color**.
+
+### Ambient Occlusion
+
+Collega questa texture all'input AO se il motore target lo supporta.
+
+Alcuni workflow combinano AO con altre mappe, in base all'engine o al setup materiale.
+
+---
+
+## Risoluzione texture
+
+Scegli la dimensione texture in base all'uso finale.
+
+### 1024
+
+Buona per piccoli prop, oggetti di sfondo, mobile VR o preview leggere.
+
+### 2048
+
+Buona scelta generale per molti asset.
+
+### 4096
+
+Utile per oggetti ravvicinati o asset importanti.
+
+### 8192
+
+Usala solo quando serve dettaglio molto alto.
+
+Texture grandi aumentano uso memoria, dimensione file, tempo di caricamento e costo realtime.
+
+---
+
+## Ottimizzazione VR
+
+Per VR, mantieni gli asset particolarmente leggeri.
+
+La VR richiede performance stabili perche la scena deve renderizzare fluidamente per entrambi gli occhi.
+
+Prima di esportare per VR:
+
+- riduci il numero di poligoni il piu possibile;
+- usa texture bake invece di geometria pesante;
+- evita dimensioni texture inutilmente grandi;
+- usa Normal map per preservare dettaglio superficie;
+- testa l'asset nell'ambiente VR target;
+- preferisci meno materiali quando possibile.
+
+Un modello che sembra leggero su desktop puo essere ancora troppo pesante per visori VR standalone.
+
+---
+
+## Ottimizzazione videogame
+
+Per videogame, bilancia qualita e performance.
+
+Prima di esportare per un game engine:
+
+- mantieni un numero di poligoni adatto alla dimensione dell'asset;
+- usa dettaglio texture invece di geometria eccessiva;
+- usa Normal map per il dettaglio superficie;
+- usa AO map se utile per il materiale;
+- tieni sotto controllo il numero di materiali;
+- usa dimensioni texture adatte alla distanza camera;
+- testa l'asset nella scena reale di gioco, non solo isolato.
+
+Un hero asset puo usare piu dettaglio di un prop di sfondo.
+
+---
+
+## Note Unity
+
+Quando importi in Unity:
+
+- controlla la scala;
+- controlla le assegnazioni materiali;
+- assegna Base Color ad Albedo/Base Map;
+- assegna Normal map a Normal Map;
+- marca la texture Normal map come normal map se Unity lo chiede;
+- assegna Roughness/Smoothness in base allo shader che stai usando;
+- collega AO se lo shader lo supporta;
+- controlla le impostazioni di compressione texture.
+
+Usa dimensioni texture piu basse per progetti mobile o standalone VR.
+
+---
+
+## Note Unreal Engine
+
+Quando importi in Unreal Engine:
+
+- controlla scala e orientamento;
+- controlla gli slot materiale;
+- collega Base Color a Base Color;
+- collega Normal map a Normal;
+- collega Roughness a Roughness;
+- collega AO ad Ambient Occlusion se usata;
+- controlla le impostazioni di compressione texture;
+- testa l'asset sotto illuminazione realtime.
+
+Per workflow Nanite puoi usare piu geometria, ma asset baked leggeri restano utili per VR, mobile, web e applicazioni interattive.
+
+---
+
+## Web e viewer realtime
+
+Per viewer web o presentazioni realtime leggere:
+
+- preferisci GLB quando possibile;
+- mantieni dimensioni texture moderate;
+- riduci il numero di materiali;
+- mantieni bassa la densita mesh;
+- testa il tempo di caricamento;
+- testa le performance sul dispositivo target.
+
+Un asset piu piccolo e piu facile da condividere, caricare e visualizzare in modo interattivo.
+
+---
+
+## Conserva la scansione originale
+
+Non eliminare la scansione high-poly originale.
+
+Conservala come asset sorgente per:
+
+- bake futuri;
+- export a qualita superiore;
+- preservazione archivio;
+- risoluzioni texture diverse;
+- target di ottimizzazione diversi.
+
+ScanReady 1.0 crea una versione pratica da produzione, mentre la scansione originale resta la tua sorgente ad alto dettaglio.
+
+---
+
+## Checklist finale
+
+Prima della consegna o dell'export, controlla:
+
+- la mesh e ottimizzata;
+- le UV sono presenti;
+- il bake Base Color sembra corretto;
+- la Normal map sembra corretta se usata;
+- la Roughness map sembra corretta se usata;
+- la AO map sembra corretta se usata;
+- i file texture sono salvati;
+- il pulsante **Bake Folder** dello Step 3 apre l'ultima cartella texture salvata;
+- la dimensione file e accettabile;
+- l'asset funziona bene nell'ambiente target.

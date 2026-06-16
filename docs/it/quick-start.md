@@ -1,50 +1,90 @@
 # Guida rapida
 
-Questa pagina mostra il flusso piu semplice per usare ScanReady.
+Questa pagina mostra il modo piu veloce per usare ScanReady 1.0.
 
 <p align="center">
-  <img src="../img/hero.png" alt="Panoramica del workflow ScanReady" style="max-width:760px;width:100%;">
+  <img src="../../img/hero.png" alt="Panoramica del workflow ScanReady" style="max-width:620px;width:100%;">
 </p>
 
-## Flusso veloce
+---
 
-1. Seleziona la mesh high poly o il parent della scansione.
-2. Apri il tab **Scan Ready** nella sidebar.
-3. Premi **One Click Bake**.
-4. Aspetta la fine del processo.
-5. Controlla la mesh finale e le texture generate.
+## Workflow base
+
+<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
+
+  <div style="flex:1 1 360px; min-width:260px;">
+
+    <p>Per una prima prova veloce:</p>
+
+    <ol>
+      <li>Seleziona la mesh high-poly della scansione.</li>
+      <li>Imposta <strong>Final Faces</strong> se vuoi un target specifico.</li>
+      <li>Lascia <strong>Optimize / Reduce</strong> a <strong>0.10</strong> per una riduzione di circa il 90%.</li>
+      <li>Scegli la dimensione texture.</li>
+      <li>Attiva le mappe che vuoi cuocere.</li>
+      <li>Clicca <strong>ONE CLICK BAKE</strong>.</li>
+    </ol>
+
+  </div>
+
+  <div style="flex:0 0 260px; text-align:center;">
+    <img src="../../img/quick-start-one-click.png" alt="Pulsante One Click Bake di ScanReady in Blender" style="width:260px; max-width:100%;">
+  </div>
+
+</div>
+
+---
+
+## Cosa succede automaticamente
+
+Quando usi **ONE CLICK BAKE**, ScanReady esegue il workflow principale:
+
+1. Pulisce la scansione selezionata.
+2. Crea una preview lowpoly ottimizzata.
+3. Genera le UV.
+4. Prepara il cage.
+5. Esegue il bake delle texture selezionate.
+6. Crea il materiale finale.
+7. Salva le immagini se **Save Images** e attivo.
 
 <p align="center">
-  <img src="../img/quick-start-one-click.png" alt="Pannello One Click Bake in Blender" style="width:280px; max-width:100%;">
+  <img src="../../img/one-click-bake.gif" alt="Workflow One Click Bake di ScanReady in Blender" style="max-width:820px;width:100%;">
 </p>
 
-<p align="center">
-  <img src="../img/one-click-bake.gif" alt="ScanReady ottimizza automaticamente la scansione in un asset baked piu leggero" style="max-width:820px;width:100%;">
-</p>
+---
 
-## Flusso manuale
+## Impostazioni consigliate per la prima prova
 
-Se vuoi piu controllo:
+Per una scansione standard:
 
-1. In **Step 1**, scegli `Final Faces` e premi **Create Lowpoly Preview**.
-2. In **Step 2**, controlla il cage e premi **Generate UVs**.
-3. In **Step 3**, scegli le mappe da cuocere e premi **Bake Textures**.
+- **Optimize / Reduce:** `0.10`
+- **Final Faces:** `4000` oppure un target adatto al tuo asset
+- **Adaptive Reduce:** attivo
+- **Adaptive Preset:** `Balanced`
+- **Texture Size:** `2048`
+- **Bake Base Color:** attivo
+- **Bake Normal:** attivo se ti serve dettaglio di superficie
+- **Save Images:** attivo se vuoi salvare le texture su disco
 
-## Workflow Status
+---
 
-Il box **Workflow Status** ti dice cosa fare dopo.
+## Risultato rapido
 
-Esempi:
+Dopo il bake dovresti ottenere:
 
-- `Press Create Lowpoly Preview`
-- `Press Generate UVs`
-- `Press Bake Textures`
+- una mesh finale piu leggera;
+- UV generate automaticamente;
+- texture bake collegate al materiale;
+- file immagine salvati nella cartella di output, se abilitato.
 
-Se cambi un parametro, ScanReady prova a consigliarti il prossimo passaggio corretto.
+Controlla il risultato nel viewport e nella sezione **Step 3 - Bake / Output**.
 
-## Immagini da aggiungere
+---
 
-- GIF One Click Bake dall'inizio alla fine.
-- Screenshot Workflow Status durante gli step.
-- Screenshot della mesh finale selezionata.
+## Quando usare gli step manuali
 
+Usa il workflow manuale se vuoi piu controllo:
+
+- [Step 1 - Preview / Reduce](step1.md) per regolare la densita della mesh.
+- [Step 2 - UV / Cage](step2.md) per controllare UV e cage.
+- [Step 3 - Bake / Output](step3.md) per gestire texture, materiali e output.
