@@ -25,7 +25,7 @@ plugins:
           build: true
           nav_translations:
             Home: Home
-            Why ScanReady: Perche ScanReady
+            Why ScanReady: Perché ScanReady
             Getting Started: Per iniziare
             Installation: Installazione
             Quick Start: Guida rapida

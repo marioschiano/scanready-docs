@@ -8,7 +8,7 @@ ScanReady ti aiuta a trasformare quelle scansioni in asset ottimizzati e baked d
   <img src="../../img/hero.png" alt="Da scansione grezza ad asset ottimizzato" style="max-width:820px;width:100%;">
 </p>
 
-### Cosa risolve ScanReady
+## Cosa risolve ScanReady
 
 - Numero di poligoni elevato.
 - Topologia della scansione non ottimizzata.
