@@ -29,7 +29,7 @@ La riduzione mesh tradizionale spesso applica la stessa ottimizzazione in modo u
 
 Questo puo preservare inutilmente geometria densa nelle aree piatte mentre danneggia dettagli importanti nelle regioni piu complesse.
 
-ScanReady 1.0 usa ottimizzazione adattiva per analizzare la superficie e preservare dettagli visivamente importanti, semplificando in modo piu aggressivo le aree piatte o meno dettagliate.
+ScanReady usa ottimizzazione adattiva per analizzare la superficie e preservare dettagli visivamente importanti, semplificando in modo piu aggressivo le aree piatte o meno dettagliate.
 
 Il risultato e un asset lowpoly piu pulito ed efficiente, che mantiene molta piu qualita della scansione originale dove conta davvero.
 
@@ -45,7 +45,7 @@ Invece di passare ore a pulire mesh manualmente, generare UV, creare cage e cuoc
 
 ## Migliore uso dello spazio texture
 
-ScanReady 1.0 non ottimizza solo la densita dei poligoni.
+ScanReady non ottimizza solo la densita dei poligoni.
 
 L'addon aiuta anche a migliorare l'efficienza dello spazio UV e la preparazione del bake, per texture realtime piu pulite e dettagliate.
 
