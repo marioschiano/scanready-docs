@@ -1,6 +1,6 @@
 # Risoluzione problemi
 
-Questa pagina copre problemi comuni del workflow ScanReady 1.0 e offre soluzioni per bake, UV, ottimizzazione, uso memoria e preparazione realtime.
+Questa pagina copre problemi comuni del workflow ScanReady e offre soluzioni per bake, UV, ottimizzazione, uso memoria e preparazione realtime.
 
 L'elaborazione delle scansioni puo essere impegnativa perche scansioni high-poly, texture baking, generazione UV e memoria dipendono dal modello sorgente e dall'hardware.
 
@@ -10,7 +10,7 @@ Per supporto, bug report o domande sul workflow, contatta:
 
 ---
 
-## Il pannello ScanReady 1.0 non appare
+## Il pannello ScanReady non appare
 
 Controlla:
 
@@ -216,7 +216,7 @@ Prova:
 
 Force CPU Baking di solito e piu lento, ma puo essere piu sicuro su sistemi con poca VRAM.
 
-ScanReady 1.0 abilita automaticamente **Force CPU Baking** quando il numero di materiali bake e impostato a `2` o piu.
+ScanReady abilita automaticamente **Force CPU Baking** quando il numero di materiali bake e impostato a `2` o piu.
 
 Per bake a singolo materiale, il bake GPU puo comunque essere usato quando disponibile.
 
@@ -276,7 +276,7 @@ Per correggere:
 
 Il cage deve circondare completamente la superficie high-poly.
 
-In ScanReady 1.0, la preview del cage diventa verde quando il cage e abbastanza grande da coprire correttamente la superficie della scansione.
+In ScanReady, la preview del cage diventa verde quando il cage e abbastanza grande da coprire correttamente la superficie della scansione.
 
 Se alcune aree mancano ancora, aumenta leggermente l'extrusion e controlla di nuovo il cage.
 
