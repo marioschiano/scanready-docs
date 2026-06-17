@@ -54,7 +54,7 @@ Le nuove UV migliorano anche l'efficienza dello spazio texture.
 
 Molte scansioni fotogrammetriche contengono layout UV che sprecano grandi porzioni dello spazio texture 0-1.
 
-Dopo l'ottimizzazione, ScanReady 1.0 puo generare un layout UV piu pulito, con packing migliore e uso piu efficiente delle texture.
+Dopo l'ottimizzazione, ScanReady puo generare un layout UV piu pulito, con packing migliore e uso piu efficiente delle texture.
 
 <!-- Sostituire il placeholder con ../../img/step2-uv-packing.png -->
 <p align="center">
