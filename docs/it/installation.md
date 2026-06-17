@@ -1,6 +1,6 @@
 # Installazione
 
-Questa pagina spiega come installare ScanReady 1.0 in Blender.
+Questa pagina spiega come installare ScanReady in Blender.
 
 ---
 
