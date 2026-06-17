@@ -2,7 +2,7 @@
 
 Le impostazioni avanzate danno controllo preciso su pulizia mesh, generazione UV, qualita bake, output immagini, preset, utility e sicurezza memoria.
 
-Non serve cambiare ogni impostazione per usare ScanReady 1.0.
+Non serve cambiare ogni impostazione per usare ScanReady.
 
 Per la maggior parte delle scansioni, parti dai valori predefiniti. Regola le impostazioni avanzate solo quando hai bisogno di piu controllo su performance, qualita o accuratezza del bake.
 
