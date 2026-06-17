@@ -67,7 +67,7 @@ OBJ e semplice, ma e meno completo di glTF o FBX per workflow materiali moderni.
 
 ## Texture map
 
-In base alle impostazioni, ScanReady 1.0 puo creare:
+In base alle impostazioni, ScanReady puo creare:
 
 - texture Base Color;
 - Normal map;
@@ -222,7 +222,7 @@ Conservala come asset sorgente per:
 - risoluzioni texture diverse;
 - target di ottimizzazione diversi.
 
-ScanReady 1.0 crea una versione pratica da produzione, mentre la scansione originale resta la tua sorgente ad alto dettaglio.
+ScanReady crea una versione pratica da produzione, mentre la scansione originale resta la tua sorgente ad alto dettaglio.
 
 ---
 
