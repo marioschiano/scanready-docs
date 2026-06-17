@@ -98,7 +98,7 @@ Se il cage e troppo grande:
 - il bake puo catturare superfici vicine indesiderate;
 - possono apparire artefatti di proiezione.
 
-ScanReady 1.0 include strumenti per rendere questo processo piu veloce e piu semplice.
+ScanReady include strumenti per rendere questo processo piu veloce e piu semplice.
 
 <p align="center">
   <img src="../../img/cage_01_red.png" alt="Avviso cage rosso con setup non valido per il bake" style="max-width:1000px;width:100%;">
@@ -128,16 +128,16 @@ ScanReady 1.0 include strumenti per rendere questo processo piu veloce e piu sem
 
 ## Metodo UV
 
-ScanReady 1.0 usa **Smart UV Project** per generare UV sulla mesh ottimizzata.
+ScanReady usa **Smart UV Project** per generare UV sulla mesh ottimizzata.
 
 Smart UV Project e il metodo automatico di unwrap UV di Blender.
 
 E utile per gli oggetti scansionati perche puo generare rapidamente isole UV senza richiedere seam manuali.
 
-ScanReady 1.0 espone i controlli Smart UV cosi puoi regolare il comportamento dell'unwrap prima del bake.
+ScanReady espone i controlli Smart UV cosi puoi regolare il comportamento dell'unwrap prima del bake.
 
 <p align="center">
-  <img src="../../img/step2-uv-01.jpg" alt="Layout UV generato da ScanReady 1.0 dalla mesh ottimizzata" style="max-width:760px;width:100%;">
+  <img src="../../img/step2-uv-01.jpg" alt="Layout UV generato da ScanReady dalla mesh ottimizzata" style="max-width:760px;width:100%;">
 </p>
 
 ---
@@ -158,7 +158,7 @@ Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 <h3>Smart UV Preset</h3>
 
 <p>
-ScanReady 1.0 usa Blender Smart UV Project per la generazione UV automatica.
+ScanReady usa Blender Smart UV Project per la generazione UV automatica.
 </p>
 
 <p>
