@@ -4,7 +4,7 @@
 
   <div style="flex:1 1 300px; min-width:260px;">
     <p>
-      <strong>ONE CLICK BAKE</strong> e il workflow piu veloce di ScanReady 1.0.
+      <strong>ONE CLICK BAKE</strong> e il workflow piu veloce di ScanReady.
     </p>
     <p>
       E pensato per convertire una scansione high-poly pesante in un asset piu leggero con texture bake, con il minimo setup.
@@ -13,7 +13,7 @@
   </div>
 
   <div style="flex:0 0 240px; text-align:center;">
-    <img src="../../img/quick-start-one-click.png" alt="Pulsante One Click Bake di ScanReady 1.0 in Blender" style="width:240px; max-width:100%;">
+    <img src="../../img/quick-start-one-click.png" alt="Pulsante One Click Bake di ScanReady in Blender" style="width:240px; max-width:100%;">
   </div>
 
 </div>
@@ -22,7 +22,7 @@
   <img src="../../img/one-click-bake.gif" alt="Workflow animato One Click Bake in Blender" style="max-width:820px;width:100%;">
 </p>
 
-Invece di ridurre manualmente la mesh, generare UV, preparare il cage e configurare il bake, ScanReady 1.0 esegue automaticamente il processo principale.
+Invece di ridurre manualmente la mesh, generare UV, preparare il cage e configurare il bake, ScanReady esegue automaticamente il processo principale.
 
 Di default ScanReady parte da un valore **Optimize / Reduce** di **0.10**. Questo significa che la preview lowpoly mantiene circa il **10% dei poligoni originali**, producendo circa **90% di poligoni in meno**.
 
@@ -40,7 +40,7 @@ Il workflow e flessibile: anche se sei gia in **Step 2 - UV / Cage** o **Step 3 
 
 ## Cosa fa One Click Bake
 
-Quando clicchi **ONE CLICK BAKE**, ScanReady 1.0 esegue il workflow completo da scansione ad asset:
+Quando clicchi **ONE CLICK BAKE**, ScanReady esegue il workflow completo da scansione ad asset:
 
 1. Pulisce la scansione selezionata rimuovendo rumore comune della mesh, come poligoni staccati, frammenti sospesi e vertici isolati.
 2. Crea una preview lowpoly dalla scansione high-poly pulita.
@@ -81,7 +81,7 @@ Ti offre un modo piu veloce per trasformare la geometria catturata in un asset p
 
 ## Fasi del workflow
 
-Durante l'operazione, ScanReady 1.0 passa attraverso le stesse fasi principali usate dal workflow manuale.
+Durante l'operazione, ScanReady passa attraverso le stesse fasi principali usate dal workflow manuale.
 
 ### Cleanup
 
