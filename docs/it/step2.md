@@ -1,11 +1,11 @@
 # Step 2 - UV / Cage
 
 <p align="center">
-  <img src="../../img/step2-uv-01.jpg" alt="Layout UV generato da ScanReady 1.0 dalla mesh ottimizzata" style="max-width:760px;width:100%;">
+  <img src="../../img/step2-uv-01.jpg" alt="Layout UV generato da ScanReady dalla mesh ottimizzata" style="max-width:760px;width:100%;">
 </p>
 
 <p align="center">
-<b>UV della scansione originale vs packing UV ottimizzato generato da ScanReady 1.0.</b>
+<b>UV della scansione originale vs packing UV ottimizzato generato da ScanReady.</b>
 </p>
 
 ---
@@ -34,7 +34,7 @@ Poiche la geometria e stata unita e semplificata, il layout UV originale puo div
 - sporco;
 - non allineato alla nuova superficie lowpoly.
 
-Senza UV nuove, ScanReady 1.0 non puo trasferire correttamente le informazioni texture dalla scansione originale alla mesh ottimizzata.
+Senza UV nuove, ScanReady non puo trasferire correttamente le informazioni texture dalla scansione originale alla mesh ottimizzata.
 
 Creare UV nuove garantisce bake piu puliti e una proiezione texture piu affidabile.
 
