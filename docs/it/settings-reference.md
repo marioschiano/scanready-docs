@@ -1,6 +1,6 @@
 # Riferimento impostazioni
 
-Questa pagina riassume le impostazioni principali di ScanReady 1.0 e cosa fanno.
+Questa pagina riassume le impostazioni principali di ScanReady e cosa fanno.
 
 Usala come riferimento rapido quando regoli scansioni per VR, videogame, visualizzazione realtime o ottimizzazione generale in Blender.
 
@@ -12,7 +12,7 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 |---|---|---|
 | **Final Faces** | Numero target di facce per la mesh lowpoly ottimizzata. | Abbassalo per asset VR/game piu leggeri. Alzalo per preservare piu dettaglio nella silhouette. |
 | **Optimize / Reduce** | Controlla quanto la mesh viene ridotta. | Valori piu bassi creano una riduzione piu forte. Valori piu alti mantengono piu geometria. |
-| **Pre-Decimate Merge** | Esegue Merge by Distance sulla mesh preview duplicata prima di Decimate. E il singolo controllo esplicito di weld in ScanReady 1.0. | Aumentalo per ridurre poligoni sovrapposti prima dell'ottimizzazione. Abbassalo se vengono colpiti dettagli sottili. |
+| **Pre-Decimate Merge** | Esegue Merge by Distance sulla mesh preview duplicata prima di Decimate. E il singolo controllo esplicito di weld in ScanReady. | Aumentalo per ridurre poligoni sovrapposti prima dell'ottimizzazione. Abbassalo se vengono colpiti dettagli sottili. |
 | **Adaptive Reduce** | Usa pesi basati sulla scansione per ridurre di piu le superfici piatte e proteggere dettagli importanti. | Tienilo attivo per la maggior parte delle scansioni. Disattivalo solo se vuoi un risultato di riduzione uniforme piu semplice. |
 | **Adaptive Reduce Preset** | Sceglie il comportamento della riduzione adattiva. | Usa Balanced per la maggior parte delle scansioni, Preserve Details per superfici complesse, Flat Surfaces per superfici semplici ampie, Hard Surface per veicoli e scansioni hard-surface. |
 | **Show Adaptive Weights** | Mostra i pesi di riduzione adattiva come colori sul modello. | Usalo per vedere quali aree verranno ridotte di piu prima di creare la preview lowpoly finale. |
@@ -42,13 +42,13 @@ Se sei gia nello Step 2 o nello Step 3 e ti serve un modello piu leggero o piu d
 
 | Impostazione | Descrizione | Quando regolarla |
 |---|---|---|
-| **UV Method** | ScanReady 1.0 usa Smart UV Project per generare le UV. | Questo e il metodo UV usato dal workflow dell'addon. |
+| **UV Method** | ScanReady usa Smart UV Project per generare le UV. | Questo e il metodo UV usato dal workflow dell'addon. |
 | **Smart UV Preset** | Applica un angolo Smart UV consigliato. I preset includono Detailed, Balanced, Large Islands e Continuous. | Usalo come punto di partenza rapido per tipi comuni di scansione. |
 | **Smart UV Angle** | Controlla quanto aggressivamente Smart UV Project divide le isole. | Valori piu bassi creano piu tagli. Valori piu alti creano isole piu grandi. |
 | **Auto Pack UV** | Impacchetta automaticamente le isole UV dopo l'unwrap. | Lascialo attivo a meno che tu voglia sistemare manualmente le isole UV. |
 | **UV Padding** | Aggiunge spazio tra le isole UV. | Aumentalo per ridurre texture bleeding e seam visibili. |
 
-ScanReady 1.0 usa **Smart UV Project** per generare le UV. I preset Adaptive Reduce sono separati dalle impostazioni UV e controllano la semplificazione della mesh prima di UV e bake.
+ScanReady usa **Smart UV Project** per generare le UV. I preset Adaptive Reduce sono separati dalle impostazioni UV e controllano la semplificazione della mesh prima di UV e bake.
 
 Le impostazioni Smart UV vengono applicate quando le UV vengono generate. Se cambi **Smart UV Preset**, **Smart UV Angle**, **UV Padding** o **Auto Pack UV** dopo che le UV esistono gia, clicca di nuovo **Generate UVs** cosi la mesh ottimizzata usa il nuovo layout UV prima del bake.
 
