@@ -3,7 +3,7 @@
 Crea in pochi secondi una preview ottimizzata e leggera dalla scansione high-poly.
 
 <div style="width:100%; text-align:left;">
-  <img src="../../img/step1-reduce.gif" alt="Controllo Optimize Reduce di ScanReady 1.0 che aggiorna la densita della preview lowpoly" style="max-width:820px;width:100%;">
+  <img src="../../img/step1-reduce.gif" alt="Controllo Optimize Reduce di ScanReady che aggiorna la densita della preview lowpoly" style="max-width:820px;width:100%;">
 </div>
 
 <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
@@ -114,7 +114,7 @@ Step 1 crea una preview lowpoly ottimizzata dalla scansione high-poly selezionat
 
 Questo e il primo passaggio importante quando prepari un oggetto scansionato per **VR, AR, videogame, visualizzazione realtime o scene interattive**.
 
-ScanReady 1.0 prima pulisce i frammenti indesiderati comuni della scansione, poi riduce il modello preservando la forma generale e l'identita visiva della scansione originale.
+ScanReady prima pulisce i frammenti indesiderati comuni della scansione, poi riduce il modello preservando la forma generale e l'identita visiva della scansione originale.
 
 ---
 
@@ -147,7 +147,7 @@ Gli aggiornamenti realtime dipendono dalla complessita della scansione e dalle p
 </div>
 
 <div style="flex:0 0 360px; text-align:center;">
-  <img src="../../img/step1-slider_reduce.gif" alt="Slider Optimize Reduce di ScanReady 1.0 che aggiorna il valore della preview lowpoly" style="width:360px; max-width:100%;">
+  <img src="../../img/step1-slider_reduce.gif" alt="Slider Optimize Reduce di ScanReady che aggiorna il valore della preview lowpoly" style="width:360px; max-width:100%;">
 </div>
 
 </div>
@@ -201,7 +201,7 @@ Mostra la percentuale di riduzione corrente in base alle impostazioni di ottimiz
 </div>
 
 <div style="flex:0 0 320px; text-align:center;">
-  <img src="../../img/step1-preview-reduce.png" alt="Pannello Step 1 Preview Reduce di ScanReady 1.0 con pulsante Create Lowpoly Preview" style="width:320px; max-width:100%;">
+  <img src="../../img/step1-preview-reduce.png" alt="Pannello Step 1 Preview Reduce di ScanReady con pulsante Create Lowpoly Preview" style="width:320px; max-width:100%;">
 </div>
 
 </div>
@@ -210,7 +210,7 @@ Mostra la percentuale di riduzione corrente in base alle impostazioni di ottimiz
 
 ## View Options
 
-Nel pannello attuale di ScanReady 1.0, **Show Wireframe** e **Show Checker** si trovano prima dello **STEP 1**.
+Nel pannello attuale di ScanReady, **Show Wireframe** e **Show Checker** si trovano prima dello **STEP 1**.
 
 Sono strumenti di preview usati per controllare topologia e leggibilita UV senza cambiare il workflow di bake.
 
@@ -223,7 +223,7 @@ Mostra la topologia dell'oggetto preview.
 Usalo per controllare se la mesh e ancora troppo densa o se e stata ridotta troppo aggressivamente.
 
 <div style="width:100%; text-align:left;">
-  <img src="../../img/step1-wireframe.gif" alt="Preview Show Wireframe di ScanReady 1.0 su una scansione ottimizzata" style="max-width:820px;width:100%;">
+  <img src="../../img/step1-wireframe.gif" alt="Preview Show Wireframe di ScanReady su una scansione ottimizzata" style="max-width:820px;width:100%;">
 </div>
 
 ---
@@ -235,7 +235,7 @@ Mostra una texture checker sulla mesh preview.
 Aiuta a controllare densita UV e distorsione texture.
 
 <div style="width:100%; text-align:left;">
-  <img src="../../img/step1-checker.gif" alt="Preview Show Checker di ScanReady 1.0 su una scansione ottimizzata" style="max-width:820px;width:100%;">
+  <img src="../../img/step1-checker.gif" alt="Preview Show Checker di ScanReady su una scansione ottimizzata" style="max-width:820px;width:100%;">
 </div>
 
 ---
@@ -269,13 +269,13 @@ Quadrati piu grandi sono utili per controlli generali rapidi.
 </div>
 
 <div style="flex:0 0 320px; text-align:center;">
-  <img src="../../img/step1-checker-mix-scale.png" alt="Controlli Checker Mix e Checker Scale di ScanReady 1.0" style="width:320px; max-width:100%;">
+  <img src="../../img/step1-checker-mix-scale.png" alt="Controlli Checker Mix e Checker Scale di ScanReady" style="width:320px; max-width:100%;">
 </div>
 
 </div>
 
 <div style="width:100%; text-align:left; margin-bottom:20px;">
-  <img src="../../img/step1-checker-mix.gif" alt="Controllo Checker Mix di ScanReady 1.0 che regola la forza dell'overlay checker" style="max-width:820px;width:100%;">
+  <img src="../../img/step1-checker-mix.gif" alt="Controllo Checker Mix di ScanReady che regola la forza dell'overlay checker" style="max-width:820px;width:100%;">
 </div>
 
 <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
@@ -283,7 +283,7 @@ Checker Mix regola quanto e visibile l'overlay checker sopra la superficie del m
 </p>
 
 <div style="width:100%; text-align:left; margin-bottom:20px;">
-  <img src="../../img/step1-checker-scale.gif" alt="Controllo Checker Scale di ScanReady 1.0 che cambia la dimensione dei quadrati checker" style="max-width:820px;width:100%;">
+  <img src="../../img/step1-checker-scale.gif" alt="Controllo Checker Scale di ScanReady che cambia la dimensione dei quadrati checker" style="max-width:820px;width:100%;">
 </div>
 
 <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
@@ -300,7 +300,7 @@ Se la preview e troppo pesante o troppo semplificata, regola **Optimize / Reduce
 
 Puoi tornare allo Step 1 in qualsiasi momento. Se sei gia nello Step 2 o nello Step 3 e decidi che il modello deve essere piu leggero o piu dettagliato, cambia qui le impostazioni di riduzione, clicca di nuovo **Create Lowpoly Preview**, poi continua generando UV e bake di nuovo.
 
-ScanReady 1.0 pulisce la scansione high-poly selezionata, rimuove rumore mesh comune come poligoni staccati o vertici isolati, poi crea un oggetto preview ottimizzato.
+ScanReady pulisce la scansione high-poly selezionata, rimuove rumore mesh comune come poligoni staccati o vertici isolati, poi crea un oggetto preview ottimizzato.
 
 Prima che venga aggiunto il modificatore Decimate, ScanReady puo eseguire anche una pulizia **Pre-Decimate Merge** sulla mesh preview duplicata.
 Questo aiuta a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione.
@@ -308,7 +308,7 @@ Questo aiuta a ridurre poligoni sovrapposti della scansione prima dell'ottimizza
 In **Advanced > Mesh Settings**, **Pre-Decimate Merge** e il singolo controllo esplicito di weld. Abbassalo se vengono colpiti dettagli sottili.
 
 <div style="width:100%; text-align:left;">
-  <img src="../../img/step1-cleaner.gif" alt="Pulizia mesh di ScanReady 1.0 prima della preview lowpoly" style="max-width:820px;width:100%;">
+  <img src="../../img/step1-cleaner.gif" alt="Pulizia mesh di ScanReady prima della preview lowpoly" style="max-width:820px;width:100%;">
 </div>
 
 Quando la preview e corretta, continua con:
