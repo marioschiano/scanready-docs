@@ -4,11 +4,11 @@
 
   <div style="flex:1 1 300px; min-width:260px;">
     <p>
-      <strong>ONE CLICK BAKE</strong> e il workflow piu veloce di ScanReady.
+      <strong>ONE CLICK BAKE</strong> è il workflow più veloce di ScanReady.
     </p>
     <p>
-      E pensato per convertire una scansione high-poly pesante in un asset piu leggero con texture bake, con il minimo setup.
-      E utile quando prepari modelli scansionati per <strong>VR, AR, videogame, visualizzazione realtime o scene interattive</strong>.
+      È pensato per convertire una scansione high-poly pesante in un asset più leggero con texture bake, con il minimo setup.
+      È utile quando prepari modelli scansionati per <strong>VR, AR, videogame, visualizzazione realtime o scene interattive</strong>.
     </p>
   </div>
 
@@ -26,15 +26,15 @@ Invece di ridurre manualmente la mesh, generare UV, preparare il cage e configur
 
 Di default ScanReady parte da un valore **Optimize / Reduce** di **0.10**. Questo significa che la preview lowpoly mantiene circa il **10% dei poligoni originali**, producendo circa **90% di poligoni in meno**.
 
-Questo valore funziona bene per molti asset VR, game e realtime. Se il risultato deve avere piu o meno dettaglio, regola manualmente il valore in **Step 1 - Preview / Reduce** dopo aver creato la preview lowpoly.
+Questo valore funziona bene per molti asset VR, game e realtime. Se il risultato deve avere più o meno dettaglio, regola manualmente il valore in **Step 1 - Preview / Reduce** dopo aver creato la preview lowpoly.
 
-One Click Bake e automatico, ma il risultato puo comunque essere rifinito dopo.
+One Click Bake è automatico, ma il risultato può comunque essere rifinito dopo.
 
-Se il modello finale risulta troppo pesante, oppure se e stato ottimizzato troppo e perde dettagli importanti della forma, torna a **Step 1 - Preview / Reduce**. Regola **Optimize / Reduce** o **Final Faces**, poi clicca di nuovo **Create Lowpoly Preview**.
+Se il modello finale risulta troppo pesante, oppure se è stato ottimizzato troppo e perde dettagli importanti della forma, torna a **Step 1 - Preview / Reduce**. Regola **Optimize / Reduce** o **Final Faces**, poi clicca di nuovo **Create Lowpoly Preview**.
 
-ScanReady ricostruira la preview ottimizzata con le nuove impostazioni, cosi puoi provare una versione piu leggera o piu dettagliata prima di continuare con UV e bake.
+ScanReady ricostruirà la preview ottimizzata con le nuove impostazioni, così puoi provare una versione più leggera o più dettagliata prima di continuare con UV e bake.
 
-Il workflow e flessibile: anche se sei gia in **Step 2 - UV / Cage** o **Step 3 - Bake / Output**, puoi tornare allo Step 1, regolare la riduzione, cliccare **Create Lowpoly Preview**, poi continuare di nuovo in avanti.
+Il workflow è flessibile: anche se sei già in **Step 2 - UV / Cage** o **Step 3 - Bake / Output**, puoi tornare allo Step 1, regolare la riduzione, cliccare **Create Lowpoly Preview**, poi continuare di nuovo in avanti.
 
 ---
 
@@ -45,14 +45,14 @@ Quando clicchi **ONE CLICK BAKE**, ScanReady esegue il workflow completo da scan
 1. Pulisce la scansione selezionata rimuovendo rumore comune della mesh, come poligoni staccati, frammenti sospesi e vertici isolati.
 2. Crea una preview lowpoly dalla scansione high-poly pulita.
 3. Esegue la pulizia pre-decimate merge sulla mesh preview duplicata quando serve.
-4. Riduce la geometria per rendere il modello piu leggero.
+4. Riduce la geometria per rendere il modello più leggero.
 5. Genera UV per l'oggetto ottimizzato.
 6. Crea o stima il cage per il bake.
 7. Cuoce i dettagli texture dalla scansione originale.
 8. Costruisce il setup dei materiali finali.
-9. Salva le texture bake se **Save Images** e attivo.
+9. Salva le texture bake se **Save Images** è attivo.
 
-L'obiettivo e preservare l'identita visiva della scansione originale rendendo il modello piu facile da usare nei progetti realtime.
+L'obiettivo è preservare l'identità visiva della scansione originale rendendo il modello più facile da usare nei progetti realtime.
 
 <p align="center">
   <img src="../../img/one_click_before_after.jpg" alt="Confronto prima e dopo di una scansione high-poly ottimizzata con One Click Bake" style="max-width:820px;width:100%;">
@@ -60,22 +60,22 @@ L'obiettivo e preservare l'identita visiva della scansione originale rendendo il
 
 ---
 
-## Perche e importante
+## Perché è importante
 
 Le scansioni grezze possono essere troppo pesanti per una produzione pratica.
 
-Una scansione puo sembrare buona, ma puo essere difficile da usare perche puo avere:
+Una scansione può sembrare buona, ma può essere difficile da usare perché può avere:
 
 - troppi poligoni;
 - performance lente nel viewport;
 - nessuna UV pulita;
 - setup di bake complesso;
 - uso elevato di memoria;
-- densita della mesh non adatta a VR o videogame.
+- densità della mesh non adatta a VR o videogame.
 
-One Click Bake aiuta a ridurre questa complessita.
+One Click Bake aiuta a ridurre questa complessità.
 
-Ti offre un modo piu veloce per trasformare la geometria catturata in un asset piu pulito, leggero e con texture bake.
+Ti offre un modo più veloce per trasformare la geometria catturata in un asset più pulito, leggero e con texture bake.
 
 ---
 
@@ -97,13 +97,13 @@ Genera le UV per la mesh ottimizzata.
 
 ### Cage
 
-Stima la cage extrusion cosi il bake puo proiettare i dettagli dalla scansione originale.
+Stima la cage extrusion così il bake può proiettare i dettagli dalla scansione originale.
 
 ### Bake
 
 Cuoce le texture selezionate e prepara il risultato finale.
 
-Il pannello mostra lo stato del workflow e il progresso globale mentre il processo e in esecuzione.
+Il pannello mostra lo stato del workflow e il progresso globale mentre il processo è in esecuzione.
 
 ---
 
@@ -111,9 +111,9 @@ Il pannello mostra lo stato del workflow e il progresso globale mentre il proces
 
 Usa One Click Bake quando:
 
-- vuoi il percorso piu veloce da scansione ad asset ottimizzato;
+- vuoi il percorso più veloce da scansione ad asset ottimizzato;
 - stai lavorando su scansioni fotogrammetriche standard;
-- ti serve un asset piu leggero per VR, videogame o visualizzazione realtime;
+- ti serve un asset più leggero per VR, videogame o visualizzazione realtime;
 - non hai bisogno di controllare manualmente ogni passaggio;
 - vuoi una prima versione rapida prima di rifinire manualmente.
 
@@ -124,12 +124,12 @@ Usa One Click Bake quando:
 Per ottenere risultati migliori:
 
 - seleziona un solo oggetto high-poly nel 3D Viewport;
-- imposta **Final Faces** se conosci la densita target della mesh;
+- imposta **Final Faces** se conosci la densità target della mesh;
 - scegli **Texture Size** in base al livello di dettaglio necessario;
 - abilita **Bake Base Color**, **Bake Normal**, **Bake Roughness** o **Bake Occlusion** in base alle mappe che vuoi;
 - imposta la **Output Folder** se vuoi salvare le texture su disco.
 
-Per scansioni con grandi superfici continue, il preset **Flat Surfaces** di Adaptive Reduce puo essere utile prima del bake perche permette di semplificare in modo piu aggressivo le aree semplici. Per veicoli e scansioni hard-surface, **Hard Surface** offre un passaggio approssimato piu veloce che protegge solo le rotture di normale piu forti.
+Per scansioni con grandi superfici continue, il preset **Flat Surfaces** di Adaptive Reduce può essere utile prima del bake perché permette di semplificare in modo più aggressivo le aree semplici. Per veicoli e scansioni hard-surface, **Hard Surface** offre un passaggio approssimato più veloce che protegge solo le rotture di normale più forti.
 
 ---
 
@@ -137,7 +137,7 @@ Per scansioni con grandi superfici continue, il preset **Flat Surfaces** di Adap
 
 Dopo il completamento del workflow, controlla:
 
-- la densita della mesh finale;
+- la densità della mesh finale;
 - la silhouette dell'oggetto;
 - il materiale bake;
 - i file texture salvati;
@@ -151,4 +151,4 @@ Se il risultato va regolato, usa il workflow manuale:
 - **Step 2 - UV / Cage**
 - **Step 3 - Bake / Output**
 
-Gli step manuali danno piu controllo sullo stesso processo.
+Gli step manuali danno più controllo sullo stesso processo.

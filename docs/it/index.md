@@ -1,4 +1,4 @@
-﻿# ScanReady
+# ScanReady
 
 Workflow di ottimizzazione adattiva e bake per scansioni in Blender
 
@@ -10,9 +10,9 @@ Workflow di ottimizzazione adattiva e bake per scansioni in Blender
 
 ScanReady è un addon per Blender pensato per trasformare scansioni 3D pesanti in asset ottimizzati e pronti per il realtime.
 
-E pensato per artisti 3D, creatori di asset, workflow di fotogrammetria, VR, videogame, visualizzazione realtime e scene interattive.
+È pensato per artisti 3D, creatori di asset, workflow di fotogrammetria, VR, videogame, visualizzazione realtime e scene interattive.
 
-Invece di trattare tutta la mesh nello stesso modo, ScanReady usa un workflow di riduzione adattiva che aiuta a proteggere silhouette, bordi, cambi di forma e dettagli importanti, riducendo in modo piu aggressivo le aree piatte o meno rilevanti.
+Invece di trattare tutta la mesh nello stesso modo, ScanReady usa un workflow di riduzione adattiva che aiuta a proteggere silhouette, bordi, cambi di forma e dettagli importanti, riducendo in modo più aggressivo le aree piatte o meno rilevanti.
 
 <p align="center">
   <b>Scansione high-poly -> Mesh ottimizzata -> UV -> Bake -> Asset realtime</b>
@@ -20,16 +20,16 @@ Invece di trattare tutta la mesh nello stesso modo, ScanReady usa un workflow di
 
 ---
 
-## Perche ScanReady e diverso
+## Perché ScanReady è diverso
 
 Molti workflow di ottimizzazione usano una semplice riduzione uniforme.
 
-ScanReady invece usa **Adaptive Reduce** per distribuire la riduzione in modo piu intelligente:
+ScanReady invece usa **Adaptive Reduce** per distribuire la riduzione in modo più intelligente:
 
-- Le aree piatte possono essere ridotte di piu.
+- Le aree piatte possono essere ridotte di più.
 - I dettagli importanti vengono protetti meglio.
-- Le silhouette e le transizioni di forma rimangono piu leggibili.
-- Le superfici rumorose della scansione possono essere semplificate senza perdere subito l'identita dell'oggetto.
+- Le silhouette e le transizioni di forma rimangono più leggibili.
+- Le superfici rumorose della scansione possono essere semplificate senza perdere subito l'identità dell'oggetto.
 
 <p align="center">
   <img src="../img/why-scanready-adaptive-optimization.png" alt="Confronto tra Blender Decimate e ScanReady Adaptive Reduce" style="max-width:1000px;width:100%;">
@@ -37,12 +37,12 @@ ScanReady invece usa **Adaptive Reduce** per distribuire la riduzione in modo pi
 
 <p align="center">
   <b>Blender Decimate vs ScanReady Adaptive Reduce</b><br>
-  <span style="font-size:0.9em; opacity:0.75;">Stessa scansione, densita finale simile. ScanReady riduce in modo piu aggressivo le zone piatte e protegge meglio dettagli, bordi e cambi di forma.</span>
+  <span style="font-size:0.9em; opacity:0.75;">Stessa scansione, densità finale simile. ScanReady riduce in modo più aggressivo le zone piatte e protegge meglio dettagli, bordi e cambi di forma.</span>
 </p>
 
 ---
 
-## Perche ScanReady?
+## Perché ScanReady?
 
 Le scansioni 3D grezze possono essere molto pesanti:
 
@@ -53,7 +53,7 @@ Le scansioni 3D grezze possono essere molto pesanti:
 - bake complessi da configurare manualmente;
 - performance scarse in VR, videogame o scene interattive.
 
-ScanReady aiuta a passare da una scansione pesante a un asset piu leggero, con UV e texture bake pronte per essere usate in produzione.
+ScanReady aiuta a passare da una scansione pesante a un asset più leggero, con UV e texture bake pronte per essere usate in produzione.
 
 ---
 
@@ -89,9 +89,9 @@ Il workflow **ONE CLICK BAKE** esegue automaticamente i passaggi principali:
 4. Stima o preparazione del cage.
 5. Bake delle texture.
 6. Collegamento dei materiali finali.
-7. Salvataggio delle immagini se **Save Images** e attivo.
+7. Salvataggio delle immagini se **Save Images** è attivo.
 
-E il percorso piu veloce per ottenere una prima versione dell'asset.
+È il percorso più veloce per ottenere una prima versione dell'asset.
 
 ---
 
@@ -111,7 +111,7 @@ ScanReady usa **Smart UV Project** per generare UV automatiche sulla mesh ottimi
 
 ### Generazione automatica del cage
 
-**Auto Cage Extrusion** stima una distanza iniziale del cage confrontando la versione high-poly con la versione lowpoly. In questo modo aiuta il cage a ricoprire i dettagli importanti da catturare durante il bake, rendendo piu rapido il setup.
+**Auto Cage Extrusion** stima una distanza iniziale del cage confrontando la versione high-poly con la versione lowpoly. In questo modo aiuta il cage a ricoprire i dettagli importanti da catturare durante il bake, rendendo più rapido il setup.
 
 ### Texture Baking
 
@@ -119,11 +119,11 @@ ScanReady supporta bake di **Base Color**, **Normal**, **Roughness** e **Occlusi
 
 ### Supporto multi-materiale
 
-**Bake Materials** permette di dividere il bake in piu materiali quando una scansione grande richiede piu spazio texture.
+**Bake Materials** permette di dividere il bake in più materiali quando una scansione grande richiede più spazio texture.
 
 ### Ottimizzazione realtime
 
-Il workflow e pensato per asset piu leggeri destinati a VR, videogame, AR e visualizzazione realtime.
+Il workflow è pensato per asset più leggeri destinati a VR, videogame, AR e visualizzazione realtime.
 
 ### Bake sicuro per la memoria
 
@@ -137,12 +137,12 @@ I preset permettono di salvare e riutilizzare setup di workflow per scansioni si
 
 ## Panoramica del workflow
 
-ScanReady puo essere usato in due modi:
+ScanReady può essere usato in due modi:
 
 - **One Click Bake**: workflow automatico completo.
 - **Workflow manuale**: controllo separato di riduzione, UV, cage e bake.
 
-Il workflow manuale e utile quando vuoi controllare meglio il risultato:
+Il workflow manuale è utile quando vuoi controllare meglio il risultato:
 
 ### 1. Preview / Reduce
 
@@ -173,21 +173,21 @@ ScanReady è pensato per preparare asset destinati a:
 
 ## Cosa crea ScanReady
 
-Alla fine del workflow ScanReady puo creare:
+Alla fine del workflow ScanReady può creare:
 
 - una mesh finale ottimizzata;
 - UV automatiche;
 - texture bake salvate su disco;
 - materiali finali collegati alle texture;
-- un asset piu leggero rispetto alla scansione originale.
+- un asset più leggero rispetto alla scansione originale.
 
 ---
 
-## Compatibilita
+## Compatibilità
 
 ScanReady è distribuito come **Blender Extension**.
 
-E pensato per Blender moderno e per il nuovo sistema di estensioni.
+È pensato per Blender moderno e per il nuovo sistema di estensioni.
 
 ---
 

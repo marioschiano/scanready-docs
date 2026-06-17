@@ -3,7 +3,7 @@
 Crea in pochi secondi una preview ottimizzata e leggera dalla scansione high-poly.
 
 <div style="width:100%; text-align:left;">
-  <img src="../../img/step1-reduce.gif" alt="Controllo Optimize Reduce di ScanReady che aggiorna la densita della preview lowpoly" style="max-width:820px;width:100%;">
+  <img src="../../img/step1-reduce.gif" alt="Controllo Optimize Reduce di ScanReady che aggiorna la densità della preview lowpoly" style="max-width:820px;width:100%;">
 </div>
 
 <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
@@ -16,24 +16,24 @@ Optimize / Reduce controlla quanta geometria viene mantenuta nella preview lowpo
 
 L'ottimizzazione non viene applicata in modo uniforme su tutto il modello.
 
-ScanReady preserva il dettaglio importante della superficie mentre semplifica in modo piu aggressivo le regioni piatte o meno dettagliate.
+ScanReady preserva il dettaglio importante della superficie mentre semplifica in modo più aggressivo le regioni piatte o meno dettagliate.
 
-Questo aiuta a creare asset lowpoly piu puliti ed efficienti per workflow realtime.
+Questo aiuta a creare asset lowpoly più puliti ed efficienti per workflow realtime.
 
 ### Adaptive Reduce
 
-Adaptive Reduce e attivo di default e aiuta ScanReady a distribuire la riduzione dei poligoni in modo piu intelligente sulla scansione.
+Adaptive Reduce è attivo di default e aiuta ScanReady a distribuire la riduzione dei poligoni in modo più intelligente sulla scansione.
 
-Invece di trattare ogni superficie allo stesso modo, permette alle aree piatte di essere ridotte di piu e protegge le regioni dove il dettaglio della superficie e piu importante.
+Invece di trattare ogni superficie allo stesso modo, permette alle aree piatte di essere ridotte di più e protegge le regioni dove il dettaglio della superficie è più importante.
 
-Questa e la differenza principale tra un semplice passaggio Blender Decimate e il workflow ScanReady. Una decimazione standard puo ridurre bordi utili e regioni piatte rumorose con la stessa priorita. ScanReady crea prima pesi adattivi, poi li usa per ridurre le superfici ampie in modo piu aggressivo mantenendo piu protetti cambi di normale forti, silhouette, bordi e transizioni importanti della forma.
+Questa è la differenza principale tra un semplice passaggio Blender Decimate e il workflow ScanReady. Una decimazione standard può ridurre bordi utili e regioni piatte rumorose con la stessa priorità. ScanReady crea prima pesi adattivi, poi li usa per ridurre le superfici ampie in modo più aggressivo mantenendo più protetti cambi di normale forti, silhouette, bordi e transizioni importanti della forma.
 
 Usa il preset Adaptive Reduce come punto di partenza rapido:
 
 - **Balanced** per la maggior parte delle scansioni e degli asset realtime generici.
 - **Preserve Details** quando la scansione contiene pieghe importanti, forme scultoree, incisioni o dettagli ravvicinati.
-- **Flat Surfaces** quando l'oggetto contiene ampie aree semplici che possono essere semplificate in modo piu aggressivo.
-- **Hard Surface** per veicoli e scansioni hard-surface dove un passaggio approssimato piu veloce deve proteggere solo rotture di normale piu forti.
+- **Flat Surfaces** quando l'oggetto contiene ampie aree semplici che possono essere semplificate in modo più aggressivo.
+- **Hard Surface** per veicoli e scansioni hard-surface dove un passaggio approssimato più veloce deve proteggere solo rotture di normale più forti.
 
 <!-- Sostituire il placeholder con ../../img/step1-adaptive-reduce.gif -->
 <p align="center">
@@ -47,7 +47,7 @@ Usa il preset Adaptive Reduce come punto di partenza rapido:
 
 <p align="center">
   <b>Blender Decimate vs ScanReady Adaptive Reduce</b><br>
-  <span style="font-size:0.9em; opacity:0.75;">Qui andra un render comparativo reale in Blender: stessa scansione, densita finale simile, Decimate standard da un lato e ScanReady Adaptive Reduce dall'altro.</span>
+  <span style="font-size:0.9em; opacity:0.75;">Qui andrà un render comparativo reale in Blender: stessa scansione, densità finale simile, Decimate standard da un lato e ScanReady Adaptive Reduce dall'altro.</span>
 </p>
 
 ### Show Adaptive Weights
@@ -56,12 +56,12 @@ Show Adaptive Weights mostra direttamente sul modello i pesi di riduzione.
 
 Usalo prima di creare la preview finale quando vuoi capire come ScanReady sta leggendo la scansione:
 
-- le aree **rosse** sono regioni piatte che possono essere ridotte di piu;
+- le aree **rosse** sono regioni piatte che possono essere ridotte di più;
 - le aree **blu / verdi** sono regioni protette per il dettaglio.
 
-La visualizzazione e solo un aiuto di preview. Serve a scegliere il preset e capire il comportamento della riduzione; non e una texture esportata o baked.
+La visualizzazione è solo un aiuto di preview. Serve a scegliere il preset e capire il comportamento della riduzione; non è una texture esportata o baked.
 
-I pesi Adaptive Reduce vengono calcolati quando clicchi **Create Lowpoly Preview**. Dopo che la preview esiste, cambiare **Optimize / Reduce** o **Final Faces** aggiorna la quantita di Decimate usando i pesi esistenti. Se cambi il preset Adaptive Reduce o i valori dettagliati di Adaptive Reduce, clicca di nuovo **Create Lowpoly Preview** per ricostruire i pesi con le nuove impostazioni.
+I pesi Adaptive Reduce vengono calcolati quando clicchi **Create Lowpoly Preview**. Dopo che la preview esiste, cambiare **Optimize / Reduce** o **Final Faces** aggiorna la quantità di Decimate usando i pesi esistenti. Se cambi il preset Adaptive Reduce o i valori dettagliati di Adaptive Reduce, clicca di nuovo **Create Lowpoly Preview** per ricostruire i pesi con le nuove impostazioni.
 
 <!-- Sostituire il placeholder con ../../img/step1-adaptive-weights.gif -->
 <p align="center">
@@ -79,7 +79,7 @@ Le scansioni pesanti possono diventare rapidamente difficili da gestire dentro B
 - Scansione originale -> 1M+ poligoni
 - Preview ottimizzata -> 20K poligoni
 
-Questo aiuta a migliorare la risposta del viewport e rende l'asset piu facile da elaborare nei workflow realtime.
+Questo aiuta a migliorare la risposta del viewport e rende l'asset più facile da elaborare nei workflow realtime.
 
 ---
 
@@ -91,7 +91,7 @@ Una mesh ottimizzata duplicata viene generata automaticamente per il workflow, m
 
 ---
 
-## Perche la riduzione e importante
+## Perché la riduzione è importante
 
 Le scansioni high-poly sono spesso troppo pesanti per l'uso diretto.
 
@@ -104,7 +104,7 @@ Possono causare:
 - asset VR troppo densi per essere visualizzati fluidamente;
 - oggetti game troppo costosi per la produzione.
 
-Preview / Reduce crea una versione piu leggera della scansione prima di continuare con UV e bake.
+Preview / Reduce crea una versione più leggera della scansione prima di continuare con UV e bake.
 
 Aiuta anche a rimuovere piccoli artefatti mesh generati da fotogrammetria o acquisizione 3D, come poligoni staccati, vertici isolati e frammenti sospesi.
 
@@ -112,9 +112,9 @@ Aiuta anche a rimuovere piccoli artefatti mesh generati da fotogrammetria o acqu
 
 Step 1 crea una preview lowpoly ottimizzata dalla scansione high-poly selezionata.
 
-Questo e il primo passaggio importante quando prepari un oggetto scansionato per **VR, AR, videogame, visualizzazione realtime o scene interattive**.
+Questo è il primo passaggio importante quando prepari un oggetto scansionato per **VR, AR, videogame, visualizzazione realtime o scene interattive**.
 
-ScanReady prima pulisce i frammenti indesiderati comuni della scansione, poi riduce il modello preservando la forma generale e l'identita visiva della scansione originale.
+ScanReady prima pulisce i frammenti indesiderati comuni della scansione, poi riduce il modello preservando la forma generale e l'identità visiva della scansione originale.
 
 ---
 
@@ -129,11 +129,11 @@ Il valore predefinito e <strong>0.10</strong>.
 </p>
 
 <p>
-Mantiene circa <strong>10% dei poligoni originali</strong>, creando una preview lowpoly piu leggera con circa <strong>90% di poligoni in meno</strong>.
+Mantiene circa <strong>10% dei poligoni originali</strong>, creando una preview lowpoly più leggera con circa <strong>90% di poligoni in meno</strong>.
 </p>
 
 <p>
-Dopo aver cliccato <strong>Create Lowpoly Preview</strong>, puoi ancora regolare questo valore per provare risultati piu leggeri o piu dettagliati.
+Dopo aver cliccato <strong>Create Lowpoly Preview</strong>, puoi ancora regolare questo valore per provare risultati più leggeri o più dettagliati.
 </p>
 
 <p>
@@ -141,7 +141,7 @@ Scansioni molto dense con milioni di poligoni possono comunque richiedere tempo 
 </p>
 
 <p>
-Gli aggiornamenti realtime dipendono dalla complessita della scansione e dalle performance di Blender.
+Gli aggiornamenti realtime dipendono dalla complessità della scansione e dalle performance di Blender.
 </p>
 
 </div>
@@ -167,11 +167,11 @@ Imposta il numero target di facce per la mesh lowpoly ottimizzata.
 </p>
 
 <p>
-Usa valori piu bassi per asset VR o game leggeri.
+Usa valori più bassi per asset VR o game leggeri.
 </p>
 
 <p>
-Usa valori piu alti quando l'oggetto deve conservare piu dettaglio nella silhouette.
+Usa valori più alti quando l'oggetto deve conservare più dettaglio nella silhouette.
 </p>
 
 <h3>Optimize / Reduce</h3>
@@ -185,11 +185,11 @@ Il valore predefinito e <strong>0.10</strong>, che mantiene circa <strong>10% de
 </p>
 
 <p>
-Valori piu bassi generano asset piu leggeri.
+Valori più bassi generano asset più leggeri.
 </p>
 
 <p>
-Valori piu alti preservano piu dettaglio della forma.
+Valori più alti preservano più dettaglio della forma.
 </p>
 
 <h3>Reduction</h3>
@@ -212,7 +212,7 @@ Mostra la percentuale di riduzione corrente in base alle impostazioni di ottimiz
 
 Nel pannello attuale di ScanReady, **Show Wireframe** e **Show Checker** si trovano prima dello **STEP 1**.
 
-Sono strumenti di preview usati per controllare topologia e leggibilita UV senza cambiare il workflow di bake.
+Sono strumenti di preview usati per controllare topologia e leggibilità UV senza cambiare il workflow di bake.
 
 ---
 
@@ -220,7 +220,7 @@ Sono strumenti di preview usati per controllare topologia e leggibilita UV senza
 
 Mostra la topologia dell'oggetto preview.
 
-Usalo per controllare se la mesh e ancora troppo densa o se e stata ridotta troppo aggressivamente.
+Usalo per controllare se la mesh è ancora troppo densa o se è stata ridotta troppo aggressivamente.
 
 <div style="width:100%; text-align:left;">
   <img src="../../img/step1-wireframe.gif" alt="Preview Show Wireframe di ScanReady su una scansione ottimizzata" style="max-width:820px;width:100%;">
@@ -232,7 +232,7 @@ Usalo per controllare se la mesh e ancora troppo densa o se e stata ridotta trop
 
 Mostra una texture checker sulla mesh preview.
 
-Aiuta a controllare densita UV e distorsione texture.
+Aiuta a controllare densità UV e distorsione texture.
 
 <div style="width:100%; text-align:left;">
   <img src="../../img/step1-checker.gif" alt="Preview Show Checker di ScanReady su una scansione ottimizzata" style="max-width:820px;width:100%;">
@@ -259,11 +259,11 @@ Cambia la dimensione dei quadrati checker.
 </p>
 
 <p>
-Quadrati piu piccoli rendono piu facile vedere stretching e distorsione UV.
+Quadrati più piccoli rendono più facile vedere stretching e distorsione UV.
 </p>
 
 <p>
-Quadrati piu grandi sono utili per controlli generali rapidi.
+Quadrati più grandi sono utili per controlli generali rapidi.
 </p>
 
 </div>
@@ -279,7 +279,7 @@ Quadrati piu grandi sono utili per controlli generali rapidi.
 </div>
 
 <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
-Checker Mix regola quanto e visibile l'overlay checker sopra la superficie del modello.
+Checker Mix regola quanto è visibile l'overlay checker sopra la superficie del modello.
 </p>
 
 <div style="width:100%; text-align:left; margin-bottom:20px;">
@@ -287,7 +287,7 @@ Checker Mix regola quanto e visibile l'overlay checker sopra la superficie del m
 </div>
 
 <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
-Checker Scale cambia la dimensione del pattern checker per rendere piu facile controllare lo stretching UV.
+Checker Scale cambia la dimensione del pattern checker per rendere più facile controllare lo stretching UV.
 </p>
 
 ---
@@ -296,22 +296,22 @@ Checker Scale cambia la dimensione del pattern checker per rendere piu facile co
 
 Clicca **Create Lowpoly Preview**.
 
-Se la preview e troppo pesante o troppo semplificata, regola **Optimize / Reduce** o **Final Faces** e crea di nuovo la preview.
+Se la preview è troppo pesante o troppo semplificata, regola **Optimize / Reduce** o **Final Faces** e crea di nuovo la preview.
 
-Puoi tornare allo Step 1 in qualsiasi momento. Se sei gia nello Step 2 o nello Step 3 e decidi che il modello deve essere piu leggero o piu dettagliato, cambia qui le impostazioni di riduzione, clicca di nuovo **Create Lowpoly Preview**, poi continua generando UV e bake di nuovo.
+Puoi tornare allo Step 1 in qualsiasi momento. Se sei già nello Step 2 o nello Step 3 e decidi che il modello deve essere più leggero o più dettagliato, cambia qui le impostazioni di riduzione, clicca di nuovo **Create Lowpoly Preview**, poi continua generando UV e bake di nuovo.
 
 ScanReady pulisce la scansione high-poly selezionata, rimuove rumore mesh comune come poligoni staccati o vertici isolati, poi crea un oggetto preview ottimizzato.
 
-Prima che venga aggiunto il modificatore Decimate, ScanReady puo eseguire anche una pulizia **Pre-Decimate Merge** sulla mesh preview duplicata.
+Prima che venga aggiunto il modificatore Decimate, ScanReady può eseguire anche una pulizia **Pre-Decimate Merge** sulla mesh preview duplicata.
 Questo aiuta a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione.
 
-In **Advanced > Mesh Settings**, **Pre-Decimate Merge** e il singolo controllo esplicito di weld. Abbassalo se vengono colpiti dettagli sottili.
+In **Advanced > Mesh Settings**, **Pre-Decimate Merge** è il singolo controllo esplicito di weld. Abbassalo se vengono colpiti dettagli sottili.
 
 <div style="width:100%; text-align:left;">
   <img src="../../img/step1-cleaner.gif" alt="Pulizia mesh di ScanReady prima della preview lowpoly" style="max-width:820px;width:100%;">
 </div>
 
-Quando la preview e corretta, continua con:
+Quando la preview è corretta, continua con:
 
 [Step 2 - UV / Cage](step2.md)
 
@@ -323,27 +323,27 @@ Dopo aver creato la preview, controlla:
 
 - silhouette generale;
 - bordi importanti e dettagli della forma;
-- densita dei poligoni;
-- leggibilita del wireframe;
-- se la scansione e abbastanza leggera per la piattaforma target;
-- se e stata persa troppa informazione visiva.
+- densità dei poligoni;
+- leggibilità del wireframe;
+- se la scansione è abbastanza leggera per la piattaforma target;
+- se è stata persa troppa informazione visiva.
 
-Se la preview e troppo pesante, riducila di piu.
+Se la preview è troppo pesante, riducila di più.
 
-Se la preview perde dettagli importanti della forma, aumenta la densita target e creala di nuovo.
+Se la preview perde dettagli importanti della forma, aumenta la densità target e creala di nuovo.
 
 ---
 
 ## Obiettivi di ottimizzazione realtime
 
-Per workflow VR e videogame, l'obiettivo non e solo la qualita visiva.
+Per workflow VR e videogame, l'obiettivo non è solo la qualità visiva.
 
 L'asset deve restare abbastanza leggero per performance realtime fluide.
 
 Una buona preview dovrebbe:
 
 - preservare la forma riconoscibile della scansione originale;
-- rimuovere densita inutile della scansione;
+- rimuovere densità inutile della scansione;
 - migliorare la risposta del viewport di Blender;
 - essere adatta alla generazione UV;
 - essere pronta per il texture bake nello step successivo.

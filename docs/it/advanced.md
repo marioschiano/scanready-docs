@@ -1,10 +1,10 @@
 # Impostazioni avanzate
 
-Le impostazioni avanzate danno controllo preciso su pulizia mesh, generazione UV, qualita bake, output immagini, preset, utility e sicurezza memoria.
+Le impostazioni avanzate danno controllo preciso su pulizia mesh, generazione UV, qualità bake, output immagini, preset, utility e sicurezza memoria.
 
 Non serve cambiare ogni impostazione per usare ScanReady.
 
-Per la maggior parte delle scansioni, parti dai valori predefiniti. Regola le impostazioni avanzate solo quando hai bisogno di piu controllo su performance, qualita o accuratezza del bake.
+Per la maggior parte delle scansioni, parti dai valori predefiniti. Regola le impostazioni avanzate solo quando hai bisogno di più controllo su performance, qualità o accuratezza del bake.
 
 <!-- Sostituire il placeholder con ../../img/advanced-overview.png -->
 <p align="center">
@@ -26,7 +26,7 @@ Esegue una pulizia Merge by Distance sulla mesh preview duplicata prima che veng
 </p>
 
 <p>
-E il singolo controllo esplicito di weld in ScanReady. Puo aiutare a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione. Se vengono colpiti dettagli sottili, abbassa il valore e crea di nuovo la preview lowpoly.
+È il singolo controllo esplicito di weld in ScanReady. Può aiutare a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione. Se vengono colpiti dettagli sottili, abbassa il valore e crea di nuovo la preview lowpoly.
 </p>
 
 <hr>
@@ -50,7 +50,7 @@ Mostra il modello in una visualizzazione piatta orientata alla texture, senza il
 </p>
 
 <p>
-E utile per ispezionare piu chiaramente risultati texture bake o preview.
+È utile per ispezionare più chiaramente risultati texture bake o preview.
 </p>
 
 <hr>
@@ -80,9 +80,9 @@ Usalo quando la scansione appare rovesciata o ha shading incoerente.
 
 Adaptive Reduce controlla come ScanReady distribuisce la riduzione sulla scansione selezionata.
 
-E attivo di default ed e progettato per proteggere il dettaglio visivamente importante, permettendo alle superfici piatte di essere semplificate di piu.
+È attivo di default ed è progettato per proteggere il dettaglio visivamente importante, permettendo alle superfici piatte di essere semplificate di più.
 
-I pesi Adaptive Reduce vengono calcolati quando clicchi **Create Lowpoly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantita di riduzione, ma non ricalcola i pesi adattivi. Per applicare un preset Adaptive Reduce diverso o valori adattivi dettagliati, crea di nuovo la preview lowpoly.
+I pesi Adaptive Reduce vengono calcolati quando clicchi **Create Lowpoly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma non ricalcola i pesi adattivi. Per applicare un preset Adaptive Reduce diverso o valori adattivi dettagliati, crea di nuovo la preview lowpoly.
 
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
@@ -91,14 +91,14 @@ I pesi Adaptive Reduce vengono calcolati quando clicchi **Create Lowpoly Preview
 <h3>Adaptive Reduce Preset</h3>
 
 <p>
-Scegli il preset piu adatto alla scansione e all'asset target.
+Scegli il preset più adatto alla scansione e all'asset target.
 </p>
 
 <ul>
-<li><strong>Balanced</strong> e il preset predefinito per la maggior parte delle scansioni.</li>
-<li><strong>Preserve Details</strong> protegge piu fortemente regioni complesse o importanti della superficie.</li>
-<li><strong>Flat Surfaces</strong> riduce in modo piu aggressivo le aree ampie e semplici.</li>
-<li><strong>Hard Surface</strong> e un preset approssimato piu veloce per veicoli e scansioni hard-surface; protegge solo rotture di normale piu forti.</li>
+<li><strong>Balanced</strong> è il preset predefinito per la maggior parte delle scansioni.</li>
+<li><strong>Preserve Details</strong> protegge più fortemente regioni complesse o importanti della superficie.</li>
+<li><strong>Flat Surfaces</strong> riduce in modo più aggressivo le aree ampie e semplici.</li>
+<li><strong>Hard Surface</strong> è un preset approssimato più veloce per veicoli e scansioni hard-surface; protegge solo rotture di normale più forti.</li>
 </ul>
 
 <hr>
@@ -110,7 +110,7 @@ Mostra una preview a colori di come ScanReady distribuira la riduzione sulla sca
 </p>
 
 <p>
-Le aree rosse rappresentano superfici piu piatte che possono essere ridotte di piu. Le aree blu e verdi rappresentano regioni protette per il dettaglio.
+Le aree rosse rappresentano superfici più piatte che possono essere ridotte di più. Le aree blu e verdi rappresentano regioni protette per il dettaglio.
 </p>
 
 <p>
@@ -132,7 +132,7 @@ Usa questa preview quando una scansione ha superfici miste, come pannelli archit
 
 Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 
-Le impostazioni Smart UV vengono applicate quando ScanReady genera le UV. Se cambi Smart UV Preset, Smart UV Angle, UV Padding o Auto Pack UV dopo che le UV esistono gia, clicca di nuovo **Generate UVs**, oppure esegui **One Click Bake** dall'inizio cosi il suo step di generazione UV usa le nuove impostazioni. **Bake Textures** usa il layout UV gia esistente.
+Le impostazioni Smart UV vengono applicate quando ScanReady genera le UV. Se cambi Smart UV Preset, Smart UV Angle, UV Padding o Auto Pack UV dopo che le UV esistono già, clicca di nuovo **Generate UVs**, oppure esegui **One Click Bake** dall'inizio così il suo step di generazione UV usa le nuove impostazioni. **Bake Textures** usa il layout UV già esistente.
 
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
@@ -145,15 +145,15 @@ Controlla quanto aggressivamente Smart UV Project divide la mesh in isole UV.
 </p>
 
 <p>
-Valori piu bassi creano piu tagli e piu isole UV.
+Valori più bassi creano più tagli e più isole UV.
 </p>
 
 <p>
-Valori piu alti creano isole piu grandi.
+Valori più alti creano isole più grandi.
 </p>
 
 <p>
-Puoi regolare manualmente questo valore per un controllo piu preciso. I preset Adaptive Reduce sono separati dalla generazione UV: Adaptive Reduce controlla la semplificazione della mesh, mentre Smart UV Project controlla l'unwrap usato per il bake.
+Puoi regolare manualmente questo valore per un controllo più preciso. I preset Adaptive Reduce sono separati dalla generazione UV: Adaptive Reduce controlla la semplificazione della mesh, mentre Smart UV Project controlla l'unwrap usato per il bake.
 </p>
 
 <p>
@@ -169,7 +169,7 @@ Imposta lo spazio tra le isole UV.
 </p>
 
 <p>
-Aumenta il padding per ridurre texture bleeding, soprattutto a risoluzioni texture piu basse.
+Aumenta il padding per ridurre texture bleeding, soprattutto a risoluzioni texture più basse.
 </p>
 
 </div>
@@ -185,7 +185,7 @@ Aumenta il padding per ridurre texture bleeding, soprattutto a risoluzioni textu
 
 # Bake Settings
 
-Queste impostazioni controllano qualita bake, padding texture, qualita formato immagine, analisi Texture Detail, opzioni Occlusion e sicurezza memoria.
+Queste impostazioni controllano qualità bake, padding texture, qualità formato immagine, analisi Texture Detail, opzioni Occlusion e sicurezza memoria.
 
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
@@ -198,7 +198,7 @@ Imposta il numero di sample Cycles usati per il bake.
 </p>
 
 <p>
-Valori piu alti possono ridurre il rumore, soprattutto per Ambient Occlusion, ma aumentano anche il tempo di bake.
+Valori più alti possono ridurre il rumore, soprattutto per Ambient Occlusion, ma aumentano anche il tempo di bake.
 </p>
 
 <hr>
@@ -230,7 +230,7 @@ Usa <strong>Analyze Texture Detail</strong> dopo aver generato le UV, prima del 
 <h3>Normal Strength</h3>
 
 <p>
-Appare quando <strong>Bake Normal</strong> e abilitato.
+Appare quando <strong>Bake Normal</strong> è abilitato.
 </p>
 
 <p>
@@ -242,11 +242,11 @@ Controlla la forza del nodo Normal Map nel materiale finale. Cambia solo l'aspet
 <h3>JPG Quality</h3>
 
 <p>
-Controlla la qualita di compressione JPG quando il formato immagine selezionato e JPG.
+Controlla la qualità di compressione JPG quando il formato immagine selezionato è JPG.
 </p>
 
 <p>
-Valori piu alti preservano piu dettaglio immagine ma creano file piu grandi.
+Valori più alti preservano più dettaglio immagine ma creano file più grandi.
 </p>
 
 <hr>
@@ -254,11 +254,11 @@ Valori piu alti preservano piu dettaglio immagine ma creano file piu grandi.
 <h3>TIFF 16-bit</h3>
 
 <p>
-Abilita output TIFF a precisione piu alta quando il formato selezionato e TIFF.
+Abilita output TIFF a precisione più alta quando il formato selezionato è TIFF.
 </p>
 
 <p>
-Puo essere utile per asset dettagliati, workflow archivio o output texture tecnico.
+Può essere utile per asset dettagliati, workflow archivio o output texture tecnico.
 </p>
 
 </div>
@@ -274,7 +274,7 @@ Puo essere utile per asset dettagliati, workflow archivio o output texture tecni
 
 # Occlusion Settings
 
-Queste opzioni appaiono quando **Bake Occlusion** e abilitato.
+Queste opzioni appaiono quando **Bake Occlusion** è abilitato.
 
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
@@ -299,7 +299,7 @@ Calcola automaticamente la distanza AO in base alla dimensione del modello.
 <h3>AO Distance</h3>
 
 <p>
-Distanza manuale dei raggi AO quando la distanza automatica e disattivata.
+Distanza manuale dei raggi AO quando la distanza automatica è disattivata.
 </p>
 
 <hr>
@@ -307,11 +307,11 @@ Distanza manuale dei raggi AO quando la distanza automatica e disattivata.
 <h3>AO Samples</h3>
 
 <p>
-Controlla la qualita del bake Ambient Occlusion.
+Controlla la qualità del bake Ambient Occlusion.
 </p>
 
 <p>
-Valori piu alti producono AO piu pulita ma aumentano il tempo di bake.
+Valori più alti producono AO più pulita ma aumentano il tempo di bake.
 </p>
 
 <hr>
@@ -323,7 +323,7 @@ Controlla quanto la texture Ambient Occlusion bake scurisce il materiale Base Co
 </p>
 
 <p>
-Il valore predefinito e <strong>1.0</strong>, che usa tutta la texture AO bake nel materiale finale. Valori piu bassi rendono l'effetto AO piu sottile.
+Il valore predefinito è <strong>1.0</strong>, che usa tutta la texture AO bake nel materiale finale. Valori più bassi rendono l'effetto AO più sottile.
 </p>
 
 </div>
@@ -348,7 +348,7 @@ Queste opzioni aiutano a ridurre problemi di memoria durante operazioni di bake 
 <h3>Safe Memory Bake</h3>
 
 <p>
-Usa un workflow bake piu sicuro pensato per ridurre la pressione sulla memoria in scansioni grandi e scene Blender pesanti.
+Usa un workflow bake più sicuro pensato per ridurre la pressione sulla memoria in scansioni grandi e scene Blender pesanti.
 </p>
 
 <p>
@@ -364,11 +364,11 @@ Forza il bake sulla CPU per evitare limiti di memoria GPU.
 </p>
 
 <p>
-Di solito e piu lento, ma puo essere piu sicuro su sistemi con poca VRAM.
+Di solito è più lento, ma può essere più sicuro su sistemi con poca VRAM.
 </p>
 
 <p>
-ScanReady puo abilitarlo automaticamente quando viene usato il bake multi-materiale.
+ScanReady può abilitarlo automaticamente quando viene usato il bake multi-materiale.
 </p>
 
 </div>
@@ -384,11 +384,11 @@ ScanReady puo abilitarlo automaticamente quando viene usato il bake multi-materi
 
 # Preset
 
-ScanReady puo salvare, ricaricare ed eliminare preset con nome.
+ScanReady può salvare, ricaricare ed eliminare preset con nome.
 
-I preset salvano le impostazioni correnti del workflow cosi puoi riutilizzarle in seguito.
+I preset salvano le impostazioni correnti del workflow così puoi riutilizzarle in seguito.
 
-Usa i preset quando lavori su piu scansioni con requisiti simili, come:
+Usa i preset quando lavori su più scansioni con requisiti simili, come:
 
 - asset VR;
 - game prop;
@@ -419,7 +419,7 @@ Salva le impostazioni correnti di ScanReady come preset riutilizzabile.
 <h3>Preset Selector</h3>
 
 <p>
-Permette di scegliere un preset esistente.
+Permette di sceglierè un preset esistente.
 </p>
 
 <hr>
@@ -491,7 +491,7 @@ Queste opzioni aiutano a controllare nuove versioni, aprire release notes e conf
 <h3>Check for Updates</h3>
 
 <p>
-Controlla se e disponibile una versione piu recente di ScanReady leggendo il manifest aggiornamenti configurato.
+Controlla se è disponibile una versione più recente di ScanReady leggendo il manifest aggiornamenti configurato.
 </p>
 
 <hr>
@@ -531,18 +531,18 @@ Questi link vengono usati per configurare il manifest aggiornamenti e l'URL rele
 
 # Consiglio pratico
 
-Per VR, videogame e workflow realtime, bilancia sempre qualita e performance.
+Per VR, videogame e workflow realtime, bilancia sempre qualità e performance.
 
 Usa le impostazioni avanzate per trovare il compromesso giusto tra:
 
 - pulizia mesh;
-- qualita UV;
-- qualita bake;
+- qualità UV;
+- qualità bake;
 - risoluzione texture;
 - dimensione file;
 - uso memoria;
 - performance realtime.
 
-L'obiettivo non e preservare ogni poligono della scansione originale.
+L'obiettivo non è preservare ogni poligono della scansione originale.
 
-L'obiettivo e preservare l'identita visiva della scansione in un asset piu leggero e piu facile da usare.
+L'obiettivo è preservare l'identità visiva della scansione in un asset più leggero e più facile da usare.

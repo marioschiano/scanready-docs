@@ -29,7 +29,7 @@ Prima di contattare il supporto, controlla:
 - [Step 2 - UV / Cage](step2.md)
 - [Step 3 - Bake / Output](step3.md)
 
-Molti problemi comuni di bake e UV sono gia coperti nella documentazione.
+Molti problemi comuni di bake e UV sono già coperti nella documentazione.
 
 ---
 
@@ -49,9 +49,9 @@ Includi:
 - versione ScanReady;
 - screenshot del problema;
 - breve descrizione del problema;
-- informazioni GPU / CPU se il problema e legato alle performance.
+- informazioni GPU / CPU se il problema è legato alle performance.
 
-Questo aiuta a individuare i problemi piu rapidamente.
+Questo aiuta a individuare i problemi più rapidamente.
 
 ---
 

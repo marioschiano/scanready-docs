@@ -12,21 +12,21 @@
 
 Step 2 genera un nuovo layout UV e prepara il cage per il bake.
 
-Dopo che la scansione e stata semplificata nello Step 1, la mesh ottimizzata ha bisogno di UV pulite per ricevere correttamente le texture sulla nuova superficie lowpoly.
+Dopo che la scansione è stata semplificata nello Step 1, la mesh ottimizzata ha bisogno di UV pulite per ricevere correttamente le texture sulla nuova superficie lowpoly.
 
 Questo step prepara l'asset al trasferimento delle texture, permettendo alla mesh ottimizzata di mantenere gran parte della ricchezza visiva della scansione high-poly originale, restando abbastanza leggera per **VR, videogame, AR, visualizzazione realtime e ambienti interattivi**.
 
 ---
 
-## Perche servono le UV
+## Perché servono le UV
 
-Una mesh semplificata e piu leggera e piu facile da gestire, ma ha comunque bisogno di coordinate texture coerenti.
+Una mesh semplificata è più leggera e più facile da gestire, ma ha comunque bisogno di coordinate texture coerenti.
 
 Le UV definiscono come la superficie del modello 3D viene aperta nello spazio texture 2D.
 
-Dopo la riduzione, le UV originali della scansione non dovrebbero piu essere considerate affidabili sulla mesh ottimizzata.
+Dopo la riduzione, le UV originali della scansione non dovrebbero più essere considerate affidabili sulla mesh ottimizzata.
 
-Poiche la geometria e stata unita e semplificata, il layout UV originale puo diventare:
+Poiché la geometria è stata unita e semplificata, il layout UV originale può diventare:
 
 - stirato;
 - distorto;
@@ -34,16 +34,16 @@ Poiche la geometria e stata unita e semplificata, il layout UV originale puo div
 - sporco;
 - non allineato alla nuova superficie lowpoly.
 
-Senza UV nuove, ScanReady non puo trasferire correttamente le informazioni texture dalla scansione originale alla mesh ottimizzata.
+Senza UV nuove, ScanReady non può trasferire correttamente le informazioni texture dalla scansione originale alla mesh ottimizzata.
 
-Creare UV nuove garantisce bake piu puliti e una proiezione texture piu affidabile.
+Creare UV nuove garantisce bake più puliti e una proiezione texture più affidabile.
 
 <p align="center">
   <img src="../../img/step2-uv-02.png" alt="Confronto checker texture con UV stirate e UV pulite" style="max-width:1000px;width:100%;">
 </p>
 
 <p align="center">
-<b>La preview checker aiuta a vedere stretching, densita texel irregolare e distorsioni UV prima del bake.</b>
+<b>La preview checker aiuta a vedere stretching, densità texel irregolare e distorsioni UV prima del bake.</b>
 </p>
 
 ---
@@ -54,28 +54,28 @@ Le nuove UV migliorano anche l'efficienza dello spazio texture.
 
 Molte scansioni fotogrammetriche contengono layout UV che sprecano grandi porzioni dello spazio texture 0-1.
 
-Dopo l'ottimizzazione, ScanReady puo generare un layout UV piu pulito, con packing migliore e uso piu efficiente delle texture.
+Dopo l'ottimizzazione, ScanReady può generare un layout UV più pulito, con packing migliore e uso più efficiente delle texture.
 
 <!-- Sostituire il placeholder con ../../img/step2-uv-packing.png -->
 <p align="center">
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot efficienza packing UV" style="max-width:1000px;width:100%;">
 </p>
 
-Questo permette all'asset ottimizzato di conservare piu dettaglio usando meno materiali e meno memoria texture.
+Questo permette all'asset ottimizzato di conservare più dettaglio usando meno materiali e meno memoria texture.
 
 UV buone aiutano a ottenere:
 
-- texture bake piu pulite;
+- texture bake più pulite;
 - migliore nitidezza delle texture;
 - meno seam visibili;
 - migliori performance realtime;
-- risultati piu affidabili nei game engine.
+- risultati più affidabili nei game engine.
 
 ---
 
 ## Le texture sostituiscono la geometria
 
-L'obiettivo del bake e conservare la ricchezza visiva della scansione originale riducendo la densita dei poligoni.
+L'obiettivo del bake è conservare la ricchezza visiva della scansione originale riducendo la densità dei poligoni.
 
 Invece di mantenere milioni di poligoni, ScanReady trasferisce le informazioni visive della superficie nelle texture.
 
@@ -83,29 +83,29 @@ Questo permette alla mesh ottimizzata di restare leggera pur conservando gran pa
 
 ---
 
-## Perche serve il cage
+## Perché serve il cage
 
 Il cage controlla come Blender proietta i dettagli dalla scansione high-poly alla mesh ottimizzata durante il bake.
 
-Se il cage e troppo piccolo:
+Se il cage è troppo piccolo:
 
 - alcuni dettagli possono non essere catturati;
 - possono comparire aree nere;
 - possono apparire errori di proiezione.
 
-Se il cage e troppo grande:
+Se il cage è troppo grande:
 
-- il bake puo catturare superfici vicine indesiderate;
+- il bake può catturare superfici vicine indesiderate;
 - possono apparire artefatti di proiezione.
 
-ScanReady include strumenti per rendere questo processo piu veloce e piu semplice.
+ScanReady include strumenti per rendere questo processo più veloce e più semplice.
 
 <p align="center">
   <img src="../../img/cage_01_red.png" alt="Avviso cage rosso con setup non valido per il bake" style="max-width:1000px;width:100%;">
 </p>
 
 <p align="center">
-<b>Se il cage appare rosso, il bake non proiettera correttamente. Abilita Show Cage, poi aumenta leggermente Cage Extrusion oppure usa Auto Cage Extrusion prima di continuare.</b>
+<b>Se il cage appare rosso, il bake non proietterà correttamente. Abilita Show Cage, poi aumenta leggermente Cage Extrusion oppure usa Auto Cage Extrusion prima di continuare.</b>
 </p>
 
 <p align="center">
@@ -130,11 +130,11 @@ ScanReady include strumenti per rendere questo processo piu veloce e piu semplic
 
 ScanReady usa **Smart UV Project** per generare UV sulla mesh ottimizzata.
 
-Smart UV Project e il metodo automatico di unwrap UV di Blender.
+Smart UV Project è il metodo automatico di unwrap UV di Blender.
 
-E utile per gli oggetti scansionati perche puo generare rapidamente isole UV senza richiedere seam manuali.
+È utile per gli oggetti scansionati perché può generare rapidamente isole UV senza richiedere seam manuali.
 
-ScanReady espone i controlli Smart UV cosi puoi regolare il comportamento dell'unwrap prima del bake.
+ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'unwrap prima del bake.
 
 <p align="center">
   <img src="../../img/step2-uv-01.jpg" alt="Layout UV generato da ScanReady dalla mesh ottimizzata" style="max-width:760px;width:100%;">
@@ -170,7 +170,7 @@ I controlli UV influenzano come la mesh ottimizzata viene aperta prima del bake.
 </p>
 
 <p>
-Cambiare Smart UV Preset, Smart UV Angle, UV Padding o Auto Pack UV non ricostruisce subito il layout UV corrente. Le nuove impostazioni UV vengono usate la prossima volta che clicchi <strong>Generate UVs</strong>, oppure quando <strong>One Click Bake</strong> esegue lo step di generazione UV. <strong>Bake Textures</strong> usa il layout UV gia esistente.
+Cambiare Smart UV Preset, Smart UV Angle, UV Padding o Auto Pack UV non ricostruisce subito il layout UV corrente. Le nuove impostazioni UV vengono usate la prossima volta che clicchi <strong>Generate UVs</strong>, oppure quando <strong>One Click Bake</strong> esegue lo step di generazione UV. <strong>Bake Textures</strong> usa il layout UV già esistente.
 </p>
 
 <h3>Smart UV Angle</h3>
@@ -180,11 +180,11 @@ Controlla quanto aggressivamente Smart UV Project divide la mesh in isole.
 </p>
 
 <p>
-Valori piu bassi creano piu tagli e piu isole UV.
+Valori più bassi creano più tagli e più isole UV.
 </p>
 
 <p>
-Valori piu alti creano isole UV piu grandi.
+Valori più alti creano isole UV più grandi.
 </p>
 
 <h3>UV Padding</h3>
@@ -194,7 +194,7 @@ Imposta lo spazio tra le isole UV.
 </p>
 
 <p>
-Aumenta il padding per ridurre il texture bleeding, soprattutto a risoluzioni texture piu basse.
+Aumenta il padding per ridurre il texture bleeding, soprattutto a risoluzioni texture più basse.
 </p>
 
 <h3>Auto Pack UV</h3>
@@ -208,7 +208,7 @@ Lascialo attivo a meno che tu voglia sistemare manualmente le isole UV.
 </p>
 
 <p>
-Un packing UV migliore aiuta a sfruttare al massimo la risoluzione texture e a conservare piu dettaglio.
+Un packing UV migliore aiuta a sfruttare al massimo la risoluzione texture e a conservare più dettaglio.
 </p>
 
 </div>
@@ -230,10 +230,10 @@ La checker texture aiuta a vedere:
 
 - stretching UV;
 - distorsione;
-- densita texel irregolare;
+- densità texel irregolare;
 - isole UV problematiche.
 
-Un pattern checker pulito di solito indica un layout UV piu sano per il bake.
+Un pattern checker pulito di solito indica un layout UV più sano per il bake.
 
 <!-- Sostituire il placeholder con ../../img/step2-checker-preview.png -->
 <p align="center">
@@ -265,7 +265,7 @@ Stima automaticamente la cage extrusion campionando la distanza tra la mesh otti
 </p>
 
 <p>
-E utile per generare un punto di partenza rapido senza indovinare manualmente la distanza del cage.
+È utile per generare un punto di partenza rapido senza indovinare manualmente la distanza del cage.
 </p>
 
 <h3>Cage Extrusion</h3>
@@ -279,7 +279,7 @@ Aumentala se il bake perde dettagli, crea aree nere o produce errori di proiezio
 </p>
 
 <p>
-Usa il valore piu piccolo che copre correttamente la superficie della scansione.
+Usa il valore più piccolo che copre correttamente la superficie della scansione.
 </p>
 
 <!-- Sostituire il placeholder con ../../img/step2-cage-extrusion.png -->
@@ -290,7 +290,7 @@ Usa il valore piu piccolo che copre correttamente la superficie della scansione.
 <h3>Cage Alpha</h3>
 
 <p>
-Controlla l'opacita della preview del cage.
+Controlla l'opacità della preview del cage.
 </p>
 
 <p>
@@ -312,9 +312,9 @@ Influenza solo la visualizzazione nel viewport e non cambia il risultato del bak
 
 Clicca **Generate UVs** dopo aver creato la preview lowpoly.
 
-Se cambi **Smart UV Preset**, **Smart UV Angle**, **UV Padding** o **Auto Pack UV** dopo aver gia generato le UV, clicca di nuovo **Generate UVs** per applicare le nuove impostazioni UV. **Bake Textures** usa il layout UV esistente al momento del bake.
+Se cambi **Smart UV Preset**, **Smart UV Angle**, **UV Padding** o **Auto Pack UV** dopo aver già generato le UV, clicca di nuovo **Generate UVs** per applicare le nuove impostazioni UV. **Bake Textures** usa il layout UV esistente al momento del bake.
 
-Se sei nello Step 2 e decidi che la mesh ottimizzata e ancora troppo pesante, torna a **Step 1 - Preview / Reduce**. Abbassa **Final Faces** o **Optimize / Reduce**, clicca di nuovo **Create Lowpoly Preview**, poi torna allo Step 2 e clicca di nuovo **Generate UVs** in modo che la mesh UV corrisponda alla nuova ottimizzazione.
+Se sei nello Step 2 e decidi che la mesh ottimizzata è ancora troppo pesante, torna a **Step 1 - Preview / Reduce**. Abbassa **Final Faces** o **Optimize / Reduce**, clicca di nuovo **Create Lowpoly Preview**, poi torna allo Step 2 e clicca di nuovo **Generate UVs** in modo che la mesh UV corrisponda alla nuova ottimizzazione.
 
 Poi controlla:
 
@@ -337,7 +337,7 @@ Prima del bake, verifica che:
 - il pattern checker non mostri stretching estremo;
 - le isole UV abbiano abbastanza padding;
 - il cage copra completamente le aree che devono ricevere dettaglio bake;
-- il cage non sia cosi grande da catturare superfici vicine indesiderate.
+- il cage non sia così grande da catturare superfici vicine indesiderate.
 
 ---
 
@@ -349,8 +349,8 @@ La mesh ottimizzata dovrebbe conservare le informazioni visive importanti tramit
 
 UV buone e un cage configurato correttamente aiutano a mantenere l'asset:
 
-- piu leggero;
-- piu facile da renderizzare;
-- piu facile da esportare;
-- piu affidabile nei motori realtime;
-- visivamente piu vicino alla scansione originale.
+- più leggero;
+- più facile da renderizzare;
+- più facile da esportare;
+- più affidabile nei motori realtime;
+- visivamente più vicino alla scansione originale.
