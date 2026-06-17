@@ -1,4 +1,4 @@
-# ScanReady
+﻿# ScanReady
 
 Workflow di ottimizzazione adattiva e bake per scansioni in Blender
 
@@ -111,7 +111,7 @@ ScanReady usa **Smart UV Project** per generare UV automatiche sulla mesh ottimi
 
 ### Generazione automatica del cage
 
-**Auto Cage Extrusion** stima una distanza di cage iniziale per rendere piu rapido il setup del bake.
+**Auto Cage Extrusion** stima una distanza iniziale del cage confrontando la versione high-poly con la versione lowpoly. In questo modo aiuta il cage a ricoprire i dettagli importanti da catturare durante il bake, rendendo piu rapido il setup.
 
 ### Texture Baking
 
@@ -166,7 +166,7 @@ ScanReady è pensato per preparare asset destinati a:
 - videogame;
 - realtime visualization;
 - scene interattive;
-- engine come Unreal Engine, Unity, Godot o viewer realtime;
+- engine come Unreal Engine, Unity, S2 Engine, Godot o viewer realtime;
 - ambienti dove poligoni, memoria e texture devono rimanere sotto controllo.
 
 ---

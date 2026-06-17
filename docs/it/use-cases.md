@@ -1,4 +1,4 @@
-# Casi d'uso
+﻿# Casi d'uso
 
 ScanReady e pensato per workflow in cui scansioni high-poly devono diventare piu leggere, piu pulite e piu facili da usare.
 
