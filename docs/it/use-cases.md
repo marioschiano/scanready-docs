@@ -1,10 +1,10 @@
 # Casi d'uso
 
-ScanReady 1.0 e pensato per workflow in cui scansioni high-poly devono diventare piu leggere, piu pulite e piu facili da usare.
+ScanReady e pensato per workflow in cui scansioni high-poly devono diventare piu leggere, piu pulite e piu facili da usare.
 
 Le scansioni 3D grezze sono spesso troppo pesanti per la produzione realtime. Possono sembrare dettagliate, ma possono essere difficili da muovere, esportare, renderizzare o usare dentro VR e game engine.
 
-ScanReady 1.0 aiuta a convertire quelle scansioni in asset ottimizzati e baked, preservando l'identita visiva della cattura originale.
+ScanReady aiuta a convertire quelle scansioni in asset ottimizzati e baked, preservando l'identita visiva della cattura originale.
 
 ---
 
@@ -14,7 +14,7 @@ Esperienze VR e AR richiedono performance stabili.
 
 Una scansione molto densa puo essere troppo pesante per un'interazione fluida, soprattutto su visori standalone o viewer realtime.
 
-ScanReady 1.0 aiuta a preparare modelli scansionati per VR e AR:
+ScanReady aiuta a preparare modelli scansionati per VR e AR:
 
 - riducendo il numero di poligoni;
 - creando una mesh piu leggera;
@@ -33,7 +33,7 @@ I game engine richiedono asset che bilanciano qualita visiva e performance.
 
 Una scansione grezza con milioni di poligoni raramente e adatta all'uso diretto in un videogame.
 
-ScanReady 1.0 aiuta a preparare asset game-ready:
+ScanReady aiuta a preparare asset game-ready:
 
 - creando una versione lowpoly ottimizzata;
 - generando UV;
@@ -50,7 +50,7 @@ Questo rende props scansionati, elementi ambiente e oggetti reali piu facili da 
 
 La visualizzazione realtime richiede asset che possono essere ispezionati, mossi e renderizzati fluidamente.
 
-ScanReady 1.0 e utile quando devi mostrare oggetti scansionati in:
+ScanReady e utile quando devi mostrare oggetti scansionati in:
 
 - viewer prodotto interattivi;
 - preview architettura;
@@ -67,7 +67,7 @@ L'addon aiuta a ridurre il peso della scena mantenendo l'oggetto visivamente ric
 
 Le scansioni di patrimonio culturale contengono spesso dettaglio di superficie prezioso, ma i dati grezzi possono essere molto pesanti.
 
-ScanReady 1.0 puo aiutare a creare versioni piu leggere per:
+ScanReady puo aiutare a creare versioni piu leggere per:
 
 - mostre virtuali;
 - preview museali;
@@ -86,7 +86,7 @@ L'obiettivo e creare una versione pratica che possa essere usata per presentazio
 
 La fotogrammetria spesso produce mesh dettagliate ma dense.
 
-ScanReady 1.0 aiuta a processare modelli fotogrammetrici:
+ScanReady aiuta a processare modelli fotogrammetrici:
 
 - semplificando la geometria catturata;
 - creando UV utilizzabili;
@@ -102,7 +102,7 @@ Questo puo essere utile per rocce, statue, props, porzioni di terreno, oggetti, 
 
 Le scansioni grandi possono rallentare Blender e rendere difficile l'editing.
 
-ScanReady 1.0 aiuta a creare un asset piu gestibile, piu facile da:
+ScanReady aiuta a creare un asset piu gestibile, piu facile da:
 
 - orbitare nel viewport;
 - ispezionare;
@@ -117,7 +117,7 @@ Il risultato ottimizzato puo essere usato come asset di produzione piu leggero, 
 
 ## Workflow tipico
 
-Un caso d'uso tipico di ScanReady 1.0 e questo:
+Un caso d'uso tipico di ScanReady è questo:
 
 1. Importa o apri una scansione high-poly in Blender.
 2. Seleziona l'oggetto scansione.
@@ -130,7 +130,7 @@ Un caso d'uso tipico di ScanReady 1.0 e questo:
 
 ## Beneficio principale
 
-ScanReady 1.0 aiuta a colmare il divario tra qualita della scansione e usabilita realtime.
+ScanReady aiuta a colmare il divario tra qualita della scansione e usabilita realtime.
 
 Trasforma modelli catturati pesanti in asset piu facili da gestire, piu facili da cuocere e piu facili da usare in produzione.
 
