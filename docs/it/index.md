@@ -1,4 +1,4 @@
-# ScanReady 1.0
+# ScanReady
 
 Workflow di ottimizzazione adattiva e bake per scansioni in Blender
 
@@ -8,7 +8,7 @@ Workflow di ottimizzazione adattiva e bake per scansioni in Blender
 
 <br>
 
-ScanReady 1.0 e un addon per Blender pensato per trasformare scansioni 3D pesanti in asset ottimizzati e pronti per il realtime.
+ScanReady è un addon per Blender pensato per trasformare scansioni 3D pesanti in asset ottimizzati e pronti per il realtime.
 
 E pensato per artisti 3D, creatori di asset, workflow di fotogrammetria, VR, videogame, visualizzazione realtime e scene interattive.
 
@@ -24,7 +24,7 @@ Invece di trattare tutta la mesh nello stesso modo, ScanReady usa un workflow di
 
 Molti workflow di ottimizzazione usano una semplice riduzione uniforme.
 
-ScanReady 1.0 invece usa **Adaptive Reduce** per distribuire la riduzione in modo piu intelligente:
+ScanReady invece usa **Adaptive Reduce** per distribuire la riduzione in modo piu intelligente:
 
 - Le aree piatte possono essere ridotte di piu.
 - I dettagli importanti vengono protetti meglio.
@@ -42,7 +42,7 @@ ScanReady 1.0 invece usa **Adaptive Reduce** per distribuire la riduzione in mod
 
 ---
 
-## Perche ScanReady 1.0?
+## Perche ScanReady?
 
 Le scansioni 3D grezze possono essere molto pesanti:
 
@@ -160,7 +160,7 @@ Il workflow manuale e utile quando vuoi controllare meglio il risultato:
 
 ## Pensato per il realtime
 
-ScanReady 1.0 e pensato per preparare asset destinati a:
+ScanReady è pensato per preparare asset destinati a:
 
 - VR e AR;
 - videogame;
@@ -171,7 +171,7 @@ ScanReady 1.0 e pensato per preparare asset destinati a:
 
 ---
 
-## Cosa crea ScanReady 1.0
+## Cosa crea ScanReady
 
 Alla fine del workflow ScanReady puo creare:
 
@@ -185,7 +185,7 @@ Alla fine del workflow ScanReady puo creare:
 
 ## Compatibilita
 
-ScanReady 1.0 e distribuito come **Blender Extension**.
+ScanReady è distribuito come **Blender Extension**.
 
 E pensato per Blender moderno e per il nuovo sistema di estensioni.
 
