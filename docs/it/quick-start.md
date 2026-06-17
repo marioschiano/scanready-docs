@@ -1,6 +1,6 @@
 # Guida rapida
 
-Questa pagina mostra il modo piu veloce per usare ScanReady 1.0.
+Questa pagina mostra il modo piu veloce per usare ScanReady.
 
 <p align="center">
   <img src="../../img/hero.png" alt="Panoramica del workflow ScanReady" style="max-width:620px;width:100%;">
