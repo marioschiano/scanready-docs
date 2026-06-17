@@ -1,6 +1,6 @@
 # Supporto
 
-Hai bisogno di aiuto con ScanReady 1.0?
+Hai bisogno di aiuto con ScanReady?
 
 ---
 
