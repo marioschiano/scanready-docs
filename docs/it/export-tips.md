@@ -1,6 +1,6 @@
 # Consigli export
 
-Dopo aver usato ScanReady 1.0, puoi esportare l'asset ottimizzato e baked per VR, AR, videogame, viewer realtime o altri workflow di produzione 3D.
+Dopo aver usato ScanReady, puoi esportare l'asset ottimizzato e baked per VR, AR, videogame, viewer realtime o altri workflow di produzione 3D.
 
 L'obiettivo e mantenere il modello abbastanza leggero per l'uso realtime, preservando il dettaglio visivo della scansione originale tramite texture bake.
 
