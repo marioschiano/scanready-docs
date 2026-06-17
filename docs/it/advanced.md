@@ -26,7 +26,7 @@ Esegue una pulizia Merge by Distance sulla mesh preview duplicata prima che veng
 </p>
 
 <p>
-E il singolo controllo esplicito di weld in ScanReady 1.0. Puo aiutare a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione. Se vengono colpiti dettagli sottili, abbassa il valore e crea di nuovo la preview lowpoly.
+E il singolo controllo esplicito di weld in ScanReady. Puo aiutare a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione. Se vengono colpiti dettagli sottili, abbassa il valore e crea di nuovo la preview lowpoly.
 </p>
 
 <hr>
@@ -157,7 +157,7 @@ Puoi regolare manualmente questo valore per un controllo piu preciso. I preset A
 </p>
 
 <p>
-ScanReady 1.0 usa Smart UV Project come metodo UV per il workflow corrente.
+ScanReady usa Smart UV Project come metodo UV per il workflow corrente.
 </p>
 
 <hr>
@@ -368,7 +368,7 @@ Di solito e piu lento, ma puo essere piu sicuro su sistemi con poca VRAM.
 </p>
 
 <p>
-ScanReady 1.0 puo abilitarlo automaticamente quando viene usato il bake multi-materiale.
+ScanReady puo abilitarlo automaticamente quando viene usato il bake multi-materiale.
 </p>
 
 </div>
@@ -384,7 +384,7 @@ ScanReady 1.0 puo abilitarlo automaticamente quando viene usato il bake multi-ma
 
 # Preset
 
-ScanReady 1.0 puo salvare, ricaricare ed eliminare preset con nome.
+ScanReady puo salvare, ricaricare ed eliminare preset con nome.
 
 I preset salvano le impostazioni correnti del workflow cosi puoi riutilizzarle in seguito.
 
