@@ -214,4 +214,4 @@ I video tutorial verranno aggiunti in questa sezione.
 
 Per problemi, domande o feedback:
 
-**Email:** <softandsoft2025@gmail.com>
+**Email:** <support.marioschiano3d@gmail.com>
