@@ -161,7 +161,7 @@ Di solito è la texture più importante per preservare l'aspetto dell'oggetto ca
 
 ---
 
-### Bake Normal
+### Bake Normal Map
 
 Cuoce una normal map.
 
@@ -189,7 +189,7 @@ Anche le texture roughness vengono gestite come dati tecnici **Non-Color**.
 
 ---
 
-### Bake Occlusion
+### Bake Occlusion map
 
 Cuoce una mappa Ambient Occlusion.
 
@@ -350,15 +350,15 @@ Quando il bake è completo, controlla il materiale finale e usa **Bake Folder** 
 
 Dopo il bake, controlla:
 
-- texture Base Color;
+- Texture Base Color;
 - Normal Map;
-- mappa Ambient Occlusion;
-- nitidezza texture;
-- seam texture;
-- dettagli mancanti;
-- proiezioni errate;
-- aspetto del materiale finale;
-- file output salvati;
+- Mappa Ambient Occlusion;
+- Nitidezza texture;
+- Seam texture;
+- Dettagli mancanti;
+- Proiezioni errate;
+- Aspetto del materiale finale;
+- File output salvati;
 - Bake Folder apre l'ultima cartella texture salvata.
 
 Se mancano dettagli, abilita **Show Cage** e aumenta leggermente **Cage Extrusion** oppure usa **Auto Cage Extrusion**. Se il bake è troppo morbido o povero di dettaglio, aumenta la risoluzione texture prima di rifare il bake.
