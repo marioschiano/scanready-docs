@@ -63,7 +63,7 @@ Per una scansione standard:
 - **Adaptive Preset:** `Balanced`
 - **Texture Size:** `2048`
 - **Bake Base Color:** attivo
-- **Bake Normal:** attivo se ti serve dettaglio di superficie
+- **Bake Normal Map:** attivo se ti serve dettaglio di superficie
 - **Save Images:** attivo se vuoi salvare le texture su disco
 
 ---
