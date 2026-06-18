@@ -116,6 +116,8 @@ ScanReady aiuta a trasformare scansioni pesanti in asset ottimizzati adatti a:
 
 - Unreal Engine;
 - Unity;
+- Godot
+- S2 Engine
 - rendering realtime;
 - applicazioni VR;
 - esperienze AR;
@@ -148,7 +150,7 @@ Operazioni che normalmente richiedono più passaggi manuali - pulizia mesh, otti
 
 L'obiettivo è semplice:
 
-> Ridurre l'attrito tecnico e accelerare la creazione di asset realtime da scansioni.
+> Trasformare scansioni pesanti in asset ottimizzati per il realtime in meno tempo e con meno lavoro manuale.
 
 ---
 
