@@ -6,6 +6,29 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 
 ---
 
+## Pannello e stato
+
+| Voce | Descrizione | Quando usarla |
+|---|---|---|
+| **Mesh Stats** | Mostra facce e triangoli dell'oggetto selezionato o dell'ultima preview creata. | Usalo per controllare rapidamente quanto è pesante la mesh prima e dopo la riduzione. |
+| **Refresh Stats** | Aggiorna manualmente le statistiche mesh mostrate nel pannello. | Usalo dopo aver cambiato selezione o dopo modifiche esterne alla mesh. |
+| **Workflow Status** | Mostra progresso globale, step completato, messaggi di stato, mappe bake completate e tempi quando i diagnostics sono attivi. | Usalo per capire dove si trova ScanReady durante One Click Bake o durante gli step manuali. |
+| **Global Progress** | Percentuale di avanzamento del workflow corrente. | Utile durante operazioni lunghe come preview, UV, cage e bake. |
+| **ONE CLICK BAKE** | Avvia il workflow automatico completo: preview, UV, cage, bake e materiali finali. | Usalo quando vuoi una conversione rapida da scansione high-poly ad asset ottimizzato. |
+
+---
+
+## Azioni principali
+
+| Azione | Descrizione | Quando usarla |
+|---|---|---|
+| **Create Lowpoly Preview** | Crea o aggiorna la mesh preview ottimizzata usando le impostazioni dello Step 1 e di Adaptive Reduce. | Usalo ogni volta che cambi densità, preset Adaptive Reduce o impostazioni mesh che influenzano la riduzione. |
+| **Generate UVs** | Crea la mesh UV dalla preview e genera il layout Smart UV Project. | Usalo dopo la preview o quando cambi Smart UV Preset, Smart UV Angle o UV Padding. |
+| **Auto Cage Extrusion** | Calcola una cage extrusion di partenza campionando la distanza tra mesh ottimizzata e sorgente high-poly. | Usalo prima del bake quando vuoi evitare di stimare manualmente la distanza del cage. |
+| **Bake Textures** | Esegue il bake delle mappe selezionate e costruisce la mesh/materiali finali. | Usalo dopo aver generato UV e verificato cage/output. |
+
+---
+
 ## Mesh e riduzione
 
 | Impostazione | Descrizione | Quando regolarla |
@@ -136,6 +159,7 @@ Le impostazioni Smart UV vengono applicate quando le UV vengono generate. Se cam
 |---|---|---|
 | **Preset Name** | Nome usato quando salvi le impostazioni correnti. | Usa un nome chiaro per un workflow o tipo di asset. |
 | **Save Preset** | Salva le impostazioni correnti. | Usalo prima di processare scansioni simili. |
+| **Preset Selector** | Menu con i preset salvati disponibili. | Usalo per scegliere quale preset ricaricare o eliminare. |
 | **Reload Preset** | Ricarica il preset selezionato. | Usalo per ripetere un setup noto o tornare rapidamente a un preset salvato. |
 | **Delete Preset** | Elimina il preset selezionato. | Usalo per rimuovere setup vecchi o inutilizzati. |
 
@@ -154,8 +178,11 @@ Le impostazioni Smart UV vengono applicate quando le UV vengono generate. Se cam
 | Controllo | Descrizione | Quando usarlo |
 |---|---|---|
 | **Check for Updates** | Legge il manifest aggiornamenti configurato e controlla se è disponibile una nuova versione di ScanReady. | Usalo dalle preferenze Blender quando vuoi verificare la versione installata. |
+| **Open Documentation** | Apre la documentazione online di ScanReady. | Usalo quando vuoi consultare guida rapida, workflow, FAQ o troubleshooting. |
 | **Release Notes** | Apre il changelog e la pagina release notes di ScanReady. | Usalo per vedere cosa è cambiato prima di aggiornare. |
 | **Update Manifest URL** | Memorizza l'URL JSON usato per i controlli aggiornamento. | Configuralo dopo la pubblicazione se cambia la sorgente aggiornamenti. |
+| **Release Notes URL** | Memorizza l'indirizzo della pagina release notes. | Serve a collegare il pulsante Release Notes alla pagina corretta. |
+| **Publishing Links** | Raccoglie i collegamenti pubblici utili per documentazione, release notes e distribuzione. | Utile quando prepari o controlli una release pubblicata. |
 
 ---
 

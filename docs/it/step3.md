@@ -252,6 +252,14 @@ Abilitalo quando esporti asset per game engine, archivi, workflow esterni o cons
 
 ---
 
+### Open Folder After Bake
+
+Apre automaticamente la cartella del bake quando **Save Images** è attivo e il salvataggio delle texture è completato.
+
+È utile quando vuoi controllare subito i file generati, copiarli in un progetto esterno o portarli in un game engine.
+
+---
+
 ### Image Format
 
 Formati di output disponibili:

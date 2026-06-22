@@ -698,6 +698,14 @@ Controlla se è disponibile una versione più recente di ScanReady leggendo il m
 
 <hr>
 
+<h3>Open Documentation</h3>
+
+<p>
+Apre la documentazione online di ScanReady.
+</p>
+
+<hr>
+
 <h3>Release Notes</h3>
 
 <p>
@@ -706,10 +714,18 @@ Apre la pagina changelog e release notes di ScanReady.
 
 <hr>
 
-<h3>Update Source</h3>
+<h3>Update Manifest URL</h3>
 
 <p>
 Memorizza l'URL del manifest aggiornamenti usato dal checker.
+</p>
+
+<hr>
+
+<h3>Release Notes URL</h3>
+
+<p>
+Memorizza l'indirizzo della pagina release notes usata dal pulsante Release Notes.
 </p>
 
 <hr>
