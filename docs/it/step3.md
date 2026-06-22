@@ -48,7 +48,7 @@ Questo permette alla mesh ottimizzata di restare leggera pur conservando gran pa
 
 ## Impostazioni texture
 
-### Texture Size
+### Texture Preset / Texture Size
 
 Imposta la risoluzione di output delle texture bake.
 

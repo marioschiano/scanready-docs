@@ -240,7 +240,7 @@ Aiuta a controllare densità UV e distorsione texture.
 
 ---
 
-## Checker Mix / Checker Scale
+## Checker Mix / Checker UV Scale
 
 <div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin-bottom:24px;">
 
@@ -252,7 +252,7 @@ Aiuta a controllare densità UV e distorsione texture.
 Controlla quanto forte appare l'overlay checker sulla superficie del modello.
 </p>
 
-<h3>Checker Scale</h3>
+<h3>Checker UV Scale</h3>
 
 <p>
 Cambia la dimensione dei quadrati checker.
@@ -269,7 +269,7 @@ Quadrati più grandi sono utili per controlli generali rapidi.
 </div>
 
 <div style="flex:0 0 320px; text-align:center;">
-  <img src="../../img/step1-checker-mix-scale.png" alt="Controlli Checker Mix e Checker Scale di ScanReady" style="width:320px; max-width:100%;">
+  <img src="../../img/step1-checker-mix-scale.png" alt="Controlli Checker Mix e Checker UV Scale di ScanReady" style="width:320px; max-width:100%;">
 </div>
 
 </div>
@@ -283,11 +283,11 @@ Checker Mix regola quanto è visibile l'overlay checker sopra la superficie del 
 </p>
 
 <div style="width:100%; text-align:left; margin-bottom:20px;">
-  <img src="../../img/step1-checker-scale.gif" alt="Controllo Checker Scale di ScanReady che cambia la dimensione dei quadrati checker" style="max-width:820px;width:100%;">
+  <img src="../../img/step1-checker-scale.gif" alt="Controllo Checker UV Scale di ScanReady che cambia la dimensione dei quadrati checker" style="max-width:820px;width:100%;">
 </div>
 
 <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
-Checker Scale cambia la dimensione del pattern checker per rendere più facile controllare lo stretching UV.
+Checker UV Scale cambia la dimensione del pattern checker per rendere più facile controllare lo stretching UV.
 </p>
 
 ---
