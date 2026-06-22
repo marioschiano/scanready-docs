@@ -449,6 +449,39 @@ Elimina il preset selezionato.
 
 ---
 
+# Diagnostics
+
+Le opzioni di diagnostica servono per controllare meglio cosa sta facendo ScanReady durante i test o l'ottimizzazione delle prestazioni.
+
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
+
+<div style="flex:1 1 500px; min-width:320px;">
+
+<h3>Show Diagnostic Timing Report</h3>
+
+<p>
+Mostra un report dettagliato dei tempi dopo <strong>ONE CLICK BAKE</strong>.
+</p>
+
+<p>
+Il report può includere dettagli come tempo di Preview / Reduce, Generate UVs, Auto Cage, Bake / Finalize, Adaptive / Decimate e singole sottofasi del bake.
+</p>
+
+<p>
+È disattivato di default per mantenere il pannello più pulito durante l'uso normale, le demo e i video. Abilitalo solo quando vuoi analizzare le prestazioni o confrontare impostazioni diverse.
+</p>
+
+</div>
+
+<div style="flex:0 0 340px; text-align:center;">
+  <!-- Sostituire il placeholder con ../../img/advanced-diagnostics.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Diagnostics di ScanReady" style="width:340px; max-width:100%;">
+</div>
+
+</div>
+
+---
+
 # Utilities
 
 Gli strumenti utility aiutano a resettare o ripristinare la configurazione dell'addon.
