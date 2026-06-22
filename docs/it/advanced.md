@@ -300,7 +300,11 @@ Può aiutare a mantenere più stabile la forma attorno a bordi netti, cornici, p
 
 Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 
-Le impostazioni Smart UV vengono applicate quando ScanReady genera le UV. Se cambi Smart UV Preset, Smart UV Angle, UV Padding o Auto Pack UV dopo che le UV esistono già, clicca di nuovo **Generate UVs**, oppure esegui **One Click Bake** dall'inizio così il suo step di generazione UV usa le nuove impostazioni. **Bake Textures** usa il layout UV già esistente.
+> **Nota:** le impostazioni UV vengono applicate quando ScanReady genera le UV.
+>
+> Se cambi valori UV dopo aver già creato il layout, clicca di nuovo **Generate UVs** oppure esegui **One Click Bake** dall'inizio.
+>
+> **Bake Textures** usa sempre il layout UV già esistente al momento del bake.
 
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
@@ -309,23 +313,20 @@ Le impostazioni Smart UV vengono applicate quando ScanReady genera le UV. Se cam
 <h3>Smart UV Angle</h3>
 
 <p>
-Controlla quanto aggressivamente Smart UV Project divide la mesh in isole UV.
+Controlla quanto Smart UV Project divide la mesh in isole UV.
+</p>
+
+<ul>
+<li>Valori più bassi creano più tagli e più isole UV.</li>
+<li>Valori più alti creano isole più grandi.</li>
+</ul>
+
+<p>
+Puoi regolare manualmente questo valore quando vuoi più controllo sull'unwrap usato per il bake.
 </p>
 
 <p>
-Valori più bassi creano più tagli e più isole UV.
-</p>
-
-<p>
-Valori più alti creano isole più grandi.
-</p>
-
-<p>
-Puoi regolare manualmente questo valore per un controllo più preciso. I preset Adaptive Reduce sono separati dalla generazione UV: Adaptive Reduce controlla la semplificazione della mesh, mentre Smart UV Project controlla l'unwrap usato per il bake.
-</p>
-
-<p>
-ScanReady usa Smart UV Project come metodo UV per il workflow corrente.
+I preset Adaptive Reduce sono separati dalla generazione UV: Adaptive Reduce controlla la semplificazione della mesh, mentre Smart UV Project controlla l'apertura UV.
 </p>
 
 <hr>
