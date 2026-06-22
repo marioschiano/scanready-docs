@@ -43,6 +43,66 @@ Attivalo quando la scansione ha normali invertite, shading rotto o artefatti di 
 
 <hr>
 
+<h3>Auto Clear Sharp Edges</h3>
+
+<p>
+Rimuove automaticamente marcature sharp edge dalla mesh durante la preparazione.
+</p>
+
+<p>
+È utile quando una scansione importata contiene edge marcati come sharp in modo non desiderato, causando shading duro o bake meno puliti.
+</p>
+
+<hr>
+
+<h3>Auto Combine Mesh Parts</h3>
+
+<p>
+Combina automaticamente più parti mesh della scansione quando lavori con import composti da molti oggetti separati.
+</p>
+
+<p>
+Usalo quando la scansione arriva da fotogrammetria o da esportazioni che dividono il modello in più elementi, ma vuoi trattarla come un unico asset ScanReady.
+</p>
+
+<hr>
+
+<h3>Auto Clean Scan Debris</h3>
+
+<p>
+Rimuove detriti comuni della scansione, come frammenti isolati, poligoni sospesi e vertici non utili prima della riduzione.
+</p>
+
+<p>
+È attivo di default perché molte scansioni grezze contengono piccole parti volanti che possono rallentare ottimizzazione, UV e bake.
+</p>
+
+<hr>
+
+<h3>Convert Source Materials</h3>
+
+<p>
+Converte i materiali sorgente della scansione in una forma più prevedibile per il workflow ScanReady.
+</p>
+
+<p>
+Lascialo disattivato se vuoi mantenere i materiali sorgente il più possibile invariati. Attivalo quando i materiali importati sono complessi o poco compatibili con il bake.
+</p>
+
+<hr>
+
+<h3>Show Face Orientation</h3>
+
+<p>
+Mostra l'overlay Face Orientation di Blender per controllare rapidamente la direzione delle facce.
+</p>
+
+<p>
+È utile per individuare normali invertite prima di creare la preview lowpoly o prima del bake.
+</p>
+
+<hr>
+
 <h3>Use Texture View</h3>
 
 <p>
@@ -88,6 +148,18 @@ I pesi Adaptive Reduce vengono calcolati quando clicchi **Create Lowpoly Preview
 
 <div style="flex:1 1 500px; min-width:320px;">
 
+<h3>Adaptive Reduce</h3>
+
+<p>
+Abilita o disabilita il sistema di riduzione adattiva.
+</p>
+
+<p>
+Quando è attivo, ScanReady analizza la mesh e crea pesi per proteggere dettagli importanti, bordi e cambi di normale, semplificando di più le aree piatte o meno rilevanti.
+</p>
+
+<hr>
+
 <h3>Adaptive Reduce Preset</h3>
 
 <p>
@@ -115,6 +187,102 @@ Le aree rosse rappresentano superfici più piatte che possono essere ridotte di 
 
 <p>
 Usa questa preview quando una scansione ha superfici miste, come pannelli architettonici piatti insieme a dettagli scultorei o danneggiati.
+</p>
+
+<hr>
+
+<h3>Adaptive Reduce Strength</h3>
+
+<p>
+Controlla quanto fortemente i pesi adattivi influenzano la riduzione.
+</p>
+
+<p>
+Valori più alti rendono più marcata la differenza tra aree protette e aree semplificate. Valori più bassi producono un comportamento più vicino a una riduzione uniforme.
+</p>
+
+<hr>
+
+<h3>Adaptive Reduce Angle</h3>
+
+<p>
+Controlla la sensibilità ai cambi di normale usati per distinguere aree piatte, curvature e dettagli.
+</p>
+
+<p>
+Valori più bassi rendono ScanReady più sensibile alle variazioni di superficie. Valori più alti tendono a considerare più aree come relativamente uniformi.
+</p>
+
+<hr>
+
+<h3>Detail Preserve</h3>
+
+<p>
+Regola quanta protezione viene data ai dettagli della superficie durante il calcolo dei pesi.
+</p>
+
+<p>
+Aumentalo quando la scansione contiene dettagli fini che non vuoi perdere. Abbassalo quando vuoi una riduzione più aggressiva.
+</p>
+
+<hr>
+
+<h3>Smooth Weights</h3>
+
+<p>
+Smussa i pesi Adaptive Reduce per rendere la transizione tra aree protette e aree ridotte più omogenea.
+</p>
+
+<p>
+Valori più alti possono produrre una distribuzione meno frastagliata, utile su scansioni rumorose o superfici irregolari.
+</p>
+
+<hr>
+
+<h3>Fast Adaptive Reduce</h3>
+
+<p>
+Usa una modalità più veloce e approssimata del calcolo adattivo.
+</p>
+
+<p>
+È utile per preview rapide o asset hard-surface, perché riduce il tempo di analisi saltando parte della rifinitura regionale. I bordi con normali molto diverse restano comunque protetti.
+</p>
+
+<hr>
+
+<h3>Protect Feature Edges</h3>
+
+<p>
+Protegge bordi importanti e rotture nette della superficie durante la riduzione.
+</p>
+
+<p>
+È consigliato per scansioni hard-surface, veicoli, architettura, oggetti con spigoli visibili o silhouette importanti.
+</p>
+
+<hr>
+
+<h3>Feature Edge Angle</h3>
+
+<p>
+Definisce l'angolo minimo usato per considerare un bordo come feature edge da proteggere.
+</p>
+
+<p>
+Valori più bassi proteggono più bordi. Valori più alti proteggono solo cambi di direzione più netti.
+</p>
+
+<hr>
+
+<h3>Feature Edge Rings</h3>
+
+<p>
+Estende la protezione dei feature edge anche agli anelli di geometria vicini.
+</p>
+
+<p>
+Può aiutare a mantenere più stabile la forma attorno a bordi netti, cornici, pannelli o separazioni evidenti della scansione.
 </p>
 
 </div>
