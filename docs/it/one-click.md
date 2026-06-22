@@ -107,6 +107,18 @@ Il pannello mostra lo stato del workflow e il progresso globale mentre il proces
 
 ---
 
+## Interrompere il processo
+
+Se avvii **ONE CLICK BAKE** per errore, puoi premere **Esc** per fermare il workflow.
+
+ScanReady interrompe il processo appena lo step corrente è terminato. Questo evita di lasciare la scena in uno stato incompleto durante operazioni delicate come pulizia mesh, generazione UV o setup del cage.
+
+Quando la fase di bake è già iniziata, ScanReady lascia completare il bake e la finalizzazione in modo sicuro. Questo riduce il rischio di texture parziali, materiali non collegati o mesh finale non completata.
+
+Dopo uno stop, puoi avviare di nuovo **ONE CLICK BAKE**: ScanReady controlla gli step già validi e riparte dal punto utile del workflow.
+
+---
+
 ## Quando usare One Click Bake
 
 Usa One Click Bake quando:
