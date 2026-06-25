@@ -103,7 +103,7 @@ Mostra l'overlay Face Orientation di Blender per controllare rapidamente la dire
 
 <div style="flex:0 0 340px; text-align:center;">
   <!-- Sostituire il placeholder con ../../img/advanced-mesh-settings.png -->
-  <img src="../../img/advanced_face orientation.png" alt="Placeholder screenshot Mesh Settings di ScanReady" style="width:340px; max-width:100%;">
+  <img src="../../img/advanced_face orientation.png" alt="Placeholder screenshot Mesh Settings di ScanReady" style="width:820px; max-width:100%;">
 </div>
 
 <hr>
