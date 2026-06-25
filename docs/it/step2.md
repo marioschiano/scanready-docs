@@ -285,9 +285,9 @@ Influenza solo la visualizzazione nel viewport e non cambia il risultato del bak
 
 </div>
 
-<div style="flex:0 0 320px; text-align:center;">
+<p align="center">
   <!-- Sostituire il placeholder con ../../img/step2-cage-settings.png -->
-  <img src="../../img/step2_cage_opacity.gif" alt="Placeholder pannello impostazioni cage di ScanReady" style="width:320px; max-width:100%;">
+  <img src="../../img/step2_cage_opacity.gif" alt="Placeholder pannello impostazioni cage di ScanReady" style="max-width:1100px;width:100%;">
 </div>
 
 </div>
