@@ -197,7 +197,7 @@ Un pattern checker pulito di solito indica un layout UV più sano per il bake.
 
 <!-- Sostituire il placeholder con ../../img/step2-checker-preview.png -->
 <p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot preview checker" style="max-width:1000px;width:100%;">
+  <img src="../../img/step1-checker.gif" alt="Placeholder screenshot preview checker" style="max-width:1000px;width:100%;">
 </p>
 
 ---
