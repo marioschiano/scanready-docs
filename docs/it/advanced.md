@@ -101,6 +101,11 @@ Mostra l'overlay Face Orientation di Blender per controllare rapidamente la dire
 È utile per individuare normali invertite prima di creare la preview lowpoly o prima del bake.
 </p>
 
+<div style="flex:0 0 340px; text-align:center;">
+  <!-- Sostituire il placeholder con ../../img/advanced-mesh-settings.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Mesh Settings di ScanReady" style="width:340px; max-width:100%;">
+</div>
+
 <hr>
 
 <h3>Use Texture View</h3>
