@@ -177,7 +177,7 @@ Aumenta il padding per ridurre il texture bleeding, soprattutto a risoluzioni te
 
 <!-- Sostituire il placeholder con ../../img/step2-uv-settings.png -->
 <p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Placeholder pannello impostazioni UV di ScanReady" style="max-width:760px;width:100%;">
+  <img src="../../img/step2_UV padding.png" alt="Placeholder pannello impostazioni UV di ScanReady" style="max-width:760px;width:100%;">
 </p>
 
 ---
