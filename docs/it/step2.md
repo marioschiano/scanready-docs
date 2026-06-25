@@ -270,7 +270,7 @@ Usa il valore più piccolo che copre correttamente la superficie della scansione
 
 <!-- Sostituire il placeholder con ../../img/step2-cage-extrusion.png -->
 <p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Placeholder esempi Cage Extrusion" style="max-width:1100px;width:100%;">
+  <img src="../../img/step2_cage_extrusion.gif" alt="Placeholder esempi Cage Extrusion" style="max-width:1100px;width:100%;">
 </p>
 
 <h3>Cage Opacity</h3>
