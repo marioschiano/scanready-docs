@@ -74,4 +74,4 @@ Controlla che:
 
 Per problemi di installazione:
 
-**Email:** <softandsoft2025@gmail.com>
+**Email:** <support.marioschiano3d@gmail.com>
