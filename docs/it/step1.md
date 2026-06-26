@@ -235,7 +235,7 @@ Mostra una texture checker sulla mesh preview.
 Aiuta a controllare densità UV e distorsione texture.
 
 <div style="width:100%; text-align:left;">
-  <img src="../../img/step1-checker-mix.gif" alt="Preview Show Checker di ScanReady su una scansione ottimizzata" style="max-width:820px;width:100%;">
+  <img src="../../img/step1-checker.gif" alt="Preview Show Checker di ScanReady su una scansione ottimizzata" style="max-width:820px;width:100%;">
 </div>
 
 ---
