@@ -58,7 +58,7 @@ ScanReady aiuta a passare da una scansione pesante a un asset più leggero, pule
 
 ---
 
-# Prima / Dopo
+## Prima / Dopo
 
 Ottimizzato per workflow realtime senza sprecare poligoni inutilmente.
 
@@ -181,7 +181,6 @@ Alla fine del workflow ScanReady può creare:
 - UV ottimizzate;
 - materiali finali collegati alle texture;
 - texture bake salvate su disco;
-- un asset più leggero rispetto alla scansione originale.
 
 ---
 
