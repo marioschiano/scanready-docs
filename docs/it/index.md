@@ -47,13 +47,14 @@ ScanReady invece usa **Adaptive Reduce** per distribuire la riduzione in modo pi
 Le scansioni 3D grezze possono essere molto pesanti:
 
 - milioni di poligoni;
-- mesh rumorose;
-- nessuna UV pulita;
+- molte texture ad altissima risoluzione;
+- molti materiali;
+- UV poco ottimizzate;
 - materiali non pronti per il realtime;
 - bake complessi da configurare manualmente;
 - performance scarse in VR, videogame o scene interattive.
 
-ScanReady aiuta a passare da una scansione pesante a un asset più leggero, con UV e texture bake pronte per essere usate in produzione.
+ScanReady aiuta a passare da una scansione pesante a un asset più leggero, pulendo la mesh da imperfezioni e preparando UV, materiali e texture bake per l'uso in produzione.
 
 ---
 
@@ -66,7 +67,7 @@ Ottimizzato per workflow realtime senza sprecare poligoni inutilmente.
 </p>
 
 <p align="center">
-  <b>Da scansioni fotogrammetriche pesanti ad asset ottimizzati e pronti per videogame.</b>
+  <b>Da scansioni fotogrammetriche pesanti ad asset ottimizzati e pronti per VR, videogame, AR e visualizzazione realtime.</b>
 </p>
 
 <p align="center">
@@ -111,7 +112,7 @@ ScanReady usa **Smart UV Project** per generare UV automatiche sulla mesh ottimi
 
 ### Generazione automatica del cage
 
-**Auto Cage Extrusion** stima una distanza iniziale del cage confrontando la versione high-poly con la versione lowpoly. In questo modo aiuta il cage a ricoprire i dettagli importanti da catturare durante il bake, rendendo più rapido il setup.
+**Auto Cage Extrusion** stima una distanza iniziale del cage confrontando la versione high-poly con la versione lowpoly. In questo modo aiuta il cage a ricoprire i dettagli importanti da catturare durante il bake, rendendo il bake più pulito e più facile da configurare.
 
 ### Texture Baking
 
@@ -146,7 +147,7 @@ Il workflow manuale è utile quando vuoi controllare meglio il risultato:
 
 ### 1. Preview / Reduce
 
-   Crea una mesh ottimizzata dalla scansione high-poly.
+   Crea una mesh ottimizzata dalla scansione high-poly. Con il valore predefinito **Optimize / Reduce 0.10**, la preview viene ridotta di circa il 90%.
 
 ### 2. UV / Cage
 
@@ -175,10 +176,11 @@ ScanReady è pensato per preparare asset destinati a:
 
 Alla fine del workflow ScanReady può creare:
 
+- un asset molto più leggero rispetto alla scansione originale, con meno materiali e meno texture;
 - una mesh finale ottimizzata;
-- UV automatiche;
-- texture bake salvate su disco;
+- UV ottimizzate;
 - materiali finali collegati alle texture;
+- texture bake salvate su disco;
 - un asset più leggero rispetto alla scansione originale.
 
 ---
@@ -207,6 +209,8 @@ Per iniziare:
 ## Video e tutorial
 
 I video tutorial verranno aggiunti in questa sezione.
+
+[Canale YouTube Mario Schiano 3D](https://www.youtube.com/@marioschiano3d)
 
 ---
 

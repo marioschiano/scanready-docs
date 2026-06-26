@@ -50,7 +50,7 @@ Quando clicchi **ONE CLICK BAKE**, ScanReady esegue il workflow completo da scan
 6. Crea o stima il cage per il bake.
 7. Cuoce i dettagli texture dalla scansione originale.
 8. Costruisce il setup dei materiali finali.
-9. Salva le texture bake se **Save Images** è attivo.
+9. Salva le texture bake se **Save Images** è attivo, come da impostazione predefinita.
 
 L'obiettivo è preservare l'identità visiva della scansione originale rendendo il modello più facile da usare nei progetti realtime.
 
@@ -62,13 +62,15 @@ L'obiettivo è preservare l'identità visiva della scansione originale rendendo 
 
 ## Perché è importante
 
-Le scansioni grezze possono essere troppo pesanti per una produzione pratica.
+Le scansioni possono essere troppo pesanti per una produzione realtime.
 
 Una scansione può sembrare buona, ma può essere difficile da usare perché può avere:
 
 - troppi poligoni;
+- texture troppo grandi;
+- troppi materiali;
 - performance lente nel viewport;
-- nessuna UV pulita;
+- nessuna UV ottimizzata;
 - setup di bake complesso;
 - uso elevato di memoria;
 - densità della mesh non adatta a VR o videogame.
@@ -85,7 +87,7 @@ Durante l'operazione, ScanReady passa attraverso le stesse fasi principali usate
 
 ### Cleanup
 
-Rimuove i detriti comuni della scansione prima della riduzione, inclusi poligoni staccati, frammenti di geometria sospesi e vertici isolati.
+Rimuove le imperfezioni della scansione prima della riduzione, inclusi poligoni staccati, frammenti di geometria sospesi e vertici isolati.
 
 ### Preview
 
@@ -111,9 +113,9 @@ Il pannello mostra lo stato del workflow e il progresso globale mentre il proces
 
 Se avvii **ONE CLICK BAKE** per errore, puoi premere **Esc** per fermare il workflow.
 
-ScanReady interrompe il processo appena lo step corrente è terminato. Questo evita di lasciare la scena in uno stato incompleto durante operazioni delicate come pulizia mesh, generazione UV o setup del cage.
+ScanReady interrompe il processo appena lo step corrente è terminato. In questo modo puoi fermare un avvio accidentale senza aspettare minuti inutili, evitando allo stesso tempo di lasciare la scena in uno stato incompleto durante operazioni delicate come pulizia mesh, generazione UV o setup del cage.
 
-Quando la fase di bake è già iniziata, ScanReady lascia completare il bake e la finalizzazione in modo sicuro. Questo riduce il rischio di texture parziali, materiali non collegati o mesh finale non completata.
+Quando la fase **Step 3 - Bake** è già iniziata, ScanReady lascia completare il bake e la finalizzazione in modo sicuro. Questo riduce il rischio di texture parziali, materiali non collegati o mesh finale non completata.
 
 Dopo uno stop, puoi avviare di nuovo **ONE CLICK BAKE**: ScanReady controlla gli step già validi e riparte dal punto utile del workflow.
 
@@ -136,12 +138,14 @@ Usa One Click Bake quando:
 Per ottenere risultati migliori:
 
 - seleziona un solo oggetto high-poly nel 3D Viewport;
-- imposta **Final Faces** se conosci la densità target della mesh;
-- scegli **Texture Size** in base al livello di dettaglio necessario;
+- imposta **Optimize / Reduce** oppure **Final Faces** se conosci la densità numerica target della mesh;
+- scegli **Texture Size** in base al livello di dettaglio necessario: 512, 1K, 2K, 4K o 8K;
 - abilita **Bake Base Color**, **Bake Normal**, **Bake Roughness** o **Bake Occlusion** in base alle mappe che vuoi;
-- imposta la **Output Folder** se vuoi salvare le texture su disco.
+- imposta la **Output Folder** se vuoi salvare le texture in una cartella specifica del disco.
 
-Per scansioni con grandi superfici continue, il preset **Flat Surfaces** di Adaptive Reduce può essere utile prima del bake perché permette di semplificare in modo più aggressivo le aree semplici. Per veicoli e scansioni hard-surface, **Hard Surface** offre un passaggio approssimato più veloce che protegge solo le rotture di normale più forti.
+Per scansioni con grandi superfici continue, il preset **Flat Surfaces** di Adaptive Reduce può essere utile prima del bake perché permette di semplificare in modo più aggressivo le aree semplici.
+
+Per veicoli e scansioni hard-surface, **Hard Surface** offre un passaggio approssimato più veloce che protegge meglio gli angoli ortogonali e i cambi di normale più forti.
 
 ---
 

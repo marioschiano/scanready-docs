@@ -26,7 +26,7 @@ Esegue una pulizia Merge by Distance sulla mesh preview duplicata prima che veng
 </p>
 
 <p>
-È il singolo controllo esplicito di weld in ScanReady. Può aiutare a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione. Se vengono colpiti dettagli sottili, abbassa il valore e crea di nuovo la preview lowpoly.
+È il singolo controllo esplicito di weld in ScanReady. Può aiutare a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione. Se dopo l'ottimizzazione compaiono buchi nel modello o vengono colpiti dettagli sottili, abbassa il valore e crea di nuovo la preview lowpoly.
 </p>
 
 <hr>
@@ -183,11 +183,19 @@ Scegli il preset più adatto alla scansione e all'asset target.
 <h3>Show Adaptive Weights</h3>
 
 <p>
-Mostra una preview a colori di come ScanReady distribuira la riduzione sulla scansione.
+Mostra una preview a colori di come ScanReady distribuirà la riduzione sulla scansione.
 </p>
 
 <p>
 Le aree rosse rappresentano superfici più piatte che possono essere ridotte di più. Le aree blu e verdi rappresentano regioni protette per il dettaglio.
+</p>
+
+<p>
+La visualizzazione è solo un aiuto di preview. Serve a scegliere il preset e capire il comportamento della riduzione; non è una texture esportata o baked.
+</p>
+
+<p>
+I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Lowpoly Preview</strong>. Dopo che la preview esiste, cambiare <strong>Optimize / Reduce</strong> o <strong>Final Faces</strong> aggiorna la quantità di riduzione usando i pesi esistenti. Se cambi preset o valori dettagliati di Adaptive Reduce, clicca di nuovo <strong>Create Lowpoly Preview</strong> per ricostruire i pesi con le nuove impostazioni.
 </p>
 
 <p>
@@ -593,7 +601,7 @@ Salva le impostazioni correnti di ScanReady come preset riutilizzabile.
 <h3>Preset Selector</h3>
 
 <p>
-Permette di sceglierè un preset esistente.
+Permette di scegliere un preset esistente.
 </p>
 
 <hr>

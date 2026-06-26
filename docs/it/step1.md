@@ -1,6 +1,8 @@
 # Step 1 - Preview / Reduce
 
-Crea in pochi secondi una preview ottimizzata e leggera dalla scansione high-poly.
+Crea una preview ottimizzata e leggera dalla scansione high-poly.
+
+Il tempo di elaborazione dipende dalla densità della scansione e dalla potenza del computer: una scansione con milioni di poligoni può richiedere anche circa un minuto o più su un PC di media potenza.
 
 <div style="width:100%; text-align:left;">
   <img src="../../img/step1-reduce.gif" alt="Controllo Optimize Reduce di ScanReady che aggiorna la densità della preview lowpoly" style="max-width:820px;width:100%;">
@@ -33,7 +35,7 @@ Usa il preset Adaptive Reduce come punto di partenza rapido:
 - **Balanced** per la maggior parte delle scansioni e degli asset realtime generici.
 - **Preserve Details** quando la scansione contiene pieghe importanti, forme scultoree, incisioni o dettagli ravvicinati.
 - **Flat Surfaces** quando l'oggetto contiene ampie aree semplici che possono essere semplificate in modo più aggressivo.
-- **Hard Surface** per veicoli e scansioni hard-surface dove un passaggio approssimato più veloce deve proteggere solo rotture di normale più forti.
+- **Hard Surface** per veicoli e scansioni hard-surface, dove un passaggio approssimato più veloce deve proteggere soprattutto i cambi di normale più forti.
 
 <!-- Sostituire il placeholder con ../../img/step1-adaptive-reduce.gif -->
 <p align="center">
@@ -49,26 +51,6 @@ Usa il preset Adaptive Reduce come punto di partenza rapido:
   <b>Blender Decimate vs ScanReady Adaptive Reduce</b><br>
   <span style="font-size:0.9em; opacity:0.75;">Qui andrà un render comparativo reale in Blender: stessa scansione, densità finale simile, Decimate standard da un lato e ScanReady Adaptive Reduce dall'altro.</span>
 </p>
-
-### Show Adaptive Weights
-
-Show Adaptive Weights mostra direttamente sul modello i pesi di riduzione.
-
-Usalo prima di creare la preview finale quando vuoi capire come ScanReady sta leggendo la scansione:
-
-- le aree **rosse** sono regioni piatte che possono essere ridotte di più;
-- le aree **blu / verdi** sono regioni protette per il dettaglio.
-
-La visualizzazione è solo un aiuto di preview. Serve a scegliere il preset e capire il comportamento della riduzione; non è una texture esportata o baked.
-
-I pesi Adaptive Reduce vengono calcolati quando clicchi **Create Lowpoly Preview**. Dopo che la preview esiste, cambiare **Optimize / Reduce** o **Final Faces** aggiorna la quantità di Decimate usando i pesi esistenti. Se cambi il preset Adaptive Reduce o i valori dettagliati di Adaptive Reduce, clicca di nuovo **Create Lowpoly Preview** per ricostruire i pesi con le nuove impostazioni.
-
-<!-- Sostituire il placeholder con ../../img/step1-adaptive-weights.gif -->
-<p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Visualizzazione Show Adaptive Weights di ScanReady" style="max-width:820px;width:100%;">
-</p>
-
----
 
 ## Miglioramento performance
 
@@ -102,7 +84,7 @@ Possono causare:
 - esportazioni difficili;
 - performance realtime scarse;
 - asset VR troppo densi per essere visualizzati fluidamente;
-- oggetti game troppo costosi per la produzione.
+- oggetti game troppo pesanti e difficili da gestire in produzione.
 
 Preview / Reduce crea una versione più leggera della scansione prima di continuare con UV e bake.
 
@@ -304,8 +286,6 @@ ScanReady pulisce la scansione high-poly selezionata, rimuove rumore mesh comune
 
 Prima che venga aggiunto il modificatore Decimate, ScanReady può eseguire anche una pulizia **Pre-Decimate Merge** sulla mesh preview duplicata.
 Questo aiuta a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione.
-
-In **Advanced > Mesh Settings**, **Pre-Decimate Merge** è il singolo controllo esplicito di weld. Abbassalo se vengono colpiti dettagli sottili.
 
 <div style="width:100%; text-align:left;">
   <img src="../../img/step1-cleaner.gif" alt="Pulizia mesh di ScanReady prima della preview lowpoly" style="max-width:820px;width:100%;">

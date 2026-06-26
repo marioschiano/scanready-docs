@@ -39,7 +39,7 @@ Nelle preferenze di Blender dovresti vedere:
 
 - **Name:** ScanReady
 - **Type:** Extension
-- **Version:** 1.0.0
+- **Version:** 1.0.0 o successiva
 - **Maintainer:** Mario Schiano
 
 ---
@@ -51,15 +51,15 @@ Nel 3D Viewport:
 1. Premi `N` per aprire la sidebar.
 2. Apri la scheda **Scan Ready**.
 3. Seleziona una mesh high-poly.
-4. Usa **ONE CLICK BAKE** oppure il workflow manuale.
+4. Premi **ONE CLICK BAKE** oppure usa il workflow manuale.
 
 ---
 
 ## Aggiornamenti
 
-Il pannello delle preferenze include link rapidi alla documentazione e alle release notes.
+Gli aggiornamenti vengono gestiti tramite il sistema Blender Extensions.
 
-Il pulsante **Check for Updates** apre la pagina della documentazione di ScanReady, dove puoi controllare nuove versioni o note di rilascio.
+Quando sarà disponibile una nuova versione, ScanReady potrà mostrare l'avviso di aggiornamento nel pannello dell'addon. In **Edit > Preferences > Add-ons > ScanReady** trovi anche link rapidi alla documentazione, alle release notes e ai tutorial.
 
 ---
 
@@ -71,6 +71,8 @@ Controlla che:
 - il file installato sia lo ZIP dell'estensione;
 - Blender sia stato riavviato dopo l'installazione;
 - stai guardando la sidebar del 3D Viewport, non un altro editor.
+
+Consulta anche le pagine **FAQ** e **Risoluzione problemi** per trovare le soluzioni più comuni.
 
 Per problemi di installazione:
 
