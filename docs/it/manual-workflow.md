@@ -73,7 +73,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
   <ol>
     <li>Apri <strong>STEP 3 Bake / Output</strong>.</li>
     <li>Scegli <strong>Texture Preset / Texture Size</strong>.</li>
-    <li>Imposta <strong>Bake Materials</strong>.</li>
+    <li>Scegli quanti <strong>Bake Materials</strong> usare.</li>
     <li>Attiva le mappe che vuoi generare, per esempio <strong>Bake Base Color</strong>, <strong>Bake Normal</strong>, <strong>Bake Roughness</strong> o <strong>Bake Occlusion</strong>.</li>
     <li>Clicca <strong>Bake Textures</strong>.</li>
   </ol>
