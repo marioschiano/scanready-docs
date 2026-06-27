@@ -19,9 +19,9 @@ Use it as a quick reference when tuning scans for VR, videogames, realtime visua
 | **Auto Fix Normals** | Recalculates high mesh normals before preview creation. | Enable it when the scan has inverted normals or shading artifacts. |
 | **Recalculate Outside Normals** | Manually recalculates normals outside. | Use it when the mesh appears inside-out or has broken shading. |
 
-Adaptive Reduce weights are calculated when **Create Lowpoly Preview** is pressed. Changing **Optimize / Reduce** or **Final Faces** after that updates the reduction amount, but changing Adaptive Reduce preset/detail settings requires creating the low-poly preview again to rebuild the weights.
+Adaptive Reduce weights are calculated when **Create Low-poly Preview** is pressed. Changing **Optimize / Reduce** or **Final Faces** after that updates the reduction amount, but changing Adaptive Reduce preset/detail settings requires creating the low-poly preview again to rebuild the weights.
 
-If you are already in Step 2 or Step 3 and need a lighter or more detailed model, return to Step 1, adjust **Final Faces** or **Optimize / Reduce**, click **Create Lowpoly Preview**, then regenerate UVs and bake again.
+If you are already in Step 2 or Step 3 and need a lighter or more detailed model, return to Step 1, adjust **Final Faces** or **Optimize / Reduce**, click **Create Low-poly Preview**, then regenerate UVs and bake again.
 
 ---
 

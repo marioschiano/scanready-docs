@@ -371,7 +371,7 @@ Dopo il bake, controlla:
 
 Se mancano dettagli, abilita **Show Cage** e aumenta leggermente **Cage Extrusion** oppure usa **Auto Cage Extrusion**. Se il bake è troppo morbido o povero di dettaglio, aumenta la risoluzione texture prima di rifare il bake.
 
-Se la mesh finale è ancora troppo pesante, puoi tornare a **Step 1 - Preview / Reduce** anche dopo essere arrivato allo Step 3. Abbassa **Final Faces** o **Optimize / Reduce**, clicca di nuovo **Create Lowpoly Preview**, poi esegui di nuovo **Generate UVs** e **Bake Textures**. Il bake dovrebbe sempre usare la mesh UV ottimizzata più recente.
+Se la mesh finale è ancora troppo pesante, puoi tornare a **Step 1 - Preview / Reduce** anche dopo essere arrivato allo Step 3. Abbassa **Final Faces** o **Optimize / Reduce**, clicca di nuovo **Create Low-poly Preview**, poi esegui di nuovo **Generate UVs** e **Bake Textures**. Il bake dovrebbe sempre usare la mesh UV ottimizzata più recente.
 
 ---
 

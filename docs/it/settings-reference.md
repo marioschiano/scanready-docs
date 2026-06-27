@@ -22,7 +22,7 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 
 | Azione | Descrizione | Quando usarla |
 |---|---|---|
-| **Create Lowpoly Preview** | Crea o aggiorna la mesh preview ottimizzata usando le impostazioni dello Step 1 e di Adaptive Reduce. | Usalo ogni volta che cambi densità, preset Adaptive Reduce o impostazioni mesh che influenzano la riduzione. |
+| **Create Low-poly Preview** | Crea o aggiorna la mesh preview ottimizzata usando le impostazioni dello Step 1 e di Adaptive Reduce. | Usalo ogni volta che cambi densità, preset Adaptive Reduce o impostazioni mesh che influenzano la riduzione. |
 | **Generate UVs** | Crea la mesh UV dalla preview e genera il layout Smart UV Project. | Usalo dopo la preview o quando cambi Smart UV Preset, Smart UV Angle o UV Padding. |
 | **Auto Cage Extrusion** | Calcola una cage extrusion di partenza campionando la distanza tra mesh ottimizzata e sorgente high-poly. | Usalo prima del bake quando vuoi evitare di stimare manualmente la distanza del cage. |
 | **Bake Textures** | Esegue il bake delle mappe selezionate e costruisce la mesh/materiali finali. | Usalo dopo aver generato UV e verificato cage/output. |
@@ -55,9 +55,9 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 | **Auto Fix Normals** | Ricalcola le normali della mesh high prima della creazione della preview. | Attivalo quando la scansione ha normali invertite o artefatti di shading. |
 | **Recalculate Outside Normals** | Ricalcola manualmente le normali verso l'esterno. | Usalo quando la mesh appare rovesciata o ha shading rotto. |
 
-I pesi Adaptive Reduce vengono calcolati quando premi **Create Lowpoly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma cambiare preset o valori dettagliati di Adaptive Reduce richiede di creare di nuovo la preview low-poly per ricostruire i pesi.
+I pesi Adaptive Reduce vengono calcolati quando premi **Create Low-poly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma cambiare preset o valori dettagliati di Adaptive Reduce richiede di creare di nuovo la preview low-poly per ricostruire i pesi.
 
-Se sei già nello Step 2 o nello Step 3 e ti serve un modello più leggero o più dettagliato, torna allo Step 1, regola **Final Faces** o **Optimize / Reduce**, clicca **Create Lowpoly Preview**, poi rigenera UV e bake.
+Se sei già nello Step 2 o nello Step 3 e ti serve un modello più leggero o più dettagliato, torna allo Step 1, regola **Final Faces** o **Optimize / Reduce**, clicca **Create Low-poly Preview**, poi rigenera UV e bake.
 
 ---
 

@@ -108,4 +108,4 @@ Use the manual workflow if:
 
 Manual steps give you more control over the same process used by One Click Bake.
 
-You can move backward in the workflow when needed. If you are already in Step 2 or Step 3 and the model is still too dense, return to **Step 1 - Preview / Reduce**, lower **Final Faces** or **Optimize / Reduce**, click **Create Lowpoly Preview**, then generate UVs and bake again.
+You can move backward in the workflow when needed. If you are already in Step 2 or Step 3 and the model is still too dense, return to **Step 1 - Preview / Reduce**, lower **Final Faces** or **Optimize / Reduce**, click **Create Low-poly Preview**, then generate UVs and bake again.

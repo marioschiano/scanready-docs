@@ -147,7 +147,7 @@ Adaptive Reduce controlla come ScanReady distribuisce la riduzione sulla scansio
 
 È attivo di default ed è progettato per proteggere il dettaglio visivamente importante, permettendo alle superfici piatte di essere semplificate di più.
 
-I pesi Adaptive Reduce vengono calcolati quando clicchi **Create Lowpoly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma non ricalcola i pesi adattivi. Per applicare un preset Adaptive Reduce diverso o valori adattivi dettagliati, crea di nuovo la preview low-poly.
+I pesi Adaptive Reduce vengono calcolati quando clicchi **Create Low-poly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma non ricalcola i pesi adattivi. Per applicare un preset Adaptive Reduce diverso o valori adattivi dettagliati, crea di nuovo la preview low-poly.
 
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
@@ -195,7 +195,7 @@ La visualizzazione è solo un aiuto di preview. Serve a scegliere il preset e ca
 </p>
 
 <p>
-I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Lowpoly Preview</strong>. Dopo che la preview esiste, cambiare <strong>Optimize / Reduce</strong> o <strong>Final Faces</strong> aggiorna la quantità di riduzione usando i pesi esistenti. Se cambi preset o valori dettagliati di Adaptive Reduce, clicca di nuovo <strong>Create Lowpoly Preview</strong> per ricostruire i pesi con le nuove impostazioni.
+I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Low-poly Preview</strong>. Dopo che la preview esiste, cambiare <strong>Optimize / Reduce</strong> o <strong>Final Faces</strong> aggiorna la quantità di riduzione usando i pesi esistenti. Se cambi preset o valori dettagliati di Adaptive Reduce, clicca di nuovo <strong>Create Low-poly Preview</strong> per ricostruire i pesi con le nuove impostazioni.
 </p>
 
 <p>

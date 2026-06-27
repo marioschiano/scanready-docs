@@ -72,7 +72,7 @@ Try this workflow:
 
 - Go back to **Step 1 - Preview / Reduce**
 - Lower **Final Faces**, or lower **Optimize / Reduce**
-- Click **Create Lowpoly Preview** again
+- Click **Create Low-poly Preview** again
 - Inspect the preview with **Show Wireframe** or **Show Adaptive Weights**
 - Go to **Step 2 - UV / Cage** and click **Generate UVs** again
 - Go to **Step 3 - Bake / Output** and run **Bake Textures** again

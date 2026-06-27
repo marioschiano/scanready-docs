@@ -30,11 +30,11 @@ Questo valore funziona bene per molti asset VR, game e realtime. Se il risultato
 
 One Click Bake è automatico, ma il risultato può comunque essere rifinito dopo.
 
-Se il modello finale risulta troppo pesante, oppure se è stato ottimizzato troppo e perde dettagli importanti della forma, torna a **Step 1 - Preview / Reduce**. Regola **Optimize / Reduce** o **Final Faces**, poi clicca di nuovo **Create Lowpoly Preview**.
+Se il modello finale risulta troppo pesante, oppure se è stato ottimizzato troppo e perde dettagli importanti della forma, torna a **Step 1 - Preview / Reduce**. Regola **Optimize / Reduce** o **Final Faces**, poi clicca di nuovo **Create Low-poly Preview**.
 
 ScanReady ricostruirà la preview ottimizzata con le nuove impostazioni, così puoi provare una versione più leggera o più dettagliata prima di continuare con UV e bake.
 
-Il workflow è flessibile: anche se sei già in **Step 2 - UV / Cage** o **Step 3 - Bake / Output**, puoi tornare allo Step 1, regolare la riduzione, cliccare **Create Lowpoly Preview**, poi continuare di nuovo in avanti.
+Il workflow è flessibile: anche se sei già in **Step 2 - UV / Cage** o **Step 3 - Bake / Output**, puoi tornare allo Step 1, regolare la riduzione, cliccare **Create Low-poly Preview**, poi continuare di nuovo in avanti.
 
 ---
 

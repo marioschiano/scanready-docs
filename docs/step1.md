@@ -61,7 +61,7 @@ Use it before creating the final preview when you want to understand how ScanRea
 
 The visualization is only a preview aid. It helps you choose a preset and understand the reduction behavior; it is not a texture that will be exported or baked.
 
-Adaptive Reduce weights are calculated when you click **Create Lowpoly Preview**. After the preview exists, changing **Optimize / Reduce** or **Final Faces** updates the Decimate amount using the existing weights. If you change the Adaptive Reduce preset or detailed Adaptive Reduce values, click **Create Lowpoly Preview** again to rebuild the weights with the new settings.
+Adaptive Reduce weights are calculated when you click **Create Low-poly Preview**. After the preview exists, changing **Optimize / Reduce** or **Final Faces** updates the Decimate amount using the existing weights. If you change the Adaptive Reduce preset or detailed Adaptive Reduce values, click **Create Low-poly Preview** again to rebuild the weights with the new settings.
 
 <!-- Replace placeholder with ../img/step1-adaptive-weights.gif -->
 <p align="center">
@@ -133,7 +133,7 @@ This keeps roughly <strong>10% of the original polygons</strong>, creating a lig
 </p>
 
 <p>
-After clicking <strong>Create Lowpoly Preview</strong>, you can still adjust this value to test lighter or more detailed results.
+After clicking <strong>Create Low-poly Preview</strong>, you can still adjust this value to test lighter or more detailed results.
 </p>
 
 <p>
@@ -201,7 +201,7 @@ Displays the current reduction percentage based on the selected optimization set
 </div>
 
 <div style="flex:0 0 320px; text-align:center;">
-  <img src="../img/step1-preview-reduce.png" alt="ScanReady 1.0 Step 1 Preview Reduce panel with Create Lowpoly Preview button" style="width:320px; max-width:100%;">
+  <img src="../img/step1-preview-reduce.png" alt="ScanReady 1.0 Step 1 Preview Reduce panel with Create Low-poly Preview button" style="width:320px; max-width:100%;">
 </div>
 
 </div>
@@ -294,11 +294,11 @@ Checker Scale changes the size of the checker pattern to make UV stretching easi
 
 ## Action
 
-Click **Create Lowpoly Preview**.
+Click **Create Low-poly Preview**.
 
 If the preview is too heavy or too simplified, adjust **Optimize / Reduce** or **Final Faces** and create the preview again.
 
-You can return to Step 1 at any time. If you are already in Step 2 or Step 3 and decide that the model should be lighter or more detailed, change the reduction settings here, click **Create Lowpoly Preview** again, then continue forward by generating UVs and baking again.
+You can return to Step 1 at any time. If you are already in Step 2 or Step 3 and decide that the model should be lighter or more detailed, change the reduction settings here, click **Create Low-poly Preview** again, then continue forward by generating UVs and baking again.
 
 ScanReady 1.0 cleans the selected high-poly scan, removes common mesh noise such as loose polygons or isolated vertices, then creates an optimized preview object.
 

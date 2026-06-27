@@ -82,7 +82,7 @@ Adaptive Reduce controls how ScanReady distributes reduction across the selected
 
 It is enabled by default and is designed to protect visually important detail while allowing flatter surfaces to be simplified more strongly.
 
-Adaptive Reduce weights are calculated when you click **Create Lowpoly Preview**. Changing **Optimize / Reduce** or **Final Faces** after that updates the reduction amount, but it does not recalculate the adaptive weights. To apply a different Adaptive Reduce preset or detailed adaptive values, create the low-poly preview again.
+Adaptive Reduce weights are calculated when you click **Create Low-poly Preview**. Changing **Optimize / Reduce** or **Final Faces** after that updates the reduction amount, but it does not recalculate the adaptive weights. To apply a different Adaptive Reduce preset or detailed adaptive values, create the low-poly preview again.
 
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
