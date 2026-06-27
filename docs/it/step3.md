@@ -10,17 +10,17 @@
 
 ---
 
-Step 3 trasferisce il dettaglio texture dalla scansione high-poly originale alla mesh ottimizzata.
+## Workflow manuale: cosa fare in Step 3
 
-È la fase finale del workflow ScanReady, che trasforma l'oggetto low-poly in un asset più leggero e pronto per il realtime per:
+1. Verifica di aver già creato la preview low-poly nello Step 1 e le UV nello Step 2.
+2. Apri **STEP 3 Bake / Output**.
+3. Scegli **Texture Preset / Texture Size** e **Bake Materials**.
+4. Attiva le mappe che vuoi generare, per esempio **Bake Base Color**, **Bake Normal**, **Bake Roughness** o **Bake Occlusion**.
+5. Clicca **Bake Textures**.
 
-- VR
-- videogame
-- AR
-- visualizzazione realtime
-- ambienti interattivi
+ScanReady esegue il bake una texture alla volta, collega le texture generate al materiale finale e crea un asset più leggero pronto per realtime, VR, videogame, AR e scene interattive.
 
-L'obiettivo è preservare gran parte dell'aspetto della scansione originale riducendo drasticamente la densità dei poligoni.
+Prima di cliccare **Bake Textures**, controlla che il cage copra la scansione high-poly. Se il cage è troppo piccolo, possono comparire aree nere, dettagli mancanti o proiezioni errate.
 
 ---
 
@@ -339,9 +339,9 @@ L'utente può comunque disabilitarlo manualmente.
 
 ---
 
-## Azione
+## Quando avviare il bake
 
-Clicca **Bake Textures** per avviare il bake.
+Clicca **Bake Textures** quando UV, cage, texture size, materiali e mappe bake sono pronti.
 
 Le scansioni grandi possono richiedere diversi minuti in base a:
 

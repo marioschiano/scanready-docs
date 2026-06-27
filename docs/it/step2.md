@@ -10,11 +10,15 @@
 
 ---
 
-Step 2 genera un nuovo layout UV e prepara il cage per il bake.
+## Workflow manuale: cosa fare in Step 2
 
-Dopo che la scansione è stata semplificata nello Step 1, la mesh ottimizzata ha bisogno di UV pulite per ricevere correttamente le texture sulla nuova superficie low-poly.
+1. Parti dalla preview low-poly creata nello Step 1.
+2. Apri **STEP 2 UV / Cage**.
+3. Clicca **Generate UVs**.
 
-Questo step prepara l'asset al trasferimento delle texture, permettendo alla mesh ottimizzata di mantenere gran parte della ricchezza visiva della scansione high-poly originale, restando abbastanza leggera per **VR, videogame, AR, visualizzazione realtime e ambienti interattivi**.
+ScanReady crea un nuovo layout UV sulla mesh ottimizzata, prepara l'asset per il bake e rende possibile trasferire le texture dalla scansione high-poly alla nuova superficie low-poly.
+
+Dopo le UV, controlla il cage: abilita **Show Cage** e, se necessario, usa **Auto Cage Extrusion** oppure regola **Cage Extrusion**. Quando UV e cage sono pronti, passa a **Step 3 - Bake / Output**.
 
 ---
 
@@ -240,9 +244,9 @@ Influenza solo la visualizzazione nel viewport e non cambia il risultato del bak
 
 ---
 
-## Azione
+## Quando rigenerare le UV
 
-Clicca **Generate UVs** dopo aver creato la preview low-poly.
+Clicca **Generate UVs** dopo aver creato o aggiornato la preview low-poly.
 
 Se cambi **Smart UV Preset**, **Smart UV Angle** o **UV Padding** dopo aver già generato le UV, clicca di nuovo **Generate UVs** per applicare le nuove impostazioni UV. **Bake Textures** usa il layout UV esistente al momento del bake.
 
