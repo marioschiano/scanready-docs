@@ -56,8 +56,9 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
   <p>Quando UV e cage sono pronti, passa a <strong>Step 3 - Bake / Output</strong>.</p>
 </div>
 
-<div style="flex:0 0 320px; max-width:320px;">
-  <img src="../../img/manual-step2.jpg" alt="Interfaccia STEP 2 UV Cage con Generate UVs e controlli cage" style="width:100%;">
+<div style="flex:0 0 320px; max-width:320px; display:flex; flex-direction:column; gap:14px;">
+  <img src="../../img/manual-step2.jpg" alt="Interfaccia STEP 2 UV Cage con pulsante Generate UVs" style="width:100%;">
+  <img src="../../img/manual-step2_cage.jpg" alt="Interfaccia STEP 2 UV Cage con Show Cage e controlli cage" style="width:100%;">
 </div>
 
 </div>

@@ -42,8 +42,9 @@ The manual workflow lets you control reduction, UVs, cage setup, and baking sepa
   </ol>
 </div>
 
-<div style="flex:0 0 320px; max-width:320px;">
-  <img src="../img/step2_cage_extrusion.gif" alt="STEP 2 UV Cage interface with Generate UVs and cage controls" style="width:100%;">
+<div style="flex:0 0 320px; max-width:320px; display:flex; flex-direction:column; gap:14px;">
+  <img src="../img/manual-step2.jpg" alt="STEP 2 UV Cage interface with Generate UVs button" style="width:100%;">
+  <img src="../img/manual-step2_cage.jpg" alt="STEP 2 UV Cage interface with Show Cage and cage controls" style="width:100%;">
 </div>
 
 </div>
