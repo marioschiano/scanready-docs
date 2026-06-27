@@ -84,7 +84,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 </div>
 
 <div style="flex:0 0 260px; max-width:260px;">
-  <img src="../../img/quick-start-one-click.png" alt="Pannello ScanReady con gli step del workflow e Bake Output" style="width:100%;">
+  <img src="../../img/manual-step3.jpg" alt="Pannello ScanReady con gli step del workflow e Bake Output" style="width:100%;">
 </div>
 
 </div>
