@@ -57,7 +57,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 </div>
 
 <div style="flex:0 0 320px; max-width:320px;">
-  <img src="../../img/step2_cage_extrusion.gif" alt="Interfaccia STEP 2 UV Cage con Generate UVs e controlli cage" style="width:100%;">
+  <img src="../../img/manual-step2.jpg" alt="Interfaccia STEP 2 UV Cage con Generate UVs e controlli cage" style="width:100%;">
 </div>
 
 </div>
