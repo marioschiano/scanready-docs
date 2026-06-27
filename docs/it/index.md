@@ -85,7 +85,7 @@ Ottimizzato per workflow realtime senza sprecare poligoni inutilmente.
 Il workflow **ONE CLICK BAKE** esegue automaticamente i passaggi principali:
 
 1. Pulizia della scansione selezionata.
-2. Creazione di una preview lowpoly ottimizzata.
+2. Creazione di una preview low-poly ottimizzata.
 3. Generazione delle UV.
 4. Stima o preparazione del cage.
 5. Bake delle texture.
@@ -104,7 +104,7 @@ Il workflow **ONE CLICK BAKE** esegue automaticamente i passaggi principali:
 
 ### Workflow One Click
 
-**ONE CLICK BAKE** esegue automaticamente pulizia, preview lowpoly, UV, cage, bake e materiali finali.
+**ONE CLICK BAKE** esegue automaticamente pulizia, preview low-poly, UV, cage, bake e materiali finali.
 
 ### Workflow Smart UV
 
@@ -112,7 +112,7 @@ ScanReady usa **Smart UV Project** per generare UV automatiche sulla mesh ottimi
 
 ### Generazione automatica del cage
 
-**Auto Cage Extrusion** stima una distanza iniziale del cage confrontando la versione high-poly con la versione lowpoly. In questo modo aiuta il cage a ricoprire i dettagli importanti da catturare durante il bake, rendendo il bake più pulito e più facile da configurare.
+**Auto Cage Extrusion** stima una distanza iniziale del cage confrontando la versione high-poly con la versione low-poly. In questo modo aiuta il cage a ricoprire i dettagli importanti da catturare durante il bake, rendendo il bake più pulito e più facile da configurare.
 
 ### Texture Baking
 

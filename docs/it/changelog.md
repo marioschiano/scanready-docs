@@ -29,7 +29,7 @@ Usa questa pagina come sorgente pubblica delle release notes per Superhive, Blen
 - Link documentazione e release notes nelle preferenze addon.
 - Messaggio di notifica aggiornamento per marketplace e Blender Extensions.
 - Guida FAQ per rifinire un risultato One Click Bake quando il modello finale è ancora troppo pesante.
-- Guida workflow attraverso Step 1, Step 2, Step 3, Quick Start, One Click e FAQ che spiega che gli utenti possono tornare allo Step 1, regolare la riduzione, ricreare la preview lowpoly, poi rigenerare UV e bake.
+- Guida workflow attraverso Step 1, Step 2, Step 3, Quick Start, One Click e FAQ che spiega che gli utenti possono tornare allo Step 1, regolare la riduzione, ricreare la preview low-poly, poi rigenerare UV e bake.
 
 ### Modificato
 

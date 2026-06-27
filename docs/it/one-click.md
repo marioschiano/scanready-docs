@@ -24,9 +24,9 @@
 
 Invece di ridurre manualmente la mesh, generare UV, preparare il cage e configurare il bake, ScanReady esegue automaticamente il processo principale.
 
-Di default ScanReady parte da un valore **Optimize / Reduce** di **0.10**. Questo significa che la preview lowpoly mantiene circa il **10% dei poligoni originali**, producendo circa **90% di poligoni in meno**.
+Di default ScanReady parte da un valore **Optimize / Reduce** di **0.10**. Questo significa che la preview low-poly mantiene circa il **10% dei poligoni originali**, producendo circa **90% di poligoni in meno**.
 
-Questo valore funziona bene per molti asset VR, game e realtime. Se il risultato deve avere più o meno dettaglio, regola manualmente il valore in **Step 1 - Preview / Reduce** dopo aver creato la preview lowpoly.
+Questo valore funziona bene per molti asset VR, game e realtime. Se il risultato deve avere più o meno dettaglio, regola manualmente il valore in **Step 1 - Preview / Reduce** dopo aver creato la preview low-poly.
 
 One Click Bake è automatico, ma il risultato può comunque essere rifinito dopo.
 
@@ -43,7 +43,7 @@ Il workflow è flessibile: anche se sei già in **Step 2 - UV / Cage** o **Step 
 Quando clicchi **ONE CLICK BAKE**, ScanReady esegue il workflow completo da scansione ad asset:
 
 1. Pulisce la scansione selezionata rimuovendo rumore comune della mesh, come poligoni staccati, frammenti sospesi e vertici isolati.
-2. Crea una preview lowpoly dalla scansione high-poly pulita.
+2. Crea una preview low-poly dalla scansione high-poly pulita.
 3. Esegue la pulizia pre-decimate merge sulla mesh preview duplicata quando serve.
 4. Riduce la geometria per rendere il modello più leggero.
 5. Genera UV per l'oggetto ottimizzato.
@@ -91,7 +91,7 @@ Rimuove le imperfezioni della scansione prima della riduzione, inclusi poligoni 
 
 ### Preview
 
-Pulisce la scansione selezionata e crea la preview lowpoly ottimizzata.
+Pulisce la scansione selezionata e crea la preview low-poly ottimizzata.
 
 ### UV Mapping
 

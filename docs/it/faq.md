@@ -27,7 +27,7 @@ Prova:
 
 - aumentare **Texture Size**;
 - aumentare **Bake Samples**;
-- aumentare leggermente la densità lowpoly;
+- aumentare leggermente la densità low-poly;
 - abilitare **Show Cage** e controllare la preview cage prima del bake;
 - aumentare leggermente **Cage Extrusion** oppure usare **Auto Cage Extrusion**.
 
@@ -52,7 +52,7 @@ Per migliorare le performance:
 - riduci i materiali bake quando possibile;
 - usa meno bake samples per test di preview.
 
-## Perché la mesh lowpoly sembra troppo liscia?
+## Perché la mesh low-poly sembra troppo liscia?
 
 Se la mesh ottimizzata perde troppo dettaglio della forma:
 

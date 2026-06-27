@@ -27,7 +27,7 @@ Try:
 
 - Increasing **Texture Size**
 - Increasing **Bake Samples**
-- Increasing lowpoly density slightly
+- Increasing low-poly density slightly
 - Adjusting **Cage Extrusion**
 - Checking the cage preview before baking
 
@@ -52,7 +52,7 @@ To improve performance:
 - Reduce bake materials when possible
 - Use lower bake samples for preview tests
 
-## Why does the lowpoly mesh look too smooth?
+## Why does the low-poly mesh look too smooth?
 
 If the optimized mesh loses too much shape detail:
 

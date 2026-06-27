@@ -33,7 +33,7 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 
 | Impostazione | Descrizione | Quando regolarla |
 |---|---|---|
-| **Final Faces** | Numero target di facce per la mesh lowpoly ottimizzata. | Abbassalo per asset VR/game più leggeri. Alzalo per preservare più dettaglio nella silhouette. |
+| **Final Faces** | Numero target di facce per la mesh low-poly ottimizzata. | Abbassalo per asset VR/game più leggeri. Alzalo per preservare più dettaglio nella silhouette. |
 | **Optimize / Reduce** | Controlla quanto la mesh viene ridotta. | Valori più bassi creano una riduzione più forte. Valori più alti mantengono più geometria. |
 | **Pre-Decimate Merge** | Esegue Merge by Distance sulla mesh preview duplicata prima di Decimate. È il singolo controllo esplicito di weld in ScanReady. | Aumentalo per ridurre poligoni sovrapposti prima dell'ottimizzazione. Abbassalo se vengono colpiti dettagli sottili. |
 | **Auto Clear Sharp Edges** | Rimuove marcature sharp edge non desiderate durante la preparazione. | Tienilo attivo quando la scansione mostra bordi o shading marcati in modo errato. |
@@ -43,7 +43,7 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 | **Show Face Orientation** | Mostra l'overlay Face Orientation di Blender. | Usalo per controllare normali invertite prima di preview, UV o bake. |
 | **Adaptive Reduce** | Usa pesi basati sulla scansione per ridurre di più le superfici piatte e proteggere dettagli importanti. | Tienilo attivo per la maggior parte delle scansioni. Disattivalo solo se vuoi un risultato di riduzione uniforme più semplice. |
 | **Adaptive Reduce Preset** | Sceglie il comportamento della riduzione adattiva. | Usa Balanced per la maggior parte delle scansioni, Preserve Details per superfici complesse, Flat Surfaces per superfici semplici ampie, Hard Surface per veicoli e scansioni hard-surface. |
-| **Show Adaptive Weights** | Mostra i pesi di riduzione adattiva come colori sul modello. | Usalo per vedere quali aree verranno ridotte di più prima di creare la preview lowpoly finale. |
+| **Show Adaptive Weights** | Mostra i pesi di riduzione adattiva come colori sul modello. | Usalo per vedere quali aree verranno ridotte di più prima di creare la preview low-poly finale. |
 | **Adaptive Reduce Strength** | Regola quanto fortemente Adaptive Reduce favorisce la riduzione delle aree piatte. | Alzalo per semplificare di più le superfici regolari, abbassalo se vuoi un comportamento più uniforme. |
 | **Adaptive Reduce Angle** | Controlla la sensibilità ai cambi di normale durante il calcolo dei pesi. | Usalo per decidere quanto un cambio di direzione deve essere considerato dettaglio. |
 | **Detail Preserve** | Protegge maggiormente le zone lette come dettaglio. | Alzalo se la preview perde pieghe, bordi o dettagli importanti. |
@@ -55,7 +55,7 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 | **Auto Fix Normals** | Ricalcola le normali della mesh high prima della creazione della preview. | Attivalo quando la scansione ha normali invertite o artefatti di shading. |
 | **Recalculate Outside Normals** | Ricalcola manualmente le normali verso l'esterno. | Usalo quando la mesh appare rovesciata o ha shading rotto. |
 
-I pesi Adaptive Reduce vengono calcolati quando premi **Create Lowpoly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma cambiare preset o valori dettagliati di Adaptive Reduce richiede di creare di nuovo la preview lowpoly per ricostruire i pesi.
+I pesi Adaptive Reduce vengono calcolati quando premi **Create Lowpoly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma cambiare preset o valori dettagliati di Adaptive Reduce richiede di creare di nuovo la preview low-poly per ricostruire i pesi.
 
 Se sei già nello Step 2 o nello Step 3 e ti serve un modello più leggero o più dettagliato, torna allo Step 1, regola **Final Faces** o **Optimize / Reduce**, clicca **Create Lowpoly Preview**, poi rigenera UV e bake.
 

@@ -5,14 +5,14 @@
 </p>
 
 <p align="center">
-<b>High-poly scan → optimized lowpoly mesh → baked realtime-ready asset.</b>
+<b>High-poly scan → optimized low-poly mesh → baked realtime-ready asset.</b>
 </p>
 
 ---
 
 Step 3 transfers texture detail from the original high-poly scan onto the optimized mesh.
 
-This is the final stage of the ScanReady workflow, transforming the lowpoly object into a lighter realtime-ready asset for:
+This is the final stage of the ScanReady workflow, transforming the low-poly object into a lighter realtime-ready asset for:
 
 - VR
 - Videogames
@@ -183,7 +183,7 @@ The **Normal Strength** material control is available in **Advanced > Bake Setti
 
 Bakes or transfers roughness information from the high-poly material.
 
-Use this when the original material already contains roughness information that should be preserved on the final lowpoly asset.
+Use this when the original material already contains roughness information that should be preserved on the final low-poly asset.
 
 Roughness textures are also handled as **Non-Color** technical data.
 
@@ -210,7 +210,7 @@ The **AO Mix** material control is available in **Advanced > Occlusion Settings*
 
 Controls how Ambient Occlusion is generated.
 
-You can bake AO from the high-poly source or calculate it directly from the lowpoly mesh.
+You can bake AO from the high-poly source or calculate it directly from the low-poly mesh.
 
 ---
 

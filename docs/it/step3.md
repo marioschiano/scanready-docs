@@ -5,14 +5,14 @@
 </p>
 
 <p align="center">
-<b>Scansione high-poly -> mesh lowpoly ottimizzata -> asset baked pronto per il realtime.</b>
+<b>Scansione high-poly -> mesh low-poly ottimizzata -> asset baked pronto per il realtime.</b>
 </p>
 
 ---
 
 Step 3 trasferisce il dettaglio texture dalla scansione high-poly originale alla mesh ottimizzata.
 
-È la fase finale del workflow ScanReady, che trasforma l'oggetto lowpoly in un asset più leggero e pronto per il realtime per:
+È la fase finale del workflow ScanReady, che trasforma l'oggetto low-poly in un asset più leggero e pronto per il realtime per:
 
 - VR
 - videogame
@@ -183,7 +183,7 @@ Il controllo materiale **Normal Strength** è disponibile in **Advanced > Bake S
 
 Cuoce o trasferisce le informazioni roughness dal materiale high-poly.
 
-Usalo quando il materiale originale contiene già informazioni roughness che devono essere preservate sull'asset lowpoly finale.
+Usalo quando il materiale originale contiene già informazioni roughness che devono essere preservate sull'asset low-poly finale.
 
 Anche le texture roughness vengono gestite come dati tecnici **Non-Color**.
 
@@ -210,7 +210,7 @@ Il controllo materiale **AO Mix** è disponibile in **Advanced > Occlusion Setti
 
 Controlla come viene generata Ambient Occlusion.
 
-Puoi cuocere AO dalla sorgente high-poly o calcolarla direttamente dalla mesh lowpoly.
+Puoi cuocere AO dalla sorgente high-poly o calcolarla direttamente dalla mesh low-poly.
 
 ---
 

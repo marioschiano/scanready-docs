@@ -30,7 +30,7 @@ ScanReady 1.0 uses **Adaptive Reduce** to analyze the surface before reduction.
 
 It gives broader flat areas more reduction while protecting strong normal changes, feature edges, silhouettes, and visually important regions.
 
-The result is a cleaner lowpoly asset that keeps more geometry where it matters and spends fewer polygons where the scan can be simplified safely.
+The result is a cleaner low-poly asset that keeps more geometry where it matters and spends fewer polygons where the scan can be simplified safely.
 
 <!-- Replace placeholder with img/home-blender-decimate-vs-scanready.jpg -->
 <p align="center">
@@ -92,7 +92,7 @@ The fastest way to use ScanReady 1.0 is the **ONE CLICK BAKE** workflow.
 ScanReady 1.0 can automatically perform:
 
 - Mesh optimization
-- Adaptive lowpoly generation
+- Adaptive low-poly generation
 - UV generation
 - Automatic cage setup
 - Texture baking
@@ -151,7 +151,7 @@ ScanReady 1.0 follows a simple 3-step workflow.
 
 ### 1. Preview / Reduce
 
-Create an optimized lowpoly preview from your high-poly scan.
+Create an optimized low-poly preview from your high-poly scan.
 
 This step reduces the model while preserving important visual details for realtime applications.
 
@@ -191,7 +191,7 @@ ScanReady 1.0 is ideal for:
 
 After the workflow, ScanReady 1.0 can generate:
 
-- Optimized lowpoly mesh
+- Optimized low-poly mesh
 - UV-ready object
 - Baking cage
 - Final baked mesh

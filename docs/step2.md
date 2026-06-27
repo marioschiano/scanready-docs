@@ -12,7 +12,7 @@
 
 Step 2 genera un nuovo layout UV e prepara il cage per il bake.
 
-Dopo che la scansione è stata semplificata nello Step 1, la mesh ottimizzata ha bisogno di UV pulite per ricevere correttamente le texture sulla nuova superficie lowpoly.
+Dopo che la scansione è stata semplificata nello Step 1, la mesh ottimizzata ha bisogno di UV pulite per ricevere correttamente le texture sulla nuova superficie low-poly.
 
 Questo step prepara l'asset al trasferimento delle texture, permettendo alla mesh ottimizzata di mantenere gran parte della ricchezza visiva della scansione high-poly originale, restando abbastanza leggera per **VR, videogame, AR, visualizzazione realtime e ambienti interattivi**.
 
@@ -32,7 +32,7 @@ Poiché la geometria è stata unita e semplificata, il layout UV originale può 
 - distorto;
 - sovrapposto;
 - sporco;
-- non allineato alla nuova superficie lowpoly.
+- non allineato alla nuova superficie low-poly.
 
 Senza UV nuove, ScanReady non può trasferire correttamente le informazioni texture dalla scansione originale alla mesh ottimizzata.
 
@@ -242,7 +242,7 @@ Influenza solo la visualizzazione nel viewport e non cambia il risultato del bak
 
 ## Azione
 
-Clicca **Generate UVs** dopo aver creato la preview lowpoly.
+Clicca **Generate UVs** dopo aver creato la preview low-poly.
 
 Se cambi **Smart UV Preset**, **Smart UV Angle** o **UV Padding** dopo aver già generato le UV, clicca di nuovo **Generate UVs** per applicare le nuove impostazioni UV. **Bake Textures** usa il layout UV esistente al momento del bake.
 

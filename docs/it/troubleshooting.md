@@ -43,9 +43,9 @@ Se la preview ottimizzata è ancora troppo densa:
 - abbassa **Optimize / Reduce**;
 - abbassa **Final Faces**;
 - aumenta la pulizia solo con cautela;
-- crea di nuovo la preview lowpoly.
+- crea di nuovo la preview low-poly.
 
-**Optimize / Reduce** e **Final Faces** sono collegati: entrambi controllano quanto sara leggera la preview lowpoly.
+**Optimize / Reduce** e **Final Faces** sono collegati: entrambi controllano quanto sara leggera la preview low-poly.
 
 Per asset VR e videogame, la mesh deve restare abbastanza leggera da essere gestita bene nel viewport, esportata senza problemi e usata in realtime.
 
@@ -60,7 +60,7 @@ Se la preview ottimizzata sembra troppo semplificata:
 - evita riduzioni troppo aggressive su oggetti molto sottili o delicati;
 - crea di nuovo la preview.
 
-**Optimize / Reduce** e **Final Faces** sono collegati: entrambi controllano quanto dettaglio geometrico viene mantenuto nella preview lowpoly.
+**Optimize / Reduce** e **Final Faces** sono collegati: entrambi controllano quanto dettaglio geometrico viene mantenuto nella preview low-poly.
 
 Per silhouette importanti, mantieni abbastanza geometria per preservare la forma.
 
@@ -232,7 +232,7 @@ Influenza l'aspetto del materiale, non l'immagine normal bake.
 
 Se il materiale high-poly originale ha una normal texture collegata, ScanReady trasferisce quella normal map sul nuovo layout UV.
 
-Se non è collegata nessuna normal texture, ScanReady genera una normal map nuova proiettando il dettaglio della geometria high-poly sulla mesh lowpoly.
+Se non è collegata nessuna normal texture, ScanReady genera una normal map nuova proiettando il dettaglio della geometria high-poly sulla mesh low-poly.
 
 ---
 
@@ -265,7 +265,7 @@ Se la texture bake contiene aree nere, dettagli mancanti o proiezioni errate, di
 
 In questo caso alcune parti della scansione high-poly non vengono raggiunte correttamente durante il bake.
 
-Aree nere possono comparire anche quando parti della mesh lowpoly ottimizzata si trovano davanti o dietro la sorgente high-poly, quindi i raggi di bake non colpiscono la superficie prevista.
+Aree nere possono comparire anche quando parti della mesh low-poly ottimizzata si trovano davanti o dietro la sorgente high-poly, quindi i raggi di bake non colpiscono la superficie prevista.
 
 Per correggere:
 
@@ -316,7 +316,7 @@ Questo è utile quando hai cambiato diversi valori in Advanced, come impostazion
 Dopo il reset:
 
 1. Riparti da **Balanced** come preset Adaptive Reduce.
-2. Crea di nuovo la preview lowpoly.
+2. Crea di nuovo la preview low-poly.
 3. Genera di nuovo le UV.
 4. Controlla il cage.
 5. Esegui prima un bake semplice, ad esempio solo Base Color.
@@ -329,7 +329,7 @@ Quando il workflow base funziona, riattiva gli altri controlli uno alla volta.
 
 Se il risultato non è buono, usa questo ordine:
 
-1. Controlla la preview lowpoly
+1. Controlla la preview low-poly
 2. Controlla le UV con la vista checker
 3. Controlla la preview cage
 4. Cuoci prima solo Base Color

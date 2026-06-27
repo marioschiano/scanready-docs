@@ -13,7 +13,7 @@ For most scans, start with the default values. Adjust advanced settings only whe
 
 # Mesh Settings
 
-These settings control scan cleanup and mesh preparation before generating the lowpoly preview.
+These settings control scan cleanup and mesh preparation before generating the low-poly preview.
 
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
@@ -26,7 +26,7 @@ Runs a Merge by Distance cleanup on the duplicated preview mesh before the Decim
 </p>
 
 <p>
-This is the single explicit weld control in ScanReady 1.0. It can help reduce overlapping scan polygons before optimization. If thin details are affected, lower the value and create the lowpoly preview again.
+This is the single explicit weld control in ScanReady 1.0. It can help reduce overlapping scan polygons before optimization. If thin details are affected, lower the value and create the low-poly preview again.
 </p>
 
 <hr>
@@ -34,7 +34,7 @@ This is the single explicit weld control in ScanReady 1.0. It can help reduce ov
 <h3>Auto Fix Normals</h3>
 
 <p>
-Automatically recalculates high-poly mesh normals before creating the lowpoly preview.
+Automatically recalculates high-poly mesh normals before creating the low-poly preview.
 </p>
 
 <p>
@@ -82,7 +82,7 @@ Adaptive Reduce controls how ScanReady distributes reduction across the selected
 
 It is enabled by default and is designed to protect visually important detail while allowing flatter surfaces to be simplified more strongly.
 
-Adaptive Reduce weights are calculated when you click **Create Lowpoly Preview**. Changing **Optimize / Reduce** or **Final Faces** after that updates the reduction amount, but it does not recalculate the adaptive weights. To apply a different Adaptive Reduce preset or detailed adaptive values, create the lowpoly preview again.
+Adaptive Reduce weights are calculated when you click **Create Lowpoly Preview**. Changing **Optimize / Reduce** or **Final Faces** after that updates the reduction amount, but it does not recalculate the adaptive weights. To apply a different Adaptive Reduce preset or detailed adaptive values, create the low-poly preview again.
 
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
@@ -283,7 +283,7 @@ These options appear when **Bake Occlusion** is enabled.
 <h3>AO Source</h3>
 
 <p>
-Controls whether Ambient Occlusion is baked from the high-poly source to the lowpoly target, or calculated from the lowpoly mesh only.
+Controls whether Ambient Occlusion is baked from the high-poly source to the low-poly target, or calculated from the low-poly mesh only.
 </p>
 
 <hr>

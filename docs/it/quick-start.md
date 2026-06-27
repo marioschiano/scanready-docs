@@ -40,7 +40,7 @@ Questa pagina mostra il modo più veloce per usare ScanReady.
 Quando usi **ONE CLICK BAKE**, ScanReady esegue il workflow principale:
 
 1. Pulisce la scansione selezionata.
-2. Crea una preview lowpoly ottimizzata.
+2. Crea una preview low-poly ottimizzata.
 3. Genera le UV.
 4. Prepara il cage.
 5. Esegue il bake delle texture selezionate.

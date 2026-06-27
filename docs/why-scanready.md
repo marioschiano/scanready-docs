@@ -10,7 +10,7 @@ ScanReady helps you turn those scans into optimized baked assets directly inside
 
 - Heavy polygon counts.
 - Unoptimized scan topology.
-- Missing UV-ready lowpoly.
+- Missing UV-ready low-poly.
 - Manual cage setup.
 - Repetitive bake preparation.
 - Slow scan-to-realtime workflow.
@@ -27,7 +27,7 @@ This can unnecessarily preserve dense geometry in flat areas while damaging impo
 
 ScanReady 1.0 uses adaptive optimization to analyze the surface and preserve visually important details while simplifying flatter or less detailed areas more aggressively.
 
-The result is a cleaner and more efficient lowpoly asset that keeps much more of the original scan quality where it matters most.
+The result is a cleaner and more efficient low-poly asset that keeps much more of the original scan quality where it matters most.
 
 ---
 

@@ -15,7 +15,7 @@ ScanReady ti aiuta a trasformare quelle scansioni in asset ottimizzati e baked d
 - Troppi materiali separati.
 - UV non ottimizzate, spesso con molto spazio vuoto.
 - Topologia della scansione non ottimizzata.
-- Mancanza di una lowpoly pronta per UV.
+- Mancanza di una low-poly pronta per UV.
 - Setup manuale del cage, che richiede competenze per trasferire correttamente le texture.
 - Preparazione bake ripetitiva e facile da configurare male.
 - Workflow lento da scansione ad asset realtime.
@@ -36,7 +36,7 @@ Questo può preservare inutilmente geometria densa nelle aree piatte mentre dann
 
 ScanReady usa ottimizzazione adattiva per analizzare la superficie e preservare dettagli visivamente importanti, semplificando in modo più aggressivo le aree piatte o meno dettagliate.
 
-Il risultato è un asset lowpoly più pulito ed efficiente, che mantiene molta più qualità della scansione originale dove conta davvero.
+Il risultato è un asset low-poly più pulito ed efficiente, che mantiene molta più qualità della scansione originale dove conta davvero.
 
 ---
 

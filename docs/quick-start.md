@@ -45,7 +45,7 @@ ScanReady 1.0 is designed to simplify dense 3D scans and make them easier to use
 ScanReady 1.0 performs the main production steps for you:
 
 - Cleans common scan noise such as loose fragments and isolated vertices.
-- Creates a lighter lowpoly version of the selected scan.
+- Creates a lighter low-poly version of the selected scan.
 - Reduces geometry to make the asset easier to manage.
 - Generates UVs for the optimized mesh.
 - Builds or estimates the baking cage.

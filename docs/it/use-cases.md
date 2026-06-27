@@ -35,7 +35,7 @@ Una scansione grezza con milioni di poligoni raramente è adatta all'uso diretto
 
 ScanReady aiuta a preparare asset game-ready:
 
-- creando una versione lowpoly ottimizzata;
+- creando una versione low-poly ottimizzata;
 - generando UV;
 - preparando un bake cage;
 - cuocendo le informazioni texture dalla scansione high-poly;

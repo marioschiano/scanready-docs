@@ -5,11 +5,11 @@ Crea una preview ottimizzata e leggera dalla scansione high-poly.
 Il tempo di elaborazione dipende dalla densità della scansione e dalla potenza del computer: una scansione con milioni di poligoni può richiedere anche circa un minuto o più su un PC di media potenza.
 
 <div style="width:100%; text-align:left;">
-  <img src="../../img/step1-reduce.gif" alt="Controllo Optimize Reduce di ScanReady che aggiorna la densità della preview lowpoly" style="max-width:820px;width:100%;">
+  <img src="../../img/step1-reduce.gif" alt="Controllo Optimize Reduce di ScanReady che aggiorna la densità della preview low-poly" style="max-width:820px;width:100%;">
 </div>
 
 <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
-Optimize / Reduce controlla quanta geometria viene mantenuta nella preview lowpoly. Il valore predefinito 0.10 crea una preview con circa 90% di poligoni in meno.
+Optimize / Reduce controlla quanta geometria viene mantenuta nella preview low-poly. Il valore predefinito 0.10 crea una preview con circa 90% di poligoni in meno.
 </p>
 
 ---
@@ -20,7 +20,7 @@ L'ottimizzazione non viene applicata in modo uniforme su tutto il modello.
 
 ScanReady preserva il dettaglio importante della superficie mentre semplifica in modo più aggressivo le regioni piatte o meno dettagliate.
 
-Questo aiuta a creare asset lowpoly più puliti ed efficienti per workflow realtime.
+Questo aiuta a creare asset low-poly più puliti ed efficienti per workflow realtime.
 
 ### Adaptive Reduce
 
@@ -92,7 +92,7 @@ Aiuta anche a rimuovere piccoli artefatti mesh generati da fotogrammetria o acqu
 
 ---
 
-Step 1 crea una preview lowpoly ottimizzata dalla scansione high-poly selezionata.
+Step 1 crea una preview low-poly ottimizzata dalla scansione high-poly selezionata.
 
 Questo è il primo passaggio importante quando prepari un oggetto scansionato per **VR, AR, videogame, visualizzazione realtime o scene interattive**.
 
@@ -111,7 +111,7 @@ Il valore predefinito e <strong>0.10</strong>.
 </p>
 
 <p>
-Mantiene circa <strong>10% dei poligoni originali</strong>, creando una preview lowpoly più leggera con circa <strong>90% di poligoni in meno</strong>.
+Mantiene circa <strong>10% dei poligoni originali</strong>, creando una preview low-poly più leggera con circa <strong>90% di poligoni in meno</strong>.
 </p>
 
 <p>
@@ -129,7 +129,7 @@ Gli aggiornamenti realtime dipendono dalla complessità della scansione e dalle 
 </div>
 
 <div style="flex:0 0 360px; text-align:center;">
-  <img src="../../img/step1-slider_reduce.gif" alt="Slider Optimize Reduce di ScanReady che aggiorna il valore della preview lowpoly" style="width:360px; max-width:100%;">
+  <img src="../../img/step1-slider_reduce.gif" alt="Slider Optimize Reduce di ScanReady che aggiorna il valore della preview low-poly" style="width:360px; max-width:100%;">
 </div>
 
 </div>
@@ -145,7 +145,7 @@ Gli aggiornamenti realtime dipendono dalla complessità della scansione e dalle 
 <h3>Final Faces</h3>
 
 <p>
-Imposta il numero target di facce per la mesh lowpoly ottimizzata.
+Imposta il numero target di facce per la mesh low-poly ottimizzata.
 </p>
 
 <p>
@@ -288,7 +288,7 @@ Prima che venga aggiunto il modificatore Decimate, ScanReady può eseguire anche
 Questo aiuta a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione.
 
 <div style="width:100%; text-align:left;">
-  <img src="../../img/step1-cleaner.gif" alt="Pulizia mesh di ScanReady prima della preview lowpoly" style="max-width:820px;width:100%;">
+  <img src="../../img/step1-cleaner.gif" alt="Pulizia mesh di ScanReady prima della preview low-poly" style="max-width:820px;width:100%;">
 </div>
 
 Quando la preview è corretta, continua con:

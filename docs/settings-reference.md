@@ -10,16 +10,16 @@ Use it as a quick reference when tuning scans for VR, videogames, realtime visua
 
 | Setting | Description | When to Adjust |
 |---|---|---|
-| **Final Faces** | Target face count for the optimized lowpoly mesh. | Lower it for lighter VR/game assets. Raise it to preserve silhouette detail. |
+| **Final Faces** | Target face count for the optimized low-poly mesh. | Lower it for lighter VR/game assets. Raise it to preserve silhouette detail. |
 | **Optimize / Reduce** | Controls how strongly the mesh is reduced. | Lower values create stronger reduction. Higher values keep more geometry. |
 | **Pre-Decimate Merge** | Runs Merge by Distance on the duplicated preview mesh before Decimate. This is the single explicit weld control in ScanReady 1.0. | Increase it to reduce overlapping scan polygons before optimization. Lower it if thin details are affected. |
 | **Adaptive Reduce** | Uses scan-aware weighting to reduce flatter surfaces more while protecting important details. | Keep enabled for most scans. Disable only if you need a simpler uniform reduction result. |
 | **Adaptive Reduce Preset** | Chooses the adaptive reduction behavior. | Use Balanced for most scans, Preserve Details for complex surfaces, Flat Surfaces for broad simple surfaces, or Hard Surface for vehicles and hard-surface scans. |
-| **Show Adaptive Weights** | Displays the adaptive reduction weights as colors on the model. | Use it to preview which areas will be reduced more before creating the final lowpoly preview. |
+| **Show Adaptive Weights** | Displays the adaptive reduction weights as colors on the model. | Use it to preview which areas will be reduced more before creating the final low-poly preview. |
 | **Auto Fix Normals** | Recalculates high mesh normals before preview creation. | Enable it when the scan has inverted normals or shading artifacts. |
 | **Recalculate Outside Normals** | Manually recalculates normals outside. | Use it when the mesh appears inside-out or has broken shading. |
 
-Adaptive Reduce weights are calculated when **Create Lowpoly Preview** is pressed. Changing **Optimize / Reduce** or **Final Faces** after that updates the reduction amount, but changing Adaptive Reduce preset/detail settings requires creating the lowpoly preview again to rebuild the weights.
+Adaptive Reduce weights are calculated when **Create Lowpoly Preview** is pressed. Changing **Optimize / Reduce** or **Final Faces** after that updates the reduction amount, but changing Adaptive Reduce preset/detail settings requires creating the low-poly preview again to rebuild the weights.
 
 If you are already in Step 2 or Step 3 and need a lighter or more detailed model, return to Step 1, adjust **Final Faces** or **Optimize / Reduce**, click **Create Lowpoly Preview**, then regenerate UVs and bake again.
 

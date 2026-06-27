@@ -35,7 +35,7 @@ A raw scan with millions of polygons is rarely suitable for direct use in a vide
 
 ScanReady 1.0 helps prepare game-ready assets by:
 
-- Creating an optimized lowpoly version.
+- Creating an optimized low-poly version.
 - Generating UVs.
 - Preparing a bake cage.
 - Baking texture information from the high-poly scan.

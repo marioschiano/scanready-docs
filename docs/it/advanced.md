@@ -13,7 +13,7 @@ Per la maggior parte delle scansioni, parti dai valori predefiniti. Regola le im
 
 # Mesh Settings
 
-Queste impostazioni controllano pulizia scansione e preparazione mesh prima di generare la preview lowpoly.
+Queste impostazioni controllano pulizia scansione e preparazione mesh prima di generare la preview low-poly.
 
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
@@ -26,7 +26,7 @@ Esegue una pulizia Merge by Distance sulla mesh preview duplicata prima che veng
 </p>
 
 <p>
-È il singolo controllo esplicito di weld in ScanReady. Può aiutare a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione. Se dopo l'ottimizzazione compaiono buchi nel modello o vengono colpiti dettagli sottili, abbassa il valore e crea di nuovo la preview lowpoly.
+È il singolo controllo esplicito di weld in ScanReady. Può aiutare a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione. Se dopo l'ottimizzazione compaiono buchi nel modello o vengono colpiti dettagli sottili, abbassa il valore e crea di nuovo la preview low-poly.
 </p>
 
 <hr>
@@ -34,7 +34,7 @@ Esegue una pulizia Merge by Distance sulla mesh preview duplicata prima che veng
 <h3>Auto Fix Normals</h3>
 
 <p>
-Ricalcola automaticamente le normali della mesh high-poly prima di creare la preview lowpoly.
+Ricalcola automaticamente le normali della mesh high-poly prima di creare la preview low-poly.
 </p>
 
 <p>
@@ -98,7 +98,7 @@ Mostra l'overlay Face Orientation di Blender per controllare rapidamente la dire
 </p>
 
 <p>
-È utile per individuare normali invertite prima di creare la preview lowpoly o prima del bake.
+È utile per individuare normali invertite prima di creare la preview low-poly o prima del bake.
 </p>
 
 <div style="flex:0 0 340px; text-align:center;">
@@ -147,7 +147,7 @@ Adaptive Reduce controlla come ScanReady distribuisce la riduzione sulla scansio
 
 È attivo di default ed è progettato per proteggere il dettaglio visivamente importante, permettendo alle superfici piatte di essere semplificate di più.
 
-I pesi Adaptive Reduce vengono calcolati quando clicchi **Create Lowpoly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma non ricalcola i pesi adattivi. Per applicare un preset Adaptive Reduce diverso o valori adattivi dettagliati, crea di nuovo la preview lowpoly.
+I pesi Adaptive Reduce vengono calcolati quando clicchi **Create Lowpoly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma non ricalcola i pesi adattivi. Per applicare un preset Adaptive Reduce diverso o valori adattivi dettagliati, crea di nuovo la preview low-poly.
 
 <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
 
@@ -465,7 +465,7 @@ Queste opzioni appaiono quando **Bake Occlusion** è abilitato.
 <h3>AO Source</h3>
 
 <p>
-Controlla se Ambient Occlusion viene cotta dalla sorgente high-poly al target lowpoly, oppure calcolata solo dalla mesh lowpoly.
+Controlla se Ambient Occlusion viene cotta dalla sorgente high-poly al target low-poly, oppure calcolata solo dalla mesh low-poly.
 </p>
 
 <hr>

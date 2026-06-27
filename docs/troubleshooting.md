@@ -43,7 +43,7 @@ If the optimized preview is still too dense:
 - Lower **Final Faces**
 - Lower **Optimize / Reduce**
 - Increase cleanup only carefully
-- Create the lowpoly preview again
+- Create the low-poly preview again
 
 For VR and videogame assets, the mesh should remain light enough to orbit, inspect, and export comfortably.
 
@@ -261,7 +261,7 @@ If the baked texture contains black areas, missing details, or incorrect project
 
 In this case, some parts of the high-poly scan are not being reached correctly during baking.
 
-Black areas can also happen when parts of the optimized lowpoly mesh sit in front of or behind the high-poly source, so the bake rays do not hit the expected surface.
+Black areas can also happen when parts of the optimized low-poly mesh sit in front of or behind the high-poly source, so the bake rays do not hit the expected surface.
 
 To fix this:
 
@@ -307,7 +307,7 @@ For vehicles or hard-surface scans, try **Hard Surface** and check the silhouett
 
 If the result is not good, use this order:
 
-1. Check the lowpoly preview
+1. Check the low-poly preview
 2. Check UVs with the checker view
 3. Check the cage preview
 4. Bake only Base Color first

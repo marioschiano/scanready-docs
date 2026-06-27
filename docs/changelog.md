@@ -29,7 +29,7 @@ Use this page as the public release notes source for Superhive, Blender Extensio
 - Documentation and release notes links inside addon preferences.
 - Marketplace and Blender Extensions update notification message.
 - FAQ guidance for refining a One Click Bake result when the final model is still too heavy.
-- Workflow guidance across Step 1, Step 2, Step 3, Quick Start, One Click, and FAQ explaining that users can return to Step 1, adjust reduction, recreate the lowpoly preview, then regenerate UVs and bake again.
+- Workflow guidance across Step 1, Step 2, Step 3, Quick Start, One Click, and FAQ explaining that users can return to Step 1, adjust reduction, recreate the low-poly preview, then regenerate UVs and bake again.
 
 ### Changed
 
