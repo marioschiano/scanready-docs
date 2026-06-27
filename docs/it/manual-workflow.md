@@ -8,23 +8,23 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 
 ## Step 1 - Crea la preview low-poly
 
-<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin:22px 0 30px;">
+<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin:22px 0 30px;">
 
-<div style="flex:1 1 360px; min-width:260px;">
+<div style="flex:1 1 0; min-width:280px;">
+  <ol>
+    <li>Seleziona la scansione high-poly nel viewport di Blender.</li>
+    <li>Apri <strong>STEP 1 Preview / Reduce</strong>.</li>
+    <li>Regola <strong>Optimize / Reduce</strong> o <strong>Final Faces</strong> se vuoi una mesh più leggera o più dettagliata.</li>
+    <li>Clicca <strong>Create Low-poly Preview</strong>.</li>
+  </ol>
 
-1. Seleziona la scansione high-poly nel viewport di Blender.
-2. Apri **STEP 1 Preview / Reduce**.
-3. Regola **Optimize / Reduce** o **Final Faces** se vuoi una mesh più leggera o più dettagliata.
-4. Clicca **Create Low-poly Preview**.
+  <p>ScanReady pulisce la scansione, crea una copia ottimizzata e genera una preview low-poly non distruttiva. La scansione high-poly originale resta intatta e viene usata come sorgente per UV, cage e bake.</p>
 
-ScanReady pulisce la scansione, crea una copia ottimizzata e genera una preview low-poly non distruttiva. La scansione high-poly originale resta intatta e viene usata come sorgente per UV, cage e bake.
-
-Quando la preview ti sembra corretta, passa a **Step 2 - UV / Cage**.
-
+  <p>Quando la preview ti sembra corretta, passa a <strong>Step 2 - UV / Cage</strong>.</p>
 </div>
 
-<div style="flex:0 1 300px; min-width:240px;">
-  <img src="../../img/step1-preview-reduce.png" alt="Pannello STEP 1 Preview Reduce con pulsante Create Low-poly Preview" style="width:100%; max-width:300px;">
+<div style="flex:0 0 260px; max-width:260px;">
+  <img src="../../img/step1-preview-reduce.png" alt="Pannello STEP 1 Preview Reduce con pulsante Create Low-poly Preview" style="width:100%;">
 </div>
 
 </div>
@@ -33,29 +33,31 @@ Quando la preview ti sembra corretta, passa a **Step 2 - UV / Cage**.
 
 ## Step 2 - Genera UV e controlla il cage
 
-<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin:22px 0 30px;">
+<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin:22px 0 30px;">
 
-<div style="flex:1 1 360px; min-width:260px;">
+<div style="flex:1 1 0; min-width:280px;">
+  <ol>
+    <li>Parti dalla preview low-poly creata nello Step 1.</li>
+    <li>Apri <strong>STEP 2 UV / Cage</strong>.</li>
+    <li>Clicca <strong>Generate UVs</strong>.</li>
+  </ol>
 
-1. Parti dalla preview low-poly creata nello Step 1.
-2. Apri **STEP 2 UV / Cage**.
-3. Clicca **Generate UVs**.
+  <p>ScanReady crea un nuovo layout UV sulla mesh ottimizzata. Questo prepara l'asset per ricevere le texture bake sulla nuova superficie low-poly.</p>
 
-ScanReady crea un nuovo layout UV sulla mesh ottimizzata. Questo prepara l'asset per ricevere le texture bake sulla nuova superficie low-poly.
+  <p>Dopo le UV, controlla il cage:</p>
 
-Dopo le UV, controlla il cage:
+  <ul>
+    <li>abilita <strong>Show Cage</strong>;</li>
+    <li>verifica che il cage copra la superficie high-poly;</li>
+    <li>usa <strong>Auto Cage Extrusion</strong> se vuoi una stima automatica;</li>
+    <li>regola <strong>Cage Extrusion</strong> se devi correggere manualmente la distanza.</li>
+  </ul>
 
-- abilita **Show Cage**;
-- verifica che il cage copra la superficie high-poly;
-- usa **Auto Cage Extrusion** se vuoi una stima automatica;
-- regola **Cage Extrusion** se devi correggere manualmente la distanza.
-
-Quando UV e cage sono pronti, passa a **Step 3 - Bake / Output**.
-
+  <p>Quando UV e cage sono pronti, passa a <strong>Step 3 - Bake / Output</strong>.</p>
 </div>
 
-<div style="flex:0 1 460px; min-width:260px;">
-  <img src="../../img/step2_cage_extrusion.gif" alt="Interfaccia STEP 2 UV Cage con Generate UVs e controlli cage" style="width:100%; max-width:460px;">
+<div style="flex:0 0 320px; max-width:320px;">
+  <img src="../../img/step2_cage_extrusion.gif" alt="Interfaccia STEP 2 UV Cage con Generate UVs e controlli cage" style="width:100%;">
 </div>
 
 </div>
@@ -64,24 +66,24 @@ Quando UV e cage sono pronti, passa a **Step 3 - Bake / Output**.
 
 ## Step 3 - Esegui il bake
 
-<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin:22px 0 30px;">
+<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin:22px 0 30px;">
 
-<div style="flex:1 1 360px; min-width:260px;">
+<div style="flex:1 1 0; min-width:280px;">
+  <ol>
+    <li>Apri <strong>STEP 3 Bake / Output</strong>.</li>
+    <li>Scegli <strong>Texture Preset / Texture Size</strong>.</li>
+    <li>Imposta <strong>Bake Materials</strong>.</li>
+    <li>Attiva le mappe che vuoi generare, per esempio <strong>Bake Base Color</strong>, <strong>Bake Normal</strong>, <strong>Bake Roughness</strong> o <strong>Bake Occlusion</strong>.</li>
+    <li>Clicca <strong>Bake Textures</strong>.</li>
+  </ol>
 
-1. Apri **STEP 3 Bake / Output**.
-2. Scegli **Texture Preset / Texture Size**.
-3. Imposta **Bake Materials**.
-4. Attiva le mappe che vuoi generare, per esempio **Bake Base Color**, **Bake Normal**, **Bake Roughness** o **Bake Occlusion**.
-5. Clicca **Bake Textures**.
+  <p>ScanReady esegue il bake una texture alla volta, collega le texture generate al materiale finale e crea un asset più leggero pronto per realtime, VR, videogame, AR e scene interattive.</p>
 
-ScanReady esegue il bake una texture alla volta, collega le texture generate al materiale finale e crea un asset più leggero pronto per realtime, VR, videogame, AR e scene interattive.
-
-Prima di cliccare **Bake Textures**, controlla che il cage copra la scansione high-poly. Se il cage è troppo piccolo, possono comparire aree nere, dettagli mancanti o proiezioni errate.
-
+  <p>Prima di cliccare <strong>Bake Textures</strong>, controlla che il cage copra la scansione high-poly. Se il cage è troppo piccolo, possono comparire aree nere, dettagli mancanti o proiezioni errate.</p>
 </div>
 
-<div style="flex:0 1 300px; min-width:240px;">
-  <img src="../../img/quick-start-one-click.png" alt="Pannello ScanReady con gli step del workflow e Bake Output" style="width:100%; max-width:300px;">
+<div style="flex:0 0 260px; max-width:260px;">
+  <img src="../../img/quick-start-one-click.png" alt="Pannello ScanReady con gli step del workflow e Bake Output" style="width:100%;">
 </div>
 
 </div>
