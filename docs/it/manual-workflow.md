@@ -80,6 +80,8 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 
   <p>ScanReady esegue il bake una texture alla volta, collega le texture generate al materiale finale e crea un asset più leggero pronto per realtime, VR, videogame, AR e scene interattive.</p>
 
+  <p><strong>Nota:</strong> la spunta <strong>Bake Roughness</strong> viene mostrata solo se il materiale high-poly ha un input Roughness collegato. Se non c'è una roughness collegata, ScanReady non può trasferirla e la spunta non viene mostrata.</p>
+
   <p>Prima di cliccare <strong>Bake Textures</strong>, controlla che il cage copra la scansione high-poly. Se il cage è troppo piccolo, possono comparire aree nere, dettagli mancanti o proiezioni errate.</p>
 </div>
 

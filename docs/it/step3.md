@@ -185,6 +185,8 @@ Cuoce o trasferisce le informazioni roughness dal materiale high-poly.
 
 Usalo quando il materiale originale contiene già informazioni roughness che devono essere preservate sull'asset low-poly finale.
 
+La spunta **Bake Roughness** viene mostrata solo quando ScanReady trova un input Roughness collegato nel materiale high-poly. Se il materiale sorgente non ha una roughness collegata, ScanReady non può trasferirla e l'opzione non viene mostrata.
+
 Anche le texture roughness vengono gestite come dati tecnici **Non-Color**.
 
 ---
