@@ -24,7 +24,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 </div>
 
 <div style="flex:0 0 260px; max-width:260px;">
-  <img src="../../img/step1-preview-reduce.png" alt="Pannello STEP 1 Preview Reduce con pulsante Create Low-poly Preview" style="width:100%;">
+  <img src="../../img/manual-step1.jpg" alt="Pannello STEP 1 Preview Reduce con pulsante Create Low-poly Preview" style="width:100%;">
 </div>
 
 </div>
