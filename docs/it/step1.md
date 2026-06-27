@@ -14,17 +14,6 @@ Optimize / Reduce controlla quanta geometria viene mantenuta nella preview low-p
 
 ---
 
-## Workflow manuale: cosa fare in Step 1
-
-1. Seleziona la scansione high-poly nel viewport di Blender.
-2. Apri **STEP 1 Preview / Reduce**.
-3. Regola **Optimize / Reduce** o **Final Faces** se vuoi una mesh più leggera o più dettagliata.
-4. Clicca **Create Low-poly Preview**.
-
-ScanReady pulisce la scansione, crea una copia ottimizzata e genera una preview low-poly non distruttiva. L'originale high-poly resta intatto e viene usato come sorgente per gli step successivi.
-
-Quando la preview ti sembra corretta, passa a **Step 2 - UV / Cage** e clicca **Generate UVs**.
-
 ## Ottimizzazione adattiva
 
 L'ottimizzazione non viene applicata in modo uniforme su tutto il modello.

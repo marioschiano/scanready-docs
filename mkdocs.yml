@@ -31,6 +31,7 @@ plugins:
             Quick Start: Guida rapida
             One Click Bake: One Click Bake
             Workflow: Workflow
+            Manual Guide: Guida manuale
             Step 1 - Preview / Reduce: Step 1 - Preview / Reduce
             Step 2 - UV / Cage: Step 2 - UV / Cage
             Step 3 - Bake / Output: Step 3 - Bake / Output
@@ -63,6 +64,7 @@ nav:
       - One Click Bake: one-click.md
 
   - Workflow:
+      - Manual Guide: manual-workflow.md
       - Step 1 - Preview / Reduce: step1.md
       - Step 2 - UV / Cage: step2.md
       - Step 3 - Bake / Output: step3.md
