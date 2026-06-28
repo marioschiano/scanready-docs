@@ -23,7 +23,8 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
   <p>Quando la preview ti sembra corretta, passa a <strong>Step 2 - UV / Cage</strong>.</p>
 </div>
 
-<div style="flex:0 0 260px; max-width:260px;">
+<div style="flex:0 0 260px; max-width:260px; text-align:center;">
+  <p style="margin-top:0;"><strong>Create Low-poly Preview</strong></p>
   <img src="../../img/manual-step1.jpg" alt="Pannello STEP 1 Preview Reduce con pulsante Create Low-poly Preview" style="width:100%;">
 </div>
 
@@ -53,9 +54,15 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
   </ul>
 </div>
 
-<div style="flex:0 0 320px; max-width:320px; display:flex; flex-direction:column; gap:14px;">
-  <img src="../../img/manual-step2.jpg" alt="Interfaccia STEP 2 UV Cage con pulsante Generate UVs" style="width:100%;">
-  <img src="../../img/manual-step2_cage.jpg" alt="Interfaccia STEP 2 UV Cage con Show Cage e controlli cage" style="width:100%;">
+<div style="flex:0 0 320px; max-width:320px; display:flex; flex-direction:column; gap:14px; text-align:center;">
+  <div>
+    <p style="margin-top:0;"><strong>Generate UVs</strong></p>
+    <img src="../../img/manual-step2.jpg" alt="Interfaccia STEP 2 UV Cage con pulsante Generate UVs" style="width:100%;">
+  </div>
+  <div>
+    <p style="margin-top:0;"><strong>Show Cage / Cage Controls</strong></p>
+    <img src="../../img/manual-step2_cage.jpg" alt="Interfaccia STEP 2 UV Cage con Show Cage e controlli cage" style="width:100%;">
+  </div>
 </div>
 
 </div>
@@ -82,7 +89,8 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
   <p>Prima di cliccare <strong>Bake Textures</strong>, controlla che il cage copra la scansione high-poly. Se il cage è troppo piccolo, possono comparire aree nere, dettagli mancanti o proiezioni errate.</p>
 </div>
 
-<div style="flex:0 0 260px; max-width:260px;">
+<div style="flex:0 0 260px; max-width:260px; text-align:center;">
+  <p style="margin-top:0;"><strong>Bake Textures</strong></p>
   <img src="../../img/manual-step3.jpg" alt="Pannello ScanReady con gli step del workflow e Bake Output" style="width:100%;">
 </div>
 

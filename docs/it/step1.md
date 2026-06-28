@@ -129,6 +129,7 @@ Gli aggiornamenti realtime dipendono dalla complessità della scansione e dalle 
 </div>
 
 <div style="flex:0 0 360px; text-align:center;">
+  <p style="margin-top:0;"><strong>Optimize / Reduce</strong></p>
   <img src="../../img/step1-slider_reduce.gif" alt="Slider Optimize Reduce di ScanReady che aggiorna il valore della preview low-poly" style="width:360px; max-width:100%;">
 </div>
 
@@ -183,6 +184,7 @@ Mostra la percentuale di riduzione corrente in base alle impostazioni di ottimiz
 </div>
 
 <div style="flex:0 0 320px; text-align:center;">
+  <p style="margin-top:0;"><strong>Create Low-poly Preview</strong></p>
   <img src="../../img/step1-preview-reduce_optimize.png" alt="Pannello Step 1 Preview Reduce di ScanReady con pulsante Create Low-poly Preview" style="width:320px; max-width:100%;">
 </div>
 
@@ -192,7 +194,10 @@ Mostra la percentuale di riduzione corrente in base alle impostazioni di ottimiz
 
 ## View Options
 
-<img src="../../img/step1-preview-view options.jpg" alt="Pannello View Options di ScanReady con Show Wireframe e Show Checker" style="float:right; width:320px; max-width:42%; margin:0 0 18px 28px;">
+<div style="float:right; width:320px; max-width:42%; margin:0 0 18px 28px; text-align:center;">
+  <p style="margin-top:0;"><strong>View Options</strong></p>
+  <img src="../../img/step1-preview-view options.jpg" alt="Pannello View Options di ScanReady con Show Wireframe e Show Checker" style="width:100%; max-width:100%;">
+</div>
 
 Nel pannello attuale di ScanReady, **Show Wireframe** e **Show Checker** si trovano prima dello **STEP 1**.
 
@@ -254,6 +259,7 @@ Quadrati più grandi sono utili per controlli generali rapidi.
 </div>
 
 <div style="flex:0 0 320px; text-align:center;">
+  <p style="margin-top:0;"><strong>Checker Mix / Checker UV Scale</strong></p>
   <img src="../../img/step1-checker mix-scale.jpg" alt="Controlli Checker Mix e Checker UV Scale di ScanReady" style="width:320px; max-width:100%;">
 </div>
 

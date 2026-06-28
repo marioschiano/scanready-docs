@@ -13,6 +13,7 @@
   </div>
 
   <div style="flex:0 0 240px; text-align:center;">
+    <p style="margin-top:0;"><strong>ONE CLICK BAKE</strong></p>
     <img src="../../img/quick-start-one-click.png" alt="Pulsante One Click Bake di ScanReady in Blender" style="width:240px; max-width:100%;">
   </div>
 
