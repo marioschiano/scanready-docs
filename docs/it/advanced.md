@@ -8,7 +8,7 @@ Per la maggior parte delle scansioni, parti dai valori predefiniti. Regola le im
 
 <!-- Sostituire il placeholder con ../../img/advanced-overview.png -->
 <p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Placeholder panoramica impostazioni Advanced di ScanReady" style="max-width:820px;width:100%;">
+  <img src="../../img/advanced_global.jpg" alt="Placeholder panoramica impostazioni Advanced di ScanReady" style="max-width:820px;width:100%;">
 </p>
 
 # Mesh Settings
