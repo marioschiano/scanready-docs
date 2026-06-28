@@ -185,7 +185,7 @@ Rimuove detriti comuni della scansione, come frammenti isolati, poligoni sospesi
 
 <div style="margin-top:18px; text-align:center;">
   <!-- Sostituire con ../../img/advanced-auto-clean-scan-debris-detail.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Auto Clean Scan Debris di ScanReady" style="width:420px; max-width:100%;">
+  <img src="../../img/step1-cleaner.gif" alt="Placeholder dettaglio Auto Clean Scan Debris di ScanReady" style="width:420px; max-width:100%;">
 </div>
 </div>
 
