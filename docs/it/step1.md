@@ -196,6 +196,11 @@ Nel pannello attuale di ScanReady, **Show Wireframe** e **Show Checker** si trov
 
 Sono strumenti di preview usati per controllare topologia e leggibilità UV senza cambiare il workflow di bake.
 
+<div style="flex:0 0 320px; text-align:center;">
+  <img src="../../img/step1-preview-reduce_optimize.png" alt="Pannello Step 1 Preview Reduce di ScanReady con pulsante Create Low-poly Preview" style="width:320px; max-width:100%;">
+  </div>
+
+</div>
 ---
 
 ## Show Wireframe
