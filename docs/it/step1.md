@@ -254,7 +254,7 @@ Quadrati più grandi sono utili per controlli generali rapidi.
 </div>
 
 <div style="flex:0 0 320px; text-align:center;">
-  <img src="../../img/step1-checker-mix-scale.png" alt="Controlli Checker Mix e Checker UV Scale di ScanReady" style="width:320px; max-width:100%;">
+  <img src="../../img/step1-checker mix-scale.jpg" alt="Controlli Checker Mix e Checker UV Scale di ScanReady" style="width:320px; max-width:100%;">
 </div>
 
 </div>
