@@ -70,7 +70,7 @@ Attivalo quando la scansione ha normali invertite, shading rotto o artefatti di 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Auto Fix Normals</strong></p>
   <!-- Sostituire con ../../img/advanced-auto-fix-normals.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Auto Fix Normals di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_mesh_settings.jpg" alt="Placeholder screenshot Auto Fix Normals di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
