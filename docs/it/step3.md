@@ -91,7 +91,7 @@ Aumentare solo la densità dei poligoni non è sempre la soluzione migliore.
 
 In molti casi, aumentare il numero di materiali bake produce texture più pulite e nitide mantenendo la mesh leggera.
 
-Quando **Bake Materials** è impostato a più di `1`, ScanReady abilita automaticamente **Force CPU Baking** come default più sicuro per workflow multi-materiale.
+Quando **Bake Materials** è impostato su `2` o più materiali, ScanReady abilita automaticamente **Force CPU Baking** come default più sicuro per workflow multi-materiale.
 
 Puoi comunque disabilitarlo manualmente se la tua GPU può gestire il bake in sicurezza.
 
@@ -335,7 +335,7 @@ Di solito è più lento, ma può essere più sicuro su sistemi con VRAM limitata
 
 Di default, **Force CPU Baking** resta disattivato per bake a singolo materiale.
 
-Quando **Bake Materials** è impostato a `2` o più, ScanReady lo abilita automaticamente perché i workflow multi-materiale richiedono più memoria e passaggi di bake aggiuntivi.
+Quando **Bake Materials** è impostato su `2` o più materiali, ScanReady abilita automaticamente **Force CPU Baking** come default più sicuro per workflow multi-materiale.
 
 L'utente può comunque disabilitarlo manualmente.
 
