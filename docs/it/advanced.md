@@ -46,7 +46,7 @@ Esegue una pulizia Merge by Distance sulla mesh preview duplicata prima che veng
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Pre-Decimate Merge</strong></p>
   <!-- Sostituire con ../../img/advanced-pre-decimate-merge.png -->
-  <img src="../../img/advanced_mesh_settings.jpg" alt="Placeholder screenshot Pre-Decimate Merge di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_pre_decimate.jpg" alt="Placeholder screenshot Pre-Decimate Merge di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -70,7 +70,7 @@ Attivalo quando la scansione ha normali invertite, shading rotto o artefatti di 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Auto Fix Normals</strong></p>
   <!-- Sostituire con ../../img/advanced-auto-fix-normals.png -->
-  <img src="../../img/advanced_mesh_settings.jpg" alt="Placeholder screenshot Auto Fix Normals di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_autofix_normals.jpg" alt="Placeholder screenshot Auto Fix Normals di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -94,7 +94,7 @@ Rimuove automaticamente marcature sharp edge dalla mesh durante la preparazione.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Auto Clear Sharp Edges</strong></p>
   <!-- Sostituire con ../../img/advanced-auto-clear-sharp-edges.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Auto Clear Sharp Edges di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_autoclear_sharp.jpg" alt="Placeholder screenshot Auto Clear Sharp Edges di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -118,7 +118,7 @@ Usalo quando la scansione arriva da fotogrammetria o da esportazioni che dividon
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Auto Combine Mesh Parts</strong></p>
   <!-- Sostituire con ../../img/advanced-auto-combine-mesh-parts.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Auto Combine Mesh Parts di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_autocombine_mesh.jpg" alt="Placeholder screenshot Auto Combine Mesh Parts di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -142,7 +142,7 @@ Rimuove detriti comuni della scansione, come frammenti isolati, poligoni sospesi
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Auto Clean Scan Debris</strong></p>
   <!-- Sostituire con ../../img/advanced-auto-clean-scan-debris.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Auto Clean Scan Debris di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_autoclean_scan.jpg" alt="Placeholder screenshot Auto Clean Scan Debris di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -166,7 +166,7 @@ Lascialo disattivato se vuoi mantenere i materiali sorgente il più possibile in
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Convert Source Materials</strong></p>
   <!-- Sostituire con ../../img/advanced-convert-source-materials.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Convert Source Materials di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_convert_source.jpg" alt="Placeholder screenshot Convert Source Materials di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -190,7 +190,7 @@ Mostra l'overlay Face Orientation di Blender per controllare rapidamente la dire
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Show Face Orientation</strong></p>
   <!-- Sostituire con ../../img/advanced-show-face-orientation.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Show Face Orientation di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_showface_orientation.jpg" alt="Placeholder screenshot Show Face Orientation di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -214,7 +214,7 @@ Mostra il modello in una visualizzazione piatta orientata alla texture, senza il
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Use Texture View</strong></p>
   <!-- Sostituire con ../../img/advanced-use-texture-view.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Use Texture View di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_usetexture_view.jpg" alt="Placeholder screenshot Use Texture View di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -239,7 +239,7 @@ Usalo quando la scansione appare rovesciata o ha shading incoerente.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Recalculate Outside Normals</strong></p>
   <!-- Sostituire con ../../img/advanced-recalculate-outside-normals.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Recalculate Outside Normals di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_recalculate_outside_normals.jpg" alt="Placeholder screenshot Recalculate Outside Normals di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
