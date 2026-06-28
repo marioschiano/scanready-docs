@@ -101,11 +101,6 @@ Mostra l'overlay Face Orientation di Blender per controllare rapidamente la dire
 È utile per individuare normali invertite prima di creare la preview low-poly o prima del bake.
 </p>
 
-<div style="flex:0 0 340px; text-align:center;">
-  <!-- Sostituire il placeholder con ../../img/advanced-mesh-settings.png -->
-  <img src="../../img/advanced_face orientation.png" alt="Placeholder screenshot Mesh Settings di ScanReady" style="width:820px; max-width:100%;">
-</div>
-
 <hr>
 
 <h3>Use Texture View</h3>
@@ -133,8 +128,45 @@ Usalo quando la scansione appare rovesciata o ha shading incoerente.
 </div>
 
 <div style="flex:0 0 340px; text-align:center;">
-  <!-- Sostituire il placeholder con ../../img/advanced-mesh-settings.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Mesh Settings di ScanReady" style="width:340px; max-width:100%;">
+  <p><strong>Mesh Settings</strong></p>
+  <!-- Sostituire con ../../img/advanced-mesh-settings.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Mesh Settings di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Pre-Decimate Merge</strong></p>
+  <!-- Sostituire con ../../img/advanced-pre-decimate-merge.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Pre-Decimate Merge di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Auto Fix Normals</strong></p>
+  <!-- Sostituire con ../../img/advanced-auto-fix-normals.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Auto Fix Normals di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Auto Clear Sharp Edges</strong></p>
+  <!-- Sostituire con ../../img/advanced-auto-clear-sharp-edges.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Auto Clear Sharp Edges di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Auto Combine Mesh Parts</strong></p>
+  <!-- Sostituire con ../../img/advanced-auto-combine-mesh-parts.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Auto Combine Mesh Parts di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Auto Clean Scan Debris</strong></p>
+  <!-- Sostituire con ../../img/advanced-auto-clean-scan-debris.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Auto Clean Scan Debris di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Convert Source Materials</strong></p>
+  <!-- Sostituire con ../../img/advanced-convert-source-materials.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Convert Source Materials di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Show Face Orientation</strong></p>
+  <!-- Sostituire con ../../img/advanced-show-face-orientation.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Show Face Orientation di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Use Texture View</strong></p>
+  <!-- Sostituire con ../../img/advanced-use-texture-view.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Use Texture View di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Recalculate Outside Normals</strong></p>
+  <!-- Sostituire con ../../img/advanced-recalculate-outside-normals.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Recalculate Outside Normals di ScanReady" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -301,8 +333,49 @@ Può aiutare a mantenere più stabile la forma attorno a bordi netti, cornici, p
 </div>
 
 <div style="flex:0 0 340px; text-align:center;">
-  <!-- Sostituire il placeholder con ../../img/advanced-adaptive-reduce.png -->
-  <img src="../../img/placeholder-image.svg" alt="Impostazioni avanzate Adaptive Reduce di ScanReady" style="width:340px; max-width:100%;">
+  <p><strong>Adaptive Reduce</strong></p>
+  <!-- Sostituire con ../../img/advanced-adaptive-reduce.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Adaptive Reduce di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Adaptive Reduce Preset</strong></p>
+  <!-- Sostituire con ../../img/advanced-adaptive-reduce-preset.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Adaptive Reduce Preset di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Show Adaptive Weights</strong></p>
+  <!-- Sostituire con ../../img/advanced-show-adaptive-weights.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Show Adaptive Weights di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Adaptive Reduce Strength</strong></p>
+  <!-- Sostituire con ../../img/advanced-adaptive-reduce-strength.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Adaptive Reduce Strength di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Adaptive Reduce Angle</strong></p>
+  <!-- Sostituire con ../../img/advanced-adaptive-reduce-angle.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Adaptive Reduce Angle di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Detail Preserve</strong></p>
+  <!-- Sostituire con ../../img/advanced-detail-preserve.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Detail Preserve di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Smooth Weights</strong></p>
+  <!-- Sostituire con ../../img/advanced-smooth-weights.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Smooth Weights di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Fast Adaptive Reduce</strong></p>
+  <!-- Sostituire con ../../img/advanced-fast-adaptive-reduce.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Fast Adaptive Reduce di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Protect Feature Edges</strong></p>
+  <!-- Sostituire con ../../img/advanced-protect-feature-edges.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Protect Feature Edges di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Feature Edge Angle</strong></p>
+  <!-- Sostituire con ../../img/advanced-feature-edge-angle.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Feature Edge Angle di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Feature Edge Rings</strong></p>
+  <!-- Sostituire con ../../img/advanced-feature-edge-rings.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Feature Edge Rings di ScanReady" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -357,8 +430,17 @@ Aumenta il padding per ridurre texture bleeding, soprattutto a risoluzioni textu
 </div>
 
 <div style="flex:0 0 340px; text-align:center;">
-  <!-- Sostituire il placeholder con ../../img/advanced-uv-settings.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot UV Settings di ScanReady" style="width:340px; max-width:100%;">
+  <p><strong>UV Settings</strong></p>
+  <!-- Sostituire con ../../img/advanced-uv-settings.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot UV Settings di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Smart UV Angle</strong></p>
+  <!-- Sostituire con ../../img/advanced-smart-uv-angle.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Smart UV Angle di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>UV Padding</strong></p>
+  <!-- Sostituire con ../../img/advanced-uv-padding.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot UV Padding di ScanReady" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -446,8 +528,33 @@ Può essere utile per asset dettagliati, workflow archivio o output texture tecn
 </div>
 
 <div style="flex:0 0 340px; text-align:center;">
-  <!-- Sostituire il placeholder con ../../img/advanced-bake-settings.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Bake Settings di ScanReady" style="width:340px; max-width:100%;">
+  <p><strong>Bake Settings</strong></p>
+  <!-- Sostituire con ../../img/advanced-bake-settings.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Bake Settings di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Bake Samples</strong></p>
+  <!-- Sostituire con ../../img/advanced-bake-samples.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Bake Samples di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Bake Margin</strong></p>
+  <!-- Sostituire con ../../img/advanced-bake-margin.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Bake Margin di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Texture Detail</strong></p>
+  <!-- Sostituire con ../../img/advanced-texture-detail.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Texture Detail di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Normal Strength</strong></p>
+  <!-- Sostituire con ../../img/advanced-normal-strength.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Normal Strength di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>JPG Quality</strong></p>
+  <!-- Sostituire con ../../img/advanced-jpg-quality.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot JPG Quality di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>TIFF 16-bit</strong></p>
+  <!-- Sostituire con ../../img/advanced-tiff-16-bit.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot TIFF 16-bit di ScanReady" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -511,8 +618,29 @@ Il valore predefinito è <strong>1.0</strong>, che usa tutta la texture AO bake 
 </div>
 
 <div style="flex:0 0 340px; text-align:center;">
-  <!-- Sostituire il placeholder con ../../img/advanced-occlusion-settings.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Occlusion Settings di ScanReady" style="width:340px; max-width:100%;">
+  <p><strong>Occlusion Settings</strong></p>
+  <!-- Sostituire con ../../img/advanced-occlusion-settings.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Occlusion Settings di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>AO Source</strong></p>
+  <!-- Sostituire con ../../img/advanced-ao-source.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot AO Source di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>AO Auto Distance</strong></p>
+  <!-- Sostituire con ../../img/advanced-ao-auto-distance.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot AO Auto Distance di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>AO Distance</strong></p>
+  <!-- Sostituire con ../../img/advanced-ao-distance.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot AO Distance di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>AO Samples</strong></p>
+  <!-- Sostituire con ../../img/advanced-ao-samples.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot AO Samples di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>AO Mix</strong></p>
+  <!-- Sostituire con ../../img/advanced-ao-mix.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot AO Mix di ScanReady" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -556,8 +684,17 @@ ScanReady può abilitarlo automaticamente quando viene usato il bake multi-mater
 </div>
 
 <div style="flex:0 0 340px; text-align:center;">
-  <!-- Sostituire il placeholder con ../../img/advanced-memory-safety.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Memory Safety di ScanReady" style="width:340px; max-width:100%;">
+  <p><strong>Memory Safety</strong></p>
+  <!-- Sostituire con ../../img/advanced-memory-safety.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Memory Safety di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Safe Memory Bake</strong></p>
+  <!-- Sostituire con ../../img/advanced-safe-memory-bake.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Safe Memory Bake di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Force CPU Baking</strong></p>
+  <!-- Sostituire con ../../img/advanced-force-cpu-baking.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Force CPU Baking di ScanReady" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -623,8 +760,29 @@ Elimina il preset selezionato.
 </div>
 
 <div style="flex:0 0 340px; text-align:center;">
-  <!-- Sostituire il placeholder con ../../img/advanced-presets.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Presets di ScanReady" style="width:340px; max-width:100%;">
+  <p><strong>Preset</strong></p>
+  <!-- Sostituire con ../../img/advanced-presets.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Preset di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Preset Name</strong></p>
+  <!-- Sostituire con ../../img/advanced-preset-name.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Preset Name di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Save Preset</strong></p>
+  <!-- Sostituire con ../../img/advanced-save-preset.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Save Preset di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Preset Selector</strong></p>
+  <!-- Sostituire con ../../img/advanced-preset-selector.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Preset Selector di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Reload Preset</strong></p>
+  <!-- Sostituire con ../../img/advanced-reload-preset.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Reload Preset di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Delete Preset</strong></p>
+  <!-- Sostituire con ../../img/advanced-delete-preset.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Delete Preset di ScanReady" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -656,8 +814,13 @@ Il report può includere dettagli come tempo di Preview / Reduce, Generate UVs, 
 </div>
 
 <div style="flex:0 0 340px; text-align:center;">
-  <!-- Sostituire il placeholder con ../../img/advanced-diagnostics.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Diagnostics di ScanReady" style="width:340px; max-width:100%;">
+  <p><strong>Diagnostics</strong></p>
+  <!-- Sostituire con ../../img/advanced-diagnostics.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Diagnostics di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Show Diagnostic Timing Report</strong></p>
+  <!-- Sostituire con ../../img/advanced-show-diagnostic-timing-report.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Show Diagnostic Timing Report di ScanReady" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -685,8 +848,13 @@ Usalo se le impostazioni correnti producono risultati inattesi o se vuoi tornare
 </div>
 
 <div style="flex:0 0 340px; text-align:center;">
-  <!-- Sostituire il placeholder con ../../img/advanced-utilities.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Utilities di ScanReady" style="width:340px; max-width:100%;">
+  <p><strong>Utilities</strong></p>
+  <!-- Sostituire con ../../img/advanced-utilities.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Utilities di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Reset Defaults</strong></p>
+  <!-- Sostituire con ../../img/advanced-reset-defaults.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Reset Defaults di ScanReady" style="width:340px; max-width:100%;">
 </div>
 
 </div>
@@ -752,8 +920,33 @@ Questi link vengono usati per configurare il manifest aggiornamenti e l'URL rele
 </div>
 
 <div style="flex:0 0 340px; text-align:center;">
-  <!-- Sostituire il placeholder con ../../img/advanced-addon-preferences.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Addon Preferences di ScanReady" style="width:340px; max-width:100%;">
+  <p><strong>Addon Preferences / Updates</strong></p>
+  <!-- Sostituire con ../../img/advanced-addon-preferences.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Addon Preferences di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Check for Updates</strong></p>
+  <!-- Sostituire con ../../img/advanced-check-for-updates.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Check for Updates di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Open Documentation</strong></p>
+  <!-- Sostituire con ../../img/advanced-open-documentation.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Open Documentation di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Release Notes</strong></p>
+  <!-- Sostituire con ../../img/advanced-release-notes.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Release Notes di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Update Manifest URL</strong></p>
+  <!-- Sostituire con ../../img/advanced-update-manifest-url.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Update Manifest URL di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Release Notes URL</strong></p>
+  <!-- Sostituire con ../../img/advanced-release-notes-url.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Release Notes URL di ScanReady" style="width:340px; max-width:100%; margin-bottom:18px;">
+
+  <p><strong>Publishing Links</strong></p>
+  <!-- Sostituire con ../../img/advanced-publishing-links.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Publishing Links di ScanReady" style="width:340px; max-width:100%;">
 </div>
 
 </div>
