@@ -5,45 +5,32 @@
 <div style="flex:1 1 0; min-width:0;">
 
 <p>
-Le impostazioni avanzate danno controllo preciso su pulizia mesh, generazione UV, qualità bake, output immagini, preset, utility e sicurezza memoria.
+Le impostazioni avanzate danno controllo preciso su pulizia mesh, riduzione adattiva, generazione UV, qualità bake, output immagini, preset, diagnostica e sicurezza memoria.
 </p>
 
 <p>
-Non serve cambiare ogni impostazione per usare ScanReady.
+Advanced è la parte più tecnica di ScanReady. Qui puoi modificare il cuore del workflow quando vuoi andare oltre il risultato automatico, rifinire una scansione difficile o adattare il processo a un asset pensato per VR, videogame o realtime.
 </p>
 
 <p>
-Per la maggior parte delle scansioni, parti dai valori predefiniti. Regola le impostazioni avanzate solo quando hai bisogno di più controllo su performance, qualità o accuratezza del bake.
+Non serve cambiare ogni impostazione per usare ScanReady. Per la maggior parte delle scansioni, parti dai valori predefiniti e intervieni solo quando hai bisogno di più controllo su qualità, performance, accuratezza del bake o protezione dei dettagli.
 </p>
 
 <p>
-Il pannello Advanced raccoglie le opzioni che normalmente si toccano solo quando vuoi rifinire il risultato o risolvere un caso specifico. È pensato per utenti che vogliono capire meglio cosa succede tra cleanup, riduzione, UV e bake, senza uscire dal workflow principale di ScanReady.
+Il pannello Advanced raccoglie le impostazioni che influenzano le fasi principali del processo: cleanup della scansione, riduzione adattiva, generazione UV, bake delle texture, gestione memoria, preset e diagnostica.
 </p>
 
 <p>
-Puoi usarlo in modo graduale: prima crea una preview low-poly con i valori predefiniti, poi torna in Advanced solo se vuoi più controllo sulla qualità della mesh, sulla protezione dei dettagli, sulla generazione UV, sulla qualità delle texture o sulla stabilità del bake.
+Usalo in modo graduale: prima crea una preview low-poly con i valori predefiniti, poi torna in Advanced solo se vuoi correggere qualcosa o migliorare il risultato. Se cambi impostazioni che influenzano mesh, Adaptive Reduce o UV, rigenera lo step corrispondente prima di continuare.
 </p>
 
 <p>
-Le sezioni principali sono organizzate nello stesso ordine del processo:
-</p>
-
-<ul>
-<li><strong>Mesh Settings</strong> prepara e pulisce la scansione prima della preview low-poly, correggendo problemi comuni come normali errate, parti separate, detriti di scansione o edge marcati in modo non desiderato.</li>
-<li><strong>Adaptive Reduce</strong> controlla come ScanReady protegge dettagli, bordi e cambi di normale durante la riduzione, così le aree piatte possono essere semplificate di più mentre le zone importanti restano più leggibili.</li>
-<li><strong>UV Settings</strong> gestisce l'apertura UV usata dal bake. Questi valori diventano importanti quando vuoi ridurre stretching, controllare la dimensione delle isole o migliorare il padding tra le UV.</li>
-<li><strong>Bake Settings</strong> e <strong>Occlusion Settings</strong> regolano qualità, margini, normal map, roughness e occlusion. Sono utili quando vuoi bilanciare tempo di bake, pulizia delle texture e qualità finale del materiale.</li>
-<li><strong>Memory Safety</strong>, <strong>Preset</strong>, <strong>Diagnostics</strong> e <strong>Utilities</strong> aiutano nei workflow pesanti, nei test, nel riuso delle impostazioni e nel ripristino rapido di una configurazione pulita.</li>
-</ul>
-
-<p>
-Se non sei sicuro da dove partire, lascia Advanced quasi tutto com'è e modifica solo una cosa alla volta. In questo modo puoi capire subito quale impostazione ha cambiato il risultato, senza confondere riduzione, UV e bake nello stesso test.
+Le sezioni principali seguono l'ordine del workflow. Mesh Settings prepara e pulisce la scansione prima della preview low-poly. Adaptive Reduce controlla come ScanReady protegge dettagli, bordi e cambi di normale durante la riduzione. UV Settings gestisce l'apertura UV usata dal bake.
 </p>
 
 <p>
-Quando cambi un'opzione che influisce sulla mesh o sui pesi Adaptive Reduce, crea di nuovo la preview low-poly. Quando cambi impostazioni UV, rigenera le UV. Quando cambi impostazioni di bake, puoi rifare direttamente il bake se UV e cage sono già corretti.
+Bake Settings e Occlusion Settings regolano qualità, margini, normal map, roughness e occlusion. Memory Safety, Preset, Diagnostics e Utilities aiutano nei workflow pesanti, nei test, nel riuso delle impostazioni e nel ripristino rapido di una configurazione pulita.
 </p>
-
 </div>
 
 <div style="flex:0 0 320px; text-align:center;">
