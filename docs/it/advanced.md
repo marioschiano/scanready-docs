@@ -1,15 +1,30 @@
 # Impostazioni avanzate
 
+<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+
+<div style="flex:1 1 0; min-width:0;">
+
+<p>
 Le impostazioni avanzate danno controllo preciso su pulizia mesh, generazione UV, qualità bake, output immagini, preset, utility e sicurezza memoria.
-
-Non serve cambiare ogni impostazione per usare ScanReady.
-
-Per la maggior parte delle scansioni, parti dai valori predefiniti. Regola le impostazioni avanzate solo quando hai bisogno di più controllo su performance, qualità o accuratezza del bake.
-
-<!-- Sostituire il placeholder con ../../img/advanced-overview.png -->
-<p align="center">
-  <img src="../../img/advanced_global.jpg" alt="Placeholder panoramica impostazioni Advanced di ScanReady" style="max-width:820px;width:100%;">
 </p>
+
+<p>
+Non serve cambiare ogni impostazione per usare ScanReady.
+</p>
+
+<p>
+Per la maggior parte delle scansioni, parti dai valori predefiniti. Regola le impostazioni avanzate solo quando hai bisogno di più controllo su performance, qualità o accuratezza del bake.
+</p>
+
+</div>
+
+<div style="flex:0 0 320px; text-align:center;">
+  <p style="margin-top:0;"><strong>Advanced</strong></p>
+  <!-- Sostituire con ../../img/advanced-overview.png -->
+  <img src="../../img/advanced_global.jpg" alt="Panoramica impostazioni Advanced di ScanReady" style="width:320px; max-width:100%;">
+</div>
+
+</div>
 
 # Mesh Settings
 
@@ -65,6 +80,11 @@ Ricalcola automaticamente le normali della mesh high-poly prima di creare la pre
 <p>
 Attivalo quando la scansione ha normali invertite, shading rotto o artefatti di bake causati da direzioni normali errate.
 </p>
+
+<div style="margin-top:18px; text-align:center;">
+  <!-- Sostituire con ../../img/advanced-auto-fix-normals-detail.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Auto Fix Normals di ScanReady" style="width:420px; max-width:100%;">
+</div>
 </div>
 
 <div style="flex:0 0 260px; text-align:center;">
@@ -89,6 +109,11 @@ Rimuove automaticamente marcature sharp edge dalla mesh durante la preparazione.
 <p>
 È utile quando una scansione importata contiene edge marcati come sharp in modo non desiderato, causando shading duro o bake meno puliti.
 </p>
+
+<div style="margin-top:18px; text-align:center;">
+  <!-- Sostituire con ../../img/advanced-auto-clear-sharp-edges-detail.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Auto Clear Sharp Edges di ScanReady" style="width:420px; max-width:100%;">
+</div>
 </div>
 
 <div style="flex:0 0 260px; text-align:center;">
@@ -113,6 +138,11 @@ Combina automaticamente più parti mesh della scansione quando lavori con import
 <p>
 Usalo quando la scansione arriva da fotogrammetria o da esportazioni che dividono il modello in più elementi, ma vuoi trattarla come un unico asset ScanReady.
 </p>
+
+<div style="margin-top:18px; text-align:center;">
+  <!-- Sostituire con ../../img/advanced-auto-combine-mesh-parts-detail.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Auto Combine Mesh Parts di ScanReady" style="width:420px; max-width:100%;">
+</div>
 </div>
 
 <div style="flex:0 0 260px; text-align:center;">
@@ -137,6 +167,11 @@ Rimuove detriti comuni della scansione, come frammenti isolati, poligoni sospesi
 <p>
 È attivo di default perché molte scansioni grezze contengono piccole parti volanti che possono rallentare ottimizzazione, UV e bake.
 </p>
+
+<div style="margin-top:18px; text-align:center;">
+  <!-- Sostituire con ../../img/advanced-auto-clean-scan-debris-detail.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Auto Clean Scan Debris di ScanReady" style="width:420px; max-width:100%;">
+</div>
 </div>
 
 <div style="flex:0 0 260px; text-align:center;">
@@ -185,6 +220,11 @@ Mostra l'overlay Face Orientation di Blender per controllare rapidamente la dire
 <p>
 È utile per individuare normali invertite prima di creare la preview low-poly o prima del bake.
 </p>
+
+<div style="margin-top:18px; text-align:center;">
+  <!-- Sostituire con ../../img/advanced-show-face-orientation-detail.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Show Face Orientation di ScanReady" style="width:420px; max-width:100%;">
+</div>
 </div>
 
 <div style="flex:0 0 260px; text-align:center;">
@@ -209,6 +249,11 @@ Mostra il modello in una visualizzazione piatta orientata alla texture, senza il
 <p>
 È utile per ispezionare più chiaramente risultati texture bake o preview.
 </p>
+
+<div style="margin-top:18px; text-align:center;">
+  <!-- Sostituire con ../../img/advanced-use-texture-view-detail.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Use Texture View di ScanReady" style="width:420px; max-width:100%;">
+</div>
 </div>
 
 <div style="flex:0 0 260px; text-align:center;">
@@ -234,6 +279,11 @@ Esegue manualmente il ricalcolo delle normali sulla mesh high-poly selezionata.
 Usalo quando la scansione appare rovesciata o ha shading incoerente.
 </p>
 
+
+<div style="margin-top:18px; text-align:center;">
+  <!-- Sostituire con ../../img/advanced-recalculate-outside-normals-detail.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Recalculate Outside Normals di ScanReady" style="width:420px; max-width:100%;">
+</div>
 </div>
 
 <div style="flex:0 0 260px; text-align:center;">
