@@ -285,14 +285,14 @@ Se la preview è troppo pesante o troppo semplificata, regola **Optimize / Reduc
 
 Puoi tornare allo Step 1 in qualsiasi momento. Se sei già nello Step 2 o nello Step 3 e decidi che il modello deve essere più leggero o più dettagliato, cambia qui le impostazioni di riduzione, clicca di nuovo **Create Low-poly Preview**, poi continua generando UV e bake di nuovo.
 
+<div style="width:100%; text-align:left;">
+  <img src="../../img/step1-cleaner.gif" alt="Pulizia mesh di ScanReady prima della preview low-poly" style="max-width:820px;width:100%;">
+</div>
+
 ScanReady pulisce la scansione high-poly selezionata, rimuove rumore mesh comune come poligoni staccati o vertici isolati, poi crea un oggetto preview ottimizzato.
 
 Prima che venga aggiunto il modificatore Decimate, ScanReady può eseguire anche una pulizia **Pre-Decimate Merge** sulla mesh preview duplicata.
 Questo aiuta a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione.
-
-<div style="width:100%; text-align:left;">
-  <img src="../../img/step1-cleaner.gif" alt="Pulizia mesh di ScanReady prima della preview low-poly" style="max-width:820px;width:100%;">
-</div>
 
 Quando la preview è corretta, continua con:
 
