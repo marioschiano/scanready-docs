@@ -49,7 +49,7 @@ Quando cambi un'opzione che influisce sulla mesh o sui pesi Adaptive Reduce, cre
 <div style="flex:0 0 320px; text-align:center;">
   <p style="margin-top:0;"><strong>Advanced</strong></p>
   <!-- Sostituire con ../../img/advanced-overview.png -->
-  <img src="../../img/advanced_global.jpg" alt="Panoramica impostazioni Advanced di ScanReady" style="width:200px; max-width:100%;">
+  <img src="../../img/advanced_global.jpg" alt="Panoramica impostazioni Advanced di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
