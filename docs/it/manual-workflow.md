@@ -44,16 +44,13 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 
   <p>ScanReady crea un nuovo layout UV sulla mesh ottimizzata. Questo prepara l'asset per ricevere le texture bake sulla nuova superficie low-poly.</p>
 
-  <p>Dopo le UV, controlla il cage:</p>
+  <p>Dopo le UV, prepara il cage per il bake:</p>
 
   <ul>
-    <li>abilita <strong>Show Cage</strong>;</li>
-    <li>verifica che il cage copra la superficie high-poly;</li>
     <li>usa <strong>Auto Cage Extrusion</strong> se vuoi una stima automatica;</li>
-    <li>regola <strong>Cage Extrusion</strong> se devi correggere manualmente la distanza.</li>
+    <li>regola <strong>Cage Extrusion</strong> se devi correggere manualmente la distanza;</li>
+    <li>quando il cage è verde e copre tutta la mesh high-poly, puoi procedere con lo Step 3.</li>
   </ul>
-
-  <p>Quando UV e cage sono pronti, passa a <strong>Step 3 - Bake / Output</strong>.</p>
 </div>
 
 <div style="flex:0 0 320px; max-width:320px; display:flex; flex-direction:column; gap:14px;">
