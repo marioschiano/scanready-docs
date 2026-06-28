@@ -13,7 +13,21 @@ Per la maggior parte delle scansioni, parti dai valori predefiniti. Regola le im
 
 # Mesh Settings
 
+<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:24px;">
+
+<div style="flex:1 1 0; min-width:0;">
+
 Queste impostazioni controllano pulizia scansione e preparazione mesh prima di generare la preview low-poly.
+
+</div>
+
+<div style="flex:0 0 260px; text-align:center;">
+  <p><strong>Mesh Settings</strong></p>
+  <!-- Sostituire con ../../img/advanced-mesh-settings.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Mesh Settings di ScanReady" style="width:260px; max-width:100%;">
+</div>
+
+</div>
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px;">
 
@@ -128,10 +142,6 @@ Usalo quando la scansione appare rovesciata o ha shading incoerente.
 </div>
 
 <div style="flex:0 0 260px; text-align:center;">
-  <p><strong>Mesh Settings</strong></p>
-  <!-- Sostituire con ../../img/advanced-mesh-settings.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Mesh Settings di ScanReady" style="width:260px; max-width:100%; margin-bottom:18px;">
-
   <p><strong>Pre-Decimate Merge</strong></p>
   <!-- Sostituire con ../../img/advanced-pre-decimate-merge.png -->
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Pre-Decimate Merge di ScanReady" style="width:260px; max-width:100%; margin-bottom:18px;">
