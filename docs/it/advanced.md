@@ -21,7 +21,7 @@ Queste impostazioni controllano pulizia scansione e preparazione mesh prima di g
 
 </div>
 
-<div style="flex:0 0 260px; text-align:center;">
+<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Mesh Settings</strong></p>
   <!-- Sostituire con ../../img/advanced-mesh-settings.png -->
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Mesh Settings di ScanReady" style="width:260px; max-width:100%;">
@@ -265,7 +265,7 @@ I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Low-poly 
 </p>
 </div>
 
-<div style="flex:0 0 260px; text-align:center;">
+<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Adaptive Reduce</strong></p>
   <!-- Sostituire con ../../img/advanced-adaptive-reduce.png -->
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Adaptive Reduce di ScanReady" style="width:260px; max-width:100%;">
@@ -569,7 +569,7 @@ Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 </blockquote>
 </div>
 
-<div style="flex:0 0 260px; text-align:center;">
+<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>UV Settings</strong></p>
   <!-- Sostituire con ../../img/advanced-uv-settings.png -->
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot UV Settings di ScanReady" style="width:260px; max-width:100%;">
@@ -645,7 +645,7 @@ Queste impostazioni controllano qualità bake, padding texture, qualità formato
 </p>
 </div>
 
-<div style="flex:0 0 260px; text-align:center;">
+<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Bake Settings</strong></p>
   <!-- Sostituire con ../../img/advanced-bake-settings.png -->
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Bake Settings di ScanReady" style="width:260px; max-width:100%;">
@@ -808,7 +808,7 @@ Queste opzioni appaiono quando <strong>Bake Occlusion</strong> è abilitato.
 </p>
 </div>
 
-<div style="flex:0 0 260px; text-align:center;">
+<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Occlusion Settings</strong></p>
   <!-- Sostituire con ../../img/advanced-occlusion-settings.png -->
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Occlusion Settings di ScanReady" style="width:260px; max-width:100%;">
@@ -935,7 +935,7 @@ Queste opzioni aiutano a ridurre problemi di memoria durante operazioni di bake 
 </p>
 </div>
 
-<div style="flex:0 0 260px; text-align:center;">
+<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Memory Safety</strong></p>
   <!-- Sostituire con ../../img/advanced-memory-safety.png -->
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Memory Safety di ScanReady" style="width:260px; max-width:100%;">
@@ -1022,7 +1022,7 @@ Usa i preset quando lavori su più scansioni con requisiti simili, come:
 </ul>
 </div>
 
-<div style="flex:0 0 260px; text-align:center;">
+<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Preset</strong></p>
   <!-- Sostituire con ../../img/advanced-preset.png -->
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Preset di ScanReady" style="width:260px; max-width:100%;">
@@ -1141,7 +1141,7 @@ Le opzioni di diagnostica servono per controllare meglio cosa sta facendo ScanRe
 </p>
 </div>
 
-<div style="flex:0 0 260px; text-align:center;">
+<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Diagnostics</strong></p>
   <!-- Sostituire con ../../img/advanced-diagnostics.png -->
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Diagnostics di ScanReady" style="width:260px; max-width:100%;">
@@ -1188,7 +1188,7 @@ Gli strumenti utility aiutano a resettare o ripristinare la configurazione dell'
 </p>
 </div>
 
-<div style="flex:0 0 260px; text-align:center;">
+<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Utilities</strong></p>
   <!-- Sostituire con ../../img/advanced-utilities.png -->
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Utilities di ScanReady" style="width:260px; max-width:100%;">
@@ -1235,7 +1235,7 @@ Queste opzioni aiutano a controllare nuove versioni, aprire release notes e conf
 </p>
 </div>
 
-<div style="flex:0 0 260px; text-align:center;">
+<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Addon Preferences / Updates</strong></p>
   <!-- Sostituire con ../../img/advanced-addon-preferences-updates.png -->
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Addon Preferences / Updates di ScanReady" style="width:260px; max-width:100%;">
