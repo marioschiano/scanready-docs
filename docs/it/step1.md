@@ -183,7 +183,7 @@ Mostra la percentuale di riduzione corrente in base alle impostazioni di ottimiz
 </div>
 
 <div style="flex:0 0 320px; text-align:center;">
-  <img src="../../img/step1-preview-reduce.png" alt="Pannello Step 1 Preview Reduce di ScanReady con pulsante Create Low-poly Preview" style="width:320px; max-width:100%;">
+  <img src="../../img/step1-preview-reduce_optimize.png" alt="Pannello Step 1 Preview Reduce di ScanReady con pulsante Create Low-poly Preview" style="width:320px; max-width:100%;">
 </div>
 
 </div>
