@@ -165,7 +165,7 @@ Usalo quando la scansione arriva da fotogrammetria o da esportazioni che dividon
 
 <div style="margin:18px 0 30px; text-align:center;">
   <!-- Sostituire con ../../img/advanced-auto-combine-mesh-parts-detail.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Auto Combine Mesh Parts di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_autocombine_mesh.gif" alt="Placeholder dettaglio Auto Combine Mesh Parts di ScanReady" style="width:760px; max-width:100%;">
 </div>
 
 <hr>
