@@ -233,7 +233,7 @@ Mostra l'overlay Face Orientation di Blender per controllare rapidamente la dire
 </p>
 
 <p>
-È utile per individuare normali invertite prima di creare la preview low-poly o prima del bake.
+È utile per individuare normali invertite prima di creare la preview low-poly o prima del bake. Quando attivi <strong>Show Face Orientation</strong>, ScanReady disattiva automaticamente <strong>Backface Culling</strong> per evitare controlli visivi sovrapposti.
 </p>
 </div>
 
@@ -248,6 +248,39 @@ Mostra l'overlay Face Orientation di Blender per controllare rapidamente la dire
 <div style="margin:18px 0 30px; text-align:center;">
   <!-- Sostituire con ../../img/advanced-show-face-orientation-detail.png -->
   <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Show Face Orientation di ScanReady" style="width:760px; max-width:100%;">
+</div>
+
+<hr>
+
+<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+
+<div style="flex:1 1 0; min-width:0;">
+<h3>Backface Culling</h3>
+
+<p>
+Attiva il Backface Culling del viewport per nascondere le facce viste dal lato posteriore.
+</p>
+
+<p>
+Serve come controllo rapido per trovare superfici a una sola faccia, buchi, parti aperte o aree con orientamento sospetto. È solo una modalità di preview: non modifica la mesh e non cambia il bake.
+</p>
+
+<p>
+Backface Culling e Show Face Orientation sono collegati: se attivi uno, ScanReady disattiva automaticamente l'altro. In questo modo controlli la scansione con una sola modalità diagnostica alla volta.
+</p>
+</div>
+
+<div style="flex:0 0 260px; text-align:center;">
+  <p style="margin-top:0;"><strong>Backface Culling</strong></p>
+  <!-- Sostituire con ../../img/advanced-backface-culling.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Backface Culling di ScanReady" style="width:260px; max-width:100%;">
+</div>
+
+</div>
+
+<div style="margin:18px 0 30px; text-align:center;">
+  <!-- Sostituire con ../../img/advanced-backface-culling-detail.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Backface Culling di ScanReady" style="width:760px; max-width:100%;">
 </div>
 
 <hr>
