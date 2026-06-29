@@ -136,7 +136,7 @@ Rimuove automaticamente marcature sharp edge dalla mesh durante la preparazione.
 
 <div style="margin:18px 0 30px; text-align:center;">
   <!-- Sostituire con ../../img/advanced-auto-clear-sharp-edges-detail.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Auto Clear Sharp Edges di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_autoclear_sharp_edge.gif" alt="Placeholder dettaglio Auto Clear Sharp Edges di ScanReady" style="width:760px; max-width:100%;">
 </div>
 
 <hr>
