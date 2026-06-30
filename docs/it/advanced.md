@@ -274,11 +274,19 @@ Quando attivi <strong>Show Face Orientation</strong>, ScanReady disattiva automa
 <h3>Backface Culling</h3>
 
 <p>
-Attiva il Backface Culling del viewport per nascondere le facce viste dal lato posteriore.
+Attiva il <strong>Backface Culling</strong> del viewport per controllare come si comportano le facce quando vengono viste dal lato posteriore.
 </p>
 
 <p>
-Serve come controllo rapido per trovare superfici a una sola faccia, buchi, parti aperte o aree con orientamento sospetto. È solo una modalità di preview: non modifica la mesh e non cambia il bake.
+È una modalità di visualizzazione utile per individuare possibili problemi nella scansione, come facce invertite, superfici a una sola faccia, buchi, parti aperte o aree con orientamento sospetto.
+</p>
+
+<p>
+Questo controllo è importante prima del bake: anche se il modello può sembrare corretto nella viewport, facce orientate male o parti aperte possono causare texture nere, dettagli mancanti, ombre errate o trasferimenti non corretti dalla mesh high-poly alla mesh ottimizzata.
+</p>
+
+<p>
+<strong>Backface Culling</strong> è solo una modalità di preview: non modifica la mesh e non cambia direttamente il bake. Serve a controllare meglio la scansione prima di procedere.
 </p>
 
 <p>
