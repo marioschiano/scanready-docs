@@ -237,11 +237,19 @@ Lascialo disattivato se vuoi mantenere i materiali sorgente il più possibile in
 <h3>Show Face Orientation</h3>
 
 <p>
-Mostra l'overlay Face Orientation di Blender per controllare rapidamente la direzione delle facce.
+Mostra l'overlay <strong>Face Orientation</strong> di Blender per controllare rapidamente se le facce del modello sono orientate nel verso corretto.
 </p>
 
 <p>
-È utile per individuare normali invertite prima di creare la preview low-poly o prima del bake. Quando attivi <strong>Show Face Orientation</strong>, ScanReady disattiva automaticamente <strong>Backface Culling</strong> per evitare controlli visivi sovrapposti.
+In Blender le facce hanno una direzione: un lato è considerato esterno e l'altro interno. Se alcune facce sono invertite, il modello può sembrare corretto nella viewport, ma durante il bake può creare problemi come zone nere, dettagli mancanti, ombre sbagliate o texture trasferite male.
+</p>
+
+<p>
+Usa <strong>Show Face Orientation</strong> prima di creare la preview low-poly o prima del bake per verificare che la scansione non abbia normali invertite. In generale, le parti esterne del modello dovrebbero apparire blu; le parti rosse indicano facce orientate al contrario.
+</p>
+
+<p>
+Quando attivi <strong>Show Face Orientation</strong>, ScanReady disattiva automaticamente <strong>Backface Culling</strong> per evitare controlli visivi sovrapposti.
 </p>
 </div>
 
