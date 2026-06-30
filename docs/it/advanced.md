@@ -304,7 +304,7 @@ Backface Culling e Show Face Orientation sono collegati: se attivi uno, ScanRead
 
 <div style="margin:18px 0 30px; text-align:center;">
   <!-- Sostituire con ../../img/advanced-backface-culling-detail.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Backface Culling di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_backface_culling_2.jpg" alt="Placeholder dettaglio Backface Culling di ScanReady" style="width:760px; max-width:100%;">
 </div>
 
 <hr>
