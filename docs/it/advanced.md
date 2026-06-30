@@ -230,7 +230,10 @@ Lascialo disattivato se vuoi mantenere i materiali sorgente il più possibile in
   <!-- Sostituire con ../../img/advanced-convert-source-materials.png -->
   <img src="../../img/advanced_convert_source.jpg" alt="Placeholder screenshot Convert Source Materials di ScanReady" style="width:260px; max-width:100%;">
 </div>
-
+<div style="margin:18px 0 30px; text-align:center;">
+  <!-- Sostituire con ../../img/advanced-auto-clean-scan-debris-detail.png -->
+  <img src="../../img/advanced_convert_source_materials.gif" alt="Placeholder dettaglio Auto Clean Scan Debris di ScanReady" style="width:760px; max-width:100%;">
+</div>
 </div>
 
 <hr>
