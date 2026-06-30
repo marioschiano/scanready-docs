@@ -245,7 +245,7 @@ In Blender le facce hanno una direzione: un lato è considerato esterno e l'altr
 </p>
 
 <p>
-Usa <strong>Show Face Orientation</strong> prima di creare la preview low-poly o prima del bake per verificare che la scansione non abbia normali invertite. In generale, le parti esterne del modello dovrebbero apparire blu; le parti rosse indicano facce orientate al contrario.
+Usa <strong>Show Face Orientation</strong> prima di creare la preview low-poly o prima del bake per verificare che la scansione non abbia normali invertite. Le facce evidenziate in rosso indicano normalmente superfici orientate al contrario e possono causare problemi durante il bake.
 </p>
 
 <p>
