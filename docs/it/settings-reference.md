@@ -37,7 +37,7 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 | **Optimize / Reduce** | Controlla quanto la mesh viene ridotta. | Valori più bassi creano una riduzione più forte. Valori più alti mantengono più geometria. |
 | **Pre-Decimate Merge** | Esegue Merge by Distance sulla mesh preview duplicata prima di Decimate. È il singolo controllo esplicito di weld in ScanReady. | Aumentalo per ridurre poligoni sovrapposti prima dell'ottimizzazione. Abbassalo se vengono colpiti dettagli sottili. |
 | **Auto Clear Sharp Edges** | Rimuove marcature sharp edge non desiderate durante la preparazione. | Tienilo attivo quando la scansione mostra bordi o shading marcati in modo errato. |
-| **Auto Combine Mesh Parts** | Combina parti mesh importate come oggetti separati. | Utile per scansioni composte da molte parti che devono diventare un unico asset. |
+| **Auto Combine Mesh Parts** | Attivo di default. Rileva automaticamente gerarchie con più mesh e le combina quando serve; se la scansione è già una mesh unica non esegue nessuna unione. | Lascialo attivo per GLB, FBX o scansioni fotogrammetriche divise in più parti. Disattivalo solo se l'unione automatica crea problemi o se vuoi mantenere parti separate. |
 | **Auto Clean Scan Debris** | Rimuove piccoli frammenti, poligoni sospesi e vertici isolati. | Tienilo attivo per scansioni fotogrammetriche grezze. |
 | **Convert Source Materials** | Converte i materiali sorgente in un setup più prevedibile per il bake. | Attivalo se i materiali importati sono complessi o poco compatibili con il trasferimento texture. |
 | **Show Face Orientation** | Mostra l'overlay Face Orientation di Blender. | Usalo per controllare normali invertite prima di preview, UV o bake. |

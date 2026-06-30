@@ -147,11 +147,15 @@ Rimuove automaticamente marcature sharp edge dalla mesh durante la preparazione.
 <h3>Auto Combine Mesh Parts</h3>
 
 <p>
-Combina automaticamente più parti mesh della scansione quando lavori con import composti da molti oggetti separati.
+Combina automaticamente più parti mesh della scansione quando lavori con import composti da molti oggetti separati. È attivo di default.
 </p>
 
 <p>
-Usalo quando la scansione arriva da fotogrammetria o da esportazioni che dividono il modello in più elementi, ma vuoi trattarla come un unico asset ScanReady.
+ScanReady controlla da solo se la selezione contiene una gerarchia con tante mesh da unire. Se la scansione è già una mesh unica, non esegue nessuna unione.
+</p>
+
+<p>
+Lascialo attivo nella maggior parte dei casi, soprattutto con scansioni da fotogrammetria, GLB o FBX divisi in più elementi. Disattivalo solo se l'unione automatica crea problemi o se vuoi mantenere intenzionalmente parti mesh separate.
 </p>
 </div>
 
