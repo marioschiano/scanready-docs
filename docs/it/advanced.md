@@ -340,7 +340,7 @@ Mostra il modello in una visualizzazione piatta senza illuminazione di scena.
 
 <div style="margin:18px 0 30px; text-align:center;">
   <!-- Sostituire con ../../img/advanced-use-texture-view-detail.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Use Texture View di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_use_texture_view.gif" alt="Placeholder dettaglio Use Texture View di ScanReady" style="width:760px; max-width:100%;">
 </div>
 
 <hr>
