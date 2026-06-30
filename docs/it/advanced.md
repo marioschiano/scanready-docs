@@ -205,11 +205,19 @@ Rimuove detriti comuni della scansione, come frammenti isolati, poligoni sospesi
 <h3>Convert Source Materials</h3>
 
 <p>
-Converte i materiali sorgente della scansione in una forma più prevedibile per il workflow ScanReady.
+Converte i materiali sorgente della scansione in una configurazione più pulita e prevedibile per il workflow di ScanReady.
 </p>
 
 <p>
-Lascialo disattivato se vuoi mantenere i materiali sorgente il più possibile invariati. Attivalo quando i materiali importati sono complessi o poco compatibili con il bake.
+Alcuni modelli importati, soprattutto da file GLB, Sketchfab o librerie online, possono usare materiali complessi o collegamenti poco adatti al bake. Per esempio, una texture diffuse può essere collegata all'Emission invece che al Base Color.
+</p>
+
+<p>
+Quando questa opzione è attiva, ScanReady ricostruisce i materiali usando uno shader standard <strong>Principled BSDF</strong> di Blender. Questo rende il bake più coerente e aiuta a evitare risultati strani causati da shader importati troppo complessi.
+</p>
+
+<p>
+Lascialo disattivato se vuoi mantenere i materiali sorgente il più possibile invariati. Attivalo quando i materiali importati sono complessi, non vengono letti correttamente, oppure producono un bake poco prevedibile.
 </p>
 </div>
 
