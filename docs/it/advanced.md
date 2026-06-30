@@ -315,7 +315,7 @@ Backface Culling e Show Face Orientation sono collegati: se attivi uno, ScanRead
 <h3>Use Texture View</h3>
 
 <p>
-Mostra il modello in una visualizzazione piatta orientata alla texture, senza illuminazione di scena.
+Mostra il modello in una visualizzazione piatta senza illuminazione di scena.
 </p>
 
 <p>
