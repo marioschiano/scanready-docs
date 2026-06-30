@@ -217,11 +217,11 @@ Alcuni modelli importati, soprattutto da file GLB, Sketchfab o librerie online, 
 </p>
 
 <p>
-Quando questa opzione è attiva, ScanReady ricostruisce i materiali usando uno shader standard <strong>Principled BSDF</strong> di Blender. Questo rende il bake più coerente e aiuta a evitare risultati strani causati da shader importati troppo complessi.
+Quando questa opzione è attiva, ScanReady controlla i materiali sorgente. Se trova già un materiale standard basato su <strong>Principled BSDF</strong>, lo lascia invariato e protegge solo materiale e texture con fake user. Se invece trova shader importati complessi, ricostruisce un materiale più pulito e prevedibile.
 </p>
 
 <p>
-Lascialo disattivato se vuoi mantenere i materiali sorgente il più possibile invariati. Attivalo quando i materiali importati sono complessi, non vengono letti correttamente, oppure producono un bake poco prevedibile.
+Di default resta disattivato. Abilitalo solo se il bake non esce bene, per esempio se la Base Color risulta nera, incompleta o poco coerente, oppure se i materiali importati non vengono letti correttamente da ScanReady.
 </p>
 </div>
 
