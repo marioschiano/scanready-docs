@@ -270,7 +270,7 @@ Quando attivi <strong>Show Face Orientation</strong>, ScanReady disattiva automa
 
 <div style="margin:18px 0 30px; text-align:center;">
   <!-- Sostituire con ../../img/advanced-show-face-orientation-detail.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Show Face Orientation di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_showface_orientation2.jpg" alt="Placeholder dettaglio Show Face Orientation di ScanReady" style="width:760px; max-width:100%;">
 </div>
 
 <hr>
