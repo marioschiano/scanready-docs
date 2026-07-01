@@ -960,7 +960,7 @@ Controlla se Ambient Occlusion viene cotta dalla sorgente high-poly al target lo
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>AO Source</strong></p>
   <!-- Sostituire con ../../img/advanced-ao-source.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot AO Source di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_ao_source.png" alt="Placeholder screenshot AO Source di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
