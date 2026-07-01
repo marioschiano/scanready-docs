@@ -942,7 +942,7 @@ Queste opzioni appaiono quando <strong>Bake Occlusion</strong> è abilitato.
 <div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Occlusion Settings</strong></p>
   <!-- Sostituire con ../../img/advanced-occlusion-settings.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Occlusion Settings di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_occlusion_settings.jpg" alt="Placeholder screenshot Occlusion Settings di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
