@@ -1069,7 +1069,7 @@ Queste opzioni aiutano a ridurre problemi di memoria durante operazioni di bake 
 <div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Memory Safety</strong></p>
   <!-- Sostituire con ../../img/advanced-memory-safety.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Memory Safety di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_memory_safe.png" alt="Placeholder screenshot Memory Safety di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
