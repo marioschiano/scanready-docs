@@ -1091,7 +1091,7 @@ Lascialo attivo quando lavori con asset fotogrammetrici densi o alte risoluzioni
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Safe Memory Bake</strong></p>
   <!-- Sostituire con ../../img/advanced-safe-memory-bake.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Safe Memory Bake di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_safe_memory.png" alt="Placeholder screenshot Safe Memory Bake di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -1119,7 +1119,7 @@ ScanReady può abilitarlo automaticamente quando viene usato il bake multi-mater
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Force CPU Baking</strong></p>
   <!-- Sostituire con ../../img/advanced-force-cpu-baking.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Force CPU Baking di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_force_cpu.png" alt="Placeholder screenshot Force CPU Baking di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
