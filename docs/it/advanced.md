@@ -980,7 +980,7 @@ Calcola automaticamente la distanza AO in base alla dimensione del modello.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>AO Auto Distance</strong></p>
   <!-- Sostituire con ../../img/advanced-ao-auto-distance.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot AO Auto Distance di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_auto_ao_distance.png" alt="Placeholder screenshot AO Auto Distance di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -1024,7 +1024,7 @@ Valori più alti producono AO più pulita ma aumentano il tempo di bake.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>AO Samples</strong></p>
   <!-- Sostituire con ../../img/advanced-ao-samples.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot AO Samples di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_ao_sample.png" alt="Placeholder screenshot AO Samples di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -1048,7 +1048,7 @@ Il valore predefinito è <strong>1.0</strong>, che usa tutta la texture AO bake 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>AO Mix</strong></p>
   <!-- Sostituire con ../../img/advanced-ao-mix.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot AO Mix di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_ao_mix.png" alt="Placeholder screenshot AO Mix di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
