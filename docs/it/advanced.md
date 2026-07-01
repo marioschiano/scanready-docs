@@ -556,7 +556,7 @@ Aumentalo quando la scansione contiene dettagli fini che non vuoi perdere. Abbas
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Detail Preserve</strong></p>
   <!-- Sostituire con ../../img/advanced-detail-preserve.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Detail Preserve di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_adaptive_detail_preserve.png" alt="Placeholder screenshot Detail Preserve di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
