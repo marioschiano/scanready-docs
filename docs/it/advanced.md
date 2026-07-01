@@ -849,7 +849,7 @@ Usa <strong>Analyze Texture Detail</strong> dopo aver generato le UV, prima del 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Texture Detail</strong></p>
   <!-- Sostituire con ../../img/advanced-texture-detail.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Texture Detail di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_texture_detail.png" alt="Placeholder screenshot Texture Detail di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
