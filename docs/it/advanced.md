@@ -485,7 +485,10 @@ Usa questa preview quando una scansione ha superfici miste, come pannelli archit
 </div>
 
 </div>
-
+<div style="margin:18px 0 30px; text-align:center;">
+  <!-- Sostituire con ../../img/advance_show_adaptive.png -->
+  <img src="../../img/advance_show_adaptive.png" alt="Placeholder dettaglio advance_show_adaptive.png di ScanReady" style="width:760px; max-width:100%;">
+</div>
 <hr>
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
