@@ -897,7 +897,7 @@ Valori più alti preservano più dettaglio immagine ma creano file più grandi.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>JPG Quality</strong></p>
   <!-- Sostituire con ../../img/advanced-jpg-quality.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot JPG Quality di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_bake_jpg_quality.png" alt="Placeholder screenshot JPG Quality di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
