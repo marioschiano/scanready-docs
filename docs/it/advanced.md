@@ -1000,7 +1000,7 @@ Distanza manuale dei raggi AO quando la distanza automatica è disattivata.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>AO Distance</strong></p>
   <!-- Sostituire con ../../img/advanced-ao-distance.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot AO Distance di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_ao_distance.png" alt="Placeholder screenshot AO Distance di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
