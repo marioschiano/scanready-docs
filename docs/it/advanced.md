@@ -445,7 +445,7 @@ Scegli il preset più adatto alla scansione e all'asset target.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Adaptive Reduce Preset</strong></p>
   <!-- Sostituire con ../../img/advanced-adaptive-reduce-preset.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Adaptive Reduce Preset di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_adaptive_preset.png" alt="Placeholder screenshot Adaptive Reduce Preset di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
