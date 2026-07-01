@@ -580,7 +580,7 @@ Valori più alti possono produrre una distribuzione meno frastagliata, utile su 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Smooth Weights</strong></p>
   <!-- Sostituire con ../../img/advanced-smooth-weights.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Smooth Weights di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_smooth_weight.png" alt="Placeholder screenshot Smooth Weights di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -604,7 +604,7 @@ Usa una modalità più veloce e approssimata del calcolo adattivo.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Fast Adaptive Reduce</strong></p>
   <!-- Sostituire con ../../img/advanced-fast-adaptive-reduce.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Fast Adaptive Reduce di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_fast_adaptive_.png" alt="Placeholder screenshot Fast Adaptive Reduce di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -628,7 +628,7 @@ Protegge bordi importanti e rotture nette della superficie durante la riduzione.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Protect Feature Edges</strong></p>
   <!-- Sostituire con ../../img/advanced-protect-feature-edges.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Protect Feature Edges di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_feature_edge.png" alt="Placeholder screenshot Protect Feature Edges di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -652,7 +652,7 @@ Valori più bassi proteggono più bordi. Valori più alti proteggono solo cambi 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Feature Edge Angle</strong></p>
   <!-- Sostituire con ../../img/advanced-feature-edge-angle.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Feature Edge Angle di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_edge_angle.png" alt="Placeholder screenshot Feature Edge Angle di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
