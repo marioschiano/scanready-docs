@@ -873,7 +873,7 @@ Controlla la forza del nodo Normal Map nel materiale finale. Cambia solo l'aspet
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Normal Strength</strong></p>
   <!-- Sostituire con ../../img/advanced-normal-strength.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Normal Strength di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_adaptive_normal_strenght.jpg" alt="Placeholder screenshot Normal Strength di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
