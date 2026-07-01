@@ -676,7 +676,7 @@ Può aiutare a mantenere più stabile la forma attorno a bordi netti, cornici, p
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Feature Edge Rings</strong></p>
   <!-- Sostituire con ../../img/advanced-feature-edge-rings.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Feature Edge Rings di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_edge_rings.png" alt="Placeholder screenshot Feature Edge Rings di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
