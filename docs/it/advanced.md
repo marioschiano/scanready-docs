@@ -532,7 +532,7 @@ Valori più bassi rendono ScanReady più sensibile alle variazioni di superficie
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Adaptive Reduce Angle</strong></p>
   <!-- Sostituire con ../../img/advanced-adaptive-reduce-angle.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Adaptive Reduce Angle di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_adaptive_reduce_angle.png" alt="Placeholder screenshot Adaptive Reduce Angle di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
