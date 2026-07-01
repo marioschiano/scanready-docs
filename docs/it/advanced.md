@@ -1275,7 +1275,7 @@ Le opzioni di diagnostica servono per controllare meglio cosa sta facendo ScanRe
 <div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Diagnostics</strong></p>
   <!-- Sostituire con ../../img/advanced-diagnostics.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Diagnostics di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_diagnostic.png" alt="Placeholder screenshot Diagnostics di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
