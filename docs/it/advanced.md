@@ -862,7 +862,7 @@ Usa <strong>Analyze Texture Detail</strong> dopo aver generato le UV, prima del 
 <h3>Normal Strength</h3>
 
 <p>
-Appare quando <strong>Bake Normal</strong> è abilitato.
+Appare quando <strong>Bake Normal Map</strong> è abilitato.
 </p>
 
 <p>
@@ -935,7 +935,7 @@ Può essere utile per asset dettagliati, workflow archivio o output texture tecn
 <div style="flex:1 1 0; min-width:0;">
 
 <p>
-Queste opzioni appaiono quando <strong>Bake Occlusion</strong> è abilitato.
+Queste opzioni appaiono quando <strong>Bake Occlusion Map</strong> è abilitato.
 </p>
 </div>
 

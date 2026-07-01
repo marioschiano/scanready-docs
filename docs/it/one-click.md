@@ -141,7 +141,7 @@ Per ottenere risultati migliori:
 - seleziona un solo oggetto high-poly nel 3D Viewport;
 - imposta **Optimize / Reduce** oppure **Final Faces** se conosci la densità numerica target della mesh;
 - scegli **Texture Size** in base al livello di dettaglio necessario: 512, 1K, 2K, 4K o 8K;
-- abilita **Bake Base Color**, **Bake Normal**, **Bake Roughness** o **Bake Occlusion** in base alle mappe che vuoi;
+- abilita **Bake Base Color**, **Bake Normal Map**, **Bake Roughness Map** o **Bake Occlusion Map** in base alle mappe che vuoi;
 - imposta la **Output Folder** se vuoi salvare le texture in una cartella specifica del disco.
 
 Per scansioni con grandi superfici continue, il preset **Flat Surfaces** di Adaptive Reduce può essere utile prima del bake perché permette di semplificare in modo più aggressivo le aree semplici.

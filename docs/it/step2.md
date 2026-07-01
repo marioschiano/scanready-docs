@@ -146,12 +146,11 @@ ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'
 
 Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 
-<!-- Sostituire il placeholder con ../../img/step2-ui-panel.png -->
-<p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Placeholder pannello impostazioni UV e Cage di ScanReady" style="max-width:1000px;width:100%;">
-</p>
-
 ### Smart UV Preset
+
+<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:28px;">
+
+<div style="flex:1 1 0; min-width:0;">
 
 ScanReady usa Blender Smart UV Project per la generazione UV automatica.
 
@@ -160,6 +159,16 @@ I preset Smart UV disponibili includono **Detailed**, **Balanced**, **Large Isla
 I controlli UV influenzano come la mesh ottimizzata viene aperta prima del bake. Sono separati da Adaptive Reduce, che controlla come la mesh viene semplificata nello Step 1.
 
 Cambiare Smart UV Preset, Smart UV Angle o UV Padding non ricostruisce subito il layout UV corrente. Le nuove impostazioni UV vengono usate la prossima volta che clicchi **Generate UVs**, oppure quando **One Click Bake** esegue lo step di generazione UV. **Bake Textures** usa il layout UV già esistente.
+
+</div>
+
+<div style="flex:0 0 320px; text-align:center;">
+  <p style="margin-top:0;"><strong>Smart UV Preset</strong></p>
+  <!-- Sostituire il placeholder con ../../img/step2-ui-panel.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder pannello Smart UV Preset di ScanReady" style="width:320px; max-width:100%;">
+</div>
+
+</div>
 
 ### Smart UV Angle
 

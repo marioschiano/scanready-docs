@@ -78,13 +78,13 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
     <li>Apri <strong>STEP 3 Bake / Output</strong>.</li>
     <li>Scegli <strong>Texture Preset / Texture Size</strong>.</li>
     <li>Scegli quanti <strong>Bake Materials</strong> usare.</li>
-    <li>Attiva le mappe che vuoi generare, per esempio <strong>Bake Base Color</strong>, <strong>Bake Normal</strong>, <strong>Bake Roughness</strong> o <strong>Bake Occlusion</strong>.</li>
+    <li>Attiva le mappe che vuoi generare, per esempio <strong>Bake Base Color</strong>, <strong>Bake Normal Map</strong>, <strong>Bake Roughness Map</strong> o <strong>Bake Occlusion Map</strong>.</li>
     <li>Clicca <strong>Bake Textures</strong>.</li>
   </ol>
 
   <p>ScanReady esegue il bake una texture alla volta, collega le texture generate al materiale finale e crea un asset più leggero pronto per realtime, VR, videogame, AR e scene interattive.</p>
 
-  <p><strong>Nota:</strong> la spunta <strong>Bake Roughness</strong> viene mostrata solo se il materiale high-poly ha un input Roughness collegato. Se non c'è una roughness collegata, ScanReady non può trasferirla e la spunta non viene mostrata.</p>
+  <p><strong>Nota:</strong> la spunta <strong>Bake Roughness Map</strong> viene mostrata solo se il materiale high-poly ha un input Roughness collegato. Se non c'è una roughness collegata, ScanReady non può trasferirla e la spunta non viene mostrata.</p>
 
   <p>Prima di cliccare <strong>Bake Textures</strong>, controlla che il cage copra la scansione high-poly. Se il cage è troppo piccolo, possono comparire aree nere, dettagli mancanti o proiezioni errate.</p>
 </div>

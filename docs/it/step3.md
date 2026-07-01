@@ -175,29 +175,29 @@ Se non viene trovata una normal map collegata, ScanReady esegue un bake geometri
 
 Le texture normal vengono trattate come dati tecnici **Non-Color**.
 
-Il controllo materiale **Normal Strength** è disponibile in **Advanced > Bake Settings** quando **Bake Normal** è attivo.
+Il controllo materiale **Normal Strength** è disponibile in **Advanced > Bake Settings** quando **Bake Normal Map** è attivo.
 
 ---
 
-### Bake Roughness
+### Bake Roughness Map
 
 Cuoce o trasferisce le informazioni roughness dal materiale high-poly.
 
 Usalo quando il materiale originale contiene già informazioni roughness che devono essere preservate sull'asset low-poly finale.
 
-La spunta **Bake Roughness** viene mostrata solo quando ScanReady trova un input Roughness collegato nel materiale high-poly. Se il materiale sorgente non ha una roughness collegata, ScanReady non può trasferirla e l'opzione non viene mostrata.
+La spunta **Bake Roughness Map** viene mostrata solo quando ScanReady trova un input Roughness collegato nel materiale high-poly. Se il materiale sorgente non ha una roughness collegata, ScanReady non può trasferirla e l'opzione non viene mostrata.
 
 Anche le texture roughness vengono gestite come dati tecnici **Non-Color**.
 
 ---
 
-### Bake Occlusion map
+### Bake Occlusion Map
 
 Cuoce una mappa Ambient Occlusion.
 
 L'AO può aiutare ad aggiungere ombre di contatto e profondità di superficie al materiale finale.
 
-Il controllo materiale **AO Mix** è disponibile in **Advanced > Occlusion Settings** quando **Bake Occlusion** è attivo. Il valore predefinito è `1.0`, che applica l'intera texture AO bake al materiale finale.
+Il controllo materiale **AO Mix** è disponibile in **Advanced > Occlusion Settings** quando **Bake Occlusion Map** è attivo. Il valore predefinito è `1.0`, che applica l'intera texture AO bake al materiale finale.
 
 ---
 

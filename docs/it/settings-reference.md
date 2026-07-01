@@ -112,9 +112,9 @@ Le impostazioni Smart UV vengono applicate quando le UV vengono generate. Se cam
 | **Bake Samples** | Imposta il numero di sample Cycles per il bake. | Alzalo per bake più puliti, soprattutto AO. Abbassalo per test più rapidi. |
 | **Bake Margin** | Aggiunge padding attorno alle isole UV bake. | Aumentalo per ridurre seam e texture bleeding. |
 | **Bake Base Color** | Cuoce la texture colore principale. | Tienilo attivo quando vuoi preservare il colore originale della scansione. |
-| **Bake Normal** | Cuoce o trasferisce una normal map. | Se il materiale high ha una normal texture collegata, ScanReady la trasferisce. Altrimenti esegue un bake normal geometrico high-to-low. |
-| **Bake Roughness** | Trasferisce roughness dal materiale high quando è collegata una roughness texture. | Attivalo quando l'asset finale deve mantenere variazione roughness dal materiale originale. |
-| **Bake Occlusion** | Cuoce una mappa Ambient Occlusion. | Attivalo per aggiungere profondità e ombre di contatto. |
+| **Bake Normal Map** | Cuoce o trasferisce una normal map. | Se il materiale high ha una normal texture collegata, ScanReady la trasferisce. Altrimenti esegue un bake normal geometrico high-to-low. |
+| **Bake Roughness Map** | Trasferisce roughness dal materiale high quando è collegata una roughness texture. | Attivalo quando l'asset finale deve mantenere variazione roughness dal materiale originale. |
+| **Bake Occlusion Map** | Cuoce una mappa Ambient Occlusion. | Attivalo per aggiungere profondità e ombre di contatto. |
 | **Normal Strength** | Controllo avanzato della forza del nodo Normal Map. | Regolalo in Advanced > Bake Settings se il dettaglio normal appare troppo debole o troppo forte. |
 
 ---
@@ -195,8 +195,8 @@ Le impostazioni Smart UV vengono applicate quando le UV vengono generate. Se cam
 |---|---|
 | **Final Faces** | Più basso |
 | **Texture Size** | 1024 o 2048 |
-| **Bake Normal** | Attivo se il dettaglio superficie è importante |
-| **Bake Occlusion** | Opzionale |
+| **Bake Normal Map** | Attivo se il dettaglio superficie è importante |
+| **Bake Occlusion Map** | Opzionale |
 | **Safe Memory Bake** | Attivo |
 | **Bake Materials** | Mantienilo basso |
 
@@ -207,8 +207,8 @@ Le impostazioni Smart UV vengono applicate quando le UV vengono generate. Se cam
 | **Final Faces** | Medio |
 | **Texture Size** | 2048 |
 | **Bake Base Color** | Attivo |
-| **Bake Normal** | Attivo |
-| **Bake Occlusion** | Opzionale |
+| **Bake Normal Map** | Attivo |
+| **Bake Occlusion Map** | Opzionale |
 | **Image Format** | PNG o JPG in base alla pipeline |
 
 ### Asset da presentazione ravvicinata
@@ -217,8 +217,8 @@ Le impostazioni Smart UV vengono applicate quando le UV vengono generate. Se cam
 |---|---|
 | **Final Faces** | Più alto |
 | **Texture Size** | 4096 o superiore |
-| **Bake Normal** | Attivo |
-| **Bake Occlusion** | Attivo |
+| **Bake Normal Map** | Attivo |
+| **Bake Occlusion Map** | Attivo |
 | **Bake Samples** | Più alto |
 | **Image Format** | PNG o TIFF |
 
