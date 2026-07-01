@@ -703,7 +703,7 @@ Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 <div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>UV Settings</strong></p>
   <!-- Sostituire con ../../img/advanced-uv-settings.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot UV Settings di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_uv_settings.png" alt="Placeholder screenshot UV Settings di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -734,7 +734,7 @@ I preset Adaptive Reduce sono separati dalla generazione UV: Adaptive Reduce con
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Smart UV Angle</strong></p>
   <!-- Sostituire con ../../img/advanced-smart-uv-angle.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Smart UV Angle di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_uv_smart_uv.png" alt="Placeholder screenshot Smart UV Angle di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -758,7 +758,7 @@ Aumenta il padding per ridurre texture bleeding, soprattutto a risoluzioni textu
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>UV Padding</strong></p>
   <!-- Sostituire con ../../img/advanced-uv-padding.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot UV Padding di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_uv_padding.png" alt="Placeholder screenshot UV Padding di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
