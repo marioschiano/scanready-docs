@@ -779,7 +779,7 @@ Queste impostazioni controllano qualità bake, padding texture, qualità formato
 <div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Bake Settings</strong></p>
   <!-- Sostituire con ../../img/advanced-bake-settings.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Bake Settings di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_bake_settings.png" alt="Placeholder screenshot Bake Settings di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -801,7 +801,7 @@ Valori più alti possono ridurre il rumore, soprattutto per Ambient Occlusion, m
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Bake Samples</strong></p>
   <!-- Sostituire con ../../img/advanced-bake-samples.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Bake Samples di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_bake_sample.png" alt="Placeholder screenshot Bake Samples di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -825,7 +825,7 @@ Aiuta a ridurre seam visibili e texture bleeding.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Bake Margin</strong></p>
   <!-- Sostituire con ../../img/advanced-bake-margin.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Bake Margin di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_bake_margin.png" alt="Placeholder screenshot Bake Margin di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
