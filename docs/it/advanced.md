@@ -481,7 +481,7 @@ Usa questa preview quando una scansione ha superfici miste, come pannelli archit
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Show Adaptive Weights</strong></p>
   <!-- Sostituire con ../../img/advanced-show-adaptive-weights.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Show Adaptive Weights di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_show_adaptive.png" alt="Placeholder screenshot Show Adaptive Weights di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
