@@ -369,7 +369,7 @@ Usalo quando la scansione appare rovesciata o ha shading incoerente.
 
 <div style="margin:18px 0 30px; text-align:center;">
   <!-- Sostituire con ../../img/advanced-recalculate-outside-normals-detail.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder dettaglio Recalculate Outside Normals di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_recaulate_outside.gif" alt="Placeholder dettaglio Recalculate Outside Normals di ScanReady" style="width:760px; max-width:100%;">
 </div>
 
 ---
