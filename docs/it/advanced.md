@@ -396,7 +396,7 @@ I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Low-poly 
 <div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Adaptive Reduce</strong></p>
   <!-- Sostituire con ../../img/advanced-adaptive-reduce.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Adaptive Reduce di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_adaptive_reduce.jpg" alt="Placeholder screenshot Adaptive Reduce di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
