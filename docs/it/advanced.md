@@ -508,7 +508,7 @@ Valori più alti rendono più marcata la differenza tra aree protette e aree sem
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Adaptive Reduce Strength</strong></p>
   <!-- Sostituire con ../../img/advanced-adaptive-reduce-strength.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Adaptive Reduce Strength di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_adaptive_reduce_strength.png" alt="Placeholder screenshot Adaptive Reduce Strength di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
