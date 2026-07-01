@@ -148,17 +148,17 @@ Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 
 ### Smart UV Preset
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:28px;">
+<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:16px; margin-bottom:28px;">
 
-<div style="flex:1 1 0; min-width:0;">
+<div style="flex:1 1 420px; min-width:0;">
 
-ScanReady usa Blender Smart UV Project per la generazione UV automatica.
+<p>ScanReady usa Blender Smart UV Project per la generazione UV automatica.</p>
 
-I preset Smart UV disponibili includono **Detailed**, **Balanced**, **Large Islands** e **Continuous**.
+<p>I preset Smart UV disponibili includono <strong>Detailed</strong>, <strong>Balanced</strong>, <strong>Large Islands</strong> e <strong>Continuous</strong>.</p>
 
-I controlli UV influenzano come la mesh ottimizzata viene aperta prima del bake. Sono separati da Adaptive Reduce, che controlla come la mesh viene semplificata nello Step 1.
+<p>I controlli UV influenzano come la mesh ottimizzata viene aperta prima del bake. Sono separati da Adaptive Reduce, che controlla come la mesh viene semplificata nello Step 1.</p>
 
-Cambiare Smart UV Preset, Smart UV Angle o UV Padding non ricostruisce subito il layout UV corrente. Le nuove impostazioni UV vengono usate la prossima volta che clicchi **Generate UVs**, oppure quando **One Click Bake** esegue lo step di generazione UV. **Bake Textures** usa il layout UV già esistente.
+<p>Cambiare Smart UV Preset, Smart UV Angle o UV Padding non ricostruisce subito il layout UV corrente. Le nuove impostazioni UV vengono usate la prossima volta che clicchi <strong>Generate UVs</strong>, oppure quando <strong>One Click Bake</strong> esegue lo step di generazione UV. <strong>Bake Textures</strong> usa il layout UV già esistente.</p>
 
 </div>
 
