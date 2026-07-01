@@ -148,9 +148,9 @@ Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 
 ### Smart UV Preset
 
-<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:16px; margin-bottom:28px;">
+<div style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
 
-<div style="flex:1 1 420px; min-width:0;">
+<div style="min-width:0;">
 
 <p>ScanReady usa Blender Smart UV Project per la generazione UV automatica.</p>
 
@@ -162,10 +162,10 @@ Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 
 </div>
 
-<div style="flex:0 0 320px; text-align:center;">
+<div style="text-align:center;">
   <p style="margin-top:0;"><strong>Smart UV Preset</strong></p>
   <!-- Sostituire il placeholder con ../../img/step2-ui-panel.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder pannello Smart UV Preset di ScanReady" style="width:320px; max-width:100%;">
+  <img src="../../img/placeholder-image.svg" alt="Placeholder pannello Smart UV Preset di ScanReady" style="width:280px; max-width:100%;">
 </div>
 
 </div>
