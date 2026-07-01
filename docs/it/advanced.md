@@ -921,7 +921,7 @@ Può essere utile per asset dettagliati, workflow archivio o output texture tecn
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>TIFF 16-bit</strong></p>
   <!-- Sostituire con ../../img/advanced-tiff-16-bit.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot TIFF 16-bit di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_tiff_16bit.jpg" alt="Placeholder screenshot TIFF 16-bit di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
