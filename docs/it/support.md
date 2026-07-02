@@ -2,16 +2,6 @@
 
 Hai bisogno di aiuto con ScanReady?
 
----
-
-## Documentazione
-
-Documentazione completa e guide workflow:
-
-[Apri la documentazione ScanReady](https://marioschiano.github.io/scanready-docs/)
-
----
-
 ## YouTube
 
 Video workflow, aggiornamenti e tutorial:
