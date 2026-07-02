@@ -85,21 +85,21 @@ Se sei già nello Step 2 o nello Step 3 e ti serve un modello più leggero o pi�
 | **Smart UV Angle** | Controlla quanto aggressivamente Smart UV Project divide le isole. | Valori più bassi creano più tagli. Valori più alti creano isole più grandi. |
 | **UV Padding** | Aggiunge spazio tra le isole UV. | Aumentalo per ridurre texture bleeding e seam visibili. |
 
-### UV Generation
+### Generazione UV
 
-ScanReady uses **Smart UV Project** to generate UVs.
+ScanReady usa **Smart UV Project** per generare le UV.
 
-The **Adaptive Reduce** presets are separate from the UV settings. They control how the mesh is simplified before UV generation and baking.
+I preset **Adaptive Reduce** sono separati dalle impostazioni UV: controllano come viene semplificata la mesh prima della generazione UV e del bake.
 
-When you change one of these UV settings:
+Se modifichi una di queste impostazioni dopo che le UV sono già state create:
 
 - **Smart UV Preset**
 - **Smart UV Angle**
 - **UV Padding**
 
-click **Generate UVs** again.
+clicca di nuovo **Generate UVs** prima di eseguire il bake.
 
-This rebuilds the UV layout on the optimized mesh before baking.
+In questo modo ScanReady ricrea il layout UV sulla mesh ottimizzata usando i nuovi valori.
 
 ---
 
