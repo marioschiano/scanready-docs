@@ -1156,7 +1156,7 @@ Usa i preset quando lavori su più scansioni con requisiti simili, come:
 <div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Preset</strong></p>
   <!-- Sostituire con ../../img/advanced-preset.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Preset di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_presets.png" alt="Placeholder screenshot Preset di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -1174,7 +1174,7 @@ Definisce il nome del preset da salvare.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Preset Name</strong></p>
   <!-- Sostituire con ../../img/advanced-preset-name.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Preset Name di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_presets_name.png" alt="Placeholder screenshot Preset Name di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -1194,7 +1194,7 @@ Salva le impostazioni correnti di ScanReady come preset riutilizzabile.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Save Preset</strong></p>
   <!-- Sostituire con ../../img/advanced-save-preset.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Save Preset di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_presets_save.png" alt="Placeholder screenshot Save Preset di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -1214,7 +1214,7 @@ Permette di scegliere un preset esistente.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Preset Selector</strong></p>
   <!-- Sostituire con ../../img/advanced-preset-selector.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Preset Selector di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_preset_selector.png" alt="Placeholder screenshot Preset Selector di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -1234,7 +1234,7 @@ Carica il preset selezionato.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Reload Preset</strong></p>
   <!-- Sostituire con ../../img/advanced-reload-preset.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Reload Preset di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_reload_presets.png" alt="Placeholder screenshot Reload Preset di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -1254,7 +1254,7 @@ Elimina il preset selezionato.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Delete Preset</strong></p>
   <!-- Sostituire con ../../img/advanced-delete-preset.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Delete Preset di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_delete_presets.png" alt="Placeholder screenshot Delete Preset di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
