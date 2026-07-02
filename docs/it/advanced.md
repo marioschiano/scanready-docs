@@ -1301,7 +1301,7 @@ Il report può includere dettagli come tempo di Preview / Reduce, Generate UVs, 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Show Diagnostic Timing Report</strong></p>
   <!-- Sostituire con ../../img/advanced-show-diagnostic-timing-report.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Show Diagnostic Timing Report di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_diagnostic_02.png" alt="Placeholder screenshot Show Diagnostic Timing Report di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
