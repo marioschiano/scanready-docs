@@ -104,9 +104,10 @@ ScanReady include strumenti per rendere questo processo più veloce e più sempl
   <img src="../../img/cage_01_red.png" alt="Avviso cage rosso con setup non valido per il bake" style="max-width:1000px;width:100%;">
 </p>
 
-<p align="center">
-  <b>Se il cage appare rosso, il bake non proietterà correttamente. Abilita Show Cage, poi aumenta leggermente Cage Extrusion oppure usa Auto Cage Extrusion prima di continuare.</b>
-</p>
+!!! warning "Cage rosso"
+    Se il cage appare rosso, il bake non proietterà correttamente.
+
+    Abilita **Show Cage**, poi aumenta leggermente **Cage Extrusion** oppure usa **Auto Cage Extrusion** prima di continuare.
 
 <p align="center">
   <img src="../../img/step2-uv-03.png" alt="Confronto cage troppo piccolo, corretto e troppo grande" style="max-width:1100px;width:100%;">
@@ -158,7 +159,11 @@ Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 
 <p>I controlli UV influenzano come la mesh ottimizzata viene aperta prima del bake. Sono separati da Adaptive Reduce, che controlla come la mesh viene semplificata nello Step 1.</p>
 
-<p>Cambiare Smart UV Preset, Smart UV Angle o UV Padding non ricostruisce subito il layout UV corrente. Le nuove impostazioni UV vengono usate la prossima volta che clicchi <strong>Generate UVs</strong>, oppure quando <strong>One Click Bake</strong> esegue lo step di generazione UV. <strong>Bake Textures</strong> usa il layout UV già esistente.</p>
+<div class="admonition note">
+  <p class="admonition-title">Le UV si aggiornano quando le rigeneri</p>
+  <p>Cambiare <strong>Smart UV Preset</strong>, <strong>Smart UV Angle</strong> o <strong>UV Padding</strong> non ricostruisce subito il layout UV corrente.</p>
+  <p>Le nuove impostazioni UV vengono usate la prossima volta che clicchi <strong>Generate UVs</strong>, oppure quando <strong>One Click Bake</strong> esegue lo step di generazione UV. <strong>Bake Textures</strong> usa il layout UV già esistente.</p>
+</div>
 
 </div>
 
@@ -251,11 +256,12 @@ Influenza solo la visualizzazione nel viewport e non cambia il risultato del bak
 
 ## Quando rigenerare le UV
 
-Clicca **Generate UVs** dopo aver creato o aggiornato la preview low-poly.
+!!! note "Quando cliccare Generate UVs"
+    Clicca **Generate UVs** dopo aver creato o aggiornato la preview low-poly.
 
-Se cambi **Smart UV Preset**, **Smart UV Angle** o **UV Padding** dopo aver già generato le UV, clicca di nuovo **Generate UVs** per applicare le nuove impostazioni UV. **Bake Textures** usa il layout UV esistente al momento del bake.
+    Se cambi **Smart UV Preset**, **Smart UV Angle** o **UV Padding** dopo aver già generato le UV, clicca di nuovo **Generate UVs** per applicare le nuove impostazioni UV. **Bake Textures** usa il layout UV esistente al momento del bake.
 
-Se sei nello Step 2 e decidi che la mesh ottimizzata è ancora troppo pesante, torna a **Step 1 - Preview / Reduce**. Abbassa **Final Faces** o **Optimize / Reduce**, poi torna allo Step 2 e clicca di nuovo **Generate UVs** in modo che la mesh UV corrisponda alla nuova ottimizzazione.
+    Se sei nello Step 2 e decidi che la mesh ottimizzata è ancora troppo pesante, torna a **Step 1 - Preview / Reduce**. Abbassa **Final Faces** o **Optimize / Reduce**, poi torna allo Step 2 e clicca di nuovo **Generate UVs** in modo che la mesh UV corrisponda alla nuova ottimizzazione.
 
 Poi controlla:
 

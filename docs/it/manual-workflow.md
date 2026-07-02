@@ -84,7 +84,11 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 
   <p>ScanReady esegue il bake una texture alla volta, collega le texture generate al materiale finale e crea un asset più leggero pronto per realtime, VR, videogame, AR e scene interattive.</p>
 
-  <p><strong>Nota:</strong> la spunta <strong>Bake Roughness Map</strong> viene mostrata solo se il materiale high-poly ha un input Roughness collegato. Se non c'è una roughness collegata, ScanReady non può trasferirla e la spunta non viene mostrata.</p>
+  <div class="admonition info">
+    <p class="admonition-title">Bake Roughness Map</p>
+    <p>La spunta <strong>Bake Roughness Map</strong> viene mostrata solo se il materiale high-poly ha un input Roughness collegato.</p>
+    <p>Se non c'è una roughness collegata, ScanReady non può trasferirla e la spunta non viene mostrata.</p>
+  </div>
 
   <p>Prima di cliccare <strong>Bake Textures</strong>, controlla che il cage copra la scansione high-poly. Se il cage è troppo piccolo, possono comparire aree nere, dettagli mancanti o proiezioni errate.</p>
 </div>
@@ -100,9 +104,10 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 
 ## Se vuoi ottimizzare di più
 
-Puoi tornare indietro in qualsiasi momento.
+!!! tip "Puoi tornare allo Step 1"
+    Puoi tornare indietro in qualsiasi momento.
 
-Se sei già nello Step 2 o nello Step 3 e ti accorgi che la mesh è ancora troppo pesante, torna a **Step 1 - Preview / Reduce**, abbassa **Final Faces** o **Optimize / Reduce**, poi clicca di nuovo **Create Low-poly Preview**.
+    Se sei già nello Step 2 o nello Step 3 e ti accorgi che la mesh è ancora troppo pesante, torna a **Step 1 - Preview / Reduce**, abbassa **Final Faces** o **Optimize / Reduce**, poi clicca di nuovo **Create Low-poly Preview**.
 
 Dopo aver ricreato la preview, continua di nuovo in avanti:
 
@@ -112,7 +117,8 @@ Dopo aver ricreato la preview, continua di nuovo in avanti:
 4. torna a **Step 3 - Bake / Output**;
 5. clicca **Bake Textures**.
 
-Il bake dovrebbe sempre usare la mesh UV ottimizzata più recente.
+!!! note "Mesh UV aggiornata"
+    Il bake dovrebbe sempre usare la mesh UV ottimizzata più recente.
 
 ---
 

@@ -47,6 +47,7 @@ plugins:
 
 markdown_extensions:
   - admonition
+  - md_in_html
 
 extra:
   alternate:

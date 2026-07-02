@@ -18,7 +18,8 @@ Prima dell'export, controlla:
 - l'origine dell'oggetto è posizionata dove serve;
 - la densità della mesh è adatta alla piattaforma target.
 
-Per VR e videogame, le performance contano quanto la qualità visiva.
+!!! tip "Realtime"
+    Per VR e videogame, le performance contano quanto la qualità visiva.
 
 ---
 
@@ -120,7 +121,8 @@ Utile per oggetti ravvicinati o asset importanti.
 
 Usala solo quando serve dettaglio molto alto.
 
-Texture grandi aumentano uso memoria, dimensione file, tempo di caricamento e costo realtime.
+!!! warning "Texture grandi"
+    Texture grandi aumentano uso memoria, dimensione file, tempo di caricamento e costo realtime.
 
 ---
 
@@ -139,7 +141,8 @@ Prima di esportare per VR:
 - testa l'asset nell'ambiente VR target;
 - preferisci meno materiali quando possibile.
 
-Un modello che sembra leggero su desktop può essere ancora troppo pesante per visori VR standalone.
+!!! warning "VR standalone"
+    Un modello che sembra leggero su desktop può essere ancora troppo pesante per visori VR standalone.
 
 ---
 
@@ -212,7 +215,8 @@ Un asset più piccolo è più facile da condividere, caricare e visualizzare in 
 
 ## Conserva la scansione originale
 
-Non eliminare la scansione high-poly originale.
+!!! warning "Conserva la sorgente"
+    Non eliminare la scansione high-poly originale.
 
 Conservala come asset sorgente per:
 

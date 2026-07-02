@@ -82,9 +82,12 @@ Dopo il bake dovresti ottenere:
 
 Controlla il risultato nel viewport e nella sezione **Step 3 - Bake / Output**.
 
-Se il modello finale risulta ancora troppo pesante, oppure se è stato ottimizzato troppo e perde dettagli importanti della forma, torna a **Step 1 - Preview / Reduce**. Regola **Optimize / Reduce** o **Final Faces** e osserva l'aggiornamento della preview. Quando il risultato ti convince, passa allo Step 2 e clicca di nuovo **Generate UVs**.
+!!! tip "Puoi rifinire anche dopo One Click Bake"
+    Se il modello finale risulta ancora troppo pesante, oppure se è stato ottimizzato troppo e perde dettagli importanti della forma, torna a **Step 1 - Preview / Reduce**.
 
-Il workflow è flessibile: anche se sei già in **Step 2 - UV / Cage** oppure **Step 3 - Bake / Output**, puoi tornare allo Step 1, regolare la riduzione dei poligoni e poi proseguire di nuovo verso UV e bake.
+    Regola **Optimize / Reduce** o **Final Faces** e osserva l'aggiornamento della preview. Quando il risultato ti convince, passa allo Step 2 e clicca di nuovo **Generate UVs**.
+
+    Il workflow è flessibile: anche se sei già in **Step 2 - UV / Cage** oppure **Step 3 - Bake / Output**, puoi tornare allo Step 1, regolare la riduzione dei poligoni e poi proseguire di nuovo verso UV e bake.
 
 ---
 

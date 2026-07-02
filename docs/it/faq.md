@@ -77,9 +77,15 @@ Prova questo workflow:
 - vai a **Step 2 - UV / Cage** e clicca di nuovo **Generate UVs**;
 - vai a **Step 3 - Bake / Output** ed esegui di nuovo **Bake Textures**.
 
-Se l'oggetto è un veicolo, un asset meccanico, una scansione architettonica o un altro oggetto hard-surface, prova il preset Adaptive Reduce **Hard Surface**. Per test più rapidi su scansioni molto dense, abilita **Fast Adaptive Reduce** in Advanced prima di creare di nuovo la preview.
+!!! tip "Preset utili"
+    Se l'oggetto è un veicolo, un asset meccanico, una scansione architettonica o un altro oggetto hard-surface, prova il preset Adaptive Reduce **Hard Surface**.
 
-Valori più bassi creano asset più leggeri, ma una riduzione troppo aggressiva può danneggiare silhouette o dettagli importanti. Usa lo step preview per trovare il miglior equilibrio prima del bake.
+    Per test più rapidi su scansioni molto dense, abilita **Fast Adaptive Reduce** in Advanced prima di creare di nuovo la preview.
+
+!!! warning "Riduzione troppo aggressiva"
+    Valori più bassi creano asset più leggeri, ma una riduzione troppo aggressiva può danneggiare silhouette o dettagli importanti.
+
+    Usa lo step preview per trovare il miglior equilibrio prima del bake.
 
 ## Perché compaiono seam visibili nella texture bake?
 

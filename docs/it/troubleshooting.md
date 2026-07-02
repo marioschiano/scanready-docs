@@ -90,7 +90,8 @@ Se parti del dettaglio della scansione mancano nella texture bake:
 - aumenta **Texture Size** se il bake ha risoluzione troppo bassa;
 - assicurati che l'oggetto high-poly originale sia ancora disponibile.
 
-Usa il valore di cage più piccolo che cattura i dettagli in modo pulito.
+!!! tip "Regola cage"
+    Usa il valore di cage più piccolo che cattura i dettagli in modo pulito.
 
 ---
 
@@ -214,11 +215,12 @@ Prova:
 - chiudi altre applicazioni pesanti;
 - salva e riavvia Blender prima del bake.
 
-Force CPU Baking di solito è più lento, ma può essere più sicuro su sistemi con poca VRAM.
+!!! info "CPU e GPU nel bake"
+    Force CPU Baking di solito è più lento, ma può essere più sicuro su sistemi con poca VRAM.
 
-ScanReady abilita automaticamente **Force CPU Baking** quando il numero di materiali bake è impostato a `2` o più.
+    ScanReady abilita automaticamente **Force CPU Baking** quando il numero di materiali bake è impostato a `2` o più.
 
-Per bake a singolo materiale, il bake GPU può comunque essere usato quando disponibile.
+    Per bake a singolo materiale, il bake GPU può comunque essere usato quando disponibile.
 
 ---
 
@@ -282,7 +284,8 @@ Se alcune aree mancano ancora, aumenta leggermente l'extrusion e controlla di nu
 
 Quando il cage sembra corretto, esegui di nuovo il bake per verificare se le aree mancanti o nere sono state corrette.
 
-Usa il valore più piccolo che copre completamente la scansione senza catturare superfici vicine indesiderate.
+!!! tip "Valore cage consigliato"
+    Usa il valore più piccolo che copre completamente la scansione senza catturare superfici vicine indesiderate.
 
 ---
 
@@ -321,7 +324,8 @@ Dopo il reset:
 4. Controlla il cage.
 5. Esegui prima un bake semplice, ad esempio solo Base Color.
 
-Quando il workflow base funziona, riattiva gli altri controlli uno alla volta.
+!!! tip "Riattiva un controllo alla volta"
+    Quando il workflow base funziona, riattiva gli altri controlli uno alla volta.
 
 ---
 
@@ -336,4 +340,5 @@ Se il risultato non è buono, usa questo ordine:
 5. Aggiungi Normal, Roughness e AO dopo che Base Color funziona
 6. Aumenta la risoluzione texture solo quando il workflow è corretto
 
-Questo rende più facile isolare i problemi.
+!!! note "Perché questo ordine aiuta"
+    Questo rende più facile isolare i problemi.

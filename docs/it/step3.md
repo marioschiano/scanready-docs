@@ -91,9 +91,10 @@ Aumentare solo la densità dei poligoni non è sempre la soluzione migliore.
 
 In molti casi, aumentare il numero di materiali bake produce texture più pulite e nitide mantenendo la mesh leggera.
 
-Quando **Bake Materials** è impostato su `2` o più materiali, ScanReady abilita automaticamente **Force CPU Baking** come default più sicuro per workflow multi-materiale.
+!!! info "Bake multi-materiale"
+    Quando **Bake Materials** è impostato su `2` o più materiali, ScanReady abilita automaticamente **Force CPU Baking** come default più sicuro per workflow multi-materiale.
 
-Puoi comunque disabilitarlo manualmente se la tua GPU può gestire il bake in sicurezza.
+    Puoi comunque disabilitarlo manualmente se la tua GPU può gestire il bake in sicurezza.
 
 ---
 
@@ -125,13 +126,14 @@ Se ScanReady non riesce a trovare automaticamente una coppia high-to-UV corrispo
 
 ## Controllo cage prima del bake
 
-Prima del bake, controlla che il cage copra completamente la superficie della scansione high-poly.
+!!! warning "Controlla il cage prima del bake"
+    Prima del bake, controlla che il cage copra completamente la superficie della scansione high-poly.
 
-Se il cage è troppo piccolo, i raggi di bake possono perdere dettagli e produrre aree nere, dettagli mancanti o proiezioni errate.
+    Se il cage è troppo piccolo, i raggi di bake possono perdere dettagli e produrre aree nere, dettagli mancanti o proiezioni errate.
 
-Abilita **Show Cage** e controlla la preview del cage. Poi aumenta leggermente **Cage Extrusion** oppure usa **Auto Cage Extrusion**.
+    Abilita **Show Cage** e controlla la preview del cage. Poi aumenta leggermente **Cage Extrusion** oppure usa **Auto Cage Extrusion**.
 
-Usa il valore di cage più piccolo che cattura i dettagli della scansione senza proiettare superfici vicine indesiderate.
+    Usa il valore di cage più piccolo che cattura i dettagli della scansione senza proiettare superfici vicine indesiderate.
 
 ---
 
@@ -185,7 +187,10 @@ Cuoce o trasferisce le informazioni roughness dal materiale high-poly.
 
 Usalo quando il materiale originale contiene già informazioni roughness che devono essere preservate sull'asset low-poly finale.
 
-La spunta **Bake Roughness Map** viene mostrata solo quando ScanReady trova un input Roughness collegato nel materiale high-poly. Se il materiale sorgente non ha una roughness collegata, ScanReady non può trasferirla e l'opzione non viene mostrata.
+!!! info "Bake Roughness Map"
+    La spunta **Bake Roughness Map** viene mostrata solo quando ScanReady trova un input Roughness collegato nel materiale high-poly.
+
+    Se il materiale sorgente non ha una roughness collegata, ScanReady non può trasferirla e l'opzione non viene mostrata.
 
 Anche le texture roughness vengono gestite come dati tecnici **Non-Color**.
 
@@ -304,7 +309,10 @@ Dopo il bake, Step 3 mostra il box **Bake Folder**.
 
 Mostra la cartella usata dall'ultimo bake e include un pulsante cartella che la apre direttamente nel file browser del sistema operativo.
 
-Usa **Output Folder** per scegliere dove ScanReady deve salvare le texture. Usa **Bake Folder** dopo il bake per aprire rapidamente la cartella realmente usata.
+!!! tip "Output Folder e Bake Folder"
+    Usa **Output Folder** per scegliere dove ScanReady deve salvare le texture.
+
+    Usa **Bake Folder** dopo il bake per aprire rapidamente la cartella realmente usata.
 
 ---
 
@@ -333,11 +341,12 @@ Forza il bake sulla CPU per evitare limiti di memoria GPU.
 
 Di solito è più lento, ma può essere più sicuro su sistemi con VRAM limitata.
 
-Di default, **Force CPU Baking** resta disattivato per bake a singolo materiale.
+!!! info "Force CPU Baking automatico"
+    Di default, **Force CPU Baking** resta disattivato per bake a singolo materiale.
 
-Quando **Bake Materials** è impostato su `2` o più materiali, ScanReady abilita automaticamente **Force CPU Baking** come default più sicuro per workflow multi-materiale.
+    Quando **Bake Materials** è impostato su `2` o più materiali, ScanReady abilita automaticamente **Force CPU Baking** come default più sicuro per workflow multi-materiale.
 
-L'utente può comunque disabilitarlo manualmente.
+    Puoi comunque disabilitarlo manualmente.
 
 ---
 
@@ -371,9 +380,12 @@ Dopo il bake, controlla:
 - File output salvati;
 - Bake Folder apre l'ultima cartella texture salvata.
 
-Se mancano dettagli, abilita **Show Cage** e aumenta leggermente **Cage Extrusion** oppure usa **Auto Cage Extrusion**. Se il bake è troppo morbido o povero di dettaglio, aumenta la risoluzione texture prima di rifare il bake.
+!!! tip "Se il bake va corretto"
+    Se mancano dettagli, abilita **Show Cage** e aumenta leggermente **Cage Extrusion** oppure usa **Auto Cage Extrusion**.
 
-Se la mesh finale è ancora troppo pesante, puoi tornare a **Step 1 - Preview / Reduce** anche dopo essere arrivato allo Step 3. Abbassa **Final Faces** o **Optimize / Reduce**, clicca di nuovo **Create Low-poly Preview**, poi esegui di nuovo **Generate UVs** e **Bake Textures**. Il bake dovrebbe sempre usare la mesh UV ottimizzata più recente.
+    Se il bake è troppo morbido o povero di dettaglio, aumenta la risoluzione texture prima di rifare il bake.
+
+    Se la mesh finale è ancora troppo pesante, puoi tornare a **Step 1 - Preview / Reduce** anche dopo essere arrivato allo Step 3. Abbassa **Final Faces** o **Optimize / Reduce**, clicca di nuovo **Create Low-poly Preview**, poi esegui di nuovo **Generate UVs** e **Bake Textures**. Il bake dovrebbe sempre usare la mesh UV ottimizzata più recente.
 
 ---
 

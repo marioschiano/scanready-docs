@@ -29,13 +29,14 @@ Di default ScanReady parte da un valore **Optimize / Reduce** di **0.10**. Quest
 
 Questo valore funziona bene per molti asset VR, game e realtime. Se il risultato deve avere più o meno dettaglio, regola manualmente il valore in **Step 1 - Preview / Reduce** dopo aver creato la preview low-poly.
 
-One Click Bake è automatico, ma il risultato può comunque essere rifinito dopo.
+!!! tip "One Click Bake non ti blocca"
+    One Click Bake è automatico, ma il risultato può comunque essere rifinito dopo.
 
-Se il modello finale risulta troppo pesante, oppure se è stato ottimizzato troppo e perde dettagli importanti della forma, torna a **Step 1 - Preview / Reduce**. Regola **Optimize / Reduce** o **Final Faces**, poi clicca di nuovo **Create Low-poly Preview**.
+    Se il modello finale risulta troppo pesante, oppure se è stato ottimizzato troppo e perde dettagli importanti della forma, torna a **Step 1 - Preview / Reduce**. Regola **Optimize / Reduce** o **Final Faces**, poi clicca di nuovo **Create Low-poly Preview**.
 
-ScanReady ricostruirà la preview ottimizzata con le nuove impostazioni, così puoi provare una versione più leggera o più dettagliata prima di continuare con UV e bake.
+    ScanReady ricostruirà la preview ottimizzata con le nuove impostazioni, così puoi provare una versione più leggera o più dettagliata prima di continuare con UV e bake.
 
-Il workflow è flessibile: anche se sei già in **Step 2 - UV / Cage** o **Step 3 - Bake / Output**, puoi tornare allo Step 1, regolare la riduzione, cliccare **Create Low-poly Preview**, poi continuare di nuovo in avanti.
+    Il workflow è flessibile: anche se sei già in **Step 2 - UV / Cage** o **Step 3 - Bake / Output**, puoi tornare allo Step 1, regolare la riduzione, cliccare **Create Low-poly Preview**, poi continuare di nuovo in avanti.
 
 ---
 
@@ -112,13 +113,14 @@ Il pannello mostra lo stato del workflow e il progresso globale mentre il proces
 
 ## Interrompere il processo
 
-Se avvii **ONE CLICK BAKE** per errore, puoi premere **Esc** per fermare il workflow.
+!!! info "Stop con Esc"
+    Se avvii **ONE CLICK BAKE** per errore, puoi premere **Esc** per fermare il workflow.
 
-ScanReady interrompe il processo appena lo step corrente è terminato. In questo modo puoi fermare un avvio accidentale senza aspettare minuti inutili, evitando allo stesso tempo di lasciare la scena in uno stato incompleto durante operazioni delicate come pulizia mesh, generazione UV o setup del cage.
+    ScanReady interrompe il processo appena lo step corrente è terminato. In questo modo puoi fermare un avvio accidentale senza aspettare minuti inutili, evitando allo stesso tempo di lasciare la scena in uno stato incompleto durante operazioni delicate come pulizia mesh, generazione UV o setup del cage.
 
-Quando la fase **Step 3 - Bake** è già iniziata, ScanReady lascia completare il bake e la finalizzazione in modo sicuro. Questo riduce il rischio di texture parziali, materiali non collegati o mesh finale non completata.
+    Quando la fase **Step 3 - Bake** è già iniziata, ScanReady lascia completare il bake e la finalizzazione in modo sicuro. Questo riduce il rischio di texture parziali, materiali non collegati o mesh finale non completata.
 
-Dopo uno stop, puoi avviare di nuovo **ONE CLICK BAKE**: ScanReady controlla gli step già validi e riparte dal punto utile del workflow.
+    Dopo uno stop, puoi avviare di nuovo **ONE CLICK BAKE**: ScanReady controlla gli step già validi e riparte dal punto utile del workflow.
 
 ---
 

@@ -21,8 +21,13 @@ Il pannello Advanced raccoglie le impostazioni che influenzano le fasi principal
 </p>
 
 <p>
-Usalo in modo graduale: prima crea una preview low-poly con i valori predefiniti, poi torna in Advanced solo se vuoi correggere qualcosa o migliorare il risultato. Se cambi impostazioni che influenzano mesh, Adaptive Reduce o UV, rigenera lo step corrispondente prima di continuare.
+Usalo in modo graduale: prima crea una preview low-poly con i valori predefiniti, poi torna in Advanced solo se vuoi correggere qualcosa o migliorare il risultato.
 </p>
+
+<div class="admonition tip">
+  <p class="admonition-title">Lavora per step</p>
+  <p>Se cambi impostazioni che influenzano mesh, Adaptive Reduce o UV, rigenera lo step corrispondente prima di continuare.</p>
+</div>
 
 <p>
 Le sezioni principali seguono l'ordine del workflow. Mesh Settings prepara e pulisce la scansione prima della preview low-poly. Adaptive Reduce controlla come ScanReady protegge dettagli, bordi e cambi di normale durante la riduzione. UV Settings gestisce l'apertura UV usata dal bake.
@@ -69,8 +74,13 @@ Esegue una pulizia Merge by Distance sulla mesh preview duplicata prima che veng
 </p>
 
 <p>
-È il singolo controllo esplicito di weld in ScanReady. Può aiutare a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione. Se dopo l'ottimizzazione compaiono buchi nel modello o vengono colpiti dettagli sottili, abbassa il valore e crea di nuovo la preview low-poly.
+È il singolo controllo esplicito di weld in ScanReady. Può aiutare a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione.
 </p>
+
+<div class="admonition warning">
+  <p class="admonition-title">Se compaiono buchi</p>
+  <p>Se dopo l'ottimizzazione compaiono buchi nel modello o vengono colpiti dettagli sottili, abbassa il valore e crea di nuovo la preview low-poly.</p>
+</div>
 </div>
 
 <div style="flex:0 0 260px; text-align:center;">
@@ -217,8 +227,14 @@ Alcuni modelli importati, soprattutto da file GLB, Sketchfab o librerie online, 
 </p>
 
 <p>
-Quando questa opzione è attiva, ScanReady controlla i materiali sorgente. Se trova già un materiale standard basato su <strong>Principled BSDF</strong>, lo lascia invariato e protegge solo materiale e texture con fake user. Se invece trova shader importati complessi, ricostruisce un materiale più pulito e prevedibile.
+Quando questa opzione è attiva, ScanReady controlla i materiali sorgente.
 </p>
+
+<div class="admonition info">
+  <p class="admonition-title">Quando convertire i materiali</p>
+  <p>Se ScanReady trova già un materiale standard basato su <strong>Principled BSDF</strong>, lo lascia invariato e protegge solo materiale e texture con fake user.</p>
+  <p>Se invece trova shader importati complessi, ricostruisce un materiale più pulito e prevedibile.</p>
+</div>
 
 <p>
 Di default resta disattivato. Abilitalo solo se il bake non esce bene, per esempio se la Base Color risulta nera, incompleta o poco coerente, oppure se i materiali importati non vengono letti correttamente da ScanReady.
@@ -258,6 +274,11 @@ Usa <strong>Show Face Orientation</strong> prima di creare la preview low-poly o
 <p>
 Quando attivi <strong>Show Face Orientation</strong>, ScanReady disattiva automaticamente <strong>Backface Culling</strong> per evitare controlli visivi sovrapposti.
 </p>
+
+<div class="admonition note">
+  <p class="admonition-title">Show Face Orientation e Backface Culling</p>
+  <p>I due controlli sono pensati per verifiche diverse e si escludono a vicenda, così la viewport resta leggibile.</p>
+</div>
 </div>
 
 <div style="flex:0 0 260px; text-align:center;">
@@ -389,8 +410,14 @@ Adaptive Reduce controlla come ScanReady distribuisce la riduzione sulla scansio
 </p>
 
 <p>
-I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Lowpoly Preview</strong>. Cambiare <strong>Optimize / Reduce</strong> o <strong>Final Faces</strong> dopo quel momento aggiorna la quantità di riduzione, ma non ricalcola i pesi adattivi. Per applicare un preset Adaptive Reduce diverso o valori adattivi dettagliati, crea di nuovo la preview low-poly.
+I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Lowpoly Preview</strong>.
 </p>
+
+<div class="admonition note">
+  <p class="admonition-title">Quando ricalcolare i pesi</p>
+  <p>Cambiare <strong>Optimize / Reduce</strong> o <strong>Final Faces</strong> dopo quel momento aggiorna la quantità di riduzione, ma non ricalcola i pesi adattivi.</p>
+  <p>Per applicare un preset Adaptive Reduce diverso o valori adattivi dettagliati, crea di nuovo la preview low-poly.</p>
+</div>
 </div>
 
 <div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
@@ -469,9 +496,12 @@ Le aree rosse rappresentano superfici più piatte che possono essere ridotte di 
 La visualizzazione è solo un aiuto di preview. Serve a scegliere il preset e capire il comportamento della riduzione; non è una texture esportata o baked.
 </p>
 
-<p>
-I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Lowpoly Preview</strong>. Dopo che la preview esiste, cambiare <strong>Optimize / Reduce</strong> o <strong>Final Faces</strong> aggiorna la quantità di riduzione usando i pesi esistenti. Se cambi preset o valori dettagliati di Adaptive Reduce, clicca di nuovo <strong>Create Lowpoly Preview</strong> per ricostruire i pesi con le nuove impostazioni.
-</p>
+<div class="admonition note">
+  <p class="admonition-title">Pesi già calcolati</p>
+  <p>I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Lowpoly Preview</strong>.</p>
+  <p>Dopo che la preview esiste, cambiare <strong>Optimize / Reduce</strong> o <strong>Final Faces</strong> aggiorna la quantità di riduzione usando i pesi esistenti.</p>
+  <p>Se cambi preset o valori dettagliati di Adaptive Reduce, clicca di nuovo <strong>Create Lowpoly Preview</strong> per ricostruire i pesi con le nuove impostazioni.</p>
+</div>
 
 <p>
 Usa questa preview quando una scansione ha superfici miste, come pannelli architettonici piatti insieme a dettagli scultorei o danneggiati.
@@ -693,11 +723,12 @@ Può aiutare a mantenere più stabile la forma attorno a bordi netti, cornici, p
 Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 </p>
 
-<blockquote>
-<p><strong>Nota:</strong> le impostazioni UV vengono applicate quando ScanReady genera le UV.</p>
-<p>Se cambi valori UV dopo aver già creato il layout, clicca di nuovo <strong>Generate UVs</strong> oppure esegui <strong>One Click Bake</strong> dall'inizio.</p>
-<p><strong>Bake Textures</strong> usa sempre il layout UV già esistente al momento del bake.</p>
-</blockquote>
+<div class="admonition note">
+  <p class="admonition-title">Quando vengono applicate le UV</p>
+  <p>Le impostazioni UV vengono applicate quando ScanReady genera le UV.</p>
+  <p>Se cambi valori UV dopo aver già creato il layout, clicca di nuovo <strong>Generate UVs</strong> oppure esegui <strong>One Click Bake</strong> dall'inizio.</p>
+  <p><strong>Bake Textures</strong> usa sempre il layout UV già esistente al momento del bake.</p>
+</div>
 </div>
 
 <div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
@@ -1292,6 +1323,11 @@ Mostra un report dettagliato dei tempi dopo <strong>ONE CLICK BAKE</strong>.
 <p>
 Il report può includere dettagli come tempo di Preview / Reduce, Generate UVs, Auto Cage, Bake / Finalize, Adaptive / Decimate e singole sottofasi del bake.
 </p>
+
+<div class="admonition info">
+  <p class="admonition-title">Uso consigliato</p>
+  <p>Tieni <strong>Show Diagnostic Timing Report</strong> disattivato durante video, demo e uso normale. Attivalo quando vuoi confrontare prestazioni o capire quale fase richiede più tempo.</p>
+</div>
 
 <p>
 È disattivato di default per mantenere il pannello più pulito durante l'uso normale, le demo e i video. Abilitalo solo quando vuoi analizzare le prestazioni o confrontare impostazioni diverse.
