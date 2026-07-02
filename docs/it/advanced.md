@@ -1369,7 +1369,7 @@ Queste opzioni aiutano a controllare nuove versioni, aprire release notes e conf
 <div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Addon Preferences / Updates</strong></p>
   <!-- Sostituire con ../../img/advanced-addon-preferences-updates.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Addon Preferences / Updates di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_addon_preferences.png" alt="Placeholder screenshot Addon Preferences / Updates di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
