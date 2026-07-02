@@ -8,6 +8,8 @@ Video workflow, aggiornamenti e tutorial:
 
 [Tutorial ScanReady su YouTube](https://www.youtube.com/@marioschiano3d)
 
+[Video Tutorials nella documentazione](video-tutorials.md)
+
 ---
 
 ## Problemi comuni

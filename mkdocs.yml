@@ -43,6 +43,7 @@ plugins:
             Support: Supporto
             Changelog: Changelog
             FAQ: FAQ
+            Video Tutorials: Video Tutorials
             Troubleshooting: Risoluzione problemi
 
 markdown_extensions:
@@ -85,5 +86,6 @@ nav:
   - Support:
       - Changelog: changelog.md
       - FAQ: faq.md
+      - Video Tutorials: video-tutorials.md
       - Troubleshooting: troubleshooting.md
       - Support: support.md
