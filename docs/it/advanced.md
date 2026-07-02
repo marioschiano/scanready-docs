@@ -389,7 +389,7 @@ Adaptive Reduce controlla come ScanReady distribuisce la riduzione sulla scansio
 </p>
 
 <p>
-I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Low-poly Preview</strong>. Cambiare <strong>Optimize / Reduce</strong> o <strong>Final Faces</strong> dopo quel momento aggiorna la quantità di riduzione, ma non ricalcola i pesi adattivi. Per applicare un preset Adaptive Reduce diverso o valori adattivi dettagliati, crea di nuovo la preview low-poly.
+I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Lowpoly Preview</strong>. Cambiare <strong>Optimize / Reduce</strong> o <strong>Final Faces</strong> dopo quel momento aggiorna la quantità di riduzione, ma non ricalcola i pesi adattivi. Per applicare un preset Adaptive Reduce diverso o valori adattivi dettagliati, crea di nuovo la preview low-poly.
 </p>
 </div>
 
@@ -470,7 +470,7 @@ La visualizzazione è solo un aiuto di preview. Serve a scegliere il preset e ca
 </p>
 
 <p>
-I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Low-poly Preview</strong>. Dopo che la preview esiste, cambiare <strong>Optimize / Reduce</strong> o <strong>Final Faces</strong> aggiorna la quantità di riduzione usando i pesi esistenti. Se cambi preset o valori dettagliati di Adaptive Reduce, clicca di nuovo <strong>Create Low-poly Preview</strong> per ricostruire i pesi con le nuove impostazioni.
+I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Lowpoly Preview</strong>. Dopo che la preview esiste, cambiare <strong>Optimize / Reduce</strong> o <strong>Final Faces</strong> aggiorna la quantità di riduzione usando i pesi esistenti. Se cambi preset o valori dettagliati di Adaptive Reduce, clicca di nuovo <strong>Create Lowpoly Preview</strong> per ricostruire i pesi con le nuove impostazioni.
 </p>
 
 <p>
@@ -494,7 +494,7 @@ Usa questa preview quando una scansione ha superfici miste, come pannelli archit
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
-<h3>Adaptive Reduce Strength</h3>
+<h3>Adaptive Strength</h3>
 
 <p>
 Controlla quanto fortemente i pesi adattivi influenzano la riduzione.
@@ -506,9 +506,9 @@ Valori più alti rendono più marcata la differenza tra aree protette e aree sem
 </div>
 
 <div style="flex:0 0 260px; text-align:center;">
-  <p style="margin-top:0;"><strong>Adaptive Reduce Strength</strong></p>
+  <p style="margin-top:0;"><strong>Adaptive Strength</strong></p>
   <!-- Sostituire con ../../img/advanced-adaptive-reduce-strength.png -->
-  <img src="../../img/advance_adaptive_reduce_strength.png" alt="Placeholder screenshot Adaptive Reduce Strength di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_adaptive_reduce_strength.png" alt="Placeholder screenshot Adaptive Strength di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -1353,143 +1353,106 @@ Usalo se le impostazioni correnti producono risultati inattesi o se vuoi tornare
 
 # Addon Preferences / Updates
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
-
-<div style="flex:1 1 0; min-width:0;">
-
 <p>
-ScanReady include preferenze aggiornamenti nel pannello Blender Add-on Preferences.
+ScanReady include una piccola sezione di supporto nel pannello Blender Add-on Preferences.
 </p>
 
 <p>
-Queste opzioni aiutano a controllare nuove versioni, aprire release notes e configurare link di pubblicazione.
+Da qui puoi controllare la versione installata, aprire la documentazione, leggere le release notes e raggiungere i tutorial video. Gli aggiornamenti pubblici vengono gestiti da Blender Extensions / Superhive.
 </p>
-</div>
 
-<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
+<div style="text-align:center; margin-top:18px; margin-bottom:34px;">
   <p style="margin-top:0;"><strong>Addon Preferences / Updates</strong></p>
   <!-- Sostituire con ../../img/advanced-addon-preferences-updates.png -->
-  <img src="../../img/advanced_addon_preferences.png" alt="Placeholder screenshot Addon Preferences / Updates di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_addon_preferences.png" alt="Screenshot Addon Preferences / Updates di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
-</div>
-
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
-
-<div style="flex:1 1 0; min-width:0;">
-<h3>Check for Updates</h3>
+<h3>Installed version</h3>
 
 <p>
-Controlla se è disponibile una versione più recente di ScanReady leggendo il manifest aggiornamenti configurato.
+Mostra la versione di ScanReady attualmente installata in Blender.
 </p>
-</div>
 
-<div style="flex:0 0 260px; text-align:center;">
-  <p style="margin-top:0;"><strong>Check for Updates</strong></p>
-  <!-- Sostituire con ../../img/advanced-check-for-updates.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Check for Updates di ScanReady" style="width:260px; max-width:100%;">
-</div>
+<p>
+Usala quando vuoi verificare rapidamente quale build stai usando prima di confrontarla con una release pubblicata.
+</p>
 
+<div style="text-align:center; margin-top:16px; margin-bottom:28px;">
+  <p style="margin-top:0;"><strong>Installed version</strong></p>
+  <!-- Sostituire con ../../img/advanced-installed-version.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Installed version di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
-
-<div style="flex:1 1 0; min-width:0;">
 <h3>Open Documentation</h3>
 
 <p>
 Apre la documentazione online di ScanReady.
 </p>
-</div>
 
-<div style="flex:0 0 260px; text-align:center;">
+<p>
+Usalo quando vuoi consultare guida rapida, workflow manuale, FAQ, troubleshooting o riferimento impostazioni.
+</p>
+
+<div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Open Documentation</strong></p>
   <!-- Sostituire con ../../img/advanced-open-documentation.png -->
-  <img src="../../img/advanced_addon_open_documentation.png" alt="Placeholder screenshot Open Documentation di ScanReady" style="width:260px; max-width:100%;">
-</div>
-
+  <img src="../../img/advanced_addon_open_documentation.png" alt="Screenshot Open Documentation di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
-
-<div style="flex:1 1 0; min-width:0;">
 <h3>Release Notes</h3>
 
 <p>
 Apre la pagina changelog e release notes di ScanReady.
 </p>
-</div>
 
-<div style="flex:0 0 260px; text-align:center;">
+<p>
+Usalo per vedere cosa è cambiato prima di installare o confrontare una nuova versione.
+</p>
+
+<div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Release Notes</strong></p>
   <!-- Sostituire con ../../img/advanced-release-notes.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Release Notes di ScanReady" style="width:260px; max-width:100%;">
-</div>
-
-</div>
-
-<hr>
-
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
-
-<div style="flex:1 1 0; min-width:0;">
-<h3>Update Manifest URL</h3>
-
-<p>
-Memorizza l'URL del manifest aggiornamenti usato dal checker.
-</p>
-</div>
-
-<div style="flex:0 0 260px; text-align:center;">
-  <p style="margin-top:0;"><strong>Update Manifest URL</strong></p>
-  <!-- Sostituire con ../../img/advanced-update-manifest-url.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Update Manifest URL di ScanReady" style="width:260px; max-width:100%;">
-</div>
-
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Release Notes di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
-
-<div style="flex:1 1 0; min-width:0;">
-<h3>Release Notes URL</h3>
+<h3>Video Tutorials</h3>
 
 <p>
-Memorizza l'indirizzo della pagina release notes usata dal pulsante Release Notes.
+Apre il canale YouTube con i tutorial ScanReady.
 </p>
-</div>
 
-<div style="flex:0 0 260px; text-align:center;">
-  <p style="margin-top:0;"><strong>Release Notes URL</strong></p>
-  <!-- Sostituire con ../../img/advanced-release-notes-url.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Release Notes URL di ScanReady" style="width:260px; max-width:100%;">
-</div>
+<p>
+Usalo quando preferisci seguire il workflow in video o quando vuoi vedere esempi pratici dell'addon.
+</p>
 
+<div style="text-align:center; margin-top:16px; margin-bottom:28px;">
+  <p style="margin-top:0;"><strong>Video Tutorials</strong></p>
+  <!-- Sostituire con ../../img/advanced-video-tutorials.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Video Tutorials di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
-
-<div style="flex:1 1 0; min-width:0;">
-<h3>Publishing Links</h3>
+<h3>Update notice</h3>
 
 <p>
-Questi link vengono usati per configurare il manifest aggiornamenti e l'URL release notes dopo la pubblicazione.
+Quando ScanReady rileva una versione più recente, può mostrare un avviso nel pannello con la versione installata e quella disponibile.
 </p>
-</div>
 
-<div style="flex:0 0 260px; text-align:center;">
-  <p style="margin-top:0;"><strong>Publishing Links</strong></p>
-  <!-- Sostituire con ../../img/advanced-publishing-links.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Publishing Links di ScanReady" style="width:260px; max-width:100%;">
-</div>
+<p>
+L'aggiornamento dell'addon va comunque eseguito dalla piattaforma di distribuzione, per esempio Blender Extensions o Superhive.
+</p>
 
+<div style="text-align:center; margin-top:16px; margin-bottom:28px;">
+  <p style="margin-top:0;"><strong>Update notice</strong></p>
+  <!-- Sostituire con ../../img/advanced-update-notice.png -->
+  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Update notice di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 ---

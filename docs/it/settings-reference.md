@@ -22,7 +22,7 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 
 | Azione | Descrizione | Quando usarla |
 |---|---|---|
-| **Create Low-poly Preview** | Crea o aggiorna la mesh preview ottimizzata usando le impostazioni dello Step 1 e di Adaptive Reduce. | Usalo ogni volta che cambi densità, preset Adaptive Reduce o impostazioni mesh che influenzano la riduzione. |
+| **Create Lowpoly Preview** | Crea o aggiorna la mesh preview ottimizzata usando le impostazioni dello Step 1 e di Adaptive Reduce. | Usalo ogni volta che cambi densità, preset Adaptive Reduce o impostazioni mesh che influenzano la riduzione. |
 | **Generate UVs** | Crea la mesh UV dalla preview e genera il layout Smart UV Project. | Usalo dopo la preview o quando cambi Smart UV Preset, Smart UV Angle o UV Padding. |
 | **Auto Cage Extrusion** | Calcola una cage extrusion di partenza campionando la distanza tra mesh ottimizzata e sorgente high-poly. | Usalo prima del bake quando vuoi evitare di stimare manualmente la distanza del cage. |
 | **Bake Textures** | Esegue il bake delle mappe selezionate e costruisce la mesh/materiali finali. | Usalo dopo aver generato UV e verificato cage/output. |
@@ -45,7 +45,7 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 | **Adaptive Reduce** | Usa pesi basati sulla scansione per ridurre di più le superfici piatte e proteggere dettagli importanti. | Tienilo attivo per la maggior parte delle scansioni. Disattivalo solo se vuoi un risultato di riduzione uniforme più semplice. |
 | **Adaptive Reduce Preset** | Sceglie il comportamento della riduzione adattiva. | Usa Balanced per la maggior parte delle scansioni, Preserve Details per superfici complesse, Flat Surfaces per superfici semplici ampie, Hard Surface per veicoli e scansioni hard-surface. |
 | **Show Adaptive Weights** | Mostra i pesi di riduzione adattiva come colori sul modello. | Usalo per vedere quali aree verranno ridotte di più prima di creare la preview low-poly finale. |
-| **Adaptive Reduce Strength** | Regola quanto fortemente Adaptive Reduce favorisce la riduzione delle aree piatte. | Alzalo per semplificare di più le superfici regolari, abbassalo se vuoi un comportamento più uniforme. |
+| **Adaptive Strength** | Regola quanto fortemente Adaptive Reduce favorisce la riduzione delle aree piatte. | Alzalo per semplificare di più le superfici regolari, abbassalo se vuoi un comportamento più uniforme. |
 | **Adaptive Reduce Angle** | Controlla la sensibilità ai cambi di normale durante il calcolo dei pesi. | Usalo per decidere quanto un cambio di direzione deve essere considerato dettaglio. |
 | **Detail Preserve** | Protegge maggiormente le zone lette come dettaglio. | Alzalo se la preview perde pieghe, bordi o dettagli importanti. |
 | **Smooth Weights** | Smussa i pesi Adaptive Reduce per transizioni più omogenee. | Aumentalo quando la preview pesi appare troppo puntinata o frastagliata. |
@@ -56,9 +56,9 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 | **Auto Fix Normals** | Ricalcola le normali della mesh high prima della creazione della preview. | Attivalo quando la scansione ha normali invertite o artefatti di shading. |
 | **Recalculate Outside Normals** | Ricalcola manualmente le normali verso l'esterno. | Usalo quando la mesh appare rovesciata o ha shading rotto. |
 
-I pesi Adaptive Reduce vengono calcolati quando premi **Create Low-poly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma cambiare preset o valori dettagliati di Adaptive Reduce richiede di creare di nuovo la preview low-poly per ricostruire i pesi.
+I pesi Adaptive Reduce vengono calcolati quando premi **Create Lowpoly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma cambiare preset o valori dettagliati di Adaptive Reduce richiede di creare di nuovo la preview low-poly per ricostruire i pesi.
 
-Se sei già nello Step 2 o nello Step 3 e ti serve un modello più leggero o più dettagliato, torna allo Step 1, regola **Final Faces** o **Optimize / Reduce**, clicca **Create Low-poly Preview**, poi rigenera UV e bake.
+Se sei già nello Step 2 o nello Step 3 e ti serve un modello più leggero o più dettagliato, torna allo Step 1, regola **Final Faces** o **Optimize / Reduce**, clicca **Create Lowpoly Preview**, poi rigenera UV e bake.
 
 ---
 
@@ -80,7 +80,6 @@ Se sei già nello Step 2 o nello Step 3 e ti serve un modello più leggero o pi�
 
 | Impostazione | Descrizione | Quando regolarla |
 |---|---|---|
-| **UV Method** | ScanReady usa Smart UV Project per generare le UV. | Questo è il metodo UV usato dal workflow dell'addon. |
 | **Smart UV Preset** | Applica un angolo Smart UV consigliato. I preset includono Detailed, Balanced, Large Islands e Continuous. | Usalo come punto di partenza rapido per tipi comuni di scansione. |
 | **Smart UV Angle** | Controlla quanto aggressivamente Smart UV Project divide le isole. | Valori più bassi creano più tagli. Valori più alti creano isole più grandi. |
 | **UV Padding** | Aggiunge spazio tra le isole UV. | Aumentalo per ridurre texture bleeding e seam visibili. |
@@ -120,7 +119,8 @@ In questo modo ScanReady ricrea il layout UV sulla mesh ottimizzata usando i nuo
 |---|---|---|
 | **Texture Preset / Texture Size** | Imposta la risoluzione delle texture bake. | Alzala per asset ravvicinati. Abbassala per asset VR/game leggeri. |
 | **Bake Materials** | Divide il bake in più gruppi di materiali. | Aumentalo per scansioni grandi che richiedono più dettaglio texture. Valori sopra `1` abilitano automaticamente Force CPU Baking. |
-| **Texture Detail / Analyze Texture Detail** | Analisi avanzata per confronto dettaglio high-to-UV. | Usalo in Advanced prima del bake per capire se texture size e numero materiali sono bilanciati. |
+| **Texture Detail** | Sezione avanzata dedicata all'analisi del dettaglio texture e dello spazio UV. | Usala quando vuoi capire se texture size e numero materiali sono bilanciati. |
+| **Analyze Texture Detail** | Avvia l'analisi high-to-UV e mostra raccomandazioni su texture/materiali. | Usalo in Advanced prima del bake quando non sei sicuro della risoluzione o del numero di materiali. |
 | **Bake Samples** | Imposta il numero di sample Cycles per il bake. | Alzalo per bake più puliti, soprattutto AO. Abbassalo per test più rapidi. |
 | **Bake Margin** | Aggiunge padding attorno alle isole UV bake. | Aumentalo per ridurre seam e texture bleeding. |
 | **Bake Base Color** | Cuoce la texture colore principale. | Tienilo attivo quando vuoi preservare il colore originale della scansione. |
@@ -139,7 +139,7 @@ In questo modo ScanReady ricrea il layout UV sulla mesh ottimizzata usando i nuo
 | **AO Auto Distance** | Calcola automaticamente la distanza AO dalla dimensione del modello. | Lascialo attivo per la maggior parte degli asset. |
 | **AO Distance** | Distanza manuale dei raggi AO. | Regolalo quando la distanza automatica produce AO troppo forte o troppo debole. |
 | **AO Samples** | Controlla il numero di sample per il bake AO. | Alzalo per AO più pulita. Abbassalo per bake più rapidi. |
-| **AO Mix** | Controlla quanto la AO bake scurisce il materiale Base Color finale. | Il default e `1.0`. Abbassalo se il materiale finale sembra troppo scuro o contrastato. |
+| **AO Mix** | Controlla quanto la AO bake scurisce il materiale Base Color finale. | Il default è `1.0`. Abbassalo se il materiale finale sembra troppo scuro o contrastato. |
 
 ---
 
@@ -186,16 +186,15 @@ In questo modo ScanReady ricrea il layout UV sulla mesh ottimizzata usando i nuo
 
 ---
 
-## Aggiornamenti
+## Addon Preferences / Updates
 
 | Controllo | Descrizione | Quando usarlo |
 |---|---|---|
-| **Check for Updates** | Legge il manifest aggiornamenti configurato e controlla se è disponibile una nuova versione di ScanReady. | Usalo dalle preferenze Blender quando vuoi verificare la versione installata. |
+| **Installed version** | Mostra la versione di ScanReady installata. | Usalo per controllare rapidamente quale build è attiva in Blender. |
+| **Updates are managed by Blender Extensions / Superhive** | Ricorda che gli aggiornamenti pubblici vengono gestiti dalla piattaforma di distribuzione. | Utile per capire dove cercare l'aggiornamento ufficiale dell'addon. |
 | **Open Documentation** | Apre la documentazione online di ScanReady. | Usalo quando vuoi consultare guida rapida, workflow, FAQ o troubleshooting. |
 | **Release Notes** | Apre il changelog e la pagina release notes di ScanReady. | Usalo per vedere cosa è cambiato prima di aggiornare. |
-| **Update Manifest URL** | Memorizza l'URL JSON usato per i controlli aggiornamento. | Configuralo dopo la pubblicazione se cambia la sorgente aggiornamenti. |
-| **Release Notes URL** | Memorizza l'indirizzo della pagina release notes. | Serve a collegare il pulsante Release Notes alla pagina corretta. |
-| **Publishing Links** | Raccoglie i collegamenti pubblici utili per documentazione, release notes e distribuzione. | Utile quando prepari o controlli una release pubblicata. |
+| **Video Tutorials** | Apre il canale YouTube con i tutorial ScanReady. | Usalo quando preferisci vedere il workflow in video. |
 
 ---
 
