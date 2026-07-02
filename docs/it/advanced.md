@@ -1322,7 +1322,7 @@ Gli strumenti utility aiutano a resettare o ripristinare la configurazione dell'
 <div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
   <p style="margin-top:0;"><strong>Utilities</strong></p>
   <!-- Sostituire con ../../img/advanced-utilities.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Utilities di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_utilities.png" alt="Placeholder screenshot Utilities di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
@@ -1344,7 +1344,7 @@ Usalo se le impostazioni correnti producono risultati inattesi o se vuoi tornare
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Reset Defaults</strong></p>
   <!-- Sostituire con ../../img/advanced-reset-defaults.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Reset Defaults di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_utilities_reset.png" alt="Placeholder screenshot Reset Defaults di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
