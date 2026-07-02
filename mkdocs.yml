@@ -49,6 +49,9 @@ markdown_extensions:
   - admonition
   - md_in_html
 
+extra_css:
+  - stylesheets/scanready.css
+
 extra:
   alternate:
     - name: English
