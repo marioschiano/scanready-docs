@@ -1407,7 +1407,7 @@ Apre la documentazione online di ScanReady.
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Open Documentation</strong></p>
   <!-- Sostituire con ../../img/advanced-open-documentation.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Open Documentation di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_addon_open_documentation.png" alt="Placeholder screenshot Open Documentation di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
