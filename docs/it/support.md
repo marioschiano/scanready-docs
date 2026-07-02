@@ -57,10 +57,6 @@ Questo aiuta a individuare i problemi più rapidamente.
 
 ## Filosofia ScanReady
 
-Veloce.
-
-Pulito.
-
-Game-ready.
+**Veloce. Pulito. Game-ready.**
 
 Pensato per semplificare i workflow di ottimizzazione fotogrammetria direttamente dentro Blender.

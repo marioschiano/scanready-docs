@@ -184,10 +184,6 @@ Invece di configurare manualmente più passaggi tecnici, gli artisti possono con
 
 ## Filosofia ScanReady
 
-Veloce.
-
-Pulito.
-
-Game-ready.
+**Veloce. Pulito. Game-ready.**
 
 Pensato per artisti che vogliono ottimizzare scansioni in modo efficiente direttamente dentro Blender.
