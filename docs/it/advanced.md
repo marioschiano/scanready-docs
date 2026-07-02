@@ -1,4 +1,4 @@
-# Impostazioni avanzate
+# <span class="sr-addon-icon sr-icon-settings" title="Advanced"></span>Impostazioni avanzate
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
@@ -46,7 +46,7 @@ Bake Settings e Occlusion Settings regolano qualità, margini, normal map, rough
 
 </div>
 
-# Mesh Settings
+# <span class="sr-addon-icon sr-icon-mesh" title="Mesh Settings"></span>Mesh Settings
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
@@ -395,7 +395,7 @@ Usalo quando la scansione appare rovesciata o ha shading incoerente.
 
 ---
 
-# Adaptive Reduce
+# <span class="sr-addon-icon sr-icon-decim" title="Adaptive Reduce"></span>Adaptive Reduce
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
@@ -713,7 +713,7 @@ Può aiutare a mantenere più stabile la forma attorno a bordi netti, cornici, p
 
 ---
 
-# UV Settings
+# <span class="sr-addon-icon sr-icon-uv" title="UV Settings"></span>UV Settings
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
@@ -796,7 +796,7 @@ Aumenta il padding per ridurre texture bleeding, soprattutto a risoluzioni textu
 
 ---
 
-# Bake Settings
+# <span class="sr-addon-icon sr-icon-render" title="Bake Settings"></span>Bake Settings
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
@@ -959,7 +959,7 @@ Può essere utile per asset dettagliati, workflow archivio o output texture tecn
 
 ---
 
-# Occlusion Settings
+# <span class="sr-addon-icon sr-icon-render" title="Occlusion Settings"></span>Occlusion Settings
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
@@ -1086,7 +1086,7 @@ Il valore predefinito è <strong>1.0</strong>, che usa tutta la texture AO bake 
 
 ---
 
-# Memory Safety
+# <span class="sr-addon-icon sr-icon-memory" title="Memory Safety"></span>Memory Safety
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
@@ -1157,7 +1157,7 @@ ScanReady può abilitarlo automaticamente quando viene usato il bake multi-mater
 
 ---
 
-# Preset
+# <span class="sr-addon-icon sr-icon-presets" title="Preset"></span>Preset
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
@@ -1292,7 +1292,7 @@ Elimina il preset selezionato.
 
 ---
 
-# Diagnostics
+# <span class="sr-addon-icon sr-icon-info" title="Diagnostics"></span>Diagnostics
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
@@ -1344,7 +1344,7 @@ Il report può includere dettagli come tempo di Preview / Reduce, Generate UVs, 
 
 ---
 
-# Utilities
+# <span class="sr-addon-icon sr-icon-utility" title="Utilities"></span>Utilities
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
@@ -1387,7 +1387,7 @@ Usalo se le impostazioni correnti producono risultati inattesi o se vuoi tornare
 
 ---
 
-# Addon Preferences / Updates
+# <span class="sr-addon-icon sr-icon-info" title="Addon Preferences / Updates"></span>Addon Preferences / Updates
 
 <p>
 ScanReady include una piccola sezione di supporto nel pannello Blender Add-on Preferences.

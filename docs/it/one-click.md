@@ -1,4 +1,4 @@
-# One Click Bake
+# <span class="sr-addon-icon sr-icon-render" title="One Click Bake"></span>One Click Bake
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-bottom:32px;">
 
