@@ -45,6 +45,9 @@ plugins:
             FAQ: FAQ
             Troubleshooting: Risoluzione problemi
 
+markdown_extensions:
+  - admonition
+
 extra:
   alternate:
     - name: English
