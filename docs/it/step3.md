@@ -202,7 +202,7 @@ Cuoce una mappa Ambient Occlusion.
 
 L'AO può aiutare ad aggiungere ombre di contatto e profondità di superficie al materiale finale.
 
-Il controllo materiale **AO Mix** è disponibile in **Advanced > Occlusion Settings** quando **Bake Occlusion Map** è attivo. Il valore predefinito è `1.0`, che applica l'intera texture AO bake al materiale finale.
+Il controllo materiale **AO Mix** è disponibile in **Advanced > Bake Settings > Occlusion Settings** quando **Bake Occlusion Map** è attivo. Il valore predefinito è `1.0`, che applica l'intera texture AO bake al materiale finale.
 
 ---
 

@@ -21,7 +21,7 @@ Usa questa pagina come sorgente pubblica delle release notes per Superhive, Blen
 - Workflow Smart UV Project.
 - Workflow UV / Cage.
 - Bake di Base Color, Normal, Roughness e Ambient Occlusion.
-- Controllo AO Mix in Advanced > Occlusion Settings per regolare quanto l'Ambient Occlusion bake influenza il materiale finale.
+- Controllo AO Mix in Advanced > Bake Settings > Occlusion Settings per regolare quanto l'Ambient Occlusion bake influenza il materiale finale.
 - Analisi Texture Detail per stimare necessità di texture/materiali.
 - Setup mesh finale con modificatori Edge Split e Weighted Normal.
 - Opzioni Safe Memory Bake e Force CPU Baking.

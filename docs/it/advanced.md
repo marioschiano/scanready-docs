@@ -34,7 +34,7 @@ Le sezioni principali seguono l'ordine del workflow. Mesh Settings prepara e pul
 </p>
 
 <p>
-Bake Settings e Occlusion Settings regolano qualità, margini, normal map, roughness e occlusion. Memory Safety, Preset, Diagnostics e Utilities aiutano nei workflow pesanti, nei test, nel riuso delle impostazioni e nel ripristino rapido di una configurazione pulita.
+Bake Settings regola qualità, margini, normal map, roughness, opzioni Occlusion e sicurezza memoria. Preset, Diagnostics e Utilities aiutano nei workflow pesanti, nei test, nel riuso delle impostazioni e nel ripristino rapido di una configurazione pulita.
 </p>
 </div>
 
@@ -796,6 +796,35 @@ Aumenta il padding per ridurre texture bleeding, soprattutto a risoluzioni textu
 
 ---
 
+# <span class="sr-addon-icon sr-icon-render" title="Texture Detail"></span>Texture Detail
+
+<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+
+<div style="flex:1 1 0; min-width:0;">
+
+<p>
+Questa sezione si trova in <strong>Advanced</strong> dopo <strong>UV Settings</strong> e prima di <strong>Bake Settings</strong>.
+</p>
+
+<p>
+Analizza la sorgente high-poly e la mesh UV ottimizzata per stimare se texture size e numero di materiali bake correnti possono preservare abbastanza dettaglio della scansione.
+</p>
+
+<p>
+Usa <strong>Analyze Texture Detail</strong> dopo aver generato le UV, prima del bake, quando vuoi aiuto per decidere se aumentare la risoluzione texture, aumentare i materiali bake o migliorare il packing UV.
+</p>
+</div>
+
+<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
+  <p style="margin-top:0;"><strong>Texture Detail</strong></p>
+  <!-- Sostituire con ../../img/advanced-texture-detail.png -->
+  <img src="../../img/advance_texture_detail.png" alt="Placeholder screenshot Texture Detail di ScanReady" style="width:260px; max-width:100%;">
+</div>
+
+</div>
+
+---
+
 # <span class="sr-addon-icon sr-icon-render" title="Bake Settings"></span>Bake Settings
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
@@ -803,7 +832,11 @@ Aumenta il padding per ridurre texture bleeding, soprattutto a risoluzioni textu
 <div style="flex:1 1 0; min-width:0;">
 
 <p>
-Queste impostazioni controllano qualità bake, padding texture, qualità formato immagine, analisi Texture Detail, opzioni Occlusion e sicurezza memoria.
+Queste impostazioni controllano sample, margin, normal strength, qualità formato immagine, opzioni Occlusion e sicurezza memoria.
+</p>
+
+<p>
+Nell'addon <strong>Occlusion Settings</strong> e <strong>Memory Safety</strong> sono dentro <strong>Bake Settings</strong>. Alcuni controlli appaiono solo quando la relativa opzione è attiva.
 </p>
 </div>
 
@@ -866,30 +899,6 @@ Aiuta a ridurre seam visibili e texture bleeding.
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
-<h3>Texture Detail</h3>
-
-<p>
-Analizza la sorgente high-poly e la mesh UV ottimizzata per stimare se texture size e numero di materiali bake correnti possono preservare abbastanza dettaglio della scansione.
-</p>
-
-<p>
-Usa <strong>Analyze Texture Detail</strong> dopo aver generato le UV, prima del bake, quando vuoi aiuto per decidere se aumentare la risoluzione texture, aumentare i materiali bake o migliorare il packing UV.
-</p>
-</div>
-
-<div style="flex:0 0 260px; text-align:center;">
-  <p style="margin-top:0;"><strong>Texture Detail</strong></p>
-  <!-- Sostituire con ../../img/advanced-texture-detail.png -->
-  <img src="../../img/advance_texture_detail.png" alt="Placeholder screenshot Texture Detail di ScanReady" style="width:260px; max-width:100%;">
-</div>
-
-</div>
-
-<hr>
-
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
-
-<div style="flex:1 1 0; min-width:0;">
 <h3>Normal Strength</h3>
 
 <p>
@@ -898,6 +907,10 @@ Appare quando <strong>Bake Normal Map</strong> è abilitato.
 
 <p>
 Controlla la forza del nodo Normal Map nel materiale finale. Cambia solo l'aspetto del materiale; non cambia la texture normal bake.
+</p>
+
+<p>
+Se <strong>Bake Normal Map</strong> non è attivo, questo controllo non appare e dopo <strong>Bake Margin</strong> vedrai direttamente il controllo del formato immagine, per esempio <strong>JPG Quality</strong>.
 </p>
 </div>
 
@@ -959,14 +972,14 @@ Può essere utile per asset dettagliati, workflow archivio o output texture tecn
 
 ---
 
-# <span class="sr-addon-icon sr-icon-render" title="Occlusion Settings"></span>Occlusion Settings
+## <span class="sr-addon-icon sr-icon-render" title="Occlusion Settings"></span>Occlusion Settings
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
 <p>
-Queste opzioni appaiono quando <strong>Bake Occlusion Map</strong> è abilitato.
+Queste opzioni sono dentro <strong>Bake Settings</strong> e appaiono quando <strong>Bake Occlusion Map</strong> è abilitato.
 </p>
 </div>
 
@@ -1086,14 +1099,14 @@ Il valore predefinito è <strong>1.0</strong>, che usa tutta la texture AO bake 
 
 ---
 
-# <span class="sr-addon-icon sr-icon-memory" title="Memory Safety"></span>Memory Safety
+## <span class="sr-addon-icon sr-icon-memory" title="Memory Safety"></span>Memory Safety
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
 <p>
-Queste opzioni aiutano a ridurre problemi di memoria durante operazioni di bake pesanti.
+Queste opzioni sono dentro <strong>Bake Settings</strong> e aiutano a ridurre problemi di memoria durante operazioni di bake pesanti.
 </p>
 </div>
 

@@ -12,9 +12,9 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 |---|---|---|
 | **Mesh Stats** | Mostra facce e triangoli dell'oggetto selezionato o dell'ultima preview creata. | Usalo per controllare rapidamente quanto è pesante la mesh prima e dopo la riduzione. |
 | **Refresh Stats** | Aggiorna manualmente le statistiche mesh mostrate nel pannello. | Usalo dopo aver cambiato selezione o dopo modifiche esterne alla mesh. |
+| **ONE CLICK BAKE** | Avvia il workflow automatico completo: preview, UV, cage, bake e materiali finali. | Usalo quando vuoi una conversione rapida da scansione high-poly ad asset ottimizzato. |
 | **Workflow Status** | Mostra progresso globale, step completato, messaggi di stato, mappe bake completate e tempi quando i diagnostics sono attivi. | Usalo per capire dove si trova ScanReady durante One Click Bake o durante gli step manuali. |
 | **Global Progress** | Percentuale di avanzamento del workflow corrente. | Utile durante operazioni lunghe come preview, UV, cage e bake. |
-| **ONE CLICK BAKE** | Avvia il workflow automatico completo: preview, UV, cage, bake e materiali finali. | Usalo quando vuoi una conversione rapida da scansione high-poly ad asset ottimizzato. |
 
 ---
 
@@ -36,12 +36,15 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 | **Final Faces** | Numero target di facce per la mesh low-poly ottimizzata. | Abbassalo per asset VR/game più leggeri. Alzalo per preservare più dettaglio nella silhouette. |
 | **Optimize / Reduce** | Controlla quanto la mesh viene ridotta. | Valori più bassi creano una riduzione più forte. Valori più alti mantengono più geometria. |
 | **Pre-Decimate Merge** | Esegue Merge by Distance sulla mesh preview duplicata prima di Decimate. È il singolo controllo esplicito di weld in ScanReady. | Aumentalo per ridurre poligoni sovrapposti prima dell'ottimizzazione. Abbassalo se vengono colpiti dettagli sottili. |
+| **Auto Fix Normals** | Ricalcola le normali della mesh high prima della creazione della preview. | Attivalo quando la scansione ha normali invertite o artefatti di shading. |
 | **Auto Clear Sharp Edges** | Rimuove marcature sharp edge non desiderate durante la preparazione. | Tienilo attivo quando la scansione mostra bordi o shading marcati in modo errato. |
 | **Auto Combine Mesh Parts** | Attivo di default. Rileva automaticamente gerarchie con più mesh e le combina quando serve; se la scansione è già una mesh unica non esegue nessuna unione. | Lascialo attivo per GLB, FBX o scansioni fotogrammetriche divise in più parti. Disattivalo solo se l'unione automatica crea problemi o se vuoi mantenere parti separate. |
 | **Auto Clean Scan Debris** | Rimuove piccoli frammenti, poligoni sospesi e vertici isolati. | Tienilo attivo per scansioni fotogrammetriche grezze. |
 | **Convert Source Materials** | Disattivo di default. Controlla i materiali sorgente: lascia invariati quelli già standard e converte solo shader importati complessi in un setup più prevedibile per il bake. | Attivalo se il bake non esce bene, per esempio Base Color nera/incompleta, o se i materiali importati non vengono letti correttamente. |
 | **Show Face Orientation** | Mostra l'overlay Face Orientation di Blender. | Usalo per controllare normali invertite prima di preview, UV o bake. |
 | **Backface Culling** | Nasconde nel viewport le facce viste dal lato posteriore. È una modalità di preview e non modifica mesh o bake. | Usalo per individuare superfici a una sola faccia, buchi, parti aperte o orientamenti sospetti. Si disattiva automaticamente quando attivi Show Face Orientation, e viceversa. |
+| **Use Texture View** | Porta il viewport in modalità Material Preview/Texture View durante i controlli. | Utile per vedere materiali, checker e cage con una visualizzazione più leggibile. |
+| **Recalculate Outside Normals** | Ricalcola manualmente le normali verso l'esterno. | Usalo quando la mesh appare rovesciata o ha shading rotto. |
 | **Adaptive Reduce** | Usa pesi basati sulla scansione per ridurre di più le superfici piatte e proteggere dettagli importanti. | Tienilo attivo per la maggior parte delle scansioni. Disattivalo solo se vuoi un risultato di riduzione uniforme più semplice. |
 | **Adaptive Reduce Preset** | Sceglie il comportamento della riduzione adattiva. | Usa Balanced per la maggior parte delle scansioni, Preserve Details per superfici complesse, Flat Surfaces per superfici semplici ampie, Hard Surface per veicoli e scansioni hard-surface. |
 | **Show Adaptive Weights** | Mostra i pesi di riduzione adattiva come colori sul modello. | Usalo per vedere quali aree verranno ridotte di più prima di creare la preview low-poly finale. |
@@ -53,8 +56,6 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 | **Protect Feature Edges** | Protegge i bordi con differenze di normale forti. | Tienilo attivo per asset hard-surface, veicoli, architettura e silhouette importanti. |
 | **Feature Edge Angle** | Angolo minimo per considerare un bordo come feature edge. | Abbassalo per proteggere più bordi, alzalo per proteggere solo rotture più nette. |
 | **Feature Edge Rings** | Numero di anelli vicini protetti attorno ai feature edge. | Aumentalo se i bordi netti perdono supporto durante la riduzione. |
-| **Auto Fix Normals** | Ricalcola le normali della mesh high prima della creazione della preview. | Attivalo quando la scansione ha normali invertite o artefatti di shading. |
-| **Recalculate Outside Normals** | Ricalcola manualmente le normali verso l'esterno. | Usalo quando la mesh appare rovesciata o ha shading rotto. |
 
 !!! note "Quando ricreare la preview"
     I pesi Adaptive Reduce vengono calcolati quando premi **Create Lowpoly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma cambiare preset o valori dettagliati di Adaptive Reduce richiede di creare di nuovo la preview low-poly per ricostruire i pesi.
@@ -71,10 +72,9 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 | **Show Checker** | Mostra una texture checker per l'ispezione. | Usalo per controllare distorsione e stretching UV. |
 | **Checker Mix** | Controlla la forza dell'overlay checker. | Abbassalo quando vuoi vedere di più la texture originale. |
 | **Checker UV Scale** | Cambia la dimensione dei quadrati checker. | Usa quadrati più piccoli per vedere meglio la distorsione. |
-| **Use Texture View** | Porta il viewport in modalità Material Preview/Texture View durante i controlli. | Utile per vedere materiali, checker e cage con una visualizzazione più leggibile. |
 
 !!! info "Dove si trova Use Texture View"
-    **Use Texture View** è disponibile in **Advanced > Mesh Settings** perché di solito non viene regolato durante il workflow principale.
+    **Use Texture View** è disponibile in **Advanced > Mesh Settings**, non nella box View Options, perché di solito non viene regolato durante il workflow principale.
 
 ---
 
@@ -112,23 +112,52 @@ ScanReady usa **Smart UV Project** per generare le UV.
 
 ## Texture e bake
 
+Questa tabella segue l'ordine dello **Step 3 Bake / Output** nel pannello principale.
+
 | Impostazione | Descrizione | Quando regolarla |
 |---|---|---|
 | **Texture Preset / Texture Size** | Imposta la risoluzione delle texture bake. | Alzala per asset ravvicinati. Abbassala per asset VR/game leggeri. |
 | **Bake Materials** | Divide il bake in più gruppi di materiali. | Aumentalo per scansioni grandi che richiedono più dettaglio texture. Valori sopra `1` abilitano automaticamente Force CPU Baking. |
-| **Texture Detail** | Sezione avanzata dedicata all'analisi del dettaglio texture e dello spazio UV. | Usala quando vuoi capire se texture size e numero materiali sono bilanciati. |
-| **Analyze Texture Detail** | Avvia l'analisi high-to-UV e mostra raccomandazioni su texture/materiali. | Usalo in Advanced prima del bake quando non sei sicuro della risoluzione o del numero di materiali. |
-| **Bake Samples** | Imposta il numero di sample Cycles per il bake. | Alzalo per bake più puliti, soprattutto AO. Abbassalo per test più rapidi. |
-| **Bake Margin** | Aggiunge padding attorno alle isole UV bake. | Aumentalo per ridurre seam e texture bleeding. |
 | **Bake Base Color** | Cuoce la texture colore principale. | Tienilo attivo quando vuoi preservare il colore originale della scansione. |
 | **Bake Normal Map** | Cuoce o trasferisce una normal map. | Se il materiale high ha una normal texture collegata, ScanReady la trasferisce. Altrimenti esegue un bake normal geometrico high-to-low. |
 | **Bake Roughness Map** | Trasferisce roughness dal materiale high quando è collegata una roughness texture. | Attivalo quando l'asset finale deve mantenere variazione roughness dal materiale originale. |
 | **Bake Occlusion Map** | Cuoce una mappa Ambient Occlusion. | Attivalo per aggiungere profondità e ombre di contatto. |
-| **Normal Strength** | Controllo avanzato della forza del nodo Normal Map. | Regolalo in Advanced > Bake Settings se il dettaglio normal appare troppo debole o troppo forte. |
+| **Save Images** | Salva le texture bake su disco. | Attivalo quando esporti verso game engine, archivi o tool esterni. |
+| **Open Folder After Bake** | Apre automaticamente la cartella del bake quando il salvataggio texture è completato. | Utile durante test e produzione, soprattutto quando vuoi controllare subito i file generati. |
+| **Image Format** | Sceglie JPG, PNG o TIFF. | Usa JPG per color map compatte, PNG per output lossless, TIFF per alta precisione. |
+| **Output Folder** | Cartella dove vengono salvate le texture bake. | Impostala prima del bake se vuoi i file in una cartella specifica del progetto. |
+| **Bake Folder** | Mostra la cartella usata dall'ultimo bake e fornisce un pulsante per aprirla. | Usalo dopo il bake per controllare o aprire rapidamente i file texture salvati. |
 
 ---
 
-## Ambient Occlusion
+## Texture Detail
+
+Questa sezione si trova in **Advanced**, dopo **UV Settings** e prima di **Bake Settings**.
+
+| Impostazione | Descrizione | Quando regolarla |
+|---|---|---|
+| **Texture Detail** | Sezione avanzata dedicata all'analisi del dettaglio texture e dello spazio UV. | Usala quando vuoi capire se texture size e numero materiali sono bilanciati. |
+| **Analyze Texture Detail** | Avvia l'analisi high-to-UV e mostra raccomandazioni su texture/materiali. | Usalo dopo aver generato le UV, prima del bake, quando non sei sicuro della risoluzione o del numero di materiali. |
+
+---
+
+## Bake Settings
+
+Questa tabella segue l'ordine della sezione **Advanced > Bake Settings** dell'addon.
+
+| Impostazione | Descrizione | Quando regolarla |
+|---|---|---|
+| **Bake Samples** | Imposta il numero di sample Cycles per il bake. | Alzalo per bake più puliti, soprattutto AO. Abbassalo per test più rapidi. |
+| **Bake Margin** | Aggiunge padding attorno alle isole UV bake. | Aumentalo per ridurre seam e texture bleeding. |
+| **Normal Strength** | Appare quando **Bake Normal Map** è attivo e controlla la forza del nodo Normal Map nel materiale finale. | Regolalo se il dettaglio normal appare troppo debole o troppo forte. Se Bake Normal Map non è attivo, dopo Bake Margin vedrai direttamente il controllo del formato immagine, per esempio JPG Quality. |
+| **JPG Quality** | Controlla la qualità di compressione JPG quando il formato immagine selezionato è JPG. | Alzalo per migliore qualità. Abbassalo per file più piccoli. |
+| **TIFF 16-bit** | Salva texture TIFF con precisione più alta quando il formato selezionato è TIFF. | Usalo per asset ravvicinati, workflow archivio o mappe dettagliate. |
+
+---
+
+## Occlusion Settings
+
+Questa sezione è dentro **Advanced > Bake Settings** e appare quando **Bake Occlusion Map** è attivo.
 
 | Impostazione | Descrizione | Quando regolarla |
 |---|---|---|
@@ -140,21 +169,9 @@ ScanReady usa **Smart UV Project** per generare le UV.
 
 ---
 
-## Impostazioni output
+## Memory Safety
 
-| Impostazione | Descrizione | Quando regolarla |
-|---|---|---|
-| **Save Images** | Salva le texture bake su disco. | Attivalo quando esporti verso game engine, archivi o tool esterni. |
-| **Open Folder After Bake** | Apre automaticamente la cartella del bake quando il salvataggio texture è completato. | Utile durante test e produzione, soprattutto quando vuoi controllare subito i file generati. |
-| **Image Format** | Sceglie JPG, PNG o TIFF. | Usa JPG per color map compatte, PNG per output lossless, TIFF per alta precisione. |
-| **JPG Quality** | Controlla la qualità di compressione JPG. | Alzalo per migliore qualità. Abbassalo per file più piccoli. |
-| **TIFF 16-bit** | Salva texture TIFF con precisione più alta. | Usalo per asset ravvicinati, workflow archivio o mappe dettagliate. |
-| **Output Folder** | Cartella dove vengono salvate le texture bake. | Impostala prima del bake se vuoi i file in una cartella specifica del progetto. |
-| **Bake Folder** | Mostra la cartella usata dall'ultimo bake e fornisce un pulsante per aprirla. | Usalo dopo il bake per controllare o copiare rapidamente i file texture salvati. |
-
----
-
-## Sicurezza memoria
+Questa sezione è dentro **Advanced > Bake Settings**.
 
 | Impostazione | Descrizione | Quando regolarla |
 |---|---|---|
