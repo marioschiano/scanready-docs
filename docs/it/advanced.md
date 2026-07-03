@@ -1416,7 +1416,7 @@ Usala quando vuoi verificare rapidamente quale build stai usando prima di confro
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Installed version</strong></p>
   <!-- Sostituire con ../../img/advanced-installed-version.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Installed version di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_version.png" alt="Placeholder screenshot Installed version di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 <hr>
@@ -1452,7 +1452,7 @@ Usalo per vedere cosa è cambiato prima di installare o confrontare una nuova ve
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Release Notes</strong></p>
   <!-- Sostituire con ../../img/advanced-release-notes.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Release Notes di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_release_note.png" alt="Placeholder screenshot Release Notes di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 <hr>
@@ -1470,7 +1470,7 @@ Usalo quando preferisci seguire il workflow in video o quando vuoi vedere esempi
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Video Tutorials</strong></p>
   <!-- Sostituire con ../../img/advanced-video-tutorials.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Video Tutorials di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_video_tutorial.png" alt="Placeholder screenshot Video Tutorials di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 <hr>
