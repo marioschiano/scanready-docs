@@ -1528,7 +1528,7 @@ L'avviso appare dopo un controllo manuale riuscito o dopo che nelle Preferences 
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Update notice</strong></p>
   <!-- Sostituire con ../../img/advanced-update-notice.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot Update notice di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/preferences_update_notice.jpg" alt="Placeholder screenshot Update notice di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 ---
