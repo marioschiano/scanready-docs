@@ -1538,6 +1538,11 @@ L'avviso appare dopo un controllo manuale riuscito o dopo che nelle Preferences 
 
 </div>
 
+<div style="text-align:center; margin-top:8px; margin-bottom:30px;">
+  <p style="margin-top:0;"><strong>Controllo aggiornamenti nelle Preferences</strong></p>
+  <img src="../../img/preferences_update_notice.jpg" alt="Controllo aggiornamenti di ScanReady nelle preferenze addon di Blender" style="max-width:760px; width:100%;">
+</div>
+
 ---
 
 # Consiglio pratico
