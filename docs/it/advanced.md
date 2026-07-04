@@ -1456,7 +1456,7 @@ ScanReady legge il file pubblico <strong>update-manifest.json</strong> della doc
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Check for Updates</strong></p>
   <!-- Sostituire con ../../img/advanced-check-for-updates.png -->
-  <img src="../../img/advanced_addon_preferences.png" alt="Placeholder screenshot Check for Updates di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_check_update.png" alt="Placeholder screenshot Check for Updates di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 <hr>
