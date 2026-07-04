@@ -1,4 +1,4 @@
-# Guida manuale
+# Guida rapida manuale
 
 Usa questa guida quando vuoi seguire ScanReady passo dopo passo, invece di usare **One Click Bake**.
 
