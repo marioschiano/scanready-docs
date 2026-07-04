@@ -1461,6 +1461,36 @@ ScanReady legge il file pubblico <strong>update-manifest.json</strong> della doc
 
 <hr>
 
+<h3>Avviso di aggiornamento</h3>
+
+<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+
+<div style="flex:1 1 0; min-width:0;">
+
+<p>
+Quando ScanReady rileva una versione più recente, può mostrare un avviso nel pannello con la versione installata e quella disponibile.
+</p>
+
+<p>
+L'avviso appare dopo un controllo manuale riuscito o dopo che nelle Preferences è stata salvata una versione disponibile più alta. L'aggiornamento dell'addon va comunque eseguito dalla piattaforma di distribuzione, per esempio Blender Extensions o Superhive.
+</p>
+</div>
+
+<div style="flex:0 0 260px; text-align:center;">
+  <p style="margin-top:0;"><strong>Avviso di aggiornamento</strong></p>
+  <!-- Sostituire con ../../img/advanced-update-notice.png -->
+  <img src="../../img/advanced_update_notice_panel.jpg" alt="Avviso di aggiornamento di ScanReady nel pannello principale dell'addon" style="width:260px; max-width:100%;">
+</div>
+
+</div>
+
+<div style="text-align:center; margin-top:8px; margin-bottom:30px;">
+  <p style="margin-top:0;"><strong>Controllo aggiornamenti nelle Preferences</strong></p>
+  <img src="../../img/preferences_update_notice.jpg" alt="Controllo aggiornamenti di ScanReady nelle preferenze addon di Blender" style="max-width:760px; width:100%;">
+</div>
+
+<hr>
+
 <h3>Open Documentation</h3>
 
 <p>
@@ -1515,33 +1545,6 @@ Usalo quando preferisci seguire il workflow in video o quando vuoi vedere esempi
 
 <hr>
 
-<h3>Avviso di aggiornamento</h3>
-
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
-
-<div style="flex:1 1 0; min-width:0;">
-
-<p>
-Quando ScanReady rileva una versione più recente, può mostrare un avviso nel pannello con la versione installata e quella disponibile.
-</p>
-
-<p>
-L'avviso appare dopo un controllo manuale riuscito o dopo che nelle Preferences è stata salvata una versione disponibile più alta. L'aggiornamento dell'addon va comunque eseguito dalla piattaforma di distribuzione, per esempio Blender Extensions o Superhive.
-</p>
-</div>
-
-<div style="flex:0 0 260px; text-align:center;">
-  <p style="margin-top:0;"><strong>Avviso di aggiornamento</strong></p>
-  <!-- Sostituire con ../../img/advanced-update-notice.png -->
-  <img src="../../img/advanced_update_notice_panel.jpg" alt="Avviso di aggiornamento di ScanReady nel pannello principale dell'addon" style="width:260px; max-width:100%;">
-</div>
-
-</div>
-
-<div style="text-align:center; margin-top:8px; margin-bottom:30px;">
-  <p style="margin-top:0;"><strong>Controllo aggiornamenti nelle Preferences</strong></p>
-  <img src="../../img/preferences_update_notice.jpg" alt="Controllo aggiornamenti di ScanReady nelle preferenze addon di Blender" style="max-width:760px; width:100%;">
-</div>
 
 ---
 
