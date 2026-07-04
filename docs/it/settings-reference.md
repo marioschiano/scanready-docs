@@ -206,9 +206,17 @@ Questa sezione è dentro **Advanced > Bake Settings**.
 |---|---|---|
 | **Installed version** | Mostra la versione di ScanReady installata. | Usalo per controllare rapidamente quale build è attiva in Blender. |
 | **Updates are managed by Blender Extensions / Superhive** | Ricorda che gli aggiornamenti pubblici vengono gestiti dalla piattaforma di distribuzione. | Utile per capire dove cercare l'aggiornamento ufficiale dell'addon. |
+| **Check for Updates** | Controlla manualmente il manifest pubblico della documentazione e confronta la versione disponibile con quella installata. | Usalo come controllo informativo o fallback, soprattutto se l'addon è stato installato da ZIP. Non installa aggiornamenti. |
+| **Update Manifest URL** | URL del file `update-manifest.json` usato da **Check for Updates**. | Lascialo sul valore predefinito, a meno che tu non stia testando un manifest diverso. |
+| **Update Status** | Mostra il risultato dell'ultimo controllo aggiornamenti. | Usalo per capire se ScanReady è aggiornato, se è disponibile una versione più nuova o se il controllo non è riuscito. |
 | **Open Documentation** | Apre la documentazione online di ScanReady. | Usalo quando vuoi consultare guida rapida, workflow, FAQ o troubleshooting. |
 | **Release Notes** | Apre il changelog e la pagina release notes di ScanReady. | Usalo per vedere cosa è cambiato prima di aggiornare. |
 | **Video Tutorials** | Apre il canale YouTube con i tutorial ScanReady. | Usalo quando preferisci vedere il workflow in video. |
+
+!!! note "Update ufficiale e controllo manuale"
+    Il pulsante **Update** nella schermata Blender Extensions dipende dal repository o marketplace da cui l'estensione è stata installata.
+
+    **Check for Updates** dentro ScanReady legge invece il manifest pubblico della documentazione. È un avviso informativo: non scarica e non installa l'aggiornamento.
 
 ---
 

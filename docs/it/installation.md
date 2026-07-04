@@ -57,9 +57,13 @@ Nel 3D Viewport:
 
 ## Aggiornamenti
 
-Gli aggiornamenti vengono gestiti tramite il sistema Blender Extensions.
+Gli aggiornamenti ufficiali vengono installati tramite Blender Extensions / Superhive.
 
-Quando sarà disponibile una nuova versione, ScanReady potrà mostrare l'avviso di aggiornamento nel pannello dell'addon. In **Edit > Preferences > Add-ons > ScanReady** trovi anche link rapidi alla documentazione, alle release notes e ai tutorial.
+Se ScanReady è installato da un repository o marketplace collegato a Blender Extensions, Blender può mostrare il pulsante **Update** nella schermata Extensions quando è disponibile una versione più recente.
+
+ScanReady include anche un controllo manuale in **Edit > Preferences > Add-ons > ScanReady**: **Check for Updates** legge il manifest pubblico della documentazione e può segnalare che esiste una versione più nuova. Questo controllo è informativo: non installa l'update e non sostituisce Blender Extensions / Superhive.
+
+Nelle Preferences trovi anche link rapidi alla documentazione, alle release notes e ai tutorial.
 
 ---
 
