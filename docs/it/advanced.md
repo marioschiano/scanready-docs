@@ -1515,7 +1515,7 @@ Usalo quando preferisci seguire il workflow in video o quando vuoi vedere esempi
 
 <hr>
 
-<h3>Update notice</h3>
+<h3>Avviso di aggiornamento</h3>
 
 <p>
 Quando ScanReady rileva una versione più recente, può mostrare un avviso nel pannello con la versione installata e quella disponibile.
@@ -1526,9 +1526,9 @@ L'avviso appare dopo un controllo manuale riuscito o dopo che nelle Preferences 
 </p>
 
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
-  <p style="margin-top:0;"><strong>Update notice</strong></p>
+  <p style="margin-top:0;"><strong>Avviso di aggiornamento</strong></p>
   <!-- Sostituire con ../../img/advanced-update-notice.png -->
-  <img src="../../img/preferences_update_notice.jpg" alt="Placeholder screenshot Update notice di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/preferences_update_notice.jpg" alt="Avviso di aggiornamento di ScanReady nelle preferenze addon di Blender" style="max-width:760px; width:100%;">
 </div>
 
 ---
