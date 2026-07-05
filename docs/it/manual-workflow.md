@@ -15,7 +15,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
     <li>Seleziona la scansione high-poly nel viewport di Blender.</li>
     <li>Apri <strong>STEP 1 Preview / Reduce</strong>.</li>
     <li>Regola <strong>Optimize / Reduce</strong> o <strong>Final Faces</strong> se vuoi una mesh più leggera o più dettagliata.</li>
-    <li>Clicca <strong>Create Low-poly Preview</strong>.</li>
+    <li>Clicca <strong>Create Lowpoly Preview</strong>.</li>
   </ol>
 
   <p>ScanReady pulisce la scansione, crea una copia ottimizzata e genera una preview low-poly non distruttiva. La scansione high-poly originale resta intatta e viene usata come sorgente per UV, cage e bake.</p>
@@ -24,8 +24,8 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 </div>
 
 <div style="flex:0 0 260px; max-width:260px; text-align:center;">
-  <p style="margin-top:0;"><strong>Create Low-poly Preview</strong></p>
-  <img src="../../img/manual-step1.jpg" alt="Pannello STEP 1 Preview Reduce con pulsante Create Low-poly Preview" style="width:100%;">
+  <p style="margin-top:0;"><strong>Create Lowpoly Preview</strong></p>
+  <img src="../../img/manual-step1.jpg" alt="Pannello STEP 1 Preview Reduce con pulsante Create Lowpoly Preview" style="width:100%;">
 </div>
 
 </div>
@@ -107,7 +107,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 !!! tip "Puoi tornare allo Step 1"
     Puoi tornare indietro in qualsiasi momento.
 
-    Se sei già nello Step 2 o nello Step 3 e ti accorgi che la mesh è ancora troppo pesante, torna a **Step 1 - Preview / Reduce**, abbassa **Final Faces** o **Optimize / Reduce**, poi clicca di nuovo **Create Low-poly Preview**.
+    Se sei già nello Step 2 o nello Step 3 e ti accorgi che la mesh è ancora troppo pesante, torna a **Step 1 - Preview / Reduce**, abbassa **Final Faces** o **Optimize / Reduce**, poi clicca di nuovo **Create Lowpoly Preview**.
 
 Dopo aver ricreato la preview, continua di nuovo in avanti:
 

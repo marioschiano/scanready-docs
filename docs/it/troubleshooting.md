@@ -337,7 +337,7 @@ Se il risultato non è buono, usa questo ordine:
 2. Controlla le UV con la vista checker
 3. Controlla la preview cage
 4. Cuoci prima solo Base Color
-5. Aggiungi Normal, Roughness e AO dopo che Base Color funziona
+5. Aggiungi Normal Map, Roughness Map e Occlusion Map dopo che Base Color funziona
 6. Aumenta la risoluzione texture solo quando il workflow è corretto
 
 !!! note "Perché questo ordine aiuta"

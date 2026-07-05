@@ -32,11 +32,11 @@ Questo valore funziona bene per molti asset VR, game e realtime. Se il risultato
 !!! tip "One Click Bake non ti blocca"
     One Click Bake è automatico, ma il risultato può comunque essere rifinito dopo.
 
-    Se il modello finale risulta troppo pesante, oppure se è stato ottimizzato troppo e perde dettagli importanti della forma, torna a **Step 1 - Preview / Reduce**. Regola **Optimize / Reduce** o **Final Faces**, poi clicca di nuovo **Create Low-poly Preview**.
+    Se il modello finale risulta troppo pesante, oppure se è stato ottimizzato troppo e perde dettagli importanti della forma, torna a **Step 1 - Preview / Reduce**. Regola **Optimize / Reduce** o **Final Faces**, poi clicca di nuovo **Create Lowpoly Preview**.
 
     ScanReady ricostruirà la preview ottimizzata con le nuove impostazioni, così puoi provare una versione più leggera o più dettagliata prima di continuare con UV e bake.
 
-    Il workflow è flessibile: anche se sei già in **Step 2 - UV / Cage** o **Step 3 - Bake / Output**, puoi tornare allo Step 1, regolare la riduzione, cliccare **Create Low-poly Preview**, poi continuare di nuovo in avanti.
+    Il workflow è flessibile: anche se sei già in **Step 2 - UV / Cage** o **Step 3 - Bake / Output**, puoi tornare allo Step 1, regolare la riduzione, cliccare **Create Lowpoly Preview**, poi continuare di nuovo in avanti.
 
 ---
 
@@ -161,7 +161,7 @@ Dopo il completamento del workflow, controlla:
 - il materiale bake;
 - i file texture salvati;
 - il collegamento **Bake Folder** nello Step 3, che apre l'ultima cartella di output texture;
-- le mappe Normal, Roughness e AO se abilitate;
+- le mappe Normal Map, Roughness Map e Occlusion Map se abilitate;
 - eventuali dettagli mancanti causati dalla distanza del cage o dalle impostazioni di bake.
 
 Se il risultato va regolato, usa il workflow manuale:

@@ -115,7 +115,7 @@ Mantiene circa <strong>10% dei poligoni originali</strong>, creando una preview 
 </p>
 
 <p>
-Dopo aver cliccato <strong>Create Low-poly Preview</strong>, puoi ancora regolare questo valore per provare risultati più leggeri o più dettagliati.
+Dopo aver cliccato <strong>Create Lowpoly Preview</strong>, puoi ancora regolare questo valore per provare risultati più leggeri o più dettagliati.
 </p>
 
 <p>
@@ -184,8 +184,8 @@ Mostra la percentuale di riduzione corrente in base alle impostazioni di ottimiz
 </div>
 
 <div style="flex:0 0 320px; text-align:center;">
-  <p style="margin-top:0;"><strong>Create Low-poly Preview</strong></p>
-  <img src="../../img/step1-preview-reduce_optimize.png" alt="Pannello Step 1 Preview Reduce di ScanReady con pulsante Create Low-poly Preview" style="width:320px; max-width:100%;">
+  <p style="margin-top:0;"><strong>Create Lowpoly Preview</strong></p>
+  <img src="../../img/step1-preview-reduce_optimize.png" alt="Pannello Step 1 Preview Reduce di ScanReady con pulsante Create Lowpoly Preview" style="width:320px; max-width:100%;">
 </div>
 
 </div>
@@ -286,11 +286,11 @@ Checker UV Scale cambia la dimensione del pattern checker per rendere più facil
 ## Quando rifare la preview
 
 !!! tip "Quando tornare allo Step 1"
-    Usa di nuovo **Create Low-poly Preview** quando cambi densità o vuoi testare una riduzione diversa.
+    Usa di nuovo **Create Lowpoly Preview** quando cambi densità o vuoi testare una riduzione diversa.
 
     Se la preview è troppo pesante o troppo semplificata, regola **Optimize / Reduce** o **Final Faces** e crea di nuovo la preview.
 
-    Puoi tornare allo Step 1 in qualsiasi momento. Se sei già nello Step 2 o nello Step 3 e decidi che il modello deve essere più leggero o più dettagliato, cambia qui le impostazioni di riduzione, clicca di nuovo **Create Low-poly Preview**, poi continua generando UV e bake di nuovo.
+    Puoi tornare allo Step 1 in qualsiasi momento. Se sei già nello Step 2 o nello Step 3 e decidi che il modello deve essere più leggero o più dettagliato, cambia qui le impostazioni di riduzione, clicca di nuovo **Create Lowpoly Preview**, poi continua generando UV e bake di nuovo.
 
 <div style="width:100%; text-align:left;">
   <img src="../../img/step1-cleaner.gif" alt="Pulizia mesh di ScanReady prima della preview low-poly" style="max-width:820px;width:100%;">

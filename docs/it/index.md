@@ -116,7 +116,7 @@ ScanReady usa **Smart UV Project** per generare UV automatiche sulla mesh ottimi
 
 ### Texture Baking
 
-ScanReady supporta bake di **Base Color**, **Normal**, **Roughness** e **Occlusion**.
+ScanReady supporta bake di **Base Color**, **Normal Map**, **Roughness Map** e **Occlusion Map**.
 
 ### Supporto multi-materiale
 
