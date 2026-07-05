@@ -972,7 +972,7 @@ Può essere utile per asset dettagliati, workflow archivio o output texture tecn
 
 ---
 
-## <span class="sr-addon-icon sr-icon-render" title="Occlusion Settings"></span>Occlusion Settings
+## <span class="sr-addon-icon sr-icon-step3" title="Occlusion Settings"></span>Occlusion Settings
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
