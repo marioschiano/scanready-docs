@@ -796,7 +796,7 @@ Aumenta il padding per ridurre texture bleeding, soprattutto a risoluzioni textu
 
 ---
 
-# <span class="sr-addon-icon sr-icon-render" title="Texture Detail"></span>Texture Detail
+# <span class="sr-addon-icon sr-icon-texture" title="Texture Detail"></span>Texture Detail
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 

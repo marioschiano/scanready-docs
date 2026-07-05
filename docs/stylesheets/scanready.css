@@ -153,7 +153,7 @@
 
 .md-typeset .sr-icon-uv::before {
   inset: 0;
-  background: url("../img/icons/icon_uv_settings.png") center / contain no-repeat;
+  background: url("../img/icons/icon_uv.png") center / contain no-repeat;
 }
 
 .md-typeset .sr-icon-mesh::before {
@@ -197,7 +197,12 @@
 
 .md-typeset .sr-icon-step2::before {
   inset: 0;
-  background: url("../img/icons/icon_uv.png") center / contain no-repeat;
+  background: url("../img/icons/icon_uv_settings.png") center / contain no-repeat;
+}
+
+.md-typeset .sr-icon-texture::before {
+  inset: 0;
+  background: url("../img/icons/icon_uv_settings.png") center / contain no-repeat;
 }
 
 .md-typeset .sr-icon-utility::before {
