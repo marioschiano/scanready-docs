@@ -32,7 +32,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 
 ---
 
-## <span class="sr-addon-icon sr-icon-uv" title="Step 2 UV / Cage"></span>Step 2 - Genera UV e controlla il cage
+## <span class="sr-addon-icon sr-icon-step2" title="Step 2 UV / Cage"></span>Step 2 - Genera UV e controlla il cage
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin:22px 0 30px;">
 
