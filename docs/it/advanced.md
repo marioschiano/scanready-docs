@@ -1170,7 +1170,7 @@ ScanReady può abilitarlo automaticamente quando viene usato il bake multi-mater
 
 ---
 
-# <span class="sr-addon-icon sr-icon-presets" title="Preset"></span>Preset
+# Preset
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
@@ -1305,7 +1305,7 @@ Elimina il preset selezionato.
 
 ---
 
-# <span class="sr-addon-icon sr-icon-info" title="Diagnostics"></span>Diagnostics
+# <span class="sr-addon-icon sr-icon-diagnostics" title="Diagnostics"></span>Diagnostics
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
@@ -1400,7 +1400,7 @@ Usalo se le impostazioni correnti producono risultati inattesi o se vuoi tornare
 
 ---
 
-# <span class="sr-addon-icon sr-icon-info" title="Addon Preferences / Updates"></span>Addon Preferences / Updates
+# <span class="sr-addon-icon sr-icon-preferences" title="Addon Preferences / Updates"></span>Addon Preferences / Updates
 
 <p>
 ScanReady include una piccola sezione di supporto nel pannello Blender Add-on Preferences.

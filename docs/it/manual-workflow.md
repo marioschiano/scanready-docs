@@ -69,7 +69,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 
 ---
 
-## <span class="sr-addon-icon sr-icon-render" title="Step 3 Bake / Output"></span>Step 3 - Esegui il bake
+## <span class="sr-addon-icon sr-icon-step3" title="Step 3 Bake / Output"></span>Step 3 - Esegui il bake
 
 <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin:22px 0 30px;">
 
