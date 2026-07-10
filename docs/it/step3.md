@@ -65,7 +65,7 @@ Risoluzioni più alte aumentano molto l'uso di memoria.
 
 <!-- Sostituire il placeholder con ../../img/step3-texture-size-comparison.png -->
 <p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Placeholder confronto risoluzione texture" style="max-width:1100px;width:100%;">
+  <img src="../../img/step3-texture-size-comparison.png" alt="Placeholder confronto risoluzione texture" style="max-width:1100px;width:100%;">
 </p>
 
 ---
