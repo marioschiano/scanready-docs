@@ -23,11 +23,13 @@ Prima dell'export, controlla:
 
 ---
 
+ScanReady prepara mesh, materiali e texture. Per esportare il modello usa **File > Export** di Blender e scegli il formato richiesto dalla destinazione.
+
 ## Formati export consigliati
 
 ### glTF / GLB
 
-Usa **glTF** o **GLB** per workflow realtime moderni.
+Usa **glTF** o **GLB** per workflow in tempo reale moderni.
 
 Adatto per:
 
@@ -218,7 +220,7 @@ Un asset più piccolo è più facile da condividere, caricare e visualizzare in 
 !!! warning "Conserva la sorgente"
     Non eliminare la scansione high-poly originale.
 
-Conservala come asset sorgente per:
+Conserva anche una copia precedente alla preparazione di ScanReady, perché le opzioni Mesh Settings possono intervenire sulla sorgente. Ti servirà per:
 
 - bake futuri;
 - export a qualità superiore;

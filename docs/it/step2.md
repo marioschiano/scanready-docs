@@ -14,7 +14,7 @@ Step 2 genera un nuovo layout UV e prepara il cage per il bake.
 
 Dopo che la scansione è stata semplificata nello Step 1, la mesh ottimizzata ha bisogno di UV pulite per ricevere correttamente le texture sulla nuova superficie low-poly.
 
-Questo step prepara l'asset al trasferimento delle texture, permettendo alla mesh ottimizzata di mantenere gran parte della ricchezza visiva della scansione high-poly originale, restando abbastanza leggera per **VR, videogame, AR, visualizzazione realtime e ambienti interattivi**.
+Questo step prepara l'asset al trasferimento delle texture, permettendo alla mesh ottimizzata di mantenere gran parte della ricchezza visiva della scansione high-poly originale, restando abbastanza leggera per **VR, videogame, AR, visualizzazione in tempo reale e ambienti interattivi**.
 
 ---
 
@@ -34,9 +34,7 @@ Poiché la geometria è stata unita e semplificata, il layout UV originale può 
 - sporco;
 - non allineato alla nuova superficie low-poly.
 
-Senza UV nuove, ScanReady non può trasferire correttamente le informazioni texture dalla scansione originale alla mesh ottimizzata.
-
-Creare UV nuove garantisce bake più puliti e una proiezione texture più affidabile.
+Nel workflow ScanReady, usa **Generate UVs** per preparare la mesh destinata al bake. Il nuovo layout deve avere isole ben separate e uno spazio texture adeguato: controllalo prima di procedere.
 
 <p align="center">
   <img src="../../img/step2-uv-02.png" alt="Confronto checker texture con UV stirate e UV pulite" style="max-width:1000px;width:100%;">
@@ -105,7 +103,7 @@ ScanReady include strumenti per rendere questo processo più veloce e più sempl
 </p>
 
 !!! warning "Cage rosso"
-    Se il cage appare rosso, il bake non proietterà correttamente.
+    Il rosso segnala che il controllo automatico rileva una copertura insufficiente: alcune zone potrebbero non essere raggiunte dai raggi del bake.
 
     Abilita **Show Cage**, poi aumenta leggermente **Cage Extrusion** oppure usa **Auto Cage Extrusion** prima di continuare.
 
@@ -145,11 +143,11 @@ ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'
 
 ## Impostazioni UV
 
-Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
+**Smart UV Preset** è nello **Step 2** (etichetta compatta **Smart UV**). **Smart UV Angle** e **UV Padding** sono in **Advanced > UV Settings**.
 
 ### Smart UV Preset
 
-<div style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
 
 <div style="min-width:0;">
 
@@ -208,9 +206,9 @@ La checker texture aiuta a vedere:
 
 Un pattern checker pulito di solito indica un layout UV più sano per il bake.
 
-<!-- Sostituire il placeholder con ../../img/step2-checker-preview.png -->
+<!-- Esempio condiviso con Step 1. -->
 <p align="center">
-  <img src="../../img/step1-checker.gif" alt="Placeholder screenshot preview checker" style="max-width:1000px;width:100%;">
+  <img src="../../img/step1-checker.gif" alt="Controllo delle UV con Show Checker" style="max-width:1000px;width:100%;">
 </p>
 
 ---
@@ -221,7 +219,7 @@ Un pattern checker pulito di solito indica un layout UV più sano per il bake.
 
 Mostra la preview del cage.
 
-Usalo prima del bake per controllare che il cage circondi completamente la mesh ottimizzata.
+Usalo prima del bake per controllare che il cage, generato dalla mesh ottimizzata, copra la superficie high-poly da campionare.
 
 ### Auto Cage Extrusion
 

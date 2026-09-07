@@ -45,7 +45,7 @@ Se la preview ottimizzata è ancora troppo densa:
 - aumenta la pulizia solo con cautela;
 - crea di nuovo la preview low-poly.
 
-**Optimize / Reduce** e **Final Faces** sono collegati: entrambi controllano quanto sara leggera la preview low-poly.
+**Optimize / Reduce** e **Final Faces** sono collegati: entrambi controllano quanto sarà leggera la preview low-poly.
 
 Per asset VR e videogame, la mesh deve restare abbastanza leggera da essere gestita bene nel viewport, esportata senza problemi e usata in realtime.
 
@@ -70,9 +70,9 @@ Per silhouette importanti, mantieni abbastanza geometria per preservare la forma
 
 Se il pattern checker mostra aree molto allungate:
 
-- prova un metodo UV diverso;
+- prova un altro **Smart UV Preset** nello Step 2;
 - abbassa o alza **Smart UV Angle**;
-- aumenta la separazione tra isole con **UV Padding**;
+- controlla **UV Padding** per la separazione tra isole; il padding non corregge lo stretching interno di un’isola;
 - usa un preset UV più dettagliato;
 - genera di nuovo le UV.
 
@@ -252,7 +252,7 @@ Controlla il node tree del materiale originale e verifica che le informazioni ro
 
 Prova:
 
-- abbassare la forza AO nel materiale finale;
+- abbassare **AO Mix** in **Advanced > Bake Settings > Occlusion Settings**;
 - ridurre **AO Distance** se la distanza automatica è disattivata;
 - usare impostazioni AO più controllate;
 - verificare se la sorgente AO è adatta all'asset.
@@ -278,14 +278,22 @@ Per correggere:
 
 Il cage deve circondare completamente la superficie high-poly.
 
-In ScanReady, la preview del cage diventa verde quando il cage è abbastanza grande da coprire correttamente la superficie della scansione.
+Il verde indica che la copertura supera il controllo automatico di ScanReady. Poiché la verifica usa un campionamento della superficie, controlla anche il risultato del bake nelle aree sottili, concave o molto vicine tra loro.
 
-Se alcune aree mancano ancora, aumenta leggermente l'extrusion e controlla di nuovo il cage.
+Se alcune aree mancano ancora, regola l’extrusion in piccoli incrementi e verifica anche normali, UV e materiali sorgente. Un cage troppo grande può catturare superfici indesiderate.
 
 Quando il cage sembra corretto, esegui di nuovo il bake per verificare se le aree mancanti o nere sono state corrette.
 
 !!! tip "Valore cage consigliato"
     Usa il valore più piccolo che copre completamente la scansione senza catturare superfici vicine indesiderate.
+
+---
+
+## Quando usare Convert Source Materials?
+
+Lascia **Convert Source Materials** disattivato se il bake funziona correttamente. Se la Base Color è nera o incompleta e il cage è corretto, controlla lo shader importato e prova la conversione in **Advanced > Mesh Settings**.
+
+Attiva la spunta, poi premi **Create Lowpoly Preview** per applicarla. I materiali già standard vengono mantenuti; quelli da convertire vengono ricostruiti in una configurazione Principled BSDF. Controlla il risultato prima di ripetere il bake.
 
 ---
 

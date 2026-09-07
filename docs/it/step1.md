@@ -20,7 +20,7 @@ L'ottimizzazione non viene applicata in modo uniforme su tutto il modello.
 
 ScanReady preserva il dettaglio importante della superficie mentre semplifica in modo più aggressivo le regioni piatte o meno dettagliate.
 
-Questo aiuta a creare asset low-poly più puliti ed efficienti per workflow realtime.
+Questo aiuta a creare asset low-poly più puliti ed efficienti per workflow in tempo reale.
 
 ### Adaptive Reduce
 
@@ -49,7 +49,7 @@ Usa il preset Adaptive Reduce come punto di partenza rapido:
 
 <p align="center">
   <b>Blender Decimate vs ScanReady Adaptive Reduce</b><br>
-  <span style="font-size:0.9em; opacity:0.75;">Qui andrà un render comparativo reale in Blender: stessa scansione, densità finale simile, Decimate standard da un lato e ScanReady Adaptive Reduce dall'altro.</span>
+  <span style="font-size:0.9em; opacity:0.75;">Confronto illustrativo in preparazione: stessa scansione e densità finale simile.</span>
 </p>
 
 ## Miglioramento performance
@@ -58,18 +58,23 @@ Le scansioni pesanti possono diventare rapidamente difficili da gestire dentro B
 
 ### Esempio
 
-- Scansione originale -> 1M+ poligoni
-- Preview ottimizzata -> 20K poligoni
+- Scansione originale: oltre 1 milione di poligoni.
+- Possibile target di prova: 20.000 poligoni.
 
-Questo aiuta a migliorare la risposta del viewport e rende l'asset più facile da elaborare nei workflow realtime.
+È un esempio, non un risultato garantito: scegli il target in base a silhouette, distanza di osservazione e piattaforma finale.
+
+Questo aiuta a migliorare la risposta del viewport e rende l'asset più facile da elaborare nei workflow in tempo reale.
 
 ---
 
-## Workflow non distruttivo
+## Preview separata e sorgente high-poly
 
-ScanReady non modifica mai la scansione high-poly originale.
+La riduzione viene applicata a una **preview separata**, mentre la mesh high-poly resta disponibile come sorgente per il bake.
 
-Una mesh ottimizzata duplicata viene generata automaticamente per il workflow, mantenendo intatta la scansione originale.
+!!! warning "Conserva una copia della scansione originale"
+    La preparazione può modificare la sorgente: applicare la scala, unire parti, correggere le normali, rimuovere marcature sharp o frammenti e convertire i materiali, in base alle opzioni attive.
+
+    Salva una copia del file `.blend` prima dello Step 1, soprattutto se devi conservare un originale di archivio.
 
 ---
 
@@ -94,20 +99,20 @@ Aiuta anche a rimuovere piccoli artefatti mesh generati da fotogrammetria o acqu
 
 Step 1 crea una preview low-poly ottimizzata dalla scansione high-poly selezionata.
 
-Questo è il primo passaggio importante quando prepari un oggetto scansionato per **VR, AR, videogame, visualizzazione realtime o scene interattive**.
+Questo è il primo passaggio importante quando prepari un oggetto scansionato per **VR, AR, videogame, visualizzazione in tempo reale o scene interattive**.
 
 ScanReady prima pulisce i frammenti indesiderati comuni della scansione, poi riduce il modello preservando la forma generale e l'identità visiva della scansione originale.
 
 ---
 
-<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin-top:24px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin-top:24px; margin-bottom:28px;">
 
 <div style="flex:1 1 320px; min-width:260px;">
 
 <h3>Optimize / Reduce</h3>
 
 <p>
-Il valore predefinito e <strong>0.10</strong>.
+Il valore predefinito è <strong>0.10</strong>.
 </p>
 
 <p>
@@ -139,7 +144,7 @@ Gli aggiornamenti realtime dipendono dalla complessità della scansione e dalle 
 
 ## Impostazioni principali
 
-<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
 
 <div style="flex:1 1 360px; min-width:260px;">
 
@@ -164,7 +169,7 @@ Controlla quanto ScanReady riduce la scansione high-poly selezionata.
 </p>
 
 <p>
-Il valore predefinito e <strong>0.10</strong>, che mantiene circa <strong>10% dei poligoni originali</strong>.
+Il valore predefinito è <strong>0.10</strong>, che mantiene circa <strong>10% dei poligoni originali</strong>.
 </p>
 
 <p>
@@ -232,7 +237,7 @@ Aiuta a controllare densità UV e distorsione texture.
 
 ## Checker Mix / Checker UV Scale
 
-<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin-bottom:24px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin-bottom:24px;">
 
 <div style="flex:1 1 360px; min-width:260px;">
 

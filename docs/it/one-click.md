@@ -1,6 +1,6 @@
 # <span class="sr-addon-icon sr-icon-render" title="One Click Bake"></span>One Click Bake
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-bottom:32px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-bottom:32px;">
 
   <div style="flex:1 1 300px; min-width:260px;">
     <p>
@@ -8,7 +8,7 @@
     </p>
     <p>
       È pensato per convertire una scansione high-poly pesante in un asset più leggero con texture bake, con il minimo setup.
-      È utile quando prepari modelli scansionati per <strong>VR, AR, videogame, visualizzazione realtime o scene interattive</strong>.
+      È utile quando prepari modelli scansionati per <strong>VR, AR, videogame, visualizzazione in tempo reale o scene interattive</strong>.
     </p>
   </div>
 
@@ -44,7 +44,7 @@ Questo valore funziona bene per molti asset VR, game e realtime. Se il risultato
 
 Quando clicchi **ONE CLICK BAKE**, ScanReady esegue il workflow completo da scansione ad asset:
 
-1. Pulisce la scansione selezionata rimuovendo rumore comune della mesh, come poligoni staccati, frammenti sospesi e vertici isolati.
+1. Prepara la scansione selezionata in base alle opzioni attive in **Mesh Settings**: può unire parti, correggere normali e rimuovere frammenti indesiderati.
 2. Crea una preview low-poly dalla scansione high-poly pulita.
 3. Esegue la pulizia pre-decimate merge sulla mesh preview duplicata quando serve.
 4. Riduce la geometria per rendere il modello più leggero.
@@ -89,7 +89,7 @@ Durante l'operazione, ScanReady passa attraverso le stesse fasi principali usate
 
 ### Cleanup
 
-Rimuove le imperfezioni della scansione prima della riduzione, inclusi poligoni staccati, frammenti di geometria sospesi e vertici isolati.
+Applica le opzioni di preparazione abilitate in **Mesh Settings**. Controlla il risultato quando la scansione contiene parti separate che vuoi conservare.
 
 ### Preview
 
@@ -130,7 +130,7 @@ Usa One Click Bake quando:
 
 - vuoi il percorso più veloce da scansione ad asset ottimizzato;
 - stai lavorando su scansioni fotogrammetriche standard;
-- ti serve un asset più leggero per VR, videogame o visualizzazione realtime;
+- ti serve un asset più leggero per VR, videogame o visualizzazione in tempo reale;
 - non hai bisogno di controllare manualmente ogni passaggio;
 - vuoi una prima versione rapida prima di rifinire manualmente.
 
@@ -140,7 +140,7 @@ Usa One Click Bake quando:
 
 Per ottenere risultati migliori:
 
-- seleziona un solo oggetto high-poly nel 3D Viewport;
+- salva una copia del progetto e seleziona la mesh high-poly o il genitore della gerarchia importata; lascia **Auto Combine Mesh Parts** attivo se le parti devono essere trattate come un unico asset;
 - imposta **Optimize / Reduce** oppure **Final Faces** se conosci la densità numerica target della mesh;
 - scegli **Texture Size** in base al livello di dettaglio necessario: 512, 1K, 2K, 4K o 8K;
 - abilita **Bake Base Color**, **Bake Normal Map**, **Bake Roughness Map** o **Bake Occlusion Map** in base alle mappe che vuoi;

@@ -8,7 +8,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 
 ## <span class="sr-addon-icon sr-icon-decim" title="Step 1 Preview / Reduce"></span>Step 1 - Crea la preview low-poly
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin:22px 0 30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin:22px 0 30px;">
 
 <div style="flex:1 1 0; min-width:280px;">
   <ol>
@@ -18,7 +18,9 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
     <li>Clicca <strong>Create Lowpoly Preview</strong>.</li>
   </ol>
 
-  <p>ScanReady pulisce la scansione, crea una copia ottimizzata e genera una preview low-poly non distruttiva. La scansione high-poly originale resta intatta e viene usata come sorgente per UV, cage e bake.</p>
+  <p>ScanReady prepara la sorgente high-poly e crea una preview separata su cui applica la riduzione. Le UV vengono generate dalla preview; la high-poly rimane il riferimento per cage e bake.</p>
+
+  <p>Le opzioni di preparazione possono unire parti, pulire la sorgente, correggere normali o convertire materiali. Conserva una copia del file originale prima di iniziare.</p>
 
   <p>Quando la preview ti sembra corretta, passa a <strong>Step 2 - UV / Cage</strong>.</p>
 </div>
@@ -34,7 +36,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 
 ## <span class="sr-addon-icon sr-icon-step2" title="Step 2 UV / Cage"></span>Step 2 - Genera UV e controlla il cage
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin:22px 0 30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin:22px 0 30px;">
 
 <div style="flex:1 1 0; min-width:280px;">
   <ol>
@@ -50,7 +52,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
   <ul>
     <li>usa <strong>Auto Cage Extrusion</strong> se vuoi una stima automatica;</li>
     <li>regola <strong>Cage Extrusion</strong> se devi correggere manualmente la distanza;</li>
-    <li>quando il cage è verde e copre tutta la mesh high-poly, puoi procedere con lo Step 3.</li>
+    <li>controlla la copertura della high-poly; il verde indica che il controllo automatico è superato, ma verifica comunque le aree sottili e concave prima del bake.</li>
   </ul>
 </div>
 
@@ -71,7 +73,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 
 ## <span class="sr-addon-icon sr-icon-step3" title="Step 3 Bake / Output"></span>Step 3 - Esegui il bake
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin:22px 0 30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin:22px 0 30px;">
 
 <div style="flex:1 1 0; min-width:280px;">
   <ol>

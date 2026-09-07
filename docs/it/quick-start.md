@@ -8,9 +8,12 @@ Questa pagina mostra il modo più veloce per usare ScanReady.
 
 ---
 
+!!! note "Prima di iniziare"
+    Salva una copia del file `.blend`. La riduzione avviene su una preview separata, ma le opzioni di preparazione possono modificare la sorgente high-poly.
+
 ## Workflow base
 
-<div style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
 
   <div style="flex:1 1 360px; min-width:260px;">
 
@@ -18,8 +21,7 @@ Questa pagina mostra il modo più veloce per usare ScanReady.
 
     <ol>
       <li>Seleziona la mesh high-poly della scansione.</li>
-      <li>Imposta <strong>Final Faces</strong> se vuoi un target specifico.</li>
-      <li>Lascia <strong>Optimize / Reduce</strong> a <strong>0.10</strong> per una riduzione di circa il 90%.</li>
+      <li>Scegli la densità con <strong>Final Faces</strong> oppure <strong>Optimize / Reduce</strong>: i due controlli sono collegati. Il rapporto <strong>0.10</strong> mantiene circa il 10% dei poligoni.</li>
       <li>Scegli la dimensione texture.</li>
       <li>Attiva le mappe che vuoi cuocere.</li>
       <li>Clicca <strong>ONE CLICK BAKE</strong>.</li>
@@ -61,7 +63,7 @@ Il modello viene quindi ottimizzato, riceve nuove UV e può ottenere il bake del
 Per una scansione standard:
 
 - **Optimize / Reduce:** `0.10`
-- **Final Faces:** `4000` oppure un target adatto al tuo asset
+- **Final Faces:** in alternativa al rapporto, scegli un target adatto alla forma e all’uso dell’asset
 - **Adaptive Reduce:** attivo
 - **Adaptive Preset:** `Balanced`
 - **Texture Size:** `2048`

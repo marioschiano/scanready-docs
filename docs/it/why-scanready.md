@@ -1,189 +1,69 @@
-## Perché ScanReady?
+# Perché ScanReady?
 
-Le scansioni fotogrammetriche sono dettagliate, ma spesso troppo pesanti per VR, videogame, viewer realtime e progetti interattivi.
-
-ScanReady ti aiuta a trasformare quelle scansioni in asset ottimizzati e baked direttamente dentro Blender.
+Le scansioni fotogrammetriche conservano molti dettagli, ma spesso contengono milioni di poligoni, numerosi materiali e texture pesanti. ScanReady riunisce in Blender i passaggi necessari per crearne una versione più leggera: preparazione, riduzione, UV, cage e bake.
 
 <p align="center">
   <img src="../../img/hero.png" alt="Da scansione grezza ad asset ottimizzato" style="max-width:820px;width:100%;">
 </p>
 
-## Cosa risolve ScanReady
+## Cosa semplifica
 
-- Numero di poligoni elevato.
-- Molte texture ad altissima risoluzione.
-- Troppi materiali separati.
-- UV non ottimizzate, spesso con molto spazio vuoto.
-- Topologia della scansione non ottimizzata.
-- Mancanza di una low-poly pronta per UV.
-- Setup manuale del cage, che richiede competenze per trasferire correttamente le texture.
-- Preparazione bake ripetitiva e facile da configurare male.
-- Workflow lento da scansione ad asset realtime.
+- Preparazione di scansioni importate come oggetti o gerarchie di mesh.
+- Creazione e controllo di una preview low-poly.
+- Generazione automatica delle UV con Smart UV Project.
+- Stima del cage per trasferire i dettagli dalla sorgente.
+- Bake delle mappe selezionate e collegamento dei materiali finali.
+- Salvataggio delle texture per l’uso in altre applicazioni.
 
-ScanReady aiuta anche chi non è esperto di Blender a completare il processo di semplificazione, UV, cage e bake di una scansione in modo più guidato.
+Puoi partire da **One Click Bake** per ottenere una prima versione oppure controllare ogni fase con gli step manuali.
+
+## Riduzione adattiva
+
+**Adaptive Reduce** calcola pesi che aiutano a proteggere cambi di normale, bordi e dettagli della superficie. Il modificatore Decimate usa questi pesi per semplificare maggiormente le aree meno importanti.
 
 <p align="center">
   <img src="../../img/why-scanready-adaptive-optimization.png" alt="Confronto Adaptive Reduce" style="max-width:1000px;width:100%;">
 </p>
 
----
+Il risultato dipende dalla scansione e dalla densità scelta. Controlla soprattutto silhouette, parti sottili e dettagli che devono restare visibili da vicino.
 
-## Ottimizzazione adattiva intelligente
+!!! note "Ottimizzazione e retopology"
+    ScanReady usa la riduzione dei poligoni: non crea automaticamente una topologia a quad adatta all’animazione. Per modelli che devono deformarsi, può servire un passaggio di retopology dedicato.
 
-La riduzione mesh tradizionale spesso applica la stessa ottimizzazione in modo uniforme su tutto il modello.
+## Dettaglio nelle texture
 
-Questo può preservare inutilmente geometria densa nelle aree piatte mentre danneggia dettagli importanti nelle regioni più complesse.
+Le UV e il bake permettono di trasferire il dettaglio visivo dalla high-poly alla mesh ottimizzata. La geometria mantiene la forma principale, mentre le texture conservano colore e dettagli di superficie.
 
-ScanReady usa ottimizzazione adattiva per analizzare la superficie e preservare dettagli visivamente importanti, semplificando in modo più aggressivo le aree piatte o meno dettagliate.
+**Bake Materials** può distribuire il risultato su più texture set. Un layout UV efficiente aiuta a sfruttare la risoluzione disponibile, ma la scelta finale deve tenere conto anche della memoria e del numero di materiali.
 
-Il risultato è un asset low-poly più pulito ed efficiente, che mantiene molta più qualità della scansione originale dove conta davvero.
+## Un workflow, due modi di lavorare
 
----
+| Percorso | Quando usarlo |
+|---|---|
+| **One Click Bake** | Per automatizzare le fasi principali e ottenere un primo risultato. |
+| **Guida rapida manuale** | Per verificare separatamente riduzione, UV, cage e bake. |
+| **Advanced** | Per adattare le impostazioni a una scansione difficile o a requisiti specifici. |
 
-## Pensato per fotogrammetria e asset game-ready
+Se il risultato va corretto, torna allo step interessato e rigenera le fasi successive. Non occorre cambiare tutte le impostazioni avanzate per iniziare.
 
-ScanReady è progettato per convertire scansioni high-poly dense in asset ottimizzati e game-ready direttamente dentro Blender.
+## A chi serve
 
-Invece di passare ore a studiare e configurare manualmente Blender per pulire mesh, generare UV, creare cage e cuocere texture, ScanReady automatizza il workflow in una pipeline più veloce ed efficiente.
+ScanReady è pensato per artisti di fotogrammetria, environment artist e creatori di asset per videogiochi, VR, AR e visualizzazione in tempo reale. È utile anche per versioni interattive di reperti, collezioni museali e patrimonio culturale.
 
----
+Conserva una copia intatta della scansione per l’archivio. La versione ottimizzata è destinata alla presentazione e all’uso in produzione; le opzioni di preparazione possono modificare la sorgente di lavoro.
 
-## Migliore uso dello spazio texture
+## Dal modello al progetto finale
 
-ScanReady non ottimizza solo la densità dei poligoni.
+1. Importa la scansione e salva una copia del progetto.
+2. Crea e controlla la preview low-poly.
+3. Genera le UV e verifica il cage.
+4. Esegui il bake delle texture necessarie.
+5. Esporta con gli strumenti di Blender e verifica l’asset nella destinazione finale.
 
-L'addon aiuta anche a migliorare l'efficienza dello spazio UV e la preparazione del bake, per texture realtime più pulite e dettagliate.
-
-Un packing UV ottimizzato aiuta a preservare dettaglio texture riducendo sprechi inutili. Invece di avere più materiali e più texture con molto spazio UV vuoto, ScanReady cerca di sfruttare meglio lo spazio disponibile, così puoi ottenere più dettaglio con meno texture quando la scansione lo permette.
-
----
-
-## Il problema dei workflow tradizionali
-
-Le scansioni fotogrammetriche sono spesso:
-
-- estremamente pesanti;
-- difficili da ottimizzare;
-- difficili da aprire correttamente in UV;
-- difficili da cuocere con texture pulite;
-- instabili su sistemi con poca VRAM.
-
-Una singola scansione può contenere facilmente milioni di poligoni, rendendo l'ottimizzazione manuale lenta e frustrante.
-
----
-
-## Cosa risolve ScanReady
-
-**Ottimizzazione mesh**
-
-Riduce automaticamente geometria densa preservando forme e dettagli importanti.
-
-**Workflow Smart UV**
-
-Genera UV pulite ottimizzate per bake e uso texture.
-
-Avere UV più efficienti e con meno sprechi aiuta a preservare più dettaglio usando il minor numero possibile di texture.
-
-**Generazione automatica del cage**
-
-Non serve creare manualmente cage per il bake.
-
-**Bake multi-materiale**
-
-Supporta asset di scansione complessi con più materiali.
-
-**Bake sicuro per la memoria**
-
-Progettato per lavorare in modo più sicuro anche su sistemi con VRAM limitata.
-
-**Workflow One Click**
-
-Da scansione ad asset game-ready con setup minimo.
-
----
-
-## Pensato per artisti Blender
-
-ScanReady lavora direttamente dentro Blender e si integra nei workflow esistenti senza software esterni.
-
-Perfetto per:
-
-- artisti di fotogrammetria;
-- environment artist;
-- game developer;
-- creatori di asset;
-- workflow VR e AR;
-- applicazioni realtime.
-
----
-
-## Da milioni di poligoni ad asset realtime
-
-ScanReady aiuta a trasformare scansioni pesanti in asset ottimizzati adatti a:
-
-- Unreal Engine;
-- Unity;
-- Godot
-- S2 Engine
-- rendering realtime;
-- applicazioni VR;
-- esperienze AR;
-- produzione game;
-
-preservando dettagli visivi importanti della superficie tramite texture e ottimizzazione adattiva.
-
----
-
-## Perché non ottimizzare manualmente?
-
-I workflow manuali spesso richiedono:
-
-- competenze approfondite di Blender;
-- setup decimation;
-- correzione UV;
-- regolazione cage;
-- setup bake;
-- pulizia materiali;
-- test ripetuti.
-
-Raggiungere un buon risultato può richiedere molto tempo, soprattutto su scansioni dense o con materiali complessi.
-
-ScanReady automatizza questi compiti tecnici ripetitivi, così gli artisti possono concentrarsi di più sulla qualità visiva e sul lavoro creativo.
-
----
-
-## Pensato per la velocità
-
-ScanReady è progettato per ridurre la complessità tecnica dei workflow di ottimizzazione scansioni.
-
-Operazioni che normalmente richiedono più passaggi manuali - pulizia mesh, ottimizzazione, generazione UV, setup cage e bake - possono essere preparate molto più velocemente dentro un unico workflow integrato.
-
-L'obiettivo è semplice:
-
-> Trasformare scansioni pesanti in asset ottimizzati per il realtime in meno tempo e con meno lavoro manuale.
-
----
-
-## Workflow automatizzato
-
-ScanReady combina ottimizzazione, generazione UV, preparazione cage e bake in un workflow più automatico progettato specificamente per asset scansionati.
-
-Invece di configurare manualmente più passaggi tecnici, gli artisti possono concentrarsi sulla preparazione di asset realtime più puliti in modo più efficiente.
-
----
-
-## Esempio workflow
-
-1. Importa la scansione high-poly
-2. Visualizza e ottimizza la mesh
-3. Genera UV e cage
-4. Cuoci le texture
-5. Esporta l'asset game-ready
-
----
+[Inizia con la guida rapida](quick-start.md) oppure consulta i [casi d’uso](use-cases.md).
 
 ## Filosofia ScanReady
 
 **Veloce. Pulito. Game-ready.**
 
-Pensato per artisti che vogliono ottimizzare scansioni in modo efficiente direttamente dentro Blender.
+Meno configurazione ripetitiva, più controllo sul risultato della scansione.

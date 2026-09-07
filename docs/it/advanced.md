@@ -1,6 +1,6 @@
 # <span class="sr-addon-icon sr-icon-settings" title="Advanced"></span>Impostazioni avanzate
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
@@ -17,7 +17,7 @@ Non serve cambiare ogni impostazione per usare ScanReady. Per la maggior parte d
 </p>
 
 <p>
-Il pannello Advanced raccoglie le impostazioni che influenzano le fasi principali del processo: cleanup della scansione, riduzione adattiva, generazione UV, bake delle texture, gestione memoria, preset e diagnostica.
+Le impostazioni sono organizzate nello stesso ordine del pannello dell’addon. Le sezioni seguenti spiegano cosa cambia, quando intervenire e quale fase rigenerare dopo una modifica.
 </p>
 
 <p>
@@ -45,24 +45,24 @@ Bake Settings regola qualità, margini, normal map, roughness, opzioni Occlusion
 
 </div>
 
-# <span class="sr-addon-icon sr-icon-mesh" title="Mesh Settings"></span>Mesh Settings
+## <span class="sr-addon-icon sr-icon-mesh" title="Mesh Settings"></span>Mesh Settings
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
-Queste impostazioni controllano pulizia scansione e preparazione mesh prima di generare la preview low-poly.
+<p>Queste impostazioni controllano la preparazione della scansione prima della preview. Alcune agiscono sulla sorgente high-poly: salva una copia del progetto prima di iniziare.</p>
 
 </div>
 
-<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
+<div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Mesh Settings</strong></p>
   <img src="../../img/advanced_mesh_settings.jpg" alt="Screenshot Mesh Settings di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Pre-Decimate Merge</h3>
@@ -72,7 +72,7 @@ Esegue una pulizia Merge by Distance sulla mesh preview duplicata prima che veng
 </p>
 
 <p>
-È il singolo controllo esplicito di weld in ScanReady. Può aiutare a ridurre poligoni sovrapposti della scansione prima dell'ottimizzazione.
+Unisce i vertici della preview che rientrano nella distanza impostata, espressa in centimetri. Non elimina automaticamente ogni faccia sovrapposta: usa una distanza contenuta per non unire dettagli che devono restare separati.
 </p>
 
 <div class="admonition warning">
@@ -90,7 +90,7 @@ Esegue una pulizia Merge by Distance sulla mesh preview duplicata prima che veng
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Auto Fix Normals</h3>
@@ -100,7 +100,7 @@ Ricalcola automaticamente le normali della mesh high-poly prima di creare la pre
 </p>
 
 <p>
-Attivalo quando la scansione ha normali invertite, shading rotto o artefatti di bake causati da direzioni normali errate.
+Attivalo quando la scansione ha normali invertite, shading incoerente o artefatti di bake causati da direzioni normali errate.
 </p>
 </div>
 
@@ -117,7 +117,7 @@ Attivalo quando la scansione ha normali invertite, shading rotto o artefatti di 
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Auto Clear Sharp Edges</h3>
@@ -144,7 +144,7 @@ Rimuove automaticamente marcature sharp edge dalla mesh durante la preparazione.
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Auto Combine Mesh Parts</h3>
@@ -175,7 +175,7 @@ Lascialo attivo nella maggior parte dei casi, soprattutto con scansioni da fotog
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Auto Clean Scan Debris</h3>
@@ -197,12 +197,12 @@ Rimuove detriti comuni della scansione, come frammenti isolati, poligoni sospesi
 </div>
 
 <div style="margin:18px 0 30px; text-align:center;">
-  <img src="../../img/advanced_auto_clean_scan.gif" alt="Dettaglio Convert Source Materials di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_auto_clean_scan.gif" alt="Rimozione dei frammenti con Auto Clean Scan Debris" style="width:760px; max-width:100%;">
 </div>
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Convert Source Materials</h3>
@@ -234,14 +234,14 @@ Di default resta disattivato. Abilitalo solo se il bake non esce bene, per esemp
   <p style="margin-top:0;"><strong>Convert Source Materials</strong></p>
   <img src="../../img/advanced_convert_source.jpg" alt="Screenshot Convert Source Materials di ScanReady" style="width:260px; max-width:100%;">
 </div>
+</div>
 <div style="margin:18px 0 30px; text-align:center;">
   <img src="../../img/advanced_convert_source_materials.gif" alt="Dettaglio Convert Source Materials di ScanReady" style="width:760px; max-width:100%;">
-</div>
 </div>
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Show Face Orientation</h3>
@@ -281,7 +281,7 @@ Quando attivi <strong>Show Face Orientation</strong>, ScanReady disattiva automa
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Backface Culling</h3>
@@ -320,13 +320,13 @@ Backface Culling e Show Face Orientation sono collegati: se attivi uno, ScanRead
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Use Texture View</h3>
 
 <p>
-Mostra il modello in una visualizzazione piatta senza illuminazione di scena.
+Attiva Material Preview senza usare luci e World della scena. Se è attivo Backface Culling, usa invece la vista Solid con texture e illuminazione piatta.
 </p>
 
 <p>
@@ -347,13 +347,13 @@ Mostra il modello in una visualizzazione piatta senza illuminazione di scena.
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Recalculate Outside Normals</h3>
 
 <p>
-Esegue manualmente il ricalcolo delle normali sulla mesh high-poly selezionata.
+Ricalcola le normali verso l’esterno sulla sorgente high-poly associata alla selezione.
 </p>
 
 <p>
@@ -374,9 +374,9 @@ Usalo quando la scansione appare rovesciata o ha shading incoerente.
 
 ---
 
-# <span class="sr-addon-icon sr-icon-decim" title="Adaptive Reduce"></span>Adaptive Reduce
+## <span class="sr-addon-icon sr-icon-decim" title="Adaptive Reduce"></span>Adaptive Reduce
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
@@ -399,14 +399,14 @@ I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Lowpoly P
 </div>
 </div>
 
-<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
+<div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Adaptive Reduce</strong></p>
   <img src="../../img/advanced_adaptive_reduce.jpg" alt="Screenshot Adaptive Reduce di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Adaptive Reduce</h3>
@@ -429,10 +429,10 @@ Quando è attivo, ScanReady analizza la mesh e crea pesi per proteggere dettagli
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
-<h3>Adaptive Reduce Preset</h3>
+<h3>Adaptive Preset</h3>
 
 <p>
 Scegli il preset più adatto alla scansione e all'asset target.
@@ -447,15 +447,15 @@ Scegli il preset più adatto alla scansione e all'asset target.
 </div>
 
 <div style="flex:0 0 260px; text-align:center;">
-  <p style="margin-top:0;"><strong>Adaptive Reduce Preset</strong></p>
-  <img src="../../img/advance_adaptive_preset.png" alt="Screenshot Adaptive Reduce Preset di ScanReady" style="width:260px; max-width:100%;">
+  <p style="margin-top:0;"><strong>Adaptive Preset</strong></p>
+  <img src="../../img/advance_adaptive_preset.png" alt="Screenshot Adaptive Preset di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Show Adaptive Weights</h3>
@@ -495,7 +495,7 @@ Usa questa preview quando una scansione ha superfici miste, come pannelli archit
 </div>
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Adaptive Strength</h3>
@@ -518,7 +518,7 @@ Valori più alti rendono più marcata la differenza tra aree protette e aree sem
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Adaptive Reduce Angle</h3>
@@ -541,7 +541,7 @@ Valori più bassi rendono ScanReady più sensibile alle variazioni di superficie
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Detail Preserve</h3>
@@ -564,7 +564,7 @@ Aumentalo quando la scansione contiene dettagli fini che non vuoi perdere. Abbas
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Smooth Weights</h3>
@@ -587,7 +587,7 @@ Valori più alti possono produrre una distribuzione meno frastagliata, utile su 
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Fast Adaptive Reduce</h3>
@@ -610,7 +610,7 @@ Usa una modalità più veloce e approssimata del calcolo adattivo.
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Protect Feature Edges</h3>
@@ -633,7 +633,7 @@ Protegge bordi importanti e rotture nette della superficie durante la riduzione.
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Feature Edge Angle</h3>
@@ -656,7 +656,7 @@ Valori più bassi proteggono più bordi. Valori più alti proteggono solo cambi 
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Feature Edge Rings</h3>
@@ -679,9 +679,9 @@ Può aiutare a mantenere più stabile la forma attorno a bordi netti, cornici, p
 
 ---
 
-# <span class="sr-addon-icon sr-icon-uv" title="UV Settings"></span>UV Settings
+## <span class="sr-addon-icon sr-icon-uv" title="UV Settings"></span>UV Settings
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
@@ -697,14 +697,14 @@ Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 </div>
 </div>
 
-<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
+<div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>UV Settings</strong></p>
   <img src="../../img/advance_uv_settings.png" alt="Screenshot UV Settings di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Smart UV Angle</h3>
@@ -736,7 +736,7 @@ I preset Adaptive Reduce sono separati dalla generazione UV: Adaptive Reduce con
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>UV Padding</h3>
@@ -759,9 +759,9 @@ Aumenta il padding per ridurre texture bleeding, soprattutto a risoluzioni textu
 
 ---
 
-# <span class="sr-addon-icon sr-icon-texture" title="Texture Detail"></span>Texture Detail
+## <span class="sr-addon-icon sr-icon-texture" title="Texture Detail"></span>Texture Detail
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
@@ -778,7 +778,7 @@ Usa <strong>Analyze Texture Detail</strong> dopo aver generato le UV, prima del 
 </p>
 </div>
 
-<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
+<div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Texture Detail</strong></p>
   <img src="../../img/advance_texture_detail.png" alt="Screenshot Texture Detail di ScanReady" style="width:260px; max-width:100%;">
 </div>
@@ -787,9 +787,9 @@ Usa <strong>Analyze Texture Detail</strong> dopo aver generato le UV, prima del 
 
 ---
 
-# <span class="sr-addon-icon sr-icon-render" title="Bake Settings"></span>Bake Settings
+## <span class="sr-addon-icon sr-icon-render" title="Bake Settings"></span>Bake Settings
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
@@ -802,14 +802,14 @@ Nell'addon <strong>Occlusion Settings</strong> e <strong>Memory Safety</strong> 
 </p>
 </div>
 
-<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
+<div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Bake Settings</strong></p>
   <img src="../../img/advance_bake_settings.png" alt="Screenshot Bake Settings di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Bake Samples</h3>
@@ -832,7 +832,7 @@ Valori più alti possono ridurre il rumore, soprattutto per Ambient Occlusion, m
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Bake Margin</h3>
@@ -855,7 +855,7 @@ Aiuta a ridurre seam visibili e texture bleeding.
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Normal Strength</h3>
@@ -882,7 +882,7 @@ Se <strong>Bake Normal Map</strong> non è attivo, questo controllo non appare e
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>JPG Quality</h3>
@@ -905,7 +905,7 @@ Valori più alti preservano più dettaglio immagine ma creano file più grandi.
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>TIFF 16-bit</h3>
@@ -928,9 +928,9 @@ Può essere utile per asset dettagliati, workflow archivio o output texture tecn
 
 ---
 
-## <span class="sr-addon-icon sr-icon-step3" title="Occlusion Settings"></span>Occlusion Settings
+### <span class="sr-addon-icon sr-icon-step3" title="Occlusion Settings"></span>Occlusion Settings
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
@@ -939,17 +939,17 @@ Queste opzioni sono dentro <strong>Bake Settings</strong> e appaiono quando <str
 </p>
 </div>
 
-<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
+<div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Occlusion Settings</strong></p>
   <img src="../../img/advanced_occlusion_settings.jpg" alt="Screenshot Occlusion Settings di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
-<h3>AO Source</h3>
+<h4>AO Source</h4>
 
 <p>
 Controlla se Ambient Occlusion viene cotta dalla sorgente high-poly al target low-poly, oppure calcolata solo dalla mesh low-poly.
@@ -965,10 +965,10 @@ Controlla se Ambient Occlusion viene cotta dalla sorgente high-poly al target lo
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
-<h3>AO Auto Distance</h3>
+<h4>Auto AO Distance</h4>
 
 <p>
 Calcola automaticamente la distanza AO in base alla dimensione del modello.
@@ -976,18 +976,18 @@ Calcola automaticamente la distanza AO in base alla dimensione del modello.
 </div>
 
 <div style="flex:0 0 260px; text-align:center;">
-  <p style="margin-top:0;"><strong>AO Auto Distance</strong></p>
-  <img src="../../img/advanced_auto_ao_distance.png" alt="Screenshot AO Auto Distance di ScanReady" style="width:260px; max-width:100%;">
+  <p style="margin-top:0;"><strong>Auto AO Distance</strong></p>
+  <img src="../../img/advanced_auto_ao_distance.png" alt="Screenshot Auto AO Distance di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
-<h3>AO Distance</h3>
+<h4>AO Distance</h4>
 
 <p>
 Distanza manuale dei raggi AO quando la distanza automatica è disattivata.
@@ -1003,10 +1003,10 @@ Distanza manuale dei raggi AO quando la distanza automatica è disattivata.
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
-<h3>AO Samples</h3>
+<h4>AO Samples</h4>
 
 <p>
 Controlla la qualità del bake Ambient Occlusion.
@@ -1026,10 +1026,10 @@ Valori più alti producono AO più pulita ma aumentano il tempo di bake.
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
-<h3>AO Mix</h3>
+<h4>AO Mix</h4>
 
 <p>
 Controlla quanto la texture Ambient Occlusion bake scurisce il materiale Base Color finale.
@@ -1049,9 +1049,9 @@ Il valore predefinito è <strong>1.0</strong>, che usa tutta la texture AO bake 
 
 ---
 
-## <span class="sr-addon-icon sr-icon-memory" title="Memory Safety"></span>Memory Safety
+### <span class="sr-addon-icon sr-icon-memory" title="Memory Safety"></span>Memory Safety
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
@@ -1060,17 +1060,17 @@ Queste opzioni sono dentro <strong>Bake Settings</strong> e aiutano a ridurre pr
 </p>
 </div>
 
-<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
+<div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Memory Safety</strong></p>
   <img src="../../img/advanced_memory_safe.png" alt="Screenshot Memory Safety di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
-<h3>Safe Memory Bake</h3>
+<h4>Safe Memory Bake</h4>
 
 <p>
 Usa un workflow bake più sicuro pensato per ridurre la pressione sulla memoria in scansioni grandi e scene Blender pesanti.
@@ -1090,13 +1090,13 @@ Lascialo attivo quando lavori con asset fotogrammetrici densi o alte risoluzioni
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
-<h3>Force CPU Baking</h3>
+<h4>Force CPU Baking</h4>
 
 <p>
-Forza il bake sulla CPU per evitare limiti di memoria GPU.
+Esegue il bake sulla CPU quando la VRAM della GPU non è sufficiente. Richiede comunque abbastanza RAM di sistema.
 </p>
 
 <p>
@@ -1117,9 +1117,9 @@ ScanReady può abilitarlo automaticamente quando viene usato il bake multi-mater
 
 ---
 
-# Preset
+## Presets
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
@@ -1144,14 +1144,14 @@ Usa i preset quando lavori su più scansioni con requisiti simili, come:
 </ul>
 </div>
 
-<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
+<div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Preset</strong></p>
   <img src="../../img/advanced_presets.png" alt="Screenshot Preset di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Preset Name</h3>
@@ -1170,13 +1170,16 @@ Definisce il nome del preset da salvare.
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Save Preset</h3>
 
 <p>
-Salva le impostazioni correnti di ScanReady come preset riutilizzabile.
+Salva i parametri del workflow: mesh, riduzione, visualizzazione, UV, cage, texture, bake, memoria e cartella di output. Non salva gli oggetti della scena, le immagini generate o le preferenze di aggiornamento.
+</p>
+<p>
+Quando ricarichi un preset, controlla anche <strong>Output Folder</strong> prima di avviare un nuovo bake.
 </p>
 </div>
 
@@ -1189,7 +1192,7 @@ Salva le impostazioni correnti di ScanReady come preset riutilizzabile.
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Preset Selector</h3>
@@ -1208,7 +1211,7 @@ Permette di scegliere un preset esistente.
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Reload Preset</h3>
@@ -1227,7 +1230,7 @@ Carica il preset selezionato.
 
 <hr>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Delete Preset</h3>
@@ -1246,9 +1249,9 @@ Elimina il preset selezionato.
 
 ---
 
-# <span class="sr-addon-icon sr-icon-diagnostics" title="Diagnostics"></span>Diagnostics
+## <span class="sr-addon-icon sr-icon-diagnostics" title="Diagnostics"></span>Diagnostics
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
@@ -1257,14 +1260,14 @@ Le opzioni di diagnostica servono per controllare meglio cosa sta facendo ScanRe
 </p>
 </div>
 
-<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
+<div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Diagnostics</strong></p>
   <img src="../../img/advanced_diagnostic.png" alt="Screenshot Diagnostics di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Show Diagnostic Timing Report</h3>
@@ -1296,9 +1299,9 @@ Il report può includere dettagli come tempo di Preview / Reduce, Generate UVs, 
 
 ---
 
-# <span class="sr-addon-icon sr-icon-utility" title="Utilities"></span>Utilities
+## <span class="sr-addon-icon sr-icon-utility" title="Utilities"></span>Utilities
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
@@ -1307,14 +1310,14 @@ Gli strumenti utility aiutano a resettare o ripristinare la configurazione dell'
 </p>
 </div>
 
-<div style="flex:0 0 260px; text-align:center; margin-top:-44px;">
+<div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Utilities</strong></p>
   <img src="../../img/advanced_utilities.png" alt="Screenshot Utilities di ScanReady" style="width:260px; max-width:100%;">
 </div>
 
 </div>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
 <h3>Reset Defaults</h3>
@@ -1337,7 +1340,7 @@ Usalo se le impostazioni correnti producono risultati inattesi o se vuoi tornare
 
 ---
 
-# <span class="sr-addon-icon sr-icon-preferences" title="Addon Preferences / Updates"></span>Addon Preferences / Updates
+## <span class="sr-addon-icon sr-icon-preferences" title="Addon Preferences / Updates"></span>Addon Preferences / Updates
 
 <p>
 ScanReady include una piccola sezione di supporto nel pannello Blender Add-on Preferences.
@@ -1397,7 +1400,7 @@ ScanReady legge il file pubblico <strong>update-manifest.json</strong> della doc
 
 <h3>Avviso di aggiornamento</h3>
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:16px; margin-bottom:30px;">
 
 <div style="flex:1 1 0; min-width:0;">
 
@@ -1406,7 +1409,7 @@ Quando ScanReady rileva una versione più recente, può mostrare un avviso nel p
 </p>
 
 <p>
-L'avviso appare dopo un controllo manuale riuscito o dopo che nelle Preferences è stata salvata una versione disponibile più alta. L'aggiornamento dell'addon va comunque eseguito dalla piattaforma di distribuzione, per esempio Blender Extensions o Superhive.
+L’avviso appare dopo un controllo manuale che rileva una versione più recente. Per aggiornare, scarica il pacchetto dalla piattaforma di acquisto oppure usa Update se ScanReady è installato da un repository di estensioni configurato in Blender.
 </p>
 </div>
 
@@ -1473,14 +1476,11 @@ Usalo quando preferisci seguire il workflow in video o quando vuoi vedere esempi
   <img src="../../img/advanced_addon_video_tutorial.png" alt="Screenshot Video Tutorials di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
-<hr>
-
-
 ---
 
-# Consiglio pratico
+## Consiglio pratico
 
-Per VR, videogame e workflow realtime, bilancia sempre qualità e performance.
+Per VR, videogame e workflow in tempo reale, bilancia sempre qualità e performance.
 
 Usa le impostazioni avanzate per trovare il compromesso giusto tra:
 

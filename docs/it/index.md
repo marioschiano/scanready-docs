@@ -10,7 +10,7 @@ Workflow di ottimizzazione adattiva e bake per scansioni in Blender
 
 ScanReady è un addon per Blender pensato per trasformare scansioni 3D pesanti in asset ottimizzati e pronti per il realtime.
 
-È pensato per artisti 3D, creatori di asset, workflow di fotogrammetria, VR, videogame, visualizzazione realtime e scene interattive.
+È pensato per artisti 3D, creatori di asset, workflow di fotogrammetria, VR, videogame, visualizzazione in tempo reale e scene interattive.
 
 Invece di trattare tutta la mesh nello stesso modo, ScanReady usa un workflow di riduzione adattiva che aiuta a proteggere silhouette, bordi, cambi di forma e dettagli importanti, riducendo in modo più aggressivo le aree piatte o meno rilevanti.
 
@@ -60,14 +60,14 @@ ScanReady aiuta a passare da una scansione pesante a un asset più leggero, pule
 
 ## Prima / Dopo
 
-Ottimizzato per workflow realtime senza sprecare poligoni inutilmente.
+Ottimizzato per workflow in tempo reale senza sprecare poligoni inutilmente.
 
 <p align="center">
   <img src="../img/one_click_before_after.jpg" alt="Confronto prima e dopo di una scansione ottimizzata con ScanReady" style="max-width:820px;width:100%;">
 </p>
 
 <p align="center">
-  <b>Da scansioni fotogrammetriche pesanti ad asset ottimizzati e pronti per VR, videogame, AR e visualizzazione realtime.</b>
+  <b>Da scansioni fotogrammetriche pesanti ad asset ottimizzati e pronti per VR, videogame, AR e visualizzazione in tempo reale.</b>
 </p>
 
 <p align="center">
@@ -116,7 +116,7 @@ ScanReady usa **Smart UV Project** per generare UV automatiche sulla mesh ottimi
 
 ### Texture Baking
 
-ScanReady supporta bake di **Base Color**, **Normal Map**, **Roughness Map** e **Occlusion Map**.
+ScanReady supporta bake di **Base Color**, **Normal Map** e **Occlusion Map**. **Bake Roughness Map** compare quando il materiale sorgente contiene un input Roughness collegato.
 
 ### Supporto multi-materiale
 
@@ -124,7 +124,7 @@ ScanReady supporta bake di **Base Color**, **Normal Map**, **Roughness Map** e *
 
 ### Ottimizzazione realtime
 
-Il workflow è pensato per asset più leggeri destinati a VR, videogame, AR e visualizzazione realtime.
+Il workflow è pensato per asset più leggeri destinati a VR, videogame, AR e visualizzazione in tempo reale.
 
 ### Bake sicuro per la memoria
 
@@ -176,7 +176,7 @@ ScanReady è pensato per preparare asset destinati a:
 
 Alla fine del workflow ScanReady può creare:
 
-- un asset molto più leggero rispetto alla scansione originale, con meno materiali e meno texture;
+- un asset più leggero rispetto alla scansione originale; il numero di materiali e texture dipende dalle impostazioni scelte;
 - una mesh finale ottimizzata;
 - UV ottimizzate;
 - materiali finali collegati alle texture;
@@ -188,7 +188,7 @@ Alla fine del workflow ScanReady può creare:
 
 ScanReady è distribuito come **Blender Extension**.
 
-È pensato per Blender moderno e per il nuovo sistema di estensioni.
+Richiede **Blender 4.2 o successivo**. Consulta [Installazione](installation.md) per il pacchetto e la procedura di aggiornamento.
 
 ---
 
@@ -207,7 +207,7 @@ Per iniziare:
 
 ## Video e tutorial
 
-I video tutorial verranno aggiunti in questa sezione.
+Consulta la pagina [Video Tutorials](video-tutorials.md) per i tutorial in preparazione e il percorso consigliato.
 
 [Canale YouTube Mario Schiano 3D](https://www.youtube.com/@marioschiano3d)
 

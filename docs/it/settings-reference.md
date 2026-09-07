@@ -2,7 +2,7 @@
 
 Questa pagina riassume le impostazioni principali di ScanReady e cosa fanno.
 
-Usala come riferimento rapido quando regoli scansioni per VR, videogame, visualizzazione realtime o ottimizzazione generale in Blender.
+Usala come riferimento rapido quando regoli scansioni per VR, videogame, visualizzazione in tempo reale o ottimizzazione generale in Blender.
 
 ---
 
@@ -15,6 +15,20 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 | **ONE CLICK BAKE** | Avvia il workflow automatico completo: preview, UV, cage, bake e materiali finali. | Usalo quando vuoi una conversione rapida da scansione high-poly ad asset ottimizzato. |
 | **Workflow Status** | Mostra progresso globale, step completato, messaggi di stato, mappe bake completate e tempi quando i diagnostics sono attivi. | Usalo per capire dove si trova ScanReady durante One Click Bake o durante gli step manuali. |
 | **Global Progress** | Percentuale di avanzamento del workflow corrente. | Utile durante operazioni lunghe come preview, UV, cage e bake. |
+
+---
+
+## View e preview
+
+| Impostazione | Descrizione | Quando regolarla |
+|---|---|---|
+| **Show Wireframe** | Mostra l'overlay wireframe sull'oggetto preview. | Usalo per controllare densità topologica e qualità della riduzione. |
+| **Show Checker** | Mostra una texture checker per l'ispezione. | Usalo per controllare distorsione e stretching UV. |
+| **Checker Mix** | Controlla la forza dell'overlay checker. | Abbassalo quando vuoi vedere di più la texture originale. |
+| **Checker UV Scale** | Cambia la dimensione dei quadrati checker. | Usa quadrati più piccoli per vedere meglio la distorsione. |
+
+!!! info "Dove si trova Use Texture View"
+    **Use Texture View** è disponibile in **Advanced > Mesh Settings**, non nella box View Options, perché di solito non viene regolato durante il workflow principale.
 
 ---
 
@@ -31,50 +45,13 @@ Usala come riferimento rapido quando regoli scansioni per VR, videogame, visuali
 
 ## Mesh e riduzione
 
+Controlli dello **Step 1 - Preview / Reduce**. Final Faces e Optimize / Reduce sono collegati: scegli uno dei due per regolare la densità.
+
 | Impostazione | Descrizione | Quando regolarla |
 |---|---|---|
 | **Final Faces** | Numero target di facce per la mesh low-poly ottimizzata. | Abbassalo per asset VR/game più leggeri. Alzalo per preservare più dettaglio nella silhouette. |
 | **Optimize / Reduce** | Controlla quanto la mesh viene ridotta. | Valori più bassi creano una riduzione più forte. Valori più alti mantengono più geometria. |
-| **Pre-Decimate Merge** | Esegue Merge by Distance sulla mesh preview duplicata prima di Decimate. È il singolo controllo esplicito di weld in ScanReady. | Aumentalo per ridurre poligoni sovrapposti prima dell'ottimizzazione. Abbassalo se vengono colpiti dettagli sottili. |
-| **Auto Fix Normals** | Ricalcola le normali della mesh high prima della creazione della preview. | Attivalo quando la scansione ha normali invertite o artefatti di shading. |
-| **Auto Clear Sharp Edges** | Rimuove marcature sharp edge non desiderate durante la preparazione. | Tienilo attivo quando la scansione mostra bordi o shading marcati in modo errato. |
-| **Auto Combine Mesh Parts** | Attivo di default. Rileva automaticamente gerarchie con più mesh e le combina quando serve; se la scansione è già una mesh unica non esegue nessuna unione. | Lascialo attivo per GLB, FBX o scansioni fotogrammetriche divise in più parti. Disattivalo solo se l'unione automatica crea problemi o se vuoi mantenere parti separate. |
-| **Auto Clean Scan Debris** | Rimuove piccoli frammenti, poligoni sospesi e vertici isolati. | Tienilo attivo per scansioni fotogrammetriche grezze. |
-| **Convert Source Materials** | Disattivo di default. Controlla i materiali sorgente: lascia invariati quelli già standard e converte solo shader importati complessi in un setup più prevedibile per il bake. | Attivalo se il bake non esce bene, per esempio Base Color nera/incompleta, o se i materiali importati non vengono letti correttamente. |
-| **Show Face Orientation** | Mostra l'overlay Face Orientation di Blender. | Usalo per controllare normali invertite prima di preview, UV o bake. |
-| **Backface Culling** | Nasconde nel viewport le facce viste dal lato posteriore. È una modalità di preview e non modifica mesh o bake. | Usalo per individuare superfici a una sola faccia, buchi, parti aperte o orientamenti sospetti. Si disattiva automaticamente quando attivi Show Face Orientation, e viceversa. |
-| **Use Texture View** | Porta il viewport in modalità Material Preview/Texture View durante i controlli. | Utile per vedere materiali, checker e cage con una visualizzazione più leggibile. |
-| **Recalculate Outside Normals** | Ricalcola manualmente le normali verso l'esterno. | Usalo quando la mesh appare rovesciata o ha shading rotto. |
-| **Adaptive Reduce** | Usa pesi basati sulla scansione per ridurre di più le superfici piatte e proteggere dettagli importanti. | Tienilo attivo per la maggior parte delle scansioni. Disattivalo solo se vuoi un risultato di riduzione uniforme più semplice. |
-| **Adaptive Reduce Preset** | Sceglie il comportamento della riduzione adattiva. | Usa Balanced per la maggior parte delle scansioni, Preserve Details per superfici complesse, Flat Surfaces per superfici semplici ampie, Hard Surface per veicoli e scansioni hard-surface. |
-| **Show Adaptive Weights** | Mostra i pesi di riduzione adattiva come colori sul modello. | Usalo per vedere quali aree verranno ridotte di più prima di creare la preview low-poly finale. |
-| **Adaptive Strength** | Regola quanto fortemente Adaptive Reduce favorisce la riduzione delle aree piatte. | Alzalo per semplificare di più le superfici regolari, abbassalo se vuoi un comportamento più uniforme. |
-| **Adaptive Reduce Angle** | Controlla la sensibilità ai cambi di normale durante il calcolo dei pesi. | Usalo per decidere quanto un cambio di direzione deve essere considerato dettaglio. |
-| **Detail Preserve** | Protegge maggiormente le zone lette come dettaglio. | Alzalo se la preview perde pieghe, bordi o dettagli importanti. |
-| **Smooth Weights** | Smussa i pesi Adaptive Reduce per transizioni più omogenee. | Aumentalo quando la preview pesi appare troppo puntinata o frastagliata. |
-| **Fast Adaptive Reduce** | Usa un calcolo più approssimato e veloce per scansioni dense. | Attivalo per test rapidi o scansioni molto pesanti. |
-| **Protect Feature Edges** | Protegge i bordi con differenze di normale forti. | Tienilo attivo per asset hard-surface, veicoli, architettura e silhouette importanti. |
-| **Feature Edge Angle** | Angolo minimo per considerare un bordo come feature edge. | Abbassalo per proteggere più bordi, alzalo per proteggere solo rotture più nette. |
-| **Feature Edge Rings** | Numero di anelli vicini protetti attorno ai feature edge. | Aumentalo se i bordi netti perdono supporto durante la riduzione. |
-
-!!! note "Quando ricreare la preview"
-    I pesi Adaptive Reduce vengono calcolati quando premi **Create Lowpoly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma cambiare preset o valori dettagliati di Adaptive Reduce richiede di creare di nuovo la preview low-poly per ricostruire i pesi.
-
-    Se sei già nello Step 2 o nello Step 3 e ti serve un modello più leggero o più dettagliato, torna allo Step 1, regola **Final Faces** o **Optimize / Reduce**, clicca **Create Lowpoly Preview**, poi rigenera UV e bake.
-
----
-
-## View e preview
-
-| Impostazione | Descrizione | Quando regolarla |
-|---|---|---|
-| **Show Wireframe** | Mostra l'overlay wireframe sull'oggetto preview. | Usalo per controllare densità topologica e qualità della riduzione. |
-| **Show Checker** | Mostra una texture checker per l'ispezione. | Usalo per controllare distorsione e stretching UV. |
-| **Checker Mix** | Controlla la forza dell'overlay checker. | Abbassalo quando vuoi vedere di più la texture originale. |
-| **Checker UV Scale** | Cambia la dimensione dei quadrati checker. | Usa quadrati più piccoli per vedere meglio la distorsione. |
-
-!!! info "Dove si trova Use Texture View"
-    **Use Texture View** è disponibile in **Advanced > Mesh Settings**, non nella box View Options, perché di solito non viene regolato durante il workflow principale.
+| **Reduction** | Percentuale di riduzione ricavata dal rapporto corrente. | È un indicatore, non un controllo indipendente. |
 
 ---
 
@@ -130,6 +107,48 @@ Questa tabella segue l'ordine dello **Step 3 Bake / Output** nel pannello princi
 
 ---
 
+## Mesh Settings
+
+Controlli di **Advanced > Mesh Settings**, nello stesso ordine dell’addon. Alcuni modificano la sorgente: conserva una copia del progetto originale.
+
+| Impostazione | Descrizione | Quando regolarla |
+|---|---|---|
+| **Pre-Decimate Merge** | Unisce i vertici della preview entro la distanza impostata in centimetri, prima di Decimate. | Usa una distanza contenuta; abbassala se unisce dettagli sottili che devono restare separati. |
+| **Auto Fix Normals** | Ricalcola le normali della mesh high prima della creazione della preview. | Attivalo quando la scansione ha normali invertite o artefatti di shading. |
+| **Auto Clear Sharp Edges** | Rimuove marcature sharp edge non desiderate durante la preparazione. | Tienilo attivo quando la scansione mostra bordi o shading marcati in modo errato. |
+| **Auto Combine Mesh Parts** | Attivo di default. Rileva automaticamente gerarchie con più mesh e le combina quando serve; se la scansione è già una mesh unica non esegue nessuna unione. | Lascialo attivo per GLB, FBX o scansioni fotogrammetriche divise in più parti. Disattivalo solo se l'unione automatica crea problemi o se vuoi mantenere parti separate. |
+| **Auto Clean Scan Debris** | Rimuove piccoli frammenti, poligoni sospesi e vertici isolati. | Tienilo attivo per scansioni fotogrammetriche grezze. |
+| **Convert Source Materials** | Disattivo di default. Controlla i materiali sorgente: lascia invariati quelli già standard e converte solo shader importati complessi in un setup più prevedibile per il bake. | Attivalo se il bake non esce bene, per esempio Base Color nera/incompleta, o se i materiali importati non vengono letti correttamente. |
+| **Show Face Orientation** | Mostra l'overlay Face Orientation di Blender. | Usalo per controllare normali invertite prima di preview, UV o bake. |
+| **Backface Culling** | Nasconde nel viewport le facce viste dal lato posteriore. È una modalità di preview e non modifica mesh o bake. | Usalo per individuare superfici a una sola faccia, buchi, parti aperte o orientamenti sospetti. Si disattiva automaticamente quando attivi Show Face Orientation, e viceversa. |
+| **Use Texture View** | Usa Material Preview senza luci e World della scena; con Backface Culling attivo usa Solid con texture. | Utile per vedere materiali, checker e cage con una visualizzazione più leggibile. |
+| **Recalculate Outside Normals** | Ricalcola manualmente le normali verso l'esterno. | Usalo quando la mesh appare rovesciata o ha shading incoerente. |
+
+---
+
+## Adaptive Reduce
+
+| Impostazione | Descrizione | Quando regolarla |
+|---|---|---|
+| **Adaptive Reduce** | Usa pesi basati sulla scansione per ridurre di più le superfici piatte e proteggere dettagli importanti. | Tienilo attivo per la maggior parte delle scansioni. Disattivalo solo se vuoi un risultato di riduzione uniforme più semplice. |
+| **Adaptive Preset** | Sceglie il comportamento della riduzione adattiva. | Usa Balanced per la maggior parte delle scansioni, Preserve Details per superfici complesse, Flat Surfaces per superfici semplici ampie, Hard Surface per veicoli e scansioni hard-surface. |
+| **Show Adaptive Weights** | Mostra i pesi di riduzione adattiva come colori sul modello. | Usalo per vedere quali aree verranno ridotte di più prima di creare la preview low-poly finale. |
+| **Adaptive Strength** | Regola quanto fortemente Adaptive Reduce favorisce la riduzione delle aree piatte. | Alzalo per semplificare di più le superfici regolari, abbassalo se vuoi un comportamento più uniforme. |
+| **Adaptive Reduce Angle** | Controlla la sensibilità ai cambi di normale durante il calcolo dei pesi. | Usalo per decidere quanto un cambio di direzione deve essere considerato dettaglio. |
+| **Detail Preserve** | Protegge maggiormente le zone lette come dettaglio. | Alzalo se la preview perde pieghe, bordi o dettagli importanti. |
+| **Smooth Weights** | Smussa i pesi Adaptive Reduce per transizioni più omogenee. | Aumentalo quando la preview pesi appare troppo puntinata o frastagliata. |
+| **Fast Adaptive Reduce** | Usa un calcolo più approssimato e veloce per scansioni dense. | Attivalo per test rapidi o scansioni molto pesanti. |
+| **Protect Feature Edges** | Protegge i bordi con differenze di normale forti. | Tienilo attivo per asset hard-surface, veicoli, architettura e silhouette importanti. |
+| **Feature Edge Angle** | Angolo minimo per considerare un bordo come feature edge. | Abbassalo per proteggere più bordi, alzalo per proteggere solo rotture più nette. |
+| **Feature Edge Rings** | Numero di anelli vicini protetti attorno ai feature edge. | Aumentalo se i bordi netti perdono supporto durante la riduzione. |
+
+!!! note "Quando ricreare la preview"
+    I pesi Adaptive Reduce vengono calcolati quando premi **Create Lowpoly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma cambiare preset o valori dettagliati di Adaptive Reduce richiede di creare di nuovo la preview low-poly per ricostruire i pesi.
+
+    Se sei già nello Step 2 o nello Step 3 e ti serve un modello più leggero o più dettagliato, torna allo Step 1, regola **Final Faces** o **Optimize / Reduce**, clicca **Create Lowpoly Preview**, poi rigenera UV e bake.
+
+---
+
 ## Texture Detail
 
 Questa sezione si trova in **Advanced**, dopo **UV Settings** e prima di **Bake Settings**.
@@ -162,7 +181,7 @@ Questa sezione è dentro **Advanced > Bake Settings** e appare quando **Bake Occ
 | Impostazione | Descrizione | Quando regolarla |
 |---|---|---|
 | **AO Source** | Sceglie come viene cotta AO. | Usa high-to-low per trasferire dettaglio dalla scansione, oppure low-only per AO più semplice. |
-| **AO Auto Distance** | Calcola automaticamente la distanza AO dalla dimensione del modello. | Lascialo attivo per la maggior parte degli asset. |
+| **Auto AO Distance** | Calcola automaticamente la distanza AO dalla dimensione del modello. | Lascialo attivo per la maggior parte degli asset. |
 | **AO Distance** | Distanza manuale dei raggi AO. | Regolalo quando la distanza automatica produce AO troppo forte o troppo debole. |
 | **AO Samples** | Controlla il numero di sample per il bake AO. | Alzalo per AO più pulita. Abbassalo per bake più rapidi. |
 | **AO Mix** | Controlla quanto la AO bake scurisce il materiale Base Color finale. | Il default è `1.0`. Abbassalo se il materiale finale sembra troppo scuro o contrastato. |
@@ -180,12 +199,12 @@ Questa sezione è dentro **Advanced > Bake Settings**.
 
 ---
 
-## Preset
+## Presets
 
 | Controllo | Descrizione | Quando usarlo |
 |---|---|---|
 | **Preset Name** | Nome usato quando salvi le impostazioni correnti. | Usa un nome chiaro per un workflow o tipo di asset. |
-| **Save Preset** | Salva le impostazioni correnti. | Usalo prima di processare scansioni simili. |
+| **Save Preset** | Salva i parametri del workflow, inclusa Output Folder; non salva mesh, texture o preferenze di aggiornamento. | Usalo prima di processare scansioni simili. |
 | **Preset Selector** | Menu con i preset salvati disponibili. | Usalo per scegliere quale preset ricaricare o eliminare. |
 | **Reload Preset** | Ricarica il preset selezionato. | Usalo per ripetere un setup noto o tornare rapidamente a un preset salvato. |
 | **Delete Preset** | Elimina il preset selezionato. | Usalo per rimuovere setup vecchi o inutilizzati. |
@@ -200,6 +219,14 @@ Questa sezione è dentro **Advanced > Bake Settings**.
 
 ---
 
+## Utilities
+
+| Controllo | Descrizione | Quando usarlo |
+|---|---|---|
+| **Reset Defaults** | Ripristina i parametri ai valori predefiniti. | Usalo per ripartire da una configurazione nota; rigenera poi gli step necessari. Non ripristina una sorgente già modificata. |
+
+---
+
 ## Addon Preferences / Updates
 
 | Controllo | Descrizione | Quando usarlo |
@@ -207,7 +234,6 @@ Questa sezione è dentro **Advanced > Bake Settings**.
 | **Installed version** | Mostra la versione di ScanReady installata. | Usalo per controllare rapidamente quale build è attiva in Blender. |
 | **Updates are managed by Blender Extensions / Superhive** | Ricorda che gli aggiornamenti pubblici vengono gestiti dalla piattaforma di distribuzione. | Utile per capire dove cercare l'aggiornamento ufficiale dell'addon. |
 | **Check for Updates** | Controlla manualmente il manifest pubblico della documentazione e confronta la versione disponibile con quella installata. | Usalo come controllo informativo o fallback, soprattutto se l'addon è stato installato da ZIP. Non installa aggiornamenti. |
-| **Update Manifest URL** | URL del file `update-manifest.json` usato da **Check for Updates**. | Lascialo sul valore predefinito, a meno che tu non stia testando un manifest diverso. |
 | **Update Status** | Mostra il risultato dell'ultimo controllo aggiornamenti. | Usalo per capire se ScanReady è aggiornato, se è disponibile una versione più nuova o se il controllo non è riuscito. |
 | **Open Documentation** | Apre la documentazione online di ScanReady. | Usalo quando vuoi consultare guida rapida, workflow, FAQ o troubleshooting. |
 | **Release Notes** | Apre il changelog e la pagina release notes di ScanReady. | Usalo per vedere cosa è cambiato prima di aggiornare. |

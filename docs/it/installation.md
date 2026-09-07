@@ -2,6 +2,10 @@
 
 Questa pagina spiega come installare ScanReady in Blender.
 
+## Requisiti
+
+ScanReady richiede **Blender 4.2 o successivo** ed è distribuito come Blender Extension. Salva una copia del progetto prima di iniziare a elaborare la scansione.
+
 ---
 
 ## Scarica l'addon
@@ -20,8 +24,8 @@ Blender installa le estensioni direttamente dal file `.zip`.
 
 1. Apri Blender.
 2. Vai su **Edit > Preferences**.
-3. Apri la sezione **Get Extensions** o **Add-ons**, in base alla versione di Blender.
-4. Clicca **Install from Disk**.
+3. Apri **Get Extensions**.
+4. Nel menu in alto a destra, scegli **Install from Disk**.
 5. Seleziona `scanready_v1_0_0.zip`.
 6. Abilita **ScanReady**.
 
@@ -57,7 +61,7 @@ Nel 3D Viewport:
 
 ## Aggiornamenti
 
-Gli aggiornamenti ufficiali vengono installati tramite Blender Extensions / Superhive.
+Se hai acquistato ScanReady su **Superhive**, scarica il nuovo ZIP dal tuo account e installalo tramite **Install from Disk**. Il controllo interno di ScanReady non scarica il pacchetto.
 
 Se ScanReady è installato da un repository o marketplace collegato a Blender Extensions, Blender può mostrare il pulsante **Update** nella schermata Extensions quando è disponibile una versione più recente.
 
@@ -76,7 +80,7 @@ Controlla che:
 - Blender sia stato riavviato dopo l'installazione;
 - stai guardando la sidebar del 3D Viewport, non un altro editor.
 
-Consulta anche le pagine **FAQ** e **Risoluzione problemi** per trovare le soluzioni più comuni.
+Consulta anche le [FAQ](faq.md) e la [Risoluzione problemi](troubleshooting.md).
 
 Per problemi di installazione:
 

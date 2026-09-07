@@ -16,7 +16,8 @@ Video workflow, aggiornamenti e tutorial:
 
 Prima di contattare il supporto, controlla:
 
-- [FAQ / Risoluzione problemi](troubleshooting.md)
+- [FAQ](faq.md)
+- [Risoluzione problemi](troubleshooting.md)
 - [Step 1 - Preview / Reduce](step1.md)
 - [Step 2 - UV / Cage](step2.md)
 - [Step 3 - Bake / Output](step3.md)
@@ -41,7 +42,8 @@ Includi:
 - versione ScanReady;
 - screenshot del problema;
 - breve descrizione del problema;
-- informazioni GPU / CPU se il problema è legato alle performance.
+- passaggi per riprodurre il problema;
+- informazioni su GPU, VRAM e RAM se il problema riguarda prestazioni o memoria.
 
 Questo aiuta a individuare i problemi più rapidamente.
 

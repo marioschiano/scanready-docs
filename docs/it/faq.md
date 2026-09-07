@@ -1,117 +1,101 @@
 # FAQ
 
-## Come posso contattare il supporto?
+Risposte rapide ai dubbi più comuni. Per i controlli completi consulta [Risoluzione problemi](troubleshooting.md).
 
-Per supporto, bug report o domande sul workflow, contatta:
+## Quale versione di Blender serve?
 
-<a href="mailto:support.marioschiano3d@gmail.com"><strong>support.marioschiano3d@gmail.com</strong></a>
+ScanReady è una Blender Extension e richiede **Blender 4.2 o successivo**. Scarica il pacchetto dalla piattaforma di acquisto e segui la pagina [Installazione](installation.md).
+
+## ScanReady modifica la scansione originale?
+
+La riduzione avviene su una preview separata. La preparazione, però, può intervenire sulla high-poly: unire parti, applicare la scala, correggere normali, pulire frammenti o convertire materiali in base alle opzioni attive.
+
+Salva una copia del file originale prima dello Step 1, soprattutto per scansioni destinate all’archivio.
+
+## Devo impostare sia Final Faces sia Optimize / Reduce?
+
+No. Sono due controlli collegati della stessa riduzione: **Final Faces** indica il target di facce, **Optimize / Reduce** la proporzione di geometria da mantenere. Usa quello più comodo; un rapporto di `0.10` mantiene circa il 10% dei poligoni.
 
 ## Perché le UV si sovrappongono?
 
-La sovrapposizione UV può succedere quando la mesh è estremamente densa oppure quando le isole UV non hanno abbastanza spazio.
+Controlla il layout della mesh UV, non quello della sorgente high-poly. Frammenti molto piccoli o geometria problematica possono rendere più difficile l’unwrap.
 
-Per migliorare il risultato:
+1. Verifica la preview e rimuovi solo i frammenti indesiderati.
+2. Prova un altro **Smart UV Preset** o regola **Smart UV Angle**.
+3. Controlla **UV Padding** e premi di nuovo **Generate UVs**.
 
-- aumenta **UV Padding**;
-- prova un valore diverso di **Smart UV Angle**;
-- genera di nuovo le UV;
-- riduci frammenti mesh molto piccoli prima dell'unwrap.
+Il padding separa le isole; non corregge da solo la distorsione al loro interno.
 
-Isole UV ben distanziate aiutano a prevenire texture bleeding e artefatti di bake.
+## Perché il bake appare sfocato, rumoroso o sporco?
 
-## Perché il bake appare rumoroso o sporco?
+La soluzione dipende dal difetto:
 
-Texture bake rumorose sono di solito causate da risoluzione texture insufficiente, impostazioni cage errate o ottimizzazione troppo aggressiva.
+| Problema | Primo controllo |
+|---|---|
+| Texture sfocata | Risoluzione di output, qualità della sorgente e uso dello spazio UV. |
+| Rumore nell’AO | **AO Samples** in **Advanced > Bake Settings > Occlusion Settings**. |
+| Zone nere o dettagli proiettati male | **Show Cage**, distanza del cage, normali e materiali sorgente. |
+| Silhouette troppo semplificata | **Final Faces**, **Optimize / Reduce** e preset adattivo. |
 
-Prova:
-
-- aumentare **Texture Size**;
-- aumentare **Bake Samples**;
-- aumentare leggermente la densità low-poly;
-- abilitare **Show Cage** e controllare la preview cage prima del bake;
-- aumentare leggermente **Cage Extrusion** oppure usare **Auto Cage Extrusion**.
-
-Scansioni molto dense possono richiedere anche più materiali bake per una qualità texture più pulita.
+Aumentare i sample non aggiunge dettaglio a una texture sorgente poco definita. Cambia un parametro alla volta e confronta il risultato.
 
 ## Perché il bake GPU è ancora lento?
 
-Scansioni grandi e texture ad alta risoluzione possono richiedere molto tempo anche su GPU potenti.
+Risoluzione, numero di materiali, mappe abilitate e complessità della sorgente influiscono sui tempi. Controlla anche **Force CPU Baking**: ScanReady lo abilita automaticamente quando imposti **Bake Materials** a `2` o più.
 
-La velocità di bake dipende da:
-
-- risoluzione texture;
-- numero di materiali bake;
-- complessità della scansione;
-- VRAM GPU;
-- mappe bake abilitate.
-
-Per migliorare le performance:
-
-- abbassa la risoluzione texture;
-- disattiva mappe bake non necessarie;
-- riduci i materiali bake quando possibile;
-- usa meno bake samples per test di preview.
+Per i test usa texture più piccole e solo le mappe necessarie. Riduci i sample della mappa interessata; aumenta la qualità dopo aver verificato il workflow.
 
 ## Perché la mesh low-poly sembra troppo liscia?
 
-Se la mesh ottimizzata perde troppo dettaglio della forma:
+Se manca dettaglio nella forma, aumenta **Final Faces** oppure **Optimize / Reduce**, o prova il preset **Preserve Details**. Poi aggiorna la preview.
 
-- aumenta **Final Faces**;
-- usa un valore **Optimize / Reduce** più alto;
-- evita riduzioni molto aggressive su asset dettagliati.
-
-Alcune scansioni richiedono più geometria per preservare correttamente silhouette importanti.
+Una Normal Map può riprodurre l’aspetto di piccoli dettagli, ma non ricostruisce una silhouette eliminata dalla riduzione.
 
 ## Ho usato One Click Bake, ma il modello finale è ancora troppo pesante. Cosa devo fare?
 
-One Click Bake usa le impostazioni correnti dello Step 1. Se il modello finale non è abbastanza ottimizzato, puoi rifinirlo manualmente senza ripartire da zero.
+Puoi tornare allo Step 1 anche dopo UV e bake:
 
-Questo vale anche se stai già lavorando nello Step 2 o nello Step 3. Puoi sempre tornare allo Step 1, cambiare la riduzione e continuare di nuovo in avanti.
+1. Regola **Final Faces** oppure **Optimize / Reduce**.
+2. Premi **Create Lowpoly Preview** e controlla silhouette e wireframe.
+3. Premi **Generate UVs** nello Step 2.
+4. Controlla il cage.
+5. Ripeti **Bake Textures** nello Step 3.
 
-Prova questo workflow:
-
-- torna a **Step 1 - Preview / Reduce**;
-- abbassa **Final Faces**, oppure abbassa **Optimize / Reduce**;
-- clicca di nuovo **Create Lowpoly Preview**;
-- controlla la preview con **Show Wireframe** o **Show Adaptive Weights**;
-- vai a **Step 2 - UV / Cage** e clicca di nuovo **Generate UVs**;
-- vai a **Step 3 - Bake / Output** ed esegui di nuovo **Bake Textures**.
-
-!!! tip "Preset utili"
-    Se l'oggetto è un veicolo, un asset meccanico, una scansione architettonica o un altro oggetto hard-surface, prova il preset Adaptive Reduce **Hard Surface**.
-
-    Per test più rapidi su scansioni molto dense, abilita **Fast Adaptive Reduce** in Advanced prima di creare di nuovo la preview.
-
-!!! warning "Riduzione troppo aggressiva"
-    Valori più bassi creano asset più leggeri, ma una riduzione troppo aggressiva può danneggiare silhouette o dettagli importanti.
-
-    Usa lo step preview per trovare il miglior equilibrio prima del bake.
+!!! tip "Scegli il preset in base alla forma"
+    Prova **Flat Surfaces** per superfici ampie e semplici, **Hard Surface** per oggetti meccanici. Usa **Fast Adaptive Reduce** per un’analisi più rapida e approssimata delle scansioni dense.
 
 ## Perché compaiono seam visibili nella texture bake?
 
-I seam visibili possono comparire quando le isole UV hanno padding insufficiente o quando la risoluzione texture è troppo bassa.
+Controlla sia **UV Padding**, che separa le isole, sia **Bake Margin**, che estende i pixel del bake oltre i bordi delle isole. Anche risoluzione, compressione e illuminazione già presente nella texture sorgente possono rendere visibili le cuciture.
 
-Prova:
-
-- aumentare **UV Padding**;
-- aumentare la risoluzione texture;
-- controllare la preview checker prima del bake;
-- rigenerare le UV con impostazioni diverse.
-
-Packing e padding UV corretti aiutano a ridurre seam visibili.
+Se modifichi UV Padding, rigenera le UV e ripeti il bake. Se cambi solo Bake Margin, ripeti il bake sul layout esistente.
 
 ## Perché ScanReady consiglia più materiali bake?
 
-Le scansioni grandi spesso contengono più dettaglio di quanto una singola texture possa preservare in modo efficiente.
+Più materiali possono fornire più spazio texture per scansioni grandi. Il consiglio di **Analyze Texture Detail** è una stima basata sulle texture sorgente e sul layout UV, non una garanzia del risultato.
 
-Usare più materiali bake aumenta lo spazio texture disponibile e aiuta a preservare più dettaglio sull'asset.
+Considera il costo in memoria e il numero di materiali richiesto dalla piattaforma finale. Più poligoni, da soli, non risolvono una texture poco definita.
 
-ScanReady può consigliare automaticamente un numero adeguato di materiali in base alla complessità della scansione e ai requisiti di dettaglio texture.
+## Quando devo attivare Convert Source Materials?
+
+Lascialo disattivato se il bake è corretto. Provalo se la Base Color è nera, incompleta o incoerente e il problema dipende dai materiali importati.
+
+Attiva **Convert Source Materials** in **Advanced > Mesh Settings**, premi **Create Lowpoly Preview** e controlla i materiali prima di ripetere il bake. I materiali già standard vengono mantenuti.
+
+## Save Preset salva anche il modello?
+
+No. Salva i parametri del workflow, inclusa la cartella di output, ma non gli oggetti o le immagini della scena. Usa il file `.blend` per conservare il progetto.
+
+Dopo **Reload Preset**, verifica Output Folder e rigenera gli step interessati dalle nuove impostazioni.
 
 ## Perché la mesh ottimizzata sembra diversa dalla scansione originale?
 
-L'ottimizzazione riduce la densità dei poligoni per migliorare le performance realtime.
+La riduzione elimina geometria: alcune differenze sono inevitabili. Controlla il modello alla distanza di osservazione prevista e confronta anche materiali e illuminazione.
 
-Alcune differenze visive sono normali perché la geometria non necessaria viene semplificata.
+Se le differenze riguardano la forma, aumenta la densità. Se riguardano il colore o il dettaglio superficiale, controlla UV, cage e texture prima di aggiungere poligoni.
 
-Però ScanReady usa ottimizzazione adattiva per preservare dettagli importanti della superficie mentre semplifica in modo più aggressivo le regioni piatte o meno dettagliate.
+## Come posso contattare il supporto?
+
+Scrivi a <support.marioschiano3d@gmail.com> indicando versioni di Blender e ScanReady, passaggi per riprodurre il problema e uno screenshot. Per problemi di memoria, aggiungi RAM e modello della GPU.
+
+Consulta [Supporto](support.md) per i dettagli.

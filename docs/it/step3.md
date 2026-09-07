@@ -17,7 +17,7 @@ Step 3 trasferisce il dettaglio texture dalla scansione high-poly originale alla
 - VR
 - videogame
 - AR
-- visualizzazione realtime
+- visualizzazione in tempo reale
 - ambienti interattivi
 
 L'obiettivo è preservare gran parte dell'aspetto della scansione originale riducendo drasticamente la densità dei poligoni.
@@ -59,7 +59,7 @@ Scelte comuni:
 - `1024` -> asset leggeri
 - `2048` -> asset generici
 - `4096` -> asset ravvicinati o ad alto dettaglio
-- `8192` -> asset molto grandi o di qualità archivio
+- `8192` -> asset molto grandi o osservati da vicino, se memoria e sorgente lo consentono
 
 Risoluzioni più alte aumentano molto l'uso di memoria.
 
@@ -106,7 +106,7 @@ Usa **Analyze Texture Detail** dopo aver generato le UV quando vuoi stimare se i
 
 ScanReady cerca la sorgente high-poly corrispondente e la mesh UV ottimizzata, poi confronta l'uso delle texture originali con il setup bake corrente.
 
-Mostra una stima compatta **Detail Match** e consiglia se texture size e numero di materiali sono bilanciati.
+Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consiglio su risoluzione e numero di materiali. Sono stime del dettaglio disponibile, non una garanzia della qualità finale.
 
 <!-- Sostituire il placeholder con ../../img/step3-texture-detail.png -->
 <p align="center">
@@ -221,7 +221,7 @@ Puoi cuocere AO dalla sorgente high-poly o calcolarla direttamente dalla mesh lo
 
 ---
 
-### AO Auto Distance
+### Auto AO Distance
 
 Stima automaticamente la distanza AO dalla dimensione generale del modello.
 
@@ -245,7 +245,7 @@ Valori più alti producono AO più pulita ma aumentano il tempo di bake.
 
 Controlla quanto la texture Ambient Occlusion bake viene miscelata nel materiale Base Color finale.
 
-Influenza l'aspetto del materiale, non la texture AO bake in se.
+Influenza l'aspetto del materiale, non la texture AO bake in sé.
 
 ---
 
@@ -275,7 +275,7 @@ Formati di output disponibili:
 - **PNG** -> output texture lossless
 - **TIFF** -> workflow a precisione più alta
 
-PNG è generalmente consigliato per la maggior parte dei workflow realtime.
+PNG è generalmente consigliato per la maggior parte dei workflow in tempo reale.
 
 ---
 
@@ -305,7 +305,7 @@ Percorsi relativi come `//bake/` vengono salvati accanto al file Blender corrent
 
 ### Bake Folder
 
-Dopo il bake, Step 3 mostra il box **Bake Folder**.
+Lo Step 3 include il riquadro **Bake Folder**. Prima del primo salvataggio può mostrare **No bake folder yet**.
 
 Mostra la cartella usata dall'ultimo bake e include un pulsante cartella che la apre direttamente nel file browser del sistema operativo.
 
@@ -337,7 +337,7 @@ Usa un workflow di bake più sicuro progettato per ridurre la pressione sulla me
 
 ### Force CPU Baking
 
-Forza il bake sulla CPU per evitare limiti di memoria GPU.
+Esegue il bake sulla CPU quando la VRAM della GPU non è sufficiente. Richiede comunque abbastanza RAM di sistema.
 
 Di solito è più lento, ma può essere più sicuro su sistemi con VRAM limitata.
 
@@ -396,7 +396,7 @@ Dopo il bake, controlla:
   <img src="../../img/placeholder-image.svg" alt="Placeholder asset finale baked pronto per il realtime" style="max-width:1100px;width:100%;">
 </p>
 
-Per workflow realtime, il risultato finale dovrebbe bilanciare qualità visiva e performance.
+Per workflow in tempo reale, il risultato finale dovrebbe bilanciare qualità visiva e performance.
 
 Un buon asset bake dovrebbe:
 

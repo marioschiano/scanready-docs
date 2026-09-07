@@ -4,7 +4,7 @@ ScanReady è pensato per workflow in cui scansioni high-poly devono diventare pi
 
 Le scansioni 3D grezze sono spesso troppo pesanti per la produzione realtime. Possono sembrare dettagliate, ma possono essere difficili da muovere, esportare, renderizzare o usare dentro VR e game engine.
 
-ScanReady aiuta a convertire quelle scansioni in asset ottimizzati e baked, preservando l'identità visiva della cattura originale.
+ScanReady aiuta a convertire quelle scansioni in asset ottimizzati con texture bake, preservando l'identità visiva della cattura originale.
 
 ---
 
@@ -48,7 +48,7 @@ Questo rende props scansionati, elementi ambiente e oggetti reali più facili da
 
 ## Visualizzazione realtime
 
-La visualizzazione realtime richiede asset che possono essere ispezionati, mossi e renderizzati fluidamente.
+La visualizzazione in tempo reale richiede asset che possono essere ispezionati, mossi e renderizzati fluidamente.
 
 ScanReady è utile quando devi mostrare oggetti scansionati in:
 
@@ -124,7 +124,7 @@ Un caso d'uso tipico di ScanReady è questo:
 3. Usa **ONE CLICK BAKE** per un risultato automatico rapido.
 4. Controlla mesh ottimizzata e texture bake.
 5. Usa gli step manuali se l'asset richiede più controllo.
-6. Esporta l'asset finale per VR, videogame, visualizzazione realtime o presentazione.
+6. Esporta l'asset finale per VR, videogame, visualizzazione in tempo reale o presentazione.
 
 ---
 
@@ -134,4 +134,4 @@ ScanReady aiuta a colmare il divario tra qualità della scansione e usabilità r
 
 Trasforma modelli catturati pesanti in asset più facili da gestire, più facili da cuocere e più facili da usare in produzione.
 
-Il risultato è un asset più leggero che mantiene l'aspetto della scansione senza portarsi dietro tutto il peso della geometria originale.
+Il risultato è una versione più leggera della scansione. La qualità e le prestazioni vanno verificate nella scena e sul dispositivo di destinazione, considerando insieme geometria, texture e materiali.

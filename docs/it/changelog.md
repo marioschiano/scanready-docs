@@ -1,8 +1,8 @@
 # Changelog
 
-Tutte le modifiche importanti di ScanReady saranno documentate in questo file.
+Questa pagina raccoglie le note di rilascio di ScanReady.
 
-Usa questa pagina come sorgente pubblica delle release notes per Superhive, Blender Extensions e i link di aggiornamento dell'addon.
+Consulta le novità e i problemi noti prima di aggiornare l’addon.
 
 ## 1.0.0 - Release iniziale
 
@@ -12,9 +12,7 @@ Usa questa pagina come sorgente pubblica delle release notes per Superhive, Blen
 - Workflow One Click Bake per creare asset game-ready da scansioni.
 - Workflow Step 1 Preview / Reduce.
 - Adaptive Reduce per ottimizzazione mesh consapevole della scansione.
-- Sezioni Home e Step 1 della documentazione che spiegano perché ScanReady Adaptive Reduce differisce dal Decimate standard di Blender, con placeholder per immagini comparative.
 - Preset Adaptive Reduce: Balanced, Preserve Details, Flat Surfaces e Hard Surface.
-- Preset Hard Surface Adaptive Reduce per veicoli e scansioni hard-surface, impostato come passaggio approssimato più veloce che protegge solo rotture di normale più forti.
 - Visualizzazione Show Adaptive Weights.
 - Auto combine mesh parts per scansioni importate con gerarchia.
 - Opzione Auto clean scan debris.
@@ -28,8 +26,6 @@ Usa questa pagina come sorgente pubblica delle release notes per Superhive, Blen
 - Collegamento Bake Folder nello Step 3 per aprire l'ultima cartella texture salvata.
 - Link documentazione e release notes nelle preferenze addon.
 - Messaggio di notifica aggiornamento per marketplace e Blender Extensions.
-- Guida FAQ per rifinire un risultato One Click Bake quando il modello finale è ancora troppo pesante.
-- Guida workflow attraverso Step 1, Step 2, Step 3, Quick Start, One Click e FAQ che spiega che gli utenti possono tornare allo Step 1, regolare la riduzione, ricreare la preview low-poly, poi rigenerare UV e bake.
 
 ### Modificato
 
