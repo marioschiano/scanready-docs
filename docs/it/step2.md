@@ -54,9 +54,8 @@ Molte scansioni fotogrammetriche contengono layout UV che sprecano grandi porzio
 
 Dopo l'ottimizzazione, ScanReady può generare un layout UV più pulito, con packing migliore e uso più efficiente delle texture.
 
-<!-- Sostituire il placeholder con ../../img/step2-uv-packing.png -->
 <p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot efficienza packing UV" style="max-width:1000px;width:100%;">
+  <img src="../../img/step2-uv-packing.png" alt="Packing UV ottimizzato in un unico atlas per ridurre draw call e semplificare l'esportazione" style="max-width:1000px;width:100%;">
 </p>
 
 Questo permette all'asset ottimizzato di conservare più dettaglio usando meno materiali e meno memoria texture.
@@ -167,8 +166,7 @@ ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'
 
 <div style="text-align:center;">
   <p style="margin-top:0;"><strong>Smart UV Preset</strong></p>
-  <!-- Sostituire il placeholder con ../../img/step2-ui-panel.png -->
-  <img src="../../img/placeholder-image.svg" alt="Placeholder pannello Smart UV Preset di ScanReady" style="width:280px; max-width:100%;">
+  <img src="../../img/step2-ui-panel.png" alt="Pannello Step 2 di ScanReady e controllo visivo del cage nel viewport di Blender" style="max-width:1000px;width:100%;">
 </div>
 
 </div>
@@ -208,7 +206,7 @@ Un pattern checker pulito di solito indica un layout UV più sano per il bake.
 
 <!-- Esempio condiviso con Step 1. -->
 <p align="center">
-  <img src="../../img/step1-checker.gif" alt="Controllo delle UV con Show Checker" style="max-width:1000px;width:100%;">
+  <img src="../../img/step2-checker-preview.png" alt="Confronto tra UV stirate e UV pulite tramite la checker texture" style="max-width:1000px;width:100%;">
 </p>
 
 ---
