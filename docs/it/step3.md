@@ -76,9 +76,8 @@ Divide il bake in più gruppi di materiali.
 
 Usare più materiali aumenta lo spazio texture disponibile e può conservare più dettaglio su scansioni grandi.
 
-<!-- Sostituire il placeholder con ../../img/step3-material-count.png -->
 <p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Placeholder confronto numero materiali bake" style="max-width:1100px;width:100%;">
+  <img src="../../img/step3-material-count.png" alt="Ottimizzazione da quattro materiali 8K a un unico materiale 2K pronto per il realtime" style="max-width:1100px;width:100%;">
 </p>
 
 | Materiali | Uso tipico |
@@ -108,9 +107,8 @@ ScanReady cerca la sorgente high-poly corrispondente e la mesh UV ottimizzata, p
 
 Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consiglio su risoluzione e numero di materiali. Sono stime del dettaglio disponibile, non una garanzia della qualità finale.
 
-<!-- Sostituire il placeholder con ../../img/step3-texture-detail.png -->
 <p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Placeholder analisi Texture Detail" style="max-width:1000px;width:100%;">
+  <img src="../../img/step3-texture-detail.png" alt="Confronto del dettaglio visivo conservato dopo l'ottimizzazione delle texture" style="max-width:1000px;width:100%;">
 </p>
 
 È utile quando devi decidere se:
@@ -206,9 +204,8 @@ Il controllo materiale **AO Mix** è disponibile in **Advanced > Bake Settings >
 
 ---
 
-<!-- Sostituire il placeholder con ../../img/step3-bake-maps.png -->
 <p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot mappe bake" style="max-width:1100px;width:100%;">
+  <img src="../../img/step3-bake-maps.png" alt="Set di mappe Base Color, Normal, Roughness e Occlusion generato sul nuovo atlas UV" style="max-width:1100px;width:100%;">
 </p>
 
 ---
@@ -322,9 +319,8 @@ Le scansioni fotogrammetriche grandi possono superare facilmente i limiti di mem
 
 ScanReady include workflow di bake più sicuri pensati per scene di produzione pesanti.
 
-<!-- Sostituire il placeholder con ../../img/step3-memory-safety.png -->
 <p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Placeholder impostazioni bake sicure per la memoria" style="max-width:1000px;width:100%;">
+  <img src="../../img/step3-memory-safety.png" alt="Controlli Memory Estimate, Safe Memory Bake e CPU Fallback per scansioni molto pesanti" style="max-width:1000px;width:100%;">
 </p>
 
 ---
@@ -391,9 +387,8 @@ Dopo il bake, controlla:
 
 ## Ottimizzazione realtime
 
-<!-- Sostituire il placeholder con ../../img/step3-final-result.png -->
 <p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Placeholder asset finale baked pronto per il realtime" style="max-width:1100px;width:100%;">
+  <img src="../../img/step3-final-result.png" alt="Risultato finale: scansione da oltre un milione di facce convertita in un asset ottimizzato da circa ventimila facce" style="max-width:1100px;width:100%;">
 </p>
 
 Per workflow in tempo reale, il risultato finale dovrebbe bilanciare qualità visiva e performance.
