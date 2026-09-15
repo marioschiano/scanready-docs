@@ -37,14 +37,12 @@ Usa il preset Adaptive Reduce come punto di partenza rapido:
 - **Flat Surfaces** quando l'oggetto contiene ampie aree semplici che possono essere semplificate in modo più aggressivo.
 - **Hard Surface** per veicoli e scansioni hard-surface, dove un passaggio approssimato più veloce deve proteggere soprattutto i cambi di normale più forti.
 
-<!-- Sostituire il placeholder con ../../img/step1-adaptive-reduce.gif -->
 <p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Confronto preset Adaptive Reduce di ScanReady" style="max-width:820px;width:100%;">
+  <img src="../../img/step1-adaptive-reduce.gif" alt="Adaptive Reduce trasforma una scansione da oltre un milione di poligoni in una geometria ottimizzata pronta per il realtime" style="max-width:820px;width:100%;">
 </p>
 
-<!-- Sostituire il placeholder con ../../img/step1-blender-decimate-vs-scanready.jpg -->
 <p align="center">
-  <img src="../../img/placeholder-image.svg" alt="Confronto Blender Decimate con ScanReady Adaptive Reduce" style="max-width:1000px;width:100%;">
+  <img src="../../img/step1-blender-decimate-vs-scanready.jpg" alt="Confronto tra la scansione high-poly originale e il risultato low-poly ottimizzato da ScanReady" style="max-width:1000px;width:100%;">
 </p>
 
 <p align="center">
