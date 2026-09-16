@@ -17,15 +17,14 @@ Questa pagina mostra il modo più veloce per usare ScanReady.
 
   <div style="flex:1 1 360px; min-width:260px;">
 
-    <p>Per una prima prova veloce e automatica:</p>
+    <p>Per una prima prova veloce, lascia che ScanReady gestisca automaticamente il workflow con i valori predefiniti:</p>
 
     <ol>
       <li>Seleziona la mesh high-poly della scansione.</li>
-      <li>Scegli la densità con <strong>Final Faces</strong> oppure <strong>Optimize / Reduce</strong>: i due controlli sono collegati. Il rapporto <strong>0.10</strong> mantiene circa il 10% dei poligoni.</li>
-      <li>Scegli la dimensione texture.</li>
-      <li>Attiva le mappe che vuoi cuocere.</li>
       <li>Clicca <strong>ONE CLICK BAKE</strong>.</li>
     </ol>
+
+    <p>Con il valore predefinito <strong>Optimize / Reduce 0.10</strong>, ScanReady mantiene circa il 10% dei poligoni, cioè riduce automaticamente la mesh di circa il 90%, genera le UV e completa il bake con le impostazioni predefinite.</p>
 
   </div>
 
@@ -58,18 +57,20 @@ Il modello viene quindi ottimizzato, riceve nuove UV e può ottenere il bake del
 
 ---
 
-## Impostazioni consigliate per la prima prova
+## Valori predefiniti
 
-Per una scansione standard:
+Per la prima prova non è necessario cambiare le impostazioni. Se non hai modificato i valori predefiniti, ScanReady parte da:
 
 - **Optimize / Reduce:** `0.10`
-- **Final Faces:** in alternativa al rapporto, scegli un target adatto alla forma e all’uso dell’asset
+- **Final Faces:** valore collegato al rapporto di riduzione
 - **Adaptive Reduce:** attivo
 - **Adaptive Preset:** `Balanced`
 - **Texture Size:** `2048`
 - **Bake Base Color:** attivo
-- **Bake Normal Map:** attivo se ti serve dettaglio di superficie
-- **Save Images:** attivo se vuoi salvare le texture su disco
+- **Bake Normal Map:** attivo secondo le impostazioni predefinite
+- **Save Images:** attivo per salvare le texture su disco
+
+Questi valori servono solo per capire da dove parte il workflow automatico. Per la prima prova puoi lasciare tutto invariato e premere direttamente **ONE CLICK BAKE**.
 
 ---
 
@@ -85,7 +86,7 @@ Dopo il bake dovresti ottenere:
 Controlla il risultato nel viewport e nella sezione **Step 3 - Bake / Output**.
 
 !!! tip "Puoi rifinire anche dopo One Click Bake"
-    Se il modello finale risulta ancora troppo pesante, oppure se è stato ottimizzato troppo e perde dettagli importanti della forma, torna a **Step 1 - Preview / Reduce**.
+    Se il risultato non è sufficiente, torna agli step manuali e modifica le impostazioni solo dove serve. Se il modello finale risulta ancora troppo pesante, oppure se è stato ottimizzato troppo e perde dettagli importanti della forma, torna a **Step 1 - Preview / Reduce**.
 
     Regola **Optimize / Reduce** o **Final Faces** e osserva l'aggiornamento della preview. Quando il risultato ti convince, passa allo Step 2 e clicca di nuovo **Generate UVs**.
 
