@@ -16,6 +16,14 @@ Dopo che la scansione è stata semplificata nello Step 1, la mesh ottimizzata ha
 
 Questo step prepara l'asset al trasferimento delle texture, permettendo alla mesh ottimizzata di mantenere gran parte della ricchezza visiva della scansione high-poly originale, restando abbastanza leggera per **VR, videogame, AR, visualizzazione in tempo reale e ambienti interattivi**.
 
+<p align="center">
+  <img src="../../img/step2-uv-cage-panel.png" alt="Pannello Step 2 UV e Cage con Smart UV, Show Cage, Cage Extrusion e Generate UVs" style="max-width:420px;width:100%;">
+</p>
+
+<p align="center">
+  <b>Il pannello Step 2 raccoglie i controlli per generare le UV e preparare il cage prima del bake.</b>
+</p>
+
 ---
 
 ## Perché servono le UV
@@ -166,7 +174,7 @@ ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'
 
 <div style="text-align:center;">
   <p style="margin-top:0;"><strong>Smart UV Preset</strong></p>
-  <img src="../../img/step2-ui-panel.png" alt="Pannello Step 2 di ScanReady e controllo visivo del cage nel viewport di Blender" style="max-width:1000px;width:100%;">
+  <img src="../../img/step2-ui-panel.png" alt="Controllo visivo del cage nel viewport di Blender" style="max-width:1000px;width:100%;">
 </div>
 
 </div>
