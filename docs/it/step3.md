@@ -256,14 +256,6 @@ Abilitalo quando esporti asset per game engine, archivi, workflow esterni o cons
 
 ---
 
-### Open Folder After Bake
-
-Apre automaticamente la cartella del bake quando **Save Images** è attivo e il salvataggio delle texture è completato.
-
-È utile quando vuoi controllare subito i file generati, copiarli in un progetto esterno o portarli in un game engine.
-
----
-
 ### Image Format
 
 Formati di output disponibili:
@@ -309,7 +301,7 @@ Mostra la cartella usata dall'ultimo bake e include un pulsante cartella che la 
 !!! tip "Output Folder e Bake Folder"
     Usa **Output Folder** per scegliere dove ScanReady deve salvare le texture.
 
-    Usa **Bake Folder** dopo il bake per aprire rapidamente la cartella realmente usata.
+    Usa **Bake Folder** dopo il bake per aprire manualmente la cartella che contiene le texture generate.
 
 ---
 

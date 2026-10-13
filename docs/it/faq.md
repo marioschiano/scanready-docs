@@ -45,6 +45,14 @@ Risoluzione, numero di materiali, mappe abilitate e complessità della sorgente 
 
 Per i test usa texture più piccole e solo le mappe necessarie. Riduci i sample della mappa interessata; aumenta la qualità dopo aver verificato il workflow.
 
+## Non trovo la cartella del mio bake. Dove la trovo?
+
+Dopo un bake con **Save Images** attivo, apri **Step 3 - Bake / Output** e premi **Bake Folder**.
+
+ScanReady aprirà la cartella che contiene le texture generate dall'ultimo bake.
+
+Se **Bake Folder** mostra ancora **No bake folder yet**, esegui prima un bake con **Save Images** attivo e controlla che **Output Folder** sia valida.
+
 ## Perché la mesh low-poly sembra troppo liscia?
 
 Se manca dettaglio nella forma, aumenta **Final Faces** oppure **Optimize / Reduce**, o prova il preset **Preserve Details**. Poi aggiorna la preview.

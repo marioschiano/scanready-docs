@@ -100,7 +100,6 @@ Questa tabella segue l'ordine dello **Step 3 Bake / Output** nel pannello princi
 | **Bake Roughness Map** | Trasferisce roughness dal materiale high quando è collegata una roughness texture. | Attivalo quando l'asset finale deve mantenere variazione roughness dal materiale originale. |
 | **Bake Occlusion Map** | Cuoce una mappa Ambient Occlusion. | Attivalo per aggiungere profondità e ombre di contatto. |
 | **Save Images** | Salva le texture bake su disco. | Attivalo quando esporti verso game engine, archivi o tool esterni. |
-| **Open Folder After Bake** | Apre automaticamente la cartella del bake quando il salvataggio texture è completato. | Utile durante test e produzione, soprattutto quando vuoi controllare subito i file generati. |
 | **Image Format** | Sceglie JPG, PNG o TIFF. | Usa JPG per color map compatte, PNG per output lossless, TIFF per alta precisione. |
 | **Output Folder** | Cartella dove vengono salvate le texture bake. | Impostala prima del bake se vuoi i file in una cartella specifica del progetto. |
 | **Bake Folder** | Mostra la cartella usata dall'ultimo bake e fornisce un pulsante per aprirla. | Usalo dopo il bake per controllare o aprire rapidamente i file texture salvati. |
