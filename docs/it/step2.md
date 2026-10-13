@@ -10,9 +10,9 @@
 
 ---
 
-<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin-top:16px; margin-bottom:28px;">
 
-<div style="min-width:0;">
+<div style="flex:1 1 0; min-width:0;">
 
 <p>Step 2 genera un nuovo layout UV e prepara il cage per il bake.</p>
 
@@ -22,7 +22,7 @@
 
 </div>
 
-<div style="text-align:center;">
+<div style="flex:0 0 280px; text-align:center;">
   <p style="margin-top:0;"><strong>STEP 2 UV / Cage</strong></p>
   <img src="../../img/step2-uv-cage-panel.png" alt="Pannello Step 2 UV e Cage con Smart UV, Show Cage, Cage Extrusion e Generate UVs" style="max-width:280px;width:100%;">
 </div>
@@ -159,9 +159,9 @@ ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'
 
 ### Smart UV Preset
 
-<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin-top:16px; margin-bottom:28px;">
 
-<div style="min-width:0;">
+<div style="flex:1 1 0; min-width:0;">
 
 <p>ScanReady usa Blender Smart UV Project per la generazione UV automatica.</p>
 
@@ -177,7 +177,7 @@ ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'
 
 </div>
 
-<div style="text-align:center;">
+<div style="flex:0 0 280px; text-align:center;">
   <p style="margin-top:0;"><strong>Smart UV Preset</strong></p>
   <img src="../../img/step2-smart-uv-preset-panel.png" alt="Menu Smart UV Preset con opzioni Detailed, Balanced, Large Islands e Continuous" style="max-width:280px;width:100%;">
 </div>

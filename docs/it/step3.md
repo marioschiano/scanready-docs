@@ -248,9 +248,9 @@ Influenza l'aspetto del materiale, non la texture AO bake in sé.
 
 ## Impostazioni output
 
-<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin-top:16px; margin-bottom:28px;">
 
-<div style="min-width:0;">
+<div style="flex:1 1 0; min-width:0;">
 
 <p>Il pannello Step 3 contiene le opzioni di bake, salvataggio texture e apertura della cartella di output.</p>
 
@@ -258,7 +258,7 @@ Influenza l'aspetto del materiale, non la texture AO bake in sé.
 
 </div>
 
-<div style="text-align:center;">
+<div style="flex:0 0 300px; text-align:center;">
   <p style="margin-top:0;"><strong>STEP 3 Bake / Output</strong></p>
   <img src="../../img/step3-bake-output-panel.png" alt="Pannello Step 3 Bake Output con Save Images, Open Folder After Bake, Image Format e Output Folder" style="max-width:300px;width:100%;">
 </div>
