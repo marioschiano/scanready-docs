@@ -10,19 +10,24 @@
 
 ---
 
-Step 2 genera un nuovo layout UV e prepara il cage per il bake.
+<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
 
-Dopo che la scansione è stata semplificata nello Step 1, la mesh ottimizzata ha bisogno di UV pulite per ricevere correttamente le texture sulla nuova superficie low-poly.
+<div style="min-width:0;">
 
-Questo step prepara l'asset al trasferimento delle texture, permettendo alla mesh ottimizzata di mantenere gran parte della ricchezza visiva della scansione high-poly originale, restando abbastanza leggera per **VR, videogame, AR, visualizzazione in tempo reale e ambienti interattivi**.
+<p>Step 2 genera un nuovo layout UV e prepara il cage per il bake.</p>
 
-<p align="center">
-  <img src="../../img/step2-uv-cage-panel.png" alt="Pannello Step 2 UV e Cage con Smart UV, Show Cage, Cage Extrusion e Generate UVs" style="max-width:420px;width:100%;">
-</p>
+<p>Dopo che la scansione è stata semplificata nello Step 1, la mesh ottimizzata ha bisogno di UV pulite per ricevere correttamente le texture sulla nuova superficie low-poly.</p>
 
-<p align="center">
-  <b>Il pannello Step 2 raccoglie i controlli per generare le UV e preparare il cage prima del bake.</b>
-</p>
+<p>Questo step prepara l'asset al trasferimento delle texture, permettendo alla mesh ottimizzata di mantenere gran parte della ricchezza visiva della scansione high-poly originale, restando abbastanza leggera per <strong>VR, videogame, AR, visualizzazione in tempo reale e ambienti interattivi</strong>.</p>
+
+</div>
+
+<div style="text-align:center;">
+  <p style="margin-top:0;"><strong>STEP 2 UV / Cage</strong></p>
+  <img src="../../img/step2-uv-cage-panel.png" alt="Pannello Step 2 UV e Cage con Smart UV, Show Cage, Cage Extrusion e Generate UVs" style="max-width:280px;width:100%;">
+</div>
+
+</div>
 
 ---
 
@@ -174,7 +179,7 @@ ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'
 
 <div style="text-align:center;">
   <p style="margin-top:0;"><strong>Smart UV Preset</strong></p>
-  <img src="../../img/step2-ui-panel.png" alt="Controllo visivo del cage nel viewport di Blender" style="max-width:1000px;width:100%;">
+  <img src="../../img/step2-smart-uv-preset-panel.png" alt="Menu Smart UV Preset con opzioni Detailed, Balanced, Large Islands e Continuous" style="max-width:280px;width:100%;">
 </div>
 
 </div>

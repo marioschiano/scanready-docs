@@ -248,13 +248,22 @@ Influenza l'aspetto del materiale, non la texture AO bake in sé.
 
 ## Impostazioni output
 
-<p align="center">
-  <img src="../../img/step3-bake-output-panel.png" alt="Pannello Step 3 Bake Output con Save Images, Open Folder After Bake, Image Format e Output Folder" style="max-width:420px;width:100%;">
-</p>
+<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
 
-<p align="center">
-  <b>Il pannello Step 3 contiene le opzioni di salvataggio texture e apertura della cartella bake.</b>
-</p>
+<div style="min-width:0;">
+
+<p>Il pannello Step 3 contiene le opzioni di bake, salvataggio texture e apertura della cartella di output.</p>
+
+<p>Qui scegli la risoluzione, il numero di materiali bake, le mappe da generare, il formato immagine e la cartella in cui salvare le texture.</p>
+
+</div>
+
+<div style="text-align:center;">
+  <p style="margin-top:0;"><strong>STEP 3 Bake / Output</strong></p>
+  <img src="../../img/step3-bake-output-panel.png" alt="Pannello Step 3 Bake Output con Save Images, Open Folder After Bake, Image Format e Output Folder" style="max-width:300px;width:100%;">
+</div>
+
+</div>
 
 ### Save Images
 
