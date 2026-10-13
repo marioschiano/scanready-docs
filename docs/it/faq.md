@@ -51,6 +51,8 @@ Dopo un bake con **Save Images** attivo, apri **Step 3 - Bake / Output** e premi
 
 ScanReady aprirà la cartella che contiene le texture generate dall'ultimo bake.
 
+Se vuoi che la cartella si apra automaticamente alla fine del bake, attiva **Open Folder After Bake** prima di premere **Bake Textures**.
+
 Se **Bake Folder** mostra ancora **No bake folder yet**, esegui prima un bake con **Save Images** attivo e controlla che **Output Folder** sia valida.
 
 ## Perché la mesh low-poly sembra troppo liscia?
