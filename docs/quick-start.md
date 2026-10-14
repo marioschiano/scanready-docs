@@ -5,7 +5,7 @@ Use this page when you want the fastest path from a heavy high-poly scan to an o
 ScanReady 1.0 is designed to simplify dense 3D scans and make them easier to use in **VR, AR, videogames, realtime viewers, and interactive Blender scenes**.
 
 <p align="center">
-  <img src="../img/hero.png" alt="ScanReady 1.0 scan-to-game-ready workflow overview" style="max-width:760px;width:100%;">
+  <img src="../img/hero.jpg" alt="ScanReady 1.0 scan-to-game-ready workflow overview" style="max-width:760px;width:100%;">
 </p>
 
 ---
