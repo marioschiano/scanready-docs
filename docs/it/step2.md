@@ -41,9 +41,9 @@ ScanReady genera quindi un nuovo layout UV più ordinato e compatto. Le isole ve
 
 <div class="sr-uv-compare" data-uv-compare>
   <div class="sr-uv-compare__image">
-    <img src="../../img/step2-uv-scanready-packed.png" alt="Layout UV ScanReady ordinato e compatto" class="sr-uv-compare__base">
+    <img src="../../img/step2-uv-original-fragmented.png" alt="Layout UV originale frammentato" class="sr-uv-compare__base">
     <div class="sr-uv-compare__overlay">
-      <img src="../../img/step2-uv-original-fragmented.png" alt="Layout UV originale frammentato" class="sr-uv-compare__top">
+      <img src="../../img/step2-uv-scanready-packed.png" alt="Layout UV ScanReady ordinato e compatto" class="sr-uv-compare__top">
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">UV originale</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady</span>
