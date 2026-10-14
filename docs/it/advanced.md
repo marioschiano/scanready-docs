@@ -34,7 +34,7 @@ Le sezioni principali seguono l'ordine del workflow. Mesh Settings prepara e pul
 </p>
 
 <p>
-Bake Settings regola qualità, margini, normal map, roughness, opzioni Occlusion e sicurezza memoria. Preset, Diagnostics e Utilities aiutano nei workflow pesanti, nei test, nel riuso delle impostazioni e nel ripristino rapido di una configurazione pulita.
+Bake Settings regola sample, margini, normal strength, formato immagine, opzioni Occlusion e sicurezza memoria. Le mappe Base Color, Normal, Roughness e Occlusion si selezionano nello Step 3. Preset, Diagnostics e Utilities aiutano nei workflow pesanti, nei test, nel riuso delle impostazioni e nel ripristino rapido di una configurazione pulita.
 </p>
 </div>
 
