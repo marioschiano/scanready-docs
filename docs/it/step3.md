@@ -113,9 +113,9 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
 
 <div class="sr-uv-compare sr-uv-compare--model" data-uv-compare data-aspect-ratio="1245/928">
   <div class="sr-uv-compare__image">
-    <img src="../../img/step3-model-high-poly.png" alt="Modello originale high-poly senza wireframe" class="sr-uv-compare__base">
+    <img src="../../img/step3-model-high-poly.png" alt="Modello originale high-poly senza wireframe" class="sr-uv-compare__base" style="position:relative !important;inset:auto !important;width:100% !important;height:auto !important;max-width:none !important;max-height:none !important;display:block !important">
     <div class="sr-uv-compare__overlay">
-      <img src="../../img/step3-model-optimized.png" alt="Modello ottimizzato ScanReady senza wireframe" class="sr-uv-compare__top">
+      <img src="../../img/step3-model-optimized.png" alt="Modello ottimizzato ScanReady senza wireframe" class="sr-uv-compare__top" style="position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;max-width:none !important;max-height:none !important;display:block !important">
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Original · 1,011,823 faces</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady Optimized · 30,351 faces</span>
