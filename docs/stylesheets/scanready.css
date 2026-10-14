@@ -296,3 +296,22 @@
   user-select: none;
   -webkit-user-select: none;
 }
+
+
+/* Compact ScanReady comparison handle. */
+.sr-uv-compare__handle span {
+  width: 28px;
+  height: 28px;
+}
+
+.sr-uv-compare__handle span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--sr-green);
+  transform: translate(-50%, -50%);
+}
