@@ -276,7 +276,7 @@
 
 .md-typeset .sr-uv-compare{max-width:980px;margin:1.5rem auto 2rem}
 .sr-uv-compare__image{position:relative;aspect-ratio:1114/916;overflow:hidden;border:1px solid rgba(80,170,255,.45);border-radius:8px;background:#25272e;isolation:isolate}
-.sr-uv-compare__image img{position:absolute;inset:0;width:100%;height:100%;max-width:none !important;max-height:none !important;object-fit:cover;object-position:center;display:block}
+.sr-uv-compare__image img{position:absolute;inset:0;width:100% !important;height:100% !important;max-width:none !important;max-height:none !important;object-fit:cover !important;object-position:center;display:block}
 .sr-uv-compare__overlay{position:absolute;inset:0;width:100%;overflow:hidden;z-index:2;clip-path:inset(0 100% 0 0)}
 .sr-uv-compare__overlay .sr-uv-compare__top{width:100%;max-width:none}
 .sr-uv-compare__handle{position:absolute;top:0;bottom:0;left:50%;z-index:4;width:3px;padding:0;border:0;background:#55d66f;transform:translateX(-50%);cursor:ew-resize}
