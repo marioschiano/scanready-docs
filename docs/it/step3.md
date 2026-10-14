@@ -111,7 +111,7 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
   <img src="../../img/step3-texture-detail.png" alt="Confronto del dettaglio visivo conservato dopo l'ottimizzazione delle texture" style="max-width:1000px;width:100%;">
 </p>
 
-<div class="sr-uv-compare" data-uv-compare>
+<div class="sr-uv-compare sr-uv-compare--model" data-uv-compare>
   <div class="sr-uv-compare__image">
     <img src="../../img/step3-model-optimized.png" alt="Modello ottimizzato ScanReady senza wireframe" class="sr-uv-compare__base">
     <div class="sr-uv-compare__overlay">
@@ -125,7 +125,7 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
 
 <p align="center"><strong>Usa il cursore per confrontare il modello originale e quello ottimizzato.</strong></p>
 
-<div class="sr-uv-compare" data-uv-compare>
+<div class="sr-uv-compare sr-uv-compare--model" data-uv-compare>
   <div class="sr-uv-compare__image">
     <img src="../../img/step3-wireframe-optimized.png" alt="Wireframe del modello ottimizzato ScanReady" class="sr-uv-compare__base">
     <div class="sr-uv-compare__overlay">
