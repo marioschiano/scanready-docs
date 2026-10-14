@@ -1,7 +1,7 @@
 # Step 2 - UV / Cage
 
 <p align="center">
-  <img src="../../img/step2-uv-01.jpg" alt="Layout UV generato da ScanReady dalla mesh ottimizzata" style="max-width:760px;width:100%;">
+  <img src="../../img/step2-uv-01.png" alt="Layout UV generato da ScanReady dalla mesh ottimizzata" style="max-width:760px;width:100%;">
 </p>
 
 <p align="center">
