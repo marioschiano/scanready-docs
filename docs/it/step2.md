@@ -57,7 +57,7 @@ Rifare le UV non aggiunge dettaglio geometrico alla mesh. Permette però di orga
 
 ---
 
-## Perché servono le UV
+
 
 Una mesh semplificata è più leggera e più facile da gestire, ma ha comunque bisogno di coordinate texture coerenti.
 
@@ -159,6 +159,10 @@ ScanReady include strumenti per rendere questo processo più veloce e più sempl
 
 <p align="center">
   <b>La dimensione del cage influenza direttamente il bake: un cage corretto cattura i dettagli in modo pulito senza proiettare geometria indesiderata.</b>
+<p align="center"><strong>Usa il cursore per confrontare direttamente le due versioni.</strong></p>
+<p align="center"><strong>Usa il cursore per confrontare direttamente le due versioni.</strong></p>
+
+
 </p>
 <p align="center"><strong>Usa il cursore per confrontare direttamente le due versioni.</strong></p>
 
