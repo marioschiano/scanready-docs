@@ -51,9 +51,9 @@ ScanReady genera quindi un nuovo layout UV più ordinato e compatto. Le isole ve
   </div>
 </div>
 
-Il confronto con la checker texture rende visibile il risultato: nella scansione originale il pattern è spezzato da molte piccole isole e da una densità poco uniforme; dopo **Generate UVs**, il pattern segue la superficie in modo più regolare e il layout è più adatto al bake.
-
 <p align="center"><strong>Usa il cursore per confrontare direttamente le due versioni.</strong></p>
+
+Il confronto con la checker texture rende visibile il risultato: nella scansione originale il pattern è spezzato da molte piccole isole e da una densità poco uniforme; dopo **Generate UVs**, il pattern segue la superficie in modo più regolare e il layout è più adatto al bake. Usa il cursore per confrontare direttamente le due versioni.
 
 Rifare le UV non aggiunge dettaglio geometrico alla mesh. Permette però di organizzare meglio la superficie che riceverà le texture, migliorando l'efficienza dell'atlas e la qualità del trasferimento dal modello high-poly.
 
