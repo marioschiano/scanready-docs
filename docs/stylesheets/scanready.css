@@ -284,6 +284,7 @@
 .sr-uv-compare__label{position:absolute;top:14px;z-index:5;padding:.35rem .65rem;border-radius:4px;color:#fff;background:rgba(20,23,30,.82);font-size:.78rem;font-weight:700;transition:opacity .28s ease}
 .sr-uv-compare__label--left,.sr-uv-compare__label--right{left:50%;right:auto;transform:translateX(-50%);white-space:nowrap}
 .sr-uv-compare__range{display:block;width:100%;margin:.75rem 0 0;accent-color:#55d66f}
+.sr-uv-compare--model .sr-uv-compare__image{aspect-ratio:4/3}
 
 
 /* Keep the comparison gesture responsive on touch screens. */
@@ -315,3 +316,4 @@
   background: var(--sr-green);
   transform: translate(-50%, -50%);
 }
+
