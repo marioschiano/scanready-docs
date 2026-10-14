@@ -67,7 +67,7 @@ Per la prima prova non è necessario cambiare le impostazioni. Se non hai modifi
 - **Adaptive Preset:** `Balanced`
 - **Texture Size:** `2048`
 - **Bake Base Color:** attivo
-- **Bake Normal Map:** attivo secondo le impostazioni predefinite
+- **Bake Normal Map:** disattivo di default; attivalo se vuoi trasferire il dettaglio normale
 - **Save Images:** attivo per salvare le texture su disco
 
 Questi valori servono solo per capire da dove parte il workflow automatico. Per la prima prova puoi lasciare tutto invariato e premere direttamente **ONE CLICK BAKE**.
