@@ -39,21 +39,20 @@ Questo può lasciare grandi aree vuote nell'atlas, distribuire male la densità 
 
 ScanReady genera quindi un nuovo layout UV più ordinato e compatto. Le isole vengono ridotte e impacchettate in modo più efficiente, così la superficie ottimizzata può utilizzare meglio la texture e ricevere il dettaglio trasferito dalla scansione high-poly.
 
-<div class="sr-doc-row" style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; align-items:start; margin-top:20px; margin-bottom:12px;">
-
-<div style="min-width:0; text-align:center;">
-  <img src="../../img/step2-uv-original-fragmented.png" alt="Scansione originale con checker texture frammentata e distribuzione UV irregolare" style="max-width:100%;width:100%;">
-  <p><strong>Scansione originale</strong><br>UV molto frammentate e distribuzione irregolare nello spazio texture.</p>
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img src="../../img/step2-uv-scanready-packed.png" alt="Layout UV ScanReady ordinato e compatto" class="sr-uv-compare__base">
+    <div class="sr-uv-compare__overlay">
+      <img src="../../img/step2-uv-original-fragmented.png" alt="Layout UV originale frammentato" class="sr-uv-compare__top">
+    </div>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">UV originale</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady</span>
+    <button class="sr-uv-compare__handle" type="button" aria-label="Confronta UV originale e UV ScanReady" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
+  <input class="sr-uv-compare__range" type="range" min="0" max="100" value="50" aria-label="Posizione del confronto UV">
 </div>
 
-<div style="min-width:0; text-align:center;">
-  <img src="../../img/step2-uv-scanready-packed.png" alt="Mesh ottimizzata da ScanReady con checker texture uniforme e UV più ordinate" style="max-width:100%;width:100%;">
-  <p><strong>Layout generato da ScanReady</strong><br>UV più ordinate, compatte e meglio distribuite sulla mesh ottimizzata.</p>
-</div>
-
-</div>
-
-Il confronto con la checker texture rende visibile il risultato: nella scansione originale il pattern è spezzato da molte piccole isole e da una densità poco uniforme; dopo **Generate UVs**, il pattern segue la superficie in modo più regolare e il layout è più adatto al bake.
+Il confronto con la checker texture rende visibile il risultato: nella scansione originale il pattern è spezzato da molte piccole isole e da una densità poco uniforme; dopo **Generate UVs**, il pattern segue la superficie in modo più regolare e il layout è più adatto al bake. Usa il cursore per confrontare direttamente le due versioni.
 
 Rifare le UV non aggiunge dettaglio geometrico alla mesh. Permette però di organizzare meglio la superficie che riceverà le texture, migliorando l'efficienza dell'atlas e la qualità del trasferimento dal modello high-poly.
 
