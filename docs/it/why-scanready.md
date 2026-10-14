@@ -3,7 +3,7 @@
 Le scansioni fotogrammetriche conservano molti dettagli, ma spesso contengono milioni di poligoni, numerosi materiali e texture pesanti. ScanReady riunisce in Blender i passaggi necessari per crearne una versione più leggera: preparazione, riduzione, UV, cage e bake.
 
 <p align="center">
-  <img src="../../img/hero.png" alt="Da scansione grezza ad asset ottimizzato" style="max-width:820px;width:100%;">
+  <img src="../../img/hero.jpg" alt="Da scansione grezza ad asset ottimizzato" style="max-width:820px;width:100%;">
 </p>
 
 ## Cosa semplifica
@@ -22,7 +22,7 @@ Puoi partire da **One Click Bake** per ottenere una prima versione oppure contro
 **Adaptive Reduce** calcola pesi che aiutano a proteggere cambi di normale, bordi e dettagli della superficie. Il modificatore Decimate usa questi pesi per semplificare maggiormente le aree meno importanti.
 
 <p align="center">
-  <img src="../../img/why-scanready-adaptive-optimization.png" alt="Confronto Adaptive Reduce" style="max-width:1000px;width:100%;">
+  <img src="../../img/why-scanready-adaptive-optimization.jpg" alt="Confronto Adaptive Reduce" style="max-width:1000px;width:100%;">
 </p>
 
 Il risultato dipende dalla scansione e dalla densità scelta. Controlla soprattutto silhouette, parti sottili e dettagli che devono restare visibili da vicino.
