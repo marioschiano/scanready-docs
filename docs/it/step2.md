@@ -49,7 +49,6 @@ ScanReady genera quindi un nuovo layout UV più ordinato e compatto. Le isole ve
     <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady</span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta UV originale e UV ScanReady" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
-  <input class="sr-uv-compare__range" type="range" min="0" max="100" value="50" aria-label="Posizione del confronto UV">
 </div>
 
 Il confronto con la checker texture rende visibile il risultato: nella scansione originale il pattern è spezzato da molte piccole isole e da una densità poco uniforme; dopo **Generate UVs**, il pattern segue la superficie in modo più regolare e il layout è più adatto al bake. Usa il cursore per confrontare direttamente le due versioni.
