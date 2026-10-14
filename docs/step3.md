@@ -1,7 +1,7 @@
 # Step 3 - Bake / Output
 
 <p align="center">
-  <img src="../img/high-to-low-workflow.png" alt="Baked scan result with reduced polygon count and preserved visual detail" style="max-width:900px;width:100%;">
+  <img src="../img/high-to-low-workflow.jpg" alt="Baked scan result with reduced polygon count and preserved visual detail" style="max-width:900px;width:100%;">
 </p>
 
 <p align="center">
@@ -63,7 +63,7 @@ Common choices:
 
 Higher resolutions increase memory usage significantly.
 
-<!-- Replace placeholder with ../img/step3-texture-size-comparison.png -->
+<!-- Replace placeholder with ../img/step3-texture-size-comparison.jpg -->
 <p align="center">
   <img src="../img/placeholder-image.svg" alt="Texture resolution comparison placeholder" style="max-width:1100px;width:100%;">
 </p>
@@ -76,7 +76,7 @@ Splits the bake into multiple material groups.
 
 Using more materials increases available texture space and can preserve more detail on large scans.
 
-<!-- Replace placeholder with ../img/step3-material-count.png -->
+<!-- Replace placeholder with ../img/step3-material-count.jpg -->
 <p align="center">
   <img src="../img/placeholder-image.svg" alt="Bake material count comparison placeholder" style="max-width:1100px;width:100%;">
 </p>
@@ -107,7 +107,7 @@ ScanReady searches for the matching high-poly source and optimized UV mesh, then
 
 It reports a compact **Detail Match** estimate and recommends whether the current texture size and material count are balanced.
 
-<!-- Replace placeholder with ../img/step3-texture-detail.png -->
+<!-- Replace placeholder with ../img/step3-texture-detail.jpg -->
 <p align="center">
   <img src="../img/placeholder-image.svg" alt="Texture Detail analysis placeholder" style="max-width:1000px;width:100%;">
 </p>
@@ -199,7 +199,7 @@ The **AO Mix** material control is available in **Advanced > Occlusion Settings*
 
 ---
 
-<!-- Replace placeholder with ../img/step3-bake-maps.png -->
+<!-- Replace placeholder with ../img/step3-bake-maps.jpg -->
 <p align="center">
   <img src="../img/placeholder-image.svg" alt="Bake maps screenshot placeholder" style="max-width:1100px;width:100%;">
 </p>
@@ -304,7 +304,7 @@ Large photogrammetry scans can easily exceed GPU memory limits during baking.
 
 ScanReady includes safer bake workflows designed for heavy production scenes.
 
-<!-- Replace placeholder with ../img/step3-memory-safety.png -->
+<!-- Replace placeholder with ../img/step3-memory-safety.jpg -->
 <p align="center">
   <img src="../img/placeholder-image.svg" alt="Safe memory bake settings placeholder" style="max-width:1000px;width:100%;">
 </p>
@@ -369,7 +369,7 @@ If the final mesh is still too heavy, you can return to **Step 1 - Preview / Red
 
 ## Realtime Optimization
 
-<!-- Replace placeholder with ../img/step3-final-result.png -->
+<!-- Replace placeholder with ../img/step3-final-result.jpg -->
 <p align="center">
   <img src="../img/placeholder-image.svg" alt="Final baked realtime-ready asset placeholder" style="max-width:1100px;width:100%;">
 </p>
