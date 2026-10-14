@@ -39,7 +39,7 @@ Senza UV nuove, ScanReady non può trasferire correttamente le informazioni text
 Creare UV nuove garantisce bake più puliti e una proiezione texture più affidabile.
 
 <p align="center">
-  <img src="../../img/step2-uv-02.png" alt="Confronto checker texture con UV stirate e UV pulite" style="max-width:1000px;width:100%;">
+  <img src="../../img/step2-uv-02.jpg" alt="Confronto checker texture con UV stirate e UV pulite" style="max-width:1000px;width:100%;">
 </p>
 
 <p align="center">
@@ -56,7 +56,7 @@ Molte scansioni fotogrammetriche contengono layout UV che sprecano grandi porzio
 
 Dopo l'ottimizzazione, ScanReady può generare un layout UV più pulito, con packing migliore e uso più efficiente delle texture.
 
-<!-- Sostituire il placeholder con ../../img/step2-uv-packing.png -->
+<!-- Sostituire il placeholder con ../../img/step2-uv-packing.jpg -->
 <p align="center">
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot efficienza packing UV" style="max-width:1000px;width:100%;">
 </p>
@@ -101,7 +101,7 @@ Se il cage è troppo grande:
 ScanReady include strumenti per rendere questo processo più veloce e più semplice.
 
 <p align="center">
-  <img src="../../img/cage_01_red.png" alt="Avviso cage rosso con setup non valido per il bake" style="max-width:1000px;width:100%;">
+  <img src="../../img/cage_01_red.jpg" alt="Avviso cage rosso con setup non valido per il bake" style="max-width:1000px;width:100%;">
 </p>
 
 <p align="center">
@@ -109,7 +109,7 @@ ScanReady include strumenti per rendere questo processo più veloce e più sempl
 </p>
 
 <p align="center">
-  <img src="../../img/step2-uv-03.png" alt="Confronto cage troppo piccolo, corretto e troppo grande" style="max-width:1100px;width:100%;">
+  <img src="../../img/step2-uv-03.jpg" alt="Confronto cage troppo piccolo, corretto e troppo grande" style="max-width:1100px;width:100%;">
 </p>
 
 <p align="center">
@@ -117,7 +117,7 @@ ScanReady include strumenti per rendere questo processo più veloce e più sempl
 </p>
 
 <p align="center">
-  <img src="../../img/step2-uv-04.png" alt="Confronto di come la dimensione del cage influenza la normal map baked" style="max-width:1100px;width:100%;">
+  <img src="../../img/step2-uv-04.jpg" alt="Confronto di come la dimensione del cage influenza la normal map baked" style="max-width:1100px;width:100%;">
 </p>
 
 <p align="center">
@@ -146,7 +146,7 @@ ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'
 
 Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 
-<!-- Sostituire il placeholder con ../../img/step2-ui-panel.png -->
+<!-- Sostituire il placeholder con ../../img/step2-ui-panel.jpg -->
 <p align="center">
   <img src="../../img/placeholder-image.svg" alt="Placeholder pannello impostazioni UV e Cage di ScanReady" style="max-width:1000px;width:100%;">
 </p>
@@ -195,7 +195,7 @@ La checker texture aiuta a vedere:
 
 Un pattern checker pulito di solito indica un layout UV più sano per il bake.
 
-<!-- Sostituire il placeholder con ../../img/step2-checker-preview.png -->
+<!-- Sostituire il placeholder con ../../img/step2-checker-preview.jpg -->
 <p align="center">
   <img src="../../img/placeholder-image.svg" alt="Placeholder screenshot preview checker" style="max-width:1000px;width:100%;">
 </p>
