@@ -160,6 +160,7 @@ ScanReady include strumenti per rendere questo processo più veloce e più sempl
 <p align="center">
   <b>La dimensione del cage influenza direttamente il bake: un cage corretto cattura i dettagli in modo pulito senza proiettare geometria indesiderata.</b>
 </p>
+<p align="center"><strong>Usa il cursore per confrontare direttamente le due versioni.</strong></p>
 
 ---
 
