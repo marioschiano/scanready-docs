@@ -143,7 +143,7 @@ Per ottenere risultati migliori:
 - salva una copia del progetto e seleziona la mesh high-poly o il genitore della gerarchia importata; lascia **Auto Combine Mesh Parts** attivo se le parti devono essere trattate come un unico asset;
 - imposta **Optimize / Reduce** oppure **Final Faces** se conosci la densità numerica target della mesh;
 - scegli **Texture Size** in base al livello di dettaglio necessario: 512, 1K, 2K, 4K o 8K;
-- abilita **Bake Base Color**, **Bake Normal Map**, **Bake Roughness Map** o **Bake Occlusion Map** in base alle mappe che vuoi;
+- lascia **Bake Base Color** attivo oppure abilita **Bake Normal Map**, **Bake Roughness Map** e **Bake Occlusion Map** solo per le mappe che vuoi generare;
 - imposta la **Output Folder** se vuoi salvare le texture in una cartella specifica del disco.
 
 Per scansioni con grandi superfici continue, il preset **Flat Surfaces** di Adaptive Reduce può essere utile prima del bake perché permette di semplificare in modo più aggressivo le aree semplici.
