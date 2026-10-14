@@ -111,6 +111,34 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
   <img src="../../img/step3-texture-detail.png" alt="Confronto del dettaglio visivo conservato dopo l'ottimizzazione delle texture" style="max-width:1000px;width:100%;">
 </p>
 
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img src="../../img/step3-model-optimized.png" alt="Modello ottimizzato ScanReady senza wireframe" class="sr-uv-compare__base">
+    <div class="sr-uv-compare__overlay">
+      <img src="../../img/step3-model-high-poly.png" alt="Modello originale high-poly senza wireframe" class="sr-uv-compare__top">
+    </div>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Original</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady Optimized</span>
+    <button class="sr-uv-compare__handle" type="button" aria-label="Confronta modello high-poly e modello ScanReady ottimizzato" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
+</div>
+
+<p align="center"><strong>Usa il cursore per confrontare il modello originale e quello ottimizzato.</strong></p>
+
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img src="../../img/step3-wireframe-optimized.png" alt="Wireframe del modello ottimizzato ScanReady" class="sr-uv-compare__base">
+    <div class="sr-uv-compare__overlay">
+      <img src="../../img/step3-wireframe-high-poly.png" alt="Wireframe del modello originale high-poly" class="sr-uv-compare__top">
+    </div>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Wireframe</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">Optimized Wireframe</span>
+    <button class="sr-uv-compare__handle" type="button" aria-label="Confronta wireframe high-poly e wireframe ottimizzato" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
+</div>
+
+<p align="center"><strong>Usa il cursore per confrontare la densità del wireframe prima e dopo l'ottimizzazione.</strong></p>
+
 È utile quando devi decidere se:
 
 - mantenere un solo materiale bake;
@@ -345,4 +373,5 @@ Un buon asset bake dovrebbe:
 - evitare densità geometrica inutile.
 
 Il bake è ciò che permette a una mesh ottimizzata leggera di conservare gran parte della ricchezza visiva della scansione high-poly originale.
+
 
