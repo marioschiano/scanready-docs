@@ -41,9 +41,9 @@ ScanReady genera quindi un nuovo layout UV più ordinato e compatto. Le isole ve
 
 <div class="sr-uv-compare" data-uv-compare>
   <div class="sr-uv-compare__image">
-    <img src="../../img/step2-uv-original-fragmented.png" alt="Layout UV originale frammentato" class="sr-uv-compare__base">
+    <img src="../../img/step2-uv-original-fragmented.jpg" alt="Layout UV originale frammentato" class="sr-uv-compare__base">
     <div class="sr-uv-compare__overlay">
-      <img src="../../img/step2-uv-scanready-packed.png" alt="Layout UV ScanReady ordinato e compatto" class="sr-uv-compare__top">
+      <img src="../../img/step2-uv-scanready-packed.jpg" alt="Layout UV ScanReady ordinato e compatto" class="sr-uv-compare__top">
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">UV originale</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady</span>
@@ -78,7 +78,7 @@ Poiché la geometria è stata unita e semplificata, il layout UV originale può 
 Nel workflow ScanReady, usa **Generate UVs** per preparare la mesh destinata al bake. Il nuovo layout deve avere isole ben separate e uno spazio texture adeguato: controllalo prima di procedere.
 
 <p align="center">
-  <img src="../../img/step2-uv-02.png" alt="Confronto checker texture con UV stirate e UV pulite" style="max-width:1000px;width:100%;">
+  <img src="../../img/step2-uv-02.jpg" alt="Confronto checker texture con UV stirate e UV pulite" style="max-width:1000px;width:100%;">
 </p>
 
 <p align="center">
@@ -96,7 +96,7 @@ Molte scansioni fotogrammetriche contengono layout UV che sprecano grandi porzio
 Dopo l'ottimizzazione, ScanReady può generare un layout UV più pulito, con packing migliore e uso più efficiente delle texture.
 
 <p align="center">
-  <img src="../../img/step2-uv-packing-efficient.png" alt="Packing UV ottimizzato in un unico atlas per ridurre draw call e semplificare l'esportazione" style="max-width:1000px;width:100%;">
+  <img src="../../img/step2-uv-packing-efficient.jpg" alt="Packing UV ottimizzato in un unico atlas per ridurre draw call e semplificare l'esportazione" style="max-width:1000px;width:100%;">
 </p>
 
 Questo permette all'asset ottimizzato di conservare più dettaglio usando meno materiali e meno memoria texture.
@@ -139,7 +139,7 @@ Se il cage è troppo grande:
 ScanReady include strumenti per rendere questo processo più veloce e più semplice.
 
 <p align="center">
-  <img src="../../img/cage_01_red.png" alt="Avviso cage rosso con setup non valido per il bake" style="max-width:1000px;width:100%;">
+  <img src="../../img/cage_01_red.jpg" alt="Avviso cage rosso con setup non valido per il bake" style="max-width:1000px;width:100%;">
 </p>
 
 !!! warning "Cage rosso"
@@ -148,7 +148,7 @@ ScanReady include strumenti per rendere questo processo più veloce e più sempl
     Abilita **Show Cage**, poi aumenta leggermente **Cage Extrusion** oppure usa **Auto Cage Extrusion** prima di continuare.
 
 <p align="center">
-  <img src="../../img/step2-uv-03.png" alt="Confronto cage troppo piccolo, corretto e troppo grande" style="max-width:1100px;width:100%;">
+  <img src="../../img/step2-uv-03.jpg" alt="Confronto cage troppo piccolo, corretto e troppo grande" style="max-width:1100px;width:100%;">
 </p>
 
 <p align="center">
@@ -156,7 +156,7 @@ ScanReady include strumenti per rendere questo processo più veloce e più sempl
 </p>
 
 <p align="center">
-  <img src="../../img/step2-uv-04.png" alt="Confronto di come la dimensione del cage influenza la normal map baked" style="max-width:1100px;width:100%;">
+  <img src="../../img/step2-uv-04.jpg" alt="Confronto di come la dimensione del cage influenza la normal map baked" style="max-width:1100px;width:100%;">
 </p>
 
 <p align="center">
@@ -227,7 +227,7 @@ Imposta lo spazio tra le isole UV.
 Aumenta il padding per ridurre il texture bleeding, soprattutto a risoluzioni texture più basse.
 
 <p align="center">
-  <img src="../../img/step2_UV padding.png" alt="Pannello impostazioni UV di ScanReady" style="max-width:760px;width:100%;">
+  <img src="../../img/step2_UV padding.jpg" alt="Pannello impostazioni UV di ScanReady" style="max-width:760px;width:100%;">
 </p>
 
 ---
@@ -247,7 +247,7 @@ Un pattern checker pulito di solito indica un layout UV più sano per il bake.
 
 <!-- Esempio condiviso con Step 1. -->
 <p align="center">
-  <img src="../../img/step2-checker-preview.png" alt="Confronto tra UV stirate e UV pulite tramite la checker texture" style="max-width:1000px;width:100%;">
+  <img src="../../img/step2-checker-preview.jpg" alt="Confronto tra UV stirate e UV pulite tramite la checker texture" style="max-width:1000px;width:100%;">
 </p>
 
 ---
