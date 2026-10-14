@@ -31,6 +31,34 @@
 
 ---
 
+## Perché rifare le UV della scansione
+
+Le UV create dalla scansione originale non sono sempre adatte a una mesh ottimizzata. Spesso sono molto frammentate, con un numero elevato di piccole isole, e non sfruttano in modo efficiente tutto lo spazio texture **0-1**.
+
+Questo può lasciare grandi aree vuote nell'atlas, distribuire male la densità dei texel e rendere il bake più difficile da controllare. Dopo la riduzione della mesh, inoltre, il vecchio layout non descrive più in modo ideale la nuova superficie low-poly.
+
+ScanReady genera quindi un nuovo layout UV più ordinato e compatto. Le isole vengono ridotte e impacchettate in modo più efficiente, così la superficie ottimizzata può utilizzare meglio la texture e ricevere il dettaglio trasferito dalla scansione high-poly.
+
+<div class="sr-doc-row" style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; align-items:start; margin-top:20px; margin-bottom:12px;">
+
+<div style="min-width:0; text-align:center;">
+  <img src="../../img/step2-uv-original-fragmented.png" alt="Scansione originale con checker texture frammentata e distribuzione UV irregolare" style="max-width:100%;width:100%;">
+  <p><strong>Scansione originale</strong><br>UV molto frammentate e distribuzione irregolare nello spazio texture.</p>
+</div>
+
+<div style="min-width:0; text-align:center;">
+  <img src="../../img/step2-uv-scanready-packed.png" alt="Mesh ottimizzata da ScanReady con checker texture uniforme e UV più ordinate" style="max-width:100%;width:100%;">
+  <p><strong>Layout generato da ScanReady</strong><br>UV più ordinate, compatte e meglio distribuite sulla mesh ottimizzata.</p>
+</div>
+
+</div>
+
+Il confronto con la checker texture rende visibile il risultato: nella scansione originale il pattern è spezzato da molte piccole isole e da una densità poco uniforme; dopo **Generate UVs**, il pattern segue la superficie in modo più regolare e il layout è più adatto al bake.
+
+Rifare le UV non aggiunge dettaglio geometrico alla mesh. Permette però di organizzare meglio la superficie che riceverà le texture, migliorando l'efficienza dell'atlas e la qualità del trasferimento dal modello high-poly.
+
+---
+
 ## Perché servono le UV
 
 Una mesh semplificata è più leggera e più facile da gestire, ma ha comunque bisogno di coordinate texture coerenti.
