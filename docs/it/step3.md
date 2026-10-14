@@ -125,7 +125,7 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
 
 <p align="center"><strong>Usa il cursore per confrontare il modello originale e quello ottimizzato.</strong></p>
 
-<div class="sr-uv-compare sr-uv-compare--model" data-uv-compare>
+<div class="sr-uv-compare" data-uv-compare>
   <div class="sr-uv-compare__image">
     <img src="../../img/step3-wireframe-high-poly.png" alt="Wireframe del modello originale high-poly" class="sr-uv-compare__base">
     <div class="sr-uv-compare__overlay">
