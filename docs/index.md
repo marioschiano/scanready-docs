@@ -3,7 +3,7 @@
 Adaptive Scan Optimization and Baking Workflow for Blender
 
 <p align="center">
-  <img src="img/hero.png" style="max-width:620px;width:100%;">
+  <img src="img/hero.jpg" style="max-width:620px;width:100%;">
 </p>
 
 <br>
@@ -34,7 +34,7 @@ The result is a cleaner low-poly asset that keeps more geometry where it matters
 
 <!-- Replace placeholder with img/home-blender-decimate-vs-scanready.jpg -->
 <p align="center">
-  <img src="img/why-scanready-adaptive-optimization.png" alt="Comparison between Blender Decimate and ScanReady Adaptive Reduce on the same scan" style="max-width:1000px;width:100%;">
+  <img src="img/why-scanready-adaptive-optimization.jpg" alt="Comparison between Blender Decimate and ScanReady Adaptive Reduce on the same scan" style="max-width:1000px;width:100%;">
 </p>
 
 <p align="center">
