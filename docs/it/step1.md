@@ -42,7 +42,7 @@ Usa il preset Adaptive Reduce come punto di partenza rapido:
 </p>
 
 <p align="center">
-  <img src="../../img/step1-blender-decimate-vs-scanready.png" alt="Confronto tra la scansione high-poly originale e il risultato low-poly ottimizzato da ScanReady" style="max-width:1000px;width:100%;">
+  <img src="../../img/step1-blender-decimate-vs-scanready.jpg" alt="Confronto tra la scansione high-poly originale e il risultato low-poly ottimizzato da ScanReady" style="max-width:1000px;width:100%;">
 </p>
 
 <p align="center">
@@ -341,3 +341,4 @@ Una buona preview dovrebbe:
 - migliorare la risposta del viewport di Blender;
 - essere adatta alla generazione UV;
 - essere pronta per il texture bake nello step successivo.
+
