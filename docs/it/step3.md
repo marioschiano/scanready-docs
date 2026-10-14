@@ -1,7 +1,7 @@
 # Step 3 - Bake / Output
 
 <p align="center">
-  <img src="../../img/high-to-low-workflow.png" alt="Risultato bake di una scansione con poligoni ridotti e dettaglio visivo preservato" style="max-width:900px;width:100%;">
+  <img src="../../img/high-to-low-workflow.jpg" alt="Risultato bake di una scansione con poligoni ridotti e dettaglio visivo preservato" style="max-width:900px;width:100%;">
 </p>
 
 <p align="center">
@@ -63,9 +63,9 @@ Scelte comuni:
 
 Risoluzioni più alte aumentano molto l'uso di memoria.
 
-<!-- Sostituire il placeholder con ../../img/step3-texture-size-comparison.png -->
+<!-- Sostituire il placeholder con ../../img/step3-texture-size-comparison.jpg -->
 <p align="center">
-  <img src="../../img/step3-texture-size-comparison.png" alt="Placeholder confronto risoluzione texture" style="max-width:1100px;width:100%;">
+  <img src="../../img/step3-texture-size-comparison.jpg" alt="Placeholder confronto risoluzione texture" style="max-width:1100px;width:100%;">
 </p>
 
 ---
@@ -77,7 +77,7 @@ Divide il bake in più gruppi di materiali.
 Usare più materiali aumenta lo spazio texture disponibile e può conservare più dettaglio su scansioni grandi.
 
 <p align="center">
-  <img src="../../img/step3-material-count.png" alt="Ottimizzazione da quattro materiali 8K a un unico materiale 2K pronto per il realtime" style="max-width:1100px;width:100%;">
+  <img src="../../img/step3-material-count.jpg" alt="Ottimizzazione da quattro materiali 8K a un unico materiale 2K pronto per il realtime" style="max-width:1100px;width:100%;">
 </p>
 
 | Materiali | Uso tipico |
@@ -108,7 +108,7 @@ ScanReady cerca la sorgente high-poly corrispondente e la mesh UV ottimizzata, p
 Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consiglio su risoluzione e numero di materiali. Sono stime del dettaglio disponibile, non una garanzia della qualità finale.
 
 <p align="center">
-  <img src="../../img/step3-texture-detail.png" alt="Confronto del dettaglio visivo conservato dopo l'ottimizzazione delle texture" style="max-width:1000px;width:100%;">
+  <img src="../../img/step3-texture-detail.jpg" alt="Confronto del dettaglio visivo conservato dopo l'ottimizzazione delle texture" style="max-width:1000px;width:100%;">
 </p>
 
 <div class="sr-uv-compare" data-uv-compare>
@@ -226,7 +226,7 @@ Il controllo materiale **AO Mix** è disponibile in **Advanced > Bake Settings >
 ---
 
 <p align="center">
-  <img src="../../img/step3-bake-maps.png" alt="Set di mappe Base Color, Normal, Roughness e Occlusion generato sul nuovo atlas UV" style="max-width:1100px;width:100%;">
+  <img src="../../img/step3-bake-maps.jpg" alt="Set di mappe Base Color, Normal, Roughness e Occlusion generato sul nuovo atlas UV" style="max-width:1100px;width:100%;">
 </p>
 
 
@@ -358,7 +358,7 @@ Dopo il bake, controlla:
 ## Ottimizzazione realtime
 
 <p align="center">
-  <img src="../../img/step3-final-result.png" alt="Risultato finale: scansione da oltre un milione di facce convertita in un asset ottimizzato da circa ventimila facce" style="max-width:1100px;width:100%;">
+  <img src="../../img/step3-final-result.jpg" alt="Risultato finale: scansione da oltre un milione di facce convertita in un asset ottimizzato da circa ventimila facce" style="max-width:1100px;width:100%;">
 </p>
 
 Per workflow in tempo reale, il risultato finale dovrebbe bilanciare qualità visiva e performance.
