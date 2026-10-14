@@ -3,7 +3,7 @@
 Questa pagina mostra il modo più veloce per usare ScanReady.
 
 <p align="center">
-  <img src="../../img/hero.png" alt="Panoramica del workflow ScanReady" style="max-width:620px;width:100%;">
+  <img src="../../img/hero.jpg" alt="Panoramica del workflow ScanReady" style="max-width:620px;width:100%;">
 </p>
 
 ---
