@@ -111,7 +111,7 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
   <img src="../../img/step3-texture-detail.png" alt="Confronto del dettaglio visivo conservato dopo l'ottimizzazione delle texture" style="max-width:1000px;width:100%;">
 </p>
 
-<div class="sr-uv-compare sr-uv-compare--model" data-uv-compare>
+<div class="sr-uv-compare sr-uv-compare--model" data-uv-compare data-aspect-ratio="1245/928">
   <div class="sr-uv-compare__image">
     <div class="sr-uv-compare__base" role="img" aria-label="Modello originale high-poly senza wireframe" style="background-image:url('../../img/step3-model-high-poly.png')"></div>
     <div class="sr-uv-compare__overlay">
