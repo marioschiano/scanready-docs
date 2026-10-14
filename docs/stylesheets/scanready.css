@@ -275,9 +275,10 @@
 }
 
 .md-typeset .sr-uv-compare{max-width:980px;margin:1.5rem auto 2rem}
-.sr-uv-compare__image{position:relative;height:0 !important;padding-top:var(--sr-compare-padding, 74.538%) !important;aspect-ratio:auto !important;overflow:hidden;border:1px solid rgba(80,170,255,.45);border-radius:8px;background:#25272e;isolation:isolate}
+.sr-uv-compare__image{position:relative;height:auto !important;padding:0 !important;aspect-ratio:auto !important;overflow:hidden;border:1px solid rgba(80,170,255,.45);border-radius:8px;background:#25272e;isolation:isolate}
+.sr-uv-compare__image::before{content:"";display:block;width:100%;padding-top:var(--sr-compare-padding, 74.538%)}
 .sr-uv-compare__image img{position:absolute;inset:0;width:100% !important;height:100% !important;max-width:none !important;max-height:none !important;object-fit:cover !important;object-position:center;display:block}
-.sr-uv-compare--model .sr-uv-compare__image{position:relative !important;display:block !important;width:100% !important;height:0 !important;padding-top:var(--sr-compare-padding, 74.538%) !important;aspect-ratio:auto !important;min-height:0 !important;overflow:hidden !important;background:#25272e !important}
+.sr-uv-compare--model .sr-uv-compare__image{position:relative !important;display:block !important;width:100% !important;height:auto !important;padding:0 !important;aspect-ratio:auto !important;min-height:0 !important;overflow:hidden !important;background:#25272e !important}
 .sr-uv-compare--model .sr-uv-compare__base,
 .sr-uv-compare--model .sr-uv-compare__top{position:absolute !important;inset:0 !important;display:block !important;width:100% !important;height:100% !important;max-width:none !important;max-height:none !important;background-position:center !important;background-repeat:no-repeat !important;background-size:contain !important;background-color:#25272e !important}
 .sr-uv-compare--model .sr-uv-compare__overlay{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;max-width:none !important;overflow:hidden !important}
