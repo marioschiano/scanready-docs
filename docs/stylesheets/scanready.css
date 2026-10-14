@@ -321,3 +321,10 @@
   transform: translate(-50%, -50%);
 }
 
+
+/* Model sliders use the natural height of the base image. */
+.sr-uv-compare--model .sr-uv-compare__image{height:auto !important;padding:0 !important;aspect-ratio:auto !important}
+.sr-uv-compare--model .sr-uv-compare__image::before{display:none !important}
+.sr-uv-compare--model .sr-uv-compare__base{position:relative !important;inset:auto !important;width:100% !important;height:auto !important;max-width:none !important;display:block !important;object-fit:contain !important}
+.sr-uv-compare--model .sr-uv-compare__overlay{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important}
+.sr-uv-compare--model .sr-uv-compare__top{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;max-width:none !important;object-fit:fill !important}
