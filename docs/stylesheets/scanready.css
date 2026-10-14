@@ -276,7 +276,7 @@
 
 .md-typeset .sr-uv-compare{max-width:980px;margin:1.5rem auto 2rem}
 .sr-uv-compare__image{position:relative;aspect-ratio:1114/916;overflow:hidden;border:1px solid rgba(80,170,255,.45);border-radius:8px;background:#25272e;isolation:isolate}
-.sr-uv-compare__image img{position:absolute;inset:0;width:100% !important;height:100% !important;max-width:none !important;object-fit:cover !important;object-position:center;display:block}
+.sr-uv-compare__image img{position:absolute;top:0 !important;left:0 !important;right:auto !important;bottom:auto !important;inset:auto !important;width:100% !important;height:auto !important;max-width:none !important;aspect-ratio:auto !important;object-fit:fill !important;object-position:center;display:block}
 .sr-uv-compare__overlay{position:absolute;inset:0 auto 0 0;width:50%;overflow:hidden;z-index:2}
 .sr-uv-compare__overlay .sr-uv-compare__top{width:100%;max-width:none}
 .sr-uv-compare__handle{position:absolute;top:0;bottom:0;left:50%;z-index:4;width:3px;padding:0;border:0;background:#55d66f;transform:translateX(-50%);cursor:ew-resize}
@@ -285,7 +285,7 @@
 .sr-uv-compare__label--left,.sr-uv-compare__label--right{left:50%;right:auto;transform:translateX(-50%);white-space:nowrap}
 .sr-uv-compare__range{display:block;width:100%;margin:.75rem 0 0;accent-color:#55d66f}
 .sr-uv-compare--model .sr-uv-compare__image{aspect-ratio:1245/928}
-.sr-uv-compare--model .sr-uv-compare__image img{height:auto !important;aspect-ratio:1245/928;object-fit:fill !important}
+.sr-uv-compare--model .sr-uv-compare__image img{height:auto !important;aspect-ratio:auto !important;object-fit:fill !important}
 
 
 /* Keep the comparison gesture responsive on touch screens. */
