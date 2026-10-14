@@ -275,56 +275,16 @@
 }
 
 .md-typeset .sr-uv-compare{max-width:980px;margin:1.5rem auto 2rem}
-.sr-uv-compare__image{position:relative;height:auto !important;padding:0 !important;aspect-ratio:auto !important;overflow:hidden;border:1px solid rgba(80,170,255,.45);border-radius:8px;background:#25272e;isolation:isolate}
-.sr-uv-compare__image::before{content:"";display:block;width:100%;padding-top:var(--sr-compare-padding, 74.538%)}
-.sr-uv-compare__image img{position:absolute;inset:0;width:100% !important;height:100% !important;max-width:none !important;max-height:none !important;object-fit:cover !important;object-position:center;display:block}
-.sr-uv-compare--model .sr-uv-compare__image{position:relative !important;display:block !important;width:100% !important;height:auto !important;padding:0 !important;aspect-ratio:auto !important;min-height:0 !important;overflow:hidden !important;background:#25272e !important}
-.sr-uv-compare--model .sr-uv-compare__base,
-.sr-uv-compare--model .sr-uv-compare__top{position:absolute !important;inset:0 !important;display:block !important;width:100% !important;height:100% !important;max-width:none !important;max-height:none !important;background-position:center !important;background-repeat:no-repeat !important;background-size:contain !important;background-color:#25272e !important}
-.sr-uv-compare--model .sr-uv-compare__overlay{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;max-width:none !important;overflow:hidden !important}
-.sr-uv-compare__overlay{position:absolute;inset:0;width:100%;overflow:hidden;z-index:2;clip-path:inset(0 100% 0 0)}
-.sr-uv-compare__overlay .sr-uv-compare__top{width:100%;max-width:none}
+.sr-uv-compare__image{position:relative;overflow:hidden;border:1px solid rgba(80,170,255,.45);border-radius:8px;background:#25272e;isolation:isolate}
+.sr-uv-compare__image::before{display:none}
+.sr-uv-compare__base{position:relative !important;display:block !important;width:100% !important;height:auto !important;max-width:none !important;max-height:none !important}
+.sr-uv-compare__overlay{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;z-index:2;clip-path:inset(0 100% 0 0)}
+.sr-uv-compare__top{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;max-width:none !important;max-height:none !important;object-fit:fill !important}
 .sr-uv-compare__handle{position:absolute;top:0;bottom:0;left:50%;z-index:4;width:3px;padding:0;border:0;background:#55d66f;transform:translateX(-50%);cursor:ew-resize}
-.sr-uv-compare__handle span{position:absolute;top:50%;left:50%;width:34px;height:34px;border:2px solid #fff;border-radius:50%;background:#1f2229;transform:translate(-50%,-50%);box-shadow:0 2px 10px rgba(0,0,0,.45)}
+.sr-uv-compare__handle span{position:absolute;top:50%;left:50%;width:28px;height:28px;border:2px solid #fff;border-radius:50%;background:#1f2229;transform:translate(-50%,-50%);box-shadow:0 2px 10px rgba(0,0,0,.45)}
+.sr-uv-compare__handle span::after{content:"";position:absolute;top:50%;left:50%;width:8px;height:8px;border-radius:50%;background:var(--sr-green);transform:translate(-50%,-50%)}
 .sr-uv-compare__label{position:absolute;top:14px;z-index:5;padding:.35rem .65rem;border-radius:4px;color:#fff;background:rgba(20,23,30,.82);font-size:.78rem;font-weight:700;transition:opacity .28s ease}
-.sr-uv-compare__label--left,.sr-uv-compare__label--right{left:50%;right:auto;transform:translateX(-50%);white-space:nowrap}
+.sr-uv-compare__label--left,.sr-uv-compare__label--right{left:50%;transform:translateX(-50%);white-space:nowrap}
+.sr-uv-compare__image,.sr-uv-compare__handle{touch-action:none}
+.sr-uv-compare__handle{user-select:none;-webkit-user-select:none}
 .sr-uv-compare__range{display:block;width:100%;margin:.75rem 0 0;accent-color:#55d66f}
-
-
-/* Keep the comparison gesture responsive on touch screens. */
-.sr-uv-compare__image,
-.sr-uv-compare__handle {
-  touch-action: none;
-}
-
-.sr-uv-compare__handle {
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-
-/* Compact ScanReady comparison handle. */
-.sr-uv-compare__handle span {
-  width: 28px;
-  height: 28px;
-}
-
-.sr-uv-compare__handle span::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--sr-green);
-  transform: translate(-50%, -50%);
-}
-
-
-/* Model sliders use the natural height of the base image. */
-.sr-uv-compare--model .sr-uv-compare__image{height:auto !important;padding:0 !important;aspect-ratio:auto !important}
-.sr-uv-compare--model .sr-uv-compare__image::before{display:none !important}
-.sr-uv-compare--model .sr-uv-compare__base{position:relative !important;inset:auto !important;width:100% !important;height:auto !important;max-width:none !important;display:block !important;object-fit:contain !important}
-.sr-uv-compare--model .sr-uv-compare__overlay{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important}
-.sr-uv-compare--model .sr-uv-compare__top{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;max-width:none !important;object-fit:fill !important}
