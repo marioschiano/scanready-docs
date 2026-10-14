@@ -51,6 +51,8 @@ ScanReady genera quindi un nuovo layout UV più ordinato e compatto. Le isole ve
   </div>
 </div>
 
+<p align="center"><strong>Usa il cursore per confrontare direttamente le due versioni.</strong></p>
+
 Il confronto con la checker texture rende visibile il risultato: nella scansione originale il pattern è spezzato da molte piccole isole e da una densità poco uniforme; dopo **Generate UVs**, il pattern segue la superficie in modo più regolare e il layout è più adatto al bake.
 
 Rifare le UV non aggiunge dettaglio geometrico alla mesh. Permette però di organizzare meglio la superficie che riceverà le texture, migliorando l'efficienza dell'atlas e la qualità del trasferimento dal modello high-poly.
@@ -159,12 +161,7 @@ ScanReady include strumenti per rendere questo processo più veloce e più sempl
 
 <p align="center">
   <b>La dimensione del cage influenza direttamente il bake: un cage corretto cattura i dettagli in modo pulito senza proiettare geometria indesiderata.</b>
-<p align="center"><strong>Usa il cursore per confrontare direttamente le due versioni.</strong></p>
-<p align="center"><strong>Usa il cursore per confrontare direttamente le due versioni.</strong></p>
-
-
 </p>
-<p align="center"><strong>Usa il cursore per confrontare direttamente le due versioni.</strong></p>
 
 ---
 
@@ -341,5 +338,3 @@ UV buone e un cage configurato correttamente aiutano a mantenere l'asset:
 - più affidabile nei motori realtime;
 - visivamente più vicino alla scansione originale.
 
-
-<p align="center"><strong>Usa il cursore per confrontare direttamente le due versioni.</strong></p>
