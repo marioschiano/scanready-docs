@@ -174,7 +174,7 @@ Smart UV Project è il metodo automatico di unwrap UV di Blender.
 ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'unwrap prima del bake.
 
 <p align="center">
-  <img src="../../img/step2-uv-01.jpg" alt="Layout UV generato da ScanReady dalla mesh ottimizzata" style="max-width:760px;width:100%;">
+  <img src="../../img/step2-uv-01.png" alt="Layout UV generato da ScanReady dalla mesh ottimizzata" style="max-width:760px;width:100%;">
 </p>
 
 ---
