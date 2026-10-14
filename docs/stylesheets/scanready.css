@@ -290,3 +290,10 @@
 .sr-uv-compare__range{display:block;width:100%;margin:.75rem 0 0;accent-color:#55d66f}
 
 @media screen and (max-width:720px){.sr-uv-compare__label{font-size:.86rem;padding:.42rem .65rem;max-width:calc(100% - 1rem);overflow:hidden;text-overflow:ellipsis}}
+
+/* Keep image lightboxes focused on a single close action. */
+.glightbox-container .gprev,
+.glightbox-container .gnext{display:none !important}
+.glightbox-container .gclose{top:18px !important;right:18px !important;width:48px !important;height:48px !important;padding:10px !important;opacity:1 !important}
+.glightbox-container .gclose svg{width:28px !important;height:28px !important}
+@media screen and (max-width:720px){.glightbox-container .gclose{top:12px !important;right:12px !important;width:52px !important;height:52px !important}}
