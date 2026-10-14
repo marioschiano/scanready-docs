@@ -335,3 +335,6 @@ UV buone e un cage configurato correttamente aiutano a mantenere l'asset:
 - più facile da esportare;
 - più affidabile nei motori realtime;
 - visivamente più vicino alla scansione originale.
+
+
+<p align="center"><strong>Usa il cursore per confrontare direttamente le due versioni.</strong></p>
