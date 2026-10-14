@@ -3,7 +3,7 @@
 Workflow di ottimizzazione adattiva e bake per scansioni in Blender
 
 <p align="center">
-  <img src="../img/hero.png" alt="Panoramica del workflow ScanReady" style="max-width:620px;width:100%;">
+  <img src="../img/hero.jpg" alt="Panoramica del workflow ScanReady" style="max-width:620px;width:100%;">
 </p>
 
 <br>
@@ -32,7 +32,7 @@ ScanReady invece usa **Adaptive Reduce** per distribuire la riduzione in modo pi
 - Le superfici rumorose della scansione possono essere semplificate senza perdere subito l'identità dell'oggetto.
 
 <p align="center">
-  <img src="../img/why-scanready-adaptive-optimization.png" alt="Confronto tra Blender Decimate e ScanReady Adaptive Reduce" style="max-width:1000px;width:100%;">
+  <img src="../img/why-scanready-adaptive-optimization.jpg" alt="Confronto tra Blender Decimate e ScanReady Adaptive Reduce" style="max-width:1000px;width:100%;">
 </p>
 
 <p align="center">
