@@ -55,6 +55,9 @@ extra_css:
   - stylesheets/scanready.css
   - stylesheets/italian.css
 
+extra_javascript:
+  - javascripts/uv-compare.js
+
 extra:
   alternate:
     - name: English
