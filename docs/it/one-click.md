@@ -57,7 +57,7 @@ Quando clicchi **ONE CLICK BAKE**, ScanReady esegue il workflow completo da scan
 L'obiettivo è preservare l'identità visiva della scansione originale rendendo il modello più facile da usare nei progetti realtime.
 
 <p align="center">
-  <img src="../../img/one-click-before-after.png" alt="Confronto prima e dopo di una scansione high-poly ottimizzata con One Click Bake" style="max-width:820px;width:100%;">
+  <img src="../../img/one-click-before-after.jpg" alt="Confronto prima e dopo di una scansione high-poly ottimizzata con One Click Bake" style="max-width:820px;width:100%;">
 </p>
 
 ---
