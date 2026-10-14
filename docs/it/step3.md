@@ -117,8 +117,8 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
     <div class="sr-uv-compare__overlay">
       <img src="../../img/step3-model-high-poly.png" alt="Modello originale high-poly senza wireframe" class="sr-uv-compare__top">
     </div>
-    <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Original</span>
-    <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady Optimized</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Original · 1,011,823 faces</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady Optimized · 30,351 faces</span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta modello high-poly e modello ScanReady ottimizzato" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
@@ -131,8 +131,8 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
     <div class="sr-uv-compare__overlay">
       <img src="../../img/step3-wireframe-high-poly.png" alt="Wireframe del modello originale high-poly" class="sr-uv-compare__top">
     </div>
-    <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Wireframe</span>
-    <span class="sr-uv-compare__label sr-uv-compare__label--right">Optimized Wireframe</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Wireframe · 1,011,823 faces</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">Optimized Wireframe · 30,351 faces</span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta wireframe high-poly e wireframe ottimizzato" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
