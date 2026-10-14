@@ -295,38 +295,6 @@ Mostra la cartella usata dall'ultimo bake e include un pulsante cartella che la 
 
     Usa **Bake Folder** dopo il bake per aprire rapidamente la cartella realmente usata.
 
----
-
-## Sicurezza memoria
-
-Le scansioni fotogrammetriche grandi possono superare facilmente i limiti di memoria GPU durante il bake.
-
-ScanReady include workflow di bake più sicuri pensati per scene di produzione pesanti.
-
-<p align="center">
-  <img src="../../img/step3-memory-safety.png" alt="Controlli Memory Estimate, Safe Memory Bake e CPU Fallback per scansioni molto pesanti" style="max-width:1000px;width:100%;">
-</p>
-
----
-
-### Safe Memory Bake
-
-Usa un workflow di bake più sicuro progettato per ridurre la pressione sulla memoria in scene pesanti e scansioni grandi.
-
----
-
-### Force CPU Baking
-
-Esegue il bake sulla CPU quando la VRAM della GPU non è sufficiente. Richiede comunque abbastanza RAM di sistema.
-
-Di solito è più lento, ma può essere più sicuro su sistemi con VRAM limitata.
-
-!!! info "Force CPU Baking automatico"
-    Di default, **Force CPU Baking** resta disattivato per bake a singolo materiale.
-
-    Quando **Bake Materials** è impostato su `2` o più materiali, ScanReady abilita automaticamente **Force CPU Baking** come default più sicuro per workflow multi-materiale.
-
-    Puoi comunque disabilitarlo manualmente.
 
 ---
 
