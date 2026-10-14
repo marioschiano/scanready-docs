@@ -38,7 +38,7 @@ Usa il preset Adaptive Reduce come punto di partenza rapido:
 - **Hard Surface** per veicoli e scansioni hard-surface, dove un passaggio approssimato più veloce deve proteggere soprattutto i cambi di normale più forti.
 
 <p align="center">
-  <img src="../../img/step1-adaptive-reduce.png" alt="Adaptive Reduce trasforma una scansione da oltre un milione di poligoni in una geometria ottimizzata pronta per il realtime" style="max-width:820px;width:100%;">
+  <img src="../../img/step1-adaptive-reduce.jpg" alt="Adaptive Reduce trasforma una scansione da oltre un milione di poligoni in una geometria ottimizzata pronta per il realtime" style="max-width:820px;width:100%;">
 </p>
 
 <p align="center">
