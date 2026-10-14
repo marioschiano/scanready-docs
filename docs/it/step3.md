@@ -135,19 +135,9 @@ Se ScanReady non riesce a trovare automaticamente una coppia high-to-UV corrispo
 
 ---
 
-### Bake Samples
-
-Controlla i samples di bake Cycles.
-
-Valori più alti possono ridurre il rumore, soprattutto per Ambient Occlusion, ma aumentano anche il tempo di bake.
 
 ---
 
-### Bake Margin
-
-Aggiunge padding in pixel attorno alle isole UV bake.
-
-Aiuta a ridurre seam visibili e texture bleeding.
 
 ---
 
