@@ -155,17 +155,19 @@ Aiuta a ridurre seam visibili e texture bleeding.
 
 ### Bake Base Color
 
-Cuoce le informazioni diffuse o colore dalla scansione originale.
-
-Di solito è la texture più importante per preservare l'aspetto dell'oggetto catturato.
+<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
+<div style="min-width:0;"><p>Cuoce le informazioni diffuse o colore dalla scansione originale.</p><p>È attiva per impostazione predefinita ed è di solito la texture più importante per preservare l'aspetto dell'oggetto catturato.</p></div>
+<div style="text-align:center;"><img src="../../img/step3-bake-base-color.png" alt="Bake Base Color attivo nello Step 3" style="max-width:100%;width:100%;"></div>
+</div>
 
 ---
 
 ### Bake Normal Map
 
-Cuoce una normal map.
-
-Le normal map preservano l'aspetto del dettaglio di superficie senza mantenere la geometria high-poly originale.
+<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
+<div style="min-width:0;"><p>Cuoce una normal map.</p><p>Le normal map preservano l'aspetto del dettaglio di superficie senza mantenere la geometria high-poly originale.</p></div>
+<div style="text-align:center;"><img src="../../img/step3-bake-normal-map.png" alt="Bake Normal Map attivo nello Step 3" style="max-width:100%;width:100%;"></div>
+</div>
 
 Questo è particolarmente utile per asset VR e videogame, dove la geometria deve restare leggera.
 
@@ -196,9 +198,10 @@ Anche le texture roughness vengono gestite come dati tecnici **Non-Color**.
 
 ### Bake Occlusion Map
 
-Cuoce una mappa Ambient Occlusion.
-
-L'AO può aiutare ad aggiungere ombre di contatto e profondità di superficie al materiale finale.
+<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
+<div style="min-width:0;"><p>Cuoce una mappa Ambient Occlusion.</p><p>L'AO può aiutare ad aggiungere ombre di contatto e profondità di superficie al materiale finale.</p></div>
+<div style="text-align:center;"><img src="../../img/step3-bake-occlusion-map.png" alt="Bake Occlusion Map attivo nello Step 3" style="max-width:100%;width:100%;"></div>
+</div>
 
 Il controllo materiale **AO Mix** è disponibile in **Advanced > Bake Settings > Occlusion Settings** quando **Bake Occlusion Map** è attivo. Il valore predefinito è `1.0`, che applica l'intera texture AO bake al materiale finale.
 
@@ -248,23 +251,6 @@ Influenza l'aspetto del materiale, non la texture AO bake in sé.
 
 ## Impostazioni output
 
-<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin-top:16px; margin-bottom:28px;">
-
-<div style="flex:1 1 0; min-width:0;">
-
-<p>Il pannello Step 3 contiene le opzioni di bake, salvataggio texture e apertura della cartella di output.</p>
-
-<p>Qui scegli la risoluzione, il numero di materiali bake, le mappe da generare, il formato immagine e la cartella in cui salvare le texture.</p>
-
-</div>
-
-<div style="flex:0 0 300px; text-align:center;">
-  <p style="margin-top:0;"><strong>STEP 3 Bake / Output</strong></p>
-  <img src="../../img/step3-bake-output-panel.png" alt="Pannello Step 3 Bake Output con Save Images, Open Folder After Bake, Image Format e Output Folder" style="max-width:300px;width:100%;">
-</div>
-
-</div>
-
 ### Save Images
 
 Salva le texture bake su disco.
@@ -275,9 +261,10 @@ Abilitalo quando esporti asset per game engine, archivi, workflow esterni o cons
 
 ### Open Folder After Bake
 
-Apre automaticamente la cartella del bake quando **Save Images** è attivo e il salvataggio delle texture è completato.
-
-Attivalo se vuoi controllare subito i file generati senza aprire manualmente **Bake Folder** dopo il bake.
+<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
+<div style="min-width:0;"><p>Apre automaticamente la cartella del bake quando **Save Images** è attivo e il salvataggio delle texture è completato.</p><p>È utile quando vuoi controllare subito i file generati, copiarli in un progetto esterno o portarli in un game engine.</p></div>
+<div style="text-align:center;"><img src="../../img/step3-open-folder-after-bake.png" alt="Open Folder After Bake attivo nello Step 3" style="max-width:100%;width:100%;"></div>
+</div>
 
 ---
 
@@ -311,9 +298,24 @@ Utile per asset ad alto dettaglio, workflow di archivio o normal map dettagliate
 
 ### Output Folder
 
-Definisce dove vengono salvate le texture bake.
+<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
 
-Percorsi relativi come `//bake/` vengono salvati accanto al file Blender corrente.
+<div style="min-width:0;">
+
+<p>Definisce dove vengono salvate le texture bake.</p>
+
+<p>Percorsi relativi come <code>//bake/</code> vengono salvati accanto al file Blender corrente.</p>
+
+<p>Quando scegli o modifichi il percorso, ScanReady mostra la cartella di destinazione nel riquadro <strong>Bake Folder</strong>. Dopo il bake puoi usare il pulsante cartella per aprire rapidamente la posizione dei file generati.</p>
+
+</div>
+
+<div style="text-align:center;">
+  <p style="margin-top:0;"><strong>Output Folder</strong></p>
+  <img src="../../img/step3-output-folder.png" alt="Impostazioni Output Folder e Bake Folder nello Step 3 di ScanReady" style="max-width:100%;width:100%;">
+</div>
+
+</div>
 
 ---
 
@@ -326,9 +328,7 @@ Mostra la cartella usata dall'ultimo bake e include un pulsante cartella che la 
 !!! tip "Output Folder e Bake Folder"
     Usa **Output Folder** per scegliere dove ScanReady deve salvare le texture.
 
-    Usa **Bake Folder** dopo il bake per aprire manualmente la cartella che contiene le texture generate.
-
-    Se **Open Folder After Bake** è attivo, ScanReady apre automaticamente la stessa cartella alla fine del bake.
+    Usa **Bake Folder** dopo il bake per aprire rapidamente la cartella realmente usata.
 
 ---
 
@@ -422,3 +422,4 @@ Un buon asset bake dovrebbe:
 - evitare densità geometrica inutile.
 
 Il bake è ciò che permette a una mesh ottimizzata leggera di conservare gran parte della ricchezza visiva della scansione high-poly originale.
+
