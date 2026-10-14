@@ -211,41 +211,6 @@ Il controllo materiale **AO Mix** è disponibile in **Advanced > Bake Settings >
   <img src="../../img/step3-bake-maps.png" alt="Set di mappe Base Color, Normal, Roughness e Occlusion generato sul nuovo atlas UV" style="max-width:1100px;width:100%;">
 </p>
 
----
-
-### AO Source
-
-Controlla come viene generata Ambient Occlusion.
-
-Puoi cuocere AO dalla sorgente high-poly o calcolarla direttamente dalla mesh low-poly.
-
----
-
-### Auto AO Distance
-
-Stima automaticamente la distanza AO dalla dimensione generale del modello.
-
----
-
-### AO Distance
-
-Controlla manualmente la distanza dei raggi AO quando la distanza automatica è disattivata.
-
----
-
-### AO Samples
-
-Controlla la qualità del bake Ambient Occlusion.
-
-Valori più alti producono AO più pulita ma aumentano il tempo di bake.
-
----
-
-### AO Mix
-
-Controlla quanto la texture Ambient Occlusion bake viene miscelata nel materiale Base Color finale.
-
-Influenza l'aspetto del materiale, non la texture AO bake in sé.
 
 ---
 
