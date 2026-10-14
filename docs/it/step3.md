@@ -113,9 +113,9 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
 
 <div class="sr-uv-compare sr-uv-compare--model" data-uv-compare>
   <div class="sr-uv-compare__image">
-    <img src="../../img/step3-model-optimized.png" alt="Modello ottimizzato ScanReady senza wireframe" class="sr-uv-compare__base">
+    <img src="../../img/step3-model-high-poly.png" alt="Modello originale high-poly senza wireframe" class="sr-uv-compare__base">
     <div class="sr-uv-compare__overlay">
-      <img src="../../img/step3-model-high-poly.png" alt="Modello originale high-poly senza wireframe" class="sr-uv-compare__top">
+      <img src="../../img/step3-model-optimized.png" alt="Modello ottimizzato ScanReady senza wireframe" class="sr-uv-compare__top">
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Original · 1,011,823 faces</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady Optimized · 30,351 faces</span>
@@ -127,9 +127,9 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
 
 <div class="sr-uv-compare sr-uv-compare--model" data-uv-compare>
   <div class="sr-uv-compare__image">
-    <img src="../../img/step3-wireframe-optimized.png" alt="Wireframe del modello ottimizzato ScanReady" class="sr-uv-compare__base">
+    <img src="../../img/step3-wireframe-high-poly.png" alt="Wireframe del modello originale high-poly" class="sr-uv-compare__base">
     <div class="sr-uv-compare__overlay">
-      <img src="../../img/step3-wireframe-high-poly.png" alt="Wireframe del modello originale high-poly" class="sr-uv-compare__top">
+      <img src="../../img/step3-wireframe-optimized.png" alt="Wireframe del modello ottimizzato ScanReady" class="sr-uv-compare__top">
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Wireframe · 1,011,823 faces</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">Optimized Wireframe · 30,351 faces</span>
