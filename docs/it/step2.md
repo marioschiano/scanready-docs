@@ -94,7 +94,7 @@ Molte scansioni fotogrammetriche contengono layout UV che sprecano grandi porzio
 Dopo l'ottimizzazione, ScanReady può generare un layout UV più pulito, con packing migliore e uso più efficiente delle texture.
 
 <p align="center">
-  <img src="../../img/step2-uv-packing.png" alt="Packing UV ottimizzato in un unico atlas per ridurre draw call e semplificare l'esportazione" style="max-width:1000px;width:100%;">
+  <img src="../../img/step2-uv-packing-efficient.png" alt="Packing UV ottimizzato in un unico atlas per ridurre draw call e semplificare l'esportazione" style="max-width:1000px;width:100%;">
 </p>
 
 Questo permette all'asset ottimizzato di conservare più dettaglio usando meno materiali e meno memoria texture.
