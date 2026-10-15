@@ -32,7 +32,7 @@ Questa è la differenza principale tra un semplice passaggio Blender Decimate e 
 
 ### Visualizzare i pesi adattivi
 
-Lo stesso modello può essere visualizzato con il materiale normale oppure con la modalità **Show Pesi adattivi**. I colori mostrano dove ScanReady tende a proteggere il dettaglio e dove può ridurre la geometria più aggressivamente.
+Lo stesso modello può essere visualizzato con il materiale normale oppure con la modalità **Show Riduzione adattiva**. I colori mostrano dove ScanReady tende a proteggere il dettaglio e dove può ridurre la geometria più aggressivamente.
 
 <div class="sr-uv-compare" data-uv-compare>
   <div class="sr-uv-compare__image">
@@ -41,9 +41,9 @@ Lo stesso modello può essere visualizzato con il materiale normale oppure con l
       <img loading="lazy" decoding="async" src="../../img/adaptive-weights.png" alt="Pesi Adaptive Reduce visualizzati con colori" class="sr-uv-compare__top">
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">Scansione originale</span>
-    <span class="sr-uv-compare__label sr-uv-compare__label--right">Pesi adattivi</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">Riduzione adattiva</span>
     <span class="sr-uv-compare__material sr-uv-compare__adaptive-legend sr-uv-compare__adaptive-legend--detail"><strong>Dettaglio protetto</strong><small>Blu / verde</small></span>
-    <span class="sr-uv-compare__material sr-uv-compare__adaptive-legend sr-uv-compare__adaptive-legend--flat"><strong>Aree piatte</strong><small>Red / yellow</small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__adaptive-legend sr-uv-compare__adaptive-legend--flat"><strong>Maggiore riduzione</strong><small>Rosso / giallo</small></span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta la scansione originale e i pesi Adaptive Reduce" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
