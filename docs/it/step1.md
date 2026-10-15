@@ -5,7 +5,7 @@ Crea una preview ottimizzata e leggera dalla scansione high-poly.
 Il tempo di elaborazione dipende dalla densità della scansione e dalla potenza del computer: una scansione con milioni di poligoni può richiedere anche circa un minuto o più su un PC di media potenza.
 
 <div style="width:100%; text-align:left;">
-  <img src="../../img/step1-reduce.gif" alt="Controllo Optimize Reduce di ScanReady che aggiorna la densità della preview low-poly" style="max-width:820px;width:100%;">
+  <img decoding="async" fetchpriority="high" src="../../img/step1-reduce.gif" alt="Controllo Optimize Reduce di ScanReady che aggiorna la densità della preview low-poly" style="max-width:820px;width:100%;">
 </div>
 
 <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
@@ -36,9 +36,9 @@ Lo stesso modello può essere visualizzato con il materiale normale oppure con l
 
 <div class="sr-uv-compare" data-uv-compare>
   <div class="sr-uv-compare__image">
-    <img src="../../img/adaptive-original.png" alt="Scansione originale con texture" class="sr-uv-compare__base">
+    <img loading="lazy" decoding="async" src="../../img/adaptive-original.png" alt="Scansione originale con texture" class="sr-uv-compare__base">
     <div class="sr-uv-compare__overlay">
-      <img src="../../img/adaptive-weights.png" alt="Pesi Adaptive Reduce visualizzati con colori" class="sr-uv-compare__top">
+      <img loading="lazy" decoding="async" src="../../img/adaptive-weights.png" alt="Pesi Adaptive Reduce visualizzati con colori" class="sr-uv-compare__top">
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">Original Scan</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">Adaptive Weights</span>
@@ -58,11 +58,11 @@ Usa il preset Adaptive Reduce come punto di partenza rapido:
 - **Hard Surface** per veicoli e scansioni hard-surface, dove un passaggio approssimato più veloce deve proteggere soprattutto i cambi di normale più forti.
 
 <p align="center">
-  <img src="../../img/step1-adaptive-reduce.jpg" alt="Adaptive Reduce trasforma una scansione da oltre un milione di poligoni in una geometria ottimizzata pronta per il realtime" style="max-width:820px;width:100%;">
+  <img loading="lazy" decoding="async" src="../../img/step1-adaptive-reduce.jpg" alt="Adaptive Reduce trasforma una scansione da oltre un milione di poligoni in una geometria ottimizzata pronta per il realtime" style="max-width:820px;width:100%;">
 </p>
 
 <p align="center">
-  <img src="../../img/step1-blender-decimate-vs-scanready.jpg" alt="Confronto tra la scansione high-poly originale e il risultato low-poly ottimizzato da ScanReady" style="max-width:1000px;width:100%;">
+  <img loading="lazy" decoding="async" src="../../img/step1-blender-decimate-vs-scanready.jpg" alt="Confronto tra la scansione high-poly originale e il risultato low-poly ottimizzato da ScanReady" style="max-width:1000px;width:100%;">
 </p>
 
 <p align="center">
@@ -153,7 +153,7 @@ Gli aggiornamenti realtime dipendono dalla complessità della scansione e dalle 
 
 <div style="flex:0 0 360px; text-align:center;">
   <p style="margin-top:0;"><strong>Optimize / Reduce</strong></p>
-  <img src="../../img/step1-slider_reduce.gif" alt="Slider Optimize Reduce di ScanReady che aggiorna il valore della preview low-poly" style="width:360px; max-width:100%;">
+  <img loading="lazy" decoding="async" src="../../img/step1-slider_reduce.gif" alt="Slider Optimize Reduce di ScanReady che aggiorna il valore della preview low-poly" style="width:360px; max-width:100%;">
 </div>
 
 </div>
@@ -208,7 +208,7 @@ Mostra la percentuale di riduzione corrente in base alle impostazioni di ottimiz
 
 <div style="flex:0 0 320px; text-align:center;">
   <p style="margin-top:0;"><strong>Create Lowpoly Preview</strong></p>
-  <img src="../../img/step1-preview-reduce_optimize.png" alt="Pannello Step 1 Preview Reduce di ScanReady con pulsante Create Lowpoly Preview" style="width:320px; max-width:100%;">
+  <img loading="lazy" decoding="async" src="../../img/step1-preview-reduce_optimize.png" alt="Pannello Step 1 Preview Reduce di ScanReady con pulsante Create Lowpoly Preview" style="width:320px; max-width:100%;">
 </div>
 
 </div>
@@ -219,7 +219,7 @@ Mostra la percentuale di riduzione corrente in base alle impostazioni di ottimiz
 
 <div style="float:right; width:320px; max-width:42%; margin:0 0 18px 28px; text-align:center;">
   <p style="margin-top:0;"><strong>View Options</strong></p>
-  <img src="../../img/step1-preview-view options.jpg" alt="Pannello View Options di ScanReady con Show Wireframe e Show Checker" style="width:100%; max-width:100%;">
+  <img loading="lazy" decoding="async" src="../../img/step1-preview-view options.jpg" alt="Pannello View Options di ScanReady con Show Wireframe e Show Checker" style="width:100%; max-width:100%;">
 </div>
 
 Nel pannello attuale di ScanReady, **Show Wireframe** e **Show Checker** si trovano prima dello **STEP 1**.
@@ -236,7 +236,7 @@ Mostra la topologia dell'oggetto preview.
 Usalo per controllare se la mesh è ancora troppo densa o se è stata ridotta troppo aggressivamente.
 
 <div style="width:100%; text-align:left;">
-  <img src="../../img/step1-wireframe.gif" alt="Preview Show Wireframe di ScanReady su una scansione ottimizzata" style="max-width:820px;width:100%;">
+  <img loading="lazy" decoding="async" src="../../img/step1-wireframe.gif" alt="Preview Show Wireframe di ScanReady su una scansione ottimizzata" style="max-width:820px;width:100%;">
 </div>
 
 ---
@@ -248,7 +248,7 @@ Mostra una texture checker sulla mesh preview.
 Aiuta a controllare densità UV e distorsione texture.
 
 <div style="width:100%; text-align:left;">
-  <img src="../../img/step1-checker.gif" alt="Preview Show Checker di ScanReady su una scansione ottimizzata" style="max-width:820px;width:100%;">
+  <img loading="lazy" decoding="async" src="../../img/step1-checker.gif" alt="Preview Show Checker di ScanReady su una scansione ottimizzata" style="max-width:820px;width:100%;">
 </div>
 
 ---
@@ -283,13 +283,13 @@ Quadrati più grandi sono utili per controlli generali rapidi.
 
 <div style="flex:0 0 320px; text-align:center;">
   <p style="margin-top:0;"><strong>Checker Mix / Checker UV Scale</strong></p>
-  <img src="../../img/step1-checker mix-scale.jpg" alt="Controlli Checker Mix e Checker UV Scale di ScanReady" style="width:320px; max-width:100%;">
+  <img loading="lazy" decoding="async" src="../../img/step1-checker mix-scale.jpg" alt="Controlli Checker Mix e Checker UV Scale di ScanReady" style="width:320px; max-width:100%;">
 </div>
 
 </div>
 
 <div style="width:100%; text-align:left; margin-bottom:20px;">
-  <img src="../../img/step1-checker-mix.gif" alt="Controllo Checker Mix di ScanReady che regola la forza dell'overlay checker" style="max-width:820px;width:100%;">
+  <img loading="lazy" decoding="async" src="../../img/step1-checker-mix.gif" alt="Controllo Checker Mix di ScanReady che regola la forza dell'overlay checker" style="max-width:820px;width:100%;">
 </div>
 
 <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
@@ -297,7 +297,7 @@ Checker Mix regola quanto è visibile l'overlay checker sopra la superficie del 
 </p>
 
 <div style="width:100%; text-align:left; margin-bottom:20px;">
-  <img src="../../img/step1-checker-scale.gif" alt="Controllo Checker UV Scale di ScanReady che cambia la dimensione dei quadrati checker" style="max-width:820px;width:100%;">
+  <img loading="lazy" decoding="async" src="../../img/step1-checker-scale.gif" alt="Controllo Checker UV Scale di ScanReady che cambia la dimensione dei quadrati checker" style="max-width:820px;width:100%;">
 </div>
 
 <p style="font-size:0.9em; opacity:0.75; margin-top:6px;">
@@ -316,7 +316,7 @@ Checker UV Scale cambia la dimensione del pattern checker per rendere più facil
     Puoi tornare allo Step 1 in qualsiasi momento. Se sei già nello Step 2 o nello Step 3 e decidi che il modello deve essere più leggero o più dettagliato, cambia qui le impostazioni di riduzione, clicca di nuovo **Create Lowpoly Preview**, poi continua generando UV e bake di nuovo.
 
 <div style="width:100%; text-align:left;">
-  <img src="../../img/step1-cleaner.gif" alt="Pulizia mesh di ScanReady prima della preview low-poly" style="max-width:820px;width:100%;">
+  <img loading="lazy" decoding="async" src="../../img/step1-cleaner.gif" alt="Pulizia mesh di ScanReady prima della preview low-poly" style="max-width:820px;width:100%;">
 </div>
 
 ScanReady pulisce la scansione high-poly selezionata, rimuove rumore mesh comune come poligoni staccati o vertici isolati, poi crea un oggetto preview ottimizzato.
