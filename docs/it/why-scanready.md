@@ -33,19 +33,19 @@ ScanReady non ottimizza soltanto la geometria. Il workflow prepara anche UV, mat
 
 <div class="sr-uv-compare" data-uv-compare>
   <div class="sr-uv-compare__image">
-    <img src="../../img/step3-model-high-poly.jpg" alt="Modello originale high-poly" class="sr-uv-compare__base">
+    <img src="../../img/adaptive-original.png" alt="Scansione originale con texture" class="sr-uv-compare__base">
     <div class="sr-uv-compare__overlay">
-      <img src="../../img/step3-model-optimized.jpg" alt="Modello ottimizzato ScanReady" class="sr-uv-compare__top">
+      <img src="../../img/adaptive-weights.png" alt="Pesi Adaptive Reduce visualizzati con colori" class="sr-uv-compare__top">
     </div>
-    <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Original · 1,011,823 faces</span>
-    <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady Optimized · 30,351 faces</span>
-    <span class="sr-uv-compare__material sr-uv-compare__material--left"><strong>4 materials</strong><small>8K textures</small></span>
-    <span class="sr-uv-compare__material sr-uv-compare__material--right"><strong>1 material</strong><small>8K textures</small></span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">Original Scan</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">Adaptive Weights</span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--left"><strong>Detail protected</strong><small>Blue / green</small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--right"><strong>Flat areas</strong><small>Red / yellow</small></span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta il modello originale e quello ottimizzato" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
 
-<p align="center"><strong>Sposta il cursore per confrontare poligoni, materiali e texture.</strong></p>
+<p align="center"><strong>Sposta il cursore per confrontare la scansione e i pesi Adaptive Reduce.</strong></p>
 
 !!! note "Ottimizzazione e retopology"
     ScanReady usa la riduzione dei poligoni: non crea automaticamente una topologia a quad adatta all’animazione. Per modelli che devono deformarsi, può servire un passaggio di retopology dedicato.
