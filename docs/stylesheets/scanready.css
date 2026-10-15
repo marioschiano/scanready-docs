@@ -289,6 +289,9 @@
 .sr-uv-compare__material small{font-size:.82rem;font-weight:600;opacity:.88}
 .sr-uv-compare__material--left{left:17%}
 .sr-uv-compare__material--right{left:83%}
+.sr-uv-compare__adaptive-legend{left:76%}
+.sr-uv-compare__adaptive-legend--detail{top:42%}
+.sr-uv-compare__adaptive-legend--flat{top:58%}
 .sr-uv-compare__label--left,.sr-uv-compare__label--right{left:50%;transform:translateX(-50%);white-space:nowrap}
 .sr-uv-compare__image,.sr-uv-compare__handle{touch-action:none}
 .sr-uv-compare__handle{user-select:none;-webkit-user-select:none}
