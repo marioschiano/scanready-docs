@@ -47,6 +47,8 @@ Lo stesso modello può essere visualizzato con il materiale normale oppure con l
   </div>
 </div>
 
+<p align="center" style="font-size:0.9em; margin-top:10px;"><strong>Blu:</strong> dettaglio preservato. <strong>Rosso:</strong> maggiore riduzione dei poligoni.</p>
+
 <p align="center"><strong>Sposta il cursore per confrontare la scansione e la distribuzione dei pesi adattivi.</strong></p>
 
 Usa il preset Adaptive Reduce come punto di partenza rapido:
