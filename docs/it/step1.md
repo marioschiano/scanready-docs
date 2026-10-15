@@ -30,6 +30,26 @@ Invece di trattare ogni superficie allo stesso modo, permette alle aree piatte d
 
 Questa è la differenza principale tra un semplice passaggio Blender Decimate e il workflow ScanReady. Una decimazione standard può ridurre bordi utili e regioni piatte rumorose con la stessa priorità. ScanReady crea prima pesi adattivi, poi li usa per ridurre le superfici ampie in modo più aggressivo mantenendo più protetti cambi di normale forti, silhouette, bordi e transizioni importanti della forma.
 
+### Visualizzare i pesi adattivi
+
+Lo stesso modello può essere visualizzato con il materiale normale oppure con la modalità **Show Adaptive Weights**. I colori mostrano dove ScanReady tende a proteggere il dettaglio e dove può ridurre la geometria più aggressivamente.
+
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img src="../../img/adaptive-original.png" alt="Scansione originale con texture" class="sr-uv-compare__base">
+    <div class="sr-uv-compare__overlay">
+      <img src="../../img/adaptive-weights.png" alt="Pesi Adaptive Reduce visualizzati con colori" class="sr-uv-compare__top">
+    </div>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">Original Scan</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">Adaptive Weights</span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--left"><strong>Detail protected</strong><small>Blue / green</small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--right"><strong>Flat areas</strong><small>Red / yellow</small></span>
+    <button class="sr-uv-compare__handle" type="button" aria-label="Confronta la scansione originale e i pesi Adaptive Reduce" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
+</div>
+
+<p align="center"><strong>Sposta il cursore per confrontare la scansione e la distribuzione dei pesi adattivi.</strong></p>
+
 Usa il preset Adaptive Reduce come punto di partenza rapido:
 
 - **Balanced** per la maggior parte delle scansioni e degli asset realtime generici.
