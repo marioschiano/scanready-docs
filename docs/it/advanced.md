@@ -392,9 +392,9 @@ Adaptive Reduce controlla come ScanReady distribuisce la riduzione sulla scansio
 I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Lowpoly Preview</strong>.
 </p>
 
-<div class="sr-adaptive-gradient-doc" aria-label="Gradiente dei pesi adattivi">
+<div class="sr-adaptive-gradient-doc" aria-label="Gradiente dei pesi adattivi: dalla riduzione minima alla riduzione alta">
   <div class="sr-adaptive-gradient-doc__bar"></div>
-  <div class="sr-adaptive-gradient-doc__labels"><span>Dettaglio protetto</span><span>Riduzione parziale</span><span>Massima riduzione</span></div>
+  <div class="sr-adaptive-gradient-doc__labels"><span>Riduzione minima</span><span>Riduzione media</span><span>Riduzione alta</span></div>
 </div>
 
 <div class="admonition note">
