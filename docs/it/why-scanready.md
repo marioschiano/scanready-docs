@@ -39,8 +39,8 @@ ScanReady non ottimizza soltanto la geometria. Il workflow prepara anche UV, mat
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">Original Scan</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">Adaptive Weights</span>
-    <span class="sr-uv-compare__material sr-uv-compare__material--left"><strong>Detail protected</strong><small>Blue / green</small></span>
-    <span class="sr-uv-compare__material sr-uv-compare__material--right"><strong>Flat areas</strong><small>Red / yellow</small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__adaptive-legend sr-uv-compare__adaptive-legend--detail"><strong>Detail protected</strong><small>Blue / green</small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__adaptive-legend sr-uv-compare__adaptive-legend--flat"><strong>Flat areas</strong><small>Red / yellow</small></span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta il modello originale e quello ottimizzato" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
