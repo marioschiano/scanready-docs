@@ -38,9 +38,9 @@ ScanReady non ottimizza soltanto la geometria. Il workflow prepara anche UV, mat
       <img src="../../img/adaptive-weights.png" alt="Pesi Adaptive Reduce visualizzati con colori" class="sr-uv-compare__top" loading="lazy" decoding="async">
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">Scansione originale</span>
-    <span class="sr-uv-compare__label sr-uv-compare__label--right">Pesi adattivi</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">Riduzione adattiva</span>
     <span class="sr-uv-compare__material sr-uv-compare__adaptive-legend sr-uv-compare__adaptive-legend--detail"><strong>Dettaglio protetto</strong><small>Blu / verde</small></span>
-    <span class="sr-uv-compare__material sr-uv-compare__adaptive-legend sr-uv-compare__adaptive-legend--flat"><strong>Aree piatte</strong><small>Red / yellow</small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__adaptive-legend sr-uv-compare__adaptive-legend--flat"><strong>Maggiore riduzione</strong><small>Rosso / giallo</small></span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta il modello originale e quello ottimizzato" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
