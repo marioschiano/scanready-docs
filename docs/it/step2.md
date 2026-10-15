@@ -31,6 +31,30 @@
 
 ---
 
+## Da quattro materiali a un unico layout UV
+
+Quando una scansione è composta da più materiali, ogni materiale può avere il proprio layout UV. Nell'esempio seguente il modello high-poly usa quattro materiali e quattro layout UV separati.
+
+ScanReady semplifica il workflow creando sulla mesh ottimizzata un unico materiale e un unico layout UV, più semplice da gestire e pronto per il bake.
+
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img src="../../img/step2-uv-four-materials.jpg" alt="UV originali separate per quattro materiali" class="sr-uv-compare__base">
+    <div class="sr-uv-compare__overlay">
+      <img src="../../img/step2-uv-one-material.jpg" alt="Layout UV unico della mesh ottimizzata ScanReady" class="sr-uv-compare__top">
+    </div>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">4 materiali · 4 layout UV</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">1 materiale · 1 layout UV</span>
+    <button class="sr-uv-compare__handle" type="button" aria-label="Confronta UV separate e layout UV unico" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
+</div>
+
+<p align="center"><strong>Sposta il cursore per confrontare le UV originali con il layout unico generato da ScanReady.</strong></p>
+
+Il vantaggio non è solo visivo: un unico materiale e un unico atlas semplificano il bake, l'esportazione e la gestione dell'asset nei motori realtime.
+
+---
+
 ## Perché rifare le UV della scansione
 
 Le UV create dalla scansione originale non sono sempre adatte a una mesh ottimizzata. Spesso sono molto frammentate, con un numero elevato di piccole isole, e non sfruttano in modo efficiente tutto lo spazio texture **0-1**.
