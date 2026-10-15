@@ -135,8 +135,6 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Wireframe · 1,011,823 faces</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">Optimized Wireframe · 30,351 faces</span>
-    <span class="sr-uv-compare__material sr-uv-compare__material--left">4 mat · 8K</span>
-    <span class="sr-uv-compare__material sr-uv-compare__material--right">1 mat · 8K</span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta wireframe high-poly e wireframe ottimizzato" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
