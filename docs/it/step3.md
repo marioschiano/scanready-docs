@@ -1,7 +1,7 @@
 # Step 3 - Bake / Output
 
 <p align="center">
-  <img src="../../img/high-to-low-workflow.jpg" alt="Risultato bake di una scansione con poligoni ridotti e dettaglio visivo preservato" style="max-width:900px;width:100%;">
+  <img src="../../img/high-to-low-workflow.jpg" alt="Risultato bake di una scansione con poligoni ridotti e dettaglio visivo preservato" style="max-width:900px;width:100%;" decoding="async" fetchpriority="high">
 </p>
 
 <p align="center">
@@ -65,7 +65,7 @@ Risoluzioni più alte aumentano molto l'uso di memoria.
 
 <!-- Sostituire il placeholder con ../../img/step3-texture-size-comparison.jpg -->
 <p align="center">
-  <img src="../../img/step3-texture-size-comparison.jpg" alt="Placeholder confronto risoluzione texture" style="max-width:1100px;width:100%;">
+  <img src="../../img/step3-texture-size-comparison.jpg" alt="Placeholder confronto risoluzione texture" style="max-width:1100px;width:100%;" loading="lazy" decoding="async">
 </p>
 
 ---
@@ -77,7 +77,7 @@ Divide il bake in più gruppi di materiali.
 Usare più materiali aumenta lo spazio texture disponibile e può conservare più dettaglio su scansioni grandi.
 
 <p align="center">
-  <img src="../../img/step3-material-count.jpg" alt="Ottimizzazione da quattro materiali 8K a un unico materiale 2K pronto per il realtime" style="max-width:1100px;width:100%;">
+  <img src="../../img/step3-material-count.jpg" alt="Ottimizzazione da quattro materiali 8K a un unico materiale 2K pronto per il realtime" style="max-width:1100px;width:100%;" loading="lazy" decoding="async">
 </p>
 
 | Materiali | Uso tipico |
@@ -108,14 +108,14 @@ ScanReady cerca la sorgente high-poly corrispondente e la mesh UV ottimizzata, p
 Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consiglio su risoluzione e numero di materiali. Sono stime del dettaglio disponibile, non una garanzia della qualità finale.
 
 <p align="center">
-  <img src="../../img/step3-texture-detail.jpg" alt="Confronto del dettaglio visivo conservato dopo l'ottimizzazione delle texture" style="max-width:1000px;width:100%;">
+  <img src="../../img/step3-texture-detail.jpg" alt="Confronto del dettaglio visivo conservato dopo l'ottimizzazione delle texture" style="max-width:1000px;width:100%;" loading="lazy" decoding="async">
 </p>
 
 <div class="sr-uv-compare" data-uv-compare>
   <div class="sr-uv-compare__image">
-    <img src="../../img/step3-model-high-poly.jpg" alt="Modello originale high-poly senza wireframe" class="sr-uv-compare__base">
+    <img src="../../img/step3-model-high-poly.jpg" alt="Modello originale high-poly senza wireframe" class="sr-uv-compare__base" loading="lazy" decoding="async">
     <div class="sr-uv-compare__overlay">
-      <img src="../../img/step3-model-optimized.jpg" alt="Modello ottimizzato ScanReady senza wireframe" class="sr-uv-compare__top">
+      <img src="../../img/step3-model-optimized.jpg" alt="Modello ottimizzato ScanReady senza wireframe" class="sr-uv-compare__top" loading="lazy" decoding="async">
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Original · 1,011,823 faces</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady Optimized · 30,351 faces</span>
@@ -129,9 +129,9 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
 
 <div class="sr-uv-compare" data-uv-compare>
   <div class="sr-uv-compare__image">
-    <img src="../../img/step3-wireframe-high-poly.jpg" alt="Wireframe del modello originale high-poly" class="sr-uv-compare__base">
+    <img src="../../img/step3-wireframe-high-poly.jpg" alt="Wireframe del modello originale high-poly" class="sr-uv-compare__base" loading="lazy" decoding="async">
     <div class="sr-uv-compare__overlay">
-      <img src="../../img/step3-wireframe-optimized.jpg" alt="Wireframe del modello ottimizzato ScanReady" class="sr-uv-compare__top">
+      <img src="../../img/step3-wireframe-optimized.jpg" alt="Wireframe del modello ottimizzato ScanReady" class="sr-uv-compare__top" loading="lazy" decoding="async">
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Wireframe · 1,011,823 faces</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">Optimized Wireframe · 30,351 faces</span>
@@ -177,7 +177,7 @@ Se ScanReady non riesce a trovare automaticamente una coppia high-to-UV corrispo
 
 <div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
 <div style="min-width:0;"><p>Cuoce le informazioni diffuse o colore dalla scansione originale.</p><p>È attiva per impostazione predefinita ed è di solito la texture più importante per preservare l'aspetto dell'oggetto catturato.</p></div>
-<div style="text-align:center;"><img src="../../img/step3-bake-base-color.png" alt="Bake Base Color attivo nello Step 3" style="max-width:100%;width:100%;"></div>
+<div style="text-align:center;"><img src="../../img/step3-bake-base-color.png" alt="Bake Base Color attivo nello Step 3" style="max-width:100%;width:100%;" loading="lazy" decoding="async"></div>
 </div>
 
 ---
@@ -186,7 +186,7 @@ Se ScanReady non riesce a trovare automaticamente una coppia high-to-UV corrispo
 
 <div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
 <div style="min-width:0;"><p>Cuoce una normal map.</p><p>Le normal map preservano l'aspetto del dettaglio di superficie senza mantenere la geometria high-poly originale.</p></div>
-<div style="text-align:center;"><img src="../../img/step3-bake-normal-map.png" alt="Bake Normal Map attivo nello Step 3" style="max-width:100%;width:100%;"></div>
+<div style="text-align:center;"><img src="../../img/step3-bake-normal-map.png" alt="Bake Normal Map attivo nello Step 3" style="max-width:100%;width:100%;" loading="lazy" decoding="async"></div>
 </div>
 
 Questo è particolarmente utile per asset VR e videogame, dove la geometria deve restare leggera.
@@ -220,7 +220,7 @@ Anche le texture roughness vengono gestite come dati tecnici **Non-Color**.
 
 <div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
 <div style="min-width:0;"><p>Cuoce una mappa Ambient Occlusion.</p><p>L'AO può aiutare ad aggiungere ombre di contatto e profondità di superficie al materiale finale.</p></div>
-<div style="text-align:center;"><img src="../../img/step3-bake-occlusion-map.png" alt="Bake Occlusion Map attivo nello Step 3" style="max-width:100%;width:100%;"></div>
+<div style="text-align:center;"><img src="../../img/step3-bake-occlusion-map.png" alt="Bake Occlusion Map attivo nello Step 3" style="max-width:100%;width:100%;" loading="lazy" decoding="async"></div>
 </div>
 
 Il controllo materiale **AO Mix** è disponibile in **Advanced > Bake Settings > Occlusion Settings** quando **Bake Occlusion Map** è attivo. Il valore predefinito è `1.0`, che applica l'intera texture AO bake al materiale finale.
@@ -228,7 +228,7 @@ Il controllo materiale **AO Mix** è disponibile in **Advanced > Bake Settings >
 ---
 
 <p align="center">
-  <img src="../../img/step3-bake-maps.jpg" alt="Set di mappe Base Color, Normal, Roughness e Occlusion generato sul nuovo atlas UV" style="max-width:1100px;width:100%;">
+  <img src="../../img/step3-bake-maps.jpg" alt="Set di mappe Base Color, Normal, Roughness e Occlusion generato sul nuovo atlas UV" style="max-width:1100px;width:100%;" loading="lazy" decoding="async">
 </p>
 
 
@@ -248,7 +248,7 @@ Abilitalo quando esporti asset per game engine, archivi, workflow esterni o cons
 
 <div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
 <div style="min-width:0;"><p>Apre automaticamente la cartella del bake quando **Save Images** è attivo e il salvataggio delle texture è completato.</p><p>È utile quando vuoi controllare subito i file generati, copiarli in un progetto esterno o portarli in un game engine.</p></div>
-<div style="text-align:center;"><img src="../../img/step3-open-folder-after-bake.png" alt="Open Folder After Bake attivo nello Step 3" style="max-width:100%;width:100%;"></div>
+<div style="text-align:center;"><img src="../../img/step3-open-folder-after-bake.png" alt="Open Folder After Bake attivo nello Step 3" style="max-width:100%;width:100%;" loading="lazy" decoding="async"></div>
 </div>
 
 ---
@@ -297,7 +297,7 @@ Utile per asset ad alto dettaglio, workflow di archivio o normal map dettagliate
 
 <div style="text-align:center;">
   <p style="margin-top:0;"><strong>Output Folder</strong></p>
-  <img src="../../img/step3-output-folder.png" alt="Impostazioni Output Folder e Bake Folder nello Step 3 di ScanReady" style="max-width:100%;width:100%;">
+  <img src="../../img/step3-output-folder.png" alt="Impostazioni Output Folder e Bake Folder nello Step 3 di ScanReady" style="max-width:100%;width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -360,7 +360,7 @@ Dopo il bake, controlla:
 ## Ottimizzazione realtime
 
 <p align="center">
-  <img src="../../img/step3-final-result.jpg" alt="Risultato finale: scansione da oltre un milione di facce convertita in un asset ottimizzato da circa ventimila facce" style="max-width:1100px;width:100%;">
+  <img src="../../img/step3-final-result.jpg" alt="Risultato finale: scansione da oltre un milione di facce convertita in un asset ottimizzato da circa ventimila facce" style="max-width:1100px;width:100%;" loading="lazy" decoding="async">
 </p>
 
 Per workflow in tempo reale, il risultato finale dovrebbe bilanciare qualità visiva e performance.

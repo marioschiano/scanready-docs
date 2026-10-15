@@ -14,13 +14,13 @@
 
   <div style="flex:0 0 240px; text-align:center;">
     <p style="margin-top:0;"><strong>ONE CLICK BAKE</strong></p>
-    <img src="../../img/quick-start-one-click.png" alt="Pulsante One Click Bake di ScanReady in Blender" style="width:240px; max-width:100%;">
+    <img src="../../img/quick-start-one-click.png" alt="Pulsante One Click Bake di ScanReady in Blender" style="width:240px; max-width:100%;" decoding="async" fetchpriority="high">
   </div>
 
 </div>
 
 <p align="center">
-  <img src="../../img/one-click-bake.gif" alt="Workflow animato One Click Bake in Blender" style="max-width:820px;width:100%;">
+  <img src="../../img/one-click-bake.gif" alt="Workflow animato One Click Bake in Blender" style="max-width:820px;width:100%;" loading="lazy" decoding="async">
 </p>
 
 Invece di ridurre manualmente la mesh, generare UV, preparare il cage e configurare il bake, ScanReady esegue automaticamente il processo principale.
@@ -57,7 +57,7 @@ Quando clicchi **ONE CLICK BAKE**, ScanReady esegue il workflow completo da scan
 L'obiettivo è preservare l'identità visiva della scansione originale rendendo il modello più facile da usare nei progetti realtime.
 
 <p align="center">
-  <img src="../../img/one-click-before-after.jpg" alt="Confronto prima e dopo di una scansione high-poly ottimizzata con One Click Bake" style="max-width:820px;width:100%;">
+  <img src="../../img/one-click-before-after.jpg" alt="Confronto prima e dopo di una scansione high-poly ottimizzata con One Click Bake" style="max-width:820px;width:100%;" loading="lazy" decoding="async">
 </p>
 
 ---

@@ -30,7 +30,7 @@ Blender installa le estensioni direttamente dal file `.zip`.
 6. Abilita **ScanReady**.
 
 <p align="center">
-  <img src="../../img/installation.gif" alt="Installazione dell'estensione ScanReady in Blender" style="max-width:820px;width:100%;">
+  <img src="../../img/installation.gif" alt="Installazione dell'estensione ScanReady in Blender" style="max-width:820px;width:100%;" decoding="async" fetchpriority="high">
 </p>
 
 ---

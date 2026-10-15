@@ -27,7 +27,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 
 <div style="flex:0 0 260px; max-width:260px; text-align:center;">
   <p style="margin-top:0;"><strong>Create Lowpoly Preview</strong></p>
-  <img src="../../img/manual-step1.jpg" alt="Pannello STEP 1 Preview Reduce con pulsante Create Lowpoly Preview" style="width:100%;">
+  <img src="../../img/manual-step1.jpg" alt="Pannello STEP 1 Preview Reduce con pulsante Create Lowpoly Preview" style="width:100%;" decoding="async" fetchpriority="high">
 </div>
 
 </div>
@@ -59,11 +59,11 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 <div style="flex:0 0 320px; max-width:320px; display:flex; flex-direction:column; gap:14px; text-align:center;">
   <div>
     <p style="margin-top:0;"><strong>Generate UVs</strong></p>
-    <img src="../../img/manual-step2.jpg" alt="Interfaccia STEP 2 UV Cage con pulsante Generate UVs" style="width:100%;">
+    <img src="../../img/manual-step2.jpg" alt="Interfaccia STEP 2 UV Cage con pulsante Generate UVs" style="width:100%;" loading="lazy" decoding="async">
   </div>
   <div>
     <p style="margin-top:0;"><strong>Show Cage / Cage Controls</strong></p>
-    <img src="../../img/manual-step2_cage.jpg" alt="Interfaccia STEP 2 UV Cage con Show Cage e controlli cage" style="width:100%;">
+    <img src="../../img/manual-step2_cage.jpg" alt="Interfaccia STEP 2 UV Cage con Show Cage e controlli cage" style="width:100%;" loading="lazy" decoding="async">
   </div>
 </div>
 
@@ -97,7 +97,7 @@ Il workflow manuale ti permette di controllare separatamente riduzione, UV, cage
 
 <div style="flex:0 0 260px; max-width:260px; text-align:center;">
   <p style="margin-top:0;"><strong>Bake Textures</strong></p>
-  <img src="../../img/manual-step3.jpg" alt="Pannello ScanReady con gli step del workflow e Bake Output" style="width:100%;">
+  <img src="../../img/manual-step3.jpg" alt="Pannello ScanReady con gli step del workflow e Bake Output" style="width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>

@@ -40,7 +40,7 @@ Bake Settings regola sample, margini, normal strength, formato immagine, opzioni
 
 <div style="flex:0 0 320px; text-align:center;">
   <p style="margin-top:0;"><strong>Advanced</strong></p>
-  <img src="../../img/advanced_global.jpg" alt="Panoramica impostazioni Advanced di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_global.jpg" alt="Panoramica impostazioni Advanced di ScanReady" style="width:260px; max-width:100%;" decoding="async" fetchpriority="high">
 </div>
 
 </div>
@@ -57,7 +57,7 @@ Bake Settings regola sample, margini, normal strength, formato immagine, opzioni
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Mesh Settings</strong></p>
-  <img src="../../img/advanced_mesh_settings.jpg" alt="Screenshot Mesh Settings di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_mesh_settings.jpg" alt="Screenshot Mesh Settings di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -83,7 +83,7 @@ Unisce i vertici della preview che rientrano nella distanza impostata, espressa 
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Pre-Decimate Merge</strong></p>
-  <img src="../../img/advanced_pre_decimate.jpg" alt="Screenshot Pre-Decimate Merge di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_pre_decimate.jpg" alt="Screenshot Pre-Decimate Merge di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -106,13 +106,13 @@ Attivalo quando la scansione ha normali invertite, shading incoerente o artefatt
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Auto Fix Normals</strong></p>
-  <img src="../../img/advanced_autofix_normals.jpg" alt="Screenshot Auto Fix Normals di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_autofix_normals.jpg" alt="Screenshot Auto Fix Normals di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
 
 <div style="margin:18px 0 30px; text-align:center;">
-  <img src="../../img/advanced_autofix_normals.gif" alt="Dettaglio Auto Fix Normals di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_autofix_normals.gif" alt="Dettaglio Auto Fix Normals di ScanReady" style="width:760px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 <hr>
@@ -133,13 +133,13 @@ Rimuove automaticamente marcature sharp edge dalla mesh durante la preparazione.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Auto Clear Sharp Edges</strong></p>
-  <img src="../../img/advanced_autoclear_sharp.jpg" alt="Screenshot Auto Clear Sharp Edges di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_autoclear_sharp.jpg" alt="Screenshot Auto Clear Sharp Edges di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
 
 <div style="margin:18px 0 30px; text-align:center;">
-  <img src="../../img/advanced_autoclear_sharp_edge.gif" alt="Dettaglio Auto Clear Sharp Edges di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_autoclear_sharp_edge.gif" alt="Dettaglio Auto Clear Sharp Edges di ScanReady" style="width:760px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 <hr>
@@ -164,13 +164,13 @@ Lascialo attivo nella maggior parte dei casi, soprattutto con scansioni da fotog
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Auto Combine Mesh Parts</strong></p>
-  <img src="../../img/advanced_autocombine_mesh.jpg" alt="Screenshot Auto Combine Mesh Parts di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_autocombine_mesh.jpg" alt="Screenshot Auto Combine Mesh Parts di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
 
 <div style="margin:18px 0 30px; text-align:center;">
-  <img src="../../img/advanced_autocombine_mesh.gif" alt="Dettaglio Auto Combine Mesh Parts di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_autocombine_mesh.gif" alt="Dettaglio Auto Combine Mesh Parts di ScanReady" style="width:760px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 <hr>
@@ -191,13 +191,13 @@ Rimuove detriti comuni della scansione, come frammenti isolati, poligoni sospesi
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Auto Clean Scan Debris</strong></p>
-  <img src="../../img/advanced_autoclean_scan.jpg" alt="Screenshot Auto Clean Scan Debris di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_autoclean_scan.jpg" alt="Screenshot Auto Clean Scan Debris di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
 
 <div style="margin:18px 0 30px; text-align:center;">
-  <img src="../../img/advanced_auto_clean_scan.gif" alt="Rimozione dei frammenti con Auto Clean Scan Debris" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_auto_clean_scan.gif" alt="Rimozione dei frammenti con Auto Clean Scan Debris" style="width:760px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 <hr>
@@ -232,11 +232,11 @@ Di default resta disattivato. Abilitalo solo se il bake non esce bene, per esemp
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Convert Source Materials</strong></p>
-  <img src="../../img/advanced_convert_source.jpg" alt="Screenshot Convert Source Materials di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_convert_source.jpg" alt="Screenshot Convert Source Materials di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 </div>
 <div style="margin:18px 0 30px; text-align:center;">
-  <img src="../../img/advanced_convert_source_materials.gif" alt="Dettaglio Convert Source Materials di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_convert_source_materials.gif" alt="Dettaglio Convert Source Materials di ScanReady" style="width:760px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 <hr>
@@ -270,13 +270,13 @@ Quando attivi <strong>Show Face Orientation</strong>, ScanReady disattiva automa
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Show Face Orientation</strong></p>
-  <img src="../../img/advanced_showface_orientation.jpg" alt="Screenshot Show Face Orientation di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_showface_orientation.jpg" alt="Screenshot Show Face Orientation di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
 
 <div style="margin:18px 0 30px; text-align:center;">
-  <img src="../../img/advanced_showface_orientation2.jpg" alt="Dettaglio Show Face Orientation di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_showface_orientation2.jpg" alt="Dettaglio Show Face Orientation di ScanReady" style="width:760px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 <hr>
@@ -309,13 +309,13 @@ Backface Culling e Show Face Orientation sono collegati: se attivi uno, ScanRead
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Backface Culling</strong></p>
-  <img src="../../img/advanced_backface_culling.jpg" alt="Screenshot Backface Culling di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_backface_culling.jpg" alt="Screenshot Backface Culling di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
 
 <div style="margin:18px 0 30px; text-align:center;">
-  <img src="../../img/advanced_backface_culling_2.jpg" alt="Dettaglio Backface Culling di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_backface_culling_2.jpg" alt="Dettaglio Backface Culling di ScanReady" style="width:760px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 <hr>
@@ -336,13 +336,13 @@ Attiva Material Preview senza usare luci e World della scena. Se è attivo Backf
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Use Texture View</strong></p>
-  <img src="../../img/advanced_usetexture_view.jpg" alt="Screenshot Use Texture View di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_usetexture_view.jpg" alt="Screenshot Use Texture View di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
 
 <div style="margin:18px 0 30px; text-align:center;">
-  <img src="../../img/advanced_use_texture_view.gif" alt="Dettaglio Use Texture View di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_use_texture_view.gif" alt="Dettaglio Use Texture View di ScanReady" style="width:760px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 <hr>
@@ -363,13 +363,13 @@ Usalo quando la scansione appare rovesciata o ha shading incoerente.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Recalculate Outside Normals</strong></p>
-  <img src="../../img/advanced_recalculate_outside_normals.jpg" alt="Screenshot Recalculate Outside Normals di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_recalculate_outside_normals.jpg" alt="Screenshot Recalculate Outside Normals di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
 
 <div style="margin:18px 0 30px; text-align:center;">
-  <img src="../../img/advanced_recaulate_outside.gif" alt="Dettaglio Recalculate Outside Normals di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advanced_recaulate_outside.gif" alt="Dettaglio Recalculate Outside Normals di ScanReady" style="width:760px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 ---
@@ -401,7 +401,7 @@ I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Lowpoly P
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Adaptive Reduce</strong></p>
-  <img src="../../img/advanced_adaptive_reduce.jpg" alt="Screenshot Adaptive Reduce di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_adaptive_reduce.jpg" alt="Screenshot Adaptive Reduce di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -422,7 +422,7 @@ Quando è attivo, ScanReady analizza la mesh e crea pesi per proteggere dettagli
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Adaptive Reduce</strong></p>
-  <img src="../../img/advanced_adaptive_reduce_01.jpg" alt="Screenshot Adaptive Reduce di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_adaptive_reduce_01.jpg" alt="Screenshot Adaptive Reduce di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -448,7 +448,7 @@ Scegli il preset più adatto alla scansione e all'asset target.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Adaptive Preset</strong></p>
-  <img src="../../img/advance_adaptive_preset.png" alt="Screenshot Adaptive Preset di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_adaptive_preset.png" alt="Screenshot Adaptive Preset di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -486,12 +486,12 @@ Usa questa preview quando una scansione ha superfici miste, come pannelli archit
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Show Adaptive Weights</strong></p>
-  <img src="../../img/advance_show_adaptive.png" alt="Screenshot Show Adaptive Weights di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_show_adaptive.png" alt="Screenshot Show Adaptive Weights di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
 <div style="margin:18px 0 30px; text-align:center;">
-  <img src="../../img/advance_show_adaptive_01.jpg" alt="Dettaglio Show Adaptive Weights di ScanReady" style="width:760px; max-width:100%;">
+  <img src="../../img/advance_show_adaptive_01.jpg" alt="Dettaglio Show Adaptive Weights di ScanReady" style="width:760px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 <hr>
 
@@ -511,7 +511,7 @@ Valori più alti rendono più marcata la differenza tra aree protette e aree sem
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Adaptive Strength</strong></p>
-  <img src="../../img/advance_adaptive_reduce_strength.png" alt="Screenshot Adaptive Strength di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_adaptive_reduce_strength.png" alt="Screenshot Adaptive Strength di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -534,7 +534,7 @@ Valori più bassi rendono ScanReady più sensibile alle variazioni di superficie
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Adaptive Reduce Angle</strong></p>
-  <img src="../../img/advance_adaptive_reduce_angle.png" alt="Screenshot Adaptive Reduce Angle di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_adaptive_reduce_angle.png" alt="Screenshot Adaptive Reduce Angle di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -557,7 +557,7 @@ Aumentalo quando la scansione contiene dettagli fini che non vuoi perdere. Abbas
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Detail Preserve</strong></p>
-  <img src="../../img/advance_adaptive_detail_preserve.png" alt="Screenshot Detail Preserve di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_adaptive_detail_preserve.png" alt="Screenshot Detail Preserve di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -580,7 +580,7 @@ Valori più alti possono produrre una distribuzione meno frastagliata, utile su 
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Smooth Weights</strong></p>
-  <img src="../../img/advance_smooth_weight.png" alt="Screenshot Smooth Weights di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_smooth_weight.png" alt="Screenshot Smooth Weights di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -603,7 +603,7 @@ Usa una modalità più veloce e approssimata del calcolo adattivo.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Fast Adaptive Reduce</strong></p>
-  <img src="../../img/advance_fast_adaptive_.png" alt="Screenshot Fast Adaptive Reduce di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_fast_adaptive_.png" alt="Screenshot Fast Adaptive Reduce di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -626,7 +626,7 @@ Protegge bordi importanti e rotture nette della superficie durante la riduzione.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Protect Feature Edges</strong></p>
-  <img src="../../img/advance_feature_edge.png" alt="Screenshot Protect Feature Edges di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_feature_edge.png" alt="Screenshot Protect Feature Edges di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -649,7 +649,7 @@ Valori più bassi proteggono più bordi. Valori più alti proteggono solo cambi 
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Feature Edge Angle</strong></p>
-  <img src="../../img/advance_edge_angle.png" alt="Screenshot Feature Edge Angle di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_edge_angle.png" alt="Screenshot Feature Edge Angle di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -672,7 +672,7 @@ Può aiutare a mantenere più stabile la forma attorno a bordi netti, cornici, p
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Feature Edge Rings</strong></p>
-  <img src="../../img/advance_edge_rings.png" alt="Screenshot Feature Edge Rings di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_edge_rings.png" alt="Screenshot Feature Edge Rings di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -699,7 +699,7 @@ Queste impostazioni controllano come Smart UV Project apre la mesh ottimizzata.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>UV Settings</strong></p>
-  <img src="../../img/advance_uv_settings.png" alt="Screenshot UV Settings di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_uv_settings.png" alt="Screenshot UV Settings di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -729,7 +729,7 @@ I preset Adaptive Reduce sono separati dalla generazione UV: Adaptive Reduce con
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Smart UV Angle</strong></p>
-  <img src="../../img/advance_uv_smart_uv.png" alt="Screenshot Smart UV Angle di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_uv_smart_uv.png" alt="Screenshot Smart UV Angle di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -752,7 +752,7 @@ Aumenta il padding per ridurre texture bleeding, soprattutto a risoluzioni textu
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>UV Padding</strong></p>
-  <img src="../../img/advance_uv_padding.png" alt="Screenshot UV Padding di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_uv_padding.png" alt="Screenshot UV Padding di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -780,7 +780,7 @@ Usa <strong>Analyze Texture Detail</strong> dopo aver generato le UV, prima del 
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Texture Detail</strong></p>
-  <img src="../../img/advance_texture_detail.png" alt="Screenshot Texture Detail di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_texture_detail.png" alt="Screenshot Texture Detail di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -804,7 +804,7 @@ Nell'addon <strong>Occlusion Settings</strong> e <strong>Memory Safety</strong> 
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Bake Settings</strong></p>
-  <img src="../../img/advance_bake_settings.png" alt="Screenshot Bake Settings di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_bake_settings.png" alt="Screenshot Bake Settings di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -825,7 +825,7 @@ Valori più alti possono ridurre il rumore, soprattutto per Ambient Occlusion, m
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Bake Samples</strong></p>
-  <img src="../../img/advance_bake_sample.png" alt="Screenshot Bake Samples di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_bake_sample.png" alt="Screenshot Bake Samples di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -848,7 +848,7 @@ Aiuta a ridurre seam visibili e texture bleeding.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Bake Margin</strong></p>
-  <img src="../../img/advance_bake_margin.png" alt="Screenshot Bake Margin di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_bake_margin.png" alt="Screenshot Bake Margin di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -875,7 +875,7 @@ Se <strong>Bake Normal Map</strong> non è attivo, questo controllo non appare e
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Normal Strength</strong></p>
-  <img src="../../img/advanced_adaptive_normal_strenght.jpg" alt="Screenshot Normal Strength di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_adaptive_normal_strenght.jpg" alt="Screenshot Normal Strength di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -898,7 +898,7 @@ Valori più alti preservano più dettaglio immagine ma creano file più grandi.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>JPG Quality</strong></p>
-  <img src="../../img/advance_bake_jpg_quality.png" alt="Screenshot JPG Quality di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advance_bake_jpg_quality.png" alt="Screenshot JPG Quality di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -921,7 +921,7 @@ Può essere utile per asset dettagliati, workflow archivio o output texture tecn
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>TIFF 16-bit</strong></p>
-  <img src="../../img/advanced_tiff_16bit.jpg" alt="Screenshot TIFF 16-bit di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_tiff_16bit.jpg" alt="Screenshot TIFF 16-bit di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -941,7 +941,7 @@ Queste opzioni sono dentro <strong>Bake Settings</strong> e appaiono quando <str
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Occlusion Settings</strong></p>
-  <img src="../../img/advanced_occlusion_settings.jpg" alt="Screenshot Occlusion Settings di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_occlusion_settings.jpg" alt="Screenshot Occlusion Settings di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -958,7 +958,7 @@ Controlla se Ambient Occlusion viene cotta dalla sorgente high-poly al target lo
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>AO Source</strong></p>
-  <img src="../../img/advanced_ao_source.png" alt="Screenshot AO Source di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_ao_source.png" alt="Screenshot AO Source di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -977,7 +977,7 @@ Calcola automaticamente la distanza AO in base alla dimensione del modello.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Auto AO Distance</strong></p>
-  <img src="../../img/advanced_auto_ao_distance.png" alt="Screenshot Auto AO Distance di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_auto_ao_distance.png" alt="Screenshot Auto AO Distance di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -996,7 +996,7 @@ Distanza manuale dei raggi AO quando la distanza automatica è disattivata.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>AO Distance</strong></p>
-  <img src="../../img/advanced_ao_distance.png" alt="Screenshot AO Distance di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_ao_distance.png" alt="Screenshot AO Distance di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1019,7 +1019,7 @@ Valori più alti producono AO più pulita ma aumentano il tempo di bake.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>AO Samples</strong></p>
-  <img src="../../img/advanced_ao_sample.png" alt="Screenshot AO Samples di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_ao_sample.png" alt="Screenshot AO Samples di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1042,7 +1042,7 @@ Il valore predefinito è <strong>1.0</strong>, che usa tutta la texture AO bake 
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>AO Mix</strong></p>
-  <img src="../../img/advanced_ao_mix.png" alt="Screenshot AO Mix di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_ao_mix.png" alt="Screenshot AO Mix di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1062,7 +1062,7 @@ Queste opzioni sono dentro <strong>Bake Settings</strong> e aiutano a ridurre pr
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Memory Safety</strong></p>
-  <img src="../../img/advanced_memory_safe.png" alt="Screenshot Memory Safety di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_memory_safe.png" alt="Screenshot Memory Safety di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1083,7 +1083,7 @@ Lascialo attivo quando lavori con asset fotogrammetrici densi o alte risoluzioni
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Safe Memory Bake</strong></p>
-  <img src="../../img/advanced_safe_memory.png" alt="Screenshot Safe Memory Bake di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_safe_memory.png" alt="Screenshot Safe Memory Bake di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1110,7 +1110,7 @@ ScanReady può abilitarlo automaticamente quando viene usato il bake multi-mater
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Force CPU Baking</strong></p>
-  <img src="../../img/advanced_force_cpu.png" alt="Screenshot Force CPU Baking di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_force_cpu.png" alt="Screenshot Force CPU Baking di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1146,7 +1146,7 @@ Usa i preset quando lavori su più scansioni con requisiti simili, come:
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Preset</strong></p>
-  <img src="../../img/advanced_presets.png" alt="Screenshot Preset di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_presets.png" alt="Screenshot Preset di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1163,7 +1163,7 @@ Definisce il nome del preset da salvare.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Preset Name</strong></p>
-  <img src="../../img/advanced_presets_name.png" alt="Screenshot Preset Name di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_presets_name.png" alt="Screenshot Preset Name di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1185,7 +1185,7 @@ Quando ricarichi un preset, controlla anche <strong>Output Folder</strong> prima
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Save Preset</strong></p>
-  <img src="../../img/advanced_presets_save.png" alt="Screenshot Save Preset di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_presets_save.png" alt="Screenshot Save Preset di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1204,7 +1204,7 @@ Permette di scegliere un preset esistente.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Preset Selector</strong></p>
-  <img src="../../img/advanced_preset_selector.png" alt="Screenshot Preset Selector di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_preset_selector.png" alt="Screenshot Preset Selector di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1223,7 +1223,7 @@ Carica il preset selezionato.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Reload Preset</strong></p>
-  <img src="../../img/advanced_reload_presets.png" alt="Screenshot Reload Preset di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_reload_presets.png" alt="Screenshot Reload Preset di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1242,7 +1242,7 @@ Elimina il preset selezionato.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Delete Preset</strong></p>
-  <img src="../../img/advanced_delete_presets.png" alt="Screenshot Delete Preset di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_delete_presets.png" alt="Screenshot Delete Preset di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1262,7 +1262,7 @@ Le opzioni di diagnostica servono per controllare meglio cosa sta facendo ScanRe
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Diagnostics</strong></p>
-  <img src="../../img/advanced_diagnostic.png" alt="Screenshot Diagnostics di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_diagnostic.png" alt="Screenshot Diagnostics di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1292,7 +1292,7 @@ Il report può includere dettagli come tempo di Preview / Reduce, Generate UVs, 
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Show Diagnostic Timing Report</strong></p>
-  <img src="../../img/advanced_diagnostic_02.png" alt="Screenshot Show Diagnostic Timing Report di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_diagnostic_02.png" alt="Screenshot Show Diagnostic Timing Report di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1312,7 +1312,7 @@ Gli strumenti utility aiutano a resettare o ripristinare la configurazione dell'
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Utilities</strong></p>
-  <img src="../../img/advanced_utilities.png" alt="Screenshot Utilities di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_utilities.png" alt="Screenshot Utilities di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1333,7 +1333,7 @@ Usalo se le impostazioni correnti producono risultati inattesi o se vuoi tornare
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Reset Defaults</strong></p>
-  <img src="../../img/advanced_utilities_reset.png" alt="Screenshot Reset Defaults di ScanReady" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_utilities_reset.png" alt="Screenshot Reset Defaults di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -1356,7 +1356,7 @@ Gli aggiornamenti ufficiali vengono installati tramite Blender Extensions / Supe
 
 <div style="text-align:center; margin-top:18px; margin-bottom:34px;">
   <p style="margin-top:0;"><strong>Addon Preferences / Updates</strong></p>
-  <img src="../../img/advanced_addon_preferences.jpg" alt="Screenshot Addon Preferences / Updates di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_preferences.jpg" alt="Screenshot Addon Preferences / Updates di ScanReady" style="max-width:760px; width:100%;" loading="lazy" decoding="async">
 </div>
 
 <h3>Installed version</h3>
@@ -1371,7 +1371,7 @@ Usala quando vuoi verificare rapidamente quale build stai usando prima di confro
 
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Installed version</strong></p>
-  <img src="../../img/advanced_addon_version.jpg" alt="Screenshot Installed version di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_version.jpg" alt="Screenshot Installed version di ScanReady" style="max-width:760px; width:100%;" loading="lazy" decoding="async">
 </div>
 
 <hr>
@@ -1393,7 +1393,7 @@ ScanReady legge il file pubblico <strong>update-manifest.json</strong> della doc
 
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Check for Updates</strong></p>
-  <img src="../../img/advanced_addon_check_update.jpg" alt="Screenshot Check for Updates di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_check_update.jpg" alt="Screenshot Check for Updates di ScanReady" style="max-width:760px; width:100%;" loading="lazy" decoding="async">
 </div>
 
 <hr>
@@ -1415,14 +1415,14 @@ L’avviso appare dopo un controllo manuale che rileva una versione più recente
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Avviso di aggiornamento</strong></p>
-  <img src="../../img/advanced_update_notice_panel.jpg" alt="Avviso di aggiornamento di ScanReady nel pannello principale dell'addon" style="width:260px; max-width:100%;">
+  <img src="../../img/advanced_update_notice_panel.jpg" alt="Avviso di aggiornamento di ScanReady nel pannello principale dell'addon" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
 
 <div style="text-align:center; margin-top:8px; margin-bottom:30px;">
   <p style="margin-top:0;"><strong>Controllo aggiornamenti nelle Preferences</strong></p>
-  <img src="../../img/preferences_update_notice.jpg" alt="Controllo aggiornamenti di ScanReady nelle preferenze addon di Blender" style="max-width:760px; width:100%;">
+  <img src="../../img/preferences_update_notice.jpg" alt="Controllo aggiornamenti di ScanReady nelle preferenze addon di Blender" style="max-width:760px; width:100%;" loading="lazy" decoding="async">
 </div>
 
 <hr>
@@ -1439,7 +1439,7 @@ Usalo quando vuoi consultare guida rapida, workflow manuale, FAQ, troubleshootin
 
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Open Documentation</strong></p>
-  <img src="../../img/advanced_addon_open_documentation.jpg" alt="Screenshot Open Documentation di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_open_documentation.jpg" alt="Screenshot Open Documentation di ScanReady" style="max-width:760px; width:100%;" loading="lazy" decoding="async">
 </div>
 
 <hr>
@@ -1456,7 +1456,7 @@ Usalo per vedere cosa è cambiato prima di installare o confrontare una nuova ve
 
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Release Notes</strong></p>
-  <img src="../../img/advanced_addon_release_note.jpg" alt="Screenshot Release Notes di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_release_note.jpg" alt="Screenshot Release Notes di ScanReady" style="max-width:760px; width:100%;" loading="lazy" decoding="async">
 </div>
 
 <hr>
@@ -1473,7 +1473,7 @@ Usalo quando preferisci seguire il workflow in video o quando vuoi vedere esempi
 
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Video Tutorials</strong></p>
-  <img src="../../img/advanced_addon_video_tutorial.jpg" alt="Screenshot Video Tutorials di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_video_tutorial.jpg" alt="Screenshot Video Tutorials di ScanReady" style="max-width:760px; width:100%;" loading="lazy" decoding="async">
 </div>
 
 ---

@@ -3,7 +3,7 @@
 Questa pagina mostra il modo più veloce per usare ScanReady.
 
 <p align="center">
-  <img src="../../img/hero.jpg" alt="Panoramica del workflow ScanReady" style="max-width:620px;width:100%;">
+  <img src="../../img/hero.jpg" alt="Panoramica del workflow ScanReady" style="max-width:620px;width:100%;" decoding="async" fetchpriority="high">
 </p>
 
 ---
@@ -30,7 +30,7 @@ Questa pagina mostra il modo più veloce per usare ScanReady.
 
   <div style="flex:0 0 260px; text-align:center;">
     <p style="margin-top:0;"><strong>ONE CLICK BAKE</strong></p>
-    <img src="../../img/quick-start-one-click.png" alt="Pulsante One Click Bake di ScanReady in Blender" style="width:260px; max-width:100%;">
+    <img src="../../img/quick-start-one-click.png" alt="Pulsante One Click Bake di ScanReady in Blender" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
   </div>
 
 </div>
@@ -52,7 +52,7 @@ Quando usi **ONE CLICK BAKE**, ScanReady esegue il workflow principale:
 Il modello viene quindi ottimizzato, riceve nuove UV e può ottenere il bake delle texture selezionate in un unico workflow.
 
 <p align="center">
-  <img src="../../img/one-click-bake.gif" alt="Workflow One Click Bake di ScanReady in Blender" style="max-width:820px;width:100%;">
+  <img src="../../img/one-click-bake.gif" alt="Workflow One Click Bake di ScanReady in Blender" style="max-width:820px;width:100%;" loading="lazy" decoding="async">
 </p>
 
 ---
