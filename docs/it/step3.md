@@ -82,7 +82,7 @@ Usare più materiali aumenta lo spazio texture disponibile e può conservare pi�
 
 | Materiali | Uso tipico |
 |---|---|
-| 1 materiale | Asset leggeri |
+| 1 materialee | Asset leggeri |
 | 2 materiali | Conservazione media del dettaglio |
 | 4 materiali | Scansioni grandi e asset ad alto dettaglio |
 
@@ -117,10 +117,10 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
     <div class="sr-uv-compare__overlay">
       <img src="../../img/step3-model-optimized.jpg" alt="Modello ottimizzato ScanReady senza wireframe" class="sr-uv-compare__top" loading="lazy" decoding="async">
     </div>
-    <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Original · 1,011,823 faces</span>
-    <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady Optimized · 30,351 faces</span>
-    <span class="sr-uv-compare__material sr-uv-compare__material--left"><strong>4 materials</strong><small>8K textures</small></span>
-    <span class="sr-uv-compare__material sr-uv-compare__material--right"><strong>1 material</strong><small>8K textures</small></span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">High-poly originale · 1.011.823 facce</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady ottimizzato · 30.351 facce</span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--left"><strong>4 materiali</strong><small>texture 8K</small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--right"><strong>1 materiale</strong><small>texture 8K</small></span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta modello high-poly e modello ScanReady ottimizzato" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
@@ -133,8 +133,8 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
     <div class="sr-uv-compare__overlay">
       <img src="../../img/step3-wireframe-optimized.jpg" alt="Wireframe del modello ottimizzato ScanReady" class="sr-uv-compare__top" loading="lazy" decoding="async">
     </div>
-    <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Wireframe · 1,011,823 faces</span>
-    <span class="sr-uv-compare__label sr-uv-compare__label--right">Optimized Wireframe · 30,351 faces</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">Wireframe high-poly · 1.011.823 facce</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">Wireframe ottimizzato · 30.351 facce</span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta wireframe high-poly e wireframe ottimizzato" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
