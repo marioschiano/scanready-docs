@@ -117,7 +117,7 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
     <div class="sr-uv-compare__overlay">
       <img src="../../img/step3-model-optimized.jpg" alt="Modello ottimizzato ScanReady senza wireframe" class="sr-uv-compare__top" loading="lazy" decoding="async">
     </div>
-    <span class="sr-uv-compare__label sr-uv-compare__label--left">High-poly originale · 1.011.823 facce</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">Modello originale · 1.011.823 facce</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady ottimizzato · 30.351 facce</span>
     <span class="sr-uv-compare__material sr-uv-compare__material--left"><strong>4 materiali</strong><small>texture 8K</small></span>
     <span class="sr-uv-compare__material sr-uv-compare__material--right"><strong>1 materiale</strong><small>texture 8K</small></span>
@@ -133,7 +133,7 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
     <div class="sr-uv-compare__overlay">
       <img src="../../img/step3-wireframe-optimized.jpg" alt="Wireframe del modello ottimizzato ScanReady" class="sr-uv-compare__top" loading="lazy" decoding="async">
     </div>
-    <span class="sr-uv-compare__label sr-uv-compare__label--left">Wireframe high-poly · 1.011.823 facce</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">Wireframe originale · 1.011.823 facce</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">Wireframe ottimizzato · 30.351 facce</span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta wireframe high-poly e wireframe ottimizzato" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
