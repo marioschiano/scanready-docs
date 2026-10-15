@@ -42,8 +42,8 @@ Lo stesso modello può essere visualizzato con il materiale normale oppure con l
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">Scansione originale</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">Riduzione adattiva</span>
-    <span class="sr-uv-compare__material sr-uv-compare__adaptive-legend sr-uv-compare__adaptive-legend--detail"><strong>Dettaglio protetto</strong><small>Blu / verde</small></span>
-    <span class="sr-uv-compare__material sr-uv-compare__adaptive-legend sr-uv-compare__adaptive-legend--flat"><strong>Maggiore riduzione</strong><small>Rosso / giallo</small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__adaptive-legend sr-uv-compare__adaptive-legend--detail"><strong>Dettaglio protetto</strong><small aria-label="Blu e verde"><span class="sr-color-swatch" style="background:#2378eb"></span><span class="sr-color-swatch" style="background:#50c837"></span></small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__adaptive-legend sr-uv-compare__adaptive-legend--flat"><strong>Maggiore riduzione</strong><small aria-label="Rosso e giallo"><span class="sr-color-swatch" style="background:#eb2d2d"></span><span class="sr-color-swatch" style="background:#f5cd28"></span></small></span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta la scansione originale e i pesi Adaptive Reduce" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
