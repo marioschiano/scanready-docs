@@ -1356,7 +1356,7 @@ Gli aggiornamenti ufficiali vengono installati tramite Blender Extensions / Supe
 
 <div style="text-align:center; margin-top:18px; margin-bottom:34px;">
   <p style="margin-top:0;"><strong>Addon Preferences / Updates</strong></p>
-  <img src="../../img/advanced_addon_preferences.png" alt="Screenshot Addon Preferences / Updates di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_preferences.jpg" alt="Screenshot Addon Preferences / Updates di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 <h3>Installed version</h3>
@@ -1371,7 +1371,7 @@ Usala quando vuoi verificare rapidamente quale build stai usando prima di confro
 
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Installed version</strong></p>
-  <img src="../../img/advanced_addon_version.png" alt="Screenshot Installed version di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_version.jpg" alt="Screenshot Installed version di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 <hr>
@@ -1393,7 +1393,7 @@ ScanReady legge il file pubblico <strong>update-manifest.json</strong> della doc
 
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Check for Updates</strong></p>
-  <img src="../../img/advanced_addon_check_update.png" alt="Screenshot Check for Updates di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_check_update.jpg" alt="Screenshot Check for Updates di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 <hr>
@@ -1439,7 +1439,7 @@ Usalo quando vuoi consultare guida rapida, workflow manuale, FAQ, troubleshootin
 
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Open Documentation</strong></p>
-  <img src="../../img/advanced_addon_open_documentation.png" alt="Screenshot Open Documentation di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_open_documentation.jpg" alt="Screenshot Open Documentation di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 <hr>
@@ -1456,7 +1456,7 @@ Usalo per vedere cosa è cambiato prima di installare o confrontare una nuova ve
 
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Release Notes</strong></p>
-  <img src="../../img/advanced_addon_release_note.png" alt="Screenshot Release Notes di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_release_note.jpg" alt="Screenshot Release Notes di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 <hr>
@@ -1473,7 +1473,7 @@ Usalo quando preferisci seguire il workflow in video o quando vuoi vedere esempi
 
 <div style="text-align:center; margin-top:16px; margin-bottom:28px;">
   <p style="margin-top:0;"><strong>Video Tutorials</strong></p>
-  <img src="../../img/advanced_addon_video_tutorial.png" alt="Screenshot Video Tutorials di ScanReady" style="max-width:760px; width:100%;">
+  <img src="../../img/advanced_addon_video_tutorial.jpg" alt="Screenshot Video Tutorials di ScanReady" style="max-width:760px; width:100%;">
 </div>
 
 ---
