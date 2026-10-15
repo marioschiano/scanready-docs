@@ -119,8 +119,8 @@ Mostra **Texture match**, **Detail estimate** e **UV Space**, insieme a un consi
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">High-Poly Original · 1,011,823 faces</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady Optimized · 30,351 faces</span>
-    <span class="sr-uv-compare__material sr-uv-compare__material--left">4 mat · 8K</span>
-    <span class="sr-uv-compare__material sr-uv-compare__material--right">1 mat · 8K</span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--left"><strong>4 materials</strong><small>8K textures</small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--right"><strong>1 material</strong><small>8K textures</small></span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta modello high-poly e modello ScanReady ottimizzato" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
