@@ -453,7 +453,7 @@ Scegli il preset più adatto alla scansione e all'asset target.
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Adaptive Preset</strong></p>
-  <img src="../../img/advance_adaptive_preset.png" alt="Screenshot Adaptive Preset di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
+  <img src="../../img/adaptive-preset-results.jpg" alt="Confronto dei risultati dei preset Adaptive Preset: Balanced, Preserve Detailed, Flat Surfaces e Hard Surface" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
