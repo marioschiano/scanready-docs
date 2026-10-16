@@ -267,6 +267,16 @@ ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'
 
 <p>I controlli UV influenzano come la mesh ottimizzata viene aperta prima del bake. Sono separati da Adaptive Reduce, che controlla come la mesh viene semplificata nello Step 1.</p>
 
+
+</div>
+
+<div style="flex:0 0 280px; text-align:center;">
+  <p style="margin-top:0;"><strong>Smart UV Preset</strong></p>
+  <img src="../../img/step2-smart-uv-preset-panel.png" alt="Menu Smart UV Preset con opzioni Detailed, Balanced, Large Islands e Continuous" style="max-width:280px;width:100%;" loading="lazy" decoding="async">
+</div>
+
+</div>
+
 <p align="center">
   <img src="../../img/step2-smart-uv-presets.jpg" alt="Confronto dei preset Smart UV Balanced, Detailed, Large Islands e Continuous" style="max-width:1100px;width:100%;" loading="lazy" decoding="async">
 </p>
@@ -277,14 +287,6 @@ ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'
   <p>Le nuove impostazioni UV vengono usate la prossima volta che clicchi <strong>Generate UVs</strong>, oppure quando <strong>One Click Bake</strong> esegue lo step di generazione UV. <strong>Bake Textures</strong> usa il layout UV già esistente.</p>
 </div>
 
-</div>
-
-<div style="flex:0 0 280px; text-align:center;">
-  <p style="margin-top:0;"><strong>Smart UV Preset</strong></p>
-  <img src="../../img/step2-smart-uv-preset-panel.png" alt="Menu Smart UV Preset con opzioni Detailed, Balanced, Large Islands e Continuous" style="max-width:280px;width:100%;" loading="lazy" decoding="async">
-</div>
-
-</div>
 
 ### Smart UV Angle
 
