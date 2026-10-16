@@ -39,6 +39,8 @@ La soluzione dipende dal difetto:
 
 Aumentare i sample non aggiunge dettaglio a una texture sorgente poco definita. Cambia un parametro alla volta e confronta il risultato.
 
+Se usi già una risoluzione alta, anche 8K, ma il dettaglio è ancora insufficiente, prova ad aumentare **Bake Materials**: più materiali dividono la superficie in più texture e possono conservare più dettaglio.
+
 ## Perché il bake GPU è ancora lento?
 
 Risoluzione, numero di materiali, mappe abilitate e complessità della sorgente influiscono sui tempi. Controlla anche **Force CPU Baking**: ScanReady lo abilita automaticamente quando imposti **Bake Materials** a `2` o più.
