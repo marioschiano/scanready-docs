@@ -41,6 +41,10 @@ Aumentare i sample non aggiunge dettaglio a una texture sorgente poco definita. 
 
 Se usi già una risoluzione alta, anche 8K, ma il dettaglio è ancora insufficiente, prova ad aumentare **Bake Materials**: più materiali dividono la superficie in più texture e possono conservare più dettaglio.
 
+## One Click Bake e Bake Textures fanno la stessa cosa?
+
+No. **One Click Bake** esegue automaticamente più passaggi del workflow, mentre **Bake Textures** usa le UV, il cage e le impostazioni già preparate per eseguire il bake. Usa **Bake Textures** quando vuoi ripetere solo il bake dopo aver cambiato cage, margini o impostazioni texture.
+
 ## Perché il bake GPU è ancora lento?
 
 Risoluzione, numero di materiali, mappe abilitate e complessità della sorgente influiscono sui tempi. Controlla anche **Force CPU Baking**: ScanReady lo abilita automaticamente quando imposti **Bake Materials** a `2` o più.
@@ -81,6 +85,16 @@ Puoi tornare allo Step 1 anche dopo UV e bake:
 Controlla sia **UV Padding**, che separa le isole, sia **Bake Margin**, che estende i pixel del bake oltre i bordi delle isole. Anche risoluzione, compressione e illuminazione già presente nella texture sorgente possono rendere visibili le cuciture.
 
 Se modifichi UV Padding, rigenera le UV e ripeti il bake. Se cambi solo Bake Margin, ripeti il bake sul layout esistente.
+
+## Ho cambiato Smart UV Preset, ma non vedo differenze?
+
+Dopo aver cambiato **Smart UV Preset**, **Smart UV Angle** o **UV Padding**, premi di nuovo **Generate UVs**. Le nuove impostazioni non modificano automaticamente il layout UV già esistente.
+
+Quando cambi impostazioni che influenzano il cage, ripeti **Bake Textures** prima di valutare il risultato. Il bake precedente non viene aggiornato automaticamente.
+
+## Ho cambiato il cage, ma il bake sembra uguale?
+
+Controlla **Show Cage** e **Cage Extrusion**, poi premi di nuovo **Bake Textures**. Il comando usa il cage e le UV correnti solo nel nuovo bake.
 
 ## Perché ScanReady consiglia più materiali bake?
 
