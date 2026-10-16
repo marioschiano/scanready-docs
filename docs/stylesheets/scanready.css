@@ -112,6 +112,8 @@
   border-radius: 5px;
 }
 
+.md-typeset .sr-cage-warning{font-size:1rem;line-height:1.72;margin:1.25rem 0;color:var(--md-default-fg-color)}
+
 .md-typeset .md-content__inner > p:first-of-type {
   font-weight: 600;
 }
