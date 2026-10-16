@@ -187,6 +187,52 @@ ScanReady include strumenti per rendere questo processo più veloce e più sempl
   <b>La dimensione del cage influenza direttamente il bake: un cage corretto cattura i dettagli in modo pulito senza proiettare geometria indesiderata.</b>
 </p>
 
+
+---
+
+## Cage e risultato del bake
+
+Il cage controlla la distanza entro cui Blender cerca i dettagli della scansione high-poly durante il bake. Il confronto seguente mostra prima la copertura della cage e poi il risultato ottenuto sulla texture.
+
+### 1. Copertura della cage
+
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img src="../../img/step2-cage-insufficient.png" alt="Cage insufficiente con aree rosse non coperte" class="sr-uv-compare__base" loading="lazy" decoding="async">
+    <div class="sr-uv-compare__overlay">
+      <img src="../../img/step2-cage-correct.png" alt="Cage corretta con copertura verde della superficie" class="sr-uv-compare__top" loading="lazy" decoding="async">
+    </div>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">Cage insufficiente</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">Cage corretta</span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--left"><strong>Rosso</strong><small>Copertura incompleta</small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--right"><strong>Verde</strong><small>Copertura completa</small></span>
+    <button class="sr-uv-compare__handle" type="button" aria-label="Confronta cage insufficiente e cage corretta" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
+</div>
+
+<p align="center"><strong>Sposta il cursore per confrontare la copertura della cage.</strong></p>
+
+La superficie rossa indica che la cage è troppo bassa e non copre completamente la mesh high-poly. La superficie verde indica invece una cage che avvolge correttamente il modello e può raggiungere i dettagli durante la proiezione.
+
+### 2. Risultato del bake
+
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img src="../../img/step2-bake-insufficient.png" alt="Bake con cage insufficiente, macchie nere e dettagli persi" class="sr-uv-compare__base" loading="lazy" decoding="async">
+    <div class="sr-uv-compare__overlay">
+      <img src="../../img/step2-bake-correct.png" alt="Bake con cage corretta e dettagli trasferiti correttamente" class="sr-uv-compare__top" loading="lazy" decoding="async">
+    </div>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">Bake con errori</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">Bake corretto</span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--left"><strong>Cage troppo bassa</strong><small>Dettagli persi</small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--right"><strong>Cage corretta</strong><small>Texture pulita</small></span>
+    <button class="sr-uv-compare__handle" type="button" aria-label="Confronta bake con cage insufficiente e bake con cage corretta" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
+</div>
+
+<p align="center"><strong>Sposta il cursore per vedere come la cage influenza il risultato del bake.</strong></p>
+
+Un cage troppo piccolo impedisce ai raggi del bake di raggiungere tutta la superficie. Possono comparire macchie nere, dettagli mancanti e artefatti, soprattutto sui bordi e sulla curva dell'arco.
 ---
 
 ## Metodo UV
