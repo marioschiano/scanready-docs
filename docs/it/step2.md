@@ -267,6 +267,10 @@ ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'
 
 <p>I controlli UV influenzano come la mesh ottimizzata viene aperta prima del bake. Sono separati da Adaptive Reduce, che controlla come la mesh viene semplificata nello Step 1.</p>
 
+<p align="center">
+  <img src="../../img/step2-smart-uv-presets.jpg" alt="Confronto dei preset Smart UV Balanced, Detailed, Large Islands e Continuous" style="max-width:1100px;width:100%;" loading="lazy" decoding="async">
+</p>
+
 <div class="admonition note">
   <p class="admonition-title">Le UV si aggiornano quando le rigeneri</p>
   <p>Cambiare <strong>Smart UV Preset</strong>, <strong>Smart UV Angle</strong> o <strong>UV Padding</strong> non ricostruisce subito il layout UV corrente.</p>
@@ -281,10 +285,6 @@ ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'
 </div>
 
 </div>
-
-<p align="center">
-  <img src="../../img/step2-smart-uv-presets.jpg" alt="Confronto dei preset Smart UV Balanced, Detailed, Large Islands e Continuous" style="max-width:1100px;width:100%;" loading="lazy" decoding="async">
-</p>
 
 ### Smart UV Angle
 
