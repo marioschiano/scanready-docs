@@ -232,7 +232,7 @@ La superficie rossa indica che la cage è troppo bassa e non copre completamente
 
 <p align="center"><strong>Sposta il cursore per vedere come la cage influenza il risultato del bake.</strong></p>
 
-Un cage troppo piccolo impedisce ai raggi del bake di raggiungere tutta la superficie. Possono comparire macchie nere, dettagli mancanti e artefatti, soprattutto sui bordi e sulla curva dell'arco.
+<p class="sr-cage-warning">Un cage troppo piccolo impedisce ai raggi del bake di raggiungere tutta la superficie. Possono comparire macchie nere, dettagli mancanti e artefatti, soprattutto sui bordi e sulla curva dell’arco.</p>
 ---
 
 ## Metodo UV
