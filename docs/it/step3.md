@@ -82,7 +82,7 @@ Usare più materiali aumenta lo spazio texture disponibile e può conservare pi�
 
 | Materiali | Uso tipico |
 |---|---|
-| 1 materialee | Asset leggeri |
+| 1 materiale | Asset leggeri |
 | 2 materiali | Conservazione media del dettaglio |
 | 4 materiali | Scansioni grandi e asset ad alto dettaglio |
 
