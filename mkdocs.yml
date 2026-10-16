@@ -57,6 +57,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/uv-compare.js
+  - javascripts/cage-compare.js
 
 extra:
   alternate:
