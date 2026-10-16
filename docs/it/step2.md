@@ -265,6 +265,10 @@ ScanReady espone i controlli Smart UV così puoi regolare il comportamento dell'
 
 <p>I preset Smart UV disponibili includono <strong>Detailed</strong>, <strong>Balanced</strong>, <strong>Large Islands</strong> e <strong>Continuous</strong>.</p>
 
+<p align="center">
+  <img src="../../img/step2-smart-uv-presets.jpg" alt="Confronto dei preset Smart UV Balanced, Detailed, Large Islands e Continuous" style="max-width:1100px;width:100%;" loading="lazy" decoding="async">
+</p>
+
 <p>I controlli UV influenzano come la mesh ottimizzata viene aperta prima del bake. Sono separati da Adaptive Reduce, che controlla come la mesh viene semplificata nello Step 1.</p>
 
 <div class="admonition note">
