@@ -165,12 +165,6 @@ Se ScanReady non riesce a trovare automaticamente una coppia high-to-UV corrispo
 
 ---
 
-
----
-
-
----
-
 ## Mappe bake
 
 ### Bake Base Color
