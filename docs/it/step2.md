@@ -1,5 +1,8 @@
 # Step 2 - UV / Cage
 
+!!! note "Riconoscere le mesh nello Step 2"
+    Nell'Outliner, le mesh create in questa fase iniziano con **2_**: **2_NomeMesh_Cage** identifica la mesh usata per il cage, mentre **2_NomeMesh_UV** identifica la mesh con il nuovo layout UV. La scansione originale conserva il suffisso **_high**.
+
 <p align="center">
   <img src="../../img/step2-uv-01.jpg" alt="Layout UV generato da ScanReady dalla mesh ottimizzata" style="max-width:760px;width:100%;" decoding="async" fetchpriority="high">
 </p>
