@@ -305,6 +305,6 @@
 html.sr-lightbox-open,body.sr-lightbox-open{overflow:hidden;height:100%;overscroll-behavior:none} .sr-lightbox{touch-action:none}
 .sr-lightbox{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:clamp(1rem,4vw,4rem);background:rgba(8,10,14,.9);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s ease,visibility .18s ease}
 .sr-lightbox.is-open{opacity:1;visibility:visible;pointer-events:auto}
-.sr-lightbox__image{touch-action:none;display:block;max-width:min(96vw,1500px);max-height:90vh;width:auto;height:auto;object-fit:contain;box-shadow:0 12px 40px rgba(0,0,0,.55)}
+.sr-lightbox__image{touch-action:none;display:block;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;max-width:min(96vw,1500px);max-height:90vh;width:auto;height:auto;object-fit:contain;box-shadow:0 12px 40px rgba(0,0,0,.55)}
 .sr-lightbox__close{position:absolute;top:1rem;right:1rem;width:2.8rem;height:2.8rem;border:1px solid rgba(255,255,255,.55);border-radius:50%;color:#fff;background:rgba(20,23,30,.85);font-size:2rem;line-height:1;cursor:pointer}
 .sr-lightbox__close:hover,.sr-lightbox__close:focus{background:#4caf50;outline:2px solid #fff;outline-offset:2px}
