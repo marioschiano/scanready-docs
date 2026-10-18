@@ -373,11 +373,6 @@ Il bake è ciò che permette a una mesh ottimizzata leggera di conservare gran p
 ---
 
 
-<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin:20px 0 28px;">
-<div style="flex:1 1 320px; min-width:260px;"><p>La mesh finale dello Step 3 riceve il prefisso <strong>3_</strong>, per esempio <strong>3_NomeMesh_final</strong>. In questo modo l'Outliner mostra chiaramente che questa è la mesh pronta per bake ed export.</p></div>
-<div style="flex:0 0 300px; text-align:center;"><img src="../../img/outliner-final.jpg" alt="Mesh finale dello Step 3 nell'Outliner" style="width:100%; max-width:300px;" loading="lazy" decoding="async"></div>
-</div>
-
 ---
 
 ## Mesh finale creata alla fine dello Step 3
