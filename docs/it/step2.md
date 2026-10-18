@@ -196,11 +196,11 @@ Il cage controlla la distanza entro cui Blender cerca i dettagli della scansione
 
 ### 1. Copertura della cage
 
-<div class="sr-uv-compare" data-cage-compare>
+<div class="sr-uv-compare" data-uv-compare>
   <div class="sr-uv-compare__image">
-    <img src="../../img/step2-cage-insufficient.png" alt="Cage insufficiente con aree rosse non coperte" class="sr-uv-compare__base" loading="lazy" decoding="async">
+    <img src="../../img/step2-cage-correct.png" alt="Cage corretta con copertura verde della superficie" class="sr-uv-compare__base" loading="lazy" decoding="async">
     <div class="sr-uv-compare__overlay">
-      <img src="../../img/step2-cage-correct.png" alt="Cage corretta con copertura verde della superficie" class="sr-uv-compare__top" loading="lazy" decoding="async">
+      <img src="../../img/step2-cage-insufficient.png" alt="Cage insufficiente con aree rosse non coperte" class="sr-uv-compare__top" loading="lazy" decoding="async">
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">Cage insufficiente</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">Cage corretta</span>
