@@ -1,7 +1,5 @@
 # Step 3 - Bake / Output
 
-
-
 <p align="center">
   <img src="../../img/high-to-low-workflow.jpg" alt="Risultato bake di una scansione con poligoni ridotti e dettaglio visivo preservato" style="max-width:900px;width:100%;" decoding="async" fetchpriority="high">
 </p>
