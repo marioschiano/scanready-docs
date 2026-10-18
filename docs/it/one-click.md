@@ -171,3 +171,12 @@ Se il risultato va regolato, usa il workflow manuale:
 - **Step 3 - Bake / Output**
 
 Gli step manuali danno più controllo sullo stesso processo.
+
+---
+
+## Mesh create da One Click Bake
+
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin:20px 0 28px;">
+<div style="flex:1 1 320px; min-width:260px;"><p>Alla fine del workflow, One Click Bake lascia nell'Outliner le mesh create durante i vari step. La mesh originale mantiene il suffisso <strong>_high</strong>, mentre la mesh pronta per il risultato finale usa il prefisso <strong>3_</strong> e il suffisso <strong>_final</strong>.</p><p>I numeri iniziali aiutano a riconoscere rapidamente a quale fase appartiene ogni mesh: <strong>1_</strong> preview, <strong>2_</strong> cage e UV, <strong>3_</strong> mesh finale.</p></div>
+<div style="flex:0 0 300px; text-align:center;"><img src="../../img/outliner-final.jpg" alt="Outliner finale dopo One Click Bake" style="width:100%; max-width:300px;" loading="lazy" decoding="async"></div>
+</div>
