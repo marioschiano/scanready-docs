@@ -12,20 +12,7 @@ Il tempo di elaborazione dipende dalla densità della scansione e dalla potenza 
 Optimize / Reduce controlla quanta geometria viene mantenuta nella preview low-poly. Il valore predefinito 0.10 crea una preview con circa 90% di poligoni in meno.
 </p>
 
-## Nomi delle mesh nell'Outliner
-
-ScanReady mantiene le varie fasi del workflow nell'**Outliner** usando nomi riconoscibili. La mesh originale viene rinominata aggiungendo il suffisso **_high**. Le mesh create durante il processo ricevono invece un prefisso numerico che indica lo step da cui provengono:
-
-- **1_NomeMesh_preview**: preview low-poly creata nello **Step 1 - Preview / Reduce**;
-- **2_NomeMesh_Cage**: mesh preparata per il cage nello **Step 2 - UV / Cage**;
-- **2_NomeMesh_UV**: mesh con il nuovo layout UV generato nello **Step 2 - UV / Cage**;
-- **3_NomeMesh_final**: mesh finale usata nello **Step 3 - Bake / Output**.
-
-Il numero iniziale funziona quindi come riferimento rapido alla fase del workflow: **1** indica lo Step 1, **2** lo Step 2 e **3** lo Step 3. In questo modo puoi riconoscere nell'Outliner le diverse versioni della mesh e seguire l'intero processo ScanReady senza confonderle con la scansione originale.
-
----
-
-## Ottimizzazione adattiva
+va
 
 L'ottimizzazione non viene applicata in modo uniforme su tutto il modello.
 
