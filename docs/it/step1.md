@@ -2,11 +2,6 @@
 
 Crea una preview ottimizzata e leggera dalla scansione high-poly.
 
-<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin:20px 0 28px;">
-<div style="flex:1 1 320px; min-width:260px;"><p>All'inizio del workflow ScanReady rinomina la scansione originale aggiungendo il suffisso <strong>_high</strong>. Dopo la creazione della preview, la nuova mesh viene indicata con il prefisso <strong>1_</strong>, perché appartiene allo Step 1.</p></div>
-<div style="flex:0 0 300px; text-align:center;"><img src="../../img/outliner-high.jpg" alt="Mesh originale con suffisso high nell'Outliner" style="width:100%; max-width:300px;" loading="lazy" decoding="async"><img src="../../img/outliner-preview.jpg" alt="Preview dello Step 1 nell'Outliner" style="width:100%; max-width:300px; margin-top:14px;" loading="lazy" decoding="async"></div>
-</div>
-
 Il tempo di elaborazione dipende dalla densità della scansione e dalla potenza del computer: una scansione con milioni di poligoni può richiedere anche circa un minuto o più su un PC di media potenza.
 
 <div style="width:100%; text-align:left;">
@@ -368,3 +363,11 @@ Una buona preview dovrebbe:
 - essere adatta alla generazione UV;
 - essere pronta per il texture bake nello step successivo.
 
+---
+
+## Mesh creata alla fine dello Step 1
+
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin:20px 0 28px;">
+<div style="flex:1 1 320px; min-width:260px;"><p>All'inizio del workflow ScanReady rinomina la scansione originale aggiungendo il suffisso <strong>_high</strong>. Dopo la creazione della preview, la nuova mesh viene indicata con il prefisso <strong>1_</strong>, perché appartiene allo Step 1.</p></div>
+<div style="flex:0 0 300px; text-align:center;"><img src="../../img/outliner-high.jpg" alt="Mesh originale con suffisso high nell'Outliner" style="width:100%; max-width:300px;" loading="lazy" decoding="async"><img src="../../img/outliner-preview.jpg" alt="Preview dello Step 1 nell'Outliner" style="width:100%; max-width:300px; margin-top:14px;" loading="lazy" decoding="async"></div>
+</div>
