@@ -424,11 +424,6 @@ UV buone e un cage configurato correttamente aiutano a mantenere l'asset:
 ---
 
 
-<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin:20px 0 28px;">
-<div style="flex:1 1 320px; min-width:260px;"><p>Le mesh create nello Step 2 ricevono il prefisso <strong>2_</strong>: <strong>2_NomeMesh_Cage</strong> identifica la mesh usata per il cage, mentre <strong>2_NomeMesh_UV</strong> identifica la mesh con il layout UV.</p></div>
-<div style="flex:0 0 300px; text-align:center;"><img src="../../img/outliner-uv.jpg" alt="Mesh Cage e UV dello Step 2 nell Outliner" style="width:100%; max-width:300px;" loading="lazy" decoding="async"></div>
-</div>
-
 ---
 
 ## Mesh create alla fine dello Step 2
