@@ -1,5 +1,8 @@
 # Step 3 - Bake / Output
 
+!!! note "Riconoscere la mesh finale"
+    Nell'Outliner, la mesh prodotta per questa fase inizia con **3_**, per esempio **3_NomeMesh_final**. Le mesh precedenti restano riconoscibili con i prefissi **1_** e **2_**, mentre la scansione originale mantiene il suffisso **_high**.
+
 <p align="center">
   <img src="../../img/high-to-low-workflow.jpg" alt="Risultato bake di una scansione con poligoni ridotti e dettaglio visivo preservato" style="max-width:900px;width:100%;" decoding="async" fetchpriority="high">
 </p>
