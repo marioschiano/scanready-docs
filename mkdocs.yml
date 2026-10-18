@@ -13,7 +13,6 @@ theme:
 
 plugins:
   - search
-  - glightbox
   - i18n:
       docs_structure: folder
       languages:
