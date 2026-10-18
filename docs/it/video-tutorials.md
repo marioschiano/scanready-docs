@@ -14,12 +14,12 @@ I tutorial sono in preparazione. Quando disponibili, potrai guardarli direttamen
 Come installare ScanReady come Blender Extension e verificare che il pannello sia disponibile in Blender.
 
 <div class="sr-video">
-  <div class="sr-video-placeholder">
-    <div>
-      <strong>Video Installazione</strong>
-      <span>Video in preparazione.</span>
-    </div>
-  </div>
+  <iframe
+    src="https://www.youtube.com/embed/kQ_icBiJEI8"
+    title="Installazione di ScanReady"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
 </div>
 
 ---
