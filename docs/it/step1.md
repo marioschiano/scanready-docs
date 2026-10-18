@@ -365,9 +365,20 @@ Una buona preview dovrebbe:
 
 ---
 
-## Mesh creata alla fine dello Step 1
 
 <div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start; margin:20px 0 28px;">
 <div style="flex:1 1 320px; min-width:260px;"><p>All'inizio del workflow ScanReady rinomina la scansione originale aggiungendo il suffisso <strong>_high</strong>. Dopo la creazione della preview, la nuova mesh viene indicata con il prefisso <strong>1_</strong>, perché appartiene allo Step 1.</p></div>
 <div style="flex:0 0 300px; text-align:center;"><img src="../../img/outliner-high.jpg" alt="Mesh originale con suffisso high nell'Outliner" style="width:100%; max-width:300px;" loading="lazy" decoding="async"><img src="../../img/outliner-preview.jpg" alt="Preview dello Step 1 nell'Outliner" style="width:100%; max-width:300px; margin-top:14px;" loading="lazy" decoding="async"></div>
+</div>
+
+---
+
+## Mesh creata alla fine dello Step 1
+
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:center; margin:20px 0 28px;">
+<div style="flex:1 1 320px; min-width:260px;">
+<p>La mesh creata alla fine dello Step 1 riceve il prefisso <strong>1_</strong>.</p>
+<p><strong>1_NomeMesh_preview</strong> identifica la mesh preview ottimizzata, usata come base per gli step successivi.</p>
+</div>
+<div style="flex:0 0 300px; text-align:center;"><img src="../../img/outliner-preview.jpg" alt="Mesh preview dello Step 1 nell'Outliner" style="width:100%; max-width:300px;" loading="lazy" decoding="async"></div>
 </div>
