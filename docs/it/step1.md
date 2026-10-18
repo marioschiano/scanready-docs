@@ -12,7 +12,9 @@ Il tempo di elaborazione dipende dalla densità della scansione e dalla potenza 
 Optimize / Reduce controlla quanta geometria viene mantenuta nella preview low-poly. Il valore predefinito 0.10 crea una preview con circa 90% di poligoni in meno.
 </p>
 
-va
+---
+
+## Ottimizzazione adattiva
 
 L'ottimizzazione non viene applicata in modo uniforme su tutto il modello.
 
