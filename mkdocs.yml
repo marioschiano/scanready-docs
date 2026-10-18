@@ -51,7 +51,7 @@ markdown_extensions:
   - md_in_html
 
 extra_css:
-  - stylesheets/scanready.css?v=mobile-lightbox-2
+  - stylesheets/scanready.css?v=mobile-lightbox-3
   - stylesheets/italian.css
 
 extra_javascript:
