@@ -51,13 +51,13 @@ markdown_extensions:
   - md_in_html
 
 extra_css:
-  - stylesheets/scanready.css
+  - stylesheets/scanready.css?v=mobile-lightbox-2
   - stylesheets/italian.css
 
 extra_javascript:
   - javascripts/uv-compare.js
   - javascripts/cage-compare.js
-  - javascripts/image-lightbox.js
+  - javascripts/image-lightbox.js?v=mobile-lightbox-2
 
 extra:
   alternate:
