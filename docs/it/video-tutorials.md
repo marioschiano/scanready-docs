@@ -2,7 +2,7 @@
 
 Questa pagina raccoglie i video tutorial di ScanReady nell'ordine consigliato per imparare il workflow.
 
-I tutorial sono in preparazione. Quando disponibili, potrai guardarli direttamente in questa pagina. Nel frattempo consulta le guide scritte o il [canale YouTube](https://www.youtube.com/@marioschiano3d).
+Qui trovi i video tutorial di ScanReady. Per ulteriori contenuti consulta il [canale YouTube](https://www.youtube.com/@marioschiano3d).
 
 !!! tip "Ordine consigliato"
     L'ordine segue il percorso di un nuovo utente: installazione, One Click Bake, workflow manuale, Advanced e troubleshooting.
@@ -29,12 +29,7 @@ Come installare ScanReady come Blender Extension e verificare che il pannello si
 Workflow completo per convertire una scansione high-poly in un asset ottimizzato con UV, cage, bake e materiali finali.
 
 <div class="sr-video">
-  <div class="sr-video-placeholder">
-    <div>
-      <strong>Video One Click Bake</strong>
-      <span>Video in preparazione.</span>
-    </div>
-  </div>
+  <iframe src="https://www.youtube.com/embed/JxFfMowUAfM" title="ScanReady One Click Bake – Optimize a 3D Scan in Blender" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 ---
@@ -73,11 +68,18 @@ Come leggere i pesi Adaptive Reduce, scegliere i preset, proteggere i bordi impo
 
 Come correggere cage, UV, texture nere, normal map piatte, problemi di memoria e bake non riusciti.
 
+<h3>Correggere gli errori del bake</h3>
+
+<p>Come regolare il cage in Blender per correggere dettagli mancanti, aree nere e proiezioni errate.</p>
+
 <div class="sr-video">
-  <div class="sr-video-placeholder">
-    <div>
-      <strong>Video Troubleshooting bake</strong>
-      <span>Video in preparazione.</span>
-    </div>
-  </div>
+  <iframe src="https://www.youtube.com/embed/6He8BVfdMt4" title="ScanReady Fix Bake Errors – Cage Adjustment in Blender" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<h3>Recuperare il dettaglio texture</h3>
+
+<p>Come aumentare la risoluzione delle texture quando il risultato del bake appare troppo morbido o poco dettagliato.</p>
+
+<div class="sr-video">
+  <iframe src="https://www.youtube.com/embed/UlUHQj2YFnk" title="ScanReady Fix Low Texture Detail – Increase Texture Resolution" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
