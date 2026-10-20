@@ -469,11 +469,12 @@ Scegli il preset più adatto alla scansione e all'asset target.
 </ul>
 </div>
 
+<div style="flex:0 0 260px; text-align:center;">
+  <p style="margin-top:0;"><strong>Adaptive Preset</strong></p>
+  <img src="../../img/adaptive-preset-menu.png" alt="Menu Adaptive Preset con Balanced, Preserve Details e Flat Surfaces" style="width:230px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
-<p align="center">
-  <img src="../../img/adaptive-preset-menu.png" alt="Menu Adaptive Preset con Balanced, Preserve Details e Flat Surfaces" style="width:230px;max-width:100%;" loading="lazy" decoding="async">
-</p>
+</div>
 
 <hr>
 
@@ -1533,3 +1534,4 @@ Usa le impostazioni avanzate per trovare il compromesso giusto tra:
 L'obiettivo non è preservare ogni poligono della scansione originale.
 
 L'obiettivo è preservare l'identità visiva della scansione in un asset più leggero e più facile da usare.
+
