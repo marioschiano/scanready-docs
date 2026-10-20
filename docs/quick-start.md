@@ -62,6 +62,7 @@ The goal is to keep the visual quality of the scan while making the model lighte
 For a first test, keep most defaults and only check:
 
 - **Final Faces** for the desired mesh density.
+- **Adaptive Method** set to **Best Quality**.
 - **Adaptive Reduce Preset** set to **Balanced** for most first tests.
 - **Pre-Decimate Merge** only if you need stronger cleanup for overlapping scan vertices before reduction.
 - **Texture Size** for the desired output resolution.
@@ -75,7 +76,7 @@ After baking, use **Bake Folder** in Step 3 to open the folder where the latest 
 
 If you increase **Bake Materials** above `1`, ScanReady automatically enables **Force CPU Baking** as a safer default for heavier multi-material bakes.
 
-If the preview loses too much surface character, try **Preserve Details**. If broad flat areas still keep too many polygons, try **Flat Surfaces**. For vehicles or hard-surface scans, try **Hard Surface**.
+If the preview loses too much surface character, try **Preserve Details**. If broad flat areas still keep too many polygons, try **Flat Surfaces**. Keep **Adaptive Method** on **Best Quality** unless you need the original Legacy behavior for compatibility.
 
 If the bake produces black or missing areas, check the cage preview and adjust **Cage Extrusion** before baking again.
 

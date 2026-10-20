@@ -78,7 +78,7 @@ Puoi tornare allo Step 1 anche dopo UV e bake:
 5. Ripeti **Bake Textures** nello Step 3.
 
 !!! tip "Scegli il preset in base alla forma"
-    Prova **Flat Surfaces** per superfici ampie e semplici, **Hard Surface** per oggetti meccanici. Usa **Fast Adaptive Reduce** per un’analisi più rapida e approssimata delle scansioni dense.
+    Prova **Flat Surfaces** per superfici ampie, pannelli e oggetti meccanici. Usa **Fast Adaptive Reduce** per un test più rapido delle scansioni dense e disattivalo per il controllo qualità finale.
 
 ## Perché compaiono seam visibili nella texture bake?
 

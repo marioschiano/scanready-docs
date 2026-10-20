@@ -406,7 +406,7 @@ I pesi Adaptive Reduce vengono calcolati quando clicchi <strong>Create Lowpoly P
 
 <div style="flex:0 0 260px; text-align:center;">
   <p style="margin-top:0;"><strong>Adaptive Reduce</strong></p>
-  <img src="../../img/advanced_adaptive_reduce.jpg" alt="Screenshot Adaptive Reduce di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
+  <img src="../../img/adaptive-reduce-best-quality-balanced.png" alt="Pannello Adaptive Reduce con Best Quality e Balanced" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -437,6 +437,25 @@ Quando è attivo, ScanReady analizza la mesh e crea pesi per proteggere dettagli
 <div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
+<h3>Adaptive Method</h3>
+
+<p><strong>Best Quality</strong> è il metodo consigliato. Prima identifica le grandi aree planari, poi recupera curvature persistenti, decorazioni e rilievi coerenti. In questo modo pareti, pavimenti e tetti rumorosi possono essere ridotti senza trattare il dettaglio reale come semplice rumore di scansione.</p>
+
+<p><strong>Legacy</strong> conserva il calcolo Adaptive Reduce originale. Usalo per compatibilità con vecchi progetti o per confrontare una scansione particolare con il comportamento precedente.</p>
+</div>
+
+<div style="flex:0 0 260px; text-align:center;">
+  <p style="margin-top:0;"><strong>Adaptive Method</strong></p>
+  <img src="../../img/adaptive-method-menu.png" alt="Menu Adaptive Method con Best Quality e Legacy" style="width:230px; max-width:100%;" loading="lazy" decoding="async">
+</div>
+
+</div>
+
+<hr>
+
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
+
+<div style="flex:1 1 0; min-width:0;">
 <h3>Adaptive Preset</h3>
 
 <p>
@@ -447,14 +466,13 @@ Scegli il preset più adatto alla scansione e all'asset target.
 <li><strong>Balanced</strong> è il preset predefinito per la maggior parte delle scansioni.</li>
 <li><strong>Preserve Details</strong> protegge più fortemente regioni complesse o importanti della superficie.</li>
 <li><strong>Flat Surfaces</strong> riduce in modo più aggressivo le aree ampie e semplici.</li>
-<li><strong>Hard Surface</strong> è un preset approssimato più veloce per veicoli e scansioni hard-surface; protegge solo rotture di normale più forti.</li>
 </ul>
 </div>
 
 </div>
 
 <p align="center">
-  <img src="../../img/adaptive-preset-results.jpg" alt="Confronto dei risultati dei preset Adaptive Preset: Balanced, Preserve Detailed, Flat Surfaces e Hard Surface" style="max-width:1100px;width:100%;" loading="lazy" decoding="async">
+  <img src="../../img/adaptive-preset-menu.png" alt="Menu Adaptive Preset con Balanced, Preserve Details e Flat Surfaces" style="width:230px;max-width:100%;" loading="lazy" decoding="async">
 </p>
 
 <hr>
@@ -475,6 +493,8 @@ Le aree rosse rappresentano superfici più piatte che possono essere ridotte di 
 <p>
 La visualizzazione è solo un aiuto di preview. Serve a scegliere il preset e capire il comportamento della riduzione; non è una texture esportata o baked.
 </p>
+
+<p>Quando la mappa colori è attiva, ScanReady nasconde temporaneamente il wireframe per renderla leggibile. Disattivando Show Adaptive Weights viene ripristinata la precedente impostazione Show Wireframe.</p>
 
 <div class="admonition note">
   <p class="admonition-title">Pesi già calcolati</p>
@@ -505,11 +525,11 @@ Usa questa preview quando una scansione ha superfici miste, come pannelli archit
 <h3>Adaptive Strength</h3>
 
 <p>
-Controlla quanto fortemente i pesi adattivi influenzano la riduzione.
+Questo controllo compare soltanto con il metodo <strong>Legacy</strong> e regola quanto fortemente la mappa originale influenza la riduzione.
 </p>
 
 <p>
-Valori più alti rendono più marcata la differenza tra aree protette e aree semplificate. Valori più bassi producono un comportamento più vicino a una riduzione uniforme.
+Best Quality non usa Adaptive Strength: usa invece <strong>Adaptive Decimate Factor</strong>.
 </p>
 </div>
 
@@ -551,11 +571,11 @@ Valori più bassi rendono ScanReady più sensibile alle variazioni di superficie
 <h3>Detail Preserve</h3>
 
 <p>
-Regola quanta protezione viene data ai dettagli della superficie durante il calcolo dei pesi.
+Imposta il peso minimo di riduzione assegnato alle zone riconosciute come dettaglio.
 </p>
 
 <p>
-Aumentalo quando la scansione contiene dettagli fini che non vuoi perdere. Abbassalo quando vuoi una riduzione più aggressiva.
+Valori più bassi proteggono maggiormente il dettaglio rilevato. Valori più alti permettono a Decimate di ridurre di più anche nelle zone dettagliate.
 </p>
 </div>
 
@@ -591,6 +611,20 @@ Valori più alti possono produrre una distribuzione meno frastagliata, utile su 
 
 <hr>
 
+### Controlli di analisi Best Quality
+
+| Parametro | Balanced | Cosa controlla | Aumentare / diminuire |
+|---|---:|---|---|
+| **Complexity Sensitivity** | 0,75 | Quanto facilmente curvature e cambi geometrici persistenti vengono classificati come dettaglio. | Aumentalo per ottenere più verde/blu e proteggere più geometria. Abbassalo per una riduzione più aggressiva. |
+| **Flat / Detail Contrast** | 1,30 | La separazione tra zone rosse planari e zone blu protette. | Aumentalo per una transizione più netta; abbassalo per un gradiente più morbido. |
+| **Detail Spread Rings** | 1 | Quanti anelli di vertici vicini ricevono la protezione del dettaglio rilevato. | Aumentalo quando rilievi, cornici o decorazioni necessitano di supporto circostante. Valori alti possono proteggere aree troppo ampie. |
+| **Noise Rejection** | 0,85 | Quanto vengono attenuate le variazioni isolate che non persistono nella regione circostante. | Aumentalo per ignorare più rumore di scansione. Abbassalo per conservare più variazioni fini, compreso possibile rumore. |
+| **Analysis Scale** | 4 | Il numero di anelli connessi usati per distinguere una forma coerente dal rumore locale. | Aumentalo per un'analisi più ampia e lenta. Abbassalo per una risposta più locale e sensibile al rumore. |
+| **Adaptive Decimate Factor** | 2,0 | Quanto la mappa pesi influenza il modificatore Decimate. Non cambia i colori o il modo in cui la mappa viene calcolata. | Usa normalmente 1–5. Valori molto alti accentuano la differenza tra rosso e blu, ma possono creare triangoli lunghi o radiali. |
+
+!!! tip "Regolazione consigliata"
+    Parti sempre da **Balanced** e **Adaptive Decimate Factor 2**. Cambia un solo parametro alla volta, ricrea la preview e controlla sia la mappa colori sia il wireframe risultante.
+
 <div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; margin-top:20px; margin-bottom:28px;">
 
 <div style="flex:1 1 0; min-width:0;">
@@ -601,7 +635,7 @@ Usa una modalità più veloce e approssimata del calcolo adattivo.
 </p>
 
 <p>
-È utile per preview rapide o asset hard-surface, perché riduce il tempo di analisi saltando parte della rifinitura regionale. I bordi con normali molto diverse restano comunque protetti.
+Usa meno vicini, una scala di analisi ridotta, nessuno smoothing finale e al massimo un anello di espansione del dettaglio. È utile per test rapidi su scansioni molto dense; disattivalo per il controllo qualità finale.
 </p>
 </div>
 

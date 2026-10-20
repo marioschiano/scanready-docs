@@ -131,16 +131,23 @@ Controlli di **Advanced > Mesh Settings**, nello stesso ordine dell’addon. Alc
 | Impostazione | Descrizione | Quando regolarla |
 |---|---|---|
 | **Adaptive Reduce** | Usa pesi basati sulla scansione per ridurre di più le superfici piatte e proteggere dettagli importanti. | Tienilo attivo per la maggior parte delle scansioni. Disattivalo solo se vuoi un risultato di riduzione uniforme più semplice. |
-| **Adaptive Preset** | Sceglie il comportamento della riduzione adattiva. | Usa Balanced per la maggior parte delle scansioni, Preserve Details per superfici complesse, Flat Surfaces per superfici semplici ampie, Hard Surface per veicoli e scansioni hard-surface. |
-| **Show Adaptive Weights** | Mostra i pesi di riduzione adattiva come colori sul modello. | Usalo per vedere quali aree verranno ridotte di più prima di creare la preview low-poly finale. |
-| **Adaptive Strength** | Regola quanto fortemente Adaptive Reduce favorisce la riduzione delle aree piatte. | Alzalo per semplificare di più le superfici regolari, abbassalo se vuoi un comportamento più uniforme. |
-| **Adaptive Reduce Angle** | Controlla la sensibilità ai cambi di normale durante il calcolo dei pesi. | Usalo per decidere quanto un cambio di direzione deve essere considerato dettaglio. |
-| **Detail Preserve** | Protegge maggiormente le zone lette come dettaglio. | Alzalo se la preview perde pieghe, bordi o dettagli importanti. |
-| **Smooth Weights** | Smussa i pesi Adaptive Reduce per transizioni più omogenee. | Aumentalo quando la preview pesi appare troppo puntinata o frastagliata. |
-| **Fast Adaptive Reduce** | Usa un calcolo più approssimato e veloce per scansioni dense. | Attivalo per test rapidi o scansioni molto pesanti. |
-| **Protect Feature Edges** | Protegge i bordi con differenze di normale forti. | Tienilo attivo per asset hard-surface, veicoli, architettura e silhouette importanti. |
-| **Feature Edge Angle** | Angolo minimo per considerare un bordo come feature edge. | Abbassalo per proteggere più bordi, alzalo per proteggere solo rotture più nette. |
-| **Feature Edge Rings** | Numero di anelli vicini protetti attorno ai feature edge. | Aumentalo se i bordi netti perdono supporto durante la riduzione. |
+| **Adaptive Method** | Seleziona Best Quality oppure il calcolo originale Legacy. | Usa normalmente Best Quality. Passa a Legacy solo per compatibilità o confronto. |
+| **Adaptive Preset** | Sceglie il comportamento della riduzione adattiva. | Usa Balanced per la maggior parte delle scansioni, Preserve Details per superfici complesse o Flat Surfaces per grandi superfici semplici. |
+| **Show Adaptive Weights** | Mostra la mappa pesi: rosso/arancio riduce di più, verde è transizione, blu protegge il dettaglio. Nasconde temporaneamente il wireframe. | Usalo per verificare come ScanReady interpreta la scansione; disattivandolo torna la precedente impostazione wireframe. |
+| **Adaptive Strength** | Intensità del metodo Legacy. | Regolalo soltanto quando Adaptive Method è Legacy. |
+| **Adaptive Reduce Angle** | Angolo di riferimento per distinguere zone planari e cambi di normale significativi. | Abbassalo per riconoscere variazioni più piccole come dettaglio; alzalo per includere più superfici morbide nella riduzione. |
+| **Detail Preserve** | Peso minimo di riduzione nelle zone protette. | Abbassalo per proteggere maggiormente il dettaglio rilevato; alzalo per consentire più riduzione anche lì. |
+| **Smooth Weights** | Smussa le transizioni della mappa pesi. | Alzalo per transizioni meno frammentate; evita valori eccessivi attorno a dettagli piccoli. |
+| **Complexity Sensitivity** | Decide quanto facilmente Best Quality classifica cambi di forma persistenti come dettaglio. | Alzalo per proteggere più geometria; abbassalo per una riduzione più aggressiva. |
+| **Flat / Detail Contrast** | Controlla quanto nettamente si separano aree piatte e dettagliate. | Alzalo per una divisione rosso/blu più netta; abbassalo per un gradiente più morbido. |
+| **Detail Spread Rings** | Espande il dettaglio rilevato negli anelli di vertici vicini. | Alzalo quando rilievi e decorazioni richiedono più supporto circostante. |
+| **Noise Rejection** | Attenua variazioni isolate che non persistono nella regione circostante. | Alzalo per ignorare più rumore di scansione; abbassalo per conservare più variazioni fini. |
+| **Analysis Scale** | Imposta quanti anelli connessi vengono usati per distinguere forme coerenti e rumore locale. | Alzalo per un'analisi più ampia e lenta; abbassalo per una risposta più locale. |
+| **Adaptive Decimate Factor** | Controlla quanto i pesi Best Quality influenzano Blender Decimate senza cambiare la mappa colori. | Parti da 2. È consigliato l'intervallo 1–5; valori alti possono creare triangoli lunghi o radiali. |
+| **Fast Adaptive Reduce** | Usa meno campioni e passaggi di rifinitura. | Attivalo per test veloci su scansioni dense; disattivalo per il controllo qualità finale. |
+| **Protect Feature Edges** | Protegge bordi aperti e spigoli abbastanza netti. | Tienilo attivo per silhouette, archi, smussi, cornici e rotture architettoniche. |
+| **Feature Edge Angle** | Angolo minimo tra le normali delle facce per riconoscere un feature edge. | Abbassalo per proteggere più bordi; alzalo per proteggere soltanto rotture più nette. |
+| **Feature Edge Rings** | Espande la protezione negli anelli di vertici vicini. | Alzalo se gli spigoli perdono supporto circostante. |
 
 !!! note "Quando ricreare la preview"
     I pesi Adaptive Reduce vengono calcolati quando premi **Create Lowpoly Preview**. Cambiare **Optimize / Reduce** o **Final Faces** dopo quel momento aggiorna la quantità di riduzione, ma cambiare preset o valori dettagliati di Adaptive Reduce richiede di creare di nuovo la preview low-poly per ricostruire i pesi.

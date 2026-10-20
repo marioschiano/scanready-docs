@@ -13,8 +13,10 @@ Use this page as the public release notes source for Superhive, Blender Extensio
 - Step 1 Preview / Reduce workflow.
 - Adaptive Reduce for scan-aware mesh optimization.
 - Home and Step 1 documentation sections explaining why ScanReady Adaptive Reduce differs from standard Blender Decimate, with placeholders for comparison images.
-- Adaptive Reduce presets: Balanced, Preserve Details, Flat Surfaces, and Hard Surface.
-- Hard Surface Adaptive Reduce preset for vehicles and hard-surface scans, tuned as a faster approximate pass that protects only stronger normal breaks.
+- Adaptive Method selector with Best Quality and Legacy compatibility modes.
+- Best Quality Adaptive Reduce combines broad planarity detection with persistent curvature and decoration-detail protection.
+- Adaptive Reduce presets: Balanced, Preserve Details, and Flat Surfaces.
+- Advanced Best Quality controls for complexity sensitivity, flat/detail contrast, detail spreading, noise rejection, analysis scale, and Decimate influence.
 - Show Adaptive Weights visualization.
 - Auto combine mesh parts for imported scans with hierarchy.
 - Auto clean scan debris option.
@@ -37,6 +39,9 @@ Use this page as the public release notes source for Superhive, Blender Extensio
 - Adaptive Reduce settings were moved to Advanced.
 - Show Adaptive Reduce was renamed to Show Adaptive Weights.
 - Default Adaptive Reduce behavior now uses the Balanced preset.
+- Balanced uses the validated Best Quality settings and Adaptive Decimate Factor 2.
+- Show Adaptive Weights temporarily hides the wireframe and restores the previous wireframe preference when closed.
+- Adaptive Strength is shown only for Legacy; Best Quality uses Adaptive Decimate Factor.
 - Default Detail Preserve value changed to better protect detailed scan areas.
 - Removed Auto Weld Distance and Weld Distance; Pre-Decimate Merge is now the single explicit weld control.
 - Removed the live Weld modifier from the preview stack; vertex welding is now handled by the applied Pre-Decimate Merge before Decimate.
@@ -47,7 +52,7 @@ Use this page as the public release notes source for Superhive, Blender Extensio
 ### Fixed
 
 - Fixed Blender Extension manifest validation errors caused by punctuation at the end of manifest strings.
-- Improved Adaptive Reduce weight calculation so broad flat areas are detected more clearly.
+- Improved Adaptive Reduce weight calculation so broad flat areas are detected more clearly while coherent decoration remains protected.
 - Improved Adaptive Reduce color preview readability.
 - Reduced continuous mesh stats recalculation so the Blender interface stays more responsive.
 

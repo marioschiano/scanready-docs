@@ -12,7 +12,10 @@ Consulta le novità e i problemi noti prima di aggiornare l’addon.
 - Workflow One Click Bake per creare asset game-ready da scansioni.
 - Workflow Step 1 Preview / Reduce.
 - Adaptive Reduce per ottimizzazione mesh consapevole della scansione.
-- Preset Adaptive Reduce: Balanced, Preserve Details, Flat Surfaces e Hard Surface.
+- Selettore Adaptive Method con Best Quality e modalità Legacy per compatibilità.
+- Best Quality combina rilevamento delle grandi aree planari e protezione di curvature persistenti, rilievi e decorazioni.
+- Preset Adaptive Reduce: Balanced, Preserve Details e Flat Surfaces.
+- Controlli avanzati Best Quality per sensibilità alla complessità, contrasto piatto/dettaglio, espansione del dettaglio, rifiuto del rumore, scala di analisi e influenza Decimate.
 - Visualizzazione Show Adaptive Weights.
 - Auto combine mesh parts per scansioni importate con gerarchia.
 - Opzione Auto clean scan debris.
@@ -33,6 +36,9 @@ Consulta le novità e i problemi noti prima di aggiornare l’addon.
 - Le impostazioni Adaptive Reduce sono state spostate in Advanced.
 - Show Adaptive Reduce è stato rinominato Show Adaptive Weights.
 - Il comportamento predefinito Adaptive Reduce ora usa il preset Balanced.
+- Balanced usa i valori Best Quality verificati e Adaptive Decimate Factor 2.
+- Show Adaptive Weights nasconde temporaneamente il wireframe e ripristina la preferenza precedente quando viene disattivato.
+- Adaptive Strength viene mostrato soltanto con Legacy; Best Quality usa Adaptive Decimate Factor.
 - Il valore predefinito Detail Preserve è stato cambiato per proteggere meglio le aree dettagliate delle scansioni.
 - Rimossi Auto Weld Distance e Weld Distance; Pre-Decimate Merge è ora il singolo controllo esplicito di weld.
 - Rimosso il modificatore Weld live dallo stack preview; il vertex welding ora viene gestito dal Pre-Decimate Merge applicato prima di Decimate.
@@ -43,7 +49,7 @@ Consulta le novità e i problemi noti prima di aggiornare l’addon.
 ### Corretto
 
 - Corretti errori di validazione del manifest Blender Extension causati da punteggiatura alla fine delle stringhe manifest.
-- Migliorato il calcolo dei pesi Adaptive Reduce, così le aree piatte ampie vengono rilevate più chiaramente.
+- Migliorato il calcolo dei pesi Adaptive Reduce, così le aree piatte ampie vengono rilevate più chiaramente e le decorazioni coerenti restano protette.
 - Migliorata la leggibilità della preview colori Adaptive Reduce.
 - Ridotto il ricalcolo continuo delle mesh stats, così l'interfaccia Blender resta più reattiva.
 

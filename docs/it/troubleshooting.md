@@ -306,13 +306,12 @@ Adaptive Reduce cambia come ScanReady distribuisce la riduzione mesh sulla scans
 | **Balanced** | La maggior parte delle scansioni | Buon comportamento generale. Usalo per primo. |
 | **Preserve Details** | Scansioni complesse con forme scultoree, pieghe, incisioni, danni o piccoli dettagli | Protegge più fortemente le aree di dettaglio importanti. |
 | **Flat Surfaces** | Oggetti con ampie superfici semplici, pannelli, muri, pavimenti o aree architettoniche piatte | Riduce in modo più aggressivo le aree semplici per risparmiare poligoni. |
-| **Hard Surface** | Veicoli, props, macchinari e scansioni hard-surface | Usa un passaggio approssimato più veloce e protegge solo rotture di normale più forti. |
 
 Se la preview ottimizzata perde dettagli importanti, prova **Preserve Details** e crea di nuovo la preview.
 
 Se la preview mantiene troppa geometria su aree semplici, prova **Flat Surfaces** e crea di nuovo la preview.
 
-Per veicoli o scansioni hard-surface, prova **Hard Surface** e controlla silhouette e principali interruzioni dei pannelli.
+Per veicoli o scansioni hard-surface, parti da **Balanced**, lascia attivo **Protect Feature Edges** e controlla silhouette e principali interruzioni dei pannelli. Usa **Flat Surfaces** se i pannelli ampi restano inutilmente densi.
 
 ---
 

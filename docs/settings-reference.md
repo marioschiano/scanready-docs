@@ -14,8 +14,23 @@ Use it as a quick reference when tuning scans for VR, videogames, realtime visua
 | **Optimize / Reduce** | Controls how strongly the mesh is reduced. | Lower values create stronger reduction. Higher values keep more geometry. |
 | **Pre-Decimate Merge** | Runs Merge by Distance on the duplicated preview mesh before Decimate. This is the single explicit weld control in ScanReady 1.0. | Increase it to reduce overlapping scan polygons before optimization. Lower it if thin details are affected. |
 | **Adaptive Reduce** | Uses scan-aware weighting to reduce flatter surfaces more while protecting important details. | Keep enabled for most scans. Disable only if you need a simpler uniform reduction result. |
-| **Adaptive Reduce Preset** | Chooses the adaptive reduction behavior. | Use Balanced for most scans, Preserve Details for complex surfaces, Flat Surfaces for broad simple surfaces, or Hard Surface for vehicles and hard-surface scans. |
-| **Show Adaptive Weights** | Displays the adaptive reduction weights as colors on the model. | Use it to preview which areas will be reduced more before creating the final low-poly preview. |
+| **Adaptive Method** | Selects Best Quality or the original Legacy calculation. | Use Best Quality normally. Use Legacy only for compatibility or comparison. |
+| **Adaptive Preset** | Chooses the adaptive reduction behavior. | Use Balanced for most scans, Preserve Details for complex surfaces, or Flat Surfaces for broad simple surfaces. |
+| **Show Adaptive Weights** | Displays the weight map: red/orange reduces more, green is transitional, and blue protects detail. It temporarily hides the wireframe. | Use it to verify how ScanReady reads the scan; turning it off restores the previous wireframe preference. |
+| **Adaptive Strength** | Legacy-only influence strength. | Adjust it only when Adaptive Method is Legacy. |
+| **Adaptive Reduce Angle** | Reference angle for classifying planar areas and meaningful normal changes. | Lower it to recognize smaller changes as detail; raise it to include broader smooth regions in reduction. |
+| **Detail Preserve** | Minimum reduction weight in protected regions. | Lower it to protect detected detail more strongly; raise it to permit more reduction there. |
+| **Smooth Weights** | Smooths transitions in the weight map. | Raise it for less fragmented transitions; avoid excessive smoothing around small features. |
+| **Complexity Sensitivity** | Controls how readily Best Quality classifies persistent shape changes as detail. | Raise it for more protected geometry; lower it for more aggressive reduction. |
+| **Flat / Detail Contrast** | Controls how sharply flat and detailed areas separate. | Raise it for a harder red/blue division; lower it for a softer gradient. |
+| **Detail Spread Rings** | Expands detected detail into neighboring vertex rings. | Raise it when relief needs more surrounding support. |
+| **Noise Rejection** | Attenuates isolated changes that do not persist regionally. | Raise it to reject more scan noise; lower it to retain more fine variation. |
+| **Analysis Scale** | Sets the connected-ring support used to distinguish coherent form from local noise. | Raise it for broader, slower analysis; lower it for more local response. |
+| **Adaptive Decimate Factor** | Controls how strongly Best Quality weights influence Blender Decimate without changing the map itself. | Start at 2. Values around 1–5 are recommended; high values can create long or radial triangles. |
+| **Fast Adaptive Reduce** | Uses fewer samples and refinement passes. | Enable it for quick dense-scan tests; disable it for the final quality pass. |
+| **Protect Feature Edges** | Protects boundaries and sufficiently sharp edges. | Keep it enabled for silhouettes, arches, bevels, frames, and hard architectural breaks. |
+| **Feature Edge Angle** | Minimum face-normal angle treated as a feature edge. | Lower it to protect more edges; raise it to protect only sharper breaks. |
+| **Feature Edge Rings** | Expands edge protection into neighboring rings. | Raise it if sharp features lose surrounding support. |
 | **Auto Fix Normals** | Recalculates high mesh normals before preview creation. | Enable it when the scan has inverted normals or shading artifacts. |
 | **Recalculate Outside Normals** | Manually recalculates normals outside. | Use it when the mesh appears inside-out or has broken shading. |
 

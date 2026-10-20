@@ -56,7 +56,8 @@ Usa il preset Adaptive Reduce come punto di partenza rapido:
 - **Balanced** per la maggior parte delle scansioni e degli asset realtime generici.
 - **Preserve Details** quando la scansione contiene pieghe importanti, forme scultoree, incisioni o dettagli ravvicinati.
 - **Flat Surfaces** quando l'oggetto contiene ampie aree semplici che possono essere semplificate in modo più aggressivo.
-- **Hard Surface** per veicoli e scansioni hard-surface, dove un passaggio approssimato più veloce deve proteggere soprattutto i cambi di normale più forti.
+
+Mantieni **Adaptive Method** su **Best Quality** per il lavoro normale. **Legacy** conserva il calcolo Adaptive Reduce originale per compatibilità con progetti precedenti.
 
 <p align="center">
   <img loading="lazy" decoding="async" src="../../img/step1-adaptive-reduce.jpg" alt="Adaptive Reduce trasforma una scansione da oltre un milione di poligoni in una geometria ottimizzata pronta per il realtime" style="max-width:820px;width:100%;">

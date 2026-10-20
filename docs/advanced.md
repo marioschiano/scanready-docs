@@ -78,53 +78,65 @@ Use this when the scan appears inside-out or has inconsistent shading.
 
 # Adaptive Reduce
 
-Adaptive Reduce controls how ScanReady distributes reduction across the selected scan.
+Adaptive Reduce creates a vertex-weight map before Blender Decimate runs. High weights identify surfaces that can be simplified more strongly; low weights protect coherent detail, borders, and feature edges.
 
-It is enabled by default and is designed to protect visually important detail while allowing flatter surfaces to be simplified more strongly.
-
-Adaptive Reduce weights are calculated when you click **Create Low-poly Preview**. Changing **Optimize / Reduce** or **Final Faces** after that updates the reduction amount, but it does not recalculate the adaptive weights. To apply a different Adaptive Reduce preset or detailed adaptive values, create the low-poly preview again.
-
-<div style="display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start; margin-top:20px;">
-
-<div style="flex:1 1 500px; min-width:320px;">
-
-<h3>Adaptive Reduce Preset</h3>
-
-<p>
-Choose the preset that best matches the scan and the target asset.
+<p align="center">
+  <img src="img/adaptive-reduce-best-quality-balanced.png" alt="ScanReady Adaptive Reduce panel using Best Quality and Balanced" style="width:260px; max-width:100%;">
 </p>
 
-<ul>
-<li><strong>Balanced</strong> is the default preset for most scans.</li>
-<li><strong>Preserve Details</strong> protects complex or important surface regions more strongly.</li>
-<li><strong>Flat Surfaces</strong> reduces broad, simple areas more aggressively.</li>
-<li><strong>Hard Surface</strong> is a faster approximate preset for vehicles and hard-surface scans; it protects only stronger normal breaks.</li>
-</ul>
+## Adaptive Method
 
-<hr>
+- **Best Quality** is the recommended method. It first finds broad planar areas, then restores persistent curvature and decoration detail. It is designed to keep noisy walls and floors reducible without treating coherent relief as disposable scan noise.
+- **Legacy** keeps the original ScanReady Adaptive Reduce calculation for compatibility with older projects or unusual scans that respond better to the previous weighting.
 
-<h3>Show Adaptive Weights</h3>
-
-<p>
-Shows a color preview of how ScanReady will distribute reduction across the scan.
+<p align="center">
+  <img src="img/adaptive-method-menu.png" alt="Adaptive Method menu with Best Quality and Legacy" style="width:230px; max-width:100%;">
 </p>
 
-<p>
-Red areas represent flatter surfaces that can be reduced more. Blue and green areas represent detail-protected regions.
+## Adaptive Preset
+
+- **Balanced** is the recommended default and uses the settings validated for mixed architectural scans.
+- **Preserve Details** protects sculptural forms, engravings, rocks, damage, and small coherent relief more strongly.
+- **Flat Surfaces** favors stronger reduction on broad walls, roofs, floors, panels, and bases.
+
+<p align="center">
+  <img src="img/adaptive-preset-menu.png" alt="Adaptive Preset menu with Balanced, Preserve Details, and Flat Surfaces" style="width:230px; max-width:100%;">
 </p>
 
-<p>
-Use this preview when a scan has mixed surface types, such as flat architectural panels combined with sculptural or damaged detail.
-</p>
+## Reading Adaptive Weights
 
-</div>
+Enable **Show Adaptive Weights** after creating a low-poly preview:
 
-<div style="flex:0 0 340px; text-align:center;">
-  <!-- Replace placeholder with ../img/advanced-adaptive-reduce.png -->
-  <img src="../img/placeholder-image.svg" alt="ScanReady Adaptive Reduce advanced settings" style="width:340px; max-width:100%;">
-</div>
+- **Red / orange** means the region is considered flat and can receive stronger reduction.
+- **Green** is a transition region.
+- **Blue** means coherent detail or a protected edge should retain more geometry.
 
-</div>
+While the color map is active, ScanReady temporarily hides the wireframe so it remains readable. Disabling Show Adaptive Weights restores the previous Show Wireframe preference. The colors are only a viewport diagnostic and are not exported or baked.
+
+## Best Quality controls
+
+| Setting | Balanced | What it controls | Increase / decrease |
+|---|---:|---|---|
+| **Adaptive Reduce Angle** | 45° | Reference angle used when separating planar regions from meaningful normal changes. | Lower values recognize smaller changes as detail. Higher values allow broader smooth regions to remain reducible. |
+| **Detail Preserve** | 0.05 | Minimum Decimate weight assigned to protected detail. | Lower values protect detected detail more strongly. Higher values allow more reduction inside detail regions. |
+| **Smooth Weights** | 2 | Number of passes used to smooth the final weight map across connected vertices. | Increase it for softer, more continuous transitions; excessive values can spread flat/detail classifications too far. |
+| **Complexity Sensitivity** | 0.75 | Sensitivity to persistent curvature and geometric change. | Higher values classify more geometry as detail and produce more green/blue. Lower values classify more of the scan as reducible. |
+| **Flat / Detail Contrast** | 1.30 | Separation between flat red zones and protected blue zones. | Higher values create a sharper separation. Lower values create a softer gradient. |
+| **Detail Spread Rings** | 1 | Number of connected vertex rings into which detected detail is expanded. | Increase it when ridges or decorations need surrounding support; high values can protect too wide an area. |
+| **Noise Rejection** | 0.85 | Suppression of changes that do not persist across the surrounding region. | Higher values reject more isolated scan noise. Lower values preserve more fine variation, including possible noise. |
+| **Analysis Scale** | 4 | Number of connected rings used to distinguish persistent form from local noise. | Higher values analyze a broader neighborhood and cost more time. Lower values are more local and can react more strongly to scan noise. |
+| **Adaptive Decimate Factor** | 2.0 | Strength of the weight map inside Blender's Decimate modifier. It does not change the colors themselves. | Values around 1–5 are recommended. Higher values exaggerate the difference between red and blue and can produce long or radial triangles. |
+
+## Shared and edge-protection controls
+
+- **Fast Adaptive Reduce** uses fewer neighbor samples, a smaller analysis support, no final smoothing, and at most one detail-spread ring. Use it for quick tests on dense scans; disable it for the final quality check.
+- **Protect Feature Edges** protects mesh boundaries and edges whose face-normal angle passes the selected threshold.
+- **Feature Edge Angle** sets that threshold. Lower values protect more edges; higher values protect only sharper breaks.
+- **Feature Edge Rings** expands protection into neighboring vertex rings so arches, bevels, frames, and silhouettes keep enough support.
+- **Adaptive Strength** appears only with **Legacy**. It controls how strongly the original weight map influences Decimate; Best Quality uses Adaptive Decimate Factor instead.
+
+!!! note "When to recreate the preview"
+    Adaptive weights are calculated when you click **Create Low-poly Preview**. Changing the method, preset, or any analysis/detail/edge setting requires creating the preview again. Changing **Optimize / Reduce** or **Final Faces** changes the reduction target but does not recalculate the color map. Adaptive Decimate Factor does not generate new weights, but use **Create Low-poly Preview** to apply its new value through the ScanReady interface.
 
 ---
 

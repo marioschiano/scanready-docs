@@ -65,6 +65,7 @@ Per la prima prova non è necessario cambiare le impostazioni. Se non hai modifi
 - **Final Faces:** valore collegato al rapporto di riduzione
 - **Adaptive Reduce:** attivo
 - **Adaptive Preset:** `Balanced`
+- **Adaptive Method:** `Best Quality`
 - **Texture Size:** `2048`
 - **Bake Base Color:** attivo
 - **Bake Normal Map:** disattivo di default; attivalo se vuoi trasferire il dettaglio normale

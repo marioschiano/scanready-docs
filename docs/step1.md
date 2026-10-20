@@ -33,7 +33,8 @@ Use the Adaptive Reduce preset as a quick starting point:
 - **Balanced** for most scans and general realtime assets.
 - **Preserve Details** when the scan has important folds, sculptural forms, engravings, or close-up details.
 - **Flat Surfaces** when the object contains broad simple areas that can be simplified more aggressively.
-- **Hard Surface** for vehicles and hard-surface scans where a faster approximate pass should protect only stronger normal breaks.
+
+Keep **Adaptive Method** on **Best Quality** for normal work. **Legacy** preserves the original ScanReady calculation for compatibility with older projects.
 
 <!-- Replace placeholder with ../img/step1-adaptive-reduce.gif -->
 <p align="center">
@@ -60,6 +61,8 @@ Use it before creating the final preview when you want to understand how ScanRea
 - **Blue / green** areas are detail-protected regions.
 
 The visualization is only a preview aid. It helps you choose a preset and understand the reduction behavior; it is not a texture that will be exported or baked.
+
+ScanReady temporarily hides the wireframe while Show Adaptive Weights is active and restores the previous wireframe setting when you turn the color preview off.
 
 Adaptive Reduce weights are calculated when you click **Create Low-poly Preview**. After the preview exists, changing **Optimize / Reduce** or **Final Faces** updates the Decimate amount using the existing weights. If you change the Adaptive Reduce preset or detailed Adaptive Reduce values, click **Create Low-poly Preview** again to rebuild the weights with the new settings.
 

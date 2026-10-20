@@ -77,7 +77,7 @@ Try this workflow:
 - Go to **Step 2 - UV / Cage** and click **Generate UVs** again
 - Go to **Step 3 - Bake / Output** and run **Bake Textures** again
 
-If the object is a vehicle, mechanical asset, architectural scan, or another hard-surface object, try the **Hard Surface** Adaptive Reduce preset. For faster tests on very dense scans, enable **Fast Adaptive Reduce** in Advanced before creating the preview again.
+For broad architectural or mechanical panels, try the **Flat Surfaces** Adaptive Reduce preset. For faster tests on very dense scans, enable **Fast Adaptive Reduce** in Advanced before creating the preview again; disable it for the final quality check.
 
 Lower values create lighter assets, but very aggressive reduction can damage silhouettes or important details. Use the preview step to find the best balance before baking again.
 

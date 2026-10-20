@@ -148,7 +148,7 @@ Per ottenere risultati migliori:
 
 Per scansioni con grandi superfici continue, il preset **Flat Surfaces** di Adaptive Reduce può essere utile prima del bake perché permette di semplificare in modo più aggressivo le aree semplici.
 
-Per veicoli e scansioni hard-surface, **Hard Surface** offre un passaggio approssimato più veloce che protegge meglio gli angoli ortogonali e i cambi di normale più forti.
+Per scansioni miste, usa **Best Quality** con **Balanced** e controlla Show Adaptive Weights prima di continuare.
 
 ---
 
