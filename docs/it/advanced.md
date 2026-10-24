@@ -237,9 +237,9 @@ Di default resta disattivato. Abilitalo solo se il bake non esce bene, per esemp
 </div>
 <div class="sr-uv-compare" data-uv-compare>
   <div class="sr-uv-compare__image">
-    <img src="../../img/advanced_convert_source_materials2.jpg" alt="Materiale convertito con Principled BSDF standard" class="sr-uv-compare__base" loading="lazy" decoding="async">
+    <img src="../../img/advanced_convert_source_materials.jpg" alt="Materiale originale con nodi non standard" class="sr-uv-compare__base" loading="lazy" decoding="async">
     <div class="sr-uv-compare__overlay">
-      <img src="../../img/advanced_convert_source_materials.jpg" alt="Materiale originale con nodi non standard" class="sr-uv-compare__top" loading="lazy" decoding="async">
+      <img src="../../img/advanced_convert_source_materials2.jpg" alt="Materiale convertito con Principled BSDF standard" class="sr-uv-compare__top" loading="lazy" decoding="async">
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">Materiale originale</span>
     <span class="sr-uv-compare__label sr-uv-compare__label--right">Materiale convertito</span>
