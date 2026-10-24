@@ -235,9 +235,21 @@ Di default resta disattivato. Abilitalo solo se il bake non esce bene, per esemp
   <img src="../../img/advanced_convert_source.jpg" alt="Screenshot Convert Source Materials di ScanReady" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
 </div>
 </div>
-<div style="margin:18px 0 30px; text-align:center;">
-  <img src="../../img/advanced_convert_source_materials.gif" alt="Dettaglio Convert Source Materials di ScanReady" style="width:760px; max-width:100%;" loading="lazy" decoding="async">
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img src="../../img/advanced_convert_source_materials2.jpg" alt="Materiale convertito con Principled BSDF standard" class="sr-uv-compare__base" loading="lazy" decoding="async">
+    <div class="sr-uv-compare__overlay">
+      <img src="../../img/advanced_convert_source_materials.jpg" alt="Materiale originale con nodi non standard" class="sr-uv-compare__top" loading="lazy" decoding="async">
+    </div>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">Materiale originale</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">Materiale convertito</span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--left"><strong>Nodi non standard</strong><small>Shader importato</small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--right"><strong>Principled BSDF</strong><small>Materiale standard</small></span>
+    <button class="sr-uv-compare__handle" type="button" aria-label="Confronta il materiale originale e il materiale convertito con Principled BSDF" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
 </div>
+
+<p align="center"><strong>Sposta il cursore per confrontare il materiale originale e quello convertito.</strong></p>
 
 <hr>
 
