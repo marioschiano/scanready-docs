@@ -1,153 +1,149 @@
 # Step 3 - Bake / Output
 
-<p align="center">
-  <img src="../img/high-to-low-workflow.jpg" alt="Baked scan result with reduced polygon count and preserved visual detail" style="max-width:900px;width:100%;">
-</p>
-
-<p align="center">
-<b>High-poly scan → optimized low-poly mesh → baked realtime-ready asset.</b>
-</p>
+<p align="center"><img src="../img/high-to-low-workflow.jpg" alt="Baked scan with reduced polygons and preserved visual detail" style="max-width:900px;width:100%;" decoding="async" fetchpriority="high"></p>
+<p align="center"><b>High-poly scan -> optimized low-poly mesh -> baked realtime-ready asset.</b></p>
 
 ---
 
-Step 3 transfers texture detail from the original high-poly scan onto the optimized mesh.
+Step 3 transfers texture detail from the original high-poly scan to the optimized mesh.
 
-This is the final stage of the ScanReady workflow, transforming the low-poly object into a lighter realtime-ready asset for:
+It is the final stage of the ScanReady workflow, turning the low-poly object into a lighter realtime-ready asset for:
 
 - VR
-- Videogames
+- video games
 - AR
-- Realtime visualization
-- Interactive environments
+- realtime visualization
+- interactive environments
 
-The goal is to preserve much of the original scan appearance while dramatically reducing polygon density.
+The goal is to preserve much of the original scan's appearance while drastically reducing polygon density.
 
 ---
 
 ## Why Baking Matters
 
-A raw scan often stores detail through extremely heavy geometry.
-
-While visually impressive, this is not always practical for realtime use.
+A raw scan often retains detail through extremely heavy geometry. Although visually impressive, it is not always practical for realtime use.
 
 Baking transfers visual information from the high-poly scan into texture maps on the optimized mesh.
 
 This allows the final asset to use:
 
-- Fewer polygons
-- Lighter geometry
-- Texture-based detail
-- More manageable assets
-- Better realtime performance
+- fewer polygons;
+- lighter geometry;
+- texture-based detail;
+- more manageable assets;
+- better realtime performance.
 
 Instead of rendering millions of polygons in realtime, ScanReady transfers surface detail into textures.
 
-This allows the optimized mesh to remain lightweight while still preserving much of the original scan appearance.
+This allows the optimized mesh to remain lightweight while retaining much of the original appearance.
 
 ---
 
 ## Texture Settings
 
-### Texture Size
+### Texture Preset / Texture Size
 
-Sets the output resolution for baked textures.
+Sets the output resolution of baked textures.
 
-Higher values preserve more detail but increase bake time, memory usage, and file size.
+Higher values preserve more detail but increase bake time, memory usage and file size.
 
 Common choices:
 
-- `1024` → lightweight assets
-- `2048` → general-purpose assets
-- `4096` → close-up or high-detail assets
-- `8192` → very large or archival-quality assets
+- `1024` -> lightweight assets
+- `2048` -> general assets
+- `4096` -> close-up or high-detail assets
+- `8192` -> very large or close-up assets, if memory and source permit
 
-Higher resolutions increase memory usage significantly.
+Higher resolutions greatly increase memory usage.
 
-<!-- Replace placeholder with ../img/step3-texture-size-comparison.jpg -->
-<p align="center">
-  <img src="../img/placeholder-image.svg" alt="Texture resolution comparison placeholder" style="max-width:1100px;width:100%;">
-</p>
+<p align="center"><img src="../img/step3-texture-size-comparison.jpg" alt="Texture resolution comparison" style="max-width:1100px;width:100%;" loading="lazy" decoding="async"></p>
 
 ---
 
 ### Bake Materials
 
-Splits the bake into multiple material groups.
+Divides the bake into multiple material groups.
 
 Using more materials increases available texture space and can preserve more detail on large scans.
 
-<!-- Replace placeholder with ../img/step3-material-count.jpg -->
-<p align="center">
-  <img src="../img/placeholder-image.svg" alt="Bake material count comparison placeholder" style="max-width:1100px;width:100%;">
-</p>
+<p align="center"><img src="../img/step3-material-count.jpg" alt="Optimization from four 8K materials to a single material for realtime use" style="max-width:1100px;width:100%;" loading="lazy" decoding="async"></p>
 
-| Materials | Typical Use |
+| Materials | Typical use |
 |---|---|
-| 1 Material | Lightweight assets |
-| 2 Materials | Medium detail preservation |
-| 4 Materials | Large scans and high-detail assets |
+| 1 material | Lightweight assets |
+| 2 materials | Moderate detail preservation |
+| 4 materials | Large scans and high-detail assets |
 
 Increasing polygon density alone is not always the best solution.
 
-In many cases, increasing the number of bake materials produces cleaner and sharper textures while keeping the mesh lightweight.
+In many cases, increasing the number of bake materials produces cleaner, sharper textures while keeping the mesh lightweight.
 
-When **Bake Materials** is set to more than `1`, ScanReady 1.0 automatically enables **Force CPU Baking** as a safer default for multi-material workflows.
+!!! info "Multi-material baking"
+    When **Bake Materials** is set to `2` or more, ScanReady automatically enables **Force CPU Baking** as a safer default for multi-material workflows.
 
-You can still disable it manually if your GPU can handle the bake safely.
+    You can still disable it manually if your GPU can safely handle the bake.
 
 ---
 
 ## Texture Detail Analysis
 
-The **Texture Detail** analysis is now available in **Advanced**.
+**Texture Detail** analysis is available in **Advanced**.
 
-Use **Analyze Texture Detail** after generating UVs when you want to estimate whether the current bake setup is likely to preserve enough texture detail.
+Use **Analyze Texture Detail** after generating UVs when you want to estimate whether the current bake setup can preserve enough texture detail.
 
-ScanReady searches for the matching high-poly source and optimized UV mesh, then compares the original texture usage with the current bake setup.
+ScanReady looks for the matching high-poly source and optimized UV mesh, then compares original texture usage with the current bake setup.
 
-It reports a compact **Detail Match** estimate and recommends whether the current texture size and material count are balanced.
+It shows **Texture match**, **Detail estimate** and **UV Space**, along with a resolution and material-count recommendation. These are estimates of available detail, not a guarantee of final quality.
 
-<!-- Replace placeholder with ../img/step3-texture-detail.jpg -->
-<p align="center">
-  <img src="../img/placeholder-image.svg" alt="Texture Detail analysis placeholder" style="max-width:1000px;width:100%;">
-</p>
+<p align="center"><img src="../img/step3-texture-detail.jpg" alt="Comparison of visual detail retained after texture optimization" style="max-width:1000px;width:100%;" loading="lazy" decoding="async"></p>
+
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img src="../img/step3-model-high-poly.jpg" alt="Original high-poly model without wireframe" class="sr-uv-compare__base" loading="lazy" decoding="async">
+    <div class="sr-uv-compare__overlay"><img src="../img/step3-model-optimized.jpg" alt="ScanReady optimized model without wireframe" class="sr-uv-compare__top" loading="lazy" decoding="async"></div>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">Original model · 1,011,823 faces</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady optimized · 30,351 faces</span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--left"><strong>4 materials</strong><small>8K textures</small></span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--right"><strong>1 material</strong><small>8K texture</small></span>
+    <button class="sr-uv-compare__handle" type="button" aria-label="Compare the high-poly and ScanReady optimized models" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
+</div>
+
+<p align="center"><strong>Use the slider to compare the original and optimized models.</strong></p>
+
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img src="../img/step3-wireframe-high-poly.jpg" alt="Original high-poly model wireframe" class="sr-uv-compare__base" loading="lazy" decoding="async">
+    <div class="sr-uv-compare__overlay"><img src="../img/step3-wireframe-optimized.jpg" alt="ScanReady optimized model wireframe" class="sr-uv-compare__top" loading="lazy" decoding="async"></div>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">Original wireframe · 1,011,823 faces</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">Optimized wireframe · 30,351 faces</span>
+    <button class="sr-uv-compare__handle" type="button" aria-label="Compare high-poly and optimized wireframes" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
+</div>
+
+<p align="center"><strong>Use the slider to compare wireframe density before and after optimization.</strong></p>
 
 This is useful when deciding whether to:
 
-- Keep one baked material
-- Increase **Bake Materials**
-- Raise or lower **Texture Size**
-- Improve UV packing before baking
+- keep a single bake material;
+- increase **Bake Materials**;
+- raise or lower **Texture Size**;
+- improve UV packing before baking.
 
-If ScanReady cannot find a matching high-to-UV pair automatically, it falls back to analyzing the active mesh.
-
----
-
-## Cage Check Before Bake
-
-Before baking, check that the cage fully covers the high-poly scan surface.
-
-If the cage is too small, bake rays may miss details and produce black areas, empty details, or incorrect projections.
-
-Use **Auto Cage Extrusion** for a quick starting point, then adjust **Cage Extrusion** manually if some areas still need coverage.
-
-Use the smallest cage value that captures the scan details without projecting onto unwanted nearby surfaces.
+If ScanReady cannot automatically find a matching high-to-UV pair, it analyzes the active mesh.
 
 ---
 
-### Bake Samples
+## Check the Cage Before Baking
 
-Controls Cycles bake samples.
+!!! warning "Check the cage before baking"
+    Before baking, check that the cage completely covers the high-poly scan surface.
 
-Higher values can reduce noise, especially for Ambient Occlusion, but they also increase bake time.
+    If the cage is too small, bake rays can miss details and produce black areas, missing details or incorrect projections.
 
----
+    Enable **Show Cage** and inspect the cage preview. Then slightly increase **Cage Extrusion** or use **Auto Cage Extrusion**.
 
-### Bake Margin
-
-Adds extra pixel padding around baked UV islands.
-
-This helps reduce visible seams and texture bleeding.
+    Use the smallest cage value that captures scan details without projecting unwanted nearby surfaces.
 
 ---
 
@@ -155,90 +151,59 @@ This helps reduce visible seams and texture bleeding.
 
 ### Bake Base Color
 
-Bakes the diffuse or color information from the original scan.
-
-This is usually the most important texture for preserving the appearance of the captured object.
-
----
-
-### Bake Normal
-
-Bakes a normal map.
-
-Normal maps preserve the appearance of surface detail without keeping the original high-poly geometry.
-
-This is especially useful for VR and videogame assets where geometry must remain lightweight.
-
-If the original high-poly material already contains a linked normal map, ScanReady transfers that normal texture onto the new UV layout.
-
-If no linked normal map is found, ScanReady performs a geometric high-to-low normal bake.
-
-Normal textures are treated as **Non-Color** technical data.
-
-The **Normal Strength** material control is available in **Advanced > Bake Settings** when **Bake Normal** is enabled.
+<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
+<div style="min-width:0;"><p>Bakes diffuse or color information from the original scan.</p><p>Enabled by default, it is usually the most important texture for preserving the captured object's appearance.</p></div>
+<div style="text-align:center;"><img src="../img/step3-bake-base-color.png" alt="Bake Base Color enabled in Step 3" style="max-width:100%;width:100%;" loading="lazy" decoding="async"></div>
+</div>
 
 ---
 
-### Bake Roughness
+### Bake Normal Map
+
+<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
+<div style="min-width:0;"><p>Bakes a normal map.</p><p>Normal maps preserve the appearance of surface detail without retaining the original high-poly geometry.</p></div>
+<div style="text-align:center;"><img src="../img/step3-bake-normal-map.png" alt="Bake Normal Map enabled in Step 3" style="max-width:100%;width:100%;" loading="lazy" decoding="async"></div>
+</div>
+
+This is particularly useful for VR and video game assets where geometry must remain lightweight.
+
+If the original high-poly material already contains a connected normal map, ScanReady transfers that normal texture to the new UV layout.
+
+If no connected normal map is found, ScanReady performs a geometric high-to-low normal bake.
+
+Normal textures are treated as technical **Non-Color** data.
+
+The **Normal Strength** material control is available in **Advanced > Bake Settings** when **Bake Normal Map** is enabled.
+
+---
+
+### Bake Roughness Map
 
 Bakes or transfers roughness information from the high-poly material.
 
-Use this when the original material already contains roughness information that should be preserved on the final low-poly asset.
+Use it when the original material already contains roughness information that should be preserved on the final low-poly asset.
 
-Roughness textures are also handled as **Non-Color** technical data.
+!!! info "Bake Roughness Map"
+    The **Bake Roughness Map** checkbox is shown only when ScanReady finds a connected Roughness input in the high-poly material.
 
----
+    If the source material has no connected roughness, ScanReady cannot transfer it and the option is not shown.
 
-### Bake Occlusion
-
-Bakes an Ambient Occlusion map.
-
-AO can help add contact shadows and surface depth to the final material.
-
-The **AO Mix** material control is available in **Advanced > Occlusion Settings** when **Bake Occlusion** is enabled. Its default value is `1.0`, which applies the full baked AO texture to the final material.
+Roughness textures are also treated as technical **Non-Color** data.
 
 ---
 
-<!-- Replace placeholder with ../img/step3-bake-maps.jpg -->
-<p align="center">
-  <img src="../img/placeholder-image.svg" alt="Bake maps screenshot placeholder" style="max-width:1100px;width:100%;">
-</p>
+### Bake Occlusion Map
+
+<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
+<div style="min-width:0;"><p>Bakes an Ambient Occlusion map.</p><p>AO can help add contact shadows and surface depth to the final material.</p></div>
+<div style="text-align:center;"><img src="../img/step3-bake-occlusion-map.png" alt="Bake Occlusion Map enabled in Step 3" style="max-width:100%;width:100%;" loading="lazy" decoding="async"></div>
+</div>
+
+The **AO Mix** material control is available in **Advanced > Bake Settings > Occlusion Settings** when **Bake Occlusion Map** is enabled. Its default value is `1.0`, which applies the full baked AO texture to the final material.
 
 ---
 
-### AO Source
-
-Controls how Ambient Occlusion is generated.
-
-You can bake AO from the high-poly source or calculate it directly from the low-poly mesh.
-
----
-
-### AO Auto Distance
-
-Automatically estimates the AO distance from the overall model size.
-
----
-
-### AO Distance
-
-Controls AO ray distance manually when automatic distance is disabled.
-
----
-
-### AO Samples
-
-Controls Ambient Occlusion bake quality.
-
-Higher values produce cleaner AO but increase bake time.
-
----
-
-### AO Mix
-
-Controls how strongly the baked Ambient Occlusion texture is mixed into the final Base Color material.
-
-This affects the material appearance, not the baked AO texture itself.
+<p align="center"><img src="../img/step3-bake-maps.jpg" alt="Base Color, Normal, Roughness and Occlusion maps generated on the new UV atlas" style="max-width:1100px;width:100%;" loading="lazy" decoding="async"></p>
 
 ---
 
@@ -248,7 +213,16 @@ This affects the material appearance, not the baked AO texture itself.
 
 Saves baked textures to disk.
 
-Enable this when exporting assets for game engines, archives, external workflows, or delivery.
+Enable it when exporting assets for game engines, archives, external workflows or final delivery.
+
+---
+
+### Open Folder After Bake
+
+<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
+<div style="min-width:0;"><p>Automatically opens the bake folder when <strong>Save Images</strong> is enabled and texture saving is complete.</p><p>Useful for immediately checking generated files, copying them to an external project or bringing them into a game engine.</p></div>
+<div style="text-align:center;"><img src="../img/step3-open-folder-after-bake.png" alt="Open Folder After Bake enabled in Step 3" style="max-width:100%;width:100%;" loading="lazy" decoding="async"></div>
+</div>
 
 ---
 
@@ -256,9 +230,9 @@ Enable this when exporting assets for game engines, archives, external workflows
 
 Available output formats:
 
-- **JPG** → compact Base Color textures
-- **PNG** → lossless texture output
-- **TIFF** → higher precision workflows
+- **JPG** -> compact Base Color textures
+- **PNG** -> lossless texture output
+- **TIFF** -> higher-precision workflows
 
 PNG is generally recommended for most realtime workflows.
 
@@ -268,121 +242,111 @@ PNG is generally recommended for most realtime workflows.
 
 Controls JPG compression quality.
 
-Higher values preserve more image detail but generate larger files.
+Higher values preserve more image detail but produce larger files.
 
 ---
 
 ### TIFF 16-bit
 
-Saves TIFF textures with higher precision.
+Saves TIFF textures at higher precision.
 
-Useful for high-detail assets, archival workflows, or detailed normal maps.
+Useful for high-detail assets, archival workflows or detailed normal maps.
 
 ---
 
 ### Output Folder
 
-Defines where baked textures are saved.
-
-Relative paths such as `//bake/` are saved next to the current Blender file.
+<div class="sr-doc-row" style="display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:32px; align-items:start; margin-top:16px; margin-bottom:28px;">
+<div style="min-width:0;">
+<p>Defines where baked textures are saved.</p>
+<p>Relative paths such as <code>//bake/</code> are saved beside the current Blender file.</p>
+<p>When you choose or change the path, ScanReady shows the destination folder in the <strong>Bake Folder</strong> panel. After baking, use the folder button to quickly open the generated files' location.</p>
+</div>
+<div style="text-align:center;">
+  <p style="margin-top:0;"><strong>Output Folder</strong></p>
+  <img src="../img/step3-output-folder.png" alt="Output Folder and Bake Folder settings in ScanReady Step 3" style="max-width:100%;width:100%;" loading="lazy" decoding="async">
+</div>
+</div>
 
 ---
 
 ### Bake Folder
 
-After a bake finishes, Step 3 shows the **Bake Folder** box.
+Step 3 includes the **Bake Folder** panel. Before the first save it may show **No bake folder yet**.
 
-This displays the folder used by the latest bake and includes a folder button that opens it directly in the operating system file browser.
+It shows the folder used by the last bake and includes a folder button that opens it directly in the operating system's file browser.
 
-Use **Output Folder** to choose where ScanReady should save textures. Use **Bake Folder** after baking to quickly open the folder that was actually used.
+!!! tip "Output Folder and Bake Folder"
+    Use **Output Folder** to choose where ScanReady should save textures.
 
----
-
-## Memory Safety
-
-Large photogrammetry scans can easily exceed GPU memory limits during baking.
-
-ScanReady includes safer bake workflows designed for heavy production scenes.
-
-<!-- Replace placeholder with ../img/step3-memory-safety.jpg -->
-<p align="center">
-  <img src="../img/placeholder-image.svg" alt="Safe memory bake settings placeholder" style="max-width:1000px;width:100%;">
-</p>
+    Use **Bake Folder** after baking to quickly open the folder actually used.
 
 ---
 
-### Safe Memory Bake
+## When to Start Baking
 
-Uses a safer baking workflow designed to reduce memory pressure on heavy scenes and large scans.
+Click **Bake Textures** when UVs, cage, texture size, materials and bake maps are ready.
 
----
+Large scans can take several minutes depending on:
 
-### Force CPU Baking
+- texture resolution;
+- number of materials;
+- bake settings;
+- hardware performance.
 
-Forces baking on the CPU to avoid GPU memory limitations.
-
-This is usually slower, but it can be safer on systems with limited VRAM.
-
-By default, **Force CPU Baking** remains disabled for single-material bakes.
-
-When **Bake Materials** is set to `2` or more, ScanReady automatically enables it because multi-material workflows require more memory and additional bake passes.
-
-The user can still disable it manually.
-
----
-
-## Action
-
-Click **Bake Textures** to start the bake.
-
-Large scans may require several minutes depending on:
-
-- Texture resolution
-- Material count
-- Bake settings
-- Hardware performance
-
-When the bake is complete, inspect the final material and use **Bake Folder** to open the saved textures.
+When baking is complete, check the final material and use **Bake Folder** to open the saved textures.
 
 ---
 
 ## What to Check
 
-After baking, inspect:
+After baking, check:
 
-- Base Color texture
-- Normal Map
-- Ambient Occlusion map
-- Texture sharpness
-- Texture seams
-- Missing details
-- Incorrect projections
-- Final material appearance
-- Saved output files
-- Bake Folder opens the latest saved texture folder
+- Base Color texture;
+- Normal Map;
+- Ambient Occlusion map;
+- texture sharpness;
+- texture seams;
+- missing details;
+- incorrect projections;
+- final material appearance;
+- saved output files;
+- that Bake Folder opens the last saved texture folder.
 
-If details are missing, adjust the cage extrusion or increase texture resolution before baking again.
+!!! tip "If the bake needs correction"
+    If details are missing, enable **Show Cage** and slightly increase **Cage Extrusion** or use **Auto Cage Extrusion**.
 
-If the final mesh is still too heavy, you can return to **Step 1 - Preview / Reduce** even after reaching Step 3. Lower **Final Faces** or **Optimize / Reduce**, click **Create Low-poly Preview** again, then run **Generate UVs** and **Bake Textures** again. The bake should always use the latest optimized UV mesh.
+    If the bake is too soft or lacks detail, increase texture resolution before baking again.
+
+    If the final mesh is still too heavy, you can return to **Step 1 - Preview / Reduce** even after reaching Step 3. Lower **Final Faces** or **Optimize / Reduce**, click **Create Lowpoly Preview** again, then run **Generate UVs** and **Bake Textures** again. Baking should always use the most recent optimized UV mesh.
 
 ---
 
 ## Realtime Optimization
 
-<!-- Replace placeholder with ../img/step3-final-result.jpg -->
-<p align="center">
-  <img src="../img/placeholder-image.svg" alt="Final baked realtime-ready asset placeholder" style="max-width:1100px;width:100%;">
-</p>
+<p align="center"><img src="../img/step3-final-result.jpg" alt="Final result: a scan of over one million faces converted to an optimized asset of around twenty thousand faces" style="max-width:1100px;width:100%;" loading="lazy" decoding="async"></p>
 
 For realtime workflows, the final result should balance visual quality and performance.
 
 A good baked asset should:
 
-- Use a lightweight mesh
-- Preserve the recognizable appearance of the original scan
-- Use textures to carry surface detail
-- Be easier to export
-- Be easier to render in VR and game engines
-- Avoid unnecessary geometry density
+- use a lightweight mesh;
+- preserve the original scan's recognizable appearance;
+- use textures to carry surface detail;
+- be easier to export;
+- be easier to render in VR and game engines;
+- avoid unnecessary geometry density.
 
-The bake is what allows a lightweight optimized mesh to preserve much of the visual richness of the original high-poly scan.
+Baking allows a lightweight optimized mesh to retain much of the original high-poly scan's visual richness.
+
+---
+
+## Final Mesh Created at the End of Step 3
+
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:center; margin:20px 0 28px;">
+<div style="flex:1 1 320px; min-width:260px;">
+<p>The final mesh created in Step 3 receives the <strong>3_</strong> prefix.</p>
+<p><strong>3_MeshName_final</strong> identifies the mesh ready for baking and export.</p>
+</div>
+<div style="flex:0 0 300px; text-align:center;"><img src="../img/outliner-final.jpg" alt="Step 3 final mesh in the Outliner" style="width:100%; max-width:300px;" loading="lazy" decoding="async"></div>
+</div>
