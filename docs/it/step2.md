@@ -70,7 +70,7 @@ ScanReady genera quindi un nuovo layout UV più ordinato e compatto. Le isole ve
       <img src="../../img/step2-uv-scanready-packed.jpg" alt="Layout UV ScanReady ordinato e compatto" class="sr-uv-compare__top" loading="lazy" decoding="async">
     </div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">UV originale</span>
-    <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady UV</span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Confronta UV originale e UV ScanReady" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
