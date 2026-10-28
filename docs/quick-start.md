@@ -1,36 +1,37 @@
 # Quick Start
 
-Use this page when you want the fastest path from a heavy high-poly scan to an optimized baked asset.
-
-ScanReady 1.0 is designed to simplify dense 3D scans and make them easier to use in **VR, AR, videogames, realtime viewers, and interactive Blender scenes**.
+This page shows the fastest way to use ScanReady.
 
 <p align="center">
-  <img src="../img/hero.jpg" alt="ScanReady 1.0 scan-to-game-ready workflow overview" style="max-width:760px;width:100%;">
+  <img src="../img/hero.jpg" alt="Overview of the ScanReady workflow" style="max-width:620px;width:100%;" decoding="async" fetchpriority="high">
 </p>
 
 ---
 
+!!! note "Before you start"
+    Save a copy of your `.blend` file. Reduction takes place on a separate preview, but preparation options can modify the high-poly source.
+
 ## Basic Workflow
 
-<div style="display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start;">
+<div class="sr-doc-row" style="display:flex; flex-wrap:wrap; gap:28px; align-items:flex-start;">
 
-<div style="flex:1 1 320px; min-width:260px;">
+  <div style="flex:1 1 360px; min-width:260px;">
 
-<ol>
-  <li>Open Blender and enable ScanReady 1.0.</li>
-  <li>Select your high-poly scan in the 3D Viewport.</li>
-  <li>Open the Sidebar with <strong>N</strong>.</li>
-  <li>Select the <strong>Scan Ready</strong> tab.</li>
-  <li>Click <strong>ONE CLICK BAKE</strong>.</li>
-  <li>Wait for the workflow to complete.</li>
-  <li>Inspect the final mesh, material, and saved texture files.</li>
-</ol>
+    <p>For a quick first test, let ScanReady handle the workflow automatically with the default settings:</p>
 
-</div>
+    <ol>
+      <li>Select the high-poly scan mesh.</li>
+      <li>Click <strong>ONE CLICK BAKE</strong>.</li>
+    </ol>
 
-<div style="flex:0 0 280px; text-align:center;">
-  <img src="../img/quick-start-one-click.png" alt="ScanReady 1.0 One Click Bake panel in Blender" style="width:280px; max-width:100%;">
-</div>
+    <p>With the default <strong>Optimize / Reduce 0.10</strong> value, ScanReady keeps approximately 10% of the polygons, reducing the mesh by about 90%, generates UVs and completes the bake with the default settings.</p>
+
+  </div>
+
+  <div style="flex:0 0 260px; text-align:center;">
+    <p style="margin-top:0;"><strong>ONE CLICK BAKE</strong></p>
+    <img src="../img/quick-start-one-click.png" alt="ScanReady One Click Bake button in Blender" style="width:260px; max-width:100%;" loading="lazy" decoding="async">
+  </div>
 
 </div>
 
@@ -38,75 +39,66 @@ ScanReady 1.0 is designed to simplify dense 3D scans and make them easier to use
 
 ## What Happens Automatically
 
+When you use **ONE CLICK BAKE**, ScanReady performs the main workflow:
+
+1. Cleans the selected scan.
+2. Creates an optimized low-poly preview.
+3. Generates UVs.
+4. Prepares the cage.
+5. Bakes the selected textures.
+6. Creates the final material.
+7. Saves images if **Save Images** is enabled, as it is by default.
+
+The model is optimized, receives new UVs and can have the selected textures baked in a single workflow.
+
 <p align="center">
-  <img src="../img/one-click-bake.gif" alt="ScanReady 1.0 automatically optimizes the Arch of Trajan scan into a lighter baked asset" style="max-width:820px;width:100%;">
+  <img src="../img/one-click-bake.gif" alt="ScanReady One Click Bake workflow in Blender" style="max-width:820px;width:100%;" loading="lazy" decoding="async">
 </p>
-
-ScanReady 1.0 performs the main production steps for you:
-
-- Cleans common scan noise such as loose fragments and isolated vertices.
-- Creates a lighter low-poly version of the selected scan.
-- Reduces geometry to make the asset easier to manage.
-- Generates UVs for the optimized mesh.
-- Builds or estimates the baking cage.
-- Bakes visual detail from the original scan.
-- Creates the final material setup.
-- Saves texture files when **Save Images** is enabled.
-
-The goal is to keep the visual quality of the scan while making the model lighter and more practical for realtime use.
 
 ---
 
-## Recommended First Settings
+## Default Settings
 
-For a first test, keep most defaults and only check:
+For the first test you do not need to change the settings. If you have not changed the defaults, ScanReady starts with:
 
-- **Final Faces** for the desired mesh density.
-- **Adaptive Method** set to **Best Quality**.
-- **Adaptive Reduce Preset** set to **Balanced** for most first tests.
-- **Pre-Decimate Merge** only if you need stronger cleanup for overlapping scan vertices before reduction.
-- **Texture Size** for the desired output resolution.
-- **Bake Base Color** if you need the original color texture.
-- **Bake Normal** if you want to preserve surface detail.
-- **Bake Roughness** if the original high-poly material has a roughness texture that should be transferred.
-- **Bake Occlusion** if you want an ambient occlusion map.
-- **Output Folder** if you want textures saved to a specific location.
+- **Optimize / Reduce:** `0.10`
+- **Final Faces:** value linked to the reduction ratio
+- **Adaptive Reduce:** enabled
+- **Adaptive Preset:** `Balanced`
+- **Adaptive Method:** `Best Quality`
+- **Texture Size:** `2048`
+- **Bake Base Color:** enabled
+- **Bake Normal Map:** disabled by default; enable it to transfer normal detail
+- **Save Images:** enabled to save textures to disk
 
-After baking, use **Bake Folder** in Step 3 to open the folder where the latest textures were saved.
-
-If you increase **Bake Materials** above `1`, ScanReady automatically enables **Force CPU Baking** as a safer default for heavier multi-material bakes.
-
-If the preview loses too much surface character, try **Preserve Details**. If broad flat areas still keep too many polygons, try **Flat Surfaces**. Keep **Adaptive Method** on **Best Quality** unless you need the original Legacy behavior for compatibility.
-
-If the bake produces black or missing areas, check the cage preview and adjust **Cage Extrusion** before baking again.
+These values show where the automatic workflow starts. For the first test, leave everything unchanged and press **ONE CLICK BAKE**.
 
 ---
 
 ## Quick Result
 
-After the One Click workflow, you should have:
+After baking, you should obtain:
 
-- An optimized mesh.
-- UVs on the final object.
-- Baked texture information.
-- A material using the baked maps.
-- Saved image files if output saving is enabled.
+- a lighter final mesh;
+- automatically generated UVs;
+- baked textures connected to the material;
+- image files saved in the output folder, if enabled.
 
-This gives you a lighter asset that is easier to move, preview, export, and use in VR or game engines.
+Check the result in the viewport and in **Step 3 - Bake / Output**.
+
+!!! tip "You can refine the result after One Click Bake"
+    If the result is not sufficient, return to the manual steps and adjust settings only where necessary. If the final model is still too heavy, or has been optimized too much and has lost important shape details, return to **Step 1 - Preview / Reduce**.
+
+    Adjust **Optimize / Reduce** or **Final Faces** and watch the preview update. When you are happy with the result, go to Step 2 and click **Generate UVs** again.
+
+    The workflow is flexible: even if you are already in **Step 2 - UV / Cage** or **Step 3 - Bake / Output**, you can return to Step 1, adjust polygon reduction and then continue through UVs and baking again.
 
 ---
 
-## When to Use Manual Steps
+## When to Use the Manual Steps
 
-Use the manual workflow if:
+Use the manual workflow if you want more control:
 
-- The preview mesh is too dense.
-- The preview mesh is too reduced and loses important shape.
-- UVs show stretching or too many islands.
-- The cage misses details or covers the scan incorrectly.
-- You need Normal, Roughness, or AO maps with specific settings.
-- You are processing a large scan that needs safer memory settings.
-
-Manual steps give you more control over the same process used by One Click Bake.
-
-You can move backward in the workflow when needed. If you are already in Step 2 or Step 3 and the model is still too dense, return to **Step 1 - Preview / Reduce**, lower **Final Faces** or **Optimize / Reduce**, click **Create Low-poly Preview**, then generate UVs and bake again.
+- [Step 1 - Preview / Reduce](step1.md) to adjust mesh density.
+- [Step 2 - UV / Cage](step2.md) to check UVs and cage.
+- [Step 3 - Bake / Output](step3.md) to manage textures, materials and output.
