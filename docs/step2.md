@@ -55,7 +55,7 @@ ScanReady therefore generates a tidier, more compact UV layout. Islands are redu
     <img src="../img/step2-uv-original-fragmented.jpg" alt="Fragmented original UV layout" class="sr-uv-compare__base" loading="lazy" decoding="async">
     <div class="sr-uv-compare__overlay"><img src="../img/step2-uv-scanready-packed.jpg" alt="Neat, compact ScanReady UV layout" class="sr-uv-compare__top" loading="lazy" decoding="async"></div>
     <span class="sr-uv-compare__label sr-uv-compare__label--left">Original UVs</span>
-    <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">ScanReady UV</span>
     <button class="sr-uv-compare__handle" type="button" aria-label="Compare original and ScanReady UVs" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
   </div>
 </div>
