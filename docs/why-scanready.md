@@ -1,177 +1,88 @@
-## Why ScanReady?
+# Why ScanReady?
 
-Photogrammetry scans are detailed, but often too heavy for VR, games, realtime viewers, and interactive projects.
+Photogrammetry scans retain a great deal of detail, but often contain millions of polygons, numerous materials and heavy textures. ScanReady brings together the steps needed to create a lighter version in Blender: preparation, reduction, UVs, cage and baking.
 
-ScanReady helps you turn those scans into optimized baked assets directly inside Blender.
+<p align="center">
+  <img src="../img/hero.jpg" alt="From raw scan to optimized asset" style="max-width:820px;width:100%;" decoding="async" fetchpriority="high">
+</p>
 
-![Raw scan to optimized asset](img/gif/why-scanready-overview.gif)
+## What It Simplifies
 
-### What ScanReady Solves
+- Preparing imported scans as objects or mesh hierarchies.
+- Creating and inspecting a low-poly preview.
+- Automatically generating UVs with Smart UV Project.
+- Estimating the cage to transfer details from the source.
+- Baking selected maps and connecting final materials.
+- Saving textures for use in other applications.
 
-- Heavy polygon counts.
-- Unoptimized scan topology.
-- Missing UV-ready low-poly.
-- Manual cage setup.
-- Repetitive bake preparation.
-- Slow scan-to-realtime workflow.
+Start with **One Click Bake** for a first version, or control each stage with the manual steps.
 
-![Adaptive reduce comparison](img/gif/adaptive-reduce-comparison.gif)
+## Adaptive Reduction
 
----
+**Adaptive Reduce** calculates weights that help protect normal changes, edges and surface details. The Decimate modifier uses these weights to simplify less important areas more aggressively.
 
-## Smart Adaptive Optimization
+<p align="center">
+  <img src="../img/why-scanready-adaptive-optimization.jpg" alt="Adaptive Reduce comparison" style="max-width:1000px;width:100%;" loading="lazy" decoding="async">
+</p>
 
-Traditional mesh reduction often applies the same optimization uniformly across the entire model.
+The result depends on the scan and the chosen density. Check the silhouette, thin parts and details that must remain visible up close.
 
-This can unnecessarily preserve dense geometry in flat areas while damaging important surface details in more complex regions.
+## Polygons and Materials in One Workflow
 
-ScanReady 1.0 uses adaptive optimization to analyze the surface and preserve visually important details while simplifying flatter or less detailed areas more aggressively.
+ScanReady does more than optimize geometry. The workflow also prepares UVs, materials and textures to transfer scan detail to a lighter, realtime-ready asset.
 
-The result is a cleaner and more efficient low-poly asset that keeps much more of the original scan quality where it matters most.
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img src="../img/adaptive-original.png" alt="Original textured scan" class="sr-uv-compare__base" loading="lazy" decoding="async">
+    <div class="sr-uv-compare__overlay">
+      <img src="../img/adaptive-weights.png" alt="Adaptive Reduce weights displayed in color" class="sr-uv-compare__top" loading="lazy" decoding="async">
+    </div>
+    <span class="sr-uv-compare__label sr-uv-compare__label--left">Original scan</span>
+    <span class="sr-uv-compare__label sr-uv-compare__label--right">Adaptive reduction</span>
+    <span class="sr-uv-compare__adaptive-gradient" aria-label="Adaptive weight gradient from minimum to high reduction"><span class="sr-uv-compare__adaptive-gradient-bar"></span><span class="sr-uv-compare__adaptive-gradient-labels"><span>Minimum reduction</span><span>Medium reduction</span><span>High reduction</span></span></span>
+    <button class="sr-uv-compare__handle" type="button" aria-label="Compare the original scan and Adaptive Reduce weights" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
+</div>
 
----
+<p align="center"><strong>Move the slider to compare the scan and Adaptive Reduce weights.</strong></p>
 
-## Built for Photogrammetry and Game-Ready Assets
+!!! note "Optimization and retopology"
+    ScanReady uses polygon reduction: it does not automatically create quad topology suitable for animation. Models that need to deform may require a dedicated retopology pass.
 
-ScanReady is designed to convert dense high-poly scans into optimized, game-ready assets directly inside Blender.
+## Detail in Textures
 
-Instead of spending hours manually cleaning meshes, generating UVs, creating cages, and baking textures, ScanReady automates the workflow into a faster and more efficient pipeline.
+UVs and baking transfer visual detail from the high-poly scan to the optimized mesh. Geometry retains the main shape, while textures preserve color and surface details.
 
----
+**Bake Materials** can distribute the result across multiple texture sets. An efficient UV layout helps use the available resolution, but the final choice should also consider memory and material count.
 
-## Better Texture Space Usage
+## One Workflow, Two Ways to Work
 
-ScanReady 1.0 does not only optimize polygon density.
+| Workflow | When to use it |
+|---|---|
+| **One Click Bake** | To automate the main stages and obtain a first result. |
+| **Manual Quick Guide** | To check reduction, UVs, cage and baking separately. |
+| **Advanced** | To adapt settings to a difficult scan or specific requirements. |
 
-The addon also helps improve UV space efficiency and bake preparation for cleaner and more detailed realtime textures.
+If the result needs correction, return to the relevant step and regenerate the following stages. You do not need to change every advanced setting to get started.
 
-Optimized UV packing helps preserve texture detail while reducing unnecessary texture waste.
+## Who It's For
 
----
+ScanReady is designed for photogrammetry artists, environment artists and creators of assets for video games, VR, AR and realtime visualization. It is also useful for interactive versions of artifacts, museum collections and cultural heritage.
 
-## The Problem with Traditional Workflows
+Keep an intact copy of the scan for your archive. The optimized version is intended for presentation and production; preparation options can modify the working source.
 
-Photogrammetry scans are often:
+## From Model to Final Project
 
-- Extremely heavy
-- Difficult to optimize
-- Hard to unwrap correctly
-- Slow to bake
-- Unstable on low VRAM systems
+1. Import the scan and save a copy of the project.
+2. Create and check the low-poly preview.
+3. Generate UVs and check the cage.
+4. Bake the required textures.
+5. Export using Blender's tools and check the asset at its destination.
 
-A single scan can easily contain millions of polygons, making manual optimization time-consuming and frustrating.
-
----
-
-## What ScanReady Solves
-
-✅ Mesh optimization
-
-Automatically reduce dense geometry while preserving important shapes and details.
-
-✅ Smart UV workflow
-
-Generate clean UVs optimized for baking and texture usage.
-
-✅ Automatic cage generation
-
-No need to manually create cages for baking.
-
-✅ Multi-material baking
-
-Supports complex scan assets with multiple materials.
-
-✅ Memory-safe baking
-
-Designed to work safely even on systems with limited VRAM.
-
-✅ One-click workflow
-
-From scan to game-ready asset with minimal setup.
-
----
-
-## Designed for Blender Artists
-
-ScanReady works directly inside Blender and integrates into existing workflows without external software.
-
-Perfect for:
-
-- Photogrammetry artists
-- Environment artists
-- Game developers
-- Asset creators
-- VR and AR workflows
-- Real-time applications
-
----
-
-## From Millions of Polygons to Realtime Assets
-
-ScanReady helps transform heavy scans into optimized assets suitable for:
-
-- Unreal Engine
-- Unity
-- Real-time rendering
-- VR applications
-- AR experiences
-- Game production
-
-while preserving important visual surface details through textures and adaptive optimization.
-
----
-
-## Why Not Manual Optimization?
-
-Manual workflows often require:
-
-- Decimation setup
-- UV fixing
-- Cage tweaking
-- Baking setup
-- Material cleanup
-- Repeated testing
-
-ScanReady automates these repetitive technical tasks so artists can spend more time focusing on visual quality and creative work.
-
----
-
-## Built for Speed
-
-ScanReady is designed to reduce the technical complexity of scan optimization workflows.
-
-Tasks that normally require multiple manual steps — mesh cleanup, optimization, UV generation, cage setup, and baking — can be prepared significantly faster inside a single integrated workflow.
-
-The goal is simple:
-
-> Reduce technical friction and accelerate scan-to-realtime asset creation.
-
----
-
-## Automated Workflow
-
-ScanReady combines optimization, UV generation, cage preparation, and baking into a more automated workflow designed specifically for scanned assets.
-
-Instead of manually configuring multiple technical steps, artists can focus on preparing cleaner realtime assets more efficiently.
-
----
-
-## Example Workflow
-
-1. Import high-poly scan
-2. Preview and optimize mesh
-3. Generate UVs and cage
-4. Bake textures
-5. Export game-ready asset
-
----
+[Start with the quick start guide](quick-start.md) or explore the [use cases](use-cases.md).
 
 ## ScanReady Philosophy
 
-Fast.
+**Fast. Clean. Game-ready.**
 
-Clean.
-
-Game-ready.
-
-Built for artists who want efficient scan optimization directly inside Blender.
+Less repetitive setup, more control over the scan's result.
