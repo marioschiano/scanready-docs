@@ -76,8 +76,10 @@ Divide il bake in più gruppi di materiali.
 
 Usare più materiali aumenta lo spazio texture disponibile e può conservare più dettaglio su scansioni grandi.
 
+Nell'esempio dell'Arco di Traiano, la scansione originale usa **4 materiali con una texture 8K ciascuno**; il risultato ottimizzato usa **1 materiale con una texture 8K**. Il bake può comportare una perdita di dettaglio: confronta il risultato con la sorgente.
+
 <p align="center">
-  <img src="../../img/step3-material-count.jpg" alt="Ottimizzazione da quattro materiali 8K a un unico materiale 2K pronto per il realtime" style="max-width:1100px;width:100%;" loading="lazy" decoding="async">
+  <img src="../../img/step3-material-count.jpg" alt="Ottimizzazione da quattro materiali con texture 8K a un materiale con texture 8K" style="max-width:1100px;width:100%;" loading="lazy" decoding="async">
 </p>
 
 | Materiali | Uso tipico |
