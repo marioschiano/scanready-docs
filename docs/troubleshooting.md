@@ -1,38 +1,38 @@
 # Troubleshooting
 
-This page covers common ScanReady 1.0 workflow issues and provides solutions for baking, UVs, optimization, memory usage, and realtime preparation.
+This page covers common ScanReady workflow problems and offers solutions for baking, UVs, optimization, memory usage and realtime preparation.
 
-Scan processing can be demanding because high-poly scans, texture baking, UV generation, and memory usage all depend on the source model and system hardware.
+Processing scans can be demanding because high-poly scans, texture baking, UV generation and memory depend on the source model and hardware.
 
-For support, bug reports, or workflow questions, contact:
+For support, bug reports or workflow questions, contact:
 
 <a href="mailto:support.marioschiano3d@gmail.com"><strong>support.marioschiano3d@gmail.com</strong></a>
 
 ---
 
-## The ScanReady 1.0 Panel Does Not Appear
+## The ScanReady Panel Does Not Appear
 
-Check the following:
+Check that:
 
-- Make sure the addon is enabled in **Edit > Preferences > Add-ons**
-- Make sure you are in the **3D Viewport**
-- Press **N** to open the Sidebar
-- Look for the **Scan Ready** tab
-- In some cases, restarting Blender may be required after enabling the addon
+- the add-on is enabled in **Edit > Preferences > Add-ons**;
+- you are in the **3D Viewport**;
+- you pressed **N** to open the Sidebar;
+- the **Scan Ready** tab exists;
+- in some cases Blender needs restarting after enabling the add-on.
 
 ---
 
 ## One Click Bake Does Not Start
 
-Make sure:
+Make sure that:
 
-- A mesh object is selected
-- The selected object is the high-poly scan you want to process
-- Blender is in Object Mode
-- The object is visible and not hidden
-- The scene is not currently running another modal operation
+- a mesh object is selected;
+- the selected object is the high-poly scan to process;
+- Blender is in Object Mode;
+- the object is visible and not hidden;
+- the scene is not already running another modal operation.
 
-If needed, save the file, restart Blender, and try again.
+If necessary, save the file, restart Blender and try again.
 
 ---
 
@@ -40,23 +40,27 @@ If needed, save the file, restart Blender, and try again.
 
 If the optimized preview is still too dense:
 
-- Lower **Final Faces**
-- Lower **Optimize / Reduce**
-- Increase cleanup only carefully
-- Create the low-poly preview again
+- lower **Optimize / Reduce**;
+- lower **Final Faces**;
+- increase cleanup only with caution;
+- recreate the low-poly preview.
 
-For VR and videogame assets, the mesh should remain light enough to orbit, inspect, and export comfortably.
+**Optimize / Reduce** and **Final Faces** are linked: both control how lightweight the low-poly preview will be.
+
+For VR and video game assets, the mesh must remain light enough to handle in the viewport, export without problems and use in realtime.
 
 ---
 
-## The Preview Mesh Lost Too Much Detail
+## The Preview Mesh Has Lost Too Much Detail
 
-If the optimized preview looks too simplified:
+If the optimized preview looks oversimplified:
 
-- Increase **Final Faces**
-- Increase **Optimize / Reduce**
-- Avoid reducing very thin or delicate objects too aggressively
-- Create the preview again
+- increase **Optimize / Reduce**;
+- increase **Final Faces**;
+- avoid overly aggressive reduction on very thin or delicate objects;
+- recreate the preview.
+
+**Optimize / Reduce** and **Final Faces** are linked: both control how much geometric detail is kept in the low-poly preview.
 
 For important silhouettes, keep enough geometry to preserve the shape.
 
@@ -64,103 +68,103 @@ For important silhouettes, keep enough geometry to preserve the shape.
 
 ## UVs Look Stretched
 
-If the checker pattern shows strong stretching:
+If the checker pattern shows heavily stretched areas:
 
-- Try a different UV method
-- Lower or raise **Smart UV Angle**
-- Increase UV island separation with **UV Padding**
-- Use a more detailed UV preset
-- Generate UVs again
+- try another **Smart UV Preset** in Step 2;
+- lower or raise **Smart UV Angle**;
+- check **UV Padding** for separation between islands; padding does not correct stretching within an island;
+- use a more detailed UV preset;
+- generate UVs again.
 
 Clean UVs are important for good baked textures.
 
 ---
 
-## The Bake Misses Details
+## The Bake Loses Details
 
-If parts of the scan detail are missing in the baked texture:
+If parts of the scan's detail are missing from the baked texture:
 
-- Increase **Cage Extrusion** slightly
-- Use **Auto Cage Extrusion**
-- Enable **Show Cage** and inspect the cage
-- Check the cage preview and increase **Cage Extrusion** if the cage does not fully cover the high-poly source
-- Increase **Texture Size** if the bake is too low resolution
-- Make sure the original high-poly object is still available
+- enable **Show Cage** and check the cage;
+- slightly increase **Cage Extrusion** or use **Auto Cage Extrusion**;
+- make sure the cage completely covers the high-poly source;
+- increase **Texture Size** if bake resolution is too low;
+- make sure the original high-poly object is still available.
 
-Use the smallest cage value that captures the details cleanly.
+!!! tip "Cage adjustment"
+    Use the smallest cage value that captures details cleanly.
 
 ---
 
 ## Why Does the Baked Texture Look Low Quality?
 
-Bake quality depends on several factors:
+Bake quality depends on:
 
-- Texture resolution
-- Polygon density
-- UV space usage
-- Number of materials
+- texture resolution;
+- polygon density;
+- UV space usage;
+- number of materials.
 
 ### Increase Texture Resolution
 
-Try increasing the texture resolution first.
+First try increasing texture resolution.
 
 Example:
 
-- 1024 → low detail
-- 2048 → standard quality
-- 4096 → high quality
-- 8192 → very high detail
+- 1024 -> low detail
+- 2048 -> standard quality
+- 4096 -> high quality
+- 8192 -> very high detail
 
 Higher resolutions increase memory usage.
 
 ### Increase Polygon Density
 
-If the optimized mesh is too aggressive, important details may be lost before baking.
+If the optimized mesh is reduced too aggressively, important details may be lost before baking.
 
 Try:
 
-- Increasing **Final Faces**
-- Using a less aggressive **Optimize / Reduce** value
+- increasing **Final Faces**;
+- using a less aggressive **Optimize / Reduce** value.
 
-### Use Multiple Materials
+### Use More Materials
 
-If increasing texture resolution is still not enough, the asset may require multiple materials.
+If increasing texture resolution is not enough, the asset may require more materials.
 
-Each material receives its own texture space, allowing much higher detail preservation across the model.
+Each material gets its own texture space, allowing much greater preservation of model detail.
 
 Increasing polygon density alone is not always the best solution.
 
-Very dense meshes can become heavier to process, slower to bake, and more difficult to use in realtime applications.
+Very dense meshes can be heavier to process, slower to bake and harder to use in realtime applications.
 
-For this reason, ScanReady can recommend an appropriate number of bake materials depending on the complexity and size of the scan.
+ScanReady can therefore recommend an appropriate number of bake materials based on scan complexity and size.
 
 Example:
 
-- 1 material → lower texture detail
-- 2 materials → improved texture quality
-- 4 materials → significantly higher texture detail
+- 1 material -> lower texture detail
+- 2 materials -> improved texture quality
+- 4 materials -> much higher texture detail
 
-Using multiple materials is often a better solution than simply increasing polygon density.
+Using more materials is often a better solution than simply increasing polygon density.
 
-This is especially useful for:
+This is particularly useful for:
 
-- Large scans
-- Environment assets
-- Museum objects
-- Complex photogrammetry assets
-- Fine surface details
+- large scans;
+- environment assets;
+- museum objects;
+- complex photogrammetry assets;
+- fine surface details.
 
 ---
 
-## The Bake Captures Wrong Areas
+## The Bake Captures the Wrong Areas
 
 If the bake includes details from the wrong part of the model:
 
-- Reduce **Cage Extrusion**
-- Inspect the cage preview
-- Make sure objects are not overlapping
-- Hide or move unrelated objects if needed
-- Bake again
+- reduce **Cage Extrusion**;
+- check the cage preview;
+- make sure objects do not overlap;
+- hide or move unrelated objects if necessary;
+- bake again.
 
 A cage that is too large can project unwanted nearby surfaces.
 
@@ -168,33 +172,33 @@ A cage that is too large can project unwanted nearby surfaces.
 
 ## Textures Are Not Saved
 
-Check:
+Check that:
 
-- **Save Images** is enabled
-- **Output Folder** is valid
-- The Blender file has been saved if you use a relative path like `//bake/`
-- You have permission to write in the selected folder
-- The bake completed successfully
+- **Save Images** is enabled;
+- **Output Folder** is valid;
+- the Blender file has been saved if you use a relative path such as `//bake/`;
+- you have write permissions for the selected folder;
+- the bake completed successfully.
 
-Relative paths are saved next to the current `.blend` file.
+Relative paths are saved beside the current `.blend` file.
 
-After a successful bake, use **Bake Folder** in Step 3 to open the latest texture folder. If the button is not visible yet, run a bake with **Save Images** enabled first.
+After a successful bake, use **Bake Folder** in Step 3 to open the latest texture folder. If the button is not yet visible, first perform a bake with **Save Images** enabled.
 
 ---
 
-## Why Is the Bake Very Slow?
+## Why Is Baking Very Slow?
 
-Baking can be slow with large scans or high resolution textures.
+Baking can be slow with large scans or high-resolution textures.
 
 To speed it up:
 
-- Lower **Texture Size**
-- Lower **Bake Samples**
-- Reduce the number of bake materials if possible
-- Disable maps you do not need
-- Use a smaller final mesh when appropriate
+- lower **Texture Size**;
+- lower **Bake Samples**;
+- reduce the number of bake materials if possible;
+- disable maps you do not need;
+- use a smaller final mesh when appropriate.
 
-High resolution Normal and AO maps can increase bake time.
+High-resolution normal maps and AO can increase bake time.
 
 ---
 
@@ -204,113 +208,144 @@ Large scans can use a lot of memory during baking.
 
 Try:
 
-- Enable **Safe Memory Bake**
-- Enable **Force CPU Baking** if GPU memory is limited
-- Lower **Texture Size**
-- Lower the number of bake materials
-- Close other heavy applications
-- Save and restart Blender before baking
+- enabling **Safe Memory Bake**;
+- enabling **Force CPU Baking** if GPU memory is limited;
+- lowering **Texture Size**;
+- lowering the number of bake materials;
+- closing other demanding applications;
+- saving and restarting Blender before baking.
 
-Force CPU Baking is usually slower, but it can be safer on low VRAM systems.
+!!! info "CPU and GPU baking"
+    Force CPU Baking is usually slower, but can be safer on systems with little VRAM.
 
-ScanReady 1.0 automatically enables **Force CPU Baking** when the number of bake materials is set to `2` or more.
+    ScanReady automatically enables **Force CPU Baking** when the number of bake materials is set to `2` or more.
 
-For single-material baking, GPU baking can still be used when available.
+    For single-material bakes, GPU baking can still be used when available.
 
 ---
 
-## Normal Map Looks Too Strong or Too Weak
+## The Normal Map Looks Too Strong or Too Weak
 
 Adjust **Normal Strength**.
 
-This changes the strength of the Normal Map node in the final material.
+It changes the strength of the Normal Map node in the final material.
 
-It affects the material appearance, not the baked normal image itself.
+It affects the material's appearance, not the baked normal image.
 
-If the original high-poly material has a linked normal texture, ScanReady transfers that normal map to the new UV layout.
+If the original high-poly material has a connected normal texture, ScanReady transfers that normal map to the new UV layout.
 
-If no normal texture is linked, ScanReady generates the normal information from the high-poly geometry.
+If no normal texture is connected, ScanReady generates a new normal map by projecting high-poly geometry detail onto the low-poly mesh.
 
 ---
 
 ## Roughness Information Is Missing
 
-ScanReady can only transfer roughness information when the original high-poly material already contains a roughness texture or usable roughness input.
+ScanReady can transfer roughness only when the original high-poly material already contains a roughness texture or usable roughness input.
 
-If no roughness information exists in the original material, no roughness transfer can be generated automatically.
+If no roughness information exists in the original material, a roughness transfer cannot be generated automatically.
 
-Check the original material node tree and verify that roughness information is available before baking.
+Check the original material's node tree and make sure roughness information is available before baking.
 
 ---
 
-## Ambient Occlusion Looks Too Dark
+## Ambient Occlusion Is Too Dark
 
 Try:
 
-- Lowering AO strength in your final material
-- Reducing **AO Distance** if automatic distance is disabled
-- Using more controlled AO settings
-- Checking whether the AO source is appropriate for the asset
+- lowering **AO Mix** in **Advanced > Bake Settings > Occlusion Settings**;
+- reducing **AO Distance** if automatic distance is disabled;
+- using more controlled AO settings;
+- checking whether the AO source is suitable for the asset.
 
 AO should add depth, not hide scan details.
 
 ---
+
 ## Why Does the Bake Contain Black or Missing Areas?
 
-If the baked texture contains black areas, missing details, or incorrect projections, the cage extrusion is usually too small.
+If the baked texture contains black areas, missing details or incorrect projections, cage extrusion is usually too small.
 
-In this case, some parts of the high-poly scan are not being reached correctly during baking.
+In this case some parts of the high-poly scan are not properly reached during baking.
 
-Black areas can also happen when parts of the optimized low-poly mesh sit in front of or behind the high-poly source, so the bake rays do not hit the expected surface.
+Black areas can also appear when parts of the optimized low-poly mesh lie in front of or behind the high-poly source, so bake rays do not hit the intended surface.
 
-To fix this:
+To correct this:
 
-- Enable **Show Cage**
-- Increase the **Cage Extrusion** value
-- Inspect the cage around the model before baking
-- Check the cage preview before baking
-- Increase **Cage Extrusion** slightly if the cage does not fully cover the high-poly source
+- enable **Show Cage**;
+- slightly increase **Cage Extrusion** or use **Auto Cage Extrusion**;
+- check the cage around the model before baking;
+- make sure the cage completely covers the high-poly source.
 
-The cage should fully surround the high-poly surface.
+The cage must completely surround the high-poly surface.
 
-In ScanReady 1.0, the cage preview turns green when the cage is large enough to properly cover the scan surface.
+Green indicates that coverage passes ScanReady's automatic check. Because the check samples the surface, also inspect the bake result in thin, concave or closely spaced areas.
 
-If some areas are still missing, increase the extrusion value slightly and check the cage again.
+If some areas are still missing, adjust extrusion in small increments and also check normals, UVs and source materials. A cage that is too large can capture unwanted surfaces.
 
-Once the cage looks correct, run the bake again to verify whether the missing or black areas have been fixed.
+When the cage looks correct, bake again to check whether the missing or black areas are fixed.
 
-Use the smallest value that completely covers the scan without capturing unwanted nearby surfaces.
+!!! tip "Recommended cage value"
+    Use the smallest value that completely covers the scan without capturing unwanted nearby surfaces.
 
 ---
 
-## Which Adaptive Reduce Preset should I use?
+## When Should I Use Convert Source Materials?
+
+Leave **Convert Source Materials** disabled if baking works correctly. If Base Color is black or incomplete and the cage is correct, check the imported shader and try conversion in **Advanced > Mesh Settings**.
+
+Enable the checkbox, then press **Create Lowpoly Preview** to apply it. Materials that are already standard are preserved; those requiring conversion are rebuilt in a Principled BSDF configuration. Check the result before baking again.
+
+---
+
+## Which Adaptive Reduce Preset Should I Use?
 
 Adaptive Reduce changes how ScanReady distributes mesh reduction across the scan before UVs and baking.
 
-| Preset | Best For | Result |
+| Preset | Ideal for | Result |
 |---|---|---|
-| **Balanced** | Most scans | Good general-purpose reduction behavior. Use this first. |
-| **Preserve Details** | Complex scans with sculptural forms, folds, engravings, damage, or small details | Protects important detail areas more strongly. |
-| **Flat Surfaces** | Objects with broad simple surfaces, panels, walls, floors, or flatter architectural areas | Reduces simple areas more aggressively to save polygons. |
+| **Balanced** | Most scans | Good general behavior. Try it first. |
+| **Preserve Details** | Complex scans with sculptural forms, folds, engravings, damage or small details | Protects important detailed areas more strongly. |
+| **Flat Surfaces** | Objects with broad simple surfaces, panels, walls, floors or flat architectural areas | Reduces simple areas more aggressively to save polygons. |
 
-If the optimized preview loses important detail, try **Preserve Details** and create the preview again.
+If the optimized preview loses important details, try **Preserve Details** and recreate the preview.
 
-If the preview keeps too much geometry on simple areas, try **Flat Surfaces** and create the preview again.
+If the preview keeps too much geometry on simple areas, try **Flat Surfaces** and recreate the preview.
 
-For vehicles or hard-surface scans, start with **Balanced**, keep **Protect Feature Edges** enabled, and check the silhouette and main panel breaks. Use **Flat Surfaces** if broad panels remain unnecessarily dense.
-
+For vehicles or hard-surface scans, start with **Balanced**, keep **Protect Feature Edges** enabled and check the silhouette and main panel breaks. Use **Flat Surfaces** if broad panels remain unnecessarily dense.
 
 ---
 
-## Best First Fix
+## I Changed Too Many Values and Don't Know How to Go Back
+
+If you changed many settings and the result became difficult to control, use **Reset Defaults**.
+
+This is useful when you have changed several Advanced values, such as Occlusion, Bake, UV, Adaptive Reduce or memory settings, and no longer know which parameter is causing the problem.
+
+**Reset Defaults** returns ScanReady to a clean starting point.
+
+After resetting:
+
+1. Start again with **Balanced** as the Adaptive Reduce preset.
+2. Recreate the low-poly preview.
+3. Generate UVs again.
+4. Check the cage.
+5. First perform a simple bake, for example Base Color only.
+
+!!! tip "Enable one control at a time"
+    Once the basic workflow works, re-enable the other controls one at a time.
+
+---
+
+## Recommended First Steps
 
 If the result is not good, use this order:
 
 1. Check the low-poly preview
 2. Check UVs with the checker view
 3. Check the cage preview
-4. Bake only Base Color first
-5. Add Normal, Roughness, and AO after the Base Color works
+4. Bake Base Color only first
+5. Add Normal Map, Roughness Map and Occlusion Map after Base Color works
 6. Increase texture resolution only when the workflow is correct
 
-This makes problems easier to isolate.
+!!! note "Why this order helps"
+    This makes it easier to isolate problems.
