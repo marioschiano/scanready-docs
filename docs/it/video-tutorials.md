@@ -29,8 +29,10 @@ Come installare ScanReady come Blender Extension e verificare che il pannello si
 Workflow completo per convertire una scansione high-poly in un asset ottimizzato con UV, cage, bake e materiali finali.
 
 <div class="sr-video">
-  <iframe src="[[https://www.youtube.com/embed/hRJgsZgXpZ4](https://youtu.be/hRJgsZgXpZ4)](https://youtu.be/hRJgsZgXpZ4)" title="ScanReady One Click Bake – Optimize a 3D Scan in Blender" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/hRJgsZgXpZ4" title="ScanReady One Click Bake – Optimize a 3D Scan in Blender" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+
+<p><a href="https://www.youtube.com/watch?v=hRJgsZgXpZ4" target="_blank" rel="noopener">Apri il video One Click Bake su YouTube</a></p>
 
 ---
 
