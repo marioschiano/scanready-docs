@@ -1,61 +1,87 @@
 # Installation
 
-ScanReady 1.0 is a Blender addon by Mario Schiano.
+This page explains how to install ScanReady in Blender.
 
-The addon metadata declares compatibility from **Blender 4.2** and later. Install it like a standard Blender Extension package.
+## Requirements
 
-## Download
+ScanReady requires **Blender 4.2 or later** and is distributed as a Blender Extension. Save a copy of your project before processing the scan.
 
-Download the addon as a `.zip` file.
+---
 
-Do not extract the zip file before installing it in Blender.
+## Download the Add-on
 
-## Install the Addon
+Download the extension file:
+
+`scanready_v1_0_0.zip`
+
+Do not extract the ZIP.
+
+Blender installs extensions directly from the `.zip` file.
+
+---
+
+## Install the Add-on
 
 1. Open Blender.
 2. Go to **Edit > Preferences**.
-3. Open the **Add-ons** tab.
-4. Click **Install**.
-5. Select the ScanReady 1.0 `.zip` file.
-6. Click **Install Add-on**.
+3. Open **Get Extensions**.
+4. In the menu at the top right, choose **Install from Disk**.
+5. Select `scanready_v1_0_0.zip`.
+6. Enable **ScanReady**.
 
 <p align="center">
-  <img src="../img/installation.gif" alt="Installing and enabling ScanReady 1.0 from Blender Preferences" style="max-width:820px;width:100%;">
+  <img src="../img/installation.gif" alt="Installing the ScanReady extension in Blender" style="max-width:820px;width:100%;" decoding="async" fetchpriority="high">
 </p>
 
-## Enable the Addon
+---
 
-1. Search for **ScanReady 1.0** in the Add-ons list.
-2. Enable the checkbox next to the addon.
-3. Click **Save Preferences** if you want Blender to keep it enabled.
+## Enable the Add-on
 
-## Access the Panel
+After installation, make sure ScanReady is enabled.
 
-1. Open the **3D Viewport**.
-2. Press **N** to show the Sidebar.
-3. Select the **Scan Ready** tab.
+In Blender preferences you should see:
 
-The panel title is shown as **Scan Ready v1.0.0**.
+- **Name:** ScanReady
+- **Type:** Extension
+- **Version:** 1.0.0 or later
+- **Maintainer:** Mario Schiano
+
+---
+
+## Open the ScanReady Panel
+
+In the 3D Viewport:
+
+1. Press `N` to open the sidebar.
+2. Open the **Scan Ready** tab.
+3. Select a high-poly mesh.
+4. Press **ONE CLICK BAKE** or use the manual workflow.
+
+---
 
 ## Updates
 
-ScanReady 1.0 can check for newer versions from the addon preferences when an update manifest is configured.
+If you purchased ScanReady on **Superhive**, download the new ZIP from your account and install it using **Install from Disk**. ScanReady's built-in check does not download the package.
 
-Press **Check for Updates** in **Edit > Preferences > Add-ons > ScanReady** to compare the installed version with the published update manifest.
+If ScanReady was installed from a repository or marketplace connected to Blender Extensions, Blender can show the **Update** button on the Extensions screen when a newer version is available.
 
-If a newer version is available, ScanReady shows an update notice in the panel and in **Edit > Preferences > Add-ons > ScanReady**.
+ScanReady also includes a manual check under **Edit > Preferences > Add-ons > ScanReady**: **Check for Updates** reads the public documentation manifest and can report that a newer version exists. This check is informational: it does not install the update or replace Blender Extensions / Superhive.
 
-Use the release notes link to review what changed, then update from Blender Extensions or the marketplace where you downloaded ScanReady.
+Preferences also contains quick links to the documentation, release notes and tutorials.
 
-This keeps the update process safe: ScanReady does not automatically replace addon files while Blender is running.
+---
 
 ## If the Panel Does Not Appear
 
-- Make sure the addon is enabled in Preferences.
-- Check that the active editor is the 3D Viewport.
-- Restart Blender after enabling the addon.
-- Confirm that you installed the ScanReady 1.0 `.zip`, not an extracted folder by mistake.
+Check that:
 
-If the installation problem continues, contact ScanReady support:
+- the add-on is enabled in preferences;
+- the installed file is the extension ZIP;
+- Blender has been restarted after installation;
+- you are looking at the 3D Viewport sidebar, not another editor.
 
-<a href="mailto:support.marioschiano3d@gmail.com"><strong>support.marioschiano3d@gmail.com</strong></a>
+See also the [FAQ](faq.md) and [Troubleshooting](troubleshooting.md).
+
+For installation issues:
+
+**Email:** <support.marioschiano3d@gmail.com>
