@@ -1,26 +1,29 @@
 # Export Tips
 
-After using ScanReady 1.0, you can export the optimized baked asset for VR, AR, videogames, realtime viewers, or other 3D production workflows.
+After using ScanReady, you can export the optimized, baked asset for VR, AR, video games, realtime viewers or other 3D production workflows.
 
-The goal is to keep the model light enough for realtime use while preserving the visual detail of the original scan through baked textures.
+The goal is to keep the model light enough for realtime use while preserving the original scan's visual detail through baked textures.
 
 ---
 
 ## Before Exporting
 
-Before exporting, check:
+Before export, check that:
 
-- The final mesh is selected.
-- The optimized mesh has UVs.
-- The baked material is assigned.
-- Texture files were saved if you need external image files.
-- The object scale is correct.
-- The object origin is placed where you need it.
-- The mesh density is suitable for the target platform.
+- the final mesh is selected;
+- the optimized mesh has UVs;
+- the baked material is assigned;
+- texture files have been saved if you need external images;
+- the object's scale is correct;
+- the object's origin is positioned where needed;
+- mesh density is suitable for the target platform.
 
-For VR and videogames, performance matters as much as visual quality.
+!!! tip "Realtime"
+    For VR and video games, performance matters as much as visual quality.
 
 ---
+
+ScanReady prepares meshes, materials and textures. To export the model, use Blender's **File > Export** and choose the format required by the destination.
 
 ## Recommended Export Formats
 
@@ -28,73 +31,73 @@ For VR and videogames, performance matters as much as visual quality.
 
 Use **glTF** or **GLB** for modern realtime workflows.
 
-Good for:
+Suitable for:
 
-- Web viewers.
-- Realtime previews.
-- Many game engines.
-- AR/VR pipelines.
-- Lightweight asset delivery.
+- web viewers;
+- realtime previews;
+- many game engines;
+- AR/VR pipelines;
+- lightweight asset delivery.
 
-`GLB` stores the model and textures in a single file, which is useful for sharing and previewing.
+`GLB` stores the model and textures in a single file, useful for sharing and previews.
 
 ### FBX
 
-Use **FBX** when your target pipeline depends on it.
+Use **FBX** when the target pipeline requires it.
 
-Good for:
+Suitable for:
 
-- Unity workflows.
-- Unreal Engine workflows.
-- DCC-to-engine transfer.
-- Teams that already use FBX as a standard.
+- Unity workflows;
+- Unreal Engine workflows;
+- DCC-to-engine transfers;
+- teams already using FBX as a standard.
 
 FBX can work well, but texture connections may need checking after import.
 
 ### OBJ
 
-Use **OBJ** for simple static mesh exchange.
+Use **OBJ** for simple exchange of static meshes.
 
-Good for:
+Suitable for:
 
-- Basic geometry transfer.
-- Simple archive workflows.
-- Compatibility with many tools.
+- basic geometry transfer;
+- simple archive workflows;
+- compatibility with many tools.
 
-OBJ is simple, but it is less complete than glTF or FBX for modern material workflows.
+OBJ is simple, but less complete than glTF or FBX for modern material workflows.
 
 ---
 
 ## Texture Maps
 
-Depending on your settings, ScanReady 1.0 can create:
+Depending on the settings, ScanReady can create:
 
-- Base Color texture.
-- Normal map.
-- Roughness map.
-- Ambient Occlusion map.
+- Base Color textures;
+- normal maps;
+- roughness maps;
+- ambient occlusion maps.
 
-When exporting to another application, make sure the external software is using the correct texture files.
+When exporting to another application, make sure the external software uses the correct texture files.
 
 ### Base Color
 
-Connect this to the main color or albedo input.
+Connect this texture to the main color or albedo input.
 
 ### Normal Map
 
-Connect this to the normal input.
+Connect this texture to the normal input.
 
-In some software, you may need to set the image type as **Non-Color** or **Normal Map**.
+In some software, you may need to set the image type to **Non-Color** or **Normal Map**.
 
 ### Roughness Map
 
-Connect this to the roughness input when your target material supports it.
+Connect this texture to the roughness input when the target material supports it.
 
-Roughness maps should be treated as **Non-Color** data.
+Roughness maps must be treated as **Non-Color** data.
 
 ### Ambient Occlusion
 
-Connect this to the AO input if your target engine supports it.
+Connect this texture to the AO input if the target engine supports it.
 
 Some workflows combine AO with other maps, depending on the engine or material setup.
 
@@ -106,11 +109,11 @@ Choose texture size based on the final use.
 
 ### 1024
 
-Good for small props, background objects, mobile VR, or lightweight previews.
+Good for small props, background objects, mobile VR or lightweight previews.
 
 ### 2048
 
-Good general-purpose choice for many assets.
+A good general choice for many assets.
 
 ### 4096
 
@@ -120,42 +123,44 @@ Useful for close-up objects or important assets.
 
 Use only when very high detail is needed.
 
-Large textures increase memory usage, file size, loading time, and realtime cost.
+!!! warning "Large textures"
+    Large textures increase memory usage, file size, loading time and realtime cost.
 
 ---
 
 ## VR Optimization
 
-For VR, keep assets especially light.
+For VR, keep assets particularly lightweight.
 
-VR needs stable performance because the scene must render smoothly for both eyes.
+VR requires stable performance because the scene must render smoothly for both eyes.
 
 Before exporting for VR:
 
-- Reduce polygon count as much as possible.
-- Use baked textures instead of heavy geometry.
-- Avoid unnecessarily large texture sizes.
-- Use Normal maps to preserve surface detail.
-- Test the asset in the target VR environment.
-- Prefer fewer materials when possible.
+- reduce polygon count as much as possible;
+- use baked textures instead of heavy geometry;
+- avoid unnecessarily large texture sizes;
+- use normal maps to preserve surface detail;
+- test the asset in the target VR environment;
+- prefer fewer materials when possible.
 
-A model that looks fine on desktop may still be too heavy for standalone VR headsets.
+!!! warning "Standalone VR"
+    A model that seems lightweight on desktop may still be too heavy for standalone VR headsets.
 
 ---
 
-## Videogame Optimization
+## Video Game Optimization
 
-For videogames, balance quality and performance.
+For video games, balance quality and performance.
 
-Before exporting for a game engine:
+Before exporting to a game engine:
 
-- Keep polygon count appropriate for the asset size.
-- Use texture detail instead of excessive geometry.
-- Use Normal maps for surface detail.
-- Use AO maps if useful for the material.
-- Keep material count under control.
-- Use texture sizes appropriate for the camera distance.
-- Test the asset in the real game scene, not only in isolation.
+- keep polygon count suitable for the asset's size;
+- use texture detail instead of excessive geometry;
+- use normal maps for surface detail;
+- use an AO map if useful for the material;
+- keep material count under control;
+- use texture sizes suited to camera distance;
+- test the asset in the actual game scene, not only in isolation.
 
 A hero asset can use more detail than a background prop.
 
@@ -165,14 +170,14 @@ A hero asset can use more detail than a background prop.
 
 When importing into Unity:
 
-- Check the scale.
-- Check material assignments.
-- Assign Base Color to Albedo/Base Map.
-- Assign Normal map to Normal Map.
-- Mark the Normal map texture as a normal map if Unity asks.
-- Assign Roughness/Smoothness according to the shader you are using.
-- Connect AO if your shader supports it.
-- Check texture compression settings.
+- check scale;
+- check material assignments;
+- assign Base Color to Albedo/Base Map;
+- assign the normal map to Normal Map;
+- mark the normal texture as a normal map if Unity asks;
+- assign Roughness/Smoothness according to the shader you use;
+- connect AO if the shader supports it;
+- check texture compression settings.
 
 Use lower texture sizes for mobile or standalone VR projects.
 
@@ -182,61 +187,62 @@ Use lower texture sizes for mobile or standalone VR projects.
 
 When importing into Unreal Engine:
 
-- Check scale and orientation.
-- Check material slots.
-- Connect Base Color to Base Color.
-- Connect Normal map to Normal.
-- Connect Roughness to Roughness.
-- Connect AO to Ambient Occlusion if used.
-- Review texture compression settings.
-- Test the asset under realtime lighting.
+- check scale and orientation;
+- check material slots;
+- connect Base Color to Base Color;
+- connect the normal map to Normal;
+- connect Roughness to Roughness;
+- connect AO to Ambient Occlusion if used;
+- check texture compression settings;
+- test the asset under realtime lighting.
 
-For Nanite workflows, you may use more geometry, but baked lightweight assets are still useful for VR, mobile, web, and interactive applications.
+For Nanite workflows you can use more geometry, but lightweight baked assets remain useful for VR, mobile, web and interactive applications.
 
 ---
 
 ## Web and Realtime Viewers
 
-For web viewers or lightweight realtime presentation:
+For web viewers or lightweight realtime presentations:
 
-- Prefer GLB when possible.
-- Keep texture sizes moderate.
-- Reduce material count.
-- Keep mesh density low.
-- Test loading time.
-- Test performance on the target device.
+- prefer GLB when possible;
+- keep texture sizes moderate;
+- reduce the number of materials;
+- keep mesh density low;
+- test loading time;
+- test performance on the target device.
 
-A smaller asset is easier to share, load, and display interactively.
+A smaller asset is easier to share, load and display interactively.
 
 ---
 
 ## Keep the Original Scan
 
-Do not delete the original high-poly scan.
+!!! warning "Keep the source"
+    Do not delete the original high-poly scan.
 
-Keep it as the source asset for:
+Also keep a copy from before ScanReady preparation, because Mesh Settings options can modify the source. You will need it for:
 
-- Future re-bakes.
-- Higher quality exports.
-- Archival preservation.
-- Different texture resolutions.
-- Different optimization targets.
+- future bakes;
+- higher-quality exports;
+- archival preservation;
+- different texture resolutions;
+- different optimization targets.
 
-ScanReady 1.0 creates a practical production version, while the original scan remains your high-detail source.
+ScanReady creates a practical production version, while the original scan remains your high-detail source.
 
 ---
 
 ## Final Checklist
 
-Before delivery or export, check:
+Before delivery or export, check that:
 
-- Mesh is optimized.
-- UVs are present.
-- Base Color bake looks correct.
-- Normal map looks correct if used.
-- Roughness map looks correct if used.
-- AO map looks correct if used.
-- Texture files are saved.
-- The Step 3 **Bake Folder** button opens the latest saved texture folder.
-- File size is acceptable.
-- Asset performs well in the target environment.
+- the mesh is optimized;
+- UVs are present;
+- the Base Color bake looks correct;
+- the normal map looks correct if used;
+- the roughness map looks correct if used;
+- the AO map looks correct if used;
+- texture files are saved;
+- the **Bake Folder** button in Step 3 opens the last saved texture folder;
+- file size is acceptable;
+- the asset works well in the target environment.
