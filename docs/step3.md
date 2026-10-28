@@ -66,7 +66,9 @@ Divides the bake into multiple material groups.
 
 Using more materials increases available texture space and can preserve more detail on large scans.
 
-<p align="center"><img src="../img/step3-material-count.jpg" alt="Optimization from four 8K materials to a single material for realtime use" style="max-width:1100px;width:100%;" loading="lazy" decoding="async"></p>
+In the Arch of Trajan example, the original scan uses **4 materials with one 8K texture each**; the optimized result uses **1 material with one 8K texture**. Baking can result in some detail loss, so compare the result with the source.
+
+<p align="center"><img src="../img/step3-material-count.jpg" alt="Optimization from four materials with 8K textures to one material with an 8K texture" style="max-width:1100px;width:100%;" loading="lazy" decoding="async"></p>
 
 | Materials | Typical use |
 |---|---|
