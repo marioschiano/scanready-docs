@@ -48,6 +48,25 @@ The same model can be displayed with its normal material or in **Show Adaptive R
 <p align="center" style="font-size:0.9em; margin-top:10px;"><strong>Blue:</strong> preserved detail. <strong>Red:</strong> greater polygon reduction.</p>
 <p align="center"><strong>Move the slider to compare the scan and the distribution of adaptive weights.</strong></p>
 
+### Geometry Comparison
+
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img loading="lazy" decoding="async" src="../img/step1-decimate-wireframe.png" alt="Wireframe of the scan reduced with Blender Decimate without Adaptive Reduce" class="sr-uv-compare__base">
+    <div class="sr-uv-compare__overlay">
+      <img loading="lazy" decoding="async" src="../img/step1-adaptive-wireframe.png" alt="Wireframe of the scan reduced with ScanReady Adaptive Reduce" class="sr-uv-compare__top">
+    </div>
+    <span class="sr-uv-compare__label" style="left:50%; transform:translateX(-50%); white-space:nowrap;">101,177 faces</span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--left" style="top:auto; bottom:12px; left:25%; transform:translateX(-50%); min-width:0; width:46%; white-space:normal;">Blender Decimate</span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--right" style="top:auto; bottom:12px; left:75%; transform:translateX(-50%); min-width:0; width:46%; white-space:normal;">ScanReady Adaptive Reduce</span>
+    <button class="sr-uv-compare__handle" type="button" aria-label="Compare Blender Decimate and ScanReady Adaptive Reduce" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
+</div>
+
+<p align="center"><strong>Move the slider to compare the distribution of geometry.</strong></p>
+
+At the same face count, Adaptive Reduce tends to reduce flat surfaces more aggressively while retaining more geometry in areas with reliefs, edges and decorations. ScanReady uses Blender Decimate, guiding its reduction with adaptive weights.
+
 Use an Adaptive Reduce preset as a quick starting point:
 
 - **Balanced** for most scans and general realtime assets.
@@ -56,9 +75,6 @@ Use an Adaptive Reduce preset as a quick starting point:
 
 Keep **Adaptive Method** on **Best Quality** for normal work. **Legacy** retains the original Adaptive Reduce calculation for compatibility with older projects.
 
-<p align="center">
-  <img loading="lazy" decoding="async" src="../img/step1-adaptive-reduce.jpg" alt="Adaptive Reduce transforms a scan of over one million polygons into optimized realtime-ready geometry" style="max-width:820px;width:100%;">
-</p>
 <p align="center">
   <img loading="lazy" decoding="async" src="../img/step1-blender-decimate-vs-scanready.jpg" alt="Comparison between the original high-poly scan and the low-poly result optimized by ScanReady" style="max-width:1000px;width:100%;">
 </p>
@@ -295,3 +311,4 @@ A good preview should:
 </div>
 <div style="flex:0 0 300px; text-align:center;"><img src="../img/outliner-preview.jpg" alt="Step 1 preview mesh in the Outliner" style="width:100%; max-width:300px;" loading="lazy" decoding="async"></div>
 </div>
+
