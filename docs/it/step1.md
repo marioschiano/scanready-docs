@@ -51,6 +51,25 @@ Lo stesso modello può essere visualizzato con il materiale normale oppure con l
 
 <p align="center"><strong>Sposta il cursore per confrontare la scansione e la distribuzione dei pesi adattivi.</strong></p>
 
+### Confronto della geometria
+
+<div class="sr-uv-compare" data-uv-compare>
+  <div class="sr-uv-compare__image">
+    <img loading="lazy" decoding="async" src="../../img/step1-decimate-wireframe.png" alt="Wireframe della scansione ridotta con Blender Decimate senza Adaptive Reduce" class="sr-uv-compare__base">
+    <div class="sr-uv-compare__overlay">
+      <img loading="lazy" decoding="async" src="../../img/step1-adaptive-wireframe.png" alt="Wireframe della scansione ridotta con ScanReady Adaptive Reduce" class="sr-uv-compare__top">
+    </div>
+    <span class="sr-uv-compare__label" style="left:50%; transform:translateX(-50%); white-space:nowrap;">101.177 facce</span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--left" style="top:auto; bottom:12px; left:25%; transform:translateX(-50%); min-width:0; width:46%; white-space:normal;">Blender Decimate</span>
+    <span class="sr-uv-compare__material sr-uv-compare__material--right" style="top:auto; bottom:12px; left:75%; transform:translateX(-50%); min-width:0; width:46%; white-space:normal;">ScanReady Adaptive Reduce</span>
+    <button class="sr-uv-compare__handle" type="button" aria-label="Confronta Blender Decimate e ScanReady Adaptive Reduce" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  </div>
+</div>
+
+<p align="center"><strong>Sposta il cursore per confrontare la distribuzione della geometria.</strong></p>
+
+A parità di facce, Adaptive Reduce tende a ridurre maggiormente le superfici piatte, conservando più geometria nelle aree con rilievi, bordi e decorazioni. ScanReady usa Blender Decimate, guidandone la riduzione con i pesi adattivi.
+
 Usa il preset Adaptive Reduce come punto di partenza rapido:
 
 - **Balanced** per la maggior parte delle scansioni e degli asset realtime generici.
@@ -58,10 +77,6 @@ Usa il preset Adaptive Reduce come punto di partenza rapido:
 - **Flat Surfaces** quando l'oggetto contiene ampie aree semplici che possono essere semplificate in modo più aggressivo.
 
 Mantieni **Adaptive Method** su **Best Quality** per il lavoro normale. **Legacy** conserva il calcolo Adaptive Reduce originale per compatibilità con progetti precedenti.
-
-<p align="center">
-  <img loading="lazy" decoding="async" src="../../img/step1-adaptive-reduce.jpg" alt="Adaptive Reduce trasforma una scansione da oltre un milione di poligoni in una geometria ottimizzata pronta per il realtime" style="max-width:820px;width:100%;">
-</p>
 
 <p align="center">
   <img loading="lazy" decoding="async" src="../../img/step1-blender-decimate-vs-scanready.jpg" alt="Confronto tra la scansione high-poly originale e il risultato low-poly ottimizzato da ScanReady" style="max-width:1000px;width:100%;">
